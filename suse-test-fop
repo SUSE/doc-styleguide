@@ -2,5 +2,8 @@
 
 echo "*** Test FOP file ***"
 
+FOP_CONFIG_FILE=${FOP_CONFIG_FILE:-"/usr/share/susedoc/etc/FOP/fop-suse.xml"}
+
+
 fop -c $FOP_CONFIG_FILE $@
 
