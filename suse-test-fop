@@ -1,0 +1,6 @@
+#!/bin/sh
+
+echo "*** Test FOP file ***"
+
+fop -c $FOP_CONFIG_FILE $@
+
