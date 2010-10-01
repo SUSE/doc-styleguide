@@ -1,0 +1,22 @@
+= SUSE Documentation Styleguide
+
+This guide provides answers to writing, style, and layout questions commonly
+arising when editing SUSE documentation. The markup reference at the end of
+the guide will help you choose the right XML element for your
+purpose. Following this guide will make your documentation more understandable
+and easier to translate.
+
+A PDF build of the current version of the styleguide is https://raw.githubusercontent.com/SUSE-Cloud/doc-styleguide/master/prebuild/styleguide_2014-02.2-with_changelog.pdf[available for download].  
+
+Contributing
+-------------
+
+If you would like to contribute, please fork this repository and send
+pull requests. Always use the `develop` branch for your edits! +
+Contributors with direct access to the repository are encouraged to use the
+git-flow-avh workflow (package `git-flow-avh`). However, this is not a must
+;-).
+
+.*No commits to master*
+NOTE: Please do not make any commits to the `master` branch. `master` is
+reserved for releases only. Always commit to `develop`.
