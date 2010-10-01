@@ -1,0 +1,3838 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook43-profile.xsl" 
+                 type="text/xml" title="Profiling step"?>
+<!DOCTYPE article PUBLIC
+  "-//OASIS//DTD DocBook XML V4.3//EN"
+  "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+  <!ENTITY adguide "Administration Guide">
+]>
+<article class="whitepaper" lang="en" id="art.styleguide">
+ <title>Documentation Style Guide</title>
+ <subtitle>SUSE and openSUSE</subtitle>
+ <articleinfo>
+  <releaseinfo>Version 2</releaseinfo>
+  <releaseinfo>$Revision: 39 $</releaseinfo>
+  <releaseinfo>Build Date: <?dbtimestamp format="B d, Y"?>
+  </releaseinfo>
+  <legalnotice>
+   <title>Legal Notice</title>
+   <formalpara>
+    <title>Copyright (c) 2007 Novell, Inc.</title>
+    <para>
+     Permission is granted to copy, distribute and/or modify this document
+     under the terms of the GNU Free Documentation License, Version 1.2 or
+     any later version published by the Free Software Foundation; with the
+     Invariant Section being Trademark Policy, with the Front-Cover Texts
+     being <citetitle>Documentation Style Guide</citetitle> and
+     <citetitle>SUSE and openSUSE</citetitle>. A copy of the license is
+     included in <xref linkend="app.gdfl"/>.
+    </para>
+   </formalpara>
+   <formalpara>
+    <title>Disclaimer</title>
+    <para>
+     All information found in this book has been compiled with utmost
+     attention to detail. However, this does not guarantee complete
+     accuracy. Neither Novell, Inc., SUSE LINUX Products GmbH, the authors,
+     nor the translators shall be held liable for possible errors or the
+     consequences thereof.
+    </para>
+   </formalpara>
+   <formalpara>
+    <title>Trademark Policy</title>
+    <para>
+     Novell, the Novell logo, the N logo, SUSE, openSUSE, and the SUSE
+     <quote>gecko</quote> logo are trademarks and registered trademarks of
+     Novell, Inc. in the United States and other countries. Linux is a
+     registered trademark of Linus Torvalds. All other third party
+     trademarks are the property of their respective owners.
+    </para>
+   </formalpara>
+  </legalnotice>
+ </articleinfo>
+ <remark>jw: 
+  Terminology to be specified:
+   specfile, spec-file, spec file
+ </remark>
+ <abstract>
+  <para>
+   This document contains SUSE-specific style and layout issues and writing
+   guidelines. It identifies and describes several issues to standardize the
+   style of SUSE and openSUSE documentation. This document also contains a
+   reference part for the XML markup used by the SUSE editors and intended
+   for openSUSE projects, such as <emphasis>Lessons for Lizards</emphasis>.
+  </para>
+ </abstract>
+ <para>
+  This document refers to the following documents:
+ </para>
+ <itemizedlist>
+  <listitem>
+   <para>
+    <citetitle>The Chicago Manual of Style</citetitle>, 15th Edition
+   </para>
+  </listitem>
+  <listitem>
+   <para>
+    Norman Walsh's DocBook: The Definitive Guide (TDG)
+   </para>
+   <para>
+    <ulink url="http://www.docbook.org/tdg/en/html/docbook.html"/>
+   </para>
+  </listitem>
+ </itemizedlist>
+<!-- *********************************************************** -->
+ <sect1 id="sec.susedoc">
+  <title>Creating a Consistent Structure</title>
+
+  <para>
+   It is important to maintain a relatively consistent structure within a
+   document. This structure may vary for different books or projects. For
+   consistency, each project should have its own guidelines offered here, in
+   a separate project document, or through templates.
+  </para>
+
+  <sect2 id="sec.susedoc.lfl">
+   <title>Lessons for Lizards</title>
+   <para>
+    The standard base structure of LfL is reflected in its template. Find
+    the template in LfL's SVN. The project is still in development stages.
+    Once the project is more stable, guidelines will be added here.
+   </para>
+  </sect2>
+
+  <sect2 id="sec.susedoc.book">
+   <title>Official SUSE Manuals</title>
+   <para>
+    A SUSE manual consists of the following mandatory elements: title page,
+    copyright notice, table of contents, preface, and chapters split in
+    sections. Optionally, use parts, appendixes, a glossary, and an index,
+    if appropriate. Find descriptions and usage of these elements in the
+    following list.
+   </para>
+   <variablelist>
+    <varlistentry>
+     <term>Title Page</term>
+     <listitem>
+      <para>
+       The title page contains logo, title, and subtitle.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Imprint</term>
+     <listitem>
+      <para>
+       The second page (imprint) lists edition, copyright notice, and the
+       names of all contributors to the manual. Enter the names in the
+       following files:
+      </para>
+      <variablelist>
+       <varlistentry>
+        <term><filename>authors-chapters.xml</filename>
+        </term>
+        <listitem>
+         <para>
+          List authors.
+         </para>
+        </listitem>
+       </varlistentry>
+       <varlistentry>
+        <term><filename>authors-trans.xml</filename>
+        </term>
+        <listitem>
+         <para>
+          List all translators who worked on the manual.
+         </para>
+        </listitem>
+       </varlistentry>
+       <varlistentry>
+        <term><filename>authors-office.xml</filename>
+        </term>
+        <listitem>
+         <para>
+          List the members of the documentation department who wrote and
+          edited the manual. This file is only used in internally-produced
+          documentation.
+         </para>
+        </listitem>
+       </varlistentry>
+      </variablelist>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Table of Contents</term>
+     <listitem>
+      <para>
+       The table of contents is generated automatically.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Preface</term>
+     <listitem>
+      <para>
+       The preface of a book contains a brief overview of the scope and
+       content of the manual, information about how to read it, and
+       typographical conventions.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Parts</term>
+     <listitem>
+      <para>
+       Parts structure a manual with many chapters to improve the usability
+       of a book. Use nouns as part titles and keep them clear and concise.
+       Some typical part titles would be <quote>Installation</quote> or
+       <quote>Network</quote>.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Chapters</term>
+     <listitem>
+      <para>
+       Chapters typically consist of the following elements (appendixes may
+       be regarded an exception):
+      </para>
+      <figure>
+       <title>Structure of a Chapter in SUSE Documentation (<literal>*</literal> for optional element)</title>
+       <mediaobject>
+        <textobject>
+<screen>chapter
+|
++--- title
+|
++--- abstract
+|
++--- section
+.    |
+.    +--- introductory text
+.    |
+.    +--- procedure environment*
+.    |
+.    +--- subsection
+.    .
+.    .
+.    .
+.    +--- subsection
+.    |
+.    +--- troubleshooting*
+.    |
+.    +--- for more information*
+.
++--- troubleshooting*
+|
++--- for more information*</screen>
+        </textobject>
+       </mediaobject>
+      </figure>
+      <variablelist>
+       <varlistentry>
+        <term>Abstract</term>
+        <listitem>
+         <para>
+          The abstract should provide a brief summary of the information
+          provided in the chapter. Rather than writing about what the
+          chapter does, summarize the information the chapter contains. This
+          gives the reader a clear idea of what he or she can learn by
+          reading the chapter. <xref linkend="ex.style.abstract"/> is an
+          example abstract from the chapter about file systems.
+         </para>
+         <example id="ex.style.abstract">
+          <title>An Example Abstract</title>
+          <para>
+           openSUSE 10.2 ships with a number of different file systems,
+           including ReiserFS, Ext2, Ext3, and XFS, from which to choose at
+           installation time. Each file system has its own advantages and
+           disadvantages that can make it more suited to a scenario.
+           Professional high-performance setups may require a different
+           choice of file system than a home user's setup.
+          </para>
+         </example>
+        </listitem>
+       </varlistentry>
+       <varlistentry>
+        <term>Introductions</term>
+        <listitem>
+         <para>
+          Any introductory information follows directly after the abstract
+          and should not be placed in a separate section.
+         </para>
+        </listitem>
+       </varlistentry>
+       <varlistentry>
+        <term>Sections</term>
+        <listitem>
+         <para>
+          Structure the detailed information in sections for better user
+          orientation and to allow the experienced user to find the desired
+          aspect of the topic easily.
+         </para>
+         <para>
+          Create sections in analogy to the main tasks, like installing,
+          configuring, monitoring, and administering. If helpful, split
+          sections into subsections. Sections start with an introductory
+          paragraph outlining the focus of the section. If the section works
+          with a sequential task, you can follow this introduction with a
+          procedure description, as discussed in
+          <xref
+           linkend="sec.procs"/>, which clearly states all
+          the necessary steps to accomplish a task. Experienced users
+          familiar with the topic can follow this brief sketch. For less
+          experienced readers, each step of the procedure can contain a link
+          to a subsection where the necessary background is provided and the
+          action explained in more detail. In HTML and PDF online
+          documentation, these links are clickable, providing easy access to
+          the additional information.
+         </para>
+        </listitem>
+       </varlistentry>
+       <varlistentry>
+        <term>Troubleshooting Section</term>
+        <listitem>
+         <para>
+          If you know of common mistakes, pitfalls, or problems a user might
+          encounter in this situation, list them in this section. Use the
+          title <quote>Troubleshooting</quote> for all these types of
+          sections in all manuals. Structure the section in a symptom and
+          solution pattern.
+         </para>
+        </listitem>
+       </varlistentry>
+       <varlistentry>
+        <term>For More Information</term>
+        <listitem>
+         <para>
+          As described in <xref linkend="sec.edrules.address"/>, this
+          section contains links to all sources of information that might
+          prove helpful in the given context. Follow the general referencing
+          guidelines in <xref linkend="sec.edrules.reference"/> when
+          creating this kind of section.
+         </para>
+        </listitem>
+       </varlistentry>
+      </variablelist>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Glossary</term>
+     <listitem>
+      <para>
+       The optional glossary contains important terms in alphabetical order
+       and provides a brief explanation.
+      </para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+  </sect2>
+ </sect1>
+<!-- *********************************************************** -->
+ <sect1 id="sec.edrules">
+  <title>Writing and Editing</title>
+
+  <para>
+   These rules are intentionally kept brief and simple. They contain
+   specifics related to SUSE and openSUSE documentation and sometimes
+   standard English rules. Where relevant, specific markup may be mentioned
+   to assist in maintaining consistency in SUSE documentation.
+  </para>
+
+  <sect2 id="sec.edrules.abbrev">
+   <title>Abbreviations and Acronyms</title>
+   <para>
+    Most abbreviations may not be used. <quote>etc.</quote> may be used in
+    parentheses and some rare instances, but not in combination with phrases
+    like <quote>for example</quote> or <quote>such as.</quote> It should be
+    followed by a comma.
+   </para>
+   <para>
+    Abbreviations of common units of measure may also be used. Do not create
+    a plural of these abbreviations by adding an <quote>s.</quote> Use a
+    nonbreaking (<sgmltag class="genentity">nbsp</sgmltag>) space between
+    the numeral and multiple-letter abbreviations. Do not use a space before
+    single-letter abbreviations.
+   </para>
+   <para>
+    A header must not contain both the acronym and the meaning. Common
+    acronyms can be used in the header and written out in the following
+    text.
+   </para>
+   <para>
+    Once the acronym has been presented in the written out form, use the
+    acronym version in the rest of a chapter. Because sometimes chapters and
+    parts are used in different documents, it is important to map acronym
+    and meaning at least once per chapter. Be consistent with this mapping.
+    If you use the acronym followed by the written out form in one chapter,
+    try to do this in all others.
+   </para>
+   <para>
+    Form plural forms of acronyms by adding a lowercase <quote>s,</quote>
+    for example, <quote>CDs</quote> and <quote>BIOSs.</quote> Because some
+    rare acronyms create plurals by adding <quote>'s,</quote> avoid using
+    possessive forms of acronyms for reasons of clarity.
+   </para>
+  </sect2>
+
+  <sect2 status="ready" id="sec.edrules.address">
+   <title>Addresses</title>
+   <para>
+    SUSE documentation contains <quote>For More Information</quote> sections
+    at the end of most chapters to point to further sources of information
+    regarding the topic. Whenever possible, links and addresses are grouped
+    there and presented by means of a <sgmltag>variablelist</sgmltag>
+    environment (link plus explanatory remarks). Do not use a list
+    environment for only one link.
+   </para>
+   <para>
+    If you need to present a large number of links, group them by topic and
+    create a separate list environment for each group. Provide a
+    comprehensive title for each of the groups or an introductory sentence.
+   </para>
+   <para>
+    Translators are normally provided with localized versions of links in
+    the comments of the source code. If none is provided, the English
+    default is used as fallback.
+   </para>
+   <para>
+    You can provide links or addresses directly in the main sections, but
+    are encouraged to use and refer to the <quote>For More
+    Information</quote> section wherever possible. Both automated checks and
+    the use of editor comments for translators ensure that the links are
+    kept up-to-date.
+   </para>
+   <para>
+    For detailed information about external and internal references and
+    addresses in SUSE documents, refer to
+    <xref linkend="sec.edrules.reference"/>.
+   </para>
+  </sect2>
+
+  <sect2 status="ready" id="sec.edrules.admon">
+   <title>Admonitory and Advisory Paragraphs</title>
+   <para>
+    SUSE uses four different kinds of admonitory and advisory paragraphs.
+    Because these elements are formatted in a way to draw the reader's
+    attention to them, their use should be limited to specific situations.
+    Additionally, avoid using more than one per page.
+   </para>
+   <variablelist>
+    <varlistentry>
+     <term><sgmltag>warning</sgmltag>
+     </term>
+     <listitem>
+      <para>
+       These elements warn of security issues, potential loss of data,
+       damage to equipment (hardware), or physical hazards to the user. A
+       warning must always precede the action to which it applies. A typical
+       example of a warning used in SUSE documentation is:
+      </para>
+      <example>
+       <title>A Typical Example of a SUSE Warning</title>
+<screen>&lt;warning>
+ &lt;title>Creating File Systems&lt;/title>
+  &lt;para>
+    Formatting may take up to several hours depending 
+    on the partition size. Do not try to interrupt 
+    this process. This could result in a corrupted file 
+    system that renders the installation 
+    unusable. Proceed with the installation after  
+    formatting has been completed.
+  &lt;/para>
+&lt;/warning></screen>
+      </example>
+      <para>
+       A warning consists of the warning headline, a title stating the
+       action considered dangerous, followed by a descriptive paragraph
+       explaining the nature and origin of the danger. Clearly state what
+       could happen if the reader ignored the warning. Finally, tell the
+       reader how to avoid the dangerous situation.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term><sgmltag>important</sgmltag>
+     </term>
+     <listitem>
+      <para>
+       These elements introduce vital information that deserves particular
+       attention. Similar to the warning element,
+       <sgmltag>important</sgmltag> includes a title stating the topic
+       covered in the following explanation.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term><sgmltag>tip</sgmltag>
+     </term>
+     <listitem>
+      <para>
+       A <sgmltag>tip</sgmltag> is used to introduce guidelines or tips that
+       are helpful to the user. Using an appropriate title is strongly
+       recommended.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term><sgmltag>note</sgmltag>
+     </term>
+     <listitem>
+      <para>
+       The <sgmltag>note</sgmltag> element is useful for emphasizing
+       information that differs from previous versions, providing important
+       information that does not fit into the paragraph, and pointing out
+       architecture-specific information. Using an appropriate title is
+       strongly recommended.
+      </para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+  </sect2>
+
+  <sect2 id="sec.edrules.aud">
+   <title>Audience</title>
+   <para>
+    It is generally not necessary to describe the intended audience in the
+    text, but keep it in mind when writing the document. Adjust the tone,
+    style, and technical level of the text based on the intended audience.
+    Do not insult them by saying something is obvious.
+   </para>
+   <para>
+    Aim the document at the reader by describing tasks the reader may need
+    to complete rather than the organization of the program. For example,
+    when describing YaST, focus on how to configure the devices and services
+    the user needs rather than the module structure and available dialogs.
+   </para>
+   <para>
+    Try to focus on the positives: what the program can do rather than its
+    limitations. Be honest in your documentation and avoid absolutes and the
+    exaggerations of marketing-speak.
+   </para>
+  </sect2>
+
+  <sect2 id="sec.edrules.cap">
+   <title>Capitalization</title>
+   <para>
+    Use title-style capitalization for all types of headings and titles,
+    including figure and table titles. This style is explained in
+    <citetitle>Chicago</citetitle> 8.167.
+   </para>
+   <para>
+    This style can be very complicated to implement, but the following these
+    simple rules is a good start:
+   </para>
+   <orderedlist>
+    <listitem>
+     <para>
+      Capitalize the first word no matter what it is
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Capitalize all major words
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Lowercase <emphasis>the</emphasis>, <emphasis>an</emphasis>,
+      <emphasis>a</emphasis>, <emphasis>and</emphasis>,
+      <emphasis>but</emphasis>, <emphasis>for</emphasis>,
+      <emphasis>or</emphasis>, <emphasis>nor</emphasis>,
+      <emphasis>to</emphasis>, and <emphasis>as</emphasis>
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Lowercase prepositions, such as <emphasis>up</emphasis>,
+      <emphasis>in</emphasis>, <emphasis>down</emphasis>, and
+      <emphasis>of</emphasis>
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Capitalize the last word
+     </para>
+    </listitem>
+   </orderedlist>
+   <para>
+    In variable lists, capitalize the term in title-style unless it is a
+    complete sentence. In all list items, use sentence-style capitalization
+    (capitalize the first letter and proper nouns only). Use title-style for
+    row and column labels in tables.
+   </para>
+  </sect2>
+
+  <sect2 id="sec.edrules.contract">
+   <title>Contractions</title>
+   <para>
+    SUSE and openSUSE documentation does not normally permit the use of
+    contractions. Contractions are only permitted in casual documents and
+    texts. A good example of appropriate use of contractions is the SuSE
+    tour that was included in older releases. It provided a friendly and
+    somewhat humorous introduction to applications and was aimed
+    predominantly at the the home user.
+   </para>
+  </sect2>
+
+  <sect2 id="sec.edrules.reference">
+   <title>Cross-References and References to External Resources</title>
+   <para>
+    Use <sgmltag>xref</sgmltag> when you refer to an appendix, chapter,
+    part, preface, section, table, figure, or example. The referenced
+    element needs an <sgmltag class="attribute">id</sgmltag> attribute. When
+    referencing these elements, do not insert a text label like
+    <quote>appendix</quote>, <quote>chapter</quote>, <quote>part</quote>,
+    <quote>preface</quote>, <quote>section</quote>, <quote>table</quote>,
+    <quote>figure</quote>, and <quote>example</quote>. These are inserted
+    automatically.
+   </para>
+   <para>
+    Do not insert a reference to a paragraph (<sgmltag>para</sgmltag>). If
+    you need a reference to a list, insert <sgmltag>id</sgmltag> and
+    <sgmltag>xreflabel</sgmltag>.
+   </para>
+   <para>
+    References to man pages and info pages should generally be made in the
+    format <quote>the man page of <command>command</command></quote> or
+    <quote>the info page of <command>command</command></quote>. In a
+    situation where the category of the page is needed, add
+    <quote>(<command>man 9 command</command>)</quote> to the end.
+   </para>
+   <para>
+    Use <sgmltag>ulink</sgmltag> for a URL, like
+    <ulink url="http://www.suse.de"/>. Always use the correct protocol
+    prefix (http, ftp, mailto) to enable the automated link check. Never use
+    <sgmltag>filename</sgmltag> for this kind of link. Anything that should
+    show up as a clickable link in the final HTML and PDF docs must bear the
+    correct markup. Otherwise risk breaking the link checking tools and rob
+    the user of extra functionality, such as click to reach extra external
+    documents. Do not enter a text label for the <sgmltag>ulink</sgmltag> so
+    that the URL itself appears in printed versions.
+   </para>
+   <para>
+    Do not use <sgmltag>ulink</sgmltag> and the <literal>file:</literal>
+    prefix to reference filenames. Use <sgmltag>filename</sgmltag> for
+    files.
+   </para>
+   <para>
+    Do not use links across documents where ID and IDREF linking is not
+    possible and <sgmltag>ulink</sgmltag> is inappropriate. For references
+    to information in SUSE books outside the current document set, use the
+    appropriate macro for the book title. The reference should not refer to
+    a specific chapter or section number or title because these things
+    change too easily. Instead, make a reference using the document title
+    but no specific headers.
+   </para>
+   <para>
+    Insert references to external (not SUSE or openSUSE) books in the format
+    "Title by Author (ISBN #)." Inclusion of the ISBN is optional. Place the
+    title in <sgmltag>citetitle</sgmltag> tags. For example:
+   </para>
+<screen>&lt;citetitle>Indexing Books&lt;/citetitle> by Nancy C. Mulvany
+(ISBN 0-226-55014-1) is a useful guide for indexing.</screen>
+   <para>
+    It is useful to provide language-specific references in the translated
+    books. If the authors know of language-specific versions, they can
+    include them in comments to the translators. As time permits,
+    translators should look for corresponding language-specific resources.
+    For URLs, provide only the language-specific version of a site. Use the
+    English as a fallback. For books, provide the title of the translated
+    version along with the original title if such a translation exists.
+   </para>
+  </sect2>
+
+  <sect2 id="sec.edrules.lang">
+   <title>Discriminatory Language</title>
+   <para>
+    Refer to <citetitle>Chicago</citetitle> 5.43, 5.51, and 5.78 for
+    suggestions of how to avoid gender bias. Basically, rewrite the sentence
+    to avoid indications of gender. If possible, use plural to allow use of
+    <quote>they</quote> as the pronoun. If these attempts fail, use
+    <quote>he or she.</quote>
+   </para>
+   <para>
+    For example users, use the various mascots, like Tux, Geeko, and Wilber.
+    <remark>We could use a better and more extensive list. Are there
+     others? -rwalter</remark>
+   </para>
+  </sect2>
+
+  <sect2 id="sec.edrules.block">
+   <title>Illustrative Block Elements</title>
+   <sect3 id="sec.edrules.block.fig">
+    <title>Graphics and Figures</title>
+    <para>
+     Screen shots and graphics should only be used when helpful for
+     following the explanation. Using too many screen shots can confuse the
+     reader even more. If you intend to use screen shots in a document,
+     consider the following issues first:
+    </para>
+    <itemizedlist>
+     <listitem>
+      <para>
+       A screen shot should illustrate a complex situation where the user
+       cannot easily follow the text otherwise.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Do not use screen shots of confirmation pop-ups, progress bars, and
+       other widgets that do not require user action and do not provide
+       crucial information.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Do not illustrate every step of a procedure with a screen shot. In
+       most cases, selecting a few screen shots to show the most important
+       dialogs or choices during the whole process is sufficient.
+      </para>
+     </listitem>
+    </itemizedlist>
+    <para>
+     If you intend to use graphics in documentation, think of the following
+     issues first:
+    </para>
+    <itemizedlist>
+     <listitem>
+      <para>
+       KISS (keep it short and simple). Custom graphics should always
+       simplify complex issues and not confuse the reader by their
+       complexity. Embedding too much text in the graphic adds to the
+       complexity. Use as little text as possible and be aware of
+       localization issues, such as differing lengths of strings in
+       different languages.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Provide an appropriate reference in the text. The layout process
+       should make an effort to ensure that figures are not placed too far
+       from the related text.
+      </para>
+     </listitem>
+    </itemizedlist>
+   </sect3>
+   <sect3 id="sec.edrules.block.callouts">
+    <title>Callouts</title>
+    <para>
+     Callout numbers are only printed if there are 10 or fewer per example.
+     Using more than 10 would be distracting.
+    </para>
+    <example id="ex.co.code">
+     <title>A Configuration File with Callouts</title>
+<screen>
+color white/blue black/light-gray   <co id="col"/>
+default 0   <co id="def"/>
+timeout 8   <co id="time"/>
+gfxmenu (hd0,0)/boot/message
+
+title SUSE LINUX 9.1.42
+    kernel (hd0,0)/boot/vmlinuz root=/dev/hda1 vga=0x31a selinux=0 
+    splash=silent resume=/dev/hda2 desktop elevator=as  showopts
+    initrd (hd0,0)/boot/initrd
+
+title Disk
+    root (fd0)
+    chainloader +1</screen>
+     <calloutlist>
+      <callout arearefs="col">
+       <para>
+        Here, define the colors used by the <application>GRUB</application>
+        menu.
+       </para>
+      </callout>
+      <callout arearefs="def">
+       <para>
+        Define the default option.
+       </para>
+      </callout>
+      <callout arearefs="time">
+       <para>
+        Select a time-out after which booting starts automatically.
+       </para>
+      </callout>
+     </calloutlist>
+    </example>
+    <para>
+     For details on the markup of this element, refer to
+     <xref
+      linkend="sec.markup.block.callouts"/>.
+    </para>
+   </sect3>
+   <sect3 id="sec.edrules.block.ex">
+    <title>Examples</title>
+    <para>
+     Like figures and screen shots, examples are used to illustrate complex
+     processes. Most of the rules established for the use of these elements
+     in <xref linkend="sec.edrules.block.fig"/> also apply to examples.
+    </para>
+    <para>
+     If you intend to use examples, consider the following:
+    </para>
+    <itemizedlist>
+     <listitem>
+      <para>
+       Examples are used to present long commands and their output, lines of
+       code, configuration files, excerpts of configuration files, and
+       output, such as system messages.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Make sure that the example is crucial to the understanding of the
+       process as a whole. Like figures and screen shots, examples stick out
+       from the text and are distracting when overused or used improperly.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       If you need to present just a function or application call on the
+       command line, it is normally sufficient to do so inline. However, if
+       you need to feature both a command and its output on screen, use an
+       example environment.
+      </para>
+      <example id="ex.ex.call">
+       <title>Calling ps to Get Process Information</title>
+<screen>
+<command>ps <option>-xa</option></command>
+
+5170 ?        S      0:00 kdeinit: khotkeys
+5172 ?        S      0:02 kdeinit: kdesktop
+5174 ?        S      0:04 kdeinit: kicker
+5177 ?        S      0:00 kdeinit: kpowersave
+5179 ?        S      0:00 kdeinit: klipper</screen>
+      </example>
+     </listitem>
+     <listitem>
+      <para>
+       The example environment should contain both a title and an ID to
+       enable referencing and easier coordination with the text.
+      </para>
+     </listitem>
+    </itemizedlist>
+    <para>
+     For details on markup, refer to
+     <xref linkend="sec.markup.block.examples"/>.
+    </para>
+   </sect3>
+  </sect2>
+
+  <sect2 id="sec.edrules.head">
+   <title>Headings</title>
+   <para>
+    Each level of heading should have two or more headings. Lonely
+    subheadings are not allowed. Make headings in a group parallel by using
+    a similar structure for the wording.
+   </para>
+   <para>
+    Keep headings short and simple. Do not use both an acronym and the
+    written-out form in a heading.
+   </para>
+   <para>
+    Provide content between a heading and its subheadings. In some cases,
+    this is only a small paragraph of introductory information. In other
+    cases, more information can be provided.
+   </para>
+  </sect2>
+
+  <sect2 id="sec.edrules.lists">
+   <title>Lists</title>
+   <para>
+    SUSE and openSUSE documentation uses the following types of lists (the
+    respective XML tags are given in parentheses):
+   </para>
+   <variablelist>
+    <varlistentry>
+     <term> Bullet Lists (<sgmltag>itemizedlist</sgmltag>)</term>
+     <listitem>
+      <para>
+       See
+       <ulink url="http://www.docbook.org/tdg/en/html/itemizedlist.html"/>
+       for details of markup.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term> Numbered Lists (<sgmltag>orderedlist</sgmltag>)</term>
+     <listitem>
+      <para>
+       See
+       <ulink url="http://www.docbook.org/tdg/en/html/orderedlist.html"/>
+       for details of markup.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term> Descriptive Lists (<sgmltag>variablelist</sgmltag>)</term>
+     <listitem>
+      <para>
+       See
+       <ulink url="http://www.docbook.org/tdg/en/html/variablelist.html"/>
+       for details on markup.
+      </para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+   <para>
+    Consider the following general rules when creating or editing list
+    environments:
+   </para>
+   <itemizedlist>
+    <listitem>
+     <para>
+      List environments should be used cautiously. Their markup is quite
+      distinct and overusing them might disrupt the text flow.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Always introduce a list in the text. If needed for reference or better
+      coordination with the related text, add an optional title and an
+      <sgmltag class="attribute">id</sgmltag> attribute.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      A list must contain at least two items. If items are short and simple
+      in structure, consider incorporating them in the flowing text instead
+      of creating a list environment.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Use sentence-style capitalization for the list items. Use title-style
+      capitalization for terms in descriptive lists.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      If using multiple sentences as a list item, end all items in that list
+      with a period.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Make sure that the items are grammatically parallel constructions
+      providing a pattern that makes it easier to follow the text.
+     </para>
+    </listitem>
+   </itemizedlist>
+   <para>
+    The different types can be nested, but avoid nesting too many levels.
+    When nesting different types of lists or introducing multiple levels of
+    one type, always consider the flow of the text. It is rarely necessary
+    to have more than one level in a list. Using too many levels disrupts
+    the text flow, confuses readers, and heavily influences the document
+    layout. Consider these issues carefully before nesting lists or
+    introducing another list level. Restructuring the information using a
+    well-balanced combination of lists and flowing texts may prove a good
+    approach.
+   </para>
+   <sect3 id="sec.edrules.lists.bull">
+    <title>Bullet Lists</title>
+    <para>
+     Bullet lists are often used to provide an overview of information or to
+     introduce or summarize information. They should be used when the order
+     of list items is irrelevant.
+    </para>
+    <para>
+     If needed, assign an <sgmltag class="attribute">id</sgmltag> attribute
+     to an itemized list and add a title to reference it. Individual list
+     items may be referenced by assigning an
+     <sgmltag class="attribute">id</sgmltag> and an
+     <sgmltag class="attribute">xreflabel</sgmltag> attribute. The entry is
+     then identified by the value of <sgmltag class="attribute">id</sgmltag>
+     and the value of <sgmltag class="attribute">xreflabel</sgmltag> is
+     printed as the label of this item. See
+     <xref linkend="sec.edrules.reference"/> and
+     <xref
+      linkend="sec.markup.inline.referencing"/> for detailed
+     information.
+    </para>
+    <para>
+     The following example of an itemized list is from a <quote>For More
+     Information</quote> sections.
+     <remark>rwalter: at some point we want one that isn't from a for more info because we
+      request varlist for for more info sects.</remark>
+    </para>
+    <example id="ex.bulllist">
+     <title>A Bullet List</title>
+     <itemizedlist spacing="compact">
+      <title>Linux Information</title>
+      <listitem>
+       <para>
+        <ulink url="http://www.suse.com"/>
+       </para>
+      </listitem>
+      <listitem>
+       <para>
+        <ulink url="http://www.novell.com/linux"/>
+       </para>
+      </listitem>
+     </itemizedlist>
+    </example>
+   </sect3>
+   <sect3 id="sec.edrules.lists.num">
+    <title>Numbered Lists</title>
+    <para>
+     Use numbered lists when items have a strict order, hierarchy, or
+     importance. If order is not relevant, use a bullet list or a
+     descriptive list. Do not use numbered lists to describe procedures.
+     Complex sequential actions are better described by means of the
+     procedure environment (see <xref linkend="sec.procs"/> for a detailed
+     description).
+    </para>
+    <para>
+     If needed, assign an <sgmltag class="attribute">id</sgmltag> attribute
+     to a numbered list and add a title to it in order to reference it.
+     Individual list items may be referenced by assigning an
+     <sgmltag class="attribute">id</sgmltag> and
+     <sgmltag class="attribute"
+     >xreflabel</sgmltag> attribute. The
+     entry is then identified by the value of
+     <sgmltag
+      class="attribute">id</sgmltag> and the value of
+     <sgmltag class="attribute">xreflabel</sgmltag> is printed as the label
+     of this item. See <xref linkend="sec.edrules.reference"/> and
+     <xref
+      linkend="sec.markup.inline.referencing"/> for detailed
+     information.
+    </para>
+    <example id="ex.numlist">
+     <title>A Numbered List</title>
+     <orderedlist spacing="compact">
+      <listitem>
+       <para>
+        The machine's network is configured properly.
+       </para>
+      </listitem>
+      <listitem>
+       <para>
+        The machine's exact system time is maintained by synchronizing with
+        a time server. This is necessary because parts of the HTTP protocol
+        depend on the correct time.
+       </para>
+      </listitem>
+      <listitem>
+       <para>
+        The latest security updates are installed. If in doubt, run an
+        online update.
+       </para>
+      </listitem>
+      <listitem>
+       <para>
+        The default Web server port (port 80) is opened in the firewall. For
+        this, configure the SUSEFirewall2 to allow the service <guimenu>HTTP
+        Server</guimenu> in the external zone. This can be done using YaST.
+       </para>
+      </listitem>
+     </orderedlist>
+    </example>
+   </sect3>
+   <sect3 id="sec.edrules.lists.desc">
+    <title>Descriptive Lists</title>
+    <para>
+     Use descriptive lists when defining terms or describing options. Each
+     item of a descriptive list contains a short term that is then further
+     explained by means of an explanatory paragraph.
+    </para>
+    <para>
+     Use title-style capitalization for the term. Use sentence-style for the
+     list item.
+    </para>
+    <para>
+     You may assign an <sgmltag class="attribute">id</sgmltag> attribute to
+     the list and add a title to it in order to reference it. Individual
+     list items may be referenced by assigning an
+     <sgmltag class="attribute">id</sgmltag>. The entry is then identified
+     by the value of <sgmltag
+      class="attribute">id</sgmltag> and
+     referenced by the term.
+    </para>
+    <example id="ex.varlist">
+     <title>A Descriptive List</title>
+     <para>
+      This book consists of several parts:
+     </para>
+     <variablelist>
+      <varlistentry>
+       <term>Installation</term>
+       <listitem>
+        <para>
+         Learn about the installation and initial configuration of a Linux
+         system.
+        </para>
+       </listitem>
+      </varlistentry>
+      <varlistentry>
+       <term>System</term>
+       <listitem>
+        <para>
+         Get a basic understanding of the system components.
+        </para>
+       </listitem>
+      </varlistentry>
+     </variablelist>
+    </example>
+   </sect3>
+  </sect2>
+
+  <sect2 id="sec.edrules.numandmeas">
+   <title>Numbers and Measurements</title>
+   <para>
+    Follow <citetitle>Chicago</citetitle> 9.6 for numbers. This is basically
+    to write out single-digit numbers (0&ndash;9) and use numerals for all
+    others. For measurements, always use numerals when an abbreviation is
+    used for the unit.
+   </para>
+  </sect2>
+
+  <sect2 id="sec.edrules.poss">
+   <title>Possessives</title>
+   <para>
+    Do not use possessives of acronyms and trademarked terms. Unless use of
+    a possessive with an inanimate object improves the clarity of a
+    sentence, avoid inanimate possessives.
+   </para>
+  </sect2>
+
+  <sect2 id="sec.edrules.punct">
+   <title>Punctuation</title>
+   <para>
+    Use commas between all items in a series. For example, write <quote>a,
+    b, and c.</quote> Use commas around phrases like <quote>for
+    example</quote> and <quote>that is.</quote> Introductory phrases in the
+    beginning of a sentence are normally followed by a comma. For example,
+    <quote>Before using YaST Online Update, configure a network
+    connection.</quote>
+   </para>
+   <para>
+    Semicolons (;) are mainly used to join two independent but related
+    sentences. They can also be used in place of commas in a complicated
+    series. It is preferable to avoid them when possible and instead break
+    the text into smaller pieces.
+   </para>
+   <para>
+    em dashes (<sgmltag>&mdash;</sgmltag>) are punctuation dashes. Use them
+    sparingly and do not surround them with spaces. en dashes
+    (<sgmltag>&ndash;</sgmltag>) should be used between numbers in a range
+    in tables and figures. Also use them for a hyphenated term when a
+    two-word term is part of the hyphenated term (file
+    system&ndash;specific). Additionally, use them as the symbols for minus
+    signs.
+   </para>
+   <para>
+    Do not use slashes except when they are part of a standard technical
+    term, such as TCP/IP or client/server. Avoid the use of exclamation
+    marks (!).
+   </para>
+  </sect2>
+
+  <sect2 id="sec.edrules.sentstruct">
+   <title>Sentence Structure</title>
+   <para>
+    Keep sentences clear and direct. Avoid complicated clauses and try to
+    keep sentences short (under 20 words). Avoid joining sentences with
+    semicolons (;) if they can be as easily understood as two independent
+    sentences. Make sure that the relationship between subject, verb, and
+    object are clear. Avoid ending a sentence with a preposition where
+    reasonable.
+   </para>
+  </sect2>
+
+  <sect2 id="sec.edrules.tab">
+   <title>Tables</title>
+   <para>
+    Use tables to present a large number of similar facts. A table makes
+    them easy to scan and compare when presenting the same information
+    textually would require several paragraphs.
+   </para>
+   <para>
+    Always keep tables as simple as possible. They should not require
+    extensive explanations in the related text and should make sense even to
+    those readers who are not very familiar with the topic.
+   </para>
+   <para>
+    A table always has a title. If you assign an
+    <sgmltag class="attribute">id</sgmltag>, it can be identified and
+    referenced by this attribute.
+   </para>
+   <para>
+    Value and description pairs are better handled by means of a descriptive
+    list.
+   </para>
+   <example id="ex.tab">
+    <title>A Typical Table in SUSE Documentation</title>
+    <informaltable id="tab.maxsize">
+     <tgroup cols="3">
+      <thead>
+       <row>
+        <entry>File System</entry>
+        <entry>File Size (Bytes)</entry>
+        <entry>File System Size (Bytes)</entry>
+       </row>
+      </thead>
+      <tbody>
+       <row>
+        <entry>Ext2 or Ext3 (1 kB block size)</entry>
+        <entry>2<superscript>34</superscript> (16 GB)</entry>
+        <entry>2<superscript>41</superscript> (2 TB)</entry>
+       </row>
+       <row>
+        <entry>Ext2 or Ext3 (2 kB block size)</entry>
+        <entry>2<superscript>38</superscript> (256 GB)</entry>
+        <entry>2<superscript>43</superscript> (8 TB)</entry>
+       </row>
+      </tbody>
+     </tgroup>
+    </informaltable>
+   </example>
+  </sect2>
+
+  <sect2 id="sec.edrules.tone">
+   <title>Tone, Mood, Voice</title>
+   <para>
+    Maintain a professional tone. Except in casual documents, do not use
+    contractions. Do not use humor. It does not translate well and may be
+    misunderstood by nonnative speakers.
+   </para>
+   <para>
+    Use second person (you) to refer to the reader. Normally the reader is
+    the user or administrator that does the actions described. Do not
+    overuse <quote>you.</quote> It is often understood, especially in
+    directions.
+   </para>
+   <para>
+    Use active voice. Active voice means that the subject of the sentence
+    performs the verb. For example, <quote>The root user performs
+    administrative tasks</quote> is active voice. <quote>Administrative
+    tasks are performed by the root user</quote> is passive voice. Passive
+    voice can be used occasionally if there is a need to place emphasis on
+    the object of the verb or if the doer of the action is unknown. <quote>A
+    SAMBA server must be configured in the network</quote> is an example of
+    proper use of passive voice. The emphasis is on the server, not on the
+    person configuring it.
+   </para>
+  </sect2>
+
+  <sect2 id="sec.edrules.verb">
+   <title>Verbs</title>
+   <para>
+    Use the simple present tense in almost all cases. This also applies for
+    sentences with <quote>if</quote> or <quote>when</quote> clauses.
+    <quote>If you do this, something happens.</quote> <quote>When you do
+    that, something else happens.</quote>
+   </para>
+  </sect2>
+ </sect1>
+ <sect1 id="sec.procs">
+  <title>Creating Procedures</title>
+
+  <para>
+   Procedures are used to describe a task. A procedure consists of several
+   steps that are usually performed sequentially. A procedure environment
+   consists of the following elements:
+  </para>
+
+  <itemizedlist>
+   <listitem>
+    <para>
+     An optional title. If you need to reference the procedure as a whole,
+     set an <sgmltag
+      class="attribute">id</sgmltag>. The title is then
+     used as the label of the reference.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     An introductory phrase establishing the purpose of the procedure. If
+     necessary, add the preconditions of the operation.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Steps and substeps describing what the reader must do. If needed, add
+     an explanatory paragraph, but keep it short. Do not use only one
+     substep in a step or one step in a procedure.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Alternative actions are introduced by a substep environment containing
+     two steps linked by <quote>or.</quote> Each optional step must have a
+     <sgmltag class="attribute"
+     >performance</sgmltag> attribute set to
+     <sgmltag class="attvalue">optional</sgmltag>.
+    </para>
+   </listitem>
+  </itemizedlist>
+
+  <procedure id="pro.useradd">
+   <title>Adding Users with YaST</title>
+   <para>
+    To add new users to a Linux system, perform the following steps:
+   </para>
+   <step>
+    <para>
+     Start the YaST module (<menuchoice> <guimenu>YaST</guimenu>
+     <guimenu>User Management</guimenu> </menuchoice>)
+    </para>
+   </step>
+   <step>
+    <para>
+     Set the filter (type of users).
+    </para>
+   </step>
+   <step>
+    <para>
+     Add the first user:
+    </para>
+    <substeps>
+     <step>
+      <para>
+       Click <guimenu>Add</guimenu> to enter the <guimenu>Add a New
+       User</guimenu> dialog.
+      </para>
+     </step>
+     <step>
+      <para>
+       Enter the user data and click <guimenu>Create</guimenu>.
+      </para>
+     </step>
+    </substeps>
+    <para>
+     Repeat this procedure for each user to add.
+    </para>
+   </step>
+   <step>
+    <para>
+     After the last user has been added, leave the YaST module by clicking
+     <guimenu>Finish</guimenu>.
+    </para>
+   </step>
+  </procedure>
+
+  <para>
+   If you need to structure complex tasks, procedure environments are a
+   means to provide an overview of the whole task and its sequential
+   character. Introduce the steps, substeps, and alternatives by a procedure
+   environment. A step may contain a link to an explanatory subsection
+   providing further details on the step.
+  </para>
+ </sect1>
+ <sect1 id="sec.ce">
+  <title>Presenting Computer Elements</title>
+
+  <para>
+   When documenting software, it is frequently necessary to describe the
+   software and how to interact with it. The way to do this has been
+   standardized for consistency.
+  </para>
+
+  <para>
+   Only specify the software component in ambiguous context. Only put
+   literal user input or output on a separate line when it is too long to be
+   included in the flowing text or is a line that must be added to a file.
+  </para>
+
+  <sect2 id="sec.ce.cmd">
+   <title>Command Presentation</title>
+   <para>
+    When referring to an application, do not use any markup at all:
+   </para>
+   <literallayout>OpenOffice.org is a powerful open source office suite.
+   </literallayout>
+   <para>
+    Linux commands are case-sensitive, so always present them as they appear
+    in the system. Commands can be embedded in the flowing text or presented
+    as part of screen environments or examples. In flowing text, use
+    <sgmltag>command</sgmltag> when referring to an actual command you would
+    use on a command line:
+   </para>
+   <remark>rwalter: update this to a valid example when convenient.</remark>
+   <literallayout>Use <command>OOo</command> to start OpenOffice.org from the command line.
+   </literallayout>
+   <para>
+    Place options inside the command tags. Options can also be used in text,
+    separately from <sgmltag>command</sgmltag>. See
+    <xref linkend="sec.markup.inline.commands"/>.
+   </para>
+   <para>
+    Do not use any markup for commands as part of a
+    <sgmltag>screen</sgmltag> environment. Anything inside this environment
+    appears verbatim.
+   </para>
+  </sect2>
+
+  <sect2 id="sec.ce.var">
+   <title>Variables</title>
+   <para>
+    There are currently two different kinds of variable environments used in
+    SUSE documentation:
+   </para>
+   <itemizedlist>
+    <listitem>
+     <para>
+      Substitutable contents that the user should replace with appropriate
+      values. For example:
+     </para>
+     <literallayout>To list the contents of a directory, execute <command>ls <replaceable>dir</replaceable></command>.</literallayout>
+    </listitem>
+    <listitem>
+     <para>
+      References to names of variables rather than to their value. Example:
+     </para>
+     <literallayout>To select another display manager, start the YaST
+      sysconfig editor and change the value of   
+      <varname>DISPLAYMANAGER</varname>.</literallayout>
+    </listitem>
+   </itemizedlist>
+  </sect2>
+
+  <sect2 id="sec.ce.gui">
+   <title>Describing Graphical User Interfaces</title>
+   <sect3 id="sec.ce.gui.keys">
+    <title>Keys</title>
+    <para>
+     SUSE uses the standard elements and transformations offered by DocBook
+     V. 4.3 and the current XSLT stylesheets by Norman Walsh. For details on
+     key markup, refer to <xref linkend="sec.markup.inline.keys"
+     />.
+    </para>
+    <para>
+     Always use the capitalized version of characters, because this is how
+     they are printed on the keyboard. If you need to refer to a capitalized
+     character, use <keycombo action="simul">
+     <keycap function="shift">Shift</keycap> <keycap>Z</keycap> </keycombo>,
+     for example. Introduce this convention by means of the
+     <quote>Typographical Conventions</quote> section of the introduction.
+    </para>
+    <para>
+     With DocBook V. 4.3, the localization of the identifiers for both
+     modifiers and special keys is handled by DocBook itself. Just use the
+     <sgmltag>keycap</sgmltag> tag and an appropriate
+     <literal>function</literal> value. Find details in
+     <xref
+      linkend="sec.markup.inline.keys"/>.
+    </para>
+   </sect3>
+   <sect3 status="draft" id="sec.ce.gui.guielement">
+    <title>GUI Elements</title>
+    <para>
+     When using labels of GUI elements, do not include ending punctuation
+     like <literal>...</literal> or <literal>:</literal>. Whenever possible,
+     refer to the elements without identifying them as a special type of
+     dialog element. For example, use <quote>Click
+     <guimenu>OK</guimenu></quote> rather than <quote>Click the
+     <guimenu>OK</guimenu> button.</quote> However, some situations require
+     a more specific wording, for example, if a dialog has many different
+     graphical elements.
+    </para>
+    <para>
+     For detailed instructions for the appropriate markup, especially
+     concerning buttons, labels, and menu structures, refer to
+     <xref linkend="sec.markup.inline.menus"/>.
+    </para>
+   </sect3>
+  </sect2>
+
+  <sect2 id="sec.ce.namconv">
+   <title>Naming Conventions</title>
+   <para>
+    SUSE documentation is limited to describing the Linux operating system
+    and open source applications. The following sections summarize the
+    common naming and markup principles that apply to SUSE and openSUSE
+    documentation.
+   </para>
+   <sect3 id="sec.ce.namconf.dir">
+    <title>Directories and Filenames</title>
+    <para>
+     Linux does not know any drive names. Under Linux, everything is
+     considered a file (even a directory is considered a special kind of
+     file). Therefore, the naming and markup conventions are the same for
+     <quote>drives</quote> (for example, hard drives, CD-ROM drives, or
+     floppy drives), directories, or files.
+    </para>
+    <para>
+     The layout for filenames and directory names is the same. See the
+     following example:
+    </para>
+    <literallayout>Open the file <filename>suseconfig</filename> under <filename>/etc</filename>. Access an USB 
+flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
+    <para>
+     Use slashes properly when dealing with file and directory names:
+    </para>
+    <itemizedlist>
+     <listitem>
+      <para>
+       Use a leading slash to indicate that the directory is reached from
+       the root of the file system. If the directory lies below the current
+       working directory, do not use a leading slash.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Do not use a trailing slash to distinguish between a file and a
+       directory. When differentiation is needed, provide it textually.
+      </para>
+     </listitem>
+    </itemizedlist>
+    <para>
+     Linux is a case-sensitive operating system, so use capitals exactly as
+     they appear in the file system. For details on markup, refer to
+     <xref linkend="sec.markup.inline.filenames_and_dirs"/>.
+    </para>
+   </sect3>
+   <sect3 id="sec.ce.namconf.hn">
+    <title>Hostnames and IP Addresses</title>
+    <para>
+     Writers should use a well-defined set of IP addresses, hostnames, and
+     usernames for their network documentation. The values are provided by
+     means of entities (see <xref linkend="sec.entities"/>).
+    </para>
+    <variablelist>
+     <varlistentry>
+      <term>IP Addresses</term>
+      <listitem>
+       <para>
+        Currently, we are using only a class C net (netmask 255.255.255.0)
+        for our examples. To create examples using a larger setup, select
+        addresses from the private network ranges.
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term>Hostnames and Domains</term>
+      <listitem>
+       <para>
+        SUSE uses
+        <systemitem class="fqdomainname"
+        >www.example.com</systemitem>
+        as a domain for most examples, because this is a real domain that
+        was designed for use in documentation. Hostnames are taken from the
+        solar system (such as <systemitem>sun</systemitem> or
+        <systemitem>earth</systemitem>).
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term>Usernames</term>
+      <listitem>
+       <para>
+        SUSE currently uses mascots like
+        <systemitem class="username"
+         >geeko</systemitem>,
+        <systemitem class="username">tux</systemitem>, and
+        <systemitem class="username">wilber</systemitem> as example users.
+        <remark>rwalter: are there more that should be added
+        here?</remark>
+       </para>
+      </listitem>
+     </varlistentry>
+    </variablelist>
+   </sect3>
+  </sect2>
+ </sect1>
+ <sect1 id="sec.entities">
+  <title>Entities</title>
+
+  <para>
+   Entities are a kind of <quote>macro</quote> in XML, but only with text
+   expansion capabilities. They are used for several purposes:
+  </para>
+
+  <itemizedlist>
+   <listitem>
+    <para>
+     Representation of characters that cannot be displayed or entered
+     otherwise.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Integration of external files by entities representing references to
+     their filenames.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Text expansion to any content that is needed.
+    </para>
+   </listitem>
+  </itemizedlist>
+
+  <para>
+   Once an entity is defined, it can be used everywhere. Entities reduce the
+   risk of translation errors and increase consistency because they are
+   translated once and automatically expanded elsewhere.
+  </para>
+
+  <sect2 id="sec.entitities.handling">
+   <title>General Notes on the Handling of Entities</title>
+   <para>
+    SUSE uses a small set of custom entities. This set is localized for each
+    supported language. Find the SUSE set of entities in the file
+    <filename>entity-decl.ent</filename> under each documentation project
+    and each language. When the set has been modified for a new product
+    release, this file must be updated in the supported languages as well.
+   </para>
+   <para>
+    Each header of a SUSE XML file includes the entity declaration file (by
+    means of an entity):
+   </para>
+<screen>&lt;!ENTITY % entities SYSTEM "../entity-decl.ent">
+%entities;
+</screen>
+   <example id="ex.entity">
+    <title>Excerpt from a SUSE entity-decl.ent</title>
+<screen>&lt;!ENTITY<co id="co.decl"/> exampleserver<co id="co.def"/>   "sun<co id="co.val"/>">
+&lt;!ENTITY exampleserverip    "&amp;exampledomainip;.20">
+&lt;!ENTITY exampleserverfq    "&amp;exampleserver;.&amp;exampledomain;"<co id="co.ent"/>>
+</screen>
+    <calloutlist>
+     <callout arearefs="co.decl">
+      <para>
+       Tells DocBook which kind of declaration to expect.
+      </para>
+     </callout>
+     <callout arearefs="co.def">
+      <para>
+       Defines the entity name.
+      </para>
+     </callout>
+     <callout arearefs="co.val">
+      <para>
+       Sets the value to which the processed entity should be expanded.
+      </para>
+     </callout>
+     <callout arearefs="co.ent">
+      <para>
+       Nests an entity in the value.
+      </para>
+     </callout>
+    </calloutlist>
+   </example>
+   <para>
+    A few hints for working with entities in SUSE documentation projects:
+   </para>
+   <itemizedlist>
+    <listitem>
+     <para>
+      If there should be any need for defining special entities (for
+      example, for localization purposes), add the new definitions to the
+      appropriate <filename>entity-decl.ent</filename> file. Never include
+      these definitions in the file header.
+      <phrase condition="internal">Always check with the documentation team
+      members before introducing new entities.</phrase>
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      When translating entities, translate the value, but never change the
+      entity name (see <xref linkend="ex.entity"/>).
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Always use the exact notation of the entities when translating files
+      to avoid processing errors.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Make sure that you use proper UTF-8 encoding when editing and saving
+      the entity declaration file or any of the SUSE XML files.
+     </para>
+    </listitem>
+   </itemizedlist>
+  </sect2>
+
+  <sect2 id="sec.entities.suse">
+   <title>Entities Used in Documentation Projects</title>
+   <para>
+    The following provides some background on the most important entities
+    used in creating documentation for SUSE products. To be able to adjust
+    product names of platform branding even past any deadlines, a set of
+    entities must represent the frequently-changing product names. The same
+    applies to book titles. An <filename>entity-decl.ent</filename> file
+    contains several different categories of entities. These are:
+   </para>
+   <variablelist>
+    <varlistentry>
+     <term>General Entities</term>
+     <listitem>
+      <para>
+       These feature mostly network IP addresses, hostnames, and usernames.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Books</term>
+     <listitem>
+      <para>
+       If possible, any book created by our team has a title entity in case
+       sudden changes are necessary.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Platforms</term>
+     <listitem>
+      <para>
+       To avoid touching our content whenever a hardware vendor rebrands its
+       products, we use entities for all hardware architectures referenced
+       in the books.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Products</term>
+     <listitem>
+      <para>
+       We maintain a list of entities of all SUSE-based product names and
+       some other products and applications for which we write
+       documentation.
+      </para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+   <para>
+    There are several guidelines to consider when working with product
+    entities for SUSE documentation:
+   </para>
+   <variablelist>
+    <varlistentry>
+     <term>Entity Selection</term>
+     <listitem>
+      <para>
+       SUSE uses <literal>&amp;product;</literal> to identify the product
+       for which the documentation is built (the text applies to any
+       product). The value of this entity is set once per release and
+       expands to the name of the current product.
+      </para>
+      <example>
+       <title>Proper use of the <literal>&amp;product;</literal> Entity</title>
+       <para>
+        <literal>&amp;product;</literal> includes openLDAP.
+       </para>
+      </example>
+      <para>
+       If you need to reference a particular product, use the specific
+       entity (plus version if necessary).
+      </para>
+      <example>
+       <title>Context-Based Use of Entities</title>
+       <para>
+        The ext2 file system has been included in the
+        <literal>&amp;suse;</literal> kernel since
+        <literal>&amp;suselinux;</literal> XYZ.
+       </para>
+      </example>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Trademarks</term>
+     <listitem>
+      <note>
+       <title>Trademarks and openSUSE</title>
+       <para>
+        At this point, only internally-produced documentation is required to
+        follow the trademark guidelines. These rules can be skipped for
+        documentation produced by the openSUSE community.
+       </para>
+      </note>
+      <para>
+       Any Novell product referenced in our documentation is trademarked one
+       way or the other. Currently we have entities for SLES, SLED,
+       openSUSE, and the obsolete SUSE Linux stuff. Adhere to the following
+       rules when dealing with these terms:
+      </para>
+      <itemizedlist>
+       <listitem>
+        <para>
+         Never use trademarks in headings.
+        </para>
+       </listitem>
+       <listitem>
+        <para>
+         Only use the trademarked version on the first occurrence of the
+         product's name in a chapter.
+        </para>
+       </listitem>
+      </itemizedlist>
+      <para>
+       Product entities carrying any sort of trademark end in
+       <literal>&amp;reg;</literal>.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Acronyms</term>
+     <listitem>
+      <note>
+       <title>Acronyms and openSUSE</title>
+       <para>
+        At this point, only internally-produced documentation is required to
+        follow the acronym guidelines. These rules can be skipped for
+        documentation produced by the openSUSE community.
+       </para>
+      </note>
+      <para>
+       Avoid using acronyms for products because they are not the proper
+       product names. However, there might be occasions where you just need
+       to have an acronym. In these cases, use the acronym entity that
+       always ends in <literal>a;</literal>, such as
+       <literal>&amp;sleda;</literal> or <literal>&amp;slesa;</literal>.
+      </para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+  </sect2>
+ </sect1>
+<!-- *********************************************************** -->
+<!-- *********************************************************** -->
+ <sect1 id="sec.index">
+  <title>Indexing</title>
+
+  <remark>rwalter: rework to improve clarity by replacing subitem and
+   sub-subitem with docbook terminology. also describe placement for index
+   items and when to use ranges.</remark>
+
+  <para>
+   An index is one of the most important parts of a book. Index terms should
+   be used to provide the reader with access to useful information. Insert
+   the term as close to the relevant text as possible to ensure that the
+   page reference points to the correct location. When more than a few
+   paragraphs contain information that should be indexed under this term,
+   use a page range. A user referring to the index can then get a quick
+   overview of how much information is provided at the different locations
+   and have a better chance of finding needed information quickly. Up to
+   three levels of index items can be used.
+  </para>
+
+  <para>
+   Only index text that really provides useful information to the reader.
+   For example, a section about configuring an application should be indexed
+   to the application, but a passing reference to the application should not
+   be indexed at all. Try to think like a potential user of the manual. Is a
+   user likely to be looking for that information? Some examples of things
+   that should not be indexed include <quote>For More Information</quote>
+   sections, things mentioned in the abstract of a chapter (index where it
+   is actually discussed, not where it is mentioned in the abstract), and a
+   command used for some other purpose (do not index <command>cd</command>
+   where it is used to change directories as part of a procedure, but do
+   index a section discussing appropriate usage of the command itself).
+  </para>
+
+  <para>
+   Select the terms to use carefully because consistency is important. Write
+   nouns in the plural and verbs in a gerund form (-ing). Capitalize terms
+   only if they would be capitalized if used in the middle of a sentence.
+  </para>
+
+  <para>
+   When selecting terms, try to consider what else is included in the
+   manual. If the manual only includes a small amount of information for the
+   topic, general index items are probably more appropriate. If indexing a
+   chapter about an application, much more specific index terms are needed
+   so the user can find exactly the information he or she needs. Also
+   consider that the user might not know what something is called. It is not
+   helpful only to index Konqueror under its name if the user might want a
+   Web browser and not know what applications function as a Web browser. In
+   a case like that, you may need to index general information both places.
+  </para>
+
+  <para>
+   If you have time when working on indexing, check the built index to see
+   how well your terms integrate with existing items. Try to make your terms
+   consistent with other items used. A final index <quote>polishing</quote>
+   of an entire index is part of the editing and layout process. A few tips
+   for evaluating and adjusting the index of an entire document:
+  </para>
+
+  <itemizedlist>
+   <listitem>
+    <para>
+     If a term has six or more page references, check those references and
+     see if it is possible to create subitems.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     If a term has only a single subitem (or a subitem has only a single
+     sub-subitem), consider deleting the subitem.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Check for spelling errors or inconsistencies that result in multiple
+     items in the index.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     If there are copious third-level entries or third-level entries with
+     too many references, consider adjusting the index structure to use a
+     more specific primary term.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Check all <emphasis>see</emphasis> and <emphasis>see also</emphasis>
+     references for consistency. An item should not have both a page and a
+     see reference. Page references and <emphasis>see also</emphasis>
+     together is acceptable but should be used sparingly.
+    </para>
+   </listitem>
+  </itemizedlist>
+
+  <example id="ex.indexplain">
+   <title>A Plain Index Entry</title>
+<screen>&lt;para>
+  To configure DNS&lt;indexterm>
+    &lt;primary>DNS&lt;/primary>
+    &lt;secondary>configuring&lt;/secondary>
+  &lt;/indexterm> use ...
+&lt;/para></screen>
+  </example>
+
+  <example id="ex.index.range">
+   <title>An Index Range</title>
+<screen>&lt;indexterm <emphasis role="bold">class="startofrange" id="idx.Installation"</emphasis>>
+  &lt;primary>installing&lt;/primary>
+    &lt;/indexterm>
+...
+&lt;indexterm <emphasis role="bold">class="endofrange" startref="idx.Installation"</emphasis>/></screen>
+  </example>
+
+  <example id="ex.index.see">
+   <title>A See Index Entry</title>
+<screen>&lt;indexterm>
+  &lt;primary>installing&lt;/primary>
+    &lt;secondary>boot loaders&lt;/secondary>
+     <emphasis role="bold">&lt;see>GRUB&lt;/see</emphasis>>
+&lt;/indexterm></screen>
+  </example>
+ </sect1>
+ <sect1 id="sec.gloss">
+  <title>Preparing Glossary Entries</title>
+
+  <para>
+   An optional glossary contains terms and their definitions. Make sure that
+   the glossary entries are appropriate to the intended audience. Define
+   unfamiliar terms and specialized jargon.
+  </para>
+
+  <para>
+   Define infinitive forms of verbs and singular nouns. Use lowercase for
+   the term unless it is a proper noun.
+  </para>
+
+  <para>
+   Use cross-references to link acronyms with their written out forms.
+   Define the written out form. Use a <emphasis>See</emphasis> reference for
+   the acronym form to link it to the defined written out form.
+  </para>
+
+  <para>
+   The markup for a glossary entry is shown in
+   <xref linkend="ex.glossary"/>.
+  </para>
+
+  <example id="ex.glossary">
+   <title>A Typical Example of a Glossary</title>
+<screen>&lt;glossary>
+ &lt;title>Glossary&lt;/title>
+ &lt;glossdiv>
+  &lt;title>D&lt;/title>
+  &lt;glossentry>
+   &lt;glossterm>DocBook&lt;/glossterm>
+   &lt;glossdef>
+    &lt;para>
+     DocBook provides a system for writing structured documents 
+     using SGML or XML. It is particularly well-suited to books
+     and papers about computer hardware and software, though it
+     is by no means limited to them.
+    &lt;/para>
+   &lt;/glossdef>
+  &lt;/glossentry>
+ &lt;/glossdiv>
+&lt;/glossary>
+</screen>
+  </example>
+ </sect1>
+ <sect1 id="sec.term">
+  <title>Spelling Terms</title>
+
+  <para>
+   Because multiple spellings of a variety of words and terms are in common
+   usage, we have standardized on a variant to use in our documentation.
+   Terms in this table are capitalized as they would be in the middle of a
+   sentence. Some words listed here are provided because they are often
+   written incorrectly by nonnative speakers. For words not listed here,
+   <citetitle>Merriam-Webster's Collegiate Dictionary, Eleventh
+   Edition</citetitle> is considered authoritative.
+  </para>
+
+  <table>
+   <title>Terms Common in SUSE Documentation</title>
+   <tgroup cols="2">
+    <thead>
+     <row>
+      <entry>Word or Phrase</entry>
+      <entry>Usage Guideline</entry>
+     </row>
+    </thead>
+    <tbody>
+     <row>
+      <entry>3D</entry>
+      <entry>no hyphen, capitalize D</entry>
+     </row>
+     <row>
+      <entry>32-bit</entry>
+      <entry>hyphened, lowercase B</entry>
+     </row>
+     <row>
+      <entry>address book</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>back-end</entry>
+      <entry>hyphenate</entry>
+     </row>
+     <row>
+      <entry>back up</entry>
+      <entry>verb</entry>
+     </row>
+     <row>
+      <entry>backup</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
+      <entry>Bash</entry>
+      <entry>capitalize according to the GNU Bash manual</entry>
+     </row>
+     <row>
+      <entry>boot disk</entry>
+      <entry>disk for starting the system</entry>
+     </row>
+     <row>
+      <entry>boot loader</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>cannot</entry>
+      <entry>one word</entry>
+     </row>
+     <row>
+      <entry>case-sensitive, case-insensitive</entry>
+      <entry>always hyphenate</entry>
+     </row>
+     <row>
+      <entry>certificate authority</entry>
+      <entry>acronym is CA; not <quote>certification authority</quote>
+      </entry>
+     </row>
+     <row>
+      <entry>check box</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>checklist</entry>
+      <entry>one word</entry>
+     </row>
+     <row>
+      <entry>check mark</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>chipset</entry>
+      <entry>one word</entry>
+     </row>
+     <row>
+      <entry>client/server</entry>
+      <entry>a slash is accepted here</entry>
+     </row>
+     <row>
+      <entry>command line</entry>
+      <entry>never hyphenated</entry>
+     </row>
+     <row>
+      <entry>control center</entry>
+      <entry>a generic term as in the YaST control center or the KDE control
+       center</entry>
+     </row>
+     <row>
+      <entry>deselect</entry>
+      <entry>verb</entry>
+     </row>
+     <row>
+      <entry>DHCP</entry>
+      <entry>capitalized</entry>
+     </row>
+     <row>
+      <entry>dial-up</entry>
+      <entry>use only as an adjective</entry>
+     </row>
+     <row>
+      <entry>DNS</entry>
+      <entry> do not use DNS name server; capitalize the acronym, but
+       lowercase the expansion </entry>
+     </row>
+     <row>
+      <entry>double-click</entry>
+      <entry>hyphenate, do not use with <quote>on</quote>
+      </entry>
+     </row>
+     <row>
+      <entry>e-mail</entry>
+      <entry>always hyphenated </entry>
+     </row>
+     <row>
+      <entry>Ethernet</entry>
+      <entry>capitalized </entry>
+     </row>
+     <row>
+      <entry>facilitate</entry>
+      <entry>avoid using</entry>
+     </row>
+     <row>
+      <entry>filename</entry>
+      <entry>one word</entry>
+     </row>
+     <row>
+      <entry>file server</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>file system</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>framebuffer</entry>
+      <entry>one word</entry>
+     </row>
+     <row>
+      <entry>front-end</entry>
+      <entry>hyphenate</entry>
+     </row>
+     <row>
+      <entry>The GIMP</entry>
+      <entry>project standard for application</entry>
+     </row>
+     <row>
+      <entry>GNOME</entry>
+      <entry>project standard for the desktop</entry>
+     </row>
+     <row>
+      <entry>GRUB</entry>
+      <entry>capitalize</entry>
+     </row>
+     <row>
+      <entry>GUI</entry>
+      <entry>capitalized</entry>
+     </row>
+     <row>
+      <entry>hard disk</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>hard link</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>have to</entry>
+      <entry>use "need to" or "must" instead</entry>
+     </row>
+     <row>
+      <entry>home page</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>hostname</entry>
+      <entry>one word</entry>
+     </row>
+     <row>
+      <entry>hotplug, hotplugging, hotpluggable</entry>
+      <entry>note spellings</entry>
+     </row>
+     <row>
+      <entry>hypervisor</entry>
+      <entry>one word, lowercase</entry>
+     </row>
+     <row>
+      <entry>infrared</entry>
+      <entry>one word, no hyphen</entry>
+     </row>
+     <row>
+      <entry>installation source</entry>
+      <entry>correct term for valid sources of installation data for SUSE
+       Linux and openSUSE; when reasonable, mention that online repositories
+       that are valid installation sources are available</entry>
+     </row>
+     <row>
+      <entry>Internet</entry>
+      <entry>capitalize first letter</entry>
+     </row>
+     <row>
+      <entry>intranet</entry>
+      <entry>lowercase</entry>
+     </row>
+     <row>
+      <entry>I/O port</entry>
+      <entry>slash in I/O</entry>
+     </row>
+     <row>
+      <entry>IPsec</entry>
+      <entry>note capitalization</entry>
+     </row>
+     <row>
+      <entry>journaling</entry>
+      <entry>one L</entry>
+     </row>
+     <row>
+      <entry>Kdump</entry>
+      <entry>capitalize if application</entry>
+     </row>
+     <row>
+      <entry>kdump</entry>
+      <entry>lowercase if command</entry>
+     </row>
+     <row>
+      <entry>Kernel</entry>
+      <entry>capitalize</entry>
+     </row>
+     <row>
+      <entry>Kprobes</entry>
+      <entry>capitalize if application</entry>
+     </row>
+     <row>
+      <entry>kprobes</entry>
+      <entry>lowercase if command</entry>
+     </row>
+     <row>
+      <entry>left-click</entry>
+      <entry>hyphenate, do not follow with <quote>on</quote>
+      </entry>
+     </row>
+     <row>
+      <entry>local host, localhost</entry>
+      <entry>normally two words, one word for default name of the local
+      host</entry>
+     </row>
+     <row>
+      <entry>log file</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>log in, log out, login</entry>
+      <entry>two words for verbs, one for noun; do not use <quote>log
+       on</quote> or <quote>log off</quote>
+      </entry>
+     </row>
+     <row>
+      <entry>loopback device</entry>
+      <entry>loopback is one word and not hyphenated</entry>
+     </row>
+     <row>
+      <entry>mail server</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>Maildir</entry>
+      <entry>note capitalization; this is a specific format, not a generic reference to the
+       directory in which mail is stored</entry>
+     </row>
+     <row>
+      <entry>mainboard</entry>
+      <entry>one word</entry>
+     </row>
+     <row>
+      <entry>man page</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>Mbox</entry>
+      <entry>note capitalization</entry>
+     </row>
+     <row>
+      <entry>metadata</entry>
+      <entry>one word</entry>
+     </row>
+     <row>
+      <entry>middle-click</entry>
+      <entry>hyphenate, do not follow with "on"</entry>
+     </row>
+     <row>
+      <entry>mount point</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>mouse button</entry>
+      <entry>a mouse has buttons, not keys</entry>
+     </row>
+     <row>
+      <entry>multitasking</entry>
+      <entry>one word, no hyphen</entry>
+     </row>
+     <row>
+      <entry>multiuser</entry>
+      <entry>do not hyphenate</entry>
+     </row>
+     <row>
+      <entry>name server</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>NFS</entry>
+      <entry>an NFS server, an NFS client, etc.</entry>
+     </row>
+     <row>
+      <entry>NIS</entry>
+      <entry>a NIS client, a NIS server, etc.</entry>
+     </row>
+     <row>
+      <entry>paravirtualized</entry>
+      <entry>one word</entry>
+     </row>
+     <row>
+      <entry>pathname</entry>
+      <entry>one word. can often be replaced with
+      <quote>path</quote>
+      </entry>
+     </row>
+     <row>
+      <entry>plug-in</entry>
+      <entry>hyphenate noun or adjective</entry>
+     </row>
+     <row>
+      <entry>pop-up</entry>
+      <entry>hyphenate</entry>
+     </row>
+     <row>
+      <entry>port</entry>
+      <entry>on port (not <quote>at port</quote>)</entry>
+     </row>
+     <row>
+      <entry>PostScript</entry>
+      <entry>use this capitalization</entry>
+     </row>
+     <row>
+      <entry>print queue</entry>
+      <entry>print not printer</entry>
+     </row>
+     <row>
+      <entry>print spooler</entry>
+      <entry>print not printer</entry>
+     </row>
+     <row>
+      <entry>proxy</entry>
+      <entry>use as a noun only</entry>
+     </row>
+     <row>
+      <entry>RAM disk</entry>
+      <entry>two words, note capitalization</entry>
+     </row>
+     <row>
+      <entry>README</entry>
+      <entry>Use all caps for general references because this is the most
+       common form in Linux; use file's capitalization for specific
+       references</entry>
+     </row>
+     <row>
+      <entry>read-only</entry>
+      <entry>hyphenate</entry>
+     </row>
+     <row>
+      <entry>reconfigure</entry>
+      <entry>one word, no hyphen</entry>
+     </row>
+     <row>
+      <entry>re-create</entry>
+      <entry>hyphenate</entry>
+     </row>
+     <row>
+      <entry>right-click</entry>
+      <entry>hyphenate, do not follow with <quote>on</quote>
+      </entry>
+     </row>
+     <row>
+      <entry>RPM</entry>
+      <entry>capitalized</entry>
+     </row>
+     <row>
+      <entry>runlevel</entry>
+      <entry>one word</entry>
+     </row>
+     <row>
+      <entry>runtime</entry>
+      <entry>one word, no hyphen</entry>
+     </row>
+     <row>
+      <entry>screen shot</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>screen saver</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>SCSI</entry>
+      <entry>an SCSI device</entry>
+     </row>
+     <row>
+      <entry>set up, setup</entry>
+      <entry>two words as verb; one word as adjective or noun</entry>
+     </row>
+     <row>
+      <entry>slider</entry>
+      <entry>not slidebar or other variations</entry>
+     </row>
+     <row>
+      <entry>spec file</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>SSH</entry>
+      <entry>capitalized</entry>
+     </row>
+     <row>
+      <entry>stand-alone</entry>
+      <entry>hyphenate</entry>
+     </row>
+     <row>
+      <entry>start-up</entry>
+      <entry>hyphenate</entry>
+     </row>
+     <row>
+      <entry>status bar</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>tarball</entry>
+      <entry>one word</entry>
+     </row>
+     <row>
+      <entry>taskbar</entry>
+      <entry>one word</entry>
+     </row>
+     <row>
+      <entry>TFTP</entry>
+      <entry>capitalized</entry>
+     </row>
+     <row>
+      <entry>time stamp</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>title bar</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>toolbar</entry>
+      <entry>one word</entry>
+     </row>
+     <row>
+      <entry>tool tip</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>uninstall</entry>
+      <entry>no hyphen, never de-install</entry>
+     </row>
+     <row>
+      <entry>unselected</entry>
+      <entry>the state of not being selected</entry>
+     </row>
+     <row>
+      <entry>username</entry>
+      <entry>one word</entry>
+     </row>
+     <row>
+      <entry>utilize</entry>
+      <entry>use <quote>use</quote>
+      </entry>
+     </row>
+     <row>
+      <entry>virtualization</entry>
+      <entry>lowercase</entry>
+     </row>
+     <row>
+      <entry>VLAN</entry>
+      <entry>capitalize</entry>
+     </row>
+     <row>
+      <entry>Web</entry>
+      <entry>capitalize first letter</entry>
+     </row>
+     <row>
+      <entry>Web page</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>Web server</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>Web site</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>whether</entry>
+      <entry>do not add <quote>or not</quote>
+      </entry>
+     </row>
+     <row>
+      <entry>wild card</entry>
+      <entry>two words</entry>
+     </row>
+     <row>
+      <entry>X Window System</entry>
+      <entry>do not shorten to X Windows, note capitalization</entry>
+     </row>
+     <row>
+      <entry>Xen</entry>
+      <entry>use this capitalization</entry>
+     </row>
+     <row>
+      <entry>Xend</entry>
+      <entry>capitalized</entry>
+     </row>
+     <row>
+      <entry>Zypper</entry>
+      <entry>capitalize if application</entry>
+     </row>
+     <row>
+      <entry>zypper</entry>
+      <entry>lowercase if command</entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </table>
+ </sect1>
+ <sect1 id="sec.comments">
+  <title>Inserting Comments</title>
+
+  <para>
+   Use these standard comment and remark formats to simplify editing and
+   translation.
+  </para>
+
+  <sect2 id="sec.comments.remark">
+   <title>Remarks</title>
+   <para>
+    Remarks are used for the majority of editorial comments. It is possible
+    to have them be visible in the built document, improving the editing
+    process. Remarks must be placed before or after a para but inside
+    section tags.
+   </para>
+   <para>
+    Include a <sgmltag>role</sgmltag> to show the importance and type of
+    remark. Available roles and their uses are:
+   </para>
+   <variablelist>
+    <varlistentry>
+     <term>xml</term>
+     <listitem>
+      <para>
+       This type of remark is used for validation issues and questions and
+       comments regarding markup (wrong tag, validation problems the
+       commenter cannot resolve without help, etc.).
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>layout</term>
+     <listitem>
+      <para>
+       Use this for remarks related to the layout. For example, use it for
+       comments suggesting a change in list type or those related to line
+       break problems in the output.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>structural</term>
+     <listitem>
+      <para>
+       Structural remarks relate to how the text is put together. It can be
+       about content that should be placed elsewhere or the level of
+       headings.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>clarity</term>
+     <listitem>
+      <para>
+       This role should be used when text is unclear or changes are proposed
+       to improve the wording.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>needinfo</term>
+     <listitem>
+      <para>
+       The author should use this role to report when he or she is waiting
+       for information from a developer or other person or to request
+       information.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>trans</term>
+     <listitem>
+      <para>
+       Use this for comments to translators.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>generic</term>
+     <listitem>
+      <para>
+       Use this role for all remarks that do not fit into one of the other
+       categories.
+      </para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+   <para>
+    The writer of the remark should start the remark with his or her
+    username followed by a colon (:). Others responding to the remark should
+    insert their username, a colon, and comments inside the tags but
+    starting on a new line. Comments should be deleted by the original
+    writer when they consider the issue resolved. The following is an
+    example remark:
+   </para>
+<screen>&lt;remark role="needinfo">tux: couldn't find the option for foo
+geeko: see /usr/share/doc/foo.html&lt;/remark></screen>
+  </sect2>
+
+  <sect2 id="sec.comments.xmlcomments">
+   <title>XML Comments</title>
+   <para>
+    XML comments are primarily used for temporarily disabling portions of
+    text. Because they can appear at any point in a file, they can also be
+    used to point the reader of a remark to the appropriate point in a text.
+   </para>
+   <para>
+    The final use of comments is to mark changes made for layout reasons.
+    The following is an example of a layout comment.
+   </para>
+<screen>&lt;!--layout tux: split para --></screen>
+   <tip>
+    <title>Valid Comments</title>
+    <para>
+     Do not use <literal>--</literal> in comments. The use of
+     <literal>--</literal> causes errors.
+    </para>
+   </tip>
+  </sect2>
+ </sect1>
+ <appendix id="app.markup">
+  <title>Markup Conventions</title>
+  <para>
+   SUSE documentation uses the markup described here to create the source
+   XML files. These files are then used to create the final document
+   formats, such as HTML and PDF.
+  </para>
+  <sect1 id="sec.markup.conv">
+   <title>Use of Identifiers</title>
+
+   <orderedlist>
+    <listitem>
+     <para>
+      Always use an <sgmltag>id</sgmltag> attribute in parts, chapters,
+      appendixes, sections, figures, and examples. They are often used in
+      other elements as well, such as tables and procedures.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Only use ASCII characters in IDs to avoid processing problems.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Insert a prefix. This prefix is determined by the element to which the
+      <sgmltag>id</sgmltag> attribute belongs. See
+      <xref linkend="tab.abbreviations"/>.
+     </para>
+     <table id="tab.abbreviations">
+      <title>Abbreviations for Different Elements in an <sgmltag>id</sgmltag> Attribute</title>
+      <tgroup cols="2">
+       <thead>
+        <row>
+         <entry>Element</entry>
+         <entry>Abbreviation</entry>
+        </row>
+       </thead>
+       <tbody>
+        <row>
+         <entry><sgmltag>appendix</sgmltag>
+         </entry>
+         <entry><sgmltag class="attvalue">app</sgmltag>
+         </entry>
+        </row>
+        <row>
+         <entry><sgmltag>book</sgmltag>
+         </entry>
+         <entry><sgmltag class="attvalue">book</sgmltag>
+         </entry>
+        </row>
+        <row>
+         <entry><sgmltag>chapter</sgmltag>
+         </entry>
+         <entry><sgmltag class="attvalue">cha</sgmltag>
+         </entry>
+        </row>
+<!--
+	<row>
+	<entry><sgmltag>cmdsynopsis</sgmltag>
+       </entry>
+	<entry><sgmltag class="attvalue">cmds</sgmltag>
+       </entry>
+       </row>
+	-->
+        <row>
+         <entry><sgmltag>example</sgmltag>
+         </entry>
+         <entry><sgmltag class="attvalue">ex</sgmltag>
+         </entry>
+        </row>
+        <row>
+         <entry><sgmltag>figure</sgmltag>
+         </entry>
+         <entry><sgmltag class="attvalue">fig</sgmltag>
+         </entry>
+        </row>
+        <row>
+         <entry><sgmltag>glossary</sgmltag>
+         </entry>
+         <entry><sgmltag class="attvalue">glo</sgmltag>
+         </entry>
+        </row>
+        <row>
+         <entry><sgmltag>glossterm</sgmltag>
+         </entry>
+         <entry><sgmltag class="attvalue">gt</sgmltag>
+         </entry>
+        </row>
+        <row>
+         <entry><sgmltag>itemizedlist</sgmltag>
+         </entry>
+         <entry><sgmltag class="attvalue">il</sgmltag>
+          <footnote id="fn.vl">
+           <para>
+            Insert an <sgmltag>id</sgmltag> attribute only when you also put
+            a <sgmltag>title</sgmltag> element inside this list.
+           </para>
+          </footnote>
+         </entry>
+        </row>
+        <row>
+         <entry><sgmltag>listitem</sgmltag>
+         </entry>
+         <entry><sgmltag class="attvalue">it</sgmltag>
+         </entry>
+        </row>
+        <row>
+         <entry><sgmltag>indexterm</sgmltag>
+         </entry>
+         <entry><sgmltag class="attvalue">idx</sgmltag>
+          <footnote>
+           <para>
+            Only use it if you create index ranges
+           </para>
+          </footnote>
+         </entry>
+        </row>
+        <row>
+         <entry><sgmltag>orderedlist</sgmltag>
+         </entry>
+         <entry><sgmltag class="attvalue">ol</sgmltag><footnoteref linkend="fn.vl"/>
+         </entry>
+        </row>
+        <row>
+         <entry><sgmltag>part</sgmltag>
+         </entry>
+         <entry><sgmltag class="attvalue">part</sgmltag>
+         </entry>
+        </row>
+        <row>
+         <entry><sgmltag>procedure</sgmltag>
+         </entry>
+         <entry><sgmltag class="attvalue">pro</sgmltag>
+         </entry>
+        </row>
+<!--	<row>
+	 <entry><sgmltag>qandaset</sgmltag>
+	 </entry>
+	 <entry><sgmltag class="attvalue">qset</sgmltag>
+	 </entry>
+	</row>
+	<row>
+	 <entry><sgmltag>qandadiv</sgmltag>
+	 </entry>
+	 <entry><sgmltag class="attvalue">qdiv</sgmltag>
+	 </entry>
+	</row>
+	<row>
+	 <entry><sgmltag>qandaentry</sgmltag>
+	 </entry>
+	 <entry><sgmltag class="attvalue">qa</sgmltag>
+	 </entry>
+	</row>-->
+        <row>
+         <entry><sgmltag>sect1</sgmltag>, <sgmltag>sect2</sgmltag>, etc.</entry>
+         <entry><sgmltag class="attvalue">sec</sgmltag>
+         </entry>
+        </row>
+        <row>
+         <entry><sgmltag>set</sgmltag>
+         </entry>
+         <entry><sgmltag class="attvalue">set</sgmltag>
+         </entry>
+        </row>
+        <row>
+         <entry><sgmltag>step</sgmltag>
+         </entry>
+         <entry><sgmltag class="attvalue">st</sgmltag>
+         </entry>
+        </row>
+        <row>
+         <entry><sgmltag>table</sgmltag>
+         </entry>
+         <entry><sgmltag class="attvalue">tab</sgmltag>
+         </entry>
+        </row>
+        <row>
+         <entry><sgmltag>variablelist</sgmltag>
+         </entry>
+         <entry><sgmltag class="attvalue">vl</sgmltag>
+<!--<footnoteref linkend="fn.vl"/>-->
+         </entry>
+        </row>
+        <row>
+         <entry><sgmltag>varlistentry</sgmltag>
+         </entry>
+         <entry><sgmltag class="attvalue">vle</sgmltag>
+         </entry>
+        </row>
+       </tbody>
+      </tgroup>
+     </table>
+    </listitem>
+    <listitem>
+     <para>
+      Identify a chapter with short, easy-to-remember English labels, like
+      <sgmltag class="attvalue">inst_yast</sgmltag> for a chapter or section
+      about YaST installation.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Each section inherits the label of its parent plus a unique part that
+      characterizes it. For example: <literal>sec.inst_yast</literal> might
+      have a subsection labeled <literal>sec.inst_yast.lang</literal>. Other
+      elements with IDs inherit the ID of the parent chapter. For example, a
+      table in this chapter about foo could have the ID
+      <literal>tab.inst_yast.foo</literal>.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Separate the prefix and the following parts with a dot
+      (<literal>.</literal>). Do not use colons (<literal>:</literal>),
+      semicolons (<literal>;</literal>), or other <quote>special
+      characters.</quote> The underbar (<literal>_</literal>) character is
+      allowed.
+     </para>
+     <example>
+      <title>Typical Examples of <sgmltag class="attribute">id</sgmltag> Values</title>
+<screen>id="sec.yast.installation"
+id="cha.yast"
+id="tab.yast.sources"</screen>
+     </example>
+    </listitem>
+   </orderedlist>
+  </sect1>
+  <sect1 id="sec.markup.structxml">
+   <title>The Book Structure</title>
+
+   <para>
+    SUSE follows the definition of the DocBook DTD. For more detailed
+    descriptions about book elements, refer to the TDG sections listed in
+    <xref linkend="tab.bookstructure"/>.
+   </para>
+
+   <table id="tab.bookstructure">
+    <title>Elements Used in a SUSE Book</title>
+    <tgroup cols="2">
+     <thead>
+      <row>
+       <entry>Element</entry>
+       <entry>Link to TDG</entry>
+      </row>
+     </thead>
+     <tbody>
+      <row>
+       <entry><sgmltag>appendix</sgmltag>
+       </entry>
+       <entry><ulink url="http://www.docbook.org/tdg/en/html/appendix.html"/>
+       </entry>
+      </row>
+      <row>
+       <entry><sgmltag>book</sgmltag>
+       </entry>
+       <entry><ulink url="http://www.docbook.org/tdg/en/html/book.html"/>
+       </entry>
+      </row>
+      <row>
+       <entry><sgmltag>chapter</sgmltag>
+       </entry>
+       <entry><ulink url="http://www.docbook.org/tdg/en/html/chapter.html"/>
+       </entry>
+      </row>
+      <row>
+       <entry><sgmltag>glossary</sgmltag>
+       </entry>
+       <entry><ulink url="http://www.docbook.org/tdg/en/html/glossary.html"/>
+       </entry>
+      </row>
+      <row>
+       <entry><sgmltag>part</sgmltag>
+       </entry>
+       <entry><ulink url="http://www.docbook.org/tdg/en/html/part.html"/>
+       </entry>
+      </row>
+      <row>
+       <entry><sgmltag>preface</sgmltag>
+       </entry>
+       <entry><ulink url="http://www.docbook.org/tdg/en/html/preface.html"/>
+       </entry>
+      </row>
+      <row>
+       <entry><sgmltag>sect1</sgmltag>
+       </entry>
+       <entry><ulink url="http://www.docbook.org/tdg/en/html/sect1.html"/>
+       </entry>
+      </row>
+     </tbody>
+    </tgroup>
+   </table>
+  </sect1>
+<!-- ********************************************************* -->
+  <sect1 id="sec.markup.block">
+   <title>Block Structures</title>
+
+   <para>
+    Block elements include figures, tables, and sections. These elements
+    usually create a line break before and after them.
+   </para>
+
+   <sect2 id="sec.markup.block.figures">
+    <title>Figures</title>
+    <variablelist>
+     <varlistentry>
+      <term><sgmltag>figure</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/figure.html"/>
+       </para>
+       <para>
+        A figure is a formal example with a title. Figures often contain
+        graphics or other large display elements. Frequently, they get IDs
+        and are referenced from the text with <sgmltag>xref</sgmltag> or
+        <sgmltag>link</sgmltag>.
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term><sgmltag>imageobject</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/imageobject.html"/>
+       </para>
+       <para>
+        An <sgmltag>imageobject</sgmltag> is a wrapper containing
+        <sgmltag>imagedata</sgmltag> and its associated meta information.
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term><sgmltag>imagedata</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/imageobject.html"/>
+       </para>
+       <para>
+        This element points to an external entity containing graphical image
+        data.
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term><sgmltag>mediaobject</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/mediaobject.html"/>
+       </para>
+       <para>
+        This element contains a set of alternative <quote>media
+        objects</quote>. In DocBook V3.1, three types of external objects
+        are defined: <sgmltag>videoobject</sgmltag>s,
+        <sgmltag>audioobject</sgmltag>s, and
+        <sgmltag>imageobject</sgmltag>s. Additional textual descriptions may
+        be provided with <sgmltag>textobject</sgmltag>s.
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term><sgmltag>screenshot</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/screenshot.html"/>
+       </para>
+       <para>
+        A <sgmltag>screenshot</sgmltag> is a graphical environment for
+        displaying an image of what the user might see on a computer screen.
+        It is often used to display application screen shots, dialog boxes,
+        and other components of a graphical user interface.
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term><sgmltag>textobject</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/textobject.html"/>
+       </para>
+       <para>
+        A <sgmltag>textobject</sgmltag> is a wrapper containing a textual
+        description of a media object and its associated metadata.
+        <sgmltag>textobject</sgmltag>s are only allowed in
+        <sgmltag>mediaobject</sgmltag>s as a fallback option. They cannot be
+        the primary content.
+       </para>
+      </listitem>
+     </varlistentry>
+    </variablelist>
+    <para>
+     Always assign an <sgmltag class="attribute">id</sgmltag> attribute to a
+     <sgmltag>figure</sgmltag> element.
+    </para>
+    <para>
+     Provide an appropriate image width. Future versions may contain SVG
+     (Scalable Vector Graphics) images.
+    </para>
+<screen>&lt;figure id="fig.foo">
+  &lt;title>A Foo Picture&lt;/title>
+  &lt;screenshot>
+    &lt;mediaobject>
+      &lt;imageobject role="latex">
+       &lt;imagedata fileref="k3b_main.eps" width="80%" format="EPS"/>
+      &lt;/imageobject>
+      &lt;imageobject role="html">
+       &lt;imagedata fileref="k3b_main.png" width="75%" format="PNG"/>
+      &lt;/imageobject>
+    &lt;/mediaobject>
+  &lt;/screenshot>
+&lt;/figure></screen>
+   </sect2>
+
+   <sect2 id="sec.markup.block.examples">
+    <title>Examples</title>
+    <variablelist>
+     <varlistentry>
+      <term><sgmltag>example</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/example.html"/>
+       </para>
+       <para>
+        <sgmltag>example</sgmltag> is a formal example with a title.
+        Examples often contain program listings or other large, block
+        elements. Frequently, they have IDs and are referenced from the text
+        with <sgmltag>xref</sgmltag> or <sgmltag>link</sgmltag>.
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term><sgmltag>screen</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/screen.html"/>
+       </para>
+       <para>
+        A <sgmltag>screen</sgmltag> is a verbatim environment for displaying
+        text that the user might see on a computer terminal. It is often
+        used to display the results of a command.
+       </para>
+      </listitem>
+     </varlistentry>
+    </variablelist>
+    <para>
+     Always insert an <sgmltag class="attribute">id</sgmltag> attribute
+     inside an <sgmltag>example</sgmltag> element.
+    </para>
+    <para>
+     Be careful with the <sgmltag>screen</sgmltag> element: Always begin the
+     code after the start tag and omit whitespaces before the end tag. Do
+     not indent the code. Always start in the first row.
+    </para>
+<screen>&lt;example id="ex.foo">
+  &lt;title>A clever presentation of &lt;command>foo&lt;/command>&lt;/title>
+  &lt;screen>#!/bin/bash
+echo "Hello foo"&lt;/screen>
+&lt;/example></screen>
+    <para>
+     If you need line numbering, insert the attribute
+     <sgmltag class="attribute"
+     >linenumbering</sgmltag> with the value
+     <sgmltag class="attvalue">numbered</sgmltag>. Do not use hardcoded line
+     numbers in the <sgmltag>screen</sgmltag> environment.
+    </para>
+<screen>&lt;example id="ex.foo">
+  &lt;title>A clever presentation of &lt;command>foo&lt;/command>&lt;/title>
+  &lt;screen <emphasis role="bold">linenumbering="numbered"</emphasis>>#!/bin/bash
+echo "Hello foo"&lt;/screen>
+&lt;/example></screen>
+   </sect2>
+
+   <sect2 id="sec.markup.block.callouts">
+    <title>Callouts</title>
+    <variablelist>
+     <varlistentry>
+      <term><sgmltag>callout</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/callout.html"/>
+       </para>
+       <para>
+        A <sgmltag>callout</sgmltag> is a visual device for associating
+        annotations with an image, program listing, or similar figure. Each
+        location is identified with a mark and the annotation is identified
+        with the same mark. This is somewhat analogous to footnotes in text.
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term><sgmltag>calloutlist</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/calloutlist.html"/>
+       </para>
+       <para>
+        A <sgmltag>calloutlist</sgmltag> is a list of annotations or
+        descriptions. Each <sgmltag>callout</sgmltag> points to the area on
+        a <sgmltag>screen</sgmltag> that it augments.
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term><sgmltag>co</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/co.html"/>
+       </para>
+       <para>
+        A <sgmltag>co</sgmltag> identifies (by its location) a point of
+        reference for a callout.
+       </para>
+      </listitem>
+     </varlistentry>
+    </variablelist>
+    <para>
+     Callouts do not stand alone. They are only useful in combination with
+     <sgmltag>screen</sgmltag>. At the moment, <sgmltag>screenco</sgmltag>
+     and <sgmltag>arearef</sgmltag> are not supported by
+     <command>xsltproc</command>.
+     <remark>rwalter:
+      Still valid 2006/09/06</remark>
+    </para>
+<screen>&lt;screen>
+color white/blue black/light-gray   &lt;co id="co.col"/>
+default 0   &lt;co id="co.def"/>
+timeout 8   &lt;co id="co.time"/>
+gfxmenu (hd0,0)/boot/message
+
+title SUSE LINUX 9.1.42
+    kernel (hd0,0)/boot/vmlinuz root=/dev/hda1 vga=0x31a selinux=0 
+    splash=silent resume=/dev/hda2 desktop elevator=as  showopts
+    initrd (hd0,0)/boot/initrd
+
+title Diskette
+    root (fd0)
+    chainloader +1&lt;/screen>
+
+     &lt;calloutlist>
+      &lt;callout arearefs="co.col">
+       &lt;para>Here, define the colors used by the
+	&lt;application>GRUB&lt;/application> menu.
+       &lt;/para>
+      &lt;/callout>      
+      &lt;callout arearefs="co.def">
+       &lt;para>Define the default option.
+       &lt;/para>
+      &lt;/callout>      
+      &lt;callout arearefs="co.time">
+       &lt;para>
+	Select a timeout after which booting will start automatically.
+       &lt;/para>
+      &lt;/callout>
+     &lt;/calloutlist>
+</screen>
+   </sect2>
+
+   <sect2 id="sec.markup.block.procedures">
+    <title>Procedures</title>
+    <variablelist>
+     <varlistentry>
+      <term><sgmltag>procedure</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/procedure.html"/>
+       </para>
+       <para>
+        A <sgmltag>procedure</sgmltag> encapsulates a task composed of
+        <sgmltag>step</sgmltag>s (and possibly <sgmltag>substep</sgmltag>s).
+        Procedures are performed sequentially.
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term><sgmltag>step</sgmltag>
+      </term>
+      <term><sgmltag>substep</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/step.html"/>
+       </para>
+       <para>
+        A step identifies a unit of action in a
+        <sgmltag>procedure</sgmltag>. If careful internal procedures are
+        required for some steps, you can embed <sgmltag>substep</sgmltag>s
+        in a <sgmltag>step</sgmltag>. Embedded <sgmltag>substep</sgmltag>s
+        contain <sgmltag>step</sgmltag>s, so that
+        <sgmltag>substep</sgmltag>s can be nested to any depth.
+       </para>
+      </listitem>
+     </varlistentry>
+    </variablelist>
+<screen>&lt;procedure>
+  &lt;title>A Good Procedure&lt;/title>
+  &lt;step>
+    &lt;para>Get up from your bed&lt;/para>
+  &lt;/step>
+  &lt;step>
+    &lt;para>Walk to the kitchen&lt;/para> 
+  &lt;/step>
+  &lt;step>
+    &lt;para>Make coffee or tea&lt;/para>
+  &lt;/step>
+&lt;/procedure></screen>
+    <procedure>
+     <title>A Good Procedure</title>
+     <step>
+      <para>
+       Get up from your bed.
+      </para>
+     </step>
+     <step>
+      <para>
+       Walk to the kitchen.
+      </para>
+     </step>
+     <step>
+      <para>
+       Make coffee or tea.
+      </para>
+     </step>
+    </procedure>
+   </sect2>
+
+<!--
+   rwalter: this is commented, but is is now relevant? should we restore it?
+   <sect2 id="sec.markup.block.qandaset">
+    <title>Question and Answers</title>
+<remark>Review the order of items in this section.  Do we have any
+     consistency in how we present things?  I think it should either
+     be sequential (the order they are normally used) or
+     alphabetical. -rwalter</remark>
+    <remark>sequential order is nicer ;)</remark>
+    <variablelist>
+     <varlistentry>
+      <term><sgmltag>qandaset</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/qandaset.html"/>
+       </para>
+       <para>
+        A <sgmltag>qandaset</sgmltag> is a list consisting of questions and
+        answers. <sgmltag>qandaset</sgmltag>s can be divided into sections.
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term><sgmltag>qandaentry</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/qandaentry.html"/>
+       </para>
+       <para>
+        A <sgmltag>question</sgmltag> in a <sgmltag>qandaentry</sgmltag> poses
+	a question or states a problem that is addressed by the following
+	<sgmltag>answer</sgmltag>(s).</para>
+       <remark>This and question have the same definition.  Please improve
+	this. -rwalter</remark>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term><sgmltag>question</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/question.html"/>
+       </para>
+       <para>
+        A <sgmltag>question</sgmltag> in a <sgmltag>qandaentry</sgmltag> poses
+	a question or states a problem that is addressed by the following
+	<sgmltag>answer</sgmltag>s.
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term><sgmltag>answer</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/answer.html"/>
+       </para>
+       <para>
+        An <sgmltag>answer</sgmltag> is optional (some questions have
+	no answers) and may be repeated (some questions have more than one
+	answer).
+       </para>
+      </listitem>
+     </varlistentry>
+    </variablelist>
+<screen>&lt;qandaset>
+ &lt;title>XML FAQ&lt;/title>
+ &lt;qandaentry>
+  &lt;question>
+    &lt;para>What is XML?&lt;/para>
+  &lt;/question>
+  &lt;answer>
+    &lt;para>
+        XML is the acronym for extensible markup 
+        language. It is a markup language for documents 
+        containing structured information.
+    &lt;/para>
+   &lt;/answer>
+ &lt;/qandaentry>
+&lt;/qandaset></screen>
+    <qandaset>
+     <title>XML FAQ</title>
+     <qandaentry>
+      <question>
+       <para>
+        What is XML?
+       </para>
+      </question>
+      <answer>
+       <para>
+        XML is the acronym for extensible markup language. It is a markup
+        language for documents containing structured information.
+       </para>
+      </answer>
+     </qandaentry>
+    </qandaset>
+   </sect2>-->
+  </sect1>
+<!-- ********************************************************* -->
+  <sect1 id="sec.inline">
+   <title>Inline Structures</title>
+
+   <para>
+    Inline elements include keys, menus, and commands. These elements are
+    usually used inside text. They do not impose a line break.
+   </para>
+
+   <sect2 id="sec.markup.inline.keys">
+    <title>Markup of Keys</title>
+    <variablelist>
+     <varlistentry>
+      <term><sgmltag>keycap</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/keycap.html"/>
+       </para>
+       <para>
+        The <sgmltag>keycap</sgmltag> identifies the letter or symbol
+        printed on a physical key on a computer keyboard.
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term><sgmltag>keycombo</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/keycombo.html"/>
+       </para>
+       <para>
+        For actions that require multiple keystrokes, mouse actions, or
+        other physical input selections, the <sgmltag>keycombo</sgmltag>
+        element provides a wrapper for the entire set of events.
+       </para>
+      </listitem>
+     </varlistentry>
+    </variablelist>
+    <para>
+     Mark up keys with the element <sgmltag>keycap</sgmltag>:
+    </para>
+<screen>&lt;para> 
+  Press &lt;keycap>F2&lt;/keycap> to ... Use the &lt;keycap
+  function="control"/> key.
+&lt;/para></screen>
+    <para>
+     If you mark up general keys, like control, backspace, or enter, use the
+     <sgmltag
+      class="attribute">function</sgmltag> attribute. Possible
+     attribute values for
+     <sgmltag class="attribute"
+     >function</sgmltag> are
+     <sgmltag class="attvalue">alt</sgmltag>,
+     <sgmltag class="attvalue">backspace</sgmltag>,
+     <sgmltag
+      class="attvalue">command</sgmltag>,
+     <sgmltag class="attvalue"
+     >control</sgmltag>,
+     <sgmltag class="attvalue">delete</sgmltag>,
+     <sgmltag class="attvalue">down</sgmltag>,
+     <sgmltag class="attvalue"
+      >end</sgmltag>,
+     <sgmltag class="attvalue">enter</sgmltag>,
+     <sgmltag
+      class="attvalue">escape</sgmltag>,
+     <sgmltag class="attvalue"
+     >home</sgmltag>,
+     <sgmltag class="attvalue">insert</sgmltag>,
+     <sgmltag
+      class="attvalue">left</sgmltag>,
+     <sgmltag class="attvalue"
+     >meta</sgmltag>,
+     <sgmltag class="attvalue">option</sgmltag>,
+     <sgmltag
+      class="attvalue">other</sgmltag>,
+     <sgmltag class="attvalue"
+     >pagedown</sgmltag>,
+     <sgmltag class="attvalue">pageup</sgmltag>,
+     <sgmltag class="attvalue">right</sgmltag>,
+     <sgmltag class="attvalue"
+      >shift</sgmltag>,
+     <sgmltag class="attvalue">space</sgmltag>,
+     <sgmltag
+      class="attvalue">tab</sgmltag>, and
+     <sgmltag class="attvalue"
+     >up</sgmltag>.
+    </para>
+    <para>
+     If you need key combinations (you press two or more keys at the same
+     time or after a short period), use <sgmltag>keycombo</sgmltag>. Use the
+     <sgmltag class="attribute">action</sgmltag> attribute to distinguish
+     between different actions:
+    </para>
+    <variablelist>
+     <varlistentry>
+      <term><sgmltag class="attvalue">press</sgmltag> (default action) </term>
+      <listitem>
+       <para>
+        If you omit the <sgmltag class="attribute">action</sgmltag>
+        attribute, this value is used:
+       </para>
+<screen>&lt;para> 
+  Press &lt;keycombo> &lt;keycap function="alt"/>
+  &lt;keycap>F2&lt;/keycap> &lt;/keycombo> to ... 
+&lt;/para></screen>
+       <literallayout>Press <keycombo>
+<!-- FIXME: Remove "Ctrl", if DB-Stylesheets supports attribut function. --><keycap function="alt">Alt</keycap><keycap>S</keycap></keycombo> to ...</literallayout>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term><sgmltag class="attvalue">seq</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        Use this if you need keys pressed sequentially, for example, those
+        in Emacs:
+       </para>
+<screen>&lt;para> 
+To save a file in Emacs, press &lt;keycombo action="seq"> 
+   &lt;keycombo action="press"> 
+     &lt;keycap function="control"/> 
+     &lt;keycap>X&lt;/keycap> 
+   &lt;/keycombo>
+   &lt;keycombo>
+     &lt;keycap function="control"/>
+     &lt;keycap>S&lt;/keycap>
+   &lt;/keycombo> 
+ &lt;/keycombo>.
+&lt;/para></screen>
+       <literallayout>To save a file in Emacs, press <keycombo action="seq"><keycombo action="press"><keycap function="control">Ctrl</keycap><keycap>X</keycap></keycombo><keycombo><keycap function="control">Ctrl</keycap><keycap>S</keycap></keycombo></keycombo>.</literallayout>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term><sgmltag class="attvalue">click</sgmltag>
+      </term>
+      <term><sgmltag class="attvalue">double-click</sgmltag>
+      </term>
+      <term><sgmltag class="attvalue">other</sgmltag>
+      </term>
+      <term><sgmltag class="attvalue">simul</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        These are not used in SUSE documentation.
+       </para>
+      </listitem>
+     </varlistentry>
+    </variablelist>
+   </sect2>
+
+   <sect2 id="sec.markup.inline.menus">
+    <title>GUI Menus</title>
+    <variablelist>
+     <varlistentry>
+      <term><sgmltag>guimenu</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/guimenu.html"/>
+       </para>
+       <para>
+        SUSE uses this element to simplify GUI element markup. It is used
+        for all types of menu entries and also for buttons and GUI labels.
+       </para>
+      </listitem>
+     </varlistentry>
+    </variablelist>
+<screen>&lt;para>
+     Use the &lt;guimenu>File&lt;/guimenu> menu to reach the
+     &lt;guimenu>Print&lt;/guimenu> option.
+&lt;/para></screen>
+    <literallayout>Use the <guimenu>File</guimenu> menu to reach the <guimenu>Print</guimenu> option.</literallayout>
+    <para>
+     To mark up nested menu structures, use <sgmltag>menuchoice</sgmltag>:
+    </para>
+<screen>&lt;para> 
+ To exit Emacs, use &lt;menuchoice>
+   &lt;guimenu>File&lt;/guimenu>
+   &lt;guimenu>Exit Emacs&lt;/guimenu>
+  &lt;/menuchoice>.
+&lt;/para></screen>
+    <literallayout>To exit Emacs, use <menuchoice><guimenu>File</guimenu><guimenu>Exit Emacs</guimenu></menuchoice>.</literallayout>
+   </sect2>
+
+   <sect2 id="sec.markup.inline.commands">
+    <title>Commands and Options</title>
+    <variablelist>
+     <varlistentry>
+      <term><sgmltag>command</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/command.html"/>
+       </para>
+       <para>
+        This element holds the name of an executable program or the text of
+        a command that a user enters to execute a program.
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term><sgmltag>option</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/option.html"/>
+       </para>
+       <para>
+        This element identifies an argument to a command or instruction.
+        Options may or may not be required.
+       </para>
+      </listitem>
+     </varlistentry>
+    </variablelist>
+    <para>
+     Use options for a command inside <sgmltag>command</sgmltag>. Be careful
+     about spaces:
+    </para>
+<screen>&lt;command>xmllint &lt;option>--help&lt;/option>&lt;/command></screen>
+    <literallayout><command>xmllint <option>--help</option></command>
+    </literallayout>
+   </sect2>
+
+   <sect2 id="sec.markup.inline.vars">
+    <title>Variables</title>
+    <variablelist>
+     <varlistentry>
+      <term><sgmltag>replaceable</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/replaceable.html"/>
+       </para>
+       <para>
+        Content that may or must be replaced by the user
+       </para>
+      </listitem>
+     </varlistentry>
+    </variablelist>
+    <para>
+     Use <sgmltag>replaceable</sgmltag> to tag contents that should be
+     replaced by appropriate user input. For example:
+    </para>
+    <literallayout>Use <command>ls <option><replaceable>my_dir</replaceable></option></command> to list the contents of the directory <replaceable>my_dir</replaceable>.</literallayout>
+   </sect2>
+
+   <sect2 id="sec.markup.inline.filenames_and_dirs">
+    <title>Directories and Filenames</title>
+    <variablelist>
+     <varlistentry>
+      <term><sgmltag>filename</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/filename.html"/>
+       </para>
+       <para>
+        A filename is the name of a file on a local or network disk. It may
+        be a simple name or may include a path or other elements specific to
+        the operating system.
+       </para>
+      </listitem>
+     </varlistentry>
+    </variablelist>
+    <para>
+     Because SUSE does not distinguish between filenames and directories by
+     adding a trailing slash to the path or with markup.
+     <sgmltag>filename</sgmltag> is used for both directories and filenames.
+    </para>
+<screen>&lt;para>
+ See file &lt;filename>foo.xml&lt;/filename>. Look at the
+ directory &lt;filename>/etc/sysconfig&lt;/filename>.
+&lt;/para></screen>
+    <literallayout>See file <filename>foo.xml</filename>. Look at the directory <filename class="directory">/etc/sysconfig</filename>.
+    </literallayout>
+   </sect2>
+
+   <sect2 id="sec.markup.inline.referencing">
+    <title>Referencing</title>
+    <variablelist>
+     <varlistentry>
+      <term><sgmltag>ulink</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/ulink.html"/>
+       </para>
+       <para>
+        The <sgmltag>ulink</sgmltag> element forms the equivalent of an HTML
+        anchor (<sgmltag class="starttag">A HREF="..."</sgmltag>) for cross
+        reference by a Uniform Resource Locator (URL).
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term><sgmltag>xref</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/xref.html"/>
+       </para>
+       <para>
+        The <sgmltag>xref</sgmltag> element forms a cross-reference from the
+        location of the <sgmltag>xref</sgmltag> to the element to which it
+        points. Unlike the other cross-referencing elements,
+        <sgmltag>xref</sgmltag> is empty. The processing system must
+        generate appropriate cross-reference text for the reader.
+       </para>
+      </listitem>
+     </varlistentry>
+    </variablelist>
+    <para>
+     References to man pages and info pages should generally be made in the
+     format <quote>the man page of <command>command</command></quote> or
+     <quote>the info page of <command>command</command></quote>. In a
+     situation where the category of the page is needed, add
+     <quote>(<command>man 9 command</command>)</quote> to the end.
+    </para>
+    <literallayout>See the man page of <command>xmllint</command> (<command>man 1 xmllint</command>).</literallayout>
+    <para>
+     Use <sgmltag>ulink</sgmltag> to reference to an URL:
+    </para>
+<screen>&lt;para> See &lt;ulink url="http://www.suse.de"/>. See &lt;ulink
+     url="http://www.novell.de">Novell Deutschland&lt;/ulink>.</screen>
+    <literallayout>See <ulink url="http://www.suse.de"/>. See <ulink url="http://www.novell.de">Novell Deutschland</ulink>.
+    </literallayout>
+    <para>
+     If you need references to another chapter, section, etc., in the same
+     documentation set, use <sgmltag>xref</sgmltag>:
+    </para>
+<screen>&lt;para> A link to this section: &lt;xref
+     linkend="sec.markup.inline.referencing"/> &lt;/para></screen>
+    <literallayout>A link to this section: <xref linkend="sec.markup.inline.referencing"/>
+    </literallayout>
+    <remark>toms (TBD): How do we use the attribute <sgmltag
+      class="attribute">xrefstyle</sgmltag>?</remark>
+    <para>
+     If you need a different text for referencing purposes, but you cannot
+     modify the title, use the
+     <sgmltag class="attribute">xreflabel</sgmltag> attribute:
+    </para>
+<screen>&lt;sect1 id="sec.foo" <emphasis role="bold">xreflabel="Hello foo"</emphasis>>
+  &lt;title>Foo&lt;/title>
+  &lt;para>...&lt;/para>
+ 
+&lt;/sect1>
+  ...
+&lt;para>See <emphasis role="bold">&lt;xref linkend="chap.foo"/></emphasis>...&lt;/para></screen>
+    <para>
+     In the above example, the <sgmltag class="emptytag">xref</sgmltag> is
+     replaced by the text <literal>Hello foo</literal>.
+    </para>
+    <remark>please add a description of xreflabel used to reference otherwise unlabeled elements
+     like listitems etc.</remark>
+   </sect2>
+
+   <sect2 id="sec.markup.inline.emphasis">
+    <title>Emphasis</title>
+    <variablelist>
+     <varlistentry>
+      <term><sgmltag>emphasis</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/emphasis.html"/>
+       </para>
+       <para>
+        This element provides a method for indicating that certain text
+        should be stressed in some way. However, placing emphasis with
+        careful wording is preferred to using markup.
+       </para>
+      </listitem>
+     </varlistentry>
+    </variablelist>
+    <para>
+     Use bold text with care.
+    </para>
+<screen>&lt;para>
+ This is &lt;emphasis>strong&lt;/emphasis> word. 
+ This is a  &lt;emphasis role="bold">very strong&lt;/emphasis> word.
+&lt;/para></screen>
+    <literallayout>This is a <emphasis>strong</emphasis> word.
+This is a <emphasis role="bold">very strong</emphasis> word.</literallayout>
+   </sect2>
+
+   <sect2 id="sec.markup.inline.comments">
+    <title>Comments and Remarks</title>
+    <variablelist>
+     <varlistentry>
+      <term><sgmltag>remark</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/remark.html"/>
+       </para>
+       <para>
+        The <sgmltag>remark</sgmltag> element is designed to hold remarks,
+        such as editorial comments, that are useful while the document is in
+        the draft stage, but are not intended for final publication.
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term><sgmltag class="sgmlcomment">An XML comment</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        XML comments are used to hold remarks. They are invisible in your
+        publication.
+       </para>
+      </listitem>
+     </varlistentry>
+    </variablelist>
+    <para>
+     Use <sgmltag>remark</sgmltag>s for comments that you can switch on or
+     off in HTML or PDF. Place a <sgmltag>remark</sgmltag> before or after
+     the <sgmltag>para</sgmltag> to comment. Otherwise you would insert
+     unwanted line breaks.
+    </para>
+<screen>&lt;remark>A small remark&lt;/remark></screen>
+    <literallayout>
+     <remark>A small remark.</remark>
+    </literallayout>
+    <para>
+     Use XML comments if you give translators or other editors some hints
+     that should only be visible in the code, but not in the final
+     publication&mdash;even for a draft state.
+    </para>
+<screen>&lt;para> &lt;!-- Is this true? Please check! --&gt; If you need X,
+     you must install Y before you can use it. &lt;/para></screen>
+    <literallayout>If you need X, you must install Y before you can use it.</literallayout>
+    <para>
+     Be short and clear with your comments.
+    </para>
+   </sect2>
+
+   <sect2 id="sec.markup.inline.literal">
+    <title>Literals</title>
+    <variablelist>
+     <varlistentry>
+      <term><sgmltag>literal</sgmltag>
+      </term>
+      <listitem>
+       <para>
+        <ulink url="http://www.docbook.org/tdg/en/html/literal.html"/>
+       </para>
+       <para>
+        <sgmltag>literal</sgmltag> is specific data taken literally from a
+        computer system. It is similar in some ways to
+        <sgmltag>userinput</sgmltag> and <sgmltag>computeroutput</sgmltag>,
+        but is somewhat more general a classification.
+       </para>
+      </listitem>
+     </varlistentry>
+    </variablelist>
+<screen>&lt;para>
+  If you need a comment, insert &lt;literal>#&lt;/literal> characters.
+&lt;para></screen>
+   </sect2>
+  </sect1>
+ </appendix>
+ <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+             href="gfdl.xml"/>
+</article>
