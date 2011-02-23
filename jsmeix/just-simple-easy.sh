@@ -24,10 +24,10 @@ do echo $f ; \
    | sed -e '/<!--/,/-->/d' \
    | sed -e '/<remark>.*<\/remark>/d' \
    | sed -e '/<remark>/,/<\/remark>/d' \
-   | egrep -n -T -i 'just|simple|simply|easy|easily' \
-   | egrep -i -v 'simplelist>|SIMPLEREQ>|SIMPLERSP>|adjust' ; \
+   | egrep -i -v 'simplelist>|SIMPLEREQ>|SIMPLERSP>|adjust' \
+   | egrep -2 -n -T -i 'just|simple|simply|easy|easily' ; \
    echo =============================================================== ; \
 done >just-simple-easy.lines
 
 # $ egrep 'just|simple|simply|easy|easily' just-simple-easy.lines | wc -l
-# 638
+# 706
