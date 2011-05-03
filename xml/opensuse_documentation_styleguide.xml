@@ -2000,6 +2000,14 @@ flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
       <entry>two words</entry>
      </row>
      <row>
+      <entry>advice</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
+      <entry>to advise</entry>
+      <entry>verb</entry>
+     </row>
+     <row>
       <entry>back-end</entry>
       <entry>hyphenate</entry>
      </row>
@@ -2110,6 +2118,10 @@ flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
      <row>
       <entry>file system</entry>
       <entry>two words</entry>
+     </row>
+     <row>
+      <entry>flavor</entry>
+      <entry>use AE</entry>
      </row>
      <row>
       <entry>framebuffer</entry>
@@ -2223,6 +2235,11 @@ flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
       </entry>
      </row>
      <row>
+      <entry>license, licenses</entry>
+      <entry>use AE
+      </entry>
+     </row>
+     <row>
       <entry>local host, localhost</entry>
       <entry>normally two words, one word for default name of the local
       host</entry>
@@ -2235,6 +2252,11 @@ flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
       <entry>log in, log out, login</entry>
       <entry>two words for verbs, one for noun; do not use <quote>log
        on</quote> or <quote>log off</quote>
+      </entry>
+     </row>
+     <row>
+      <entry>log in to</entry>
+      <entry>not "log into"
       </entry>
      </row>
      <row>
@@ -2327,6 +2349,10 @@ flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
      <row>
       <entry>PostScript</entry>
       <entry>use this capitalization</entry>
+     </row>
+     <row>
+      <entry>pre-configured</entry>
+      <entry>hyphenate</entry>
      </row>
      <row>
       <entry>print queue</entry>
