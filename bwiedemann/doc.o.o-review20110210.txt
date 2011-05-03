@@ -1,15 +1,4 @@
-http://docserv.suse.de/generated/books/Studio/susestudio-quick/
-
 on industry hardware # verify term
-
-Log in to # into?
-Build the appliance in different formats like ... or as Xen guests. # passt das zum Rest des Satzes?
-With the “testdrive” of SUSE Studio start # imperativ
-
--add missing software using Software link
-+add missing software using the Software link
-
-Find the link in the second row # imperativ
 
 -from openSUSE Build Server 
 +from the openSUSE Build Service
@@ -26,38 +15,20 @@ upload individual packages as RPM format. # as=>in
 
 several aspects about your appliances # about=>of ?
 
-Configure ... any program which is automatically started during login. # klingt komisch
-
 Usually for the experts. # kein Satz
 Usually for experts only.
 
 Xen guests works for Linux only. # for=>on ?
 
-
-# spellchecking:
-flavours # BE=>AE
-licence
-licences
-
-http://docserv.suse.de/generated/books/Manager/susemanager-quick/
-
 checkmark
 Shipped with SUSE Manager is # wordorder
-You are asked if you want to continue and warned that # are warned
+
 much data needs to be unpacked # much=>a lot of | large amounts of
 
--To enter data into a an input field
-+To enter data into an input field
-
 If all values are entered # If => When|Once
+
 you need it to access the SUSE Manager Web interface later. # need=>will need
 
-Memorize the username and the password listed there. # das ist viel zu merken => "note" ?
-Select My Profile+Login Profile and memorize the e-mail address with which you are registered. 
-
-... run a setup script via YaST. It will display several consecutive screens # unklar: macht er das von allein oder soll man da selbst was tun (und wenn ja, was)?
-
-Log in to # into?
 
 Repeat the password in the next field. # is this needed for remote DB account (where it does not make sense), too? 
 
@@ -69,62 +40,13 @@ If any newly registered client systems to your organization should inherit ... #
 
 for example, if to allow remote command execution
 
--on all client system
-+on all client systems
-
-In a multi-organization setup, therefore do not # wordorder
-
 -This enables organizations can perform 
 +This enables organizations to perform 
-
--There a two types of
-+There are two types of
-
-The maximum number of systems that may register to an organization # register to?
-
-Enter the Desired Login, the Desired Password for the new user
-
-proceed as described in Procedure 8 # reference to next line
-proceed as described in Procedure 12
-
-refer to Section “User List+Active+User Details+Details — [Mgmt]” (↑). # not a link
-
-you can assign other users the permission to become SUSE Manager administrator. 
 
 Then execute the migration in several steps with the migration.sh # executes? imperativ?
 
 The next screen asks for details about the database to be migrated.
     If you want to migrate data from the embedded database on the current SUSE Manager server, select Local Database. # kann man von sich selbst migrieren?
 
-Click Next to close YaST and to write the collected information to a file # write first, then close?
-
--If the setup scripts reports a
-?+If the setup scripts report a
-?+If the setup script reports a
-
-
-
-http://docserv.suse.de/generated/books/EC2/SLES-EC2quick/
-
-preconfigured<=>pre-configured
-
-S3 = store and retrieve data on the web. # is this really web (http) specific?
-
-Make sure the security group the instance is launched with, allows
-
-Path to your Key pair
-    The key pair you specified when launching the instance is needed to authenticate. Make sure the key pair file is only accessible by it's owner.  # keypair => (secret) key
-
--PATH TO KEY PAIR FILE
-+PATH TO SECRET KEY FILE
-
--refer to it's manpage
-+refer to its manpage
-
-The Amazon EC2 API tools require Java. Make sure the package java-1_6_0-ibm is installed.  # other java is OK?
-
-Make sure to remember the name of the key pair—you need to provide it with most EC2 API commands. # in fact, this is only for SSH and not for any API commands. API uses keys from 7.2.2
-
-The following example assumes that public key is located in # your|a|the public key
 
 
