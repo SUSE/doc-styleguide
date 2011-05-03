@@ -1,0 +1,336 @@
+doc version Do 24 Feb 2011 20:01:57 CET
+
+20110225
+
+-righ?
++right?
+
+charactersets
+diskspace
+
+
+
+
+reviewed preface.susemanager.install
+OK
+
+ch-intro-install
+
+?-The update agent on the client systems
+?+The update agents on the client systems
+
+?An update agent on the client systems # dito
+?Depending upon the client's preferences => depending on
+
+-Both setups allows full control
++Both setups allow full control
+
+?with Novell Customer Center. # the?
+?refer to Glossary # the?
+
+ch-example-topologies
+The maximum number of clients expected to connect concurrently to . # missing word
+
+?-The number of SUSE Managers
+?+The number of SUSE Manager instances/servers
+
+to service a medium-size group of clients and network. # size=>sized ;  "and network" klingt da etwas komisch.
+
+-The disadvantage of using one SUSE Manager
++The disadvantage of using a single SUSE Manager
+
+?that performance will be compromised as the number of clients requesting packages grows. # as=>if
+
+?-Multiple SUSE Manager Horizontally Tiered Topology # selbst für eine Überschrift klingt die Wortreihenfolge seltsam.
+?+Horizontally Tiered Topology with Multiple SUSE Manager instances
+
+?-such as having multiple SUSE Managers
+?+such as having multiple SUSE Manager instances
+# Abbildung 2.2 hat auch "Managers" abweichend von der Kapitelüberschrift
+# Abbildung 2.2 hat ähnlich wie die Kapitelüberschrift einen Substantivhaufen
+?+Example of Horizontally Tiered Topology using Multiple SUSE Manager instances
+
+?-SUSE Manager-Proxy Vertically Tiered Topology
+?+Vertically Tiered Topology with SUSE Manager-Proxy 
+
+Similarly, you should make the Proxies' SSL certificates clients of the SUSE Manager while also setting them to serve the client systems. # Satzbau/Bedeutung unklar: "certificates clients" ?
+
+# Abbildung 2.3 hat ähnlich wie die Kapitelüberschrift einen Substantivhaufen
+?+Example of Vertically Tiered Topology using SUSE Manager-Proxy
+
+ch-requirements
+It is possible for many customers to function with... # Kunden sollen funktionieren?
+
+?-like number of systems managed,
+?+such as number of systems managed,
+
+-the average system
++an average system
+
+?-numbers of packages imported
+?+number of packages imported
+
+-Two additional suggested recommendation for user's default tablespace
++Two additional suggested recommendations for the user's default tablespace
+
+?-The system on which to install
+?+The system on which you want to install
+
+-Domain Name Server (DNS) server
++Domain Name System (DNS) server
+
+-An Novell Customer Center Account
++A Novell Customer Center Account
+
+ch-installation
+combined with an operating system (appliance). # die Klammer könnte besser in den Text integriert werden... oder ändern zu "an appliance"
+
+?-that you might need afterward.
+?+that you might need afterwards.
+
+?create custom channels, and add repositories to be synchronized with the custom channel # channel => channels?
+Section “Organization Management” (, ↑Quick Start) # comma
+Section “Management of System and Software Entitlements” (, ↑Quick Start)
+Section “User Management” (, ↑Quick Start) 
+
+
+
+reviewed ch-troubleshooting:
+For example, the 
+-rhn_satellite_install.log.1 contains the oldest rotated log file, while 
+-rhn_satellite_install.log.4 contains the most recently rotated log. 
++rhn_satellite_install.log.4 contains the oldest rotated log file, while # check
++rhn_satellite_install.log.1 contains the most recently rotated log. 
+
+Apache Web server	/var/log/httpd/ directory # might be apache2 dir ; check others
+?To derive the character set types # derive?
+
+?-confirm the correct email addresses have been set
+?+confirm that the correct email addresses have been set
+
+?include the web.default_mail_from option and appropriate value # Artikel zu value?
+
+-Next, restart the importation .
++Next, restart the import.
+
+If zypper up) or # Klammer?
+Red Hat Update Agent, , and the # RH, commas
+localhost.localdomain \ localhost # backslash
+123.45.67.8 this_machine.example.com this_machine # see RFC5737 for IP range reserved for documentation example-IP purposes - e.g. 192.0.2.34
+on a machine whose time # whose?
+preferably with all system times set to GMT. # timezones should not matter there - or does it mean "set to the correct time"? # check with openssl/devs?
+
+?-get diskspace available
+?+getting diskspace available # to fit with other entries. needs source change
+and retrieve status messages from all of its services at once. # at once = sofort ?
+
+
+
+reviewed ch-maintenance:
+refer to Section “Installation and Setup” (, ↑Quick Start). # comma, no link
+Services affected by a package update are not automatically restarted after the update—you need to restart them manually to avoid failures. # ist aber nicht standard bei SUSE?
+
+?-make, verify, and restore backups
+?+creating, verifying, and restoring backups ...
+
+?-It is recommended performing nightly backups
+?+It is recommended to perform nightly backups... to move
+
+-issue this command as oracle
++issue this command as oracle user # mehrmals
+
+-with these commands in this order: # followed by only a single command
++with this command:
+
+5. If the primary SUSE Manager fails, transfer the SSL key pair RPM package in /root/ssl-build from the primary to the secondary SUSE Manager, and install the package. # warum das nicht als Teil von 3.? security?
+
+-Establishing Redundant SUSE Manager server
++Establishing Redundant SUSE Manager servers
+
+?You may use custom scripting or other means to establish automatic start-up/failover of the Task Engine on the secondary server. Regardless, it will need to be started upon failover. # Sätze tauschen, regardless streichen?
+?Changing the hostname requires to generate # requires to?
+they will be asked interactively via series of prompts. # => via a ; they=>those
+
+need to be modified and rebuilt) (1) # no matching brackets
+need to be modified and rebuilt) (5) # " ; was bedeutet die Zahl in Klammern?
+
+-miliseconds
++milliseconds
+
+by first changing the EDITOR variable, like so # like so?
+
+
+?-statistics must be regularly updated so that they accurately describe
+?+statistics must be regularly updated so that it accurately describes
+
+-load balancer
++load-balancer
+
+-perl -le 'sleep rand 9000'
++perl -e 'sleep rand 9000'
+
+-between SUSE Manager and its clients systems
+?+between SUSE Manager and its client-systems
+?+between SUSE Manager and its client's-systems
+
+start the service on as root # "turn on" oder "start"
+
+
+====
+susemanager-reference 
+preface.susemanager.ref:
+
+ch-pup:
+Run Software+Online Update in YaST # Software+?
+Find the description of the selected patch displayed below the list of patches.  # imperative
+
+-a list of changes that will carried out
++a list of changes that will be carried out
+
+Open Software+Online Update Configuration # wie oben
+
+-zypper in Moz*
++zypper in 'Moz*'  # oder Moz\* - sonst gibt das Überraschungen, wenn im aktuellen Verzeichnis Dateien mit solchen Namen liegen.
+
+zypper list-patches # is followed by example of "list-updates"
+
+If a repository contains only new packages, but does not provide patches, zypper patch does not show any effect. # does "any effect" include printing that it does not do anything?
+
+details as the URI or the priority of the repository is not displayed. # as=>such as ; is=>are
+
+Use the following command to list all details: # should be followed by zypper repos -d
+
+-features a a running
++features a running
+
+to fetch packages and install packages. # style
+
+the initial installation via Anaconda installation program # article ; style?
+
+yum commands are typically typed as the following: # klingt komisch
+
+to install a package located locally in the machine. # in=>on ; located locally
+
+?create System Profiles # ist das ein Eigenname? scheinbar schon.
+
+
+
+
+If you ever need to force the Red Hat Update Agent into registration mode, such as to re-register an existing system, ... # such as=>for example
+
+?you should take caution # take caution=>take care?
+
+-Red Hat Update Agent next displays
++Next, Red Hat Update Agent displays
+
+?command line version # Bindestriche?
+
+can be used to solve the dependencies for an RPM regardless even if # regardless of sth. / ...
+
+Without it, you will be unable to verify that packages Update Agent downloads
+are securely signed by Red Hat. # ist aber wohl (sic!) ?
+
+To synchronize the RPM package list on your local Red Hat Enterprise Linux 5 system and on Red Hat Network, run the command # needs debranding?
+
+use the following command to update the package list, run the command: # da ist was doppelt
+
+?the standard rotating log method # logrotate?
+
+Do not upgrade packages when local configuration file has been modified — if the configuration file has been modified for a package such as apache or squid, do not attempt to upgrade it. This option is useful if you are installing custom RPMs on your system and you do not want them updated or reverted to the default Red Hat Enterprise Linux packages. # wie hängt der zweite Satz mit dem ersten zusammen? ist das ein zusätzlicher Anwendungsfall? Dann fehlt da vor dem "useful" ein "also"
+
+?which allows administrators to appropriate software and system entitlements across various organizations # "appropriate"?
+
+
+ch-rhnsd:
+makes the network connection # opens/creates
+
+-Make sure: 
++Make sure that: 
+
+?You may ensure this # may?
+
+If these are correct # worauf bezieht sich "these" ?
+
+
+
+ch-rhn-workgroup:
+are context-sensitive . # space
+
+?Remember that Provisioning inherits all of the functions of Management. # ist das richtig herum? wie ist das zu verstehen?
+
+?-discussed afterward
+?+discussed afterwards
+
+?It notifies you # It?  => "On this page you will be notified"
+
+-patch (errata) slerts
++patch (errata) alerts
+
+?View and manage users for your organization. # for? # mehrmals
+?change administrative privileges for the user # dito
+
+-near the the top
++near the top
+
+?the SUSE Manager search engine institutes approximate string (or fuzzy string) matching # institutes?
+
+?It identifies the number of selected systems at all times # at all times=>at any time? word-order
+
+?This page is broken into # broken=>split?
+
+-Action that are less than thirty days old are considered recent.
++Actions that are less than thirty days old are considered recent.
+
+-of any given actions
++of any given action
+
+?Below this section are links # word-order?
+
+-Click the system's name to go the
++Click the system's name to go to the
+
+?you will not see your new one as you type it for security reasons # comma/word-order?
+
+?Note that false email addresses # false=>invalid?
+
+-an patch alert
++a patch alert
+
+?Some icons are linked to pages providing resolution. # a resolution? resolutions?
+
+?imagine a client system that has an early version of a package installed. # early=>earlier?
+
+?Package Exceptions list for the Red Hat Update Agent # needs debranding?
+
+?are displayed in blue text # in?
+
+to specify new systems registered in days, weeks, 30- and 180-day increments, and yearly. # yearly=>years
+
+which depend from the base channel # from=>on
+
+The remaining fields record the physical address at which the system is stored. To confirm any changes to these fields, click the Update Properties button. # gehört das zusammen? und was ist die physical addr hier? Postadresse?
+
+?for multiple systems at once # at once?
+
+-you may assign a value for this system by select the
++you may assign a value for this system by selecting the
+
+as >Pending only (with no mention of the previous failure). Clicking a status other thanNone takes # check tags/spaces
+
+=== stopped review at 3.4.2.9.2.2.  Lists installed packages and enables you to remove them. 
+
+
+
+
+man zypper:
+-all the RPM file downloaded during installation
++all RPM files downloaded during installation
+
+===
+
+nice features for zypper:
+
+--tmpdir=directory 	Temporarily override the configured package directory. The default location is /var/spool/up2date. This option is useful if you do not have enough space in the configured location.
+
+-k, --packagedir 	Specify a colon-separated path of directories in which to look for packages before trying to download them.
+

@@ -1,0 +1,80 @@
+reviewed http://docserv.suse.de/generated/books/Manager/susemanager-client-config_remarks_comments_draft/ch-gpg-keys.html
+
+no maintainer?
+
+creating a central location for the public key for clients to retrieve it and then adding the key to the local GPG keyring for each system. # eigener Satz? Satzbau
+
+-and place the GPG public signature in it
++and place the GPG public key in it
+
+wget -O- -q http://your_susemgr.your_domain.com/pub/YOUR-RPM-GPG-KEY # bug: das -O- funktioniert so nicht mit dem nachfolgenden rpm --import /path/to/YOUR-RPM-GPG-KEY - am besten das -O- und folgende Erklärung dessen weglassen
+
+-signed with the corresponding key.
++signed with the corresponding private key. # to not confuse with public key that was imported earlier
+
+
+reviewed http://docserv.suse.de/generated/books/Manager/susemanager-client-config_remarks_comments_draft/ch-bootstrap.html
+
+?customers... require a bootstrap tool # was will mir dieser Satz sagen? "require" klingt an der Stelle komisch => need?
+
+#can be run from any client system # inclusive RedHat clients?
+
+?Generate activation keys to be called # werden keys (auf-)gerufen? =>used?
+
+Provisioning entitlements is required # singular|plural
+
+-We recommend to sign your RPMs by a
++We recommend to sign your RPMs with a 
+
+?-CA SSL public certificate
+?-CA SSL certificate # certificate is bei SSL gleichbedeutend mit "public key"
+
+You now can use # wordorder
+
+--activation-keys KEY1,KEY2...MY_CORPORATE_PUBLIC_KEY #use placeholder style
+
+-?will land
++?will be placed|provided
+
+the bootstrap directory and scripts. # Kontext?
+
+
+reviewed http://docserv.suse.de/generated/books/Manager/susemanager-client-config_remarks_comments_draft/ch-scripting.html
+
+-'s/s/www\.rhns\.redhat\.com/susemgr\.example\.com/g'  # bug
++'s/www\.rhns\.redhat\.com/susemgr\.example\.com/g' 
+
+#install the SSL client certificate for...Server # warum ist das dann ein client cert?
+
+rpm -Uvh http://susemgr.example.com/pub/rhn-org-trusted-ssl-cert-*.noarch.rpm # bug: rpm -U http://...* geht so nicht
+
+--> # erzeugt bash syntax error
+
+wget -O - -q http://susemgr.example.com/pub/YOUR-RPM-GPG-KEY # wie zuvor: -O - streichen wegen rpm --import /path/to/YOUR-RPM-GPG-KEY
+
+
+reviewed http://docserv.suse.de/generated/books/Manager/susemanager-client-config_remarks_comments_draft/ch-rhnreg-ks.html
+
+?it should prepare the system fully # => fully prepare?
+
+# geht das script auch auf SLES clients oder nur auf RHEL? sollte hier vielleicht stehen
+
+
+
+reviewed http://docserv.suse.de/generated/books/Manager/susemanager-client-config_remarks_comments_draft/ap-sample-bootstrap-script.html
+
+?SUSE Manager Server Client bootstrap script # Server streichen?
+
+CA SSL public certificate # wie zuvor
+
+ORG_GPG_KEY=insert_activation_key_here # falsches copy&paste =>insert_gpg_public_key_here
+
+-HOSTNAME=your_sue_manager_server_host.example.com
++HOSTNAME=your_suse_manager_server_host.example.com
+
+-zypper --non-interactive in
++zypper --non-interactive install
+
+    [ -n "$directories" ] && rmdir $(echo $directories | rev) # bug: rev dreht hier fälschlicherweise auch die Buchstaben innerhalb von Verzeichnisnamen. Besser oben directories="$i $directories"  und hier nur rmdir $directories
+
+
