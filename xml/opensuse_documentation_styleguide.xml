@@ -7,6 +7,14 @@
 [
   <!ENTITY adguide "Administration Guide">
 ]>
+
+<!--
+TODO:
+- Define:
+  * Unix vx UNIX
+  * Common Unix/UNIX Printing System (capitalized?)
+-->
+
 <article class="whitepaper" lang="en" id="art.styleguide">
  <title>Documentation Style Guide</title>
  <subtitle>SUSE and openSUSE</subtitle>
