@@ -5,7 +5,7 @@
 [
 ]>
 
-<appendix xml:base="gfdl.xml" id="app.gdfl">
+<appendix xml:base="gfdl.xml" id="app.gdfl" role="legal">
   <title>GNU Free Documentation License</title>
 
   <para>
