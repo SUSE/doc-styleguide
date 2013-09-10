@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook43-profile.xsl" 
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook43-profile.xsl"
                  type="text/xml" title="Profiling step"?>
 <!DOCTYPE article PUBLIC
   "-//OASIS//DTD DocBook XML V4.3//EN"
@@ -59,10 +59,6 @@ TODO:
    </formalpara>
   </legalnotice>
  </articleinfo>
- <remark>jw: 
-  Terminology to be specified:
-   specfile, spec-file, spec file
- </remark>
  <abstract>
   <para>
    This document contains SUSE-specific style and layout issues and writing
@@ -442,11 +438,11 @@ TODO:
 <screen>&lt;warning>
  &lt;title>Creating File Systems&lt;/title>
   &lt;para>
-    Formatting may take up to several hours depending 
-    on the partition size. Do not try to interrupt 
-    this process. This could result in a corrupted file 
-    system that renders the installation 
-    unusable. Proceed with the installation after  
+    Formatting may take up to several hours depending
+    on the partition size. Do not try to interrupt
+    this process. This could result in a corrupted file
+    system that renders the installation
+    unusable. Proceed with the installation after
     formatting has been completed.
   &lt;/para>
 &lt;/warning></screen>
@@ -528,7 +524,7 @@ TODO:
     <citetitle>Chicago</citetitle> 8.167.
    </para>
    <para>
-    This style can be very complicated to implement, but the following these
+    This style can be very complicated to implement, but following these
     simple rules is a good start:
    </para>
    <orderedlist>
@@ -614,10 +610,10 @@ TODO:
     prefix (http, ftp, mailto) to enable the automated link check. Never use
     <sgmltag>filename</sgmltag> for this kind of link. Anything that should
     show up as a clickable link in the final HTML and PDF docs must bear the
-    correct markup. Otherwise risk breaking the link checking tools and rob
-    the user of extra functionality, such as click to reach extra external
-    documents. Do not enter a text label for the <sgmltag>ulink</sgmltag> so
-    that the URL itself appears in printed versions.
+    correct markup. Otherwise you risk breaking the link checking tools and rob
+    the user of extra functionality, such as being able to click to reach
+    external documents. Do not enter a text label for the <sgmltag>ulink</sgmltag>
+    so that the URL itself appears in printed versions.
    </para>
    <para>
     Do not use <sgmltag>ulink</sgmltag> and the <literal>file:</literal>
@@ -661,9 +657,10 @@ TODO:
     <quote>he or she.</quote>
    </para>
    <para>
-    For example users, use the various mascots, like Tux, Geeko, and Wilber.
-    <remark>We could use a better and more extensive list. Are there
-     others? -rwalter</remark>
+    For example users, use various free-software mascots, such as Tux (Linux
+    kernel), Geeko (SUSE), Wilber (The GIMP), Foxkeh (Firefox), or Konqi (KDE).
+    <remark>I would have added Java's Duke mascot, but it's probably too unknown
+      --sknorr, 2013-09-10</remark>
    </para>
   </sect2>
 
@@ -673,8 +670,8 @@ TODO:
     <title>Graphics and Figures</title>
     <para>
      Screen shots and graphics should only be used when helpful for
-     following the explanation. Using too many screen shots can confuse the
-     reader even more. If you intend to use screen shots in a document,
+     following the explanation. Using too many screen shots may add to the
+     confusion of the reader. If you intend to use screen shots in a document,
      consider the following issues first:
     </para>
     <itemizedlist>
@@ -706,7 +703,7 @@ TODO:
     <itemizedlist>
      <listitem>
       <para>
-       KISS (keep it short and simple). Custom graphics should always
+       KISS (keep it short and simple). Graphics should always
        simplify complex issues and not confuse the reader by their
        complexity. Embedding too much text in the graphic adds to the
        complexity. Use as little text as possible and be aware of
@@ -738,7 +735,7 @@ timeout 8   <co id="time"/>
 gfxmenu (hd0,0)/boot/message
 
 title SUSE LINUX 9.1.42
-    kernel (hd0,0)/boot/vmlinuz root=/dev/hda1 vga=0x31a selinux=0 
+    kernel (hd0,0)/boot/vmlinuz root=/dev/hda1 vga=0x31a selinux=0
     splash=silent resume=/dev/hda2 desktop elevator=as  showopts
     initrd (hd0,0)/boot/initrd
 
@@ -1118,24 +1115,27 @@ title Disk
     connection.</quote>
    </para>
    <para>
-    Semicolons (;) are mainly used to join two independent but related
-    sentences. They can also be used in place of commas in a complicated
-    series. It is preferable to avoid them when possible and instead break
-    the text into smaller pieces.
+    Semicolons (<literal>;</literal>) are mainly used to join two independent
+    but related sentences. They can also be used in place of commas in a
+    complicated series. It is preferable to avoid them when possible and instead
+    break the text into smaller pieces.
    </para>
    <para>
-    em dashes (<sgmltag>&mdash;</sgmltag>) are punctuation dashes. Use them
+    em dashes (<literal>&mdash;</literal>) are punctuation dashes. Use them
     sparingly and do not surround them with spaces. en dashes
-    (<sgmltag>&ndash;</sgmltag>) should be used between numbers in a range
-    in tables and figures. Also use them for a hyphenated term when a
+    (<literal>&ndash;</literal>) should be used between numbers in a range
+    in tables and figures.
+    Also use them for hyphenated terms in which a
     two-word term is part of the hyphenated term (file
-    system&ndash;specific). Additionally, use them as the symbols for minus
-    signs.
+    system&ndash;specific).
+    <remark>I don't get this rule at all. Why not just use hyphens? Wikipedia
+      doesn't seem to recommend this usage either. --sknorr, 2013-09-10</remark>
+    Additionally, use them as the minus sign.
    </para>
    <para>
     Do not use slashes except when they are part of a standard technical
     term, such as TCP/IP or client/server. Avoid the use of exclamation
-    marks (!).
+    marks (<literal>!</literal>).
    </para>
   </sect2>
 
@@ -1144,9 +1144,9 @@ title Disk
    <para>
     Keep sentences clear and direct. Avoid complicated clauses and try to
     keep sentences short (under 20 words). Avoid joining sentences with
-    semicolons (;) if they can be as easily understood as two independent
-    sentences. Make sure that the relationship between subject, verb, and
-    object are clear. Avoid ending a sentence with a preposition where
+    semicolons (<literal>;</literal>) if they can be as easily understood as
+    two independent sentences. Make sure that the relationship between subject,
+    verb, and object are clear. Avoid ending a sentence with a preposition where
     reasonable.
    </para>
   </sect2>
@@ -1312,7 +1312,7 @@ title Disk
      </step>
     </substeps>
     <para>
-     Repeat this procedure for each user to add.
+     Repeat this procedure for each user you want to add.
     </para>
    </step>
    <step>
@@ -1341,7 +1341,7 @@ title Disk
   </para>
 
   <para>
-   Only specify the software component in ambiguous context. Only put
+   Only specify the software component in ambiguous contexts. Only put
    literal user input or output on a separate line when it is too long to be
    included in the flowing text or is a line that must be added to a file.
   </para>
@@ -1351,7 +1351,7 @@ title Disk
    <para>
     When referring to an application, do not use any markup at all:
    </para>
-   <literallayout>OpenOffice.org is a powerful open source office suite.
+   <literallayout>LibreOffice is a powerful open source office suite.
    </literallayout>
    <para>
     Linux commands are case-sensitive, so always present them as they appear
@@ -1360,8 +1360,7 @@ title Disk
     <sgmltag>command</sgmltag> when referring to an actual command you would
     use on a command line:
    </para>
-   <remark>rwalter: update this to a valid example when convenient.</remark>
-   <literallayout>Use <command>OOo</command> to start OpenOffice.org from the command line.
+   <literallayout>Use <command>loffice</command> to start LibreOffice from the command line.
    </literallayout>
    <para>
     Place options inside the command tags. Options can also be used in text,
@@ -1394,7 +1393,7 @@ title Disk
       References to names of variables rather than to their value. Example:
      </para>
      <literallayout>To select another display manager, start the YaST
-      sysconfig editor and change the value of   
+      sysconfig editor and change the value of
       <varname>DISPLAYMANAGER</varname>.</literallayout>
     </listitem>
    </itemizedlist>
@@ -1419,8 +1418,8 @@ title Disk
      <quote>Typographical Conventions</quote> section of the introduction.
     </para>
     <para>
-     With DocBook V. 4.3, the localization of the identifiers for both
-     modifiers and special keys is handled by DocBook itself. Just use the
+     The localization of the identifiers for both modifiers and special keys is
+     handled by DocBook itself. Just use the
      <sgmltag>keycap</sgmltag> tag and an appropriate
      <literal>function</literal> value. Find details in
      <xref
@@ -1468,8 +1467,8 @@ title Disk
      The layout for filenames and directory names is the same. See the
      following example:
     </para>
-    <literallayout>Open the file <filename>suseconfig</filename> under <filename>/etc</filename>. Access an USB 
-flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
+    <literallayout>Open the file <filename>suseconfig</filename> under <filename>/etc</filename>. Access your
+home directory via <filename>/home/<replaceable>[your username]</replaceable></filename>.</literallayout>
     <para>
      Use slashes properly when dealing with file and directory names:
     </para>
@@ -1506,7 +1505,8 @@ flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
       <term>IP Addresses</term>
       <listitem>
        <para>
-        Currently, we are using only a class C net (netmask 255.255.255.0)
+        Currently, we are using only a class C net
+        (<systemitem>netmask 255.255.255.0</systemitem>)
         for our examples. To create examples using a larger setup, select
         addresses from the private network ranges.
        </para>
@@ -1517,8 +1517,7 @@ flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
       <listitem>
        <para>
         SUSE uses
-        <systemitem class="fqdomainname"
-        >www.example.com</systemitem>
+        <systemitem class="fqdomainname">www.example.com</systemitem>
         as a domain for most examples, because this is a real domain that
         was designed for use in documentation. Hostnames are taken from the
         solar system (such as <systemitem>sun</systemitem> or
@@ -1531,12 +1530,11 @@ flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
       <listitem>
        <para>
         SUSE currently uses mascots like
-        <systemitem class="username"
-         >geeko</systemitem>,
-        <systemitem class="username">tux</systemitem>, and
-        <systemitem class="username">wilber</systemitem> as example users.
-        <remark>rwalter: are there more that should be added
-        here?</remark>
+        <systemitem class="username">geeko</systemitem> (SUSE),
+        <systemitem class="username">tux</systemitem> (Linux kernel),
+        <systemitem class="username">wilber</systemitem> (The GIMP),
+        <systemitem class="username">foxkeh</systemitem> (Firefox), and
+        <systemitem class="username">konqi</systemitem> (KDE) as example users.
        </para>
       </listitem>
      </varlistentry>
@@ -1603,7 +1601,7 @@ flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
     <calloutlist>
      <callout arearefs="co.decl">
       <para>
-       Tells DocBook which kind of declaration to expect.
+       The kind of declaration to be made.
       </para>
      </callout>
      <callout arearefs="co.def">
@@ -1755,7 +1753,7 @@ flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
       <para>
        Any Novell product referenced in our documentation is trademarked one
        way or the other. Currently we have entities for SLES, SLED,
-       openSUSE, and the obsolete SUSE Linux stuff. Adhere to the following
+       openSUSE, and for the obsolete SUSE Linux. Adhere to the following
        rules when dealing with these terms:
       </para>
       <itemizedlist>
@@ -1767,7 +1765,7 @@ flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
        <listitem>
         <para>
          Only use the trademarked version on the first occurrence of the
-         product's name in a chapter.
+         product name in a chapter.
         </para>
        </listitem>
       </itemizedlist>
@@ -1804,10 +1802,6 @@ flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
 <!-- *********************************************************** -->
  <sect1 id="sec.index">
   <title>Indexing</title>
-
-  <remark>rwalter: rework to improve clarity by replacing subitem and
-   sub-subitem with docbook terminology. also describe placement for index
-   items and when to use ranges.</remark>
 
   <para>
    An index is one of the most important parts of a book. Index terms should
@@ -1870,8 +1864,8 @@ flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
    </listitem>
    <listitem>
     <para>
-     If a term has only a single subitem (or a subitem has only a single
-     sub-subitem), consider deleting the subitem.
+     If a term has only a single subentry (or a subitem has only a single
+     sub-subentry), consider deleting the subentry.
     </para>
    </listitem>
    <listitem>
@@ -1960,7 +1954,7 @@ flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
    &lt;glossterm>DocBook&lt;/glossterm>
    &lt;glossdef>
     &lt;para>
-     DocBook provides a system for writing structured documents 
+     DocBook provides a system for writing structured documents
      using SGML or XML. It is particularly well-suited to books
      and papers about computer hardware and software, though it
      is by no means limited to them.
@@ -1984,6 +1978,9 @@ flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
    <citetitle>Merriam-Webster's Collegiate Dictionary, Eleventh
    Edition</citetitle> is considered authoritative.
   </para>
+
+  <remark>Terminology to define: plural of words with x: appendixes v/
+    appendices, indexes v/ indices, all correct -- sknorr, 2013-09-10</remark>
 
   <table>
    <title>Terms Common in SUSE Documentation</title>
@@ -2604,8 +2601,8 @@ flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
      <term>structural</term>
      <listitem>
       <para>
-       Structural remarks relate to how the text is put together. It can be
-       about content that should be placed elsewhere or the level of
+       Structural remarks relate to how the text is put together, such as
+       whether content should be placed elsewhere or the appropriate level of
        headings.
       </para>
      </listitem>
@@ -2649,9 +2646,9 @@ flash drive via <filename>/media/usb-xxx-yz</filename>.</literallayout>
    </variablelist>
    <para>
     The writer of the remark should start the remark with his or her
-    username followed by a colon (:). Others responding to the remark should
-    insert their username, a colon, and comments inside the tags but
-    starting on a new line. Comments should be deleted by the original
+    username followed by a colon (<literal>:</literal>). Others responding to
+    the remark should insert their username, a colon, and comments inside the
+    tags but starting on a new line. Comments should be deleted by the original
     writer when they consider the issue resolved. The following is an
     example remark:
    </para>
@@ -2674,8 +2671,9 @@ geeko: see /usr/share/doc/foo.html&lt;/remark></screen>
    <tip>
     <title>Valid Comments</title>
     <para>
-     Do not use <literal>--</literal> in comments. The use of
-     <literal>--</literal> causes errors.
+     Do not use <literal>--</literal> in comments. <literal>--</literal> is
+     the first part of end-of-comment string <literal>--&gt;</literal> and thus
+     causes validation to fail.
     </para>
    </tip>
   </sect2>
@@ -3035,11 +3033,12 @@ id="tab.yast.sources"</screen>
        </para>
        <para>
         This element contains a set of alternative <quote>media
-        objects</quote>. In DocBook V3.1, three types of external objects
+        objects</quote>. In DocBook, three types of external objects
         are defined: <sgmltag>videoobject</sgmltag>s,
         <sgmltag>audioobject</sgmltag>s, and
         <sgmltag>imageobject</sgmltag>s. Additional textual descriptions may
         be provided with <sgmltag>textobject</sgmltag>s.
+        <remark>Still true with DocBook 4.5, in 2013 -- sknorr, 2013-09-10</remark>
        </para>
       </listitem>
      </varlistentry>
@@ -3080,8 +3079,7 @@ id="tab.yast.sources"</screen>
      <sgmltag>figure</sgmltag> element.
     </para>
     <para>
-     Provide an appropriate image width. Future versions may contain SVG
-     (Scalable Vector Graphics) images.
+     Provide an appropriate image width.
     </para>
 <screen>&lt;figure id="fig.foo">
   &lt;title>A Foo Picture&lt;/title>
@@ -3220,7 +3218,7 @@ timeout 8   &lt;co id="co.time"/>
 gfxmenu (hd0,0)/boot/message
 
 title SUSE LINUX 9.1.42
-    kernel (hd0,0)/boot/vmlinuz root=/dev/hda1 vga=0x31a selinux=0 
+    kernel (hd0,0)/boot/vmlinuz root=/dev/hda1 vga=0x31a selinux=0
     splash=silent resume=/dev/hda2 desktop elevator=as  showopts
     initrd (hd0,0)/boot/initrd
 
@@ -3233,11 +3231,11 @@ title Diskette
        &lt;para>Here, define the colors used by the
 	&lt;application>GRUB&lt;/application> menu.
        &lt;/para>
-      &lt;/callout>      
+      &lt;/callout>
       &lt;callout arearefs="co.def">
        &lt;para>Define the default option.
        &lt;/para>
-      &lt;/callout>      
+      &lt;/callout>
       &lt;callout arearefs="co.time">
        &lt;para>
 	Select a timeout after which booting will start automatically.
@@ -3290,7 +3288,7 @@ title Diskette
     &lt;para>Get up from your bed&lt;/para>
   &lt;/step>
   &lt;step>
-    &lt;para>Walk to the kitchen&lt;/para> 
+    &lt;para>Walk to the kitchen&lt;/para>
   &lt;/step>
   &lt;step>
     &lt;para>Make coffee or tea&lt;/para>
@@ -3391,8 +3389,8 @@ title Diskette
   &lt;/question>
   &lt;answer>
     &lt;para>
-        XML is the acronym for extensible markup 
-        language. It is a markup language for documents 
+        XML is the acronym for extensible markup
+        language. It is a markup language for documents
         containing structured information.
     &lt;/para>
    &lt;/answer>
@@ -3459,7 +3457,7 @@ title Diskette
     <para>
      Mark up keys with the element <sgmltag>keycap</sgmltag>:
     </para>
-<screen>&lt;para> 
+<screen>&lt;para>
   Press &lt;keycap>F2&lt;/keycap> to ... Use the &lt;keycap
   function="control"/> key.
 &lt;/para></screen>
@@ -3519,9 +3517,9 @@ title Diskette
         If you omit the <sgmltag class="attribute">action</sgmltag>
         attribute, this value is used:
        </para>
-<screen>&lt;para> 
+<screen>&lt;para>
   Press &lt;keycombo> &lt;keycap function="alt"/>
-  &lt;keycap>F2&lt;/keycap> &lt;/keycombo> to ... 
+  &lt;keycap>F2&lt;/keycap> &lt;/keycombo> to ...
 &lt;/para></screen>
        <literallayout>Press <keycombo>
 <!-- FIXME: Remove "Ctrl", if DB-Stylesheets supports attribut function. --><keycap function="alt">Alt</keycap><keycap>S</keycap></keycombo> to ...</literallayout>
@@ -3535,16 +3533,16 @@ title Diskette
         Use this if you need keys pressed sequentially, for example, those
         in Emacs:
        </para>
-<screen>&lt;para> 
-To save a file in Emacs, press &lt;keycombo action="seq"> 
-   &lt;keycombo action="press"> 
-     &lt;keycap function="control"/> 
-     &lt;keycap>X&lt;/keycap> 
+<screen>&lt;para>
+To save a file in Emacs, press &lt;keycombo action="seq">
+   &lt;keycombo action="press">
+     &lt;keycap function="control"/>
+     &lt;keycap>X&lt;/keycap>
    &lt;/keycombo>
    &lt;keycombo>
      &lt;keycap function="control"/>
      &lt;keycap>S&lt;/keycap>
-   &lt;/keycombo> 
+   &lt;/keycombo>
  &lt;/keycombo>.
 &lt;/para></screen>
        <literallayout>To save a file in Emacs, press <keycombo action="seq"><keycombo action="press"><keycap function="control">Ctrl</keycap><keycap>X</keycap></keycombo><keycombo><keycap function="control">Ctrl</keycap><keycap>S</keycap></keycombo></keycombo>.</literallayout>
@@ -3593,7 +3591,7 @@ To save a file in Emacs, press &lt;keycombo action="seq">
     <para>
      To mark up nested menu structures, use <sgmltag>menuchoice</sgmltag>:
     </para>
-<screen>&lt;para> 
+<screen>&lt;para>
  To exit Emacs, use &lt;menuchoice>
    &lt;guimenu>File&lt;/guimenu>
    &lt;guimenu>Exit Emacs&lt;/guimenu>
@@ -3738,7 +3736,7 @@ To save a file in Emacs, press &lt;keycombo action="seq">
     </para>
     <literallayout>See the man page of <command>xmllint</command> (<command>man 1 xmllint</command>).</literallayout>
     <para>
-     Use <sgmltag>ulink</sgmltag> to reference to an URL:
+     Use <sgmltag>ulink</sgmltag> to reference to a URL:
     </para>
 <screen>&lt;para> See &lt;ulink url="http://www.suse.de"/>. See &lt;ulink
      url="http://www.novell.de">Novell Deutschland&lt;/ulink>.</screen>
@@ -3762,7 +3760,7 @@ To save a file in Emacs, press &lt;keycombo action="seq">
 <screen>&lt;sect1 id="sec.foo" <emphasis role="bold">xreflabel="Hello foo"</emphasis>>
   &lt;title>Foo&lt;/title>
   &lt;para>...&lt;/para>
- 
+
 &lt;/sect1>
   ...
 &lt;para>See <emphasis role="bold">&lt;xref linkend="chap.foo"/></emphasis>...&lt;/para></screen>
@@ -3796,7 +3794,7 @@ To save a file in Emacs, press &lt;keycombo action="seq">
      Use bold text with care.
     </para>
 <screen>&lt;para>
- This is &lt;emphasis>strong&lt;/emphasis> word. 
+ This is &lt;emphasis>strong&lt;/emphasis> word.
  This is a  &lt;emphasis role="bold">very strong&lt;/emphasis> word.
 &lt;/para></screen>
     <literallayout>This is a <emphasis>strong</emphasis> word.
