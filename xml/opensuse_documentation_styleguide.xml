@@ -97,15 +97,6 @@ TODO:
    a separate project document, or through templates.
   </para>
 
-  <sect2 id="sec.susedoc.lfl">
-   <title>Lessons for Lizards</title>
-   <para>
-    The standard base structure of LfL is reflected in its template. Find
-    the template in LfL's SVN. The project is still in development stages.
-    Once the project is more stable, guidelines will be added here.
-   </para>
-  </sect2>
-
   <sect2 id="sec.susedoc.book">
    <title>Official SUSE Manuals</title>
    <para>
@@ -129,40 +120,9 @@ TODO:
      <listitem>
       <para>
        The second page (imprint) lists edition, copyright notice, and the
-       names of all contributors to the manual. Enter the names in the
-       following files:
+       names of all contributors to the manual. Add the names of all
+       authors and contributors to the file <filename>authors.xml</filename>.
       </para>
-      <variablelist>
-       <varlistentry>
-        <term><filename>authors-chapters.xml</filename>
-        </term>
-        <listitem>
-         <para>
-          List authors.
-         </para>
-        </listitem>
-       </varlistentry>
-       <varlistentry>
-        <term><filename>authors-trans.xml</filename>
-        </term>
-        <listitem>
-         <para>
-          List all translators who worked on the manual.
-         </para>
-        </listitem>
-       </varlistentry>
-       <varlistentry>
-        <term><filename>authors-office.xml</filename>
-        </term>
-        <listitem>
-         <para>
-          List the members of the documentation department who wrote and
-          edited the manual. This file is only used in internally-produced
-          documentation.
-         </para>
-        </listitem>
-       </varlistentry>
-      </variablelist>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -624,7 +584,7 @@ TODO:
     Do not use links across documents where ID and IDREF linking is not
     possible and <sgmltag>ulink</sgmltag> is inappropriate. For references
     to information in SUSE books outside the current document set, use the
-    appropriate macro for the book title. The reference should not refer to
+    appropriate entity for the book title. The reference should not refer to
     a specific chapter or section number or title because these things
     change too easily. Instead, make a reference using the document title
     but no specific headers.
@@ -1546,8 +1506,8 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
   <title>Entities</title>
 
   <para>
-   Entities are a kind of <quote>macro</quote> in XML, but only with text
-   expansion capabilities. They are used for several purposes:
+   Entities can be used to expand text. There are several situations in which
+   they might come in handy:
   </para>
 
   <itemizedlist>
