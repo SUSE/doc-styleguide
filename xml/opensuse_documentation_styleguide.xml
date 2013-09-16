@@ -198,12 +198,12 @@ TODO:
         <term>Abstract</term>
         <listitem>
          <para>
-          The abstract should provide a brief summary of the information
-          provided in the chapter. Rather than writing about what the
-          chapter does, summarize the information the chapter contains. This
-          gives the reader a clear idea of what he or she can learn by
-          reading the chapter. <xref linkend="ex.style.abstract"/> is an
-          example abstract from the chapter about file systems.
+          Abstracts briefly summarize the information provided in the chapter.
+          Rather than writing about what the chapter does, summarize the
+          information the chapter contains. This gives the reader a clear idea
+          of what he or she can learn by reading the chapter.
+          <xref linkend="ex.style.abstract"/> is an example abstract from the
+          chapter about file systems.
          </para>
          <example id="ex.style.abstract">
           <title>An Example Abstract</title>
@@ -315,7 +315,7 @@ TODO:
    <para>
     Abbreviations of common units of measure may also be used. Do not create
     a plural of these abbreviations by adding an <quote>s.</quote> Use a
-    nonbreaking (<sgmltag class="genentity">nbsp</sgmltag>) space between
+    non-breaking (<sgmltag class="genentity">nbsp</sgmltag>) space between
     the numeral and multiple-letter abbreviations. Do not use a space before
     single-letter abbreviations.
    </para>
@@ -663,7 +663,7 @@ TODO:
     <itemizedlist>
      <listitem>
       <para>
-       KISS (keep it short and simple). Graphics should always
+       KISS (<quote>keep it short and simple</quote>). Graphics should always
        simplify complex issues and not confuse the reader by their
        complexity. Embedding too much text in the graphic adds to the
        complexity. Use as little text as possible and be aware of
@@ -917,27 +917,20 @@ title Disk
       linkend="sec.markup.inline.referencing"/> for detailed
      information.
     </para>
-    <para>
-     The following example of an itemized list is from a <quote>For More
-     Information</quote> sections.
-     <remark>rwalter: at some point we want one that isn't from a for more info because we
-      request varlist for for more info sects.</remark>
-    </para>
     <example id="ex.bulllist">
      <title>A Bullet List</title>
-     <itemizedlist spacing="compact">
-      <title>Linux Information</title>
-      <listitem>
-       <para>
-        <ulink url="http://www.suse.com"/>
-       </para>
-      </listitem>
-      <listitem>
-       <para>
-        <ulink url="http://www.novell.com/linux"/>
-       </para>
-      </listitem>
-     </itemizedlist>
+       <para>The following operating systems are supported:</para>
+       <itemizedlist>
+        <listitem>
+          <para>Windows 2000 and newer</para>
+        </listitem>
+        <listitem>
+          <para>Linux, kernel 2.4 and newer</para>
+        </listitem>
+        <listitem>
+          <para>FreeBSD 7 and newer</para>
+        </listitem>
+      </itemizedlist>
     </example>
    </sect3>
    <sect3 id="sec.edrules.lists.num">
@@ -955,20 +948,21 @@ title Disk
      to a numbered list and add a title to it in order to reference it.
      Individual list items may be referenced by assigning an
      <sgmltag class="attribute">id</sgmltag> and
-     <sgmltag class="attribute"
-     >xreflabel</sgmltag> attribute. The
+     <sgmltag class="attribute">xreflabel</sgmltag> attribute. The
      entry is then identified by the value of
-     <sgmltag
-      class="attribute">id</sgmltag> and the value of
+     <sgmltag class="attribute">id</sgmltag> and the value of
      <sgmltag class="attribute">xreflabel</sgmltag> is printed as the label
      of this item. See <xref linkend="sec.edrules.reference"/> and
-     <xref
-      linkend="sec.markup.inline.referencing"/> for detailed
+     <xref linkend="sec.markup.inline.referencing"/> for detailed
      information.
     </para>
     <example id="ex.numlist">
      <title>A Numbered List</title>
-     <orderedlist spacing="compact">
+     <para>
+      Make sure the following requirements are met before trying to set up the
+      Apache Web server:
+     </para>
+     <orderedlist>
       <listitem>
        <para>
         The machine's network is configured properly.
@@ -1165,7 +1159,7 @@ title Disk
    <para>
     Maintain a professional tone. Except in casual documents, do not use
     contractions. Do not use humor. It does not translate well and may be
-    misunderstood by nonnative speakers.
+    misunderstood by non-native speakers.
    </para>
    <para>
     Use second person (you) to refer to the reader. Normally the reader is
@@ -1328,9 +1322,10 @@ title Disk
     <xref linkend="sec.markup.inline.commands"/>.
    </para>
    <para>
-    Do not use any markup for commands as part of a
-    <sgmltag>screen</sgmltag> environment. Anything inside this environment
-    appears verbatim.
+    In cases where it helps understanding, you should use markup for commands
+    even inside <sgmltag>screen</sgmltag> environments. For instance, mark up
+    the command when both the command and its output are shown in the same
+    screen.
    </para>
   </sect2>
 
@@ -1761,71 +1756,64 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
 <!-- *********************************************************** -->
 <!-- *********************************************************** -->
  <sect1 id="sec.index">
-  <title>Indexing</title>
+  <title>Creating an Index</title>
 
   <para>
-   An index is one of the most important parts of a book. Index terms should
-   be used to provide the reader with access to useful information. Insert
-   the term as close to the relevant text as possible to ensure that the
+   An index is an important part of a book, especially when printing. Index
+   terms should be used to provide the reader with access to useful information.
+   Insert the term as close to the relevant text as possible to ensure that the
    page reference points to the correct location. When more than a few
    paragraphs contain information that should be indexed under this term,
-   use a page range. A user referring to the index can then get a quick
-   overview of how much information is provided at the different locations
-   and have a better chance of finding needed information quickly. Up to
-   three levels of index items can be used.
+   use a page range. Page ranges help users determine how much information a
+   given section provides on a certain topic. Nest index terms up to
+   two levels deep.
   </para>
 
   <para>
-   Only index text that really provides useful information to the reader.
-   For example, a section about configuring an application should be indexed
-   to the application, but a passing reference to the application should not
-   be indexed at all. Try to think like a potential user of the manual. Is a
-   user likely to be looking for that information? Some examples of things
-   that should not be indexed include <quote>For More Information</quote>
-   sections, things mentioned in the abstract of a chapter (index where it
-   is actually discussed, not where it is mentioned in the abstract), and a
-   command used for some other purpose (do not index <command>cd</command>
-   where it is used to change directories as part of a procedure, but do
-   index a section discussing appropriate usage of the command itself).
+   When indexing, try to answer the question: Is a user likely to be looking
+   for this information? For example, a section about
+   configuring an application should be indexed to the application, but a
+   passing reference to the application should not be indexed at all.
+  </para>
+
+  <para>Some parts of a document should never be indexed, those include
+   <quote>For More Information</quote> sections, abstracts, or commands that
+   only appear as means to a different end (as in, do not index
+   <command>cd</command> when it is only used to change directories as part of
+   a procedure).
   </para>
 
   <para>
-   Select the terms to use carefully because consistency is important. Write
-   nouns in the plural and verbs in a gerund form (-ing). Capitalize terms
-   only if they would be capitalized if used in the middle of a sentence.
+   Be careful with consistently selecting the terms to index. However, consider
+   that users might not have the exact same terms in mind as you do, especially
+   when it comes to highly technical words or brands. Write nouns in the plural
+   and verbs in a gerund form (<emphasis>-ing</emphasis>).
+   Capitalize terms only if they would be capitalized if used in the middle of
+   a sentence.
   </para>
 
   <para>
    When selecting terms, try to consider what else is included in the
-   manual. If the manual only includes a small amount of information for the
+   manual. If the manual only includes a small amount of information on a given
    topic, general index items are probably more appropriate. If indexing a
    chapter about an application, much more specific index terms are needed
-   so the user can find exactly the information he or she needs. Also
-   consider that the user might not know what something is called. It is not
-   helpful only to index Konqueror under its name if the user might want a
-   Web browser and not know what applications function as a Web browser. In
-   a case like that, you may need to index general information both places.
+   so that users can find exactly the information they need.
   </para>
 
   <para>
-   If you have time when working on indexing, check the built index to see
-   how well your terms integrate with existing items. Try to make your terms
-   consistent with other items used. A final index <quote>polishing</quote>
-   of an entire index is part of the editing and layout process. A few tips
-   for evaluating and adjusting the index of an entire document:
+   Finally, a few tips to help <quote>polish</quote> indexes:
   </para>
 
   <itemizedlist>
    <listitem>
     <para>
-     If a term has six or more page references, check those references and
-     see if it is possible to create subitems.
+     If an entry has six or more page references, check those references and
+     see if it is possible to create subentries.
     </para>
    </listitem>
    <listitem>
     <para>
-     If a term has only a single subentry (or a subitem has only a single
-     sub-subentry), consider deleting the subentry.
+     If an entry has only a single subentry, consider deleting the subentry.
     </para>
    </listitem>
    <listitem>
@@ -1838,15 +1826,15 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
     <para>
      If there are copious third-level entries or third-level entries with
      too many references, consider adjusting the index structure to use a
-     more specific primary term.
+     more specific primary entry.
     </para>
    </listitem>
    <listitem>
     <para>
      Check all <emphasis>see</emphasis> and <emphasis>see also</emphasis>
      references for consistency. An item should not have both a page and a
-     see reference. Page references and <emphasis>see also</emphasis>
-     together is acceptable but should be used sparingly.
+     <emphasis>see</emphasis> reference. Where possible, avoid using page
+     references and <emphasis>see also</emphasis> together.
     </para>
    </listitem>
   </itemizedlist>
@@ -1880,7 +1868,7 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
   </example>
  </sect1>
  <sect1 id="sec.gloss">
-  <title>Preparing Glossary Entries</title>
+  <title>Creating a Glossary</title>
 
   <para>
    An optional glossary contains terms and their definitions. Make sure that
@@ -1926,596 +1914,807 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
 </screen>
   </example>
  </sect1>
- <sect1 id="sec.term">
-  <title>Spelling Terms</title>
+ <sect1>
+  <title>Spelling and Terminology</title>
 
   <para>
-   Because multiple spellings of a variety of words and terms are in common
-   usage, we have standardized on a variant to use in our documentation.
-   Terms in this table are capitalized as they would be in the middle of a
-   sentence. Some words listed here are provided because they are often
-   written incorrectly by nonnative speakers. For words not listed here,
-   <citetitle>Merriam-Webster's Collegiate Dictionary, Eleventh
-   Edition</citetitle> is considered authoritative.
+    For all words not specially defined below, SUSE uses American English
+    spellings as defined below in <citetitle>Merriam-Webster's Collegiate
+    Dictionary, Eleventh Edition</citetitle> or the accompanying web site
+    <ulink url="http://www.m-w.com/"/>. However,
+    in case of a doubt, the primary spelling in the printed dictionary is
+    considered authoritative.
+  </para>
+
+  <sect2 id="sec.spell">
+    <title>Finer Points of Spelling</title>
+    <para>When adding suffixes to words, do not add a hyphen after the suffix
+      unless either two consonants clash or you foresee misunderstandings.
+    </para>
+  </sect2>
+
+  <sect2 id="sec.term">
+  <title>Terminology</title>
+
+  <para>
+    Because multiple spellings of a variety of words and terms are in common
+    usage, we have standardized on a variant to use in our documentation.
+    Terms in this table are capitalized as they would be in the middle of a
+    sentence. Some words listed here are provided because they are often
+    written incorrectly by non-native speakers.
   </para>
 
   <remark>Terminology to define: plural of words with x: appendixes v/
     appendices, indexes v/ indices, all correct -- sknorr, 2013-09-10</remark>
+  <remark>Spelling of SUSE brand/product names -- sknorr, 2013-09-16</remark>
+  <remark>Add simpl[ey] -- sknorr, 2013-09-16</remark>
 
   <table>
    <title>Terms Common in SUSE Documentation</title>
-   <tgroup cols="2">
+   <tgroup cols="3">
     <thead>
      <row>
-      <entry>Word or Phrase</entry>
-      <entry>Usage Guideline</entry>
+      <entry>Accepted Terminology</entry>
+      <entry>Rejected Terminology (Reason)</entry>
+      <entry>Additional Usage Guideline</entry>
      </row>
     </thead>
+    <!-- Sorting (pseudo-regex): (?<=((to)|The))\.-–+\/[0-9][A-Z][a-z] -->
     <tbody>
      <row>
       <entry>3D</entry>
-      <entry>no hyphen, capitalize D</entry>
+      <entry>3 D, 3 d, 3.D., 3.d., 3-D, 3-d, 3d, Three-D</entry>
+      <entry>adjective</entry>
      </row>
      <row>
       <entry>32-bit</entry>
-      <entry>hyphened, lowercase B</entry>
+      <entry>32 Bit, 32 bit, 32-Bit, 32Bit, 32bit</entry>
+      <entry>adjective</entry>
      </row>
      <row>
       <entry>address book</entry>
-      <entry>two words</entry>
-     </row>
-     <row>
-      <entry>advice</entry>
+      <entry>addressbook</entry>
       <entry>noun</entry>
      </row>
      <row>
-      <entry>to advise</entry>
+      <entry>advice</entry>
+      <entry>advise (misspelling)</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
+      <entry>(to) advise</entry>
+      <entry>(to) advice (misspelling)</entry>
       <entry>verb</entry>
      </row>
      <row>
       <entry>back-end</entry>
-      <entry>hyphenate</entry>
+      <entry>backend</entry>
+      <entry>noun</entry>
      </row>
      <row>
-      <entry>back up</entry>
+      <entry>(to) back up</entry>
+      <entry>(to) backup</entry>
       <entry>verb</entry>
      </row>
      <row>
       <entry>backup</entry>
+      <entry>back-up, back up</entry>
       <entry>noun</entry>
      </row>
      <row>
       <entry>Bash</entry>
-      <entry>capitalize according to the GNU Bash manual</entry>
+      <entry>bash</entry>
+      <entry>noun; spelling as per the GNU Bash manual</entry>
      </row>
      <row>
       <entry>boot disk</entry>
-      <entry>disk for starting the system</entry>
+      <entry>boot-disk, bootdisk</entry>
+      <entry>noun; disk for starting the system</entry>
      </row>
      <row>
       <entry>boot loader</entry>
-      <entry>two words</entry>
+      <entry>boot-loader, bootloader</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>cannot</entry>
-      <entry>one word</entry>
+      <entry>can't (contraction), can not</entry>
+      <entry>verb</entry>
      </row>
      <row>
-      <entry>case-sensitive, case-insensitive</entry>
-      <entry>always hyphenate</entry>
+      <entry>CA</entry>
+      <entry>C.A., Ca</entry>
+      <entry>noun; acronym for <emphasis>certificate authority</emphasis></entry>
+     </row>
+     <row>
+      <entry>case-sensitive</entry>
+      <entry>case sensitive, casesensitive</entry>
+      <entry>adjective</entry>
+     </row>
+     <row>
+      <entry>case-insensitive</entry>
+      <entry>case insensitive, caseinsensitive</entry>
+      <entry>adjective</entry>
      </row>
      <row>
       <entry>certificate authority</entry>
-      <entry>acronym is CA; not <quote>certification authority</quote>
-      </entry>
+      <entry>certifica<emphasis>tion</emphasis> authority</entry>
+      <entry>noun; acronym is <emphasis>CA</emphasis></entry>
      </row>
      <row>
       <entry>check box</entry>
-      <entry>two words</entry>
+      <entry>check-box, checkbox, tick box (British), tick-box, tickbox</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>checklist</entry>
-      <entry>one word</entry>
+      <entry>check list, check-list, tick list (British), tick-list, ticklist</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>check mark</entry>
-      <entry>two words</entry>
+      <entry>check-mark, checkmark, tick (British)</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>chipset</entry>
-      <entry>one word</entry>
+      <entry>chip set, chip-set</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
+      <entry>(to) click</entry>
+      <entry>(to) click on</entry>
+      <entry>verb</entry>
      </row>
      <row>
       <entry>client/server</entry>
-      <entry>a slash is accepted here</entry>
+      <entry>client server, client-server, client–server, client+server</entry>
+      <entry>noun/noun</entry>
      </row>
      <row>
       <entry>command line</entry>
-      <entry>never hyphenated</entry>
+      <entry>command-line, commandline</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>control center</entry>
-      <entry>a generic term as in the YaST control center or the KDE control
-       center</entry>
+      <entry>Control Center, Control center, Control-Center, Control-center,
+        control-center, Controlcenter, controlcenter</entry>
+      <entry>noun; generic term, as in: <emphasis>the YaST control center</emphasis>
+       or <emphasis>the KDE control center</emphasis></entry>
      </row>
      <row>
-      <entry>deselect</entry>
+      <entry>(to) deselect</entry>
+      <entry>(to) de-select, (to) un-select, (to) unselect</entry>
       <entry>verb</entry>
      </row>
      <row>
       <entry>DHCP</entry>
-      <entry>capitalized</entry>
+      <entry>D.H.C.P., Dhcp, dhcp</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>dial-up</entry>
-      <entry>use only as an adjective</entry>
+      <entry>dial up, dialup</entry>
+      <entry>only as adjective</entry>
      </row>
      <row>
       <entry>DNS</entry>
-      <entry> do not use DNS name server; capitalize the acronym, but
-       lowercase the expansion </entry>
+      <entry>D.N.S., DNS name server, Dns, dns</entry>
+      <entry>noun; acronym for <emphasis>dynamic name server</emphasis></entry>
      </row>
      <row>
-      <entry>double-click</entry>
-      <entry>hyphenate, do not use with <quote>on</quote>
-      </entry>
+      <entry>(to) double-click</entry>
+      <entry>(to) double click, (to) double click on, (to) doubleclick,
+        (to) doubleclick on</entry>
+      <entry>verb</entry>
+     </row>
+     <row>
+      <entry>dynamic name server</entry>
+      <entry>Dynamic Name Server, Dynamic name server</entry>
+      <entry>noun; acronym is <emphasis>DNS</emphasis></entry>
      </row>
      <row>
       <entry>e-mail</entry>
-      <entry>always hyphenated </entry>
+      <entry>E-Mail, E-mail, Email, email</entry>
+      <entry>always hyphenated</entry>
+     </row>
+     <row>
+      <entry/><remark>Should this stand? -- sknorr, 2013-09-16</remark>
+      <entry>easy (filler), easily</entry>
+      <entry>adjective, adverb</entry>
      </row>
      <row>
       <entry>Ethernet</entry>
+      <entry>ethernet</entry>
       <entry>capitalized </entry>
      </row>
      <row>
-      <entry>facilitate</entry>
-      <entry>avoid using</entry>
+      <entry/><remark>Reasonable alternative, "ease"? Or was this rejected for tending to be filler? -- sknorr, 2013-09-16</remark>
+      <entry>(to) facilitate</entry>
+      <entry>avoid</entry>
      </row>
      <row>
-      <entry>filename</entry>
+      <entry>filename</entry><remark>This shouldn't be the accepted spelling. -- sknorr, 2013-09-16</remark>
+      <entry>file name, file-name</entry>
       <entry>one word</entry>
      </row>
      <row>
       <entry>file server</entry>
+      <entry>file-server, fileserver</entry>
       <entry>two words</entry>
      </row>
      <row>
       <entry>file system</entry>
-      <entry>two words</entry>
+      <entry>file-system, filesystem</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>flavor</entry>
-      <entry>use AE</entry>
+      <entry>flavour (British)</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>framebuffer</entry>
+      <entry>frame buffer, frame-buffer</entry>
       <entry>one word</entry>
      </row>
      <row>
       <entry>front-end</entry>
-      <entry>hyphenate</entry>
+      <entry>front end, frontend</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>The GIMP</entry>
-      <entry>project standard for application</entry>
+      <entry>the G.I.M.P., the GIMP, The Gimp, the Gimp, the gimp</entry>
+      <entry>noun; spelling as per project standard; acronym for
+        <emphasis>GNU Image Manipulation Program</emphasis></entry>
      </row>
      <row>
       <entry>GNOME</entry>
-      <entry>project standard for the desktop</entry>
+      <entry>G.N.O.M.E., GNU Networked Object Model Environment, Gnome</entry>
+      <entry>noun; spelling as per project standard; not an acronym</entry>
      </row>
      <row>
       <entry>GRUB</entry>
-      <entry>capitalize</entry>
+      <entry>G.R.U.B., Grub, grub</entry>
+      <entry>noun; acronym for <emphasis>GRand Unified Bootloader</emphasis></entry>
+     </row>
+     <row>
+      <entry>graphical user interface</entry>
+      <entry>Graphical User Interface, graphical UI</entry>
+        <remark>Not completely sure about rejecting graphical UI -- sknorr, 2013-09-16</remark>
+      <entry>noun; acronym for <emphasis>graphical user interface</emphasis></entry>
      </row>
      <row>
       <entry>GUI</entry>
-      <entry>capitalized</entry>
+      <entry>G.U.I., GUI interface, GUI user interface, Gui, graphical UI</entry>
+      <entry>noun; acronym for <emphasis>graphical user interface</emphasis></entry>
      </row>
      <row>
       <entry>hard disk</entry>
-      <entry>two words</entry>
+      <entry>HDD, HD, hard disk drive, hard-disk, harddisk, hdd, hd</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>hard link</entry>
-      <entry>two words</entry>
+      <entry>hard-link, hardlink</entry>
+      <entry>noun</entry>
      </row>
      <row>
-      <entry>have to</entry>
-      <entry>use "need to" or "must" instead</entry>
+      <entry>home page</entry><remark>This shouldn't be the accepted spelling. -- sknorr, 2013-09-16</remark>
+      <entry>home-page, homepage</entry>
+      <entry>noun</entry>
      </row>
      <row>
-      <entry>home page</entry>
-      <entry>two words</entry>
+      <entry>hostname</entry><remark>This shouldn't be the accepted spelling. -- sknorr, 2013-09-16</remark>
+      <entry>host name, host-name</entry>
+      <entry>noun</entry>
      </row>
      <row>
-      <entry>hostname</entry>
-      <entry>one word</entry>
-     </row>
-     <row>
-      <entry>hotplug, hotplugging, hotpluggable</entry>
-      <entry>note spellings</entry>
+      <entry>(to) hotplug</entry>
+      <entry>(to) hot plug, (to) hot-plug</entry>
+      <entry>verb</entry>
+    </row>
+    <row>
+      <entry>hotplugging</entry>
+      <entry>hot plugging, hot-plugging</entry>
+      <entry>noun</entry>
+    </row>
+    <row>
+      <entry>hotpluggable</entry>
+      <entry>hot pluggable, hot-pluggable</entry>
+      <entry>adjective</entry>
      </row>
      <row>
       <entry>HTTP</entry>
-      <entry>capitalize</entry>
+      <entry>H.T.T.P., Http, http</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>hypervisor</entry>
-      <entry>one word, lowercase</entry>
+      <entry>hyper visor, hyper-visor, hyper vizor, hyper-vizor, hypervizor</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>infrared</entry>
-      <entry>one word, no hyphen</entry>
+      <entry>infra red, infra-red</entry>
+      <entry>noun, adjective</entry><remark>Really a noun? -- sknorr, 2013-09-16</remark>
      </row>
      <row>
       <entry>installation source</entry>
-      <entry>correct term for valid sources of installation data for SUSE
-       Linux and openSUSE; when reasonable, mention that online repositories
-       that are valid installation sources are available</entry>
+      <entry>installation data source, installation media</entry>
+        <remark>Really reject installation media? -- sknorr, 2013-09-16</remark>
+      <entry>noun; correct term for valid sources of installation data for SUSE
+       Linux Enterprise and openSUSE; when reasonable, mention that online
+       repositories that are valid installation sources are available</entry>
      </row>
      <row>
-      <entry>Internet</entry>
-      <entry>capitalize first letter</entry>
+      <entry>Internet</entry><remark>Is this reasonable still? -- sknorr, 2013-09-16</remark>
+      <entry>internet</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>intranet</entry>
-      <entry>lowercase</entry>
+      <entry>Intranet</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>I/O port</entry>
-      <entry>slash in I/O</entry>
+      <entry>I.O. port, I-O port, IO port, Io port</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>IPsec</entry>
-      <entry>note capitalization</entry>
+      <entry>IPSEC, Ipsec</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>journaling</entry>
-      <entry>one L</entry>
+      <entry>journalling (British)</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>Kdump</entry>
-      <entry>capitalize if application</entry>
+      <entry>KDUMP, kdump</entry>
+      <entry>noun; for application only</entry>
      </row>
      <row>
       <entry>kdump</entry>
-      <entry>lowercase if command</entry>
+      <entry>KDUMP,Kdump</entry>
+      <entry>command; for command only</entry>
+        <remark>So, commands aren't nouns, then? -- sknorr, 2013-09-16</remark>
      </row>
      <row>
       <entry>Kernel</entry>
-      <entry>capitalize</entry>
+      <entry>kernel</entry>
+      <entry>noun; capitalize if referring to Linux kernel</entry>
      </row>
      <row>
       <entry>Kprobes</entry>
-      <entry>capitalize if application</entry>
+      <entry>kprobes</entry>
+      <entry>noun; for application only</entry>
      </row>
      <row>
       <entry>kprobes</entry>
-      <entry>lowercase if command</entry>
+      <entry>Kprobes</entry>
+      <entry>command; for command only</entry>
+        <remark>So, commands aren't nouns, then? -- sknorr, 2013-09-16</remark>
      </row>
      <row>
-      <entry>left-click</entry>
-      <entry>hyphenate, do not follow with <quote>on</quote>
-      </entry>
+      <entry>(to) left-click</entry>
+      <entry>(to) left click, (to) left click on, (to) leftclick,
+        (to) leftclick on</entry>
+      <entry>verb</entry>
      </row>
      <row>
-      <entry>license, licenses</entry>
-      <entry>use AE
-      </entry>
+      <entry>license</entry>
+      <entry>licence (British)</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
+      <entry>(to) license</entry>
+      <entry>(to) licence (British)</entry>
+      <entry>verb</entry>
      </row>
      <row>
       <entry>local host, localhost</entry>
+      <entry/>
       <entry>normally two words, one word for default name of the local
       host</entry>
      </row>
      <row>
       <entry>log file</entry>
+      <entry/>
       <entry>two words</entry>
      </row>
      <row>
       <entry>log in, log out, login</entry>
+      <entry/>
       <entry>two words for verbs, one for noun; do not use <quote>log
        on</quote> or <quote>log off</quote>
       </entry>
      </row>
      <row>
       <entry>log in to</entry>
+      <entry/>
       <entry>not "log into"
       </entry>
      </row>
      <row>
       <entry>loopback device</entry>
+      <entry/>
       <entry>loopback is one word and not hyphenated</entry>
      </row>
      <row>
+      <entry>need to</entry>
+      <entry>have to</entry>
+      <entry>verb; see also <emphasis>must</emphasis></entry>
+     </row>
+     <row>
       <entry>mail server</entry>
+      <entry/>
       <entry>two words</entry>
      </row>
      <row>
       <entry>Maildir</entry>
+      <entry/>
       <entry>note capitalization; this is a specific format, not a generic reference to the
        directory in which mail is stored</entry>
      </row>
      <row>
       <entry>mainboard</entry>
+      <entry/>
       <entry>one word</entry>
      </row>
      <row>
       <entry>man page</entry>
+      <entry/>
       <entry>two words</entry>
      </row>
      <row>
       <entry>Mbox</entry>
+      <entry/>
       <entry>note capitalization</entry>
      </row>
      <row>
       <entry>metadata</entry>
+      <entry/>
       <entry>one word</entry>
      </row>
      <row>
       <entry>middle-click</entry>
+      <entry/>
       <entry>hyphenate, do not follow with "on"</entry>
      </row>
      <row>
       <entry>Monitoring</entry>
+      <entry/>
       <entry>capitalize</entry>
      </row>
      <row>
       <entry>mount point</entry>
+      <entry/>
       <entry>two words</entry>
      </row>
      <row>
       <entry>mouse button</entry>
+      <entry/>
       <entry>a mouse has buttons, not keys</entry>
      </row>
      <row>
       <entry>multitasking</entry>
+      <entry/>
       <entry>one word, no hyphen</entry>
      </row>
      <row>
       <entry>multiuser</entry>
+      <entry/>
       <entry>do not hyphenate</entry>
      </row>
      <row>
+      <entry>must</entry>
+      <entry>have to</entry>
+      <entry>verb</entry>
+     </row>
+     <row>
       <entry>name server</entry>
+      <entry/>
       <entry>two words</entry>
      </row>
      <row>
       <entry>NFS</entry>
+      <entry/>
       <entry>an NFS server, an NFS client, etc.</entry>
      </row>
      <row>
       <entry>NIS</entry>
+      <entry/>
       <entry>a NIS client, a NIS server, etc.</entry>
      </row>
      <row>
       <entry>paravirtualized</entry>
+      <entry/>
       <entry>one word</entry>
      </row>
      <row>
       <entry>pathname</entry>
+      <entry/>
       <entry>one word. can often be replaced with
       <quote>path</quote>
       </entry>
      </row>
      <row>
       <entry>plug-in</entry>
+      <entry/>
       <entry>hyphenate noun or adjective</entry>
      </row>
      <row>
       <entry>pop-up</entry>
+      <entry/>
       <entry>hyphenate</entry>
      </row>
      <row>
       <entry>port</entry>
+      <entry/>
       <entry>on port (not <quote>at port</quote>)</entry>
      </row>
      <row>
       <entry>PostScript</entry>
+      <entry/>
       <entry>use this capitalization</entry>
      </row>
      <row>
       <entry>pre-configured</entry>
+      <entry/>
       <entry>hyphenate</entry>
      </row>
      <row>
       <entry>print queue</entry>
+      <entry/>
       <entry>print not printer</entry>
      </row>
      <row>
       <entry>print spooler</entry>
+      <entry/>
       <entry>print not printer</entry>
      </row>
      <row>
       <entry>proxy</entry>
+      <entry/>
       <entry>use as a noun only</entry>
      </row>
      <row>
       <entry>RAM disk</entry>
+      <entry/>
       <entry>two words, note capitalization</entry>
      </row>
      <row>
       <entry>README</entry>
+      <entry/>
       <entry>Use all caps for general references because this is the most
        common form in Linux; use file's capitalization for specific
        references</entry>
      </row>
      <row>
       <entry>read-only</entry>
+      <entry/>
       <entry>hyphenate</entry>
      </row>
      <row>
       <entry>reconfigure</entry>
+      <entry/>
       <entry>one word, no hyphen</entry>
      </row>
      <row>
       <entry>re-create</entry>
+      <entry/>
       <entry>hyphenate</entry>
      </row>
      <row>
       <entry>right-click</entry>
+      <entry/>
       <entry>hyphenate, do not follow with <quote>on</quote>
       </entry>
      </row>
      <row>
       <entry>RPM</entry>
+      <entry/>
       <entry>capitalized</entry>
      </row>
      <row>
       <entry>runlevel</entry>
+      <entry/>
       <entry>one word</entry>
      </row>
      <row>
       <entry>runtime</entry>
+      <entry/>
       <entry>one word, no hyphen</entry>
      </row>
      <row>
       <entry>screen shot</entry>
+      <entry/>
       <entry>two words</entry>
      </row>
      <row>
       <entry>screen saver</entry>
+      <entry/>
       <entry>two words</entry>
      </row>
      <row>
       <entry>SCSI</entry>
+      <entry/>
       <entry>an SCSI device</entry>
      </row>
      <row>
       <entry>set up, setup</entry>
+      <entry/>
       <entry>two words as verb; one word as adjective or noun</entry>
      </row>
      <row>
       <entry>to shut down, shutdown</entry>
+      <entry/>
       <entry>two words as verb; one word as adjective or noun</entry>
      </row>
      <row>
       <entry>slider</entry>
+      <entry/>
       <entry>not slidebar or other variations</entry>
      </row>
      <row>
       <entry>spec file</entry>
+      <entry/>
       <entry>two words</entry>
      </row>
      <row>
       <entry>SSH</entry>
+      <entry/>
       <entry>capitalized</entry>
      </row>
      <row>
       <entry>stand-alone</entry>
+      <entry/>
       <entry>hyphenate</entry>
      </row>
      <row>
       <entry>start-up</entry>
+      <entry/>
       <entry>hyphenate</entry>
      </row>
      <row>
       <entry>status bar</entry>
+      <entry/>
       <entry>two words</entry>
      </row>
      <row>
       <entry>tarball</entry>
+      <entry/>
       <entry>one word</entry>
      </row>
      <row>
       <entry>taskbar</entry>
+      <entry/>
       <entry>one word</entry>
      </row>
      <row>
       <entry>TFTP</entry>
+      <entry/>
       <entry>capitalized</entry>
      </row>
      <row>
       <entry>time stamp</entry>
+      <entry/>
       <entry>two words</entry>
      </row>
      <row>
       <entry>title bar</entry>
+      <entry/>
       <entry>two words</entry>
      </row>
      <row>
       <entry>toolbar</entry>
+      <entry/>
       <entry>one word</entry>
      </row>
      <row>
       <entry>tool tip</entry>
+      <entry/>
       <entry>two words</entry>
      </row>
      <row>
       <entry>uninstall</entry>
+      <entry/>
       <entry>no hyphen, never de-install</entry>
      </row>
      <row>
       <entry>unselected</entry>
+      <entry/>
       <entry>the state of not being selected</entry>
      </row>
      <row>
       <entry>username</entry>
+      <entry/>
       <entry>one word</entry>
      </row>
      <row>
       <entry>utilize</entry>
+      <entry/>
       <entry>use <quote>use</quote>
       </entry>
      </row>
      <row>
       <entry>virtualization</entry>
+      <entry/>
       <entry>lowercase</entry>
      </row>
      <row>
       <entry>VLAN</entry>
+      <entry/>
       <entry>capitalize</entry>
      </row>
      <row>
       <entry>Web</entry>
+      <entry/>
       <entry>capitalize first letter</entry>
      </row>
      <row>
       <entry>Web page</entry>
+      <entry/>
       <entry>two words</entry>
      </row>
      <row>
       <entry>Web server</entry>
+      <entry/>
       <entry>two words</entry>
      </row>
      <row>
       <entry>Web site</entry>
+      <entry/>
       <entry>two words</entry>
      </row>
      <row>
       <entry>whether</entry>
+      <entry/>
       <entry>do not add <quote>or not</quote>
       </entry>
      </row>
      <row>
       <entry>wild card</entry>
+      <entry/>
       <entry>two words</entry>
      </row>
      <row>
       <entry>X Window System</entry>
+      <entry/>
       <entry>do not shorten to X Windows, note capitalization</entry>
      </row>
      <row>
       <entry>Xen</entry>
+      <entry/>
       <entry>use this capitalization</entry>
      </row>
      <row>
       <entry>Xend</entry>
+      <entry/>
       <entry>capitalized</entry>
      </row>
      <row>
       <entry>Zypper</entry>
+      <entry/>
       <entry>capitalize if application</entry>
      </row>
      <row>
       <entry>zypper</entry>
+      <entry/>
       <entry>lowercase if command</entry>
      </row>
     </tbody>
    </tgroup>
   </table>
+ </sect2>
  </sect1>
+
  <sect1 id="sec.comments">
   <title>Inserting Comments</title>
 
