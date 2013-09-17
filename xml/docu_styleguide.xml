@@ -2580,7 +2580,9 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>scrollbar</entry>
-      <entry>scroll-bar, scroll bar, scroll-box, scroll box, scrollbox, scroller</entry>
+      <entry>scroll-bar, scroll bar, scroll-box, scroll box, scrollbox, scroller,
+        slide bar, slide-bar, slidebar
+      </entry>
       <entry>noun; GUI element that is used change which portion of a screen area is visible
       </entry>
      </row>
