@@ -1947,8 +1947,7 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
   <remark>Terminology to define: plural of words with x: appendixes v/
     appendices, indexes v/ indices, all correct -- sknorr, 2013-09-10</remark>
   <remark>Spelling of SUSE brand/product names -- sknorr, 2013-09-16</remark>
-  <remark>Add simpl[ey] -- sknorr, 2013-09-16</remark>
-  <remark>What about signin/up/on/off/out/through/under? -- sknorr, 2013-09-16</remark>
+  <remark>Click onto? -- sknorr, 2013-09-16</remark>
 
   <table>
    <title>Terms Common in SUSE Documentation</title>
@@ -1979,12 +1978,12 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>advice</entry>
-      <entry>advise (misspelling)</entry>
+      <entry>advi<emphasis>s</emphasis>e (misspelling)</entry>
       <entry>noun</entry>
      </row>
      <row>
-      <entry>(to) advise</entry>
-      <entry>(to) advice (misspelling)</entry>
+      <entry>(to) advise sth.</entry>
+      <entry>(to) advi<emphasis>c</emphasis>e sth.(misspelling)</entry>
       <entry>verb</entry>
      </row>
      <row>
@@ -1993,8 +1992,8 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>noun</entry>
      </row>
      <row>
-      <entry>(to) back up</entry>
-      <entry>(to) backup</entry>
+      <entry>(to) back sth. up</entry>
+      <entry>(to) backup sth.</entry>
       <entry>verb</entry>
      </row>
      <row>
@@ -2065,8 +2064,8 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>noun</entry>
      </row>
      <row>
-      <entry>(to) click</entry>
-      <entry>(to) click on</entry>
+      <entry>(to) click sth.</entry>
+      <entry>(to) click on sth.</entry>
       <entry>verb</entry>
      </row>
      <row>
@@ -2087,8 +2086,8 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
        or <emphasis>the KDE control center</emphasis></entry>
      </row>
      <row>
-      <entry>(to) deselect</entry>
-      <entry>(to) de-select, (to) un-select, (to) unselect</entry>
+      <entry>(to) deselect sth.</entry>
+      <entry>(to) de-select sth., (to) un-select sth., (to) unselect sth.</entry>
       <entry>verb</entry>
      </row>
      <row>
@@ -2112,9 +2111,11 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>noun; acronym for <emphasis>dynamic name server</emphasis></entry>
      </row>
      <row>
-      <entry>(to) double-click</entry>
-      <entry>(to) double click, (to) double click on, (to) double-click on,
-        (to) doubleclick, (to) doubleclick on</entry>
+      <entry>(to) double-click sth.</entry>
+      <entry>(to) double click sth., (to) double click on sth.,
+        (to) double-click on sth., (to) doubleclick sth.,
+        (to) doubleclick on sth.
+      </entry>
       <entry>verb</entry>
      </row>
      <row>
@@ -2124,7 +2125,7 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>e-mail</entry>
-      <entry>E-Mail, E-mail, Email, email</entry>
+      <entry>E-Mail, E-mail, Email, electronic mail, email</entry>
       <entry>always hyphenated</entry>
      </row>
      <row>
@@ -2201,7 +2202,8 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>hard disk</entry>
-      <entry>HDD, HD, hard disk drive, hard-disk, harddisk, hdd, hd</entry>
+      <entry>HDD, HD, hard disk drive, hard drive, hard-disk, hard-drive,
+        harddisk, harddrive, hdd, hd</entry>
       <entry>noun</entry>
      </row>
      <row>
@@ -2220,8 +2222,8 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>noun</entry>
      </row>
      <row>
-      <entry>(to) hotplug</entry>
-      <entry>(to) hot plug, (to) hot-plug</entry>
+      <entry>(to) hotplug sth. (into sth.)</entry>
+      <entry>(to) hot plug sth. (into sth.), (to) hot-plug sth. (into sth.)</entry>
       <entry>verb</entry>
     </row>
     <row>
@@ -2308,9 +2310,10 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
         <remark>So, commands aren't nouns, then? -- sknorr, 2013-09-16</remark>
      </row>
      <row>
-      <entry>(to) left-click</entry>
-      <entry>(to) left click, (to) left click on, (to) left-click on,
-        (to) leftclick, (to) leftclick on</entry>
+      <entry>(to) left-click sth.</entry>
+      <entry>(to) left click sth., (to) left click on sth.,
+        (to) left-click on sth., (to) leftclick sth., (to) leftclick on sth.
+      </entry>
       <entry>verb</entry>
      </row>
      <row>
@@ -2319,8 +2322,8 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>noun</entry>
      </row>
      <row>
-      <entry>(to) license</entry>
-      <entry>(to) licence (British)</entry>
+      <entry>(to) license sth.</entry>
+      <entry>(to) licen<emphasis>c</emphasis>e sth. (British)</entry>
       <entry>verb</entry>
      </row>
      <row>
@@ -2350,18 +2353,29 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>(to) log in</entry>
-      <entry>(to) log-in, (to) login, (to) log on, (to) log-on, (to) logon</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>(to) log out</entry>
-      <entry>(to) log off, (to) log-off, (to) logoff, (to) log-out, (to) logout
+      <entry>(to) log-in, (to) login, (to) log on, (to) log-on, (to) logon,
+        (to) sign in, (to) sign-in, (to) signin, (to) sign on, (to) sign-on,
+        (to) signon
       </entry>
       <entry>verb</entry>
      </row>
      <row>
-      <entry>(to) log in to</entry>
-      <entry>(to) log into</entry>
+      <entry>(to) log in to sth.</entry>
+      <entry>(to) log in at sth., (to) log into sth.</entry>
+      <entry>verb</entry>
+     </row>
+     <row>
+      <entry>(to) log out</entry>
+      <entry>(to) log off, (to) log-off, (to) logoff, (to) log-out, (to) logout,
+        (to) sign off, (to) sign-off, (to) signoff, (to) sign out, (to) sign-out,
+        (to) signout
+      </entry><remark>In code review systems, sign-off might mean something
+        different. -- sknorr, 2013-09-17</remark>
+      <entry>verb</entry>
+     </row>
+     <row>
+      <entry>(to) log out of sth.</entry>
+      <entry>(to) log in from sth.</entry>
       <entry>verb</entry>
      </row>
      <row>
@@ -2405,9 +2419,10 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>one word</entry>
      </row>
      <row>
-      <entry>(to) middle-click</entry>
-      <entry>(to) middle click, (to) middle click on, (to) middle-click on,
-        (to) middleclick, (to) middleclick on</entry>
+      <entry>(to) middle-click sth.</entry>
+      <entry>(to) middle click sth., (to) middle click on sth.,
+        (to) middle-click on sth., (to) middleclick sth.,
+        (to) middleclick on sth.</entry>
       <entry>verb</entry>
      </row>
      <row>
@@ -2469,7 +2484,7 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>(to) plug sth. in</entry>
-      <entry>(to) plug-in, (to) plugin</entry>
+      <entry>(to) plug-in sth., (to) plugin sth.</entry>
       <entry>verb</entry>
      </row>
      <row>
@@ -2493,8 +2508,8 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>noun; spelling as per project standard</entry>
      </row>
      <row>
-      <entry>(to) preconfigure</entry>
-      <entry>(to) pre-configure</entry>
+      <entry>(to) preconfigure sth.</entry>
+      <entry>(to) pre-configure sth.</entry>
       <entry>verb</entry>
      </row>
      <row>
@@ -2519,8 +2534,10 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>RAM disk</entry>
-      <entry>R.A.M. disk, RAM-disk, RAMdisk, Ram disk, Ram-disk, Ramdisk</entry>
-      <entry>noun</entry><remark>Explanation? -- sknorr, 2013-09-17</remark>
+      <entry>R.A.M. disk, RAM drive, RAM-disk, RAM-drive, RAMdisk, RAM-drive,
+        Ram disk, Ram drive, Ram-disk, Ram-drive, Ramdisk, Ramdrive</entry>
+      <entry>noun; treating RAM as a hard disk or a type of solid-state storage
+      </entry>
      </row>
      <row>
       <entry>README</entry>
@@ -2533,19 +2550,35 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>adjective</entry>
      </row>
      <row>
-      <entry>(to) reconfigure</entry>
-      <entry>(to) re-configure</entry>
+      <entry>(to) reconfigure sth.</entry>
+      <entry>(to) re-configure sth.</entry>
       <entry>verb</entry>
      </row>
      <row>
-      <entry>(to) re-create</entry>
+      <entry>(to) re-create sth.</entry>
       <entry>(to) recreate (different meaning)</entry>
       <entry>verb</entry>
      </row>
      <row>
-      <entry>(to) right-click</entry>
-      <entry>(to) right click, (to) right click on, (to) right-click on,
-        (to) rightclick, (to) rightclick on</entry>
+      <entry>(to) register</entry>
+      <entry>(to) sign up, (to) sign-up, (to) signup</entry>
+      <entry>verb; register as a user</entry>
+     </row>
+     <row>
+      <entry>(to) register at sth.</entry>
+      <entry/>
+      <entry>verb; register as a user at a system</entry>
+     </row>
+     <row>
+      <entry>(to) register for sth.</entry>
+      <entry/>
+      <entry>verb; register for a service</entry>
+     </row>
+     <row>
+      <entry>(to) right-click sth.</entry>
+      <entry>(to) right click sth., (to) right click on sth.,
+        (to) right-click on sth., (to) rightclick sth., (to) rightclick on sth.
+      </entry>
       <entry>verb</entry>
      </row>
      <row>
@@ -2587,8 +2620,8 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       </entry>
      </row>
      <row>
-      <entry>(to) set up</entry>
-      <entry>(to) set-up, (to) setup</entry>
+      <entry>(to) set sth. up</entry>
+      <entry>(to) set-up sth., (to) setup sth.</entry>
       <entry>verb</entry>
      </row>
      <row>
@@ -2597,14 +2630,19 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>adjective or noun</entry>
      </row>
      <row>
-      <entry>(to) shut down</entry>
-      <entry>(to) shut-down, (to) shutdown</entry>
+      <entry>(to) shut sth. down</entry>
+      <entry>(to) shut-down sth., (to) shutdown sth.</entry>
       <entry>verb</entry>
      </row>
      <row>
       <entry>shutdown</entry>
       <entry>shut down, shutdown</entry>
       <entry>adjective or noun</entry>
+     </row>
+     <row>
+      <entry/>
+      <entry>simple (filler), simply</entry>
+      <entry>adjective, adverb</entry>
      </row>
      <row>
       <entry>slider</entry>
@@ -2615,7 +2653,7 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>spec file</entry>
-      <entry>spec-file, specfile</entry>
+      <entry>Spec file, Spec-file, Specfile, spec-file, specfile</entry>
       <entry>noun</entry>
      </row>
      <row>
@@ -2629,8 +2667,8 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry></entry>
      </row>
      <row>
-      <entry>(to) start up</entry>
-      <entry>(to) start-up, (to) startup</entry>
+      <entry>(to) start sth. up</entry>
+      <entry>(to) start-up sth., (to) startup sth.</entry>
       <entry>verb</entry>
      </row>
      <row>
@@ -2692,8 +2730,8 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>adjective; selection state</entry>
      </row>
      <row>
-      <entry>(to) use</entry>
-      <entry>(to) utilize</entry>
+      <entry>(to) use sth.</entry>
+      <entry>(to) utilize sth.</entry>
       <entry>verb</entry>
      </row>
      <row>
