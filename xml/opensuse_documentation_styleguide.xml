@@ -1948,6 +1948,7 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
     appendices, indexes v/ indices, all correct -- sknorr, 2013-09-10</remark>
   <remark>Spelling of SUSE brand/product names -- sknorr, 2013-09-16</remark>
   <remark>Add simpl[ey] -- sknorr, 2013-09-16</remark>
+  <remark>What about signin/up/on/off/out/through/under? -- sknorr, 2013-09-16</remark>
 
   <table>
    <title>Terms Common in SUSE Documentation</title>
@@ -2038,7 +2039,9 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>certificate authority</entry>
-      <entry>certifica<emphasis>tion</emphasis> authority</entry>
+      <entry>certifica<emphasis>tion</emphasis> authority,
+        certifica<emphasis>ting</emphasis> authority
+      </entry>
       <entry>noun; acronym is <emphasis>CA</emphasis></entry>
      </row>
      <row>
@@ -2099,14 +2102,19 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>only as adjective</entry>
      </row>
      <row>
+      <entry>directory</entry>
+      <entry>dir, folder</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
       <entry>DNS</entry>
       <entry>D.N.S., DNS name server, Dns, dns</entry>
       <entry>noun; acronym for <emphasis>dynamic name server</emphasis></entry>
      </row>
      <row>
       <entry>(to) double-click</entry>
-      <entry>(to) double click, (to) double click on, (to) doubleclick,
-        (to) doubleclick on</entry>
+      <entry>(to) double click, (to) double click on, (to) double-click on,
+        (to) doubleclick, (to) doubleclick on</entry>
       <entry>verb</entry>
      </row>
      <row>
@@ -2239,18 +2247,16 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      <row>
       <entry>infrared</entry>
       <entry>infra red, infra-red</entry>
-      <entry>noun, adjective</entry><remark>Really a noun? -- sknorr, 2013-09-16</remark>
+      <entry>noun or adjective</entry><remark>Really a noun? -- sknorr, 2013-09-16</remark>
      </row>
      <row>
       <entry>installation source</entry>
       <entry>installation data source, installation media</entry>
         <remark>Really reject installation media? -- sknorr, 2013-09-16</remark>
-      <entry>noun; correct term for valid sources of installation data for SUSE
-       Linux Enterprise and openSUSE; when reasonable, mention that online
-       repositories that are valid installation sources are available</entry>
+      <entry>noun; source of installation data for operating systems</entry>
      </row>
      <row>
-      <entry>Internet</entry><remark>Is this reasonable still? -- sknorr, 2013-09-16</remark>
+      <entry>Internet</entry>
       <entry>internet</entry>
       <entry>noun</entry>
      </row>
@@ -2277,12 +2283,12 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      <row>
       <entry>Kdump</entry>
       <entry>KDUMP, kdump</entry>
-      <entry>noun; for application only</entry>
+      <entry>noun; only for application</entry>
      </row>
      <row>
       <entry>kdump</entry>
       <entry>KDUMP,Kdump</entry>
-      <entry>command; for command only</entry>
+      <entry>command; only for command</entry>
         <remark>So, commands aren't nouns, then? -- sknorr, 2013-09-16</remark>
      </row>
      <row>
@@ -2293,18 +2299,18 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      <row>
       <entry>Kprobes</entry>
       <entry>kprobes</entry>
-      <entry>noun; for application only</entry>
+      <entry>noun; only for application</entry>
      </row>
      <row>
       <entry>kprobes</entry>
       <entry>Kprobes</entry>
-      <entry>command; for command only</entry>
+      <entry>command; only for command</entry>
         <remark>So, commands aren't nouns, then? -- sknorr, 2013-09-16</remark>
      </row>
      <row>
       <entry>(to) left-click</entry>
-      <entry>(to) left click, (to) left click on, (to) leftclick,
-        (to) leftclick on</entry>
+      <entry>(to) left click, (to) left click on, (to) left-click on,
+        (to) leftclick, (to) leftclick on</entry>
       <entry>verb</entry>
      </row>
      <row>
@@ -2318,33 +2324,50 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>verb</entry>
      </row>
      <row>
-      <entry>local host, localhost</entry>
-      <entry/>
-      <entry>normally two words, one word for default name of the local
-      host</entry>
+      <entry>local host</entry>
+      <entry>local-host, localhost</entry>
+      <entry>noun; when describing the concept of hosting locally</entry>
+     </row>
+     <row>
+      <entry>localhost</entry>
+      <entry>local host, local-host</entry>
+      <entry>noun; when referring to the default name of a local host</entry>
      </row>
      <row>
       <entry>log file</entry>
-      <entry/>
-      <entry>two words</entry>
+      <entry>ĺog-file, logfile</entry>
+      <entry>noun</entry>
      </row>
      <row>
-      <entry>log in, log out, login</entry>
-      <entry/>
-      <entry>two words for verbs, one for noun; do not use <quote>log
-       on</quote> or <quote>log off</quote>
-      </entry>
+      <entry>login</entry>
+      <entry>log in, log-in</entry>
+      <entry>noun</entry>
      </row>
      <row>
-      <entry>log in to</entry>
-      <entry/>
-      <entry>not "log into"
+      <entry>logout</entry>
+      <entry>log out, log-out</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
+      <entry>(to) log in</entry>
+      <entry>(to) log-in, (to) login, (to) log on, (to) log-on, (to) logon</entry>
+      <entry>verb</entry>
+     </row>
+     <row>
+      <entry>(to) log out</entry>
+      <entry>(to) log off, (to) log-off, (to) logoff, (to) log-out, (to) logout
       </entry>
+      <entry>verb</entry>
+     </row>
+     <row>
+      <entry>(to) log in to</entry>
+      <entry>(to) log into</entry>
+      <entry>verb</entry>
      </row>
      <row>
       <entry>loopback device</entry>
-      <entry/>
-      <entry>loopback is one word and not hyphenated</entry>
+      <entry>loop back device, loop-back device</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>need to</entry>
@@ -2353,64 +2376,64 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>mail server</entry>
-      <entry/>
-      <entry>two words</entry>
+      <entry>mail-server, mailserver</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>Maildir</entry>
-      <entry/>
-      <entry>note capitalization; this is a specific format, not a generic reference to the
-       directory in which mail is stored</entry>
+      <entry>Mail dir, mail dir</entry>
+      <entry>noun; Format for e-mail storage, not the directory for e-mails</entry>
      </row>
      <row>
       <entry>mainboard</entry>
-      <entry/>
-      <entry>one word</entry>
+      <entry>main board, main-board, mother board, mother-board, motherboard</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>man page</entry>
-      <entry/>
+      <entry>Man page, Man-page, man page, man-page, manpage</entry>
       <entry>two words</entry>
      </row>
      <row>
       <entry>Mbox</entry>
-      <entry/>
-      <entry>note capitalization</entry>
+      <entry>mbox</entry>
+      <entry>noun; Format for e-mail storage</entry>
      </row>
      <row>
       <entry>metadata</entry>
-      <entry/>
+      <entry>meta data, meta-data, metadatas</entry>
       <entry>one word</entry>
      </row>
      <row>
-      <entry>middle-click</entry>
-      <entry/>
-      <entry>hyphenate, do not follow with "on"</entry>
-     </row>
-     <row>
-      <entry>Monitoring</entry>
-      <entry/>
-      <entry>capitalize</entry>
+      <entry>(to) middle-click</entry>
+      <entry>(to) middle click, (to) middle click on, (to) middle-click on,
+        (to) middleclick, (to) middleclick on</entry>
+      <entry>verb</entry>
      </row>
      <row>
       <entry>mount point</entry>
-      <entry/>
-      <entry>two words</entry>
+      <entry>mount-point, mountpoint</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>mouse button</entry>
-      <entry/>
-      <entry>a mouse has buttons, not keys</entry>
+      <entry>mouse-button, mousebutton, mouse key, mouse-key, mousekey</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
+      <entry>(to) multitask</entry>
+      <entry>(to) multi task, (to) multi-task</entry>
+      <entry>verb</entry>
      </row>
      <row>
       <entry>multitasking</entry>
-      <entry/>
-      <entry>one word, no hyphen</entry>
+      <entry>multi tasking, multi-tasking</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>multiuser</entry>
-      <entry/>
-      <entry>do not hyphenate</entry>
+      <entry>multi user, multi-user</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>must</entry>
@@ -2419,295 +2442,328 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>name server</entry>
-      <entry/>
+      <entry>name-server, nameserver</entry>
       <entry>two words</entry>
      </row>
      <row>
       <entry>NFS</entry>
-      <entry/>
-      <entry>an NFS server, an NFS client, etc.</entry>
+      <entry>N.F.S., NFS file system, Nfs</entry>
+      <entry>noun; often: <emphasis>NFS client</emphasis>,
+        <emphasis>NFS server</emphasis></entry>
      </row>
      <row>
       <entry>NIS</entry>
-      <entry/>
-      <entry>a NIS client, a NIS server, etc.</entry>
+      <entry>N.I.S., NIS information service, NIS service, Nis</entry>
+      <entry>noun; often: <emphasis>NIS client</emphasis>,
+        <emphasis>NIS server</emphasis></entry>
      </row>
      <row>
       <entry>paravirtualized</entry>
-      <entry/>
-      <entry>one word</entry>
+      <entry>para-virtualised, paravirtualised (British), para-virtualized</entry>
+      <entry>adjective</entry>
      </row>
      <row>
-      <entry>pathname</entry>
-      <entry/>
-      <entry>one word. can often be replaced with
-      <quote>path</quote>
-      </entry>
+      <entry>pathname</entry><remark>This shouldn't be the accepted spelling. -- sknorr, 2013-09-16</remark>
+      <entry>path name, path-name</entry>
+      <entry>noun; check if <quote>path</quote> can be used instead</entry>
+     </row>
+     <row>
+      <entry>(to) plug sth. in</entry>
+      <entry>(to) plug-in, (to) plugin</entry>
+      <entry>verb</entry>
      </row>
      <row>
       <entry>plug-in</entry>
-      <entry/>
-      <entry>hyphenate noun or adjective</entry>
+      <entry>plug in, plugin</entry>
+      <entry>noun or adjective</entry>
      </row>
      <row>
       <entry>pop-up</entry>
-      <entry/>
-      <entry>hyphenate</entry>
+      <entry>pop up, popup</entry>
+      <entry>noun</entry>
      </row>
      <row>
-      <entry>port</entry>
-      <entry/>
-      <entry>on port (not <quote>at port</quote>)</entry>
+      <entry>on port</entry>
+      <entry>at port</entry>
+      <entry>preposition, noun</entry>
      </row>
      <row>
       <entry>PostScript</entry>
-      <entry/>
-      <entry>use this capitalization</entry>
+      <entry>POSTSCRIPT, Postscript, postscript</entry>
+      <entry>noun; spelling as per project standard</entry>
      </row>
      <row>
+      <entry>(to) preconfigure</entry>
+      <entry>(to) pre-configure</entry>
+      <entry>verb</entry>
+     </row>
+     <row>
+      <entry>preconfigured</entry>
       <entry>pre-configured</entry>
-      <entry/>
-      <entry>hyphenate</entry>
+      <entry>adjective</entry>
      </row>
      <row>
       <entry>print queue</entry>
-      <entry/>
-      <entry>print not printer</entry>
+      <entry>print<emphasis>er</emphasis> queue, print<emphasis>ing</emphasis> queue</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>print spooler</entry>
-      <entry/>
-      <entry>print not printer</entry>
+      <entry>print<emphasis>er</emphasis> spooler, print<emphasis>ing</emphasis> spooler</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>proxy</entry>
       <entry/>
-      <entry>use as a noun only</entry>
+      <entry>only as noun</entry>
      </row>
      <row>
       <entry>RAM disk</entry>
-      <entry/>
-      <entry>two words, note capitalization</entry>
+      <entry>R.A.M. disk, RAM-disk, RAMdisk, Ram disk, Ram-disk, Ramdisk</entry>
+      <entry>noun</entry><remark>Explanation? -- sknorr, 2013-09-17</remark>
      </row>
      <row>
       <entry>README</entry>
-      <entry/>
-      <entry>Use all caps for general references because this is the most
-       common form in Linux; use file's capitalization for specific
-       references</entry>
+      <entry>Read-me, Readme, read-me, readme</entry>
+      <entry>noun; use this capitalization for all general references</entry>
      </row>
      <row>
       <entry>read-only</entry>
-      <entry/>
-      <entry>hyphenate</entry>
+      <entry>R.O., RO, read only, readonly, ro</entry>
+      <entry>adjective</entry>
      </row>
      <row>
-      <entry>reconfigure</entry>
-      <entry/>
-      <entry>one word, no hyphen</entry>
+      <entry>(to) reconfigure</entry>
+      <entry>(to) re-configure</entry>
+      <entry>verb</entry>
      </row>
      <row>
-      <entry>re-create</entry>
-      <entry/>
-      <entry>hyphenate</entry>
+      <entry>(to) re-create</entry>
+      <entry>(to) recreate (different meaning)</entry>
+      <entry>verb</entry>
      </row>
      <row>
-      <entry>right-click</entry>
-      <entry/>
-      <entry>hyphenate, do not follow with <quote>on</quote>
-      </entry>
+      <entry>(to) right-click</entry>
+      <entry>(to) right click, (to) right click on, (to) right-click on,
+        (to) rightclick, (to) rightclick on</entry>
+      <entry>verb</entry>
      </row>
      <row>
       <entry>RPM</entry>
-      <entry/>
-      <entry>capitalized</entry>
+      <entry>R.P.M., Rpm, rpm (different meaning)</entry>
+      <entry>noun; acronym for <emphasis>RPM Package Manager</emphasis></entry>
      </row>
      <row>
       <entry>runlevel</entry>
-      <entry/>
-      <entry>one word</entry>
+      <entry>run level, run-level</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>runtime</entry>
-      <entry/>
-      <entry>one word, no hyphen</entry>
-     </row>
-     <row>
-      <entry>screen shot</entry>
-      <entry/>
-      <entry>two words</entry>
-     </row>
-     <row>
-      <entry>screen saver</entry>
-      <entry/>
-      <entry>two words</entry>
+      <entry>run time, run-time</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>SCSI</entry>
-      <entry/>
-      <entry>an SCSI device</entry>
+      <entry>S.C.S.I., Scsi, scsi</entry>
+      <entry>noun</entry>
      </row>
      <row>
-      <entry>set up, setup</entry>
-      <entry/>
-      <entry>two words as verb; one word as adjective or noun</entry>
+      <entry>screenshot</entry>
+      <entry>screen shot, screen-shot</entry>
+      <entry>noun</entry>
      </row>
      <row>
-      <entry>to shut down, shutdown</entry>
-      <entry/>
-      <entry>two words as verb; one word as adjective or noun</entry>
+      <entry>screen saver</entry>
+      <entry>screen-saver, screensaver</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
+      <entry>scrollbar</entry>
+      <entry>scroll-bar, scroll bar, scroll-box, scroll box, scrollbox, scroller</entry>
+      <entry>noun; GUI element that is used change which portion of a screen area is visible
+      </entry>
+     </row>
+     <row>
+      <entry>(to) set up</entry>
+      <entry>(to) set-up, (to) setup</entry>
+      <entry>verb</entry>
+     </row>
+     <row>
+      <entry>setup</entry>
+      <entry>set up, set-up</entry>
+      <entry>adjective or noun</entry>
+     </row>
+     <row>
+      <entry>(to) shut down</entry>
+      <entry>(to) shut-down, (to) shutdown</entry>
+      <entry>verb</entry>
+     </row>
+     <row>
+      <entry>shutdown</entry>
+      <entry>shut down, shutdown</entry>
+      <entry>adjective or noun</entry>
      </row>
      <row>
       <entry>slider</entry>
       <entry/>
-      <entry>not slidebar or other variations</entry>
+      <entry>noun; GUI element that is used manipulate values that have an upper
+        and a lower bound
+      </entry><remark>A little complicated -- sknorr, 2013-09-17</remark>
      </row>
      <row>
       <entry>spec file</entry>
-      <entry/>
-      <entry>two words</entry>
+      <entry>spec-file, specfile</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>SSH</entry>
-      <entry/>
-      <entry>capitalized</entry>
+      <entry>S.S.H., SSH Shell, SSH shell, Ssh, ssh</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>stand-alone</entry>
-      <entry/>
-      <entry>hyphenate</entry>
+      <entry>stand alone, standalone</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>(to) start up</entry>
+      <entry>(to) start-up, (to) startup</entry>
+      <entry>verb</entry>
      </row>
      <row>
       <entry>start-up</entry>
-      <entry/>
-      <entry>hyphenate</entry>
+      <entry>start up, startup</entry>
+      <entry>noun</entry>
      </row>
      <row>
-      <entry>status bar</entry>
-      <entry/>
+      <entry>statusbar</entry>
+      <entry>status bar, status-bar</entry>
       <entry>two words</entry>
      </row>
      <row>
-      <entry>tarball</entry>
-      <entry/>
-      <entry>one word</entry>
+      <entry>TAR archive</entry>
+      <entry>TAR ball, tar ball, tar-ball, tarball (less neutral, less Windows-user friendly)</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>taskbar</entry>
-      <entry/>
-      <entry>one word</entry>
+      <entry>task bar, task-bar</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>TFTP</entry>
-      <entry/>
-      <entry>capitalized</entry>
+      <entry>T.F.T.P., Tftp, tftp</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>time stamp</entry>
-      <entry/>
-      <entry>two words</entry>
+      <entry>time-stamp, timestamp</entry>
+      <entry>noun</entry>
      </row>
      <row>
-      <entry>title bar</entry>
-      <entry/>
-      <entry>two words</entry>
+      <entry>titlebar</entry>
+      <entry>title bar, title-bar</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>toolbar</entry>
-      <entry/>
+      <entry>tool bar, tool-bar</entry>
       <entry>one word</entry>
      </row>
      <row>
-      <entry>tool tip</entry>
-      <entry/>
-      <entry>two words</entry>
+      <entry>tooltip</entry>
+      <entry>tool tip, tool-tip</entry>
+      <entry>noun</entry>
      </row>
      <row>
-      <entry>uninstall</entry>
-      <entry/>
-      <entry>no hyphen, never de-install</entry>
+      <entry>(to) uninstall</entry>
+        <remark>Packages are usually "removed," not uninstalled (say YaST and
+          zypper, but also my intuition). Should this word be
+          restricted to Windows software? -- sknorr, 2013-09-17</remark>
+      <entry>(to) de-install, (to) deinstall, (to) un-install</entry>
+      <entry>verb</entry>
      </row>
      <row>
       <entry>unselected</entry>
-      <entry/>
-      <entry>the state of not being selected</entry>
+      <entry>deselected, de-selected, un-selected</entry>
+      <entry>adjective; selection state</entry>
+     </row>
+     <row>
+      <entry>(to) use</entry>
+      <entry>(to) utilize</entry>
+      <entry>verb</entry>
      </row>
      <row>
       <entry>username</entry>
-      <entry/>
-      <entry>one word</entry>
-     </row>
-     <row>
-      <entry>utilize</entry>
-      <entry/>
-      <entry>use <quote>use</quote>
-      </entry>
+      <entry>user name, user-name</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>virtualization</entry>
-      <entry/>
-      <entry>lowercase</entry>
+      <entry>Virtualisation (British), Virtualization, virtualisation</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>VLAN</entry>
-      <entry/>
-      <entry>capitalize</entry>
+      <entry>V.L.A.N., Vlan, vlan</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>Web</entry>
-      <entry/>
-      <entry>capitalize first letter</entry>
+      <entry>WEB, World Wide Web, WWW, web, www</entry>
+      <entry>noun; you may use <emphasis>World Wide Web</emphasis> or
+        <emphasis>WWW</emphasis> in historical contexts</entry>
      </row>
      <row>
       <entry>Web page</entry>
-      <entry/>
-      <entry>two words</entry>
+      <entry>Web-page, Webpage, web page, web-page, webpage</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>Web server</entry>
-      <entry/>
-      <entry>two words</entry>
+      <entry>Web-server, Webserver, web server, web-server, webserver</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>Web site</entry>
-      <entry/>
-      <entry>two words</entry>
+      <entry>Web-site, Website, web site, web-site, website</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>whether</entry>
-      <entry/>
-      <entry>do not add <quote>or not</quote>
-      </entry>
+      <entry>whether or not</entry>
+      <entry>pronoun</entry>
      </row>
      <row>
       <entry>wild card</entry>
-      <entry/>
-      <entry>two words</entry>
+      <entry>wild-card, wildcard</entry>
+      <entry>noun</entry>
      </row>
      <row>
-      <entry>X Window System</entry>
-      <entry/>
-      <entry>do not shorten to X Windows, note capitalization</entry>
+      <entry>X Window System</entry><remark>What about X11, X.org, XFree86? -- sknorr, 2013-09-17</remark>
+      <entry>X Window, X Windows, X window, X window system, X windows, XWS</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>Xen</entry>
-      <entry/>
-      <entry>use this capitalization</entry>
+      <entry>XEN, xen</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>Xend</entry>
-      <entry/>
-      <entry>capitalized</entry>
+      <entry>xend</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>Zypper</entry>
-      <entry/>
-      <entry>capitalize if application</entry>
+      <entry>zypper</entry>
+      <entry>noun; only for application</entry>
      </row>
      <row>
       <entry>zypper</entry>
-      <entry/>
-      <entry>lowercase if command</entry>
+      <entry>Zypper</entry>
+      <entry>command;only for command</entry>
      </row>
     </tbody>
    </tgroup>
