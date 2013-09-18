@@ -570,7 +570,7 @@
    </para>
    <para>
     Do not use <sgmltag>ulink</sgmltag> and the <literal>file:</literal>
-    prefix to reference filenames. Use <sgmltag>filename</sgmltag> for
+    prefix to reference file names. Use <sgmltag>filename</sgmltag> for
     files.
    </para>
    <para>
@@ -1403,7 +1403,7 @@ title Disk
     documentation.
    </para>
    <sect3 id="sec.ce.namconf.dir">
-    <title>Directories and Filenames</title>
+    <title>Directories and File names</title>
     <para>
      Linux does not know any drive names. Under Linux, everything is
      considered a file (even a directory is considered a special kind of
@@ -1412,11 +1412,11 @@ title Disk
      floppy drives), directories, or files.
     </para>
     <para>
-     The layout for filenames and directory names is the same. See the
+     The layout for file names and directory names is the same. See the
      following example:
     </para>
     <literallayout>Open the file <filename>suseconfig</filename> under <filename>/etc</filename>. Access your
-home directory via <filename>/home/<replaceable>[your username]</replaceable></filename>.</literallayout>
+home directory via <filename>/home/<replaceable>[your user name]</replaceable></filename>.</literallayout>
     <para>
      Use slashes properly when dealing with file and directory names:
     </para>
@@ -1442,10 +1442,10 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
     </para>
    </sect3>
    <sect3 id="sec.ce.namconf.hn">
-    <title>Hostnames and IP Addresses</title>
+    <title>Host names and IP Addresses</title>
     <para>
-     Writers should use a well-defined set of IP addresses, hostnames, and
-     usernames for their network documentation. The values are provided by
+     Writers should use a well-defined set of IP addresses, host names, and
+     user names for their network documentation. The values are provided by
      means of entities (see <xref linkend="sec.entities"/>).
     </para>
     <variablelist>
@@ -1461,20 +1461,20 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       </listitem>
      </varlistentry>
      <varlistentry>
-      <term>Hostnames and Domains</term>
+      <term>Host names and Domains</term>
       <listitem>
        <para>
         SUSE uses
         <systemitem class="fqdomainname">www.example.com</systemitem>
         as a domain for most examples, because this is a real domain that
-        was designed for use in documentation. Hostnames are taken from the
+        was designed for use in documentation. Host names are taken from the
         solar system (such as <systemitem>sun</systemitem> or
         <systemitem>earth</systemitem>).
        </para>
       </listitem>
      </varlistentry>
      <varlistentry>
-      <term>Usernames</term>
+      <term>User names</term>
       <listitem>
        <para>
         SUSE currently uses mascots like
@@ -1508,7 +1508,7 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
    <listitem>
     <para>
      Integration of external files by entities representing references to
-     their filenames.
+     their file names.
     </para>
    </listitem>
    <listitem>
@@ -1619,7 +1619,7 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      <term>General Entities</term>
      <listitem>
       <para>
-       These feature mostly network IP addresses, hostnames, and usernames.
+       These feature mostly network IP addresses, host names, and user names.
       </para>
      </listitem>
     </varlistentry>
@@ -2108,7 +2108,7 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>check mark</entry>
-      <entry>check-mark, checkmark, tick [British], tick mark, tick-mark,
+      <entry>check, check-mark, checkmark, tick [British], tick mark, tick-mark,
         tickmark
       </entry>
       <entry>noun</entry>
@@ -2236,7 +2236,10 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>noun</entry>
      </row>
      <row>
-      <entry/><remark>Reasonable alternative, "ease"? Or was this rejected for tending to be filler? -- sknorr, 2013-09-16</remark>
+      <entry/>
+        <remark>Reasonable alternative, "ease," "simplify"? Or was this rejected
+          for tending to be filler/subjective? -- sknorr, 2013-09-16
+        </remark>
       <entry>(to) facilitate</entry>
       <entry>avoid</entry>
      </row>
@@ -3145,8 +3148,8 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
    </variablelist>
    <para>
     The writer of the remark should start the remark with his or her
-    username followed by a colon (<literal>:</literal>). Others responding to
-    the remark should insert their username, a colon, and comments inside the
+    user name followed by a colon (<literal>:</literal>). Others responding to
+    the remark should insert their user name, a colon, and comments inside the
     tags but starting on a new line. Comments should be deleted by the original
     writer when they consider the issue resolved. The following is an
     example remark:
@@ -4165,17 +4168,17 @@ To save a file in Emacs, press &lt;keycombo action="seq">
    </sect2>
 
    <sect2 id="sec.markup.inline.filenames_and_dirs">
-    <title>Directories and Filenames</title>
+    <title>Directories and File names</title>
     <variablelist>
      <varlistentry>
-      <term><sgmltag>filename</sgmltag>
+      <term><sgmltag>file name</sgmltag>
       </term>
       <listitem>
        <para>
         <ulink url="http://www.docbook.org/tdg/en/html/filename.html"/>
        </para>
        <para>
-        A filename is the name of a file on a local or network disk. It could
+        A file name is the name of a file on a local or network disk. It could
         be a simple name or could include a path or other elements specific to
         the operating system.
        </para>
@@ -4183,9 +4186,9 @@ To save a file in Emacs, press &lt;keycombo action="seq">
      </varlistentry>
     </variablelist>
     <para>
-     Because SUSE does not distinguish between filenames and directories by
+     Because SUSE does not distinguish between file names and directories by
      adding a trailing slash to the path or with markup.
-     <sgmltag>filename</sgmltag> is used for both directories and filenames.
+     <sgmltag>filename</sgmltag> is used for both directories and file names.
     </para>
 <screen>&lt;para>
  See file &lt;filename>foo.xml&lt;/filename>. Look at the
