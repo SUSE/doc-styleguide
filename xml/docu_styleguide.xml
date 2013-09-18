@@ -8,13 +8,6 @@
   <!ENTITY adguide "Administration Guide">
 ]>
 
-<!--
-TODO:
-- Define:
-  * Unix vx UNIX
-  * Common Unix/UNIX Printing System (capitalized?)
--->
-
 <article class="whitepaper" lang="en" id="art.styleguide">
  <title>Documentation Style Guide</title>
  <subtitle>SUSE and openSUSE</subtitle>
@@ -92,7 +85,7 @@ TODO:
 
   <para>
    It is important to maintain a relatively consistent structure within a
-   document. This structure may vary for different books or projects. For
+   document. This structure can vary for different books or projects. For
    consistency, each project should have its own guidelines offered here, in
    a separate project document, or through templates.
   </para>
@@ -158,7 +151,7 @@ TODO:
      <term>Chapters</term>
      <listitem>
       <para>
-       Chapters typically consist of the following elements (appendixes may
+       Chapters typically consist of the following elements (appendixes should
        be regarded an exception):
       </para>
       <figure>
@@ -212,7 +205,7 @@ TODO:
            including ReiserFS, Ext2, Ext3, and XFS, from which to choose at
            installation time. Each file system has its own advantages and
            disadvantages that can make it more suited to a scenario.
-           Professional high-performance setups may require a different
+           Professional high-performance setups can require a different
            choice of file system than a home user's setup.
           </para>
          </example>
@@ -300,7 +293,7 @@ TODO:
   <para>
    These rules are intentionally kept brief and simple. They contain
    specifics related to SUSE and openSUSE documentation and sometimes
-   standard English rules. Where relevant, specific markup may be mentioned
+   standard English rules. Where relevant, specific markup is mentioned
    to assist in maintaining consistency in SUSE documentation.
   </para>
 
@@ -398,7 +391,7 @@ TODO:
 <screen>&lt;warning>
  &lt;title>Creating File Systems&lt;/title>
   &lt;para>
-    Formatting may take up to several hours depending
+    Formatting can take up to several hours depending
     on the partition size. Do not try to interrupt
     this process. This could result in a corrupted file
     system that renders the installation
@@ -464,7 +457,7 @@ TODO:
     Do not insult them by saying something is obvious.
    </para>
    <para>
-    Aim the document at the reader by describing tasks the reader may need
+    Aim the document at the reader by describing tasks the reader might need
     to complete rather than the organization of the program. For example,
     when describing YaST, focus on how to configure the devices and services
     the user needs rather than the module structure and available dialogs.
@@ -630,8 +623,8 @@ TODO:
     <title>Graphics and Figures</title>
     <para>
      Screen shots and graphics should only be used when helpful for
-     following the explanation. Using too many screen shots may add to the
-     confusion of the reader. If you intend to use screen shots in a document,
+     following the explanation. Using too many screenshots could add to the
+     confusion of the reader. If you intend to use screenshots in a document,
      consider the following issues first:
     </para>
     <itemizedlist>
@@ -893,7 +886,7 @@ title Disk
     the text flow, confuses readers, and heavily influences the document
     layout. Consider these issues carefully before nesting lists or
     introducing another list level. Restructuring the information using a
-    well-balanced combination of lists and flowing texts may prove a good
+    well-balanced combination of lists and flowing texts is a good
     approach.
    </para>
    <sect3 id="sec.edrules.lists.bull">
@@ -1158,7 +1151,7 @@ title Disk
    <title>Tone, Mood, Voice</title>
    <para>
     Maintain a professional tone. Except in casual documents, do not use
-    contractions. Do not use humor. It does not translate well and may be
+    contractions. Do not use humor. It does not translate well and could be
     misunderstood by non-native speakers.
    </para>
    <para>
@@ -1943,11 +1936,13 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
     sentence. Some words listed here are provided because they are often
     written incorrectly by non-native speakers.
   </para>
+  <para>Note that only some of the most important SUSE products are listed here.
+    If the product you are documentsing is not listed, please refer to the
+    Marketing department or the SUSE homepage, <ulink url="http://www.suse.com"/>.
+  </para>
 
   <remark>Terminology to define: plural of words with x: appendixes v/
     appendices, indexes v/ indices, all correct -- sknorr, 2013-09-10</remark>
-  <remark>Spelling of SUSE brand/product names -- sknorr, 2013-09-16</remark>
-  <remark>Click onto? -- sknorr, 2013-09-16</remark>
 
   <table>
    <title>Terms Common in SUSE Documentation</title>
@@ -1955,7 +1950,7 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
     <thead>
      <row>
       <entry>Accepted Terminology</entry>
-      <entry>Rejected Terminology (Reason)</entry>
+      <entry>Rejected Terminology [Reason]</entry>
       <entry>Additional Usage Guideline</entry>
      </row>
     </thead>
@@ -1978,13 +1973,39 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>advice</entry>
-      <entry>advi<emphasis>s</emphasis>e (misspelling)</entry>
+      <entry>advi<emphasis>s</emphasis>e [misspelling]</entry>
       <entry>noun</entry>
      </row>
      <row>
       <entry>(to) advise sth.</entry>
-      <entry>(to) advi<emphasis>c</emphasis>e sth.(misspelling)</entry>
+      <entry>(to) advi<emphasis>c</emphasis>e sth. [misspelling]</entry>
       <entry>verb</entry>
+     </row>
+     <row>
+      <entry>after</entry>
+      <entry>once</entry>
+      <entry>adverb; only use <emphasis>once</emphasis> in the meaning of
+        <quote>one time only</quote>
+      </entry>
+     </row>
+     <row>
+      <entry>although</entry>
+      <entry>while</entry>
+      <entry>conjunction; only use <emphasis>while</emphasis> in the meaning
+        of <quote>during the time that</quote>
+      </entry>
+     </row>
+     <row>
+      <entry>and</entry>
+      <entry>while</entry>
+      <entry>conjunction; only use <emphasis>while</emphasis> in the meaning
+        of <quote>during the time that</quote>
+      </entry>
+     </row>
+     <row>
+      <entry>appendixes</entry>
+      <entry>appendices</entry>
+      <entry>noun; plural of appendix</entry>
      </row>
      <row>
       <entry>back-end</entry>
@@ -2007,6 +2028,11 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>noun; spelling as per the GNU Bash manual</entry>
      </row>
      <row>
+      <entry>because of</entry>
+      <entry>due to, owing to</entry>
+      <entry>preposition</entry>
+     </row>
+     <row>
       <entry>boot disk</entry>
       <entry>boot-disk, bootdisk</entry>
       <entry>noun; disk for starting the system</entry>
@@ -2015,6 +2041,19 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>boot loader</entry>
       <entry>boot-loader, bootloader</entry>
       <entry>noun</entry>
+     </row>
+     <row>
+      <entry>Btrfs</entry>
+      <entry>B.T.R.F.S., Better FS, BetterFS, Butter FS, ButterFS, btrfs</entry>
+      <entry>noun; not an acronym</entry>
+        <remark>Is it, though? "B-tree File System"? -- sknorr, 2013-09-18</remark>
+     </row>
+     <row>
+      <entry>but</entry>
+      <entry>while</entry>
+      <entry>conjunction; only use <emphasis>while</emphasis> in the meaning
+        of <quote>during the time that</quote>
+      </entry>
      </row>
      <row>
       <entry>cannot</entry>
@@ -2027,6 +2066,13 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>noun; acronym for <emphasis>certificate authority</emphasis></entry>
      </row>
      <row>
+      <entry>CUPS</entry>
+      <entry>C.U.P.S., Cups, cups</entry>
+      <entry>noun; spelling as per project standard; acronym for
+        <emphasis>Common Unix Printing System</emphasis>
+      </entry>
+     </row>
+     <row>
       <entry>case-sensitive</entry>
       <entry>case sensitive, casesensitive</entry>
       <entry>adjective</entry>
@@ -2037,6 +2083,13 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>adjective</entry>
      </row>
      <row>
+      <entry>can</entry>
+      <entry>may</entry>
+      <entry>verb; use <emphasis>can</emphasis> to express an ability, only use
+        <emphasis>may</emphasis> to express permissions sought/given
+      </entry>
+     </row>
+     <row>
       <entry>certificate authority</entry>
       <entry>certifica<emphasis>tion</emphasis> authority,
         certifica<emphasis>ting</emphasis> authority
@@ -2045,17 +2098,19 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>check box</entry>
-      <entry>check-box, checkbox, tick box (British), tick-box, tickbox</entry>
-      <entry>noun</entry>
+      <entry>check-box, checkbox, tick box [British], tick-box, tickbox</entry>
+      <entry>noun; avoid, just mention name of option</entry>
      </row>
      <row>
       <entry>checklist</entry>
-      <entry>check list, check-list, tick list (British), tick-list, ticklist</entry>
+      <entry>check list, check-list, tick list [British], tick-list, ticklist</entry>
       <entry>noun</entry>
      </row>
      <row>
       <entry>check mark</entry>
-      <entry>check-mark, checkmark, tick (British)</entry>
+      <entry>check-mark, checkmark, tick [British], tick mark, tick-mark,
+        tickmark
+      </entry>
       <entry>noun</entry>
      </row>
      <row>
@@ -2065,13 +2120,20 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>(to) click sth.</entry>
-      <entry>(to) click on sth.</entry>
+      <entry>(to) click on sth., (to) click onto sth.</entry>
       <entry>verb</entry>
      </row>
      <row>
       <entry>client/server</entry>
       <entry>client server, client-server, client–server, client+server</entry>
       <entry>noun/noun</entry>
+     </row>
+     <row>
+      <entry>Common Unix Printing System</entry>
+      <entry>Common UNIX Printing System, common Unix printing system</entry>
+      <entry>noun; spelling as per project standard; acronym is
+        <emphasis>CUPS</emphasis>
+      </entry>
      </row>
      <row>
       <entry>command line</entry>
@@ -2084,6 +2146,13 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
         control-center, Controlcenter, controlcenter</entry>
       <entry>noun; generic term, as in: <emphasis>the YaST control center</emphasis>
        or <emphasis>the KDE control center</emphasis></entry>
+     </row>
+     <row>
+      <entry>could</entry>
+      <entry>may</entry>
+      <entry>verb; use <emphasis>could</emphasis> to express a possibility, only
+        use <emphasis>may</emphasis> to express permissions sought/given
+      </entry>
      </row>
      <row>
       <entry>(to) deselect sth.</entry>
@@ -2101,6 +2170,14 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>only as adjective</entry>
      </row>
      <row>
+      <entry>dialog</entry>
+      <entry>dialog box, dialog window, dialogue [British]</entry>
+      <entry>noun</entry>
+        <remark>Eeek… Novell use dialog box, apparently, but that sounds rather
+          colloquial. And then, a dialog doesn't have to boxed in or in a window
+          – see web applications -- sknorr, 2013-09-17</remark>
+     </row>
+     <row>
       <entry>directory</entry>
       <entry>dir, folder</entry>
       <entry>noun</entry>
@@ -2113,8 +2190,9 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      <row>
       <entry>(to) double-click sth.</entry>
       <entry>(to) double click sth., (to) double click on sth.,
-        (to) double-click on sth., (to) doubleclick sth.,
-        (to) doubleclick on sth.
+        (to) double click onto sth., (to) double-click on sth.,
+        (to) double-click onto sth., (to) doubleclick sth.,
+        (to) doubleclick on sth., (to) doubleclick onto sth.
       </entry>
       <entry>verb</entry>
      </row>
@@ -2124,19 +2202,38 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>noun; acronym is <emphasis>DNS</emphasis></entry>
      </row>
      <row>
+      <entry>Ethernet</entry>
+      <entry>ethernet</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
       <entry>e-mail</entry>
       <entry>E-Mail, E-mail, Email, electronic mail, email</entry>
       <entry>always hyphenated</entry>
      </row>
      <row>
       <entry/><remark>Should this stand? -- sknorr, 2013-09-16</remark>
-      <entry>easy (filler), easily</entry>
-      <entry>adjective, adverb</entry>
+      <entry>easy [filler], easily</entry>
+      <entry>adjective, adverb; avoid</entry>
      </row>
      <row>
-      <entry>Ethernet</entry>
-      <entry>ethernet</entry>
-      <entry>capitalized </entry>
+      <entry>end user</entry>
+      <entry>end-user</entry>
+      <entry>noun; avoid, where possible see if can be replaced by
+        <emphasis>user</emphasis>
+      </entry>
+     </row>
+     <row>
+      <entry>Ext3</entry>
+      <entry>EXT3, EXT 3, Ext 3, Ext-3, ext 3, ext-3, ext3</entry>
+      <entry>noun; use this capitalization for all version of the Ext file
+        system; intentionally inconsistent with project standard to emphasize
+        this is a proper name</entry>
+     </row>
+     <row>
+      <entry>Ext4</entry>
+      <entry>EXT4, EXT 4, Ext 4, Ext-4, ext 4, ext-4, ext4</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry/><remark>Reasonable alternative, "ease"? Or was this rejected for tending to be filler? -- sknorr, 2013-09-16</remark>
@@ -2144,8 +2241,8 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>avoid</entry>
      </row>
      <row>
-      <entry>filename</entry><remark>This shouldn't be the accepted spelling. -- sknorr, 2013-09-16</remark>
-      <entry>file name, file-name</entry>
+      <entry>file name</entry>
+      <entry>file-name, filename</entry>
       <entry>one word</entry>
      </row>
      <row>
@@ -2160,7 +2257,7 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>flavor</entry>
-      <entry>flavour (British)</entry>
+      <entry>flavour [British]</entry>
       <entry>noun</entry>
      </row>
      <row>
@@ -2217,8 +2314,8 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>noun</entry>
      </row>
      <row>
-      <entry>hostname</entry><remark>This shouldn't be the accepted spelling. -- sknorr, 2013-09-16</remark>
-      <entry>host name, host-name</entry>
+      <entry>host name</entry>
+      <entry>host-name, hostname</entry>
       <entry>noun</entry>
      </row>
      <row>
@@ -2245,6 +2342,11 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>hypervisor</entry>
       <entry>hyper visor, hyper-visor, hyper vizor, hyper-vizor, hypervizor</entry>
       <entry>noun</entry>
+     </row>
+     <row>
+      <entry>indexes</entry>
+      <entry>indices</entry>
+      <entry>noun; plural of index</entry>
      </row>
      <row>
       <entry>infrared</entry>
@@ -2279,8 +2381,13 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>journaling</entry>
-      <entry>journalling (British)</entry>
+      <entry>journalling [British]</entry>
       <entry>noun</entry>
+     </row>
+     <row>
+      <entry/>
+      <entry>just [filler]</entry>
+      <entry>adjective, adverb; avoid</entry>
      </row>
      <row>
       <entry>Kdump</entry>
@@ -2311,19 +2418,22 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>(to) left-click sth.</entry>
-      <entry>(to) left click sth., (to) left click on sth.,
-        (to) left-click on sth., (to) leftclick sth., (to) leftclick on sth.
+      <entry>(to) click the left mouse, (to) click the left mouse button,
+        (to) left click sth., (to) left click on sth.,
+        (to) left click onto sth., (to) left-click on sth.,
+        (to) left-click onto sth., (to) leftclick sth.,
+        (to) leftclick on sth., (to) leftclick onto sth.
       </entry>
       <entry>verb</entry>
      </row>
      <row>
       <entry>license</entry>
-      <entry>licence (British)</entry>
+      <entry>licence [British]</entry>
       <entry>noun</entry>
      </row>
      <row>
       <entry>(to) license sth.</entry>
-      <entry>(to) licen<emphasis>c</emphasis>e sth. (British)</entry>
+      <entry>(to) licen<emphasis>c</emphasis>e sth. [British]</entry>
       <entry>verb</entry>
      </row>
      <row>
@@ -2419,11 +2529,26 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>one word</entry>
      </row>
      <row>
+      <entry>submenu</entry>
+      <entry>sub menu, sub-menu</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
       <entry>(to) middle-click sth.</entry>
-      <entry>(to) middle click sth., (to) middle click on sth.,
-        (to) middle-click on sth., (to) middleclick sth.,
-        (to) middleclick on sth.</entry>
+      <entry>(to) click the middle mouse, (to) click the middle mouse button,
+        (to) middle click sth., (to) middle click on sth.,
+        (to) middle click onto sth., (to) middle-click on sth.,
+        (to) middle-click onto sth., (to) middleclick sth.,
+        (to) middleclick on sth., to middle-click onto sth.
+      </entry>
       <entry>verb</entry>
+     </row>
+     <row>
+      <entry>might</entry>
+      <entry>may</entry>
+      <entry>verb; use <emphasis>might</emphasis> to express a possibility, only
+        use <emphasis>may</emphasis> to express permissions sought/given
+      </entry>
      </row>
      <row>
       <entry>mount point</entry>
@@ -2473,14 +2598,24 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
         <emphasis>NIS server</emphasis></entry>
      </row>
      <row>
+      <entry>openSUSE</entry>
+      <entry>Open SUSE, Open-SUSE, open SUSE, open-SUSE</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
+      <entry>open source</entry>
+      <entry>open-source, opensource</entry>
+      <entry>noun, adjective</entry>
+     </row>
+     <row>
       <entry>paravirtualized</entry>
-      <entry>para-virtualised, paravirtualised (British), para-virtualized</entry>
+      <entry>para-virtualised, paravirtualised [British], para-virtualized</entry>
       <entry>adjective</entry>
      </row>
      <row>
-      <entry>pathname</entry><remark>This shouldn't be the accepted spelling. -- sknorr, 2013-09-16</remark>
-      <entry>path name, path-name</entry>
-      <entry>noun; check if <quote>path</quote> can be used instead</entry>
+      <entry>path name</entry>
+      <entry>path-name, pathname</entry>
+      <entry>noun; avoid, check if <quote>path</quote> can be used instead</entry>
      </row>
      <row>
       <entry>(to) plug sth. in</entry>
@@ -2528,6 +2663,11 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>noun</entry>
      </row>
      <row>
+      <entry>(to) press sth.</entry>
+      <entry>(to) hit sth., (to) punch sth.</entry>
+      <entry>verb; when referring to keys or mouse buttons</entry>
+     </row>
+     <row>
       <entry>proxy</entry>
       <entry/>
       <entry>only as noun</entry>
@@ -2567,7 +2707,7 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      <row>
       <entry>(to) register at sth.</entry>
       <entry/>
-      <entry>verb; register as a user at a system</entry>
+      <entry>verb; register at a system</entry>
      </row>
      <row>
       <entry>(to) register for sth.</entry>
@@ -2576,14 +2716,17 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>(to) right-click sth.</entry>
-      <entry>(to) right click sth., (to) right click on sth.,
-        (to) right-click on sth., (to) rightclick sth., (to) rightclick on sth.
+      <entry>(to) click the right mouse, (to) click the right mouse button,
+        (to) right click sth., (to) right click on sth.,
+        (to) right click onto sth., (to) right-click on sth.,
+        (to) right-click onto sth., (to) rightclick sth.,
+        (to) rightclick on sth., (to) rightclick onto sth.
       </entry>
       <entry>verb</entry>
      </row>
      <row>
       <entry>RPM</entry>
-      <entry>R.P.M., Rpm, rpm (different meaning)</entry>
+      <entry>R.P.M., Rpm, rpm [different meaning]</entry>
       <entry>noun; acronym for <emphasis>RPM Package Manager</emphasis></entry>
      </row>
      <row>
@@ -2602,6 +2745,74 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>noun</entry>
      </row>
      <row>
+      <entry>SLE</entry>
+      <entry>S.L.E., SLE Enterprise, SLE Linux, Sle, sle</entry>
+      <entry>noun; avoid; acronym for
+        <emphasis>SUSE Linux Enterprise</emphasis>
+      </entry>
+     </row>
+     <row>
+      <entry>SLED</entry>
+      <entry>S.L.E.D., SLE Desktop, SLE Enterprise Desktop, SLE Linux Desktop,
+        Sled, sled
+      </entry>
+      <entry>noun; avoid; acronym for
+        <emphasis>SUSE Linux Enterprise Desktop</emphasis>
+      </entry>
+     </row>
+     <row>
+     <entry>SLES</entry>
+      <entry>S.L.E.S.,  SLE Server, SLE Enterprise Server, SLE Linux Server,
+        Sles, sles
+      </entry>
+      <entry>noun; avoid; acronym for
+        <emphasis>SUSE Linux Enterprise Server</emphasis>
+      </entry>
+     </row>
+     <row>
+      <entry>SSH</entry>
+      <entry>S.S.H., SSH Shell, SSH shell, Ssh, ssh</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
+      <entry>SUSE</entry>
+      <entry>S.U.S.E., Software- und System-Entwicklung, SuSE, SuSe, Suse, suse
+      </entry>
+      <entry>noun; not an acronym</entry>
+     </row>
+     <row>
+      <entry>SUSE Cloud</entry>
+      <entry>SUSE Linux Cloud</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
+      <entry>SUSE Linux Enterprise</entry>
+      <entry>SUSE Linux Entreprise [British], SUSE Linux enterprise,
+        SUSE linux enterprise
+      </entry>
+      <entry>noun; acronym is <emphasis>SLE</emphasis></entry>
+     </row>
+     <row>
+      <entry>SUSE Linux Enterprise Desktop</entry>
+      <entry>SUSE Linux Enterprise desktop</entry>
+      <entry>noun; acronym is <emphasis>SLED</emphasis></entry>
+     </row>
+     <row>
+     <entry>SUSE Linux Enterprise Server</entry>
+      <entry>SUSE Linux Enterprise server</entry>
+      <entry>noun; acronym is <emphasis>SLES</emphasis></entry>
+     </row>
+     <row>
+      <entry>SUSE Manager</entry>
+      <entry>SUSE Linux Manager</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
+      <entry>SUSE Studio</entry>
+      <entry>SUSE Linux Studio</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
       <entry>screenshot</entry>
       <entry>screen shot, screen-shot</entry>
       <entry>noun</entry>
@@ -2616,8 +2827,14 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>scroll-bar, scroll bar, scroll-box, scroll box, scrollbox, scroller,
         slide bar, slide-bar, slidebar
       </entry>
-      <entry>noun; GUI element that is used change which portion of a screen area is visible
+      <entry>noun; GUI element that is used change which portion of a screen
+        area is visible
       </entry>
+     </row>
+     <row>
+      <entry>(to) select sth.</entry>
+      <entry>(to) block sth., (to) choose sth., (to) highlight sth.</entry>
+      <entry>verb; selecting text or options</entry>
      </row>
      <row>
       <entry>(to) set sth. up</entry>
@@ -2641,8 +2858,8 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry/>
-      <entry>simple (filler), simply</entry>
-      <entry>adjective, adverb</entry>
+      <entry>simple [filler], simply</entry>
+      <entry>adjective, adverb; avoid</entry>
      </row>
      <row>
       <entry>slider</entry>
@@ -2654,11 +2871,6 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      <row>
       <entry>spec file</entry>
       <entry>Spec file, Spec-file, Specfile, spec-file, specfile</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>SSH</entry>
-      <entry>S.S.H., SSH Shell, SSH shell, Ssh, ssh</entry>
       <entry>noun</entry>
      </row>
      <row>
@@ -2683,7 +2895,8 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>TAR archive</entry>
-      <entry>TAR ball, tar ball, tar-ball, tarball (less neutral, less Windows-user friendly)</entry>
+      <entry>TAR ball, tar ball, tar-ball,
+        tarball [less neutral, less Windows-user friendly]</entry>
       <entry>noun</entry>
      </row>
      <row>
@@ -2717,6 +2930,24 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>noun</entry>
      </row>
      <row>
+      <entry>(to) type sth. (into sth.)</entry>
+      <entry>(to) enter sth. (into sth.) [ambiguous for some users]</entry>
+      <entry>verb; where possible, replace by <emphasis>specify</emphasis>
+        or <emphasis>provide</emphasis></entry>
+        <remark>This strays from Novell's Style Guide but the difference
+          between Novell's meaning for "enter" (= type something, then press
+          Enter) and Novell's meaning for "type" (= type something, don't press
+          Enter) is so small from a user's point of view that it doesn't make
+          sense to keep the second verb around. -- sknorr, 2013-09-18
+        </remark>
+     </row>
+     <row>
+      <entry>Unix</entry>
+      <entry>UNIX (brand name registered by <emphasis>Open Group</emphasis>), unix</entry>
+      <entry>noun; use this capitalization for all general references that are
+        not related to brand names</entry>
+     </row>
+     <row>
       <entry>(to) uninstall</entry>
         <remark>Packages are usually "removed," not uninstalled (say YaST and
           zypper, but also my intuition). Should this word be
@@ -2735,13 +2966,13 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>verb</entry>
      </row>
      <row>
-      <entry>username</entry>
-      <entry>user name, user-name</entry>
+      <entry>user name</entry>
+      <entry>user-name, username</entry>
       <entry>noun</entry>
      </row>
      <row>
       <entry>virtualization</entry>
-      <entry>Virtualisation (British), Virtualization, virtualisation</entry>
+      <entry>Virtualisation [British], Virtualization, virtualisation</entry>
       <entry>noun</entry>
      </row>
      <row>
@@ -2757,18 +2988,30 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
      </row>
      <row>
       <entry>Web page</entry>
-      <entry>Web-page, Webpage, web page, web-page, webpage</entry>
+      <entry>Web-page, Webpage</entry>
       <entry>noun</entry>
      </row>
      <row>
       <entry>Web server</entry>
-      <entry>Web-server, Webserver, web server, web-server, webserver</entry>
+      <entry>Web-server, Webserver</entry>
       <entry>noun</entry>
      </row>
      <row>
       <entry>Web site</entry>
       <entry>Web-site, Website, web site, web-site, website</entry>
       <entry>noun</entry>
+     </row>
+     <row>
+      <entry>Webmaster</entry>
+      <entry>Web master, Web-master</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
+      <entry>when</entry>
+      <entry>once</entry>
+      <entry>adverb; use <emphasis>once</emphasis> only in the meaning
+        <quote>one time only</quote>
+      </entry>
      </row>
      <row>
       <entry>whether</entry>
@@ -2781,7 +3024,8 @@ home directory via <filename>/home/<replaceable>[your username]</replaceable></f
       <entry>noun</entry>
      </row>
      <row>
-      <entry>X Window System</entry><remark>What about X11, X.org, XFree86? -- sknorr, 2013-09-17</remark>
+      <entry>X Window System</entry>
+        <remark>What about X11, X.org, XFree86? -- sknorr, 2013-09-17</remark>
       <entry>X Window, X Windows, X window, X window system, X windows, XWS</entry>
       <entry>noun</entry>
      </row>
@@ -3717,7 +3961,9 @@ title Diskette
   function="control"/> key.
 &lt;/para></screen>
     <para>
-     If you mark up general keys, like control, backspace, or enter, use the
+     If you mark up modifier keys, Home Row keys, cursor keys, or
+     <keycap function="enter"/>, <keycap function="backspace"/>, or
+     <keycap function="escape"/>, use the
      <sgmltag
       class="attribute">function</sgmltag> attribute. Possible
      attribute values for
@@ -3757,6 +4003,9 @@ title Diskette
       class="attvalue">tab</sgmltag>, and
      <sgmltag class="attvalue"
      >up</sgmltag>.
+     When using the function attribute, make the tag self-closing&mdash;DocBook's
+     language files will insert key names automatically. This simplifies both
+     your work and translation.
     </para>
     <para>
      If you need key combinations (you press two or more keys at the same
@@ -3928,8 +4177,8 @@ To save a file in Emacs, press &lt;keycombo action="seq">
         <ulink url="http://www.docbook.org/tdg/en/html/filename.html"/>
        </para>
        <para>
-        A filename is the name of a file on a local or network disk. It may
-        be a simple name or may include a path or other elements specific to
+        A filename is the name of a file on a local or network disk. It could
+        be a simple name or could include a path or other elements specific to
         the operating system.
        </para>
       </listitem>
