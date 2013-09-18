@@ -3813,8 +3813,6 @@ title Diskette
     </procedure>
    </sect2>
 
-<!--
-   rwalter: this is commented, but is is now relevant? should we restore it?
    <sect2 id="sec.markup.block.qandaset">
     <title>Question and Answers</title>
 <remark>Review the order of items in this section.  Do we have any
@@ -3911,7 +3909,7 @@ title Diskette
       </answer>
      </qandaentry>
     </qandaset>
-   </sect2>-->
+   </sect2>
   </sect1>
 <!-- ********************************************************* -->
   <sect1 id="sec.inline">
