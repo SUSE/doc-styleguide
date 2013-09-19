@@ -1,25 +1,23 @@
 <?xml version="1.0"?>
-<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook43-profile.xsl"
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook45-profile.xsl"
                  type="text/xml" title="Profiling step"?>
 <!DOCTYPE article PUBLIC
-  "-//OASIS//DTD DocBook XML V4.3//EN"
-  "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+  "-//OASIS//DTD DocBook XML V4.5//EN"
+  "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd"
 [
   <!ENTITY adguide "Administration Guide">
 ]>
 
-<article class="whitepaper" lang="en" id="art.styleguide">
- <title>Documentation Style Guide</title>
- <subtitle>SUSE and openSUSE</subtitle>
+<article lang="en" id="art.styleguide">
+ <title>SUSE Documentation Style Guide</title>
  <articleinfo>
-  <releaseinfo>Version 2</releaseinfo>
-  <releaseinfo>$Revision: 39 $</releaseinfo>
-  <releaseinfo>Build Date: <?dbtimestamp format="B d, Y"?>
-  </releaseinfo>
+  <releaseinfo>$Rev: 39 $</releaseinfo>
+   <date><?dbtimestamp?></date>
   <legalnotice>
    <title>Legal Notice</title>
-   <formalpara>
-    <title>Copyright (c) 2007 Novell, Inc.</title>
+    <para>All content is copyright &copy; 2007&ndash;<?dbtimestamp format="Y"?>
+      SUSE LLC. All rights reserved.
+    </para>
     <para>
      Permission is granted to copy, distribute and/or modify this document
      under the terms of the GNU Free Documentation License, Version 1.2 or
@@ -29,7 +27,6 @@
      <citetitle>SUSE and openSUSE</citetitle>. A copy of the license is
      included in <xref linkend="app.gdfl"/>.
     </para>
-   </formalpara>
    <formalpara>
     <title>Disclaimer</title>
     <para>
@@ -54,11 +51,11 @@
  </articleinfo>
  <abstract>
   <para>
-   This document contains SUSE-specific style and layout issues and writing
-   guidelines. It identifies and describes several issues to standardize the
-   style of SUSE and openSUSE documentation. This document also contains a
-   reference part for the XML markup used by the SUSE editors and intended
-   for openSUSE projects, such as <emphasis>Lessons for Lizards</emphasis>.
+   This guide provides answers to writing, style, and layout questions commonly
+   arising when editing SUSE or openSUSE documentation. The NovDoc/DocBook
+   markup reference at the end of this guide will help you choose the right
+   XML tag for your purpose. Following this guide will make your documentation
+   more understandable and easier to translate.
   </para>
  </abstract>
  <para>
@@ -80,212 +77,174 @@
   </listitem>
  </itemizedlist>
 <!-- *********************************************************** -->
- <sect1 id="sec.susedoc">
-  <title>Creating a Consistent Structure</title>
+  <sect1 id="sec.susedoc">
+    <title>Structure of SUSE Manuals</title>
 
-  <para>
-   It is important to maintain a relatively consistent structure within a
-   document. This structure can vary for different books or projects. For
-   consistency, each project should have its own guidelines offered here, in
-   a separate project document, or through templates.
-  </para>
+    <para>It is important to maintain a consistent structure within a
+      document. This structure can vary for different books or projects, but
+      the most common type is documented here.
+    </para>
+    <para>A SUSE manual consists of the following mandatory elements: title page,
+      copyright notice, table of contents, preface, and chapters split in
+      sections. Optionally, use parts, appendixes, a glossary, and an index.
+      Descriptions and usage instructions for these elements are provided below.
+    </para>
 
-  <sect2 id="sec.susedoc.book">
-   <title>Official SUSE Manuals</title>
-   <para>
-    A SUSE manual consists of the following mandatory elements: title page,
-    copyright notice, table of contents, preface, and chapters split in
-    sections. Optionally, use parts, appendixes, a glossary, and an index,
-    if appropriate. Find descriptions and usage of these elements in the
-    following list.
-   </para>
-   <variablelist>
-    <varlistentry>
-     <term>Title Page</term>
-     <listitem>
-      <para>
-       The title page contains logo, title, and subtitle.
-      </para>
-     </listitem>
-    </varlistentry>
-    <varlistentry>
-     <term>Imprint</term>
-     <listitem>
-      <para>
-       The second page (imprint) lists edition, copyright notice, and the
-       names of all contributors to the manual. Add the names of all
-       authors and contributors to the file <filename>authors.xml</filename>.
-      </para>
-     </listitem>
-    </varlistentry>
-    <varlistentry>
-     <term>Table of Contents</term>
-     <listitem>
-      <para>
-       The table of contents is generated automatically.
-      </para>
-     </listitem>
-    </varlistentry>
-    <varlistentry>
-     <term>Preface</term>
-     <listitem>
-      <para>
-       The preface of a book contains a brief overview of the scope and
-       content of the manual, information about how to read it, and
-       typographical conventions.
-      </para>
-     </listitem>
-    </varlistentry>
-    <varlistentry>
-     <term>Parts</term>
-     <listitem>
-      <para>
-       Parts structure a manual with many chapters to improve the usability
-       of a book. Use nouns as part titles and keep them clear and concise.
-       Some typical part titles would be <quote>Installation</quote> or
-       <quote>Network</quote>.
-      </para>
-     </listitem>
-    </varlistentry>
-    <varlistentry>
-     <term>Chapters</term>
-     <listitem>
-      <para>
-       Chapters typically consist of the following elements (appendixes should
-       be regarded an exception):
-      </para>
-      <figure>
-       <title>Structure of a Chapter in SUSE Documentation (<literal>*</literal> for optional element)</title>
-       <mediaobject>
-        <textobject>
+    <variablelist>
+      <varlistentry>
+        <term>Title Page</term>
+        <listitem>
+          <para>The title page contains the logo, a title, the name of the
+            product described, and its version.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Imprint</term>
+        <listitem>
+          <para>The second page (imprint) lists edition, copyright notice, and
+            the names of contributors. Add the names of all authors and
+            contributors to the file <filename>authors.xml</filename>.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Table of Contents</term>
+          <listitem>
+            <para>The table of contents is generated automatically.</para>
+          </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Preface</term>
+        <listitem>
+        <para>The preface of a book contains a brief overview of the target
+          audience and content of a manual, related manuals, and typographical
+          conventions.
+        </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Parts</term>
+        <listitem>
+          <para>Parts add an additional element of structure to manuals with
+            many chapters to improve the usability of a book. Keep part titles
+            clear and concise. Often a single noun is enough. Typical part
+            titles include <emphasis>Installation</emphasis> or
+            <emphasis>Network</emphasis>.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Chapters</term>
+        <listitem>
+          <para>Chapters typically consist of the following elements (appendixes
+            should be regarded an exception):
+          </para>
+          <example>
+            <title>Structure of a Chapter (an <literal>*</literal> follows
+              optional elements)
+            </title>
 <screen>chapter
-|
 +--- title
-|
 +--- abstract
-|
 +--- section
-.    |
 .    +--- introductory text
-.    |
 .    +--- procedure environment*
-.    |
 .    +--- subsection
-.    .
-.    .
-.    .
-.    +--- subsection
-.    |
+.         ...
 .    +--- troubleshooting*
-.    |
 .    +--- for more information*
 .
 +--- troubleshooting*
-|
 +--- for more information*</screen>
-        </textobject>
-       </mediaobject>
-      </figure>
-      <variablelist>
-       <varlistentry>
-        <term>Abstract</term>
-        <listitem>
-         <para>
-          Abstracts briefly summarize the information provided in the chapter.
-          Rather than writing about what the chapter does, summarize the
-          information the chapter contains. This gives the reader a clear idea
-          of what he or she can learn by reading the chapter.
-          <xref linkend="ex.style.abstract"/> is an example abstract from the
-          chapter about file systems.
-         </para>
-         <example id="ex.style.abstract">
-          <title>An Example Abstract</title>
-          <para>
-           openSUSE 10.2 ships with a number of different file systems,
-           including ReiserFS, Ext2, Ext3, and XFS, from which to choose at
-           installation time. Each file system has its own advantages and
-           disadvantages that can make it more suited to a scenario.
-           Professional high-performance setups can require a different
-           choice of file system than a home user's setup.
-          </para>
-         </example>
-        </listitem>
-       </varlistentry>
-       <varlistentry>
-        <term>Introductions</term>
-        <listitem>
-         <para>
-          Any introductory information follows directly after the abstract
-          and should not be placed in a separate section.
-         </para>
-        </listitem>
-       </varlistentry>
-       <varlistentry>
-        <term>Sections</term>
-        <listitem>
-         <para>
-          Structure the detailed information in sections for better user
-          orientation and to allow the experienced user to find the desired
-          aspect of the topic easily.
-         </para>
-         <para>
-          Create sections in analogy to the main tasks, like installing,
-          configuring, monitoring, and administering. If helpful, split
-          sections into subsections. Sections start with an introductory
-          paragraph outlining the focus of the section. If the section works
-          with a sequential task, you can follow this introduction with a
-          procedure description, as discussed in
-          <xref
-           linkend="sec.procs"/>, which clearly states all
-          the necessary steps to accomplish a task. Experienced users
-          familiar with the topic can follow this brief sketch. For less
-          experienced readers, each step of the procedure can contain a link
-          to a subsection where the necessary background is provided and the
-          action explained in more detail. In HTML and PDF online
-          documentation, these links are clickable, providing easy access to
-          the additional information.
-         </para>
-        </listitem>
-       </varlistentry>
-       <varlistentry>
-        <term>Troubleshooting Section</term>
-        <listitem>
-         <para>
-          If you know of common mistakes, pitfalls, or problems a user might
-          encounter in this situation, list them in this section. Use the
-          title <quote>Troubleshooting</quote> for all these types of
-          sections in all manuals. Structure the section in a symptom and
-          solution pattern.
-         </para>
-        </listitem>
-       </varlistentry>
-       <varlistentry>
-        <term>For More Information</term>
-        <listitem>
-         <para>
-          As described in <xref linkend="sec.edrules.address"/>, this
-          section contains links to all sources of information that might
-          prove helpful in the given context. Follow the general referencing
-          guidelines in <xref linkend="sec.edrules.reference"/> when
-          creating this kind of section.
-         </para>
-        </listitem>
-       </varlistentry>
+          </example>
+          <variablelist>
+            <varlistentry>
+              <term>Abstract</term>
+              <listitem>
+                <para>Abstracts briefly summarize the information provided in
+                  a chapter. Rather than writing about what the chapter does,
+                  summarize the information the chapter contains. This gives
+                  readers a clear idea of what they can learn from the
+                  chapter.
+                </para>
+                <example id="ex.style.abstract">
+                  <title>An Example Abstract</title>
+                  <para>openSUSE ships with a number of different file
+                    systems, including Btrfs, Ext3, Ext4, from
+                    which you can choose at installation time. Each file system
+                    has advantages and disadvantages that make it more or less
+                    suitable for a scenario. Professional high-performance
+                    setups can require a different choice of file system than
+                    a home user setup.
+                  </para>
+                </example>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Introductions</term>
+              <listitem>
+                <para>Any introductory information follows directly after the
+                  abstract and should not be placed in a separate section.
+                </para>
+              </listitem>
+            </varlistentry>
+            <varlistentry>
+              <term>Sections</term>
+                <listitem>
+                  <para>Structure the detailed information, so users can skim
+                    the text. Create sections for every major task, such as
+                    installing, configuring, monitoring, and administering. If
+                    helpful, split sections into subsections, but avoid going
+                    above three levels of sections.
+                  </para>
+                  <para>Sections start with an introductory paragraph outlining
+                    the focus of the section. If the section describes a
+                    sequential task, follow the introduction with a procedure
+                    description, as discussed in <xref linkend="sec.procs"/>.
+                    Experienced users familiar with the topic can follow this
+                    brief sketch. For less experienced readers, steps of
+                    the procedure could contain a (usually clickable) reference
+                    to a subsection where the necessary background is provided
+                    and the action explained in more detail.
+                  </para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>Troubleshooting Sections</term>
+                <listitem>
+                  <para>If you know of common mistakes, pitfalls, or problems a
+                    user might encounter in a certain situation, list them in
+                    this section. Always use the title
+                    <quote>Troubleshooting</quote>for such sections. Structure
+                    the section after a symptom and solution pattern.
+                  </para>
+                </listitem>
+              </varlistentry>
+              <varlistentry>
+                <term>For More Information</term>
+                <listitem>
+                  <para>This section contains links to all sources of
+                    information that might prove helpful in a given context.
+                    Follow the general referencing guidelines in
+                    <xref linkend="sec.edrules.reference"/> when creating such
+                    a section.
+                  </para>
+                </listitem>
+              </varlistentry>
+            </variablelist>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Glossary</term>
+          <listitem>
+            <para> The optional glossary contains important terms in
+              alphabetical order and provides a brief explanation.
+            </para>
+          </listitem>
+        </varlistentry>
       </variablelist>
-     </listitem>
-    </varlistentry>
-    <varlistentry>
-     <term>Glossary</term>
-     <listitem>
-      <para>
-       The optional glossary contains important terms in alphabetical order
-       and provides a brief explanation.
-      </para>
-     </listitem>
-    </varlistentry>
-   </variablelist>
-  </sect2>
- </sect1>
+  </sect1>
 <!-- *********************************************************** -->
  <sect1 id="sec.edrules">
   <title>Writing and Editing</title>
@@ -1921,7 +1880,7 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
 
   <sect2 id="sec.spell">
     <title>Finer Points of Spelling</title>
-    <para>When adding suffixes to words, do not add a hyphen after the suffix
+    <para>When adding prefixes to words, do not add a hyphen after the suffix
       unless either two consonants clash or you foresee misunderstandings.
     </para>
   </sect2>
@@ -1937,12 +1896,9 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
     written incorrectly by non-native speakers.
   </para>
   <para>Note that only some of the most important SUSE products are listed here.
-    If the product you are documentsing is not listed, please refer to the
+    If the product you are documenting is not listed, please refer to the
     Marketing department or the SUSE homepage, <ulink url="http://www.suse.com"/>.
   </para>
-
-  <remark>Terminology to define: plural of words with x: appendixes v/
-    appendices, indexes v/ indices, all correct -- sknorr, 2013-09-10</remark>
 
   <table>
    <title>Terms Common in SUSE Documentation</title>
@@ -2497,6 +2453,11 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
       <entry>noun</entry>
      </row>
      <row>
+      <entry>lowercase</entry>
+      <entry>lower case, lower-case</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
       <entry>need to</entry>
       <entry>have to</entry>
       <entry>verb; see also <emphasis>must</emphasis></entry>
@@ -2607,8 +2568,8 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
      </row>
      <row>
       <entry>open source</entry>
-      <entry>open-source, opensource</entry>
-      <entry>noun, adjective</entry>
+      <entry>Open Source, Open-Source, open-source, opensource</entry>
+      <entry>only as noun</entry>
      </row>
      <row>
       <entry>paravirtualized</entry>
@@ -2967,6 +2928,11 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
       <entry>(to) use sth.</entry>
       <entry>(to) utilize sth.</entry>
       <entry>verb</entry>
+     </row>
+     <row>
+      <entry>uppercase</entry>
+      <entry>upper case, upper-case</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry>user name</entry>
