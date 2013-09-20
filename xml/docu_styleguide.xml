@@ -262,36 +262,29 @@
   <sect2 id="sec.edrules.abbrev">
    <title>Abbreviations and Acronyms</title>
    <para>
-    Do not use any abbreviations, except abbreviations of common units of
-    measurement and <emphasis>etc.</emphasis>. Do not usmay be used in
-    parentheses and some rare instances, but not in combination with phrases
-    like <emphasis>for example</emphasis> or <emphasis>such as.</emphasis> It should be
-    followed by a comma.
-   </para>
-   <para>
-    Abbreviations of common units of measure may also be used. Do not create
+    Do not use any abbreviations, except <emphasis>etc.</emphasis> and
+    abbreviations of common units of measurement. Do not create
     a plural of these abbreviations by adding an <quote>s.</quote> Use a
-    non-breaking (<sgmltag class="genentity">nbsp</sgmltag>) space between
-    the numeral and multiple-letter abbreviations. Do not use a space before
-    single-letter abbreviations.
+    non-breaking (<sgmltag>&amp;nbsp;</sgmltag>) space between
+    the numeral and corresponding unit abbreviation.
    </para>
    <para>
-    A header must not contain both the acronym and the meaning. Common
-    acronyms can be used in the header and written out in the following
-    text.
+    A title must not contain both the acronym and its expansion. When dealing
+    with a term that is commonly written as an acronym, use the acronym in
+    the title. When mentioning the term the first time in the following text,
+    use its expanded form. All following occurrences of the term in this chapter
+    should use the acronym.
    </para>
    <para>
-    Once the acronym has been presented in the written out form, use the
-    acronym version in the rest of a chapter. Because sometimes chapters and
-    parts are used in different documents, it is important to map acronym
-    and meaning at least once per chapter. Be consistent with this mapping.
-    If you use the acronym followed by the written out form in one chapter,
-    try to do this in all others.
+    Because sometimes chapters and parts are used in different documents, it is
+    important to provide the expansion of an acronym at least once per chapter.
+    Be consistent with this mapping. If you use the acronym followed by the
+    written out form in one chapter, do this in all other chapters too.
    </para>
    <para>
     Form plural forms of acronyms by adding a lowercase <quote>s,</quote>
     for example, <quote>CDs</quote> and <quote>BIOSs.</quote> Because some
-    rare acronyms create plurals by adding <quote>'s,</quote> avoid using
+    acronyms create plurals by adding <quote>'s,</quote> avoid using
     possessive forms of acronyms for reasons of clarity.
    </para>
   </sect2>
@@ -2185,8 +2178,9 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
      <row>
       <entry>etc.</entry>
       <entry/>
-      <entry>noun; avoid, where possible see if can be replaced by
-        <emphasis>user</emphasis>
+      <entry>abbreviation; avoid; do not use together with
+        <quote>for example</quote> or <quote>such as.</quote>; always precede
+        with a comma.
       </entry>
      </row>
      <row>
