@@ -11,7 +11,7 @@
 <article lang="en" id="art.styleguide">
  <title>SUSE Documentation Style Guide</title>
  <articleinfo>
-  <releaseinfo>$Rev: 39 $</releaseinfo>
+  <releaseinfo>$Revision$</releaseinfo>
    <date><?dbtimestamp?></date>
   <legalnotice>
    <title>Legal Notice</title>
@@ -151,7 +151,7 @@
 .    +--- introductory text
 .    +--- procedure environment*
 .    +--- subsection
-.         ...
+.    .    ...
 .    +--- troubleshooting*
 .    +--- for more information*
 .
@@ -211,13 +211,16 @@
                 </listitem>
               </varlistentry>
               <varlistentry>
-                <term>Troubleshooting Sections</term>
+                <term>Troubleshooting</term>
                 <listitem>
-                  <para>If you know of common mistakes, pitfalls, or problems a
+                  <para>If you know of common mistakes or other problems a
                     user might encounter in a certain situation, list them in
-                    this section. Always use the title
-                    <quote>Troubleshooting</quote>for such sections. Structure
-                    the section after a symptom and solution pattern.
+                    a section named <emphasis>Troubleshooting</emphasis>.
+                    Structure the section by using a
+                    <sgmltag>variablelist</sgmltag>, in which you name a typical
+                    symptom and then a solution. In case you want to describe
+                    solutions to more than ten problems, add topical subsections
+                    below the <emphasis>Troubleshooting</emphasis> section.
                   </para>
                 </listitem>
               </varlistentry>
@@ -228,7 +231,7 @@
                     information that might prove helpful in a given context.
                     Follow the general referencing guidelines in
                     <xref linkend="sec.edrules.reference"/> when creating such
-                    a section.
+                    sections.
                   </para>
                 </listitem>
               </varlistentry>
@@ -238,7 +241,7 @@
         <varlistentry>
           <term>Glossary</term>
           <listitem>
-            <para> The optional glossary contains important terms in
+            <para>The optional glossary contains important terms in
               alphabetical order and provides a brief explanation.
             </para>
           </listitem>
@@ -259,9 +262,10 @@
   <sect2 id="sec.edrules.abbrev">
    <title>Abbreviations and Acronyms</title>
    <para>
-    Most abbreviations may not be used. <quote>etc.</quote> may be used in
+    Do not use any abbreviations, except abbreviations of common units of
+    measurement and <emphasis>etc.</emphasis>. Do not usmay be used in
     parentheses and some rare instances, but not in combination with phrases
-    like <quote>for example</quote> or <quote>such as.</quote> It should be
+    like <emphasis>for example</emphasis> or <emphasis>such as.</emphasis> It should be
     followed by a comma.
    </para>
    <para>
@@ -2175,6 +2179,12 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
      <row>
       <entry>end user</entry>
       <entry>end-user</entry>
+      <entry>noun; avoid; where possible, replace with <emphasis>user</emphasis>
+      </entry>
+     </row>
+     <row>
+      <entry>etc.</entry>
+      <entry/>
       <entry>noun; avoid, where possible see if can be replaced by
         <emphasis>user</emphasis>
       </entry>
