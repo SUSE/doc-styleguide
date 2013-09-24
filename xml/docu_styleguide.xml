@@ -262,35 +262,37 @@
   <sect2 id="sec.edrules.abbrev">
    <title>Abbreviations and Acronyms</title>
    <para>
-    Do not use any abbreviations, except <emphasis>etc.</emphasis> and
+    Do not use any abbreviations, except <emphasis>etc.</emphasis> or
     abbreviations of common units of measurement. Do not create
     a plural of these abbreviations by adding an <quote>s.</quote> Use a
     non-breaking (<sgmltag>&amp;nbsp;</sgmltag>) space between
     the numeral and corresponding unit abbreviation.
    </para>
    <para>
-    A title must not contain both the acronym and its expansion. When dealing
+    A title must not contain both an acronym and its expansion. When dealing
     with a term that is commonly written as an acronym, use the acronym in
-    the title. When mentioning the term the first time in the following text,
-    use its expanded form. All following occurrences of the term in this chapter
-    should use the acronym.
+    the title. When mentioning the term for the first time in the following
+    text, use its expanded form. All following occurrences of the term in this
+    chapter should then use the acronym.
    </para>
    <para>
-    Because sometimes chapters and parts are used in different documents, it is
-    important to provide the expansion of an acronym at least once per chapter.
-    Be consistent with this mapping. If you use the acronym followed by the
-    written out form in one chapter, do this in all other chapters too.
+    Because sometimes chapters and parts are used across multiple documents,
+    it is important to provide the expansion of an acronym at least once per
+    chapter. Be consistent in how you provide the expansion. If you use the
+    acronym followed by the written out form in one chapter, do this in all
+    other chapters too.
    </para>
    <para>
-    Form plural forms of acronyms by adding a lowercase <quote>s,</quote>
-    for example, <quote>CDs</quote> and <quote>BIOSs.</quote> Because some
-    acronyms create plurals by adding <quote>'s,</quote> avoid using
-    possessive forms of acronyms for reasons of clarity.
+    Create plural forms of acronyms by adding a lowercase <quote>s,</quote>
+    for example, <quote>CDs</quote> and <quote>BIOSs.</quote> Avoid using
+    possessive forms of acronyms (a negative example would be
+    <quote>XML's specification</quote>) for reasons of
+    clarity.
    </para>
   </sect2>
 
   <sect2 status="ready" id="sec.edrules.address">
-   <title>Addresses</title>
+   <title>Web Links</title>
    <para>
     SUSE documentation contains <quote>For More Information</quote> sections
     at the end of most chapters to point to further sources of information
@@ -327,9 +329,9 @@
    <title>Admonitory and Advisory Paragraphs</title>
    <para>
     SUSE uses four different kinds of admonitory and advisory paragraphs.
-    Because these elements are formatted in a way to draw the reader's
-    attention to them, their use should be limited to specific situations.
-    Additionally, avoid using more than one per page.
+    These elements are formatted in a way to draw the reader's attention.
+    Therefore, limit their use as much and avoid using more than one per
+    PDF output page.
    </para>
    <variablelist>
     <varlistentry>
@@ -340,7 +342,7 @@
        These elements warn of security issues, potential loss of data,
        damage to equipment (hardware), or physical hazards to the user. A
        warning must always precede the action to which it applies. A typical
-       example of a warning used in SUSE documentation is:
+       example is:
       </para>
       <example>
        <title>A Typical Example of a SUSE Warning</title>
@@ -406,86 +408,73 @@
 
   <sect2 id="sec.edrules.aud">
    <title>Audience</title>
-   <para>
-    It is generally not necessary to describe the intended audience in the
-    text, but keep it in mind when writing the document. Adjust the tone,
-    style, and technical level of the text based on the intended audience.
-    Do not insult them by saying something is obvious.
+
+   <para>It is generally not necessary to describe the intended audience in the
+    text, but keep it in mind when writing the document. It may also be helpful
+    to document the targeted audience outside of a book, for later reference.
+    Adjust tone, style, and technicality of the text based on the intended
+    audience. Keep in mind that not everything that is obvious to you is also
+    obvious to others.
    </para>
    <para>
-    Aim the document at the reader by describing tasks the reader might need
-    to complete rather than the organization of the program. For example,
-    when describing YaST, focus on how to configure the devices and services
-    the user needs rather than the module structure and available dialogs.
+    Structure the documentation by relevant tasks instead of providing
+    reference documentation by describing each part of the user interface
+    individually. For example, when describing YaST, focus on how to configure
+    the devices and services the user needs rather than the module structure
+    and available dialogs.
    </para>
    <para>
-    Try to focus on the positives: what the program can do rather than its
+    Focus on the positives: describe what the program can do rather than its
     limitations. Be honest in your documentation and avoid absolutes and the
-    exaggerations of marketing-speak.
+    exaggerations of marketing language.
    </para>
   </sect2>
 
   <sect2 id="sec.edrules.cap">
    <title>Capitalization</title>
-   <para>
-    Use title-style capitalization for all types of headings and titles,
+   <para>Use title-style capitalization for all types of headings and titles,
     including figure and table titles. This style is explained in
-    <citetitle>Chicago</citetitle> 8.167.
-   </para>
-   <para>
-    This style can be very complicated to implement, but following these
-    simple rules is a good start:
+    <citetitle>Chicago</citetitle> 8.167. A simplified version of these rules
+    is below:
    </para>
    <orderedlist>
     <listitem>
-     <para>
-      Capitalize the first word no matter what it is
+     <para>Capitalize the first, the last word and everything that is not
+      mentioned in the other four points of this list.
      </para>
     </listitem>
     <listitem>
-     <para>
-      Capitalize all major words
+     <para>Lowercase articles, that is, <emphasis>the</emphasis>,
+      <emphasis>a</emphasis>, and <emphasis>an</emphasis>
      </para>
     </listitem>
     <listitem>
-     <para>
-      Lowercase <emphasis>the</emphasis>, <emphasis>an</emphasis>,
-      <emphasis>a</emphasis>, <emphasis>and</emphasis>,
+     <para>Lowercase prepositions, such as <emphasis>up</emphasis>,
+      <emphasis>in</emphasis>, <emphasis>of</emphasis>,
+      <emphasis>through</emphasis>, and <emphasis>between</emphasis>, unless
+      they are used with a verb, such as <quote>Logging In</quote> or with a
+      noun, as in <quote>The On Button</quote>
+     </para>
+    </listitem>
+    <listitem>Lowercase the following conjunctions: <emphasis>and</emphasis>,
       <emphasis>but</emphasis>, <emphasis>for</emphasis>,
-      <emphasis>or</emphasis>, <emphasis>nor</emphasis>,
-      <emphasis>to</emphasis>, and <emphasis>as</emphasis>
+      <emphasis>nor</emphasis>, and <emphasis>or</emphasis>
      </para>
     </listitem>
-    <listitem>
-     <para>
-      Lowercase prepositions, such as <emphasis>up</emphasis>,
-      <emphasis>in</emphasis>, <emphasis>down</emphasis>, and
-      <emphasis>of</emphasis>
-     </para>
-    </listitem>
-    <listitem>
-     <para>
-      Capitalize the last word
-     </para>
+    <listitem>Lowercase <emphasis>as</emphasis> and <emphasis>to</emphasis>
     </listitem>
    </orderedlist>
-   <para>
-    In variable lists, capitalize the term in title-style unless it is a
+   <para>In variable lists, capitalize the term in title style unless it is a
     complete sentence. In all list items, use sentence-style capitalization
-    (capitalize the first letter and proper nouns only). Use title-style for
+    (capitalize the first letter and proper nouns only). Use title style for
     row and column labels in tables.
    </para>
   </sect2>
 
   <sect2 id="sec.edrules.contract">
    <title>Contractions</title>
-   <para>
-    SUSE and openSUSE documentation does not normally permit the use of
-    contractions. Contractions are only permitted in casual documents and
-    texts. A good example of appropriate use of contractions is the SuSE
-    tour that was included in older releases. It provided a friendly and
-    somewhat humorous introduction to applications and was aimed
-    predominantly at the the home user.
+   <para>Do not use contractions, unless you are purposefully writing a casual
+    document.
    </para>
   </sect2>
 
@@ -513,42 +502,34 @@
     situation where the category of the page is needed, add
     <quote>(<command>man 9 command</command>)</quote> to the end.
    </para>
-   <para>
-    Use <sgmltag>ulink</sgmltag> for a URL, like
-    <ulink url="http://www.suse.de"/>. Always use the correct protocol
-    prefix (http, ftp, mailto) to enable the automated link check. Never use
-    <sgmltag>filename</sgmltag> for this kind of link. Anything that should
-    show up as a clickable link in the final HTML and PDF docs must bear the
-    correct markup. Otherwise you risk breaking the link checking tools and rob
-    the user of extra functionality, such as being able to click to reach
-    external documents. Do not enter a text label for the <sgmltag>ulink</sgmltag>
-    so that the URL itself appears in printed versions.
+   <para>Use the <sgmltag>ulink</sgmltag> tag to mark up URLs, such as
+    <ulink url="http://www.suse.de"/>. Always prefix the correct protocol
+    (<literal>http://</literal>, <literal>ftp://</literal>,
+    <literal>mailto://</literal>) to enable automated link checks. Never
+    use <sgmltag>filename</sgmltag> for a link, as that would disable the link
+    checker and make the link unclickable. Do not enter a text label for the
+    <sgmltag>ulink</sgmltag> so that the URL itself appears in printed versions.
    </para>
-   <para>
-    Do not use <sgmltag>ulink</sgmltag> and the <literal>file:</literal>
-    prefix to reference file names. Use <sgmltag>filename</sgmltag> for
-    files.
+   <para>To reference file names, always use the <sgmltag>filename</sgmltag>
+    tag. Never include the <literal>file://</literal> prefix.
    </para>
    <para>
     Do not use links across documents where ID and IDREF linking is not
-    possible and <sgmltag>ulink</sgmltag> is inappropriate. For references
-    to information in SUSE books outside the current document set, use the
-    appropriate entity for the book title. The reference should not refer to
-    a specific chapter or section number or title because these things
-    change too easily. Instead, make a reference using the document title
-    but no specific headers.
+    possible. For references to other SUSE books outside the current document
+    set, use the appropriate entity for the book title. In such cases, always
+    reference the book itself, as chapter names can change.
    </para>
    <para>
     Insert references to external (not SUSE or openSUSE) books in the format
-    "Title by Author (ISBN #)." Inclusion of the ISBN is optional. Place the
-    title in <sgmltag>citetitle</sgmltag> tags. For example:
+    "Title by Author (ISBN #00000000)." Inclusion of the ISBN is optional.
+    Place the title in <sgmltag>citetitle</sgmltag> tags. For example:
    </para>
 <screen>&lt;citetitle>Indexing Books&lt;/citetitle> by Nancy C. Mulvany
 (ISBN 0-226-55014-1) is a useful guide for indexing.</screen>
    <para>
     It is useful to provide language-specific references in the translated
     books. If the authors know of language-specific versions, they can
-    include them in comments to the translators. As time permits,
+    include them in comments for translators. As time permits,
     translators should look for corresponding language-specific resources.
     For URLs, provide only the language-specific version of a site. Use the
     English as a fallback. For books, provide the title of the translated
@@ -578,7 +559,7 @@
    <sect3 id="sec.edrules.block.fig">
     <title>Graphics and Figures</title>
     <para>
-     Screen shots and graphics should only be used when helpful for
+     Screenshots and graphics should only be used when helpful for
      following the explanation. Using too many screenshots could add to the
      confusion of the reader. If you intend to use screenshots in a document,
      consider the following issues first:
@@ -586,45 +567,37 @@
     <itemizedlist>
      <listitem>
       <para>
-       A screen shot should illustrate a complex situation where the user
+       A screenshot should illustrate a complex situation in which the user
        cannot easily follow the text otherwise.
       </para>
      </listitem>
      <listitem>
-      <para>
-       Do not use screen shots of confirmation pop-ups, progress bars, and
-       other widgets that do not require user action and do not provide
-       crucial information.
+      <para>Only illustrate steps where user meaningful user interactions are
+       necessary. Do not create screenshots of progressbars or confirmation
+       windows.
       </para>
      </listitem>
      <listitem>
-      <para>
-       Do not illustrate every step of a procedure with a screen shot. In
-       most cases, selecting a few screen shots to show the most important
-       dialogs or choices during the whole process is sufficient.
+      <para>Choose only those screenshots that show the most important dialogs
+        or choices during the whole process is sufficient.
       </para>
      </listitem>
     </itemizedlist>
-    <para>
-     If you intend to use graphics in documentation, think of the following
+    <para>If you intend to use graphics in documentation, think of the following
      issues first:
     </para>
     <itemizedlist>
      <listitem>
-      <para>
-       KISS (<quote>keep it short and simple</quote>). Graphics should always
-       simplify complex issues and not confuse the reader by their
-       complexity. Embedding too much text in the graphic adds to the
-       complexity. Use as little text as possible and be aware of
-       localization issues, such as differing lengths of strings in
-       different languages.
+      <para> KISS (<quote>keep it short and simple</quote>). Graphics should
+       always simplify complex issues and not confuse the reader by their
+       complexity. Embedding text in graphic adds to complexity. Use as
+       little text as possible. Be aware that some languages use up to
+       twice as much space for a given phrase than English.
       </para>
      </listitem>
      <listitem>
-      <para>
-       Provide an appropriate reference in the text. The layout process
-       should make an effort to ensure that figures are not placed too far
-       from the related text.
+      <para>Reference the figure from the text by means of an
+        <sgmltag>xref</sgmltag>.
       </para>
      </listitem>
     </itemizedlist>
@@ -632,8 +605,7 @@
    <sect3 id="sec.edrules.block.callouts">
     <title>Callouts</title>
     <para>
-     Callout numbers are only printed if there are 10 or fewer per example.
-     Using more than 10 would be distracting.
+     Do not use more than ten callouts per example.
     </para>
     <example id="ex.co.code">
      <title>A Configuration File with Callouts</title>
@@ -643,7 +615,7 @@ default 0   <co id="def"/>
 timeout 8   <co id="time"/>
 gfxmenu (hd0,0)/boot/message
 
-title SUSE LINUX 9.1.42
+title SUSE Linux enterprise 12
     kernel (hd0,0)/boot/vmlinuz root=/dev/hda1 vga=0x31a selinux=0
     splash=silent resume=/dev/hda2 desktop elevator=as  showopts
     initrd (hd0,0)/boot/initrd
@@ -679,7 +651,7 @@ title Disk
    <sect3 id="sec.edrules.block.ex">
     <title>Examples</title>
     <para>
-     Like figures and screen shots, examples are used to illustrate complex
+     Like figures and screenshots, examples are used to illustrate complex
      processes. Most of the rules established for the use of these elements
      in <xref linkend="sec.edrules.block.fig"/> also apply to examples.
     </para>
@@ -697,7 +669,7 @@ title Disk
      <listitem>
       <para>
        Make sure that the example is crucial to the understanding of the
-       process as a whole. Like figures and screen shots, examples stick out
+       process as a whole. Like figures and screenshots, examples stick out
        from the text and are distracting when overused or used improperly.
       </para>
      </listitem>
@@ -3524,7 +3496,7 @@ id="tab.yast.sources"</screen>
        <para>
         A <sgmltag>screenshot</sgmltag> is a graphical environment for
         displaying an image of what the user might see on a computer screen.
-        It is often used to display application screen shots, dialog boxes,
+        It is often used to display application screenshots, dialogs,
         and other components of a graphical user interface.
        </para>
       </listitem>
