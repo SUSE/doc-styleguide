@@ -456,12 +456,14 @@
       noun, as in <quote>The On Button</quote>
      </para>
     </listitem>
-    <listitem>Lowercase the following conjunctions: <emphasis>and</emphasis>,
+    <listitem>
+      <para>Lowercase the following conjunctions: <emphasis>and</emphasis>,
       <emphasis>but</emphasis>, <emphasis>for</emphasis>,
       <emphasis>nor</emphasis>, and <emphasis>or</emphasis>
      </para>
     </listitem>
-    <listitem>Lowercase <emphasis>as</emphasis> and <emphasis>to</emphasis>
+    <listitem>
+      <para>Lowercase <emphasis>as</emphasis> and <emphasis>to</emphasis></para>
     </listitem>
    </orderedlist>
    <para>In variable lists, capitalize the term in title style unless it is a
@@ -1970,8 +1972,9 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
      <row>
       <entry>Btrfs</entry>
       <entry>B.T.R.F.S., Better FS, BetterFS, Butter FS, ButterFS, btrfs</entry>
-      <entry>noun; not an acronym</entry>
-        <remark>Is it, though? "B-tree File System"? -- sknorr, 2013-09-18</remark>
+      <entry>noun; not an acronym
+        <remark>Really, though? "B-tree File System"? -- sknorr, 2013-09-18</remark>
+      </entry>
      </row>
      <row>
       <entry>but</entry>
@@ -2097,10 +2100,11 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
      <row>
       <entry>dialog</entry>
       <entry>dialog box, dialog window, dialogue [British]</entry>
-      <entry>noun</entry>
+      <entry>noun
         <remark>Eeek… Novell use dialog box, apparently, but that sounds rather
           colloquial. And then, a dialog doesn't have to boxed in or in a window
           – see web applications -- sknorr, 2013-09-17</remark>
+      </entry>
      </row>
      <row>
       <entry>directory</entry>
@@ -2137,9 +2141,11 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
       <entry>always hyphenated</entry>
      </row>
      <row>
-      <entry/><remark>Should this stand? -- sknorr, 2013-09-16</remark>
+      <entry/>
       <entry>easy [filler], easily</entry>
-      <entry>adjective, adverb; avoid</entry>
+      <entry>adjective, adverb; avoid
+        <remark>Should this stand? -- sknorr, 2013-09-16</remark>
+      </entry>
      </row>
      <row>
       <entry>end user</entry>
@@ -2169,11 +2175,12 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
      </row>
      <row>
       <entry/>
+      <entry>(to) facilitate</entry>
+      <entry>avoid
         <remark>Reasonable alternative, "ease," "simplify"? Or was this rejected
           for tending to be filler/subjective? -- sknorr, 2013-09-16
         </remark>
-      <entry>(to) facilitate</entry>
-      <entry>avoid</entry>
+      </entry>
      </row>
      <row>
       <entry>file name</entry>
@@ -2224,8 +2231,9 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
      <row>
       <entry>graphical user interface</entry>
       <entry>Graphical User Interface, graphical UI</entry>
+      <entry>noun; acronym for <emphasis>graphical user interface</emphasis>
         <remark>Not completely sure about rejecting graphical UI -- sknorr, 2013-09-16</remark>
-      <entry>noun; acronym for <emphasis>graphical user interface</emphasis></entry>
+      </entry>
      </row>
      <row>
       <entry>GUI</entry>
@@ -2244,9 +2252,11 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
       <entry>noun</entry>
      </row>
      <row>
-      <entry>home page</entry><remark>This shouldn't be the accepted spelling. -- sknorr, 2013-09-16</remark>
+      <entry>home page</entry>
       <entry>home-page, homepage</entry>
-      <entry>noun</entry>
+      <entry>noun
+        <remark>I can't accept the accepted spelling. -- sknorr, 2013-09-16</remark>
+      </entry>
      </row>
      <row>
       <entry>host name</entry>
@@ -2286,13 +2296,16 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
      <row>
       <entry>infrared</entry>
       <entry>infra red, infra-red</entry>
-      <entry>noun or adjective</entry><remark>Really a noun? -- sknorr, 2013-09-16</remark>
+      <entry>noun or adjective
+        <remark>Really a noun? -- sknorr, 2013-09-16</remark>
+      </entry>
      </row>
      <row>
       <entry>installation source</entry>
       <entry>installation data source, installation media</entry>
+      <entry>noun; source of installation data for operating systems
         <remark>Really reject installation media? -- sknorr, 2013-09-16</remark>
-      <entry>noun; source of installation data for operating systems</entry>
+      </entry>
      </row>
      <row>
       <entry>Internet</entry>
@@ -2332,8 +2345,9 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
      <row>
       <entry>kdump</entry>
       <entry>KDUMP,Kdump</entry>
-      <entry>command; only for command</entry>
+      <entry>command; only for command
         <remark>So, commands aren't nouns, then? -- sknorr, 2013-09-16</remark>
+      </entry>
      </row>
      <row>
       <entry>Kernel</entry>
@@ -2348,8 +2362,9 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
      <row>
       <entry>kprobes</entry>
       <entry>Kprobes</entry>
-      <entry>command; only for command</entry>
+      <entry>command; only for command
         <remark>So, commands aren't nouns, then? -- sknorr, 2013-09-16</remark>
+      </entry>
      </row>
      <row>
       <entry>(to) left-click sth.</entry>
@@ -2412,10 +2427,11 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
      <row>
       <entry>(to) log out</entry>
       <entry>(to) log off, (to) log-off, (to) logoff, (to) log-out, (to) logout,
-        (to) sign off, (to) sign-off, (to) signoff, (to) sign out, (to) sign-out,
+        (to) sign off, (to) sign-off, (to) signoff <remark>In code review
+        systems (e.g.), sign-off means something different. -- sknorr, 2013-09-17</remark>,
+        (to) sign out, (to) sign-out,
         (to) signout
-      </entry><remark>In code review systems, sign-off might mean something
-        different. -- sknorr, 2013-09-17</remark>
+      </entry>
       <entry>verb</entry>
      </row>
      <row>
@@ -2535,7 +2551,8 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
       <entry>NIS</entry>
       <entry>N.I.S., NIS information service, NIS service, Nis</entry>
       <entry>noun; often: <emphasis>NIS client</emphasis>,
-        <emphasis>NIS server</emphasis></entry>
+        <emphasis>NIS server</emphasis>
+      </entry>
      </row>
      <row>
       <entry>openSUSE</entry>
@@ -2594,12 +2611,16 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
      </row>
      <row>
       <entry>print queue</entry>
-      <entry>print<emphasis>er</emphasis> queue, print<emphasis>ing</emphasis> queue</entry>
+      <entry>print<emphasis>er</emphasis> queue,
+        print<emphasis>ing</emphasis> queue
+      </entry>
       <entry>noun</entry>
      </row>
      <row>
       <entry>print spooler</entry>
-      <entry>print<emphasis>er</emphasis> spooler, print<emphasis>ing</emphasis> spooler</entry>
+      <entry>print<emphasis>er</emphasis> spooler,
+        print<emphasis>ing</emphasis> spooler
+      </entry>
       <entry>noun</entry>
      </row>
      <row>
@@ -2738,7 +2759,7 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
       <entry>noun; acronym is <emphasis>SLED</emphasis></entry>
      </row>
      <row>
-     <entry>SUSE Linux Enterprise Server</entry>
+      <entry>SUSE Linux Enterprise Server</entry>
       <entry>SUSE Linux Enterprise server</entry>
       <entry>noun; acronym is <emphasis>SLES</emphasis></entry>
      </row>
@@ -2806,7 +2827,8 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
       <entry/>
       <entry>noun; GUI element that is used manipulate values that have an upper
         and a lower bound
-      </entry><remark>A little complicated -- sknorr, 2013-09-17</remark>
+        <remark>A little complicated -- sknorr, 2013-09-17</remark>
+      </entry>
      </row>
      <row>
       <entry>spec file</entry>
@@ -2873,27 +2895,30 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
       <entry>(to) type sth. (into sth.)</entry>
       <entry>(to) enter sth. (into sth.) [ambiguous for some users]</entry>
       <entry>verb; where possible, replace by <emphasis>specify</emphasis>
-        or <emphasis>provide</emphasis></entry>
+        or <emphasis>provide</emphasis>
         <remark>This strays from Novell's Style Guide but the difference
           between Novell's meaning for "enter" (= type something, then press
           Enter) and Novell's meaning for "type" (= type something, don't press
           Enter) is so small from a user's point of view that it doesn't make
           sense to keep the second verb around. -- sknorr, 2013-09-18
         </remark>
+      </entry>
      </row>
      <row>
       <entry>Unix</entry>
-      <entry>UNIX (brand name registered by <emphasis>Open Group</emphasis>), unix</entry>
+      <entry>UNIX (brand name registered by <emphasis>Open Group</emphasis>),
+        unix</entry>
       <entry>noun; use this capitalization for all general references that are
         not related to brand names</entry>
      </row>
      <row>
       <entry>(to) uninstall</entry>
+      <entry>(to) de-install, (to) deinstall, (to) un-install</entry>
+      <entry>verb
         <remark>Packages are usually "removed," not uninstalled (say YaST and
           zypper, but also my intuition). Should this word be
           restricted to Windows software? -- sknorr, 2013-09-17</remark>
-      <entry>(to) de-install, (to) deinstall, (to) un-install</entry>
-      <entry>verb</entry>
+      </entry>
      </row>
      <row>
       <entry>unselected</entry>
@@ -2970,9 +2995,10 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
      </row>
      <row>
       <entry>X Window System</entry>
-        <remark>What about X11, X.org, XFree86? -- sknorr, 2013-09-17</remark>
       <entry>X Window, X Windows, X window, X window system, X windows, XWS</entry>
-      <entry>noun</entry>
+      <entry>noun
+        <remark>What about X11, X.org, XFree86? -- sknorr, 2013-09-17</remark>
+      </entry>
      </row>
      <row>
       <entry>Xen</entry>
@@ -2992,7 +3018,7 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
      <row>
       <entry>zypper</entry>
       <entry>Zypper</entry>
-      <entry>command;only for command</entry>
+      <entry>command; only for command</entry>
      </row>
     </tbody>
    </tgroup>
