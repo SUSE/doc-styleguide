@@ -3930,11 +3930,10 @@ title Diskette
   function="control"/> key.
 &lt;/para></screen>
     <para>
-     If you mark up modifier keys, Home Row keys, cursor keys, or
+     If you mark up modifier keys, the keys next to Insert, cursor keys, or
      <keycap function="enter"/>, <keycap function="backspace"/>, or
      <keycap function="escape"/>, use the
-     <sgmltag
-      class="attribute">function</sgmltag> attribute. Possible
+     <sgmltag class="attribute">function</sgmltag> attribute. Possible
      attribute values for
      <sgmltag class="attribute"
      >function</sgmltag> are
@@ -3994,8 +3993,7 @@ title Diskette
   Press &lt;keycombo> &lt;keycap function="alt"/>
   &lt;keycap>F2&lt;/keycap> &lt;/keycombo> to ...
 &lt;/para></screen>
-       <literallayout>Press <keycombo>
-<!-- FIXME: Remove "Ctrl", if DB-Stylesheets supports attribut function. --><keycap function="alt">Alt</keycap><keycap>S</keycap></keycombo> to ...</literallayout>
+       <literallayout>Press <keycombo><keycap function="alt"/><keycap>S</keycap></keycombo> to ...</literallayout>
       </listitem>
      </varlistentry>
      <varlistentry>
@@ -4018,7 +4016,7 @@ To save a file in Emacs, press &lt;keycombo action="seq">
    &lt;/keycombo>
  &lt;/keycombo>.
 &lt;/para></screen>
-       <literallayout>To save a file in Emacs, press <keycombo action="seq"><keycombo action="press"><keycap function="control">Ctrl</keycap><keycap>X</keycap></keycombo><keycombo><keycap function="control">Ctrl</keycap><keycap>S</keycap></keycombo></keycombo>.</literallayout>
+       <literallayout>To save a file in Emacs, press <keycombo action="seq"><keycombo action="press"><keycap function="control"/><keycap>X</keycap></keycombo><keycombo><keycap function="control"/><keycap>S</keycap></keycombo></keycombo>.</literallayout>
       </listitem>
      </varlistentry>
      <varlistentry>
