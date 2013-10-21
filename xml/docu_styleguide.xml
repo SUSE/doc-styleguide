@@ -1935,6 +1935,11 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
       <entry>noun; plural of appendix</entry>
      </row>
      <row>
+      <entry>Audio CD</entry>
+      <entry>Audio-CD, CD-Audio, CD Audio</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
       <entry>back-end</entry>
       <entry>backend</entry>
       <entry>noun</entry>
@@ -1970,6 +1975,11 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
       <entry>noun</entry>
      </row>
      <row>
+      <entry>(to) boot using/via PXE</entry>
+      <entry>(to) PXE boot</entry>
+      <entry>verb</entry>
+     </row>
+     <row>
       <entry>Btrfs</entry>
       <entry>B.T.R.F.S., Better FS, BetterFS, Butter FS, ButterFS, btrfs</entry>
       <entry>noun; not an acronym
@@ -1992,6 +2002,17 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
       <entry>CA</entry>
       <entry>C.A., Ca</entry>
       <entry>noun; acronym for <emphasis>certificate authority</emphasis></entry>
+     </row>
+     <row>
+      <entry>CD</entry>
+      <entry>C.D., Cd</entry>
+      <entry>noun; acronym for <emphasis>compact disk</emphasis></entry>
+     </row>
+     <row>
+      <entry>CD-ROM</entry>
+      <entry>CD ROM, CD-Rom, CD Rom</entry>
+      <entry>noun; acronym for <emphasis>compact disk read-only memory</emphasis>
+      </entry>
      </row>
      <row>
       <entry>CUPS</entry>
@@ -2124,6 +2145,11 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
         (to) doubleclick on sth., (to) doubleclick onto sth.
       </entry>
       <entry>verb</entry>
+     </row>
+     <row>
+      <entry>DVD</entry>
+      <entry>D.V.D., Dvd</entry>
+      <entry>noun; acronym for <emphasis>digital versatile disk</emphasis></entry>
      </row>
      <row>
       <entry>dynamic name server</entry>
@@ -2634,6 +2660,19 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
       <entry>only as noun</entry>
      </row>
      <row>
+      <entry>PXE</entry>
+      <entry>P.X.E., Pixie, pixie, PXE Environment, Pxe, pxe</entry>
+      <entry>noun; acronym for <quote>Preboot Execution Environment</quote>
+      </entry>
+     </row>
+     <row>
+      <entry>PXE boot</entry>
+      <entry>PXE Boot</entry>
+      <entry>noun only; as a verb, use <quote>(to) boot using/via PXE</quote>
+        instead
+      </entry>
+     </row>
+     <row>
       <entry>RAM disk</entry>
       <entry>R.A.M. disk, RAM drive, RAM-disk, RAM-drive, RAMdisk, RAM-drive,
         Ram disk, Ram drive, Ram-disk, Ram-drive, Ramdisk, Ramdrive</entry>
@@ -2856,9 +2895,14 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
       <entry>two words</entry>
      </row>
      <row>
+      </entry>
+      <entry>stuff, stuffs [colloquial]</entry>
+      <entry>avoid</entry>
+     </row>
+     <row>
       <entry>TAR archive</entry>
       <entry>TAR ball, tar ball, tar-ball,
-        tarball [less neutral, less Windows-user friendly]</entry>
+        tarball [less neutral, less Windows user-friendly]</entry>
       <entry>noun</entry>
      </row>
      <row>
@@ -2948,7 +2992,9 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
      <row>
       <entry>VLAN</entry>
       <entry>V.L.A.N., Vlan, vlan</entry>
-      <entry>noun</entry>
+      <entry>noun; acronym for <quote>Virtualized Local Area
+        Network</quote>
+      </entry>
      </row>
      <row>
       <entry>Web</entry>
@@ -2987,6 +3033,14 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
       <entry>whether</entry>
       <entry>whether or not</entry>
       <entry>pronoun</entry>
+     </row>
+     <row>
+      <entry>Wi-fi</entry>
+      <entry>Wi fi, Wifi, WLAN, Wlan</entry>
+      <entry>noun; use the <emphasis>Wi-fi</emphasis> brand name whenever
+         referring to IEEE 802.11-based networks; you may use the term
+         <emphasis>WLAN</emphasis> when referring to other wireless networks.
+       </entry>
      </row>
      <row>
       <entry>wild card</entry>
