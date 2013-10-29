@@ -2161,9 +2161,21 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
       <entry>noun</entry>
      </row>
      <row>
+      <entry>e-book</entry>
+      <entry>E-book, E-book, Ebook, electronic book, ebook</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
+      <entry>EPUB</entry>
+      <entry>E-PUB, e-PUB, e-Pub, EPub, Epub, ePUB, ePub</entry>
+      <entry>noun; project logo uses is <quote>ePub</quote>, but the project
+        standard is <quote>EPUB</quote> anyway
+      </entry>
+     </row>
+     <row>
       <entry>e-mail</entry>
       <entry>E-Mail, E-mail, Email, electronic mail, email</entry>
-      <entry>always hyphenated</entry>
+      <entry>noun</entry>
      </row>
      <row>
       <entry/>
