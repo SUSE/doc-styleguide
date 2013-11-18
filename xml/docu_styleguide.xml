@@ -533,7 +533,7 @@
     for example <quote>(<command>man 9 command</command>)</quote> to the end.
    </para>
    <para>To reference file names, use the <sgmltag>filename</sgmltag>
-    element. To reference e-mail adresses, use the <sgmltag>email</sgmltag>
+    element. To reference e-mail addresses, use the <sgmltag>email</sgmltag>
     element. In either case, do not include a protocol prefix, that is
     <literal>file://</literal> or <literal>mailto:</literal>, respectively.
    </para>
