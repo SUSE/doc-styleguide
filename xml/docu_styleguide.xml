@@ -78,7 +78,7 @@
  </itemizedlist>
 <!-- *********************************************************** -->
   <sect1 id="sec.susedoc">
-    <title>Structure of SUSE Manuals</title>
+    <title>Outline of a Manual</title>
 
     <para>It is important to maintain a consistent structure within a
       document. This structure can vary for different books or projects, but
@@ -222,6 +222,10 @@
                     solutions to more than ten problems, add topical subsections
                     below the <emphasis>Troubleshooting</emphasis> section.
                   </para>
+                  <para>Use the DocBook element <sgmltag>qandaset</sgmltag> (a
+                    Question and Answer section) to mark up
+                    <emphasis>Troubleshooting</emphasis> problems.
+                  </para>
                 </listitem>
               </varlistentry>
               <varlistentry>
@@ -294,34 +298,48 @@
   <sect2 status="ready" id="sec.edrules.address">
    <title>Web Links</title>
    <para>
-    SUSE documentation contains <quote>For More Information</quote> sections
-    at the end of most chapters to point to further sources of information
-    regarding the topic. Whenever possible, links and addresses are grouped
-    there and presented by means of a <sgmltag>variablelist</sgmltag>
-    environment (link plus explanatory remarks). Do not use a list
-    environment for only one link.
+    Where possible, collect links in a <quote>For More Information</quote>
+    section at the end of the chapter. This will help users focus on your
+    documentation instead of leading them to other resources before they had a
+    chance to read the end of the sentence.
    </para>
    <para>
+    To mark up multiple links, use a <sgmltag>itemizedlist</sgmltag>
+    environment. Do not use a list environment for only one link.
     If you need to present a large number of links, group them by topic and
     create a separate list environment for each group. Provide a
     comprehensive title for each of the groups or an introductory sentence.
    </para>
-   <para>
-    Translators are normally provided with localized versions of links in
-    the comments of the source code. If none is provided, the English
-    default is used as fallback.
+   <para>Use the <sgmltag>ulink</sgmltag> tag to mark up URLs that can be
+    opened with a web browser, such as <ulink url="http://www.suse.de"/>.
+    Always prefix the correct protocol (such as <literal>http://</literal>),
+    otherwise the links will not work. Never use <sgmltag>filename</sgmltag>
+    for a link, as that would both disable the link checker and make the link
+    unclickable. Avoid entering a text label between the
+    <sgmltag>ulink</sgmltag> start and end tags.
+   </para>
+   <para>Try to make URLs as short as possible before pasting them into your
+    documentation. Many long URLs can be shortened by leaving away non-essential
+    pieces of them. This is often the case with search URLs or URLs of Internet
+    news media. If a web site provides a built-in URL shortener, use that.
+    Do not resort to using external URL shorteners, as
+    that both hides the actual destination a link will take the user to and
+    introduces an extra element of uncertainty, as the shortening service may
+    disappear or become unreliable in the future.
    </para>
    <para>
-    You can provide links or addresses directly in the main sections, but
-    are encouraged to use and refer to the <quote>For More
-    Information</quote> section wherever possible. Both automated checks and
-    the use of editor comments for translators ensure that the links are
-    kept up-to-date.
+    Do not use <sgmltag>ulink</sgmltag> to link to SUSE documentation outside of
+    the current document set. Instead use the appropriate entity for the book
+    title. Always reference the book itself, as chapter names can change.
    </para>
    <para>
-    For detailed information about external and internal references and
-    addresses in SUSE documents, refer to
-    <xref linkend="sec.edrules.reference"/>.
+    Where possible, provide translators with localized versions of links in the
+    comments of the source file.
+   </para>
+   <para>
+    Other types of references to resources are described in
+    <xref linkend="sec.edrules.reference"/> and
+    <xref linkend="sec.edrules.extreference"/>.
    </para>
   </sect2>
 
@@ -345,7 +363,7 @@
        example is:
       </para>
       <example>
-       <title>A Typical Example of a SUSE Warning</title>
+       <title>A Typical Example of a Warning</title>
 <screen>&lt;warning>
  &lt;title>Creating File Systems&lt;/title>
   &lt;para>
@@ -481,10 +499,11 @@
   </sect2>
 
   <sect2 id="sec.edrules.reference">
-   <title>Cross-References and References to External Resources</title>
+   <title>Cross References</title>
    <para>
-    Use <sgmltag>xref</sgmltag> when you refer to an appendix, chapter,
-    part, preface, section, table, figure, or example. The referenced
+    Use the <sgmltag>xref</sgmltag> element (read: <quote>cross ref</quote>)
+    when referring to an appendix, chapter, example, figure, part, preface,
+    section, table, or question and answer sets. The referenced
     element needs an <sgmltag class="attribute">id</sgmltag> attribute. When
     referencing these elements, do not insert a text label like
     <quote>appendix</quote>, <quote>chapter</quote>, <quote>part</quote>,
@@ -493,38 +512,36 @@
     automatically.
    </para>
    <para>
-    Do not insert a reference to a paragraph (<sgmltag>para</sgmltag>). If
+    Do not insert references to single paragraphs (<sgmltag>para</sgmltag>). If
     you need a reference to a list, insert <sgmltag>id</sgmltag> and
     <sgmltag>xreflabel</sgmltag>.
    </para>
+   <para>
+    Other types of references to resources are described in
+    <xref linkend="sec.edrules.extreference"/> and
+    <xref linkend="sec.edrules.address"/>.
+   </para>
+  </sect2>
+
+  <sect2 id="sec.edrules.extreference">
+   <title>References to Other External Resources</title>
    <para>
     References to man pages and info pages should generally be made in the
     format <quote>the man page of <command>command</command></quote> or
     <quote>the info page of <command>command</command></quote>. In a
     situation where the category of the page is needed, add
-    <quote>(<command>man 9 command</command>)</quote> to the end.
+    for example <quote>(<command>man 9 command</command>)</quote> to the end.
    </para>
-   <para>Use the <sgmltag>ulink</sgmltag> tag to mark up URLs, such as
-    <ulink url="http://www.suse.de"/>. Always prefix the correct protocol
-    (<literal>http://</literal>, <literal>ftp://</literal>,
-    <literal>mailto://</literal>) to enable automated link checks. Never
-    use <sgmltag>filename</sgmltag> for a link, as that would disable the link
-    checker and make the link unclickable. Do not enter a text label for the
-    <sgmltag>ulink</sgmltag> so that the URL itself appears in printed versions.
-   </para>
-   <para>To reference file names, always use the <sgmltag>filename</sgmltag>
-    tag. Never include the <literal>file://</literal> prefix.
+   <para>To reference file names, use the <sgmltag>filename</sgmltag>
+    element. To reference e-mail adresses, use the <sgmltag>email</sgmltag>
+    element. In either case, do not include a protocol prefix, that is
+    <literal>file://</literal> or <literal>mailto:</literal>, respectively.
    </para>
    <para>
-    Do not use links across documents where ID and IDREF linking is not
-    possible. For references to other SUSE books outside the current document
-    set, use the appropriate entity for the book title. In such cases, always
-    reference the book itself, as chapter names can change.
-   </para>
-   <para>
-    Insert references to external (not SUSE or openSUSE) books in the format
-    "Title by Author (ISBN #00000000)." Inclusion of the ISBN is optional.
-    Place the title in <sgmltag>citetitle</sgmltag> tags. For example:
+    Insert references to external (not SUSE or openSUSE) physical books in the
+    format <quote>Title by Author (ISBN #00000000).</quote> Inclusion of the
+    ISBN is optional. Place the title in <sgmltag>citetitle</sgmltag> tags.
+    For example:
    </para>
 <screen>&lt;citetitle>Indexing Books&lt;/citetitle> by Nancy C. Mulvany
 (ISBN 0-226-55014-1) is a useful guide for indexing.</screen>
@@ -536,6 +553,11 @@
     For URLs, provide only the language-specific version of a site. Use the
     English as a fallback. For books, provide the title of the translated
     version along with the original title if such a translation exists.
+   </para>
+   <para>
+    Other types of references to resources are described in
+    <xref linkend="sec.edrules.reference"/> and
+    <xref linkend="sec.edrules.address"/>.
    </para>
   </sect2>
 
@@ -2972,7 +2994,8 @@ home directory via <filename>/home/<replaceable>[your user name]</replaceable></
       <entry>verb
         <remark>Packages are usually "removed," not uninstalled (say YaST and
           zypper, but also my intuition). Should this word be
-          restricted to Windows software? -- sknorr, 2013-09-17</remark>
+          restricted to Windows software? -- sknorr, 2013-09-17
+        </remark>
       </entry>
      </row>
      <row>
