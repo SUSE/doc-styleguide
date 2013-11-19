@@ -1972,23 +1972,23 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             <row>
               <entry>after</entry>
               <entry>once</entry>
-              <entry>adverb; only use <emphasis>once</emphasis> in the meaning of
-        <quote>one time only</quote>
-      </entry>
+              <entry>adverb; only use <emphasis>once</emphasis> in the meaning
+                of <quote>one time only</quote>
+              </entry>
             </row>
             <row>
               <entry>although</entry>
               <entry>while</entry>
-              <entry>conjunction; only use <emphasis>while</emphasis> in the meaning
-        of <quote>during the time that</quote>
-      </entry>
+              <entry>conjunction; only use <emphasis>while</emphasis> in the
+                meaning of <quote>during the time that</quote>
+              </entry>
             </row>
             <row>
               <entry>and</entry>
               <entry>while</entry>
-              <entry>conjunction; only use <emphasis>while</emphasis> in the meaning
-        of <quote>during the time that</quote>
-      </entry>
+              <entry>conjunction; only use <emphasis>while</emphasis> in the
+                meaning of <quote>during the time that</quote>
+              </entry>
             </row>
             <row>
               <entry>appendixes</entry>
@@ -2042,17 +2042,21 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             </row>
             <row>
               <entry>Btrfs</entry>
-              <entry>B.T.R.F.S., Better FS, BetterFS, Butter FS, ButterFS, btrfs</entry>
+              <entry>B.T.R.F.S., Better FS, BetterFS, Butter FS, ButterFS,
+                btrfs
+              </entry>
               <entry>noun; not an acronym
-        <remark>Really, though? "B-tree File System"? -- sknorr, 2013-09-18</remark>
-      </entry>
+                <remark>Really, though? "B-tree File System"? -- sknorr,
+                  2013-09-18
+                </remark>
+              </entry>
             </row>
             <row>
               <entry>but</entry>
               <entry>while</entry>
-              <entry>conjunction; only use <emphasis>while</emphasis> in the meaning
-        of <quote>during the time that</quote>
-      </entry>
+              <entry>conjunction; only use <emphasis>while</emphasis> in the
+                meaning of <quote>during the time that</quote>
+              </entry>
             </row>
             <row>
               <entry>cannot</entry>
@@ -2062,7 +2066,9 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             <row>
               <entry>CA</entry>
               <entry>C.A., Ca</entry>
-              <entry>noun; acronym for <emphasis>certificate authority</emphasis></entry>
+              <entry>noun; acronym for
+                <emphasis>certificate authority</emphasis>
+              </entry>
             </row>
             <row>
               <entry>CD</entry>
@@ -2072,15 +2078,16 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             <row>
               <entry>CD-ROM</entry>
               <entry>CD ROM, CD-Rom, CD Rom</entry>
-              <entry>noun; acronym for <emphasis>compact disk read-only memory</emphasis>
-      </entry>
+              <entry>noun; acronym for
+                <emphasis>compact disk read-only memory</emphasis>
+              </entry>
             </row>
             <row>
               <entry>CUPS</entry>
               <entry>C.U.P.S., Cups, cups</entry>
               <entry>noun; spelling as per project standard; acronym for
-        <emphasis>Common Unix Printing System</emphasis>
-      </entry>
+                <emphasis>Common Unix Printing System</emphasis>
+              </entry>
             </row>
             <row>
               <entry>case-sensitive</entry>
@@ -2095,32 +2102,36 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             <row>
               <entry>can</entry>
               <entry>may</entry>
-              <entry>verb; use <emphasis>can</emphasis> to express an ability, only use
-        <emphasis>may</emphasis> to express permissions sought/given
-      </entry>
+              <entry>verb; use <emphasis>can</emphasis> to express an ability,
+                only use <emphasis>may</emphasis> to express permissions
+                sought/given
+              </entry>
             </row>
             <row>
               <entry>certificate authority</entry>
               <entry>certifica<emphasis>tion</emphasis> authority,
-        certifica<emphasis>ting</emphasis> authority
-      </entry>
+                certifica<emphasis>ting</emphasis> authority
+              </entry>
               <entry>noun; acronym is <emphasis>CA</emphasis></entry>
             </row>
             <row>
               <entry>check box</entry>
-              <entry>check-box, checkbox, tick box [British], tick-box, tickbox</entry>
+              <entry>check-box, checkbox, tick box [British], tick-box, tickbox
+              </entry>
               <entry>noun; avoid, just mention name of option</entry>
             </row>
             <row>
               <entry>checklist</entry>
-              <entry>check list, check-list, tick list [British], tick-list, ticklist</entry>
+              <entry>check list, check-list, tick list [British], tick-list,
+                ticklist
+              </entry>
               <entry>noun</entry>
             </row>
             <row>
               <entry>check mark</entry>
-              <entry>check, check-mark, checkmark, tick [British], tick mark, tick-mark,
-        tickmark
-      </entry>
+              <entry>check, check-mark, checkmark, tick [British], tick mark,
+                tick-mark, tickmark
+              </entry>
               <entry>noun</entry>
             </row>
             <row>
@@ -2135,15 +2146,18 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             </row>
             <row>
               <entry>client/server</entry>
-              <entry>client server, client-server, client&#x2013;server, client+server</entry>
+              <entry>client server, client-server, client&#x2013;server,
+                client+server
+              </entry>
               <entry>noun/noun</entry>
             </row>
             <row>
               <entry>Common Unix Printing System</entry>
-              <entry>Common UNIX Printing System, common Unix printing system</entry>
+              <entry>Common UNIX Printing System, common Unix printing system
+              </entry>
               <entry>noun; spelling as per project standard; acronym is
-        <emphasis>CUPS</emphasis>
-      </entry>
+                <emphasis>CUPS</emphasis>
+              </entry>
             </row>
             <row>
               <entry>command line</entry>
@@ -2152,21 +2166,26 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             </row>
             <row>
               <entry>control center</entry>
-              <entry>Control Center, Control center, Control-Center, Control-center,
-        control-center, Controlcenter, controlcenter</entry>
-              <entry>noun; generic term, as in: <emphasis>the YaST control center</emphasis>
-       or <emphasis>the KDE control center</emphasis></entry>
+              <entry>Control Center, Control center, Control-Center,
+                Control-center, control-center, Controlcenter, controlcenter
+              </entry>
+              <entry>noun; generic term, as in:
+                <emphasis>the YaST control center</emphasis> or
+                <emphasis>the KDE control center</emphasis></entry>
             </row>
             <row>
               <entry>could</entry>
               <entry>may</entry>
-              <entry>verb; use <emphasis>could</emphasis> to express a possibility, only
-        use <emphasis>may</emphasis> to express permissions sought/given
-      </entry>
+              <entry>verb; use <emphasis>could</emphasis> to express a
+                possibility, only use <emphasis>may</emphasis> to express
+                permissions sought/given
+              </entry>
             </row>
             <row>
               <entry>(to) deselect sth.</entry>
-              <entry>(to) de-select sth., (to) un-select sth., (to) unselect sth.</entry>
+              <entry>(to) de-select sth., (to) un-select sth.,
+                (to) unselect sth.
+              </entry>
               <entry>verb</entry>
             </row>
             <row>
@@ -2183,10 +2202,12 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
               <entry>dialog</entry>
               <entry>dialog box, dialog window, dialogue [British]</entry>
               <entry>noun
-        <remark>Eeek&#x2026; Novell use dialog box, apparently, but that sounds rather
-          colloquial. And then, a dialog doesn't have to boxed in or in a window
-          &#x2013; see web applications -- sknorr, 2013-09-17</remark>
-      </entry>
+                <remark>Eeek&#x2026; Novell use dialog box, apparently, but
+                  that sounds rather colloquial. And then, a dialog doesn't
+                  have to boxed in or in a window &#x2013; see web applications
+                  -- sknorr, 2013-09-17
+                </remark>
+              </entry>
             </row>
             <row>
               <entry>directory</entry>
@@ -2196,21 +2217,24 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             <row>
               <entry>DNS</entry>
               <entry>D.N.S., DNS name server, Dns, dns</entry>
-              <entry>noun; acronym for <emphasis>dynamic name server</emphasis></entry>
+              <entry>noun; acronym for <emphasis>dynamic name server</emphasis>
+              </entry>
             </row>
             <row>
               <entry>(to) double-click sth.</entry>
               <entry>(to) double click sth., (to) double click on sth.,
-        (to) double click onto sth., (to) double-click on sth.,
-        (to) double-click onto sth., (to) doubleclick sth.,
-        (to) doubleclick on sth., (to) doubleclick onto sth.
-      </entry>
+                (to) double click onto sth., (to) double-click on sth.,
+                (to) double-click onto sth., (to) doubleclick sth.,
+                (to) doubleclick on sth., (to) doubleclick onto sth.
+              </entry>
               <entry>verb</entry>
             </row>
             <row>
               <entry>DVD</entry>
               <entry>D.V.D., Dvd</entry>
-              <entry>noun; acronym for <emphasis>digital versatile disk</emphasis></entry>
+              <entry>noun; acronym for
+                <emphasis>digital versatile disk</emphasis>
+              </entry>
             </row>
             <row>
               <entry>dynamic name server</entry>
@@ -2230,9 +2254,9 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             <row>
               <entry>EPUB</entry>
               <entry>E-PUB, e-PUB, e-Pub, EPub, Epub, ePUB, ePub</entry>
-              <entry>noun; project logo uses is <quote>ePub</quote>, but the project
-        standard is <quote>EPUB</quote> anyway
-      </entry>
+              <entry>noun; project logo uses is <quote>ePub</quote>, but the
+                  project standard is <quote>EPUB</quote> anyway
+              </entry>
             </row>
             <row>
               <entry>e-mail</entry>
@@ -2243,29 +2267,30 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
               <entry/>
               <entry>easy [filler], easily</entry>
               <entry>adjective, adverb; avoid
-        <remark>Should this stand? -- sknorr, 2013-09-16</remark>
-      </entry>
+                <remark>Should this stand? -- sknorr, 2013-09-16</remark>
+              </entry>
             </row>
             <row>
               <entry>end user</entry>
               <entry>end-user</entry>
-              <entry>noun; avoid; where possible, replace with <emphasis>user</emphasis>
-      </entry>
+              <entry>noun; avoid; where possible, replace with
+                <emphasis>user</emphasis>
+              </entry>
             </row>
             <row>
               <entry>etc.</entry>
               <entry/>
               <entry>abbreviation; avoid; do not use together with
-        <quote>for example</quote> or <quote>such as.</quote>; always precede
-        with a comma.
-      </entry>
+                <quote>for example</quote> or <quote>such as.</quote>; always
+                  precede with a comma.
+              </entry>
             </row>
             <row>
               <entry>Ext3</entry>
               <entry>EXT3, EXT 3, Ext 3, Ext-3, ext 3, ext-3, ext3</entry>
-              <entry>noun; use this capitalization for all version of the Ext file
-        system; intentionally inconsistent with project standard to emphasize
-        this is a proper name</entry>
+              <entry>noun; use this capitalization for all version of the Ext
+                file system; intentionally inconsistent with project standard
+                to emphasize that this is a proper name</entry>
             </row>
             <row>
               <entry>Ext4</entry>
@@ -2276,10 +2301,11 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
               <entry/>
               <entry>(to) facilitate</entry>
               <entry>avoid
-        <remark>Reasonable alternative, "ease," "simplify"? Or was this rejected
-          for tending to be filler/subjective? -- sknorr, 2013-09-16
-        </remark>
-      </entry>
+                <remark>Reasonable alternative, "ease," "simplify"? Or was this
+                  rejected for tending to be filler/subjective? -- sknorr,
+                  2013-09-16
+                </remark>
+              </entry>
             </row>
             <row>
               <entry>file name</entry>
@@ -2313,36 +2339,50 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             </row>
             <row>
               <entry>The GIMP</entry>
-              <entry>the G.I.M.P., the GIMP, The Gimp, the Gimp, the gimp</entry>
+              <entry>the G.I.M.P., the GIMP, The Gimp, the Gimp, the gimp
+              </entry>
               <entry>noun; spelling as per project standard; acronym for
-        <emphasis>GNU Image Manipulation Program</emphasis></entry>
+                <emphasis>GNU Image Manipulation Program</emphasis>
+              </entry>
             </row>
             <row>
               <entry>GNOME</entry>
-              <entry>G.N.O.M.E., GNU Networked Object Model Environment, Gnome</entry>
-              <entry>noun; spelling as per project standard; not an acronym</entry>
+              <entry>G.N.O.M.E., GNU Networked Object Model Environment,
+                Gnome
+              </entry>
+              <entry>noun; spelling as per project standard; not an acronym
+              </entry>
             </row>
             <row>
               <entry>GRUB</entry>
               <entry>G.R.U.B., Grub, grub</entry>
-              <entry>noun; acronym for <emphasis>GRand Unified Bootloader</emphasis></entry>
+              <entry>noun; acronym for
+                <emphasis>GRand Unified Bootloader</emphasis>
+              </entry>
             </row>
             <row>
               <entry>graphical user interface</entry>
               <entry>Graphical User Interface, graphical UI</entry>
               <entry>noun; acronym for <emphasis>graphical user interface</emphasis>
-        <remark>Not completely sure about rejecting graphical UI -- sknorr, 2013-09-16</remark>
-      </entry>
+                <remark>Not completely sure about rejecting graphical UI
+                  -- sknorr, 2013-09-16
+                </remark>
+              </entry>
             </row>
             <row>
               <entry>GUI</entry>
-              <entry>G.U.I., GUI interface, GUI user interface, Gui, graphical UI</entry>
-              <entry>noun; acronym for <emphasis>graphical user interface</emphasis></entry>
+              <entry>G.U.I., GUI interface, GUI user interface, Gui,
+                graphical UI
+              </entry>
+              <entry>noun; acronym for
+                <emphasis>graphical user interface</emphasis>
+              </entry>
             </row>
             <row>
               <entry>hard disk</entry>
-              <entry>HDD, HD, hard disk drive, hard drive, hard-disk, hard-drive,
-        harddisk, harddrive, hdd, hd</entry>
+              <entry>HDD, HD, hard disk drive, hard drive, hard-disk,
+                hard-drive, harddisk, harddrive, hdd, hd
+              </entry>
               <entry>noun</entry>
             </row>
             <row>
@@ -2354,8 +2394,10 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
               <entry>home page</entry>
               <entry>home-page, homepage</entry>
               <entry>noun
-        <remark>I can't accept the accepted spelling. -- sknorr, 2013-09-16</remark>
-      </entry>
+                <remark>I can't accept the accepted spelling. -- sknorr,
+                  2013-09-16
+                </remark>
+              </entry>
             </row>
             <row>
               <entry>host name</entry>
@@ -2364,7 +2406,9 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             </row>
             <row>
               <entry>(to) hotplug sth. (into sth.)</entry>
-              <entry>(to) hot plug sth. (into sth.), (to) hot-plug sth. (into sth.)</entry>
+              <entry>(to) hot plug sth. (into sth.), (to) hot-plug sth. (into
+                sth.)
+              </entry>
               <entry>verb</entry>
             </row>
             <row>
@@ -2384,7 +2428,9 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             </row>
             <row>
               <entry>hypervisor</entry>
-              <entry>hyper visor, hyper-visor, hyper vizor, hyper-vizor, hypervizor</entry>
+              <entry>hyper visor, hyper-visor, hyper vizor, hyper-vizor,
+                hypervizor
+              </entry>
               <entry>noun</entry>
             </row>
             <row>
@@ -2396,15 +2442,16 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
               <entry>infrared</entry>
               <entry>infra red, infra-red</entry>
               <entry>noun or adjective
-        <remark>Really a noun? -- sknorr, 2013-09-16</remark>
-      </entry>
+                <remark>Really a noun? -- sknorr, 2013-09-16</remark>
+              </entry>
             </row>
             <row>
               <entry>installation source</entry>
               <entry>installation data source, installation media</entry>
               <entry>noun; source of installation data for operating systems
-        <remark>Really reject installation media? -- sknorr, 2013-09-16</remark>
-      </entry>
+                <remark>Really reject installation media? -- sknorr, 2013-09-16
+                </remark>
+              </entry>
             </row>
             <row>
               <entry>Internet</entry>
@@ -2445,8 +2492,9 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
               <entry>kdump</entry>
               <entry>KDUMP,Kdump</entry>
               <entry>command; only for command
-        <remark>So, commands aren't nouns, then? -- sknorr, 2013-09-16</remark>
-      </entry>
+                <remark>So, commands aren't nouns, then? -- sknorr, 2013-09-16
+                </remark>
+              </entry>
             </row>
             <row>
               <entry>Kernel</entry>
@@ -2462,17 +2510,19 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
               <entry>kprobes</entry>
               <entry>Kprobes</entry>
               <entry>command; only for command
-        <remark>So, commands aren't nouns, then? -- sknorr, 2013-09-16</remark>
-      </entry>
+                <remark>So, commands aren't nouns, then? -- sknorr,
+                  2013-09-16
+                </remark>
+              </entry>
             </row>
             <row>
               <entry>(to) left-click sth.</entry>
               <entry>(to) click the left mouse, (to) click the left mouse button,
-        (to) left click sth., (to) left click on sth.,
-        (to) left click onto sth., (to) left-click on sth.,
-        (to) left-click onto sth., (to) leftclick sth.,
-        (to) leftclick on sth., (to) leftclick onto sth.
-      </entry>
+                (to) left click sth., (to) left click on sth.,
+                (to) left click onto sth., (to) left-click on sth.,
+                (to) left-click onto sth., (to) leftclick sth.,
+                (to) leftclick on sth., (to) leftclick onto sth.
+              </entry>
               <entry>verb</entry>
             </row>
             <row>
@@ -2512,10 +2562,10 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             </row>
             <row>
               <entry>(to) log in</entry>
-              <entry>(to) log-in, (to) login, (to) log on, (to) log-on, (to) logon,
-        (to) sign in, (to) sign-in, (to) signin, (to) sign on, (to) sign-on,
-        (to) signon
-      </entry>
+              <entry>(to) log-in, (to) login, (to) log on, (to) log-on,
+                (to) logon, (to) sign in, (to) sign-in, (to) signin,
+                (to) sign on, (to) sign-on, (to) signon
+              </entry>
               <entry>verb</entry>
             </row>
             <row>
@@ -2526,11 +2576,13 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             <row>
               <entry>(to) log out</entry>
               <entry>(to) log off, (to) log-off, (to) logoff, (to) log-out, (to) logout,
-        (to) sign off, (to) sign-off, (to) signoff <remark>In code review
-        systems (e.g.), sign-off means something different. -- sknorr, 2013-09-17</remark>,
-        (to) sign out, (to) sign-out,
-        (to) signout
-      </entry>
+                (to) sign off, (to) sign-off, (to) signoff,
+                <remark>In code review systems (e.g.), sign-off means
+                  something different. -- sknorr, 2013-09-17
+                </remark>
+                (to) sign out, (to) sign-out,
+                (to) signout
+              </entry>
               <entry>verb</entry>
             </row>
             <row>
@@ -2561,11 +2613,15 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             <row>
               <entry>Maildir</entry>
               <entry>Mail dir, mail dir</entry>
-              <entry>noun; Format for e-mail storage, not the directory for e-mails</entry>
+              <entry>noun; Format for e-mail storage, not the directory for
+                e-mails
+              </entry>
             </row>
             <row>
               <entry>mainboard</entry>
-              <entry>main board, main-board, mother board, mother-board, motherboard</entry>
+              <entry>main board, main-board, mother board, mother-board,
+                motherboard
+              </entry>
               <entry>noun</entry>
             </row>
             <row>
@@ -2591,19 +2647,20 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             <row>
               <entry>(to) middle-click sth.</entry>
               <entry>(to) click the middle mouse, (to) click the middle mouse button,
-        (to) middle click sth., (to) middle click on sth.,
-        (to) middle click onto sth., (to) middle-click on sth.,
-        (to) middle-click onto sth., (to) middleclick sth.,
-        (to) middleclick on sth., to middle-click onto sth.
-      </entry>
+                (to) middle click sth., (to) middle click on sth.,
+                (to) middle click onto sth., (to) middle-click on sth.,
+                (to) middle-click onto sth., (to) middleclick sth.,
+                (to) middleclick on sth., to middle-click onto sth.
+              </entry>
               <entry>verb</entry>
             </row>
             <row>
               <entry>might</entry>
               <entry>may</entry>
-              <entry>verb; use <emphasis>might</emphasis> to express a possibility, only
-        use <emphasis>may</emphasis> to express permissions sought/given
-      </entry>
+              <entry>verb; use <emphasis>might</emphasis> to express a
+                possibility, only use <emphasis>may</emphasis> to express
+                permissions sought/given
+              </entry>
             </row>
             <row>
               <entry>mount point</entry>
@@ -2612,7 +2669,8 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             </row>
             <row>
               <entry>mouse button</entry>
-              <entry>mouse-button, mousebutton, mouse key, mouse-key, mousekey</entry>
+              <entry>mouse-button, mousebutton, mouse key, mouse-key, mousekey
+              </entry>
               <entry>noun</entry>
             </row>
             <row>
@@ -2644,14 +2702,15 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
               <entry>NFS</entry>
               <entry>N.F.S., NFS file system, Nfs</entry>
               <entry>noun; often: <emphasis>NFS client</emphasis>,
-        <emphasis>NFS server</emphasis></entry>
+                <emphasis>NFS server</emphasis>
+              </entry>
             </row>
             <row>
               <entry>NIS</entry>
               <entry>N.I.S., NIS information service, NIS service, Nis</entry>
               <entry>noun; often: <emphasis>NIS client</emphasis>,
-        <emphasis>NIS server</emphasis>
-      </entry>
+                <emphasis>NIS server</emphasis>
+              </entry>
             </row>
             <row>
               <entry>openSUSE</entry>
@@ -2665,13 +2724,17 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             </row>
             <row>
               <entry>paravirtualized</entry>
-              <entry>para-virtualised, paravirtualised [British], para-virtualized</entry>
+              <entry>para-virtualised, paravirtualised [British],
+                para-virtualized
+              </entry>
               <entry>adjective</entry>
             </row>
             <row>
               <entry>path name</entry>
               <entry>path-name, pathname</entry>
-              <entry>noun; avoid, check if <quote>path</quote> can be used instead</entry>
+              <entry>noun; avoid, check if <quote>path</quote> can be used
+                instead
+              </entry>
             </row>
             <row>
               <entry>(to) plug sth. in</entry>
@@ -2711,15 +2774,15 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             <row>
               <entry>print queue</entry>
               <entry>print<emphasis>er</emphasis> queue,
-        print<emphasis>ing</emphasis> queue
-      </entry>
+                print<emphasis>ing</emphasis> queue
+              </entry>
               <entry>noun</entry>
             </row>
             <row>
               <entry>print spooler</entry>
               <entry>print<emphasis>er</emphasis> spooler,
-        print<emphasis>ing</emphasis> spooler
-      </entry>
+                print<emphasis>ing</emphasis> spooler
+              </entry>
               <entry>noun</entry>
             </row>
             <row>
@@ -2735,22 +2798,26 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             <row>
               <entry>PXE</entry>
               <entry>P.X.E., Pixie, pixie, PXE Environment, Pxe, pxe</entry>
-              <entry>noun; acronym for <quote>Preboot Execution Environment</quote>
-      </entry>
+              <entry>noun; acronym for
+                <quote>Preboot Execution Environment</quote>
+              </entry>
             </row>
             <row>
               <entry>PXE boot</entry>
               <entry>PXE Boot</entry>
-              <entry>noun only; as a verb, use <quote>(to) boot using/via PXE</quote>
-        instead
-      </entry>
+              <entry>noun only; as a verb, use
+                <quote>(to) boot using/via PXE</quote> instead
+              </entry>
             </row>
             <row>
               <entry>RAM disk</entry>
-              <entry>R.A.M. disk, RAM drive, RAM-disk, RAM-drive, RAMdisk, RAM-drive,
-        Ram disk, Ram drive, Ram-disk, Ram-drive, Ramdisk, Ramdrive</entry>
-              <entry>noun; treating RAM as a hard disk or a type of solid-state storage
-      </entry>
+              <entry>R.A.M. disk, RAM drive, RAM-disk, RAM-drive, RAMdisk,
+                RAM-drive, Ram disk, Ram drive, Ram-disk, Ram-drive, Ramdisk,
+                Ramdrive
+              </entry>
+              <entry>noun; treating RAM as a hard disk or a type of solid-state
+                storage
+              </entry>
             </row>
             <row>
               <entry>README</entry>
@@ -2790,11 +2857,11 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             <row>
               <entry>(to) right-click sth.</entry>
               <entry>(to) click the right mouse, (to) click the right mouse button,
-        (to) right click sth., (to) right click on sth.,
-        (to) right click onto sth., (to) right-click on sth.,
-        (to) right-click onto sth., (to) rightclick sth.,
-        (to) rightclick on sth., (to) rightclick onto sth.
-      </entry>
+                (to) right click sth., (to) right click on sth.,
+                (to) right click onto sth., (to) right-click on sth.,
+                (to) right-click onto sth., (to) rightclick sth.,
+                (to) rightclick on sth., (to) rightclick onto sth.
+              </entry>
               <entry>verb</entry>
             </row>
             <row>
@@ -2821,26 +2888,26 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
               <entry>SLE</entry>
               <entry>S.L.E., SLE Enterprise, SLE Linux, Sle, sle</entry>
               <entry>noun; avoid; acronym for
-        <emphasis>SUSE Linux Enterprise</emphasis>
-      </entry>
+                <emphasis>SUSE Linux Enterprise</emphasis>
+              </entry>
             </row>
             <row>
               <entry>SLED</entry>
-              <entry>S.L.E.D., SLE Desktop, SLE Enterprise Desktop, SLE Linux Desktop,
-        Sled, sled
-      </entry>
+              <entry>S.L.E.D., SLE Desktop, SLE Enterprise Desktop,
+                SLE Linux Desktop, Sled, sled
+              </entry>
               <entry>noun; avoid; acronym for
-        <emphasis>SUSE Linux Enterprise Desktop</emphasis>
-      </entry>
+                <emphasis>SUSE Linux Enterprise Desktop</emphasis>
+              </entry>
             </row>
             <row>
               <entry>SLES</entry>
-              <entry>S.L.E.S.,  SLE Server, SLE Enterprise Server, SLE Linux Server,
-        Sles, sles
-      </entry>
+              <entry>S.L.E.S.,  SLE Server, SLE Enterprise Server,
+                SLE Linux Server, Sles, sles
+              </entry>
               <entry>noun; avoid; acronym for
-        <emphasis>SUSE Linux Enterprise Server</emphasis>
-      </entry>
+                <emphasis>SUSE Linux Enterprise Server</emphasis>
+              </entry>
             </row>
             <row>
               <entry>SSH</entry>
@@ -2849,8 +2916,9 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             </row>
             <row>
               <entry>SUSE</entry>
-              <entry>S.U.S.E., Software- und System-Entwicklung, SuSE, SuSe, Suse, suse
-      </entry>
+              <entry>S.U.S.E., Software- und System-Entwicklung, SuSE, SuSe,
+                Suse, suse
+              </entry>
               <entry>noun; not an acronym</entry>
             </row>
             <row>
@@ -2861,8 +2929,8 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             <row>
               <entry>SUSE Linux Enterprise</entry>
               <entry>SUSE Linux Entreprise [British], SUSE Linux enterprise,
-        SUSE linux enterprise
-      </entry>
+                SUSE linux enterprise
+              </entry>
               <entry>noun; acronym is <emphasis>SLE</emphasis></entry>
             </row>
             <row>
@@ -2897,16 +2965,17 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             </row>
             <row>
               <entry>scrollbar</entry>
-              <entry>scroll-bar, scroll bar, scroll-box, scroll box, scrollbox, scroller,
-        slide bar, slide-bar, slidebar
-      </entry>
-              <entry>noun; GUI element that is used change which portion of a screen
-        area is visible
-      </entry>
+              <entry>scroll-bar, scroll bar, scroll-box, scroll box, scrollbox,
+                scroller, slide bar, slide-bar, slidebar
+              </entry>
+              <entry>noun; GUI element that is used change which portion of a
+                screen area is visible
+              </entry>
             </row>
             <row>
               <entry>(to) select sth.</entry>
-              <entry>(to) block sth., (to) choose sth., (to) highlight sth.</entry>
+              <entry>(to) block sth., (to) choose sth., (to) highlight sth.
+              </entry>
               <entry>verb; selecting text or options</entry>
             </row>
             <row>
@@ -2937,10 +3006,10 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             <row>
               <entry>slider</entry>
               <entry/>
-              <entry>noun; GUI element that is used manipulate values that have an upper
-        and a lower bound
-        <remark>A little complicated -- sknorr, 2013-09-17</remark>
-      </entry>
+              <entry>noun; GUI element that is used manipulate values that have
+                an upper and a lower bound
+                <remark>A little complicated -- sknorr, 2013-09-17</remark>
+              </entry>
             </row>
             <row>
               <entry>spec file</entry>
@@ -2975,7 +3044,8 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             <row>
               <entry>TAR archive</entry>
               <entry>TAR ball, tar ball, tar-ball,
-        tarball [less neutral, less Windows user-friendly]</entry>
+                tarball [less neutral, less Windows user-friendly]
+              </entry>
               <entry>noun</entry>
             </row>
             <row>
@@ -3010,33 +3080,37 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             </row>
             <row>
               <entry>(to) type sth. (into sth.)</entry>
-              <entry>(to) enter sth. (into sth.) [ambiguous for some users]</entry>
-              <entry>verb; where possible, replace by <emphasis>specify</emphasis>
-        or <emphasis>provide</emphasis>
-        <remark>This strays from Novell's Style Guide but the difference
-          between Novell's meaning for "enter" (= type something, then press
-          Enter) and Novell's meaning for "type" (= type something, don't press
-          Enter) is so small from a user's point of view that it doesn't make
-          sense to keep the second verb around. -- sknorr, 2013-09-18
-        </remark>
-      </entry>
+              <entry>(to) enter sth. (into sth.) [ambiguous for some users]
+              </entry>
+              <entry>verb; where possible, replace by
+                <emphasis>specify</emphasis> or <emphasis>provide</emphasis>
+                <remark>This strays from Novell's Style Guide but the difference
+                  between Novell's meaning for "enter" (= type something, then
+                  press Enter) and Novell's meaning for "type" (= type
+                  something, don't press Enter) is so small from a user's point
+                  of view that it doesn't make sense to keep the second verb
+                  around. -- sknorr, 2013-09-18
+                </remark>
+              </entry>
             </row>
             <row>
               <entry>Unix</entry>
               <entry>UNIX (brand name registered by <emphasis>Open Group</emphasis>),
-        unix</entry>
-              <entry>noun; use this capitalization for all general references that are
-        not related to brand names</entry>
+                unix
+              </entry>
+              <entry>noun; use this capitalization for all general references
+                that are not related to brand names
+              </entry>
             </row>
             <row>
               <entry>(to) uninstall</entry>
               <entry>(to) de-install, (to) deinstall, (to) un-install</entry>
               <entry>verb
-        <remark>Packages are usually "removed," not uninstalled (say YaST and
-          zypper, but also my intuition). Should this word be
-          restricted to Windows software? -- sknorr, 2013-09-17
-        </remark>
-      </entry>
+                <remark>Packages are usually "removed," not uninstalled (say
+                  YaST and zypper, but also my intuition). Should this word be
+                  restricted to Windows software? -- sknorr, 2013-09-17
+                </remark>
+              </entry>
             </row>
             <row>
               <entry>unselected</entry>
@@ -3060,21 +3134,23 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             </row>
             <row>
               <entry>virtualization</entry>
-              <entry>Virtualisation [British], Virtualization, virtualisation</entry>
+              <entry>Virtualisation [British], Virtualization, virtualisation
+              </entry>
               <entry>noun</entry>
             </row>
             <row>
               <entry>VLAN</entry>
               <entry>V.L.A.N., Vlan, vlan</entry>
-              <entry>noun; acronym for <quote>Virtualized Local Area
-        Network</quote>
-      </entry>
+              <entry>noun; acronym for
+                <quote>Virtualized Local Area Network</quote>
+              </entry>
             </row>
             <row>
               <entry>Web</entry>
               <entry>WEB, World Wide Web, WWW, web, www</entry>
               <entry>noun; you may use <emphasis>World Wide Web</emphasis> or
-        <emphasis>WWW</emphasis> in historical contexts</entry>
+                <emphasis>WWW</emphasis> in historical contexts
+              </entry>
             </row>
             <row>
               <entry>Web page</entry>
@@ -3100,8 +3176,8 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
               <entry>when</entry>
               <entry>once</entry>
               <entry>adverb; use <emphasis>once</emphasis> only in the meaning
-        <quote>one time only</quote>
-      </entry>
+                <quote>one time only</quote>
+              </entry>
             </row>
             <row>
               <entry>whether</entry>
@@ -3111,10 +3187,11 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
             <row>
               <entry>Wi-fi</entry>
               <entry>Wi fi, Wifi, WLAN, Wlan</entry>
-              <entry>noun; use the <emphasis>Wi-fi</emphasis> brand name whenever
-         referring to IEEE 802.11-based networks; you may use the term
-         <emphasis>WLAN</emphasis> when referring to other wireless networks.
-       </entry>
+              <entry>noun; use the <emphasis>Wi-fi</emphasis> brand name
+                whenever referring to IEEE 802.11-based networks; you may use
+                the term <emphasis>WLAN</emphasis> when referring to other
+                wireless networks.
+              </entry>
             </row>
             <row>
               <entry>wild card</entry>
@@ -3125,8 +3202,8 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
               <entry>X Window System</entry>
               <entry>X Window, X Windows, X window, X window system, X windows, XWS</entry>
               <entry>noun
-        <remark>What about X11, X.org, XFree86? -- sknorr, 2013-09-17</remark>
-      </entry>
+                <remark>What about X11, X.org, XFree86? -- sknorr, 2013-09-17</remark>
+              </entry>
             </row>
             <row>
               <entry>Xen</entry>
@@ -3137,6 +3214,13 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
               <entry>Xend</entry>
               <entry>xend</entry>
               <entry>noun</entry>
+            </row>
+            <row>
+              <entry>YaST</entry>
+              <entry>YAST, YAST2, Yast, Yast2, yast, yast2</entry>
+              <entry>noun; spelling according to project standard; acronym for
+                <emphasis>Yet another Setup Tool</emphasis>
+              </entry>
             </row>
             <row>
               <entry>Zypper</entry>
