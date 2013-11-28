@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE appendix PUBLIC
+  "-//OASIS//DTD DocBook XML V4.3//EN"
+  "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+]>
+
+<appendix id="app.changes">
+  <title>Changes</title>
+  <para>Find a list of changes of the style guide over its previous version
+    below.
+  </para>
+  <!-- Use simple past. Prepend new versions to the beginning of the list. -->
+
+  <sect1 id="sec.changes.q4.2013">
+    <title>January 2013 Release</title>
+
+    <itemizedlist>
+      <listitem>
+        <para>Restructured large parts of the Style Guide</para>
+        <itemizedlist>
+          <listitem>
+            <para>Removed <emphasis>Creating a Consistent Structure: Lessons
+              for Lizards</emphasis> section.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Renamed <emphasis>Creating a Consistent Structure: Official
+              SUSE Manuals</emphasis> to
+              <emphasis>Outline of a Manual</emphasis>. Promoted
+              <emphasis>Outline of a Manual</emphasis> to a
+              <sgmltag>sect1</sgmltag>.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Split <emphasis>Writing and Editing</emphasis> into
+              <xref linkend="sec.language"/> and
+              <xref linkend="sec.structure.markup"/> and moved its subsections
+              where they fit best. Moved <xref linkend="sec.procedure"/>
+              (formerly <emphasis>Creating Procedures</emphasis>)
+              and <xref linkend="sec.computerelement"/> (formerly
+              <emphasis>Presenting Computer Elements</emphasis>) as
+              subsections into <xref linkend="sec.structure.markup"/>.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Renamed <emphasis>Discriminatory Language</emphasis> to
+              <xref linkend="sec.bias"/>.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Created <xref linkend="sec.manage"/> and moved
+              <xref linkend="sec.remark"/>, <xref linkend="sec.xmlcomment"/>,
+              and <xref linkend="sec.entity"/> as subsections into it.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Renamed <emphasis>Spelling Terms</emphasis> to
+              <xref linkend="app.terminology"/> moved it into an appendix.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Outsourced <xref linkend="app.terminology"/>,
+              <xref linkend="app.markup"/> into separate DocBook files.
+            </para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+      <listitem>
+        <para>Added this list of changes as a separate file.
+        </para>
+      </listitem>
+      <listitem>
+        <para>Added list of authors.
+        </para>
+      </listitem>
+      <listitem>
+        <para>Updated Legal Notice to refer to SUSE, LLC instead of
+          Novell, Inc.
+        </para>
+      </listitem>
+    </itemizedlist>
+
+  </sect1>
+</appendix>
