@@ -1,0 +1,1252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE appendix PUBLIC
+  "-//OASIS//DTD DocBook XML V4.3//EN"
+  "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+[
+]>
+
+<appendix id="app.markup">
+    <title>Markup Conventions</title>
+    <para>
+     SUSE documentation uses the markup described here to create the source
+     XML files. These files are then used to create the final document
+     formats, such as HTML and PDF.
+    </para>
+    <para>Refer to Norman Walsh's DocBook Guide,
+        <ulink url="http://www.docbook.org/tdg/en/html/docbook.html"/>,
+      in case of further open questions about markup.
+    </para>
+
+    <sect1 id="sec.markup.conv">
+      <title>Use of Identifiers</title>
+      <orderedlist>
+        <listitem>
+          <para>
+      Always use an <sgmltag>id</sgmltag> attribute in parts, chapters,
+      appendixes, sections, figures, and examples. They are often used in
+      other elements as well, such as tables and procedures.
+     </para>
+        </listitem>
+        <listitem>
+          <para>
+      Only use ASCII characters in IDs to avoid processing problems.
+     </para>
+        </listitem>
+        <listitem>
+          <para>
+      Insert a prefix. This prefix is determined by the element to which the
+      <sgmltag>id</sgmltag> attribute belongs. See
+      <xref linkend="tab.abbreviations"/>.
+     </para>
+          <table id="tab.abbreviations">
+            <title>Abbreviations for Different Elements in an <sgmltag>id</sgmltag> Attribute</title>
+            <tgroup cols="2">
+              <thead>
+                <row>
+                  <entry>Element</entry>
+                  <entry>Abbreviation</entry>
+                </row>
+              </thead>
+              <tbody>
+                <row>
+                  <entry>
+                    <sgmltag>appendix</sgmltag>
+                  </entry>
+                  <entry>
+                    <sgmltag class="attvalue">app</sgmltag>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <sgmltag>book</sgmltag>
+                  </entry>
+                  <entry>
+                    <sgmltag class="attvalue">book</sgmltag>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <sgmltag>chapter</sgmltag>
+                  </entry>
+                  <entry>
+                    <sgmltag class="attvalue">cha</sgmltag>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <sgmltag>example</sgmltag>
+                  </entry>
+                  <entry>
+                    <sgmltag class="attvalue">ex</sgmltag>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <sgmltag>figure</sgmltag>
+                  </entry>
+                  <entry>
+                    <sgmltag class="attvalue">fig</sgmltag>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <sgmltag>glossary</sgmltag>
+                  </entry>
+                  <entry>
+                    <sgmltag class="attvalue">glo</sgmltag>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <sgmltag>glossterm</sgmltag>
+                  </entry>
+                  <entry>
+                    <sgmltag class="attvalue">gt</sgmltag>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <sgmltag>itemizedlist</sgmltag>
+                  </entry>
+                  <entry>
+                    <sgmltag class="attvalue">il</sgmltag>
+                    <footnote id="fn.vl">
+                      <para>Insert an <sgmltag>id</sgmltag> attribute only when
+                        you also put a <sgmltag>title</sgmltag> element inside
+                        this list.
+                      </para>
+                    </footnote>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <sgmltag>listitem</sgmltag>
+                  </entry>
+                  <entry>
+                    <sgmltag class="attvalue">it</sgmltag>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <sgmltag>indexterm</sgmltag>
+                  </entry>
+                  <entry>
+                    <sgmltag class="attvalue">idx</sgmltag>
+                    <footnote>
+                      <para>Only use it if you create index ranges</para>
+                    </footnote>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <sgmltag>orderedlist</sgmltag>
+                  </entry>
+                  <entry>
+                    <sgmltag class="attvalue">ol</sgmltag>
+                    <footnoteref linkend="fn.vl"/>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <sgmltag>part</sgmltag>
+                  </entry>
+                  <entry>
+                    <sgmltag class="attvalue">part</sgmltag>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <sgmltag>procedure</sgmltag>
+                  </entry>
+                  <entry>
+                    <sgmltag class="attvalue">pro</sgmltag>
+                  </entry>
+                </row>
+                <row>
+                  <entry><sgmltag>qandaset</sgmltag>
+                  </entry>
+                  <entry><sgmltag class="attvalue">qset</sgmltag>
+                  </entry>
+                </row>
+                <row>
+                  <entry><sgmltag>qandadiv</sgmltag>
+                  </entry>
+                  <entry><sgmltag class="attvalue">qdiv</sgmltag>
+                  </entry>
+                </row>
+                <row>
+                  <entry><sgmltag>qandaentry</sgmltag>
+                  </entry>
+                  <entry><sgmltag class="attvalue">qe</sgmltag>
+                  </entry>
+                </row>
+                <row>
+                  <entry><sgmltag>sect1</sgmltag>, <sgmltag>sect2</sgmltag>, etc.</entry>
+                  <entry>
+                    <sgmltag class="attvalue">sec</sgmltag>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <sgmltag>set</sgmltag>
+                  </entry>
+                  <entry>
+                    <sgmltag class="attvalue">set</sgmltag>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <sgmltag>step</sgmltag>
+                  </entry>
+                  <entry>
+                    <sgmltag class="attvalue">st</sgmltag>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <sgmltag>table</sgmltag>
+                  </entry>
+                  <entry>
+                    <sgmltag class="attvalue">tab</sgmltag>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <sgmltag>variablelist</sgmltag>
+                  </entry>
+                  <entry>
+                    <sgmltag class="attvalue">vl</sgmltag>
+                  </entry>
+                </row>
+                <row>
+                  <entry>
+                    <sgmltag>varlistentry</sgmltag>
+                  </entry>
+                  <entry>
+                    <sgmltag class="attvalue">vle</sgmltag>
+                  </entry>
+                </row>
+              </tbody>
+            </tgroup>
+          </table>
+        </listitem>
+        <listitem>
+          <para>
+      Identify a chapter with short, easy-to-remember English labels, like
+      <sgmltag class="attvalue">inst_yast</sgmltag> for a chapter or section
+      about YaST installation.
+     </para>
+        </listitem>
+        <listitem>
+          <para>
+      Each section inherits the label of its parent plus a unique part that
+      characterizes it. For example: <literal>sec.inst_yast</literal> might
+      have a subsection labeled <literal>sec.inst_yast.lang</literal>. Other
+      elements with IDs inherit the ID of the parent chapter. For example, a
+      table in this chapter about foo could have the ID
+      <literal>tab.inst_yast.foo</literal>.
+     </para>
+        </listitem>
+        <listitem>
+          <para>
+      Separate the prefix and the following parts with a dot
+      (<literal>.</literal>). Do not use colons (<literal>:</literal>),
+      semicolons (<literal>;</literal>), or other <quote>special
+      characters.</quote> The underbar (<literal>_</literal>) character is
+      allowed.
+     </para>
+          <example>
+            <title>Typical Examples of <sgmltag class="attribute">id</sgmltag> Values</title>
+            <screen>id="sec.yast.installation"
+id="cha.yast"
+id="tab.yast.sources"</screen>
+          </example>
+        </listitem>
+      </orderedlist>
+    </sect1>
+    <sect1 id="sec.markup.structxml">
+      <title>The Book Structure</title>
+      <para>
+    SUSE follows the definition of the DocBook DTD. For more detailed
+    descriptions about book elements, refer to the TDG sections listed in
+    <xref linkend="tab.bookstructure"/>.
+   </para>
+      <table id="tab.bookstructure">
+        <title>Elements Used in a SUSE Book</title>
+        <tgroup cols="2">
+          <thead>
+            <row>
+              <entry>Element</entry>
+              <entry>Link to TDG</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <sgmltag>appendix</sgmltag>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/appendix.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag>book</sgmltag>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/book.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag>chapter</sgmltag>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/chapter.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag>glossary</sgmltag>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/glossary.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag>part</sgmltag>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/part.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag>preface</sgmltag>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/preface.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag>sect1</sgmltag>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/sect1.html"/>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect1>
+    <sect1 id="sec.markup.block">
+      <title>Block Structures</title>
+      <para>
+    Block elements include figures, tables, and sections. These elements
+    usually create a line break before and after them.
+   </para>
+      <sect2 id="sec.markup.block.figures">
+        <title>Figures</title>
+        <variablelist>
+          <varlistentry>
+            <term>
+              <sgmltag>figure</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/figure.html"/>
+              </para>
+              <para>
+        A figure is a formal example with a title. Figures often contain
+        graphics or other large display elements. Frequently, they get IDs
+        and are referenced from the text with <sgmltag>xref</sgmltag> or
+        <sgmltag>link</sgmltag>.
+       </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>
+              <sgmltag>imageobject</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/imageobject.html"/>
+              </para>
+              <para>
+        An <sgmltag>imageobject</sgmltag> is a wrapper containing
+        <sgmltag>imagedata</sgmltag> and its associated meta information.
+       </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>
+              <sgmltag>imagedata</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/imageobject.html"/>
+              </para>
+              <para>
+        This element points to an external entity containing graphical image
+        data.
+       </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>
+              <sgmltag>mediaobject</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/mediaobject.html"/>
+              </para>
+              <para>
+        This element contains a set of alternative <quote>media
+        objects</quote>. In DocBook, three types of external objects
+        are defined: <sgmltag>videoobject</sgmltag>s,
+        <sgmltag>audioobject</sgmltag>s, and
+        <sgmltag>imageobject</sgmltag>s. Additional textual descriptions may
+        be provided with <sgmltag>textobject</sgmltag>s.
+        <remark>Still true with DocBook 4.5, in 2013 -- sknorr, 2013-09-10</remark>
+       </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>
+              <sgmltag>screenshot</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/screenshot.html"/>
+              </para>
+              <para>
+        A <sgmltag>screenshot</sgmltag> is a graphical environment for
+        displaying an image of what the user might see on a computer screen.
+        It is often used to display application screenshots, dialogs,
+        and other components of a graphical user interface.
+       </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>
+              <sgmltag>textobject</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/textobject.html"/>
+              </para>
+              <para>
+        A <sgmltag>textobject</sgmltag> is a wrapper containing a textual
+        description of a media object and its associated metadata.
+        <sgmltag>textobject</sgmltag>s are only allowed in
+        <sgmltag>mediaobject</sgmltag>s as a fallback option. They cannot be
+        the primary content.
+       </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        <para>
+     Always assign an <sgmltag class="attribute">id</sgmltag> attribute to a
+     <sgmltag>figure</sgmltag> element.
+    </para>
+        <para>
+     Provide an appropriate image width.
+    </para>
+        <screen>&lt;figure id="fig.foo"&gt;
+  &lt;title&gt;A Foo Picture&lt;/title&gt;
+  &lt;screenshot&gt;
+    &lt;mediaobject&gt;
+      &lt;imageobject role="latex"&gt;
+       &lt;imagedata fileref="k3b_main.eps" width="80%" format="EPS"/&gt;
+      &lt;/imageobject&gt;
+      &lt;imageobject role="html"&gt;
+       &lt;imagedata fileref="k3b_main.png" width="75%" format="PNG"/&gt;
+      &lt;/imageobject&gt;
+    &lt;/mediaobject&gt;
+  &lt;/screenshot&gt;
+&lt;/figure&gt;</screen>
+      </sect2>
+      <sect2 id="sec.markup.block.examples">
+        <title>Examples</title>
+        <variablelist>
+          <varlistentry>
+            <term>
+              <sgmltag>example</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/example.html"/>
+              </para>
+              <para><sgmltag>example</sgmltag> is a formal example with a title.
+        Examples often contain program listings or other large, block
+        elements. Frequently, they have IDs and are referenced from the text
+        with <sgmltag>xref</sgmltag> or <sgmltag>link</sgmltag>.
+       </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>
+              <sgmltag>screen</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/screen.html"/>
+              </para>
+              <para>
+        A <sgmltag>screen</sgmltag> is a verbatim environment for displaying
+        text that the user might see on a computer terminal. It is often
+        used to display the results of a command.
+       </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        <para>
+     Always insert an <sgmltag class="attribute">id</sgmltag> attribute
+     inside an <sgmltag>example</sgmltag> element.
+    </para>
+        <para>
+     Be careful with the <sgmltag>screen</sgmltag> element: Always begin the
+     code after the start tag and omit whitespaces before the end tag. Do
+     not indent the code. Always start in the first row.
+    </para>
+        <screen>&lt;example id="ex.foo"&gt;
+  &lt;title&gt;A clever presentation of &lt;command&gt;foo&lt;/command&gt;&lt;/title&gt;
+  &lt;screen&gt;#!/bin/bash
+echo "Hello foo"&lt;/screen&gt;
+&lt;/example&gt;</screen>
+        <para>
+     If you need line numbering, insert the attribute
+     <sgmltag class="attribute">linenumbering</sgmltag> with the value
+     <sgmltag class="attvalue">numbered</sgmltag>. Do not use hardcoded line
+     numbers in the <sgmltag>screen</sgmltag> environment.
+    </para>
+        <screen>&lt;example id="ex.foo"&gt;
+  &lt;title&gt;A clever presentation of &lt;command&gt;foo&lt;/command&gt;&lt;/title&gt;
+  &lt;screen <emphasis role="bold">linenumbering="numbered"</emphasis>&gt;#!/bin/bash
+echo "Hello foo"&lt;/screen&gt;
+&lt;/example&gt;</screen>
+      </sect2>
+      <sect2 id="sec.markup.block.callouts">
+        <title>Callouts</title>
+        <variablelist>
+          <varlistentry>
+            <term>
+              <sgmltag>callout</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/callout.html"/>
+              </para>
+              <para>
+        A <sgmltag>callout</sgmltag> is a visual device for associating
+        annotations with an image, program listing, or similar figure. Each
+        location is identified with a mark and the annotation is identified
+        with the same mark. This is somewhat analogous to footnotes in text.
+       </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>
+              <sgmltag>calloutlist</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/calloutlist.html"/>
+              </para>
+              <para>
+        A <sgmltag>calloutlist</sgmltag> is a list of annotations or
+        descriptions. Each <sgmltag>callout</sgmltag> points to the area on
+        a <sgmltag>screen</sgmltag> that it augments.
+       </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>
+              <sgmltag>co</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/co.html"/>
+              </para>
+              <para>
+        A <sgmltag>co</sgmltag> identifies (by its location) a point of
+        reference for a callout.
+       </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        <para>
+     Callouts do not stand alone. They are only useful in combination with
+     <sgmltag>screen</sgmltag>. At the moment, <sgmltag>screenco</sgmltag>
+     and <sgmltag>arearef</sgmltag> are not supported by
+     <command>xsltproc</command>.
+     <remark>rwalter:
+      Still valid 2006/09/06</remark>
+    </para>
+        <screen>&lt;screen&gt;
+color white/blue black/light-gray   &lt;co id="co.col"/&gt;
+default 0   &lt;co id="co.def"/&gt;
+timeout 8   &lt;co id="co.time"/&gt;
+gfxmenu (hd0,0)/boot/message
+
+title SUSE Linux Enterprise
+    kernel (hd0,0)/boot/vmlinuz root=/dev/hda1 vga=0x31a selinux=0
+    splash=silent resume=/dev/hda2 desktop elevator=as  showopts
+    initrd (hd0,0)/boot/initrd
+
+title Diskette
+    root (fd0)
+    chainloader +1&lt;/screen&gt;
+
+     &lt;calloutlist&gt;
+      &lt;callout arearefs="co.col"&gt;
+       &lt;para&gt;Here, define the colors used by the
+  &lt;application&gt;GRUB&lt;/application&gt; menu.
+       &lt;/para&gt;
+      &lt;/callout&gt;
+      &lt;callout arearefs="co.def"&gt;
+       &lt;para&gt;Define the default option.
+       &lt;/para&gt;
+      &lt;/callout&gt;
+      &lt;callout arearefs="co.time"&gt;
+       &lt;para&gt;
+  Select a timeout after which booting will start automatically.
+       &lt;/para&gt;
+      &lt;/callout&gt;
+     &lt;/calloutlist&gt;
+</screen>
+      </sect2>
+      <sect2 id="sec.markup.block.procedures">
+        <title>Procedures</title>
+        <variablelist>
+          <varlistentry>
+            <term>
+              <sgmltag>procedure</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/procedure.html"/>
+              </para>
+              <para>
+        A <sgmltag>procedure</sgmltag> encapsulates a task composed of
+        <sgmltag>step</sgmltag>s (and possibly <sgmltag>substep</sgmltag>s).
+        Procedures are performed sequentially.
+       </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>
+              <sgmltag>step</sgmltag>
+            </term>
+            <term>
+              <sgmltag>substep</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/step.html"/>
+              </para>
+              <para>
+        A step identifies a unit of action in a
+        <sgmltag>procedure</sgmltag>. If careful internal procedures are
+        required for some steps, you can embed <sgmltag>substep</sgmltag>s
+        in a <sgmltag>step</sgmltag>. Embedded <sgmltag>substep</sgmltag>s
+        contain <sgmltag>step</sgmltag>s, so that
+        <sgmltag>substep</sgmltag>s can be nested to any depth.
+       </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        <screen>&lt;procedure&gt;
+  &lt;title&gt;A Good Procedure&lt;/title&gt;
+  &lt;step&gt;
+    &lt;para&gt;Get up from your bed&lt;/para&gt;
+  &lt;/step&gt;
+  &lt;step&gt;
+    &lt;para&gt;Walk to the kitchen&lt;/para&gt;
+  &lt;/step&gt;
+  &lt;step&gt;
+    &lt;para&gt;Make coffee or tea&lt;/para&gt;
+  &lt;/step&gt;
+&lt;/procedure&gt;</screen>
+        <procedure>
+          <title>A Good Procedure</title>
+          <step>
+            <para>
+       Get up from your bed.
+      </para>
+          </step>
+          <step>
+            <para>
+       Walk to the kitchen.
+      </para>
+          </step>
+          <step>
+            <para>
+       Make coffee or tea.
+      </para>
+          </step>
+        </procedure>
+      </sect2>
+      <sect2 id="sec.markup.block.qandaset">
+        <title>Question and Answers</title>
+        <remark>Review the order of items in this section.  Do we have any
+     consistency in how we present things?  I think it should either
+     be sequential (the order they are normally used) or
+     alphabetical. -rwalter</remark>
+        <remark>sequential order is nicer ;)</remark>
+        <variablelist>
+          <varlistentry>
+            <term>
+              <sgmltag>qandaset</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/qandaset.html"/>
+              </para>
+              <para>
+        A <sgmltag>qandaset</sgmltag> is a list consisting of questions and
+        answers. <sgmltag>qandaset</sgmltag>s can be divided into sections.
+       </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>
+              <sgmltag>qandaentry</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/qandaentry.html"/>
+              </para>
+              <para>
+        A <sgmltag>question</sgmltag> in a <sgmltag>qandaentry</sgmltag> poses
+  a question or states a problem that is addressed by the following
+  <sgmltag>answer</sgmltag>(s).</para>
+              <remark>This and question have the same definition.  Please improve
+  this. -rwalter</remark>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>
+              <sgmltag>question</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/question.html"/>
+              </para>
+              <para>
+        A <sgmltag>question</sgmltag> in a <sgmltag>qandaentry</sgmltag> poses
+  a question or states a problem that is addressed by the following
+  <sgmltag>answer</sgmltag>s.
+       </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>
+              <sgmltag>answer</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/answer.html"/>
+              </para>
+              <para>
+        An <sgmltag>answer</sgmltag> is optional (some questions have
+  no answers) and may be repeated (some questions have more than one
+  answer).
+       </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        <screen>&lt;qandaset&gt;
+ &lt;title&gt;XML FAQ&lt;/title&gt;
+ &lt;qandaentry&gt;
+  &lt;question&gt;
+    &lt;para&gt;What is XML?&lt;/para&gt;
+  &lt;/question&gt;
+  &lt;answer&gt;
+    &lt;para&gt;
+        XML is the acronym for extensible markup
+        language. It is a markup language for documents
+        containing structured information.
+    &lt;/para&gt;
+   &lt;/answer&gt;
+ &lt;/qandaentry&gt;
+&lt;/qandaset&gt;</screen>
+        <qandaset>
+          <title>XML FAQ</title>
+          <qandaentry>
+            <question>
+              <para>
+        What is XML?
+       </para>
+            </question>
+            <answer>
+              <para>
+        XML is the acronym for extensible markup language. It is a markup
+        language for documents containing structured information.
+       </para>
+            </answer>
+          </qandaentry>
+        </qandaset>
+      </sect2>
+    </sect1>
+    <sect1 id="sec.inline">
+      <title>Inline Structures</title>
+      <para>
+    Inline elements include keys, menus, and commands. These elements are
+    usually used inside text. They do not impose a line break.
+   </para>
+      <sect2 id="sec.markup.inline.keys">
+        <title>Markup of Keys</title>
+        <variablelist>
+          <varlistentry>
+            <term>
+              <sgmltag>keycap</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/keycap.html"/>
+              </para>
+              <para>
+        The <sgmltag>keycap</sgmltag> identifies the letter or symbol
+        printed on a physical key on a computer keyboard.
+       </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>
+              <sgmltag>keycombo</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/keycombo.html"/>
+              </para>
+              <para>
+        For actions that require multiple keystrokes, mouse actions, or
+        other physical input selections, the <sgmltag>keycombo</sgmltag>
+        element provides a wrapper for the entire set of events.
+       </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        <para>
+     Mark up keys with the element <sgmltag>keycap</sgmltag>:
+    </para>
+        <screen>&lt;para&gt;
+  Press &lt;keycap&gt;F2&lt;/keycap&gt; to ... Use the &lt;keycap
+  function="control"/&gt; key.
+&lt;/para&gt;</screen>
+        <para>
+     If you mark up modifier keys, the keys next to Insert, cursor keys, or
+     <keycap function="enter"/>, <keycap function="backspace"/>, or
+     <keycap function="escape"/>, use the
+     <sgmltag class="attribute">function</sgmltag> attribute. Possible
+     attribute values for
+     <sgmltag class="attribute">function</sgmltag> are
+     <sgmltag class="attvalue">alt</sgmltag>,
+     <sgmltag class="attvalue">backspace</sgmltag>,
+     <sgmltag class="attvalue">command</sgmltag>,
+     <sgmltag class="attvalue">control</sgmltag>,
+     <sgmltag class="attvalue">delete</sgmltag>,
+     <sgmltag class="attvalue">down</sgmltag>,
+     <sgmltag class="attvalue">end</sgmltag>,
+     <sgmltag class="attvalue">enter</sgmltag>,
+     <sgmltag class="attvalue">escape</sgmltag>,
+     <sgmltag class="attvalue">home</sgmltag>,
+     <sgmltag class="attvalue">insert</sgmltag>,
+     <sgmltag class="attvalue">left</sgmltag>,
+     <sgmltag class="attvalue">meta</sgmltag>,
+     <sgmltag class="attvalue">option</sgmltag>,
+     <sgmltag class="attvalue">other</sgmltag>,
+     <sgmltag class="attvalue">pagedown</sgmltag>,
+     <sgmltag class="attvalue">pageup</sgmltag>,
+     <sgmltag class="attvalue">right</sgmltag>,
+     <sgmltag class="attvalue">shift</sgmltag>,
+     <sgmltag class="attvalue">space</sgmltag>,
+     <sgmltag class="attvalue">tab</sgmltag>, and
+     <sgmltag class="attvalue">up</sgmltag>.
+     When using the function attribute, make the tag self-closing&mdash;DocBook's
+     language files will insert key names automatically. This simplifies both
+     your work and translation.
+    </para>
+        <para>
+     If you need key combinations (you press two or more keys at the same
+     time or after a short period), use <sgmltag>keycombo</sgmltag>. Use the
+     <sgmltag class="attribute">action</sgmltag> attribute to distinguish
+     between different actions:
+    </para>
+        <variablelist>
+          <varlistentry>
+            <term><sgmltag class="attvalue">press</sgmltag> (default action) </term>
+            <listitem>
+              <para>
+        If you omit the <sgmltag class="attribute">action</sgmltag>
+        attribute, this value is used:
+       </para>
+              <screen>&lt;para&gt;
+  Press &lt;keycombo&gt; &lt;keycap function="alt"/&gt;
+  &lt;keycap&gt;F2&lt;/keycap&gt; &lt;/keycombo&gt; to ...
+&lt;/para&gt;</screen>
+              <literallayout>Press <keycombo><keycap function="alt"/><keycap>S</keycap></keycombo> to ...</literallayout>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>
+              <sgmltag class="attvalue">seq</sgmltag>
+            </term>
+            <listitem>
+              <para>
+        Use this if you need keys pressed sequentially, for example, those
+        in Emacs:
+       </para>
+              <screen>&lt;para&gt;
+To save a file in Emacs, press &lt;keycombo action="seq"&gt;
+   &lt;keycombo action="press"&gt;
+     &lt;keycap function="control"/&gt;
+     &lt;keycap&gt;X&lt;/keycap&gt;
+   &lt;/keycombo&gt;
+   &lt;keycombo&gt;
+     &lt;keycap function="control"/&gt;
+     &lt;keycap&gt;S&lt;/keycap&gt;
+   &lt;/keycombo&gt;
+ &lt;/keycombo&gt;.
+&lt;/para&gt;</screen>
+              <literallayout>To save a file in Emacs, press <keycombo action="seq"><keycombo action="press"><keycap function="control"/><keycap>X</keycap></keycombo><keycombo><keycap function="control"/><keycap>S</keycap></keycombo></keycombo>.</literallayout>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>
+              <sgmltag class="attvalue">click</sgmltag>
+            </term>
+            <term>
+              <sgmltag class="attvalue">double-click</sgmltag>
+            </term>
+            <term>
+              <sgmltag class="attvalue">other</sgmltag>
+            </term>
+            <term>
+              <sgmltag class="attvalue">simul</sgmltag>
+            </term>
+            <listitem>
+              <para>
+        These are not used in SUSE documentation.
+       </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </sect2>
+      <sect2 id="sec.markup.inline.menus">
+        <title>GUI Menus</title>
+        <variablelist>
+          <varlistentry>
+            <term>
+              <sgmltag>guimenu</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/guimenu.html"/>
+              </para>
+              <para>
+        SUSE uses this element to simplify GUI element markup. It is used
+        for all types of menu entries and also for buttons and GUI labels.
+       </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        <screen>&lt;para&gt;
+     Use the &lt;guimenu&gt;File&lt;/guimenu&gt; menu to reach the
+     &lt;guimenu&gt;Print&lt;/guimenu&gt; option.
+&lt;/para&gt;</screen>
+        <literallayout>Use the <guimenu>File</guimenu> menu to reach the <guimenu>Print</guimenu> option.</literallayout>
+        <para>
+     To mark up nested menu structures, use <sgmltag>menuchoice</sgmltag>:
+    </para>
+        <screen>&lt;para&gt;
+ To exit Emacs, use &lt;menuchoice&gt;
+   &lt;guimenu&gt;File&lt;/guimenu&gt;
+   &lt;guimenu&gt;Exit Emacs&lt;/guimenu&gt;
+  &lt;/menuchoice&gt;.
+&lt;/para&gt;</screen>
+        <literallayout>To exit Emacs, use <menuchoice><guimenu>File</guimenu><guimenu>Exit Emacs</guimenu></menuchoice>.</literallayout>
+      </sect2>
+      <sect2 id="sec.markup.inline.commands">
+        <title>Commands and Options</title>
+        <variablelist>
+          <varlistentry>
+            <term>
+              <sgmltag>command</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/command.html"/>
+              </para>
+              <para>
+        This element holds the name of an executable program or the text of
+        a command that a user enters to execute a program.
+       </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>
+              <sgmltag>option</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/option.html"/>
+              </para>
+              <para>
+        This element identifies an argument to a command or instruction.
+        Options may or may not be required.
+       </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        <para>
+     Use options for a command inside <sgmltag>command</sgmltag>. Be careful
+     about spaces:
+    </para>
+        <screen>&lt;command&gt;xmllint &lt;option&gt;--help&lt;/option&gt;&lt;/command&gt;</screen>
+        <literallayout>
+          <command>xmllint <option>--help</option></command>
+        </literallayout>
+      </sect2>
+      <sect2 id="sec.markup.inline.vars">
+        <title>Variables</title>
+        <variablelist>
+          <varlistentry>
+            <term>
+              <sgmltag>replaceable</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/replaceable.html"/>
+              </para>
+              <para>
+        Content that may or must be replaced by the user
+       </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        <para>
+     Use <sgmltag>replaceable</sgmltag> to tag contents that should be
+     replaced by appropriate user input. For example:
+    </para>
+        <literallayout>Use <command>ls <option><replaceable>my_dir</replaceable></option></command> to list the contents of the directory <replaceable>my_dir</replaceable>.</literallayout>
+      </sect2>
+      <sect2 id="sec.markup.inline.filenames_and_dirs">
+        <title>Directories and File names</title>
+        <variablelist>
+          <varlistentry>
+            <term>
+              <sgmltag>file name</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/filename.html"/>
+              </para>
+              <para>
+        A file name is the name of a file on a local or network disk. It could
+        be a simple name or could include a path or other elements specific to
+        the operating system.
+       </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        <para>
+     Because SUSE does not distinguish between file names and directories by
+     adding a trailing slash to the path or with markup.
+     <sgmltag>filename</sgmltag> is used for both directories and file names.
+    </para>
+        <screen>&lt;para&gt;
+ See file &lt;filename&gt;foo.xml&lt;/filename&gt;. Look at the
+ directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.
+&lt;/para&gt;</screen>
+        <literallayout>See file <filename>foo.xml</filename>. Look at the directory <filename class="directory">/etc/sysconfig</filename>.
+    </literallayout>
+      </sect2>
+      <sect2 id="sec.markup.inline.referencing">
+        <title>Referencing</title>
+        <variablelist>
+          <varlistentry>
+            <term>
+              <sgmltag>ulink</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/ulink.html"/>
+              </para>
+              <para>
+        The <sgmltag>ulink</sgmltag> element forms the equivalent of an HTML
+        anchor (<sgmltag class="starttag">A HREF="..."</sgmltag>) for cross
+        reference by a Uniform Resource Locator (URL).
+       </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>
+              <sgmltag>xref</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/xref.html"/>
+              </para>
+              <para>
+        The <sgmltag>xref</sgmltag> element forms a cross-reference from the
+        location of the <sgmltag>xref</sgmltag> to the element to which it
+        points. Unlike the other cross-referencing elements,
+        <sgmltag>xref</sgmltag> is empty. The processing system must
+        generate appropriate cross-reference text for the reader.
+       </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        <para>
+     References to man pages and info pages should generally be made in the
+     format <quote>the man page of <command>command</command></quote> or
+     <quote>the info page of <command>command</command></quote>. In a
+     situation where the category of the page is needed, add
+     <quote>(<command>man 9 command</command>)</quote> to the end.
+    </para>
+        <literallayout>See the man page of <command>xmllint</command> (<command>man 1 xmllint</command>).</literallayout>
+        <para>
+     Use <sgmltag>ulink</sgmltag> to reference to a URL:
+    </para>
+        <screen>&lt;para&gt; See &lt;ulink url="http://www.suse.de"/&gt;. See &lt;ulink
+     url="http://www.novell.de"&gt;Novell Deutschland&lt;/ulink&gt;.</screen>
+        <literallayout>See <ulink url="http://www.suse.de"/>. See <ulink url="http://www.novell.de">Novell Deutschland</ulink>.
+    </literallayout>
+        <para>
+     If you need references to another chapter, section, etc., in the same
+     documentation set, use <sgmltag>xref</sgmltag>:
+    </para>
+        <screen>&lt;para&gt; A link to this section: &lt;xref
+     linkend="sec.markup.inline.referencing"/&gt; &lt;/para&gt;</screen>
+        <literallayout>A link to this section: <xref linkend="sec.markup.inline.referencing"/>
+    </literallayout>
+        <remark>toms (TBD): How do we use the attribute <sgmltag class="attribute">xrefstyle</sgmltag>?</remark>
+        <para>
+     If you need a different text for referencing purposes, but you cannot
+     modify the title, use the
+     <sgmltag class="attribute">xreflabel</sgmltag> attribute:
+    </para>
+        <screen>&lt;sect1 id="sec.foo" <emphasis role="bold">xreflabel="Hello foo"</emphasis>&gt;
+  &lt;title&gt;Foo&lt;/title&gt;
+  &lt;para&gt;...&lt;/para&gt;
+
+&lt;/sect1&gt;
+  ...
+&lt;para&gt;See <emphasis role="bold">&lt;xref linkend="chap.foo"/&gt;</emphasis>...&lt;/para&gt;</screen>
+        <para>
+     In the above example, the <sgmltag class="emptytag">xref</sgmltag> is
+     replaced by the text <literal>Hello foo</literal>.
+    </para>
+        <remark>please add a description of xreflabel used to reference otherwise unlabeled elements
+     like listitems etc.</remark>
+      </sect2>
+      <sect2 id="sec.markup.inline.emphasis">
+        <title>Emphasis</title>
+        <variablelist>
+          <varlistentry>
+            <term>
+              <sgmltag>emphasis</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/emphasis.html"/>
+              </para>
+              <para>
+        This element provides a method for indicating that certain text
+        should be stressed in some way. However, placing emphasis with
+        careful wording is preferred to using markup.
+       </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        <para>
+     Use bold text with care.
+    </para>
+        <screen>&lt;para&gt;
+ This is &lt;emphasis&gt;strong&lt;/emphasis&gt; word.
+ This is a  &lt;emphasis role="bold"&gt;very strong&lt;/emphasis&gt; word.
+&lt;/para&gt;</screen>
+        <literallayout>This is a <emphasis>strong</emphasis> word.
+This is a <emphasis role="bold">very strong</emphasis> word.</literallayout>
+      </sect2>
+      <sect2 id="sec.markup.inline.comments">
+        <title>Comments and Remarks</title>
+        <variablelist>
+          <varlistentry>
+            <term>
+              <sgmltag>remark</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/remark.html"/>
+              </para>
+              <para>
+        The <sgmltag>remark</sgmltag> element is designed to hold remarks,
+        such as editorial comments, that are useful while the document is in
+        the draft stage, but are not intended for final publication.
+       </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>
+              <sgmltag class="sgmlcomment">An XML comment</sgmltag>
+            </term>
+            <listitem>
+              <para>
+        XML comments are used to hold remarks. They are invisible in your
+        publication.
+       </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        <para>
+     Use <sgmltag>remark</sgmltag>s for comments that you can switch on or
+     off in HTML or PDF. Place a <sgmltag>remark</sgmltag> before or after
+     the <sgmltag>para</sgmltag> to comment. Otherwise you would insert
+     unwanted line breaks.
+    </para>
+        <screen>&lt;remark&gt;A small remark&lt;/remark&gt;</screen>
+        <literallayout>
+          <remark>A small remark.</remark>
+        </literallayout>
+        <para>
+     Use XML comments if you give translators or other editors some hints
+     that should only be visible in the code, but not in the final
+     publication&mdash;even for a draft state.
+    </para>
+        <screen>&lt;para&gt; &lt;!-- Is this true? Please check! --&gt; If you need X,
+     you must install Y before you can use it. &lt;/para&gt;</screen>
+        <literallayout>If you need X, you must install Y before you can use it.</literallayout>
+        <para>
+     Be short and clear with your comments.
+    </para>
+      </sect2>
+      <sect2 id="sec.markup.inline.literal">
+        <title>Literals</title>
+        <variablelist>
+          <varlistentry>
+            <term>
+              <sgmltag>literal</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/literal.html"/>
+              </para>
+              <para><sgmltag>literal</sgmltag> is specific data taken literally from a
+        computer system. It is similar in some ways to
+        <sgmltag>userinput</sgmltag> and <sgmltag>computeroutput</sgmltag>,
+        but is somewhat more general a classification.
+       </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        <screen>&lt;para&gt;
+  If you need a comment, insert &lt;literal&gt;#&lt;/literal&gt; characters.
+&lt;para&gt;</screen>
+      </sect2>
+    </sect1>
+</appendix>
