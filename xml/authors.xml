@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook45-profile.xsl"
+                 type="text/xml" title="Profiling step"?>
+<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY ndash "–">
+<!ENTITY mdash "—">
+<!ENTITY copy "©">
+]>
+
+<authorgroup id="ag.authors">
+  <author><firstname>Rebecca</firstname><surname>Walter</surname></author>
+  <author><firstname>Martina</firstname><surname>Dejmec</surname></author>
+  <author><firstname>Stefan</firstname><surname>Knorr</surname></author>
+</authorgroup>
