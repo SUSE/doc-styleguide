@@ -274,12 +274,9 @@
       <citetitle>The Chicago Manual of Style</citetitle>, 15th
       Edition. When in doubt about the spelling or usage of a word, first refer
       to <xref linkend="app.terminology"/>. When the usage of a word is not
-      regulated there, use American English spellings as defined in
-      <citetitle>Merriam-Websterʼs Collegiate Dictionary, 11th
-      Edition</citetitle> or the accompanying web site
-      <ulink url="http://www.merriam-webster.com/"/>. In case of a discrepancy
-      between both resources, the primary spelling in the printed dictionary
-      is authoritative.
+      regulated there, use American English spellings as defined on
+      <ulink url="http://www.merriam-webster.com/"/>
+      (<ulink url="http://www.m-w.com/"/> for short).
     </para>
 
     <sect2 id="sec.abbreviation">
@@ -318,7 +315,7 @@
       <title>Capitalization and Title Style</title>
 
       <para>In all running text, use sentence-style capitalization, that is,
-        only capitalize the first word of a sentence and propoer names.
+        only capitalize the first word of a sentence and proper names.
       </para>
       <para>Use title-style capitalization for all types of headings and titles,
         including figure and table titles. This style is explained in
@@ -622,8 +619,8 @@
         opened with a web browser, such as <ulink url="http://www.suse.de"/>.
         Always prefix the correct protocol (such as <literal>http://</literal>),
         otherwise the links will not work. Never use <sgmltag>filename</sgmltag>
-        for a link, as that would both disable the link checker and make the link
-        unclickable. Avoid entering a text label between the
+        for a link, as that would both disable the link checker and make the
+        link unclickable. Avoid entering a text label between the
         <sgmltag>ulink</sgmltag> start and end tags.
       </para>
       <para>Try to make URLs as short as possible before pasting them into your
@@ -701,7 +698,7 @@
         they can include them in comments for translators. As time permits,
         translators should look for corresponding language-specific resources.
         For URLs, provide only the language-specific version of a site. Use the
-        English as a fallback. For books, provide the title of the translated
+        English as a fall-back. For books, provide the title of the translated
         version along with the original title if such a translation exists.
       </para>
       <para>Other types of references to resources are described in
@@ -1287,7 +1284,7 @@ title Disk
       </listitem>
       <listitem>
         <para>Only use the &reg;, &tm;, or &sm; marks for
-          <phrase role="productname">Attachmate</phrase> products.
+          <phrase role="companyname">Attachmate</phrase> products.
         </para>
       </listitem>
       <listitem>
