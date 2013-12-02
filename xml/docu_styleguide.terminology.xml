@@ -6,26 +6,21 @@
 ]>
 
 <appendix id="app.terminology">
-      <title>Terminology</title>
-      <para>
-    Because multiple spellings of a variety of words and terms are in common
-    usage, we have standardized on a variant to use in our documentation.
-    Terms in this table are capitalized as they would be in the middle of a
-    sentence. Some words listed here are provided because they are often
-    written incorrectly by non-native speakers.
+  <title>Terminology</title>
+
+  <para>Always use the terminology listed under <quote>Accepted</quote> in
+    the table below. All terms use sentence-style capitalization. Refer to
+    <xref linkend="sec.language"/> for further advice.
   </para>
-      <para>Note that only some of the most important SUSE products are listed here.
-    If the product you are documenting is not listed, please refer to the
-    Marketing department or the SUSE homepage, <ulink url="http://www.suse.com"/>.
-  </para>
+
       <table>
         <title>Terms Common in SUSE Documentation</title>
         <tgroup cols="3">
           <thead>
             <row>
-              <entry>Accepted Terminology</entry>
-              <entry>Rejected Terminology [Reason]</entry>
-              <entry>Additional Usage Guideline</entry>
+              <entry>Accepted</entry>
+              <entry>Rejected [Reason]</entry>
+              <entry>Usage Guidelines</entry>
             </row>
           </thead>
           <!-- Sorting (pseudo-regex): (?<=((to)|The))\.-–+\/[0-9][A-Z][a-z] -->
@@ -238,6 +233,13 @@
               <entry>noun/noun</entry>
             </row>
             <row>
+              <entry>(to) close sth.</entry>
+              <entry>(to) abort sth., (to) exit sth., (to) terminate sth.</entry>
+              <entry>verb; when referring to closing a window or quitting
+                a GUI application
+              </entry>
+            </row>
+            <row>
               <entry>Common Unix Printing System</entry>
               <entry>Common UNIX Printing System, common Unix printing system
               </entry>
@@ -340,7 +342,7 @@
             <row>
               <entry>EPUB</entry>
               <entry>E-PUB, e-PUB, e-Pub, EPub, Epub, ePUB, ePub</entry>
-              <entry>noun; project logo uses is <quote>ePub</quote>, but the
+              <entry>noun; project logo uses <quote>ePub</quote>, but the
                   project standard is <quote>EPUB</quote> anyway
               </entry>
             </row>
@@ -411,6 +413,11 @@
             <row>
               <entry>flavor</entry>
               <entry>flavour [British]</entry>
+              <entry>noun</entry>
+            </row>
+            <row>
+              <entry>flash disk</entry>
+              <entry>flash drive, USB disk, USB drive, USB stick</entry>
               <entry>noun</entry>
             </row>
             <row>
@@ -560,6 +567,18 @@
               <entry>noun</entry>
             </row>
             <row>
+              <entry>IPv4</entry>
+              <entry>IP v4, IPV4, Ipv4</entry>
+              <entry>noun; acronym for <emphasis>internet protocol version
+                four</emphasis></entry>
+            </row>
+            <row>
+              <entry>IPv6</entry>
+              <entry>IP v6, IPV6, Ipv6</entry>
+              <entry>noun; acronym for <emphasis>internet protocol version
+                six</emphasis></entry>
+            </row>
+            <row>
               <entry>journaling</entry>
               <entry>journalling [British]</entry>
               <entry>noun</entry>
@@ -591,6 +610,14 @@
               <entry>Kprobes</entry>
               <entry>kprobes</entry>
               <entry>noun; only for application</entry>
+            </row>
+            <row>
+              <entry>key combination</entry>
+              <entry>key accelerator, keyboard accelerator, key combo,
+                keyboard combo, key combination, keyboard shortcut,
+                key shortcut
+              </entry>
+              <entry>noun</entry>
             </row>
             <row>
               <entry>kprobes</entry>
@@ -896,13 +923,20 @@
               </entry>
             </row>
             <row>
+              <entry>(to) quit sth.</entry>
+              <entry>(to) abort sth., (to) exit sth., (to) terminate sth.</entry>
+              <entry>noun; quitting an application; always use
+                <quote>close</quote> for windows
+              </entry>
+            </row>
+            <row>
               <entry>RAM disk</entry>
               <entry>R.A.M. disk, RAM drive, RAM-disk, RAM-drive, RAMdisk,
                 RAM-drive, Ram disk, Ram drive, Ram-disk, Ram-drive, Ramdisk,
                 Ramdrive
               </entry>
-              <entry>noun; treating RAM as a hard disk or a type of solid-state
-                storage
+              <entry>noun; either treating RAM as a hard disk or a
+                type of solid-state storage
               </entry>
             </row>
             <row>
