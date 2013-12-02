@@ -7,13 +7,8 @@
 
 <appendix id="app.markup">
     <title>Markup Conventions</title>
-    <para>
-     SUSE documentation uses the markup described here to create the source
-     XML files. These files are then used to create the final document
-     formats, such as HTML and PDF.
-    </para>
     <para>Refer to Norman Walsh's DocBook Guide,
-        <ulink url="http://www.docbook.org/tdg/en/html/docbook.html"/>,
+      <ulink url="http://www.docbook.org/tdg/en/html/docbook.html"/>,
       in case of further open questions about markup.
     </para>
 
@@ -759,33 +754,24 @@ title Diskette
           </varlistentry>
         </variablelist>
         <screen>&lt;qandaset&gt;
- &lt;title&gt;XML FAQ&lt;/title&gt;
+ &lt;title&gt;Questions and Answers&lt;/title&gt;
  &lt;qandaentry&gt;
   &lt;question&gt;
-    &lt;para&gt;What is XML?&lt;/para&gt;
+    &lt;para&gt;Is equality important?&lt;/para&gt;
   &lt;/question&gt;
   &lt;answer&gt;
-    &lt;para&gt;
-        XML is the acronym for extensible markup
-        language. It is a markup language for documents
-        containing structured information.
-    &lt;/para&gt;
+    &lt;para&gt;Yes.&lt;/para&gt;
    &lt;/answer&gt;
  &lt;/qandaentry&gt;
 &lt;/qandaset&gt;</screen>
         <qandaset>
-          <title>XML FAQ</title>
+          <title>Questions and Answers</title>
           <qandaentry>
             <question>
-              <para>
-        What is XML?
-       </para>
+              <para>Is equality important?</para>
             </question>
             <answer>
-              <para>
-        XML is the acronym for extensible markup language. It is a markup
-        language for documents containing structured information.
-       </para>
+              <para>Yes.</para>
             </answer>
           </qandaentry>
         </qandaset>
@@ -1225,6 +1211,61 @@ This is a <emphasis role="bold">very strong</emphasis> word.</literallayout>
      Be short and clear with your comments.
     </para>
       </sect2>
+
+      <sect2>
+        <title>Indexterms</title>
+
+        <variablelist>
+          <varlistentry>
+            <term>
+              <sgmltag>indexterm</sgmltag>
+            </term>
+            <listitem>
+              <para>
+                <ulink url="http://www.docbook.org/tdg/en/html/indexterm.html"/>
+              </para>
+              <para><sgmltag>indexterm</sgmltag>s identify text that is to be
+                placed in the <sgmltag>index</sgmltag>. In the simplest case,
+                the placement of the <sgmltag>IndexTerm</sgmltag> in the
+                document identifies the location of the term in the text.
+                In other words, the <sgmltag>IndexTerm</sgmltag> is placed
+                in the flow of the document at the point where the
+                <sgmltag>IndexEntry</sgmltag> in the Index should point.
+                In other cases, attributes on <sgmltag>IndexTerm</sgmltag> are
+                used to identify the location of the term in the text.
+              </para>
+
+              <example id="ex.indexplain">
+                <title>A Plain Index Entry</title>
+                <screen>&lt;para&gt;
+  To configure DNS&lt;indexterm&gt;
+    &lt;primary&gt;DNS&lt;/primary&gt;
+    &lt;secondary&gt;configuring&lt;/secondary&gt;
+  &lt;/indexterm&gt;, use …
+&lt;/para&gt;</screen>
+              </example>
+
+              <example id="ex.index.range">
+                <title>An Index Range</title>
+                  <screen>&lt;indexterm <emphasis role="bold">class="startofrange" id="idx.Installation"</emphasis>&gt;
+  &lt;primary&gt;installing&lt;/primary&gt;
+    &lt;/indexterm&gt;
+…
+&lt;indexterm <emphasis role="bold">class="endofrange" startref="idx.Installation"</emphasis>/&gt;</screen>
+              </example>
+              <example id="ex.index.see">
+                <title>A See Index Entry</title>
+                  <screen>&lt;indexterm&gt;
+  &lt;primary&gt;installing&lt;/primary&gt;
+    &lt;secondary&gt;boot loaders&lt;/secondary&gt;
+     <emphasis role="bold">&lt;see&gt;GRUB&lt;/see</emphasis>&gt;
+&lt;/indexterm&gt;</screen>
+              </example>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </sect2>
+
       <sect2 id="sec.markup.inline.literal">
         <title>Literals</title>
         <variablelist>
