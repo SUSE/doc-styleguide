@@ -2,8 +2,6 @@
 <?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook45-profile.xsl"
                  type="text/xml" title="Profiling step"?>
 <!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-<!ENTITY ndash "–">
-<!ENTITY mdash "—">
 <!ENTITY copy "©">
 <!ENTITY reg "®">
 <!ENTITY tm "™">
@@ -67,8 +65,8 @@
   <sect1 id="sec.audience">
     <title>Audience</title>
 
-    <para>Define the target audience of your documentation before you start
-      writing it. Adjust tone, style, and technicality of the text based on
+    <para>Before starting to write, define the target audience of your
+      documentation. Adjust tone, style, and technicality of the text based on
       the intended audience. Keep in mind that not all facts that seem
       obvious to you will be obvious to your readers. If you move parts of
       documents into other documents, make sure to adapt the parts you
@@ -91,11 +89,11 @@
   <sect1 id="sec.outline">
     <title>Outline of a Manual</title>
 
-    <para>Maintain a consistent structure within your documents. This structure
-      can vary for different books or projects, but the most common type
+    <para>Maintain a consistent structure within your documents. The structure
+      can vary between different books or projects, but the most common type
       is documented here.
     </para>
-    <para>A SUSE manual consists of the following mandatory elements: title page,
+    <para>Manuals should always contain five elements: title page,
       copyright notice, table of contents, preface, and chapters which are
       split in sections. Optionally, use parts, appendixes, a glossary, and
       an index. Descriptions and usage instructions for these elements are
@@ -170,16 +168,18 @@
 +--- troubleshooting*
 +--- for more information*</screen>
           </example>
-          <variablelist>
-            <varlistentry>
-              <term>Abstract</term>
+
+          <itemizedlist>
               <listitem>
-                <para>Abstracts briefly summarize the information provided in
-                  a chapter. Rather than writing about what the chapter does,
-                  summarize the information the chapter contains. This gives
-                  readers an idea of what they can learn from the
-                  chapter.
-                </para>
+                <formalpara>
+                  <title>Abstract</title>
+                  <para>Abstracts briefly summarize the information provided in
+                    a chapter. Rather than writing about what the chapter does,
+                    summarize the information the chapter contains. This gives
+                    readers an idea of what they can learn from the
+                    chapter.
+                  </para>
+                </formalpara>
                 <example id="ex.style.abstract">
                   <title>An Example Abstract</title>
                   <para>openSUSE ships with a number of different file
@@ -192,39 +192,38 @@
                   </para>
                 </example>
               </listitem>
-            </varlistentry>
-            <varlistentry>
-              <term>Introductions</term>
               <listitem>
+              <formalpara>
+                <title>Introductions</title>
                 <para>Any introductory information follows directly after the
                   abstract and should not be placed in a separate section.
                 </para>
-              </listitem>
-            </varlistentry>
-            <varlistentry>
-              <term>Sections</term>
-              <listitem>
+              </formalpara>
+            </listitem>
+            <listitem>
+              <formalpara>
+                <title>Sections</title>
                 <para>Structure the detailed information, so users can skim
                   the text. Create sections for every major task, such as
                   installing, configuring, monitoring, and administering. If
                   helpful, split sections into subsections, but avoid going
                   above three levels of sections.
                 </para>
-                <para>Sections start with an introductory paragraph outlining
-                  the focus of the section. If the section describes a
-                  sequential task, follow the introduction with a procedure
-                  description, as discussed in <xref linkend="sec.procedure"/>.
-                  Experienced users familiar with the topic can follow this
-                  brief sketch. For less experienced readers, steps of
-                  the procedure could contain a (usually clickable) reference
-                  to a subsection where the necessary background is provided
-                  and the action explained in more detail.
-                </para>
-              </listitem>
-            </varlistentry>
-            <varlistentry>
-              <term>Troubleshooting</term>
-              <listitem>
+              </formalpara>
+              <para>Sections start with an introductory paragraph outlining
+                the focus of the section. If the section describes a
+                sequential task, follow the introduction with a procedure
+                description, as discussed in <xref linkend="sec.procedure"/>.
+                Experienced users familiar with the topic can follow this
+                brief sketch. For less experienced readers, steps of
+                the procedure could contain a (usually clickable) reference
+                to a subsection where the necessary background is provided
+                and the action explained in more detail.
+              </para>
+            </listitem>
+            <listitem>
+              <formalpara>
+                <title>Troubleshooting</title>
                 <para>If you know of common mistakes or other problems a
                   user might encounter in a certain situation, list them in
                   a section named <emphasis>Troubleshooting</emphasis>.
@@ -234,24 +233,24 @@
                   solutions to more than ten problems, add topical subsections
                   below the <emphasis>Troubleshooting</emphasis> section.
                 </para>
-                <para>Use the DocBook element <sgmltag>qandaset</sgmltag> (a
-                  Question and Answer section) to mark up
-                  <emphasis>Troubleshooting</emphasis> problems.
-                </para>
-              </listitem>
-            </varlistentry>
-            <varlistentry>
-              <term>For More Information</term>
-              <listitem>
+              </formalpara>
+              <para>Use the DocBook element <sgmltag>qandaset</sgmltag> (a
+                Question and Answer section) to mark up
+                <emphasis>Troubleshooting</emphasis> problems.
+              </para>
+            </listitem>
+            <listitem>
+              <formalpara>
+                <title>For More Information</title>
                 <para>This section contains links to all sources of
                   information that might prove helpful in a given context.
                   Follow the general referencing guidelines in
-                  <xref linkend="sec.edrules.reference"/> when creating such
+                  <xref linkend="sec.crossreference"/> when creating such
                   sections.
                 </para>
-              </listitem>
-            </varlistentry>
-          </variablelist>
+              </formalpara>
+            </listitem>
+          </itemizedlist>
         </listitem>
       </varlistentry>
       <varlistentry>
@@ -263,6 +262,71 @@
         </listitem>
       </varlistentry>
     </variablelist>
+  </sect1>
+
+  <sect1 id="sec.name">
+      <title>Naming of Example Items</title>
+
+      <para>This section summarizes some conventions to use for creating
+        generic names for objects that can occur in documentation. At least
+        some of the following values should be provided through entities
+        (see <xref linkend="sec.entity"/>).
+      </para>
+
+      <sect2>
+        <title>Domains</title>
+
+        <para>Use <ulink url="http://www.example.com"/> and
+          <ulink url="http://www.example.org"/> as example domains. Both
+          domains were registered for use in documentation.
+        </para>
+      </sect2>
+
+      <sect2>
+        <title>Host Names</title>
+
+        <para>Use <systemitem>sun</systemitem> and
+          <systemitem>earth</systemitem> or other planets of the solar system.
+        </para>
+      </sect2>
+
+      <sect2 id="sec.ipv4">
+        <title>IPv4 Adresses</title>
+
+        <para>Use addresses from the class C
+          subnet <literal>255.255.255.0</literal> for examples. That is,
+          replace the final <literal>0</literal> by any integer between
+          <literal>0</literal> and <literal>255</literal>.
+          To create examples using a larger setup, use
+          addresses from the private network ranges. See
+          <ulink url="http://en.wikipedia.org/wiki/Private_network#Private_IPv4_address_spaces"/>
+          for more information.
+        </para>
+      </sect2>
+
+      <sect2 id="sec.ipv6">
+        <title>IPv4 Adresses</title>
+
+        <para>Use addresses from the subnet <literal>2001:0db8::/32</literal>
+          for examples. That is, after the <literal>2001:0db8:</literal> prefix
+          add six four-digit numbers, each separated by a colon on both sides
+          where. Each of the hexadecimal digits may have a value between
+          <literal>0</literal> and <literal>f</literal>. A valid example URL is
+          <literal>2001:0db8:0123:4567:89ab:cdef:1234:5678</literal>. See
+          <ulink url="http://en.wikipedia.org/wiki/Private_network#Private_IPv6_address_spaces"/>
+          for more information.
+        </para>
+      </sect2>
+
+      <sect2 id="sec.user">
+        <title>Users</title>
+
+        <para>For example users, use free-software mascots, such as Tux (Linux
+          kernel), Wilber (The GIMP), Geeko (SUSE), Foxkeh (Firefox), Konqi
+          (KDE), or Duke (Java). In prompts, use the lowercase version of these
+          names.
+        </para>
+      </sect2>
   </sect1>
 
 
@@ -277,6 +341,11 @@
       regulated there, use American English spellings as defined on
       <ulink url="http://www.merriam-webster.com/"/>
       (<ulink url="http://www.m-w.com/"/> for short).
+    </para>
+    <para>If a product you are documenting is not listed in the terminology
+      table, refer to the SUSE home page, <ulink url="http://www.suse.com"/>.
+      If the product is not mentioned on the SUSE home page, refer to the
+      Marketing department.
     </para>
 
     <sect2 id="sec.abbreviation">
@@ -361,58 +430,6 @@
         Use title style for row and column labels in tables.
       </para>
     </sect2>
-
-    <sect2 id="sec.contractions">
-      <title>Contractions</title>
-
-      <para>Do not use contractions, unless you are purposefully writing
-        a casual document.
-      </para>
-    </sect2>
-
-    <sect2 id="sec.bias">
-      <title>Gender Bias</title>
-
-      <para>Avoid indicating gender in your documentation. If possible,
-        use plural to allow use of <quote>they</quote> as the pronoun.
-        Otherwise, use <quote>he or she.</quote>
-        Refer to <citetitle>The Chicago Manual of Style</citetitle> 5.43,
-        5.51, and 5.78 for suggestions of how to avoid gender bias.
-      </para>
-      <para>
-        For example users, use free-software mascots, such as Tux (Linux
-        kernel), Wilber (The GIMP), Geeko (SUSE), Foxkeh (Firefox), or Konqi
-        (KDE), or Duke (Java).
-      </para>
-    </sect2>
-
-    <sect2 id="sec.numbers">
-      <title>Numbers and Measurements</title>
-
-      <para>Write out the numbers zero through nine and use numerals for all
-        others. For measurements, always use numerals when an abbreviation is
-        used for the unit. For more information, refer to
-        <citetitle>The Chicago Manual of Style</citetitle> 9.6.
-      </para>
-    </sect2>
-
-    <sect2 id="sec.prefix">
-      <title>Prefixes</title>
-
-      <para>Do not add a hyphen after the prefix to prefixed words
-        unless either the last letter of the prefix and the first letter of
-        the word are the same or you foresee misunderstandings.
-      </para>
-    </sect2>
-
-    <sect2 id="sec.possessive">
-      <title>Possessives</title>
-
-      <para>Do not use possessives of acronyms and trademarked terms.
-        Avoid possessives of inanimate objects.
-      </para>
-    </sect2>
-
     <sect2 id="sec.comma">
       <title>Commas</title>
 
@@ -426,11 +443,11 @@
       </para>
     </sect2>
 
-    <sect2 id="sec.semicolon">
-      <title>Semicolons</title>
+    <sect2 id="sec.contraction">
+      <title>Contractions</title>
 
-      <para>Avoid using semicolons to join sentences. You can use semicolons
-        in place of commas in very complicated series.
+      <para>Do not use contractions, unless you are purposefully writing
+        a casual document.
       </para>
     </sect2>
 
@@ -445,19 +462,103 @@
       </para>
     </sect2>
 
-    <sect2 id="sec.slash">
-      <title>Slashes</title>
-
-      <para>Do not use slashes except when they are part of a standard
-        technical term, such as TCP/IP or client/server.
-      </para>
-    </sect2>
-
     <sect2 id="sec.sentence.end">
       <title>End of Sentence Punctuation</title>
 
       <para>End sentences in a period. Avoid using exclamation marks.
         Restrict question marks to question and answer sections.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.file">
+      <title>File and Directory Names</title>
+
+      <para>Under Linux, objects like directories, printers, or flash drives
+        are all considered files. Therefore, the naming and markup
+        conventions are the same for <quote>drives</quote> (for example,
+        hard drives, CD-ROM drives, or flash drives), directories, or files.
+      </para>
+      <para>The layout for file names and directory names is the same. See the
+       following example:
+      </para>
+      <itemizedlist>
+        <listitem>
+          <para>Use forward slashes to separate nested directory or file
+            names.
+          </para>
+        </listitem>
+        <listitem>
+          <para>When giving absolute paths, always start with a leading slash
+            to indicate the root of the file system.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Do not use a trailing slash to distinguish between a file
+            and a directory. Where differentiation is needed, provide it
+            textually.
+          </para>
+        </listitem>
+      </itemizedlist>
+      <para>Most Linux file systems are case-sensitive. Use capitals exactly
+        as they appear in the file system. For details on markup, refer to
+        <xref linkend="sec.markup.inline.filenames_and_dirs"/>.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.bias">
+      <title>Gender Bias</title>
+
+      <para>Avoid indicating gender in your documentation. If possible,
+        use plural to allow use of <quote>they</quote> as the pronoun.
+        Otherwise, use <quote>he or she.</quote>
+      </para>
+      <para>For naming of example items, refer to <xref linkend="sec.name"/>.
+        For more information on how to avoid gender bias, refer to
+        <citetitle>The Chicago Manual of Style</citetitle> 5.43.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.numbers">
+      <title>Numbers and Measurements</title>
+
+      <para>Write out the numbers zero through nine and use numerals for all
+        others. For measurements, always use numerals when an abbreviation is
+        used for the unit. For more information, refer to
+        <citetitle>The Chicago Manual of Style</citetitle> 9.6.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.possessive">
+      <title>Possessives</title>
+
+      <para>Do not use possessives of acronyms and trademarked terms.
+        Avoid possessives of inanimate objects.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.prefix">
+      <title>Prefixes</title>
+
+      <para>Do not add a hyphen after the prefix to prefixed words
+        unless either the last letter of the prefix and the first letter of
+        the word are the same or you foresee misunderstandings.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.semicolon">
+      <title>Semicolons</title>
+
+      <para>Avoid using semicolons to join sentences. You may use semicolons
+        in place of commas in very complicated series.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.slash">
+      <title>Slashes</title>
+
+      <para>Do not use slashes except when they are part of a standard
+        technical term, such as <emphasis>TCP/IP</emphasis> or
+        <emphasis>client/server</emphasis>.
       </para>
     </sect2>
 
@@ -471,11 +572,18 @@
       </para>
     </sect2>
 
+    <sect2 id="sec.tense">
+      <title>Tense</title>
+      <para>Use the simple present tense. Apply the simple present tense even
+        to sentences with <quote>if</quote> or <quote>when</quote>
+        clauses: <quote>If this happens, go there.</quote>
+      </para>
+    </sect2>
+
     <sect2 id="sec.tone">
       <title>Tone and Voice</title>
       <para>Maintain a professional tone. Do not use contractions, except in
-        casual documents. Do not use humor. It does not translate well
-        and could be misunderstood by non-native speakers. Be honest and
+        casual documents. Do not use humor. Be honest and
         avoid absolutes and exaggerations, but focus on positive aspects.
       </para>
       <para>Use second person (<quote>you</quote>) to refer to the reader.
@@ -496,15 +604,6 @@
       </para>
     </sect2>
 
-    <sect2 id="sec.tense">
-      <title>Tense</title>
-      <para>Use the simple present tense. This also
-        applies to sentences with <quote>if</quote> or <quote>when</quote>
-        clauses. <quote>If you do this, something happens.</quote>
-        <quote>When you do that, something else happens.</quote>
-      </para>
-    </sect2>
-
   </sect1>
 
   <sect1 id="sec.structure.markup">
@@ -515,7 +614,7 @@
       every minor functionality of a product. Describe what a product can do
       rather than its limitations.
     </para>
-    <sect2 id="sec.edrules.admon">
+    <sect2 id="sec.admonition">
       <title>Admonitory and Advisory Paragraphs</title>
       <para>
     SUSE uses four different kinds of admonitory and advisory paragraphs.
@@ -599,181 +698,7 @@
         </varlistentry>
       </variablelist>
     </sect2>
-
-    <sect2 id="sec.edrules.address">
-      <title>Web Links</title>
-
-      <para>Where possible, collect links in a
-        <quote>For More Information</quote> section at the end of the chapter.
-        This will help users focus on your documentation instead of leading
-        them to other resources before they had a chance to read the end
-        of the sentence.
-      </para>
-      <para>To mark up multiple links, use a <sgmltag>itemizedlist</sgmltag>
-        environment. Do not use a list environment for only one link.
-        If you need to present a large number of links, group them by topic and
-        create a separate list environment for each group. Provide a
-        comprehensive title for each of the groups or an introductory sentence.
-      </para>
-      <para>Use the <sgmltag>ulink</sgmltag> tag to mark up URLs that can be
-        opened with a web browser, such as <ulink url="http://www.suse.de"/>.
-        Always prefix the correct protocol (such as <literal>http://</literal>),
-        otherwise the links will not work. Never use <sgmltag>filename</sgmltag>
-        for a link, as that would both disable the link checker and make the
-        link unclickable. Avoid entering a text label between the
-        <sgmltag>ulink</sgmltag> start and end tags.
-      </para>
-      <para>Try to make URLs as short as possible before pasting them into your
-        documentation. Many long URLs can be shortened by leaving away
-        non-essential pieces of them. This is often the case with search URLs
-        or URLs of Internet news media. If a web site provides a built-in URL
-        shortener, use that. Do not resort to using external URL shorteners, as
-        that both hides the actual destination a link will take the user to and
-        introduces an extra element of uncertainty, as the shortening service
-        may disappear or become unreliable in the future.
-      </para>
-      <para>Do not use <sgmltag>ulink</sgmltag> to link to SUSE
-        documentation outside of the current document set. Instead use the
-        appropriate entity for the book title. Always reference the book
-        itself, as chapter names can change.
-      </para>
-      <para>Where possible, provide translators with localized versions of
-        links in the comments of the source file.
-      </para>
-      <para>Other types of references to resources are described in
-        <xref linkend="sec.edrules.reference"/> and
-        <xref linkend="sec.edrules.extreference"/>.
-      </para>
-    </sect2>
-
-    <sect2 id="sec.edrules.reference">
-      <title>Cross References</title>
-
-      <para> Use the <sgmltag>xref</sgmltag> element (read:
-        <quote>cross ref</quote>) when referring to an appendix, chapter,
-        example, figure, part, preface, section, table, or question and answer
-        set. The referenced element needs an
-        <sgmltag class="attribute">id</sgmltag> attribute. When
-        referencing these elements, do not insert a text label like
-        <quote>appendix</quote>, <quote>chapter</quote>, <quote>part</quote>,
-        <quote>preface</quote>, <quote>section</quote>, <quote>table</quote>,
-        <quote>figure</quote>, and <quote>example</quote>. These are inserted
-        automatically.
-      </para>
-      <para>Do not insert references to single paragraphs
-        (<sgmltag>para</sgmltag>). If you need a reference to a list,
-        insert <sgmltag>id</sgmltag> and <sgmltag>xreflabel</sgmltag>.
-      </para>
-      <para>Other types of references to resources are described in
-        <xref linkend="sec.edrules.extreference"/> and
-        <xref linkend="sec.edrules.address"/>.
-      </para>
-    </sect2>
-
-    <sect2 id="sec.edrules.extreference">
-      <title>References to Other External Resources</title>
-
-      <para>References to man pages and info pages should generally be
-        made in the format <quote>the man page of
-        <command>command</command></quote> or
-        <quote>the info page of <command>command</command></quote>. In a
-        situation where the category of the page is needed, add
-        for example <quote>(<command>man 9 command</command>)</quote>
-        to the end.
-      </para>
-      <para>To reference file names, use the <sgmltag>filename</sgmltag>
-        element. To reference e-mail addresses, use the <sgmltag>email</sgmltag>
-        element. In either case, do not include a protocol prefix, that is
-        <literal>file://</literal> or <literal>mailto:</literal>, respectively.
-      </para>
-      <para>Insert references to external (not SUSE or openSUSE) physical
-        books in the format <quote>Title by Author (ISBN #00000000).</quote>
-        Inclusion of the ISBN is optional. Place the title in
-        <sgmltag>citetitle</sgmltag> tags. For example:
-      </para>
-      <screen>&lt;citetitle&gt;Indexing Books&lt;/citetitle&gt; by Nancy C. Mulvany
-(ISBN 0-226-55014-1) is a useful guide for indexing.</screen>
-      <para>It is useful to provide language-specific references in the
-        translated books. If the authors know of language-specific versions,
-        they can include them in comments for translators. As time permits,
-        translators should look for corresponding language-specific resources.
-        For URLs, provide only the language-specific version of a site. Use the
-        English as a fall-back. For books, provide the title of the translated
-        version along with the original title if such a translation exists.
-      </para>
-      <para>Other types of references to resources are described in
-        <xref linkend="sec.edrules.reference"/> and
-        <xref linkend="sec.edrules.address"/>.
-      </para>
-    </sect2>
-    <sect2 id="sec.prompt">
-      <title>Prompts</title>
-
-      <para>When documenting commands entered into Bash with a
-        <sgmltag>screen</sgmltag> element, always prefix them with a prompt
-        marked up this way:
-      </para>
-      <screen>&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ls&lt;/command&gt;</screen>
-      <para>Never include a host name or path in your prompts to avoid making
-        them longer than necessary. The first restricted user should always use
-        the name <emphasis>tux</emphasis>. For other names of restricted users,
-        see <xref linkend="sec.bias"/>.
-      </para>
-      <para>Avoid using root prompts in your documentation by using the
-        <command>sudo</command> where applicable. If you do need a root prompt,
-        always mark it up as following:
-      </para>
-      <screen>&lt;prompt&gt;root # &lt;/prompt&gt;&lt;command&gt;yast&lt;/command&gt;</screen>
-    </sect2>
-    <sect2 id="sec.edrules.block">
-      <title>Illustrative Block Elements</title>
-      <sect3 id="sec.edrules.block.fig">
-        <title>Graphics and Figures</title>
-        <para>
-     Screenshots and graphics should only be used when helpful for
-     following the explanation. Using too many screenshots could add to the
-     confusion of the reader. If you intend to use screenshots in a document,
-     consider the following issues first:
-    </para>
-        <itemizedlist>
-          <listitem>
-            <para>
-       A screenshot should illustrate a complex situation in which the user
-       cannot easily follow the text otherwise.
-      </para>
-          </listitem>
-          <listitem>
-            <para>Only illustrate steps where user meaningful user interactions are
-       necessary. Do not create screenshots of progress bars or confirmation
-       windows.
-      </para>
-          </listitem>
-          <listitem>
-            <para>Choose only those screenshots that show the most important dialogs
-        or choices during the whole process is sufficient.
-      </para>
-          </listitem>
-        </itemizedlist>
-        <para>If you intend to use graphics in documentation, think of the following
-     issues first:
-    </para>
-        <itemizedlist>
-          <listitem>
-            <para> KISS (<quote>keep it short and simple</quote>). Graphics should
-       always simplify complex issues and not confuse the reader by their
-       complexity. Embedding text in graphic adds to complexity. Use as
-       little text as possible. Be aware that some languages use up to
-       twice as much space for a given phrase than English.
-      </para>
-          </listitem>
-          <listitem>
-            <para>Reference the figure from the text by means of an
-        <sgmltag>xref</sgmltag>.
-      </para>
-          </listitem>
-        </itemizedlist>
-      </sect3>
-      <sect3 id="sec.edrules.block.callouts">
+      <sect2 id="sec.callout">
         <title>Callouts</title>
         <para>
      Do not use more than ten callouts per example.
@@ -817,13 +742,178 @@ title Disk
      For details on the markup of this element, refer to
      <xref linkend="sec.markup.block.callouts"/>.
     </para>
+      </sect2>
+  <sect2 id="sec.computerelement">
+    <title>Computer Elements</title>
+    <para>
+   Only specify the software component in ambiguous contexts. Format user input
+   and system output as an inline element when it is shorter than 30 characters.
+   In all other cases, close the current paragraph and use the
+   <sgmltag>screen</sgmltag> element which creates a new block.
+  </para>
+
+    <sect3 id="sec.ce.cmd">
+      <title>Commands</title>
+      <para>
+    When referring to an application, use the
+    <sgmltag>phrase role="productname"</sgmltag> element around it. This will
+    not result in a visual change but disables hyphenation:
+   </para>
+      <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
+      <para>
+    Linux commands are case-sensitive, so always present them as they appear
+    in the system. Commands can be embedded in the flowing text or presented
+    as part of screen environments or examples. In flowing text, use
+    <sgmltag>command</sgmltag> when referring to an actual command you would
+    use on a command line:
+   </para>
+      <literallayout>Use <command>loffice</command> to start LibreOffice from the command line.
+   </literallayout>
+      <para>
+    Place options inside the command tags. Options can also be used in text,
+    separately from <sgmltag>command</sgmltag>. See
+    <xref linkend="sec.markup.inline.commands"/>.
+   </para>
+      <para>
+    Use markup for commands even inside <sgmltag>screen</sgmltag> environments.
+
+    </para>
+    </sect3>
+    <sect3 id="sec.ce.var">
+      <title>Variables</title>
+      <para>
+    There are currently two different kinds of variable environments used in
+    SUSE documentation:
+   </para>
+      <itemizedlist>
+        <listitem>
+          <para>
+      Substitutable contents that the user should replace with appropriate
+      values. For example:
+     </para>
+          <literallayout>To list the contents of a directory, execute <command>ls <replaceable>dir</replaceable></command>.</literallayout>
+        </listitem>
+        <listitem>
+          <para>
+      References to names of variables rather than to their value. Example:
+     </para>
+          <literallayout>To select another display manager, start the YaST
+      sysconfig editor and change the value of
+      <varname>DISPLAYMANAGER</varname>.</literallayout>
+        </listitem>
+      </itemizedlist>
+    </sect3>
+
+    <sect3 id="sec.keyboard">
+      <title>Keys and Key Combinations</title>
+
+      <para>Capitalize all keys as printed on a standard keyboard. Following
+        this rule, capitalize all letter keys. If you need to refer to a capitalized
+     character, use <keycombo><keycap function="shift"/><keycap>Z</keycap></keycombo>,
+     for example. Introduce this convention by means of the
+     <quote>Typographical Conventions</quote> section of the introduction.
+    </para>
+        <para>
+     The localization of the identifiers for both modifiers and special keys is
+     handled by DocBook itself. Just use the
+     <sgmltag>keycap</sgmltag> tag and an appropriate
+     <literal>function</literal> value. Find details in
+     <xref linkend="sec.markup.inline.keys"/>.
+    </para>
       </sect3>
-      <sect3 id="sec.example">
+      <sect3 id="sec.ce.gui.guielement">
+        <title>User Interface Elements</title>
+        <para>When using labels of GUI elements, do not include ending punctuation
+     like <literal>...</literal> or <literal>:</literal>. Whenever possible,
+     refer to the elements without identifying them as a special type of
+     dialog element. For example, use <quote>Click
+     <guimenu>OK</guimenu></quote> rather than <quote>Click the
+     <guimenu>OK</guimenu> button.</quote> However, some situations require
+     a more specific wording, for example, if a dialog has many different
+     graphical elements.
+    </para>
+        <para>
+     For detailed instructions for the appropriate markup, especially
+     concerning buttons, labels, and menu structures, refer to
+     <xref linkend="sec.markup.inline.menus"/>.
+    </para>
+    </sect3>
+  </sect2>
+    <sect2 id="sec.crossreference">
+      <title>Cross References</title>
+
+      <para> Use the <sgmltag>xref</sgmltag> element (read:
+        <quote>cross ref</quote>) when referring to an appendix, chapter,
+        example, figure, part, preface, section, table, or question and answer
+        set. The referenced element needs an
+        <sgmltag class="attribute">id</sgmltag> attribute. When
+        referencing these elements, do not insert a text label like
+        <quote>appendix</quote>, <quote>chapter</quote>, <quote>part</quote>,
+        <quote>preface</quote>, <quote>section</quote>, <quote>table</quote>,
+        <quote>figure</quote>, and <quote>example</quote>. These are inserted
+        automatically.
+      </para>
+      <para>Do not insert references to single paragraphs
+        (<sgmltag>para</sgmltag>). If you need a reference to a list,
+        insert <sgmltag>id</sgmltag> and <sgmltag>xreflabel</sgmltag>.
+      </para>
+      <para>Other types of references to resources are described in
+        <xref linkend="sec.otherexternal"/> and
+        <xref linkend="sec.link"/>.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.link">
+      <title>External Links</title>
+
+      <para>Where possible, collect links in a
+        <quote>For More Information</quote> section at the end of the chapter.
+        This will help users focus on your documentation instead of leading
+        them to other resources before they had a chance to read the end
+        of the sentence.
+      </para>
+      <para>To mark up multiple links, use a <sgmltag>itemizedlist</sgmltag>
+        environment. Do not use a list environment for only one link.
+        If you need to present a large number of links, group them by topic and
+        create a separate list environment for each group. Provide a
+        comprehensive title for each of the groups or an introductory sentence.
+      </para>
+      <para>Use the <sgmltag>ulink</sgmltag> tag to mark up URLs that can be
+        opened with a web browser, such as <ulink url="http://www.suse.de"/>.
+        Always prefix the correct protocol (such as <literal>http://</literal>),
+        otherwise the links will not work. Never use <sgmltag>filename</sgmltag>
+        for a link, as that would both disable the link checker and make the
+        link unclickable. Avoid entering a text label between the
+        <sgmltag>ulink</sgmltag> start and end tags.
+      </para>
+      <para>Try to make URLs as short as possible before pasting them into your
+        documentation. Many long URLs can be shortened by leaving away
+        non-essential pieces of them. This is often the case with search URLs
+        or URLs of Internet news media. If a web site provides a built-in URL
+        shortener, use that. Do not resort to using external URL shorteners, as
+        that both hides the actual destination a link will take the user to and
+        introduces an extra element of uncertainty, as the shortening service
+        may disappear or become unreliable in the future.
+      </para>
+      <para>Do not use <sgmltag>ulink</sgmltag> to link to SUSE
+        documentation outside of the current document set. Instead use the
+        appropriate entity for the book title. Always reference the book
+        itself, as chapter names can change.
+      </para>
+      <para>Where possible, provide translators with localized versions of
+        links in the comments of the source file.
+      </para>
+      <para>Other types of references to resources are described in
+        <xref linkend="sec.crossreference"/> and
+        <xref linkend="sec.otherexternal"/>.
+      </para>
+    </sect2>
+      <sect2 id="sec.example">
         <title>Examples</title>
         <para>
      Like figures and screenshots, examples are used to illustrate complex
      processes. Most of the rules established for the use of these elements
-     in <xref linkend="sec.edrules.block.fig"/> also apply to examples.
+     in <xref linkend="sec.graphic"/> also apply to examples.
     </para>
         <para>
      If you intend to use examples, consider the following:
@@ -872,9 +962,96 @@ title Disk
      For details on markup, refer to
      <xref linkend="sec.markup.block.examples"/>.
     </para>
-      </sect3>
-    </sect2>
-    <sect2 id="sec.edrules.head">
+      </sect2>
+  <sect2 id="sec.glossary">
+    <title>Glossaries</title>
+    <para>
+   An optional glossary contains terms and their definitions. Make sure that
+   the glossary entries are appropriate to the intended audience. Define
+   unfamiliar terms and specialized jargon.
+  </para>
+    <para>
+   Define infinitive forms of verbs and singular nouns. Use lowercase for
+   the term unless it is a proper noun.
+  </para>
+    <para>
+   Use cross-references to link acronyms with their written out forms.
+   Define the written out form. Use a <emphasis>See</emphasis> reference for
+   the acronym form to link it to the defined written out form.
+  </para>
+    <para>
+   The markup for a glossary entry is shown in
+   <xref linkend="ex.glossary"/>.
+  </para>
+    <example id="ex.glossary">
+      <title>A Typical Example of a Glossary</title>
+      <screen>&lt;glossary&gt;
+ &lt;title&gt;Glossary&lt;/title&gt;
+ &lt;glossdiv&gt;
+  &lt;title&gt;D&lt;/title&gt;
+  &lt;glossentry&gt;
+   &lt;glossterm&gt;DocBook&lt;/glossterm&gt;
+   &lt;glossdef&gt;
+    &lt;para&gt;
+     DocBook provides a system for writing structured documents
+     using SGML or XML. It is particularly well-suited to books
+     and papers about computer hardware and software, though it
+     is by no means limited to them.
+    &lt;/para&gt;
+   &lt;/glossdef&gt;
+  &lt;/glossentry&gt;
+ &lt;/glossdiv&gt;
+&lt;/glossary&gt;
+</screen>
+    </example>
+  </sect2>
+      <sect2 id="sec.graphic">
+        <title>Graphics and Figures</title>
+        <para>
+     Screenshots and graphics should only be used when helpful for
+     following the explanation. Using too many screenshots could add to the
+     confusion of the reader. If you intend to use screenshots in a document,
+     consider the following issues first:
+    </para>
+        <itemizedlist>
+          <listitem>
+            <para>
+       A screenshot should illustrate a complex situation in which the user
+       cannot easily follow the text otherwise.
+      </para>
+          </listitem>
+          <listitem>
+            <para>Only illustrate steps where user meaningful user interactions are
+       necessary. Do not create screenshots of progress bars or confirmation
+       windows.
+      </para>
+          </listitem>
+          <listitem>
+            <para>Choose only those screenshots that show the most important dialogs
+        or choices during the whole process is sufficient.
+      </para>
+          </listitem>
+        </itemizedlist>
+        <para>If you intend to use graphics in documentation, think of the following
+     issues first:
+    </para>
+        <itemizedlist>
+          <listitem>
+            <para> KISS (<quote>keep it short and simple</quote>). Graphics should
+       always simplify complex issues and not confuse the reader by their
+       complexity. Embedding text in graphic adds to complexity. Use as
+       little text as possible. Be aware that some languages use up to
+       twice as much space for a given phrase than English.
+      </para>
+          </listitem>
+          <listitem>
+            <para>Reference the figure from the text by means of an
+        <sgmltag>xref</sgmltag>.
+      </para>
+          </listitem>
+        </itemizedlist>
+      </sect2>
+    <sect2 id="sec.heading">
       <title>Headings</title>
       <para>
     Each level of heading should have two or more headings. Lonely
@@ -891,7 +1068,38 @@ title Disk
     cases, more information can be provided.
    </para>
     </sect2>
-    <sect2 id="sec.edrules.lists">
+  <sect2 id="sec.index">
+    <title>Indexes</title>
+    <para>Insert index terms as close to the relevant text as possible.
+      When more than five paragraphs belong to a topic, use a page range.
+      Nest index terms up to two levels deep.
+    </para>
+    <para>When indexing, look for information a user is likely to be trying to
+      find. Adapt breadth and depth of included index terms for a given
+      topic to the weight it has within the manual. Never index
+      <quote>For More Information</quote> sections, abstracts,
+      or commands that only appear as means to a different end.
+    </para>
+    <para>Be consistent in the terms you index. However,
+      consider that users might not have the exact same terms in mind as you
+      do, especially when it comes to highly technical words or brands.
+      Write nouns in the plural. Write verbs in a gerund form
+      (<emphasis>-ing</emphasis>). Use sentence-style capitalization for
+      index terms.
+    </para>
+    <para>If an entry has six or more page references, try to subsume them
+      as subentries under a single entry. If an entry has only a single
+      subentry, consider deleting the subentry.
+    </para>
+    <para>Check for inconsistencies that result in multiple items in
+      the index. Check all <emphasis>see</emphasis> and
+      <emphasis>see also</emphasis> references for consistency.
+      Items should not have both a page and a
+      <emphasis>see</emphasis> reference. Where possible, avoid using page
+      references and <emphasis>see also</emphasis> together.
+    </para>
+  </sect2>
+    <sect2 id="sec.list">
       <title>Lists</title>
       <para>
     SUSE and openSUSE documentation uses the following types of lists (the
@@ -984,7 +1192,7 @@ title Disk
     well-balanced combination of lists and flowing texts is a good
     approach.
    </para>
-      <sect3 id="sec.edrules.lists.bull">
+      <sect3 id="sec.bullet">
         <title>Bullet Lists</title>
         <para>
      Bullet lists are often used to provide an overview of information or to
@@ -1000,7 +1208,7 @@ title Disk
      then identified by the value of <sgmltag class="attribute">id</sgmltag>
      and the value of <sgmltag class="attribute">xreflabel</sgmltag> is
      printed as the label of this item. See
-     <xref linkend="sec.edrules.reference"/> and
+     <xref linkend="sec.crossreference"/> and
      <xref linkend="sec.markup.inline.referencing"/> for detailed
      information.
     </para>
@@ -1020,7 +1228,7 @@ title Disk
           </itemizedlist>
         </example>
       </sect3>
-      <sect3 id="sec.edrules.lists.num">
+      <sect3 id="sec.numbered">
         <title>Numbered Lists</title>
         <para>
      Use numbered lists when items have a strict order, hierarchy, or
@@ -1039,7 +1247,7 @@ title Disk
      entry is then identified by the value of
      <sgmltag class="attribute">id</sgmltag> and the value of
      <sgmltag class="attribute">xreflabel</sgmltag> is printed as the label
-     of this item. See <xref linkend="sec.edrules.reference"/> and
+     of this item. See <xref linkend="sec.crossreference"/> and
      <xref linkend="sec.markup.inline.referencing"/> for detailed
      information.
     </para>
@@ -1078,7 +1286,7 @@ title Disk
           </orderedlist>
         </example>
       </sect3>
-      <sect3 id="sec.edrules.lists.desc">
+      <sect3 id="sec.descriptive">
         <title>Descriptive Lists</title>
         <para>
      Use descriptive lists when defining terms or describing options. Each
@@ -1124,53 +1332,43 @@ title Disk
         </example>
       </sect3>
     </sect2>
-    <sect2 id="sec.edrules.tab">
-      <title>Tables</title>
-      <para>
-    Use tables to present a large number of similar facts. A table makes
-    them easy to scan and compare when presenting the same information
-    textually would require several paragraphs.
-   </para>
-      <para>
-    Always keep tables as simple as possible. They should not require
-    extensive explanations in the related text and should make sense even to
-    those readers who are not very familiar with the topic.
-   </para>
-      <para>
-    A table always has a title. If you assign an
-    <sgmltag class="attribute">id</sgmltag>, it can be identified and
-    referenced by this attribute.
-   </para>
-      <para>
-    Value and description pairs are better handled by means of a descriptive
-    list.
-   </para>
-      <example id="ex.tab">
-        <title>A Typical Table in SUSE Documentation</title>
-        <informaltable id="tab.maxsize">
-          <tgroup cols="3">
-            <thead>
-              <row>
-                <entry>File System</entry>
-                <entry>File Size (Bytes)</entry>
-                <entry>File System Size (Bytes)</entry>
-              </row>
-            </thead>
-            <tbody>
-              <row>
-                <entry>Ext2 or Ext3 (1 kB block size)</entry>
-                <entry>2<superscript>34</superscript> (16 GB)</entry>
-                <entry>2<superscript>41</superscript> (2 TB)</entry>
-              </row>
-              <row>
-                <entry>Ext2 or Ext3 (2 kB block size)</entry>
-                <entry>2<superscript>38</superscript> (256 GB)</entry>
-                <entry>2<superscript>43</superscript> (8 TB)</entry>
-              </row>
-            </tbody>
-          </tgroup>
-        </informaltable>
-      </example>
+
+
+    <sect2 id="sec.otherexternal">
+      <title>References to Other External Resources</title>
+
+      <para>References to man pages and info pages should generally be
+        made in the format <quote>the man page of
+        <command>command</command></quote> or
+        <quote>the info page of <command>command</command></quote>. In a
+        situation where the category of the page is needed, add
+        for example <quote>(<command>man 9 command</command>)</quote>
+        to the end.
+      </para>
+      <para>To reference file names, use the <sgmltag>filename</sgmltag>
+        element. To reference e-mail addresses, use the <sgmltag>email</sgmltag>
+        element. In either case, do not include a protocol prefix, that is
+        <literal>file://</literal> or <literal>mailto:</literal>, respectively.
+      </para>
+      <para>Insert references to external (not SUSE or openSUSE) physical
+        books in the format <quote>Title by Author (ISBN #00000000).</quote>
+        Inclusion of the ISBN is optional. Place the title in
+        <sgmltag>citetitle</sgmltag> tags. For example:
+      </para>
+      <screen>&lt;citetitle&gt;Indexing Books&lt;/citetitle&gt; by Nancy C. Mulvany
+(ISBN 0-226-55014-1) is a useful guide for indexing.</screen>
+      <para>It is useful to provide language-specific references in the
+        translated books. If the authors know of language-specific versions,
+        they can include them in comments for translators. As time permits,
+        translators should look for corresponding language-specific resources.
+        For URLs, provide only the language-specific version of a site. Use the
+        English as a fall-back. For books, provide the title of the translated
+        version along with the original title if such a translation exists.
+      </para>
+      <para>Other types of references to resources are described in
+        <xref linkend="sec.crossreference"/> and
+        <xref linkend="sec.link"/>.
+      </para>
     </sect2>
   <sect2 id="sec.procedure">
     <title>Procedures</title>
@@ -1278,7 +1476,7 @@ title Disk
         <para>Never use trademarks in headings.</para>
       </listitem>
       <listitem>
-        <para>Only use the version on the first occurrence of the
+        <para>Only use the marked version on the first occurrence of the
           product name in a chapter.
         </para>
       </listitem>
@@ -1296,349 +1494,74 @@ title Disk
       </listitem>
     </itemizedlist>
   </sect2>
-  <sect2 id="sec.computerelement">
-    <title>Computer Elements</title>
-    <para>
-   Only specify the software component in ambiguous contexts. Format user input
-   and system output as an inline element when it is shorter than 30 characters.
-   In all other cases, close the current paragraph and use the
-   <sgmltag>screen</sgmltag> element which creates a new block.
-  </para>
+    <sect2 id="sec.prompt">
+      <title>Prompts</title>
 
-    <sect3 id="sec.ce.cmd">
-      <title>Commands</title>
+      <para>When documenting commands entered into Bash with a
+        <sgmltag>screen</sgmltag> element, always prefix them with a prompt
+        marked up this way:
+      </para>
+      <screen>&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ls&lt;/command&gt;</screen>
+      <para>Never include a host name or path in your prompts to avoid making
+        them longer than necessary. The first restricted user should always use
+        the name <emphasis>tux</emphasis>. For other names of restricted users,
+        see <xref linkend="sec.bias"/>.
+      </para>
+      <para>Avoid using root prompts in your documentation by using the
+        <command>sudo</command> where applicable. If you do need a root prompt,
+        always mark it up as following:
+      </para>
+      <screen>&lt;prompt&gt;root # &lt;/prompt&gt;&lt;command&gt;yast&lt;/command&gt;</screen>
+    </sect2>
+    <sect2 id="sec.table">
+      <title>Tables</title>
       <para>
-    When referring to an application, use the
-    <sgmltag>phrase role="productname"</sgmltag> element around it. This will
-    not result in a visual change but disables hyphenation:
+    Use tables to present a large number of similar facts. A table makes
+    them easy to scan and compare when presenting the same information
+    textually would require several paragraphs.
    </para>
-      <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
       <para>
-    Linux commands are case-sensitive, so always present them as they appear
-    in the system. Commands can be embedded in the flowing text or presented
-    as part of screen environments or examples. In flowing text, use
-    <sgmltag>command</sgmltag> when referring to an actual command you would
-    use on a command line:
-   </para>
-      <literallayout>Use <command>loffice</command> to start LibreOffice from the command line.
-   </literallayout>
-      <para>
-    Place options inside the command tags. Options can also be used in text,
-    separately from <sgmltag>command</sgmltag>. See
-    <xref linkend="sec.markup.inline.commands"/>.
+    Always keep tables as simple as possible. They should not require
+    extensive explanations in the related text and should make sense even to
+    those readers who are not very familiar with the topic.
    </para>
       <para>
-    Use markup for commands even inside <sgmltag>screen</sgmltag> environments.
+    A table always has a title. If you assign an
+    <sgmltag class="attribute">id</sgmltag>, it can be identified and
+    referenced by this attribute.
+   </para>
+      <para>
+    Value and description pairs are better handled by means of a descriptive
+    list.
+   </para>
+      <example id="ex.tab">
+        <title>A Typical Table in SUSE Documentation</title>
+        <informaltable id="tab.maxsize">
+          <tgroup cols="3">
+            <thead>
+              <row>
+                <entry>File System</entry>
+                <entry>File Size (Bytes)</entry>
+                <entry>File System Size (Bytes)</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry>Ext2 or Ext3 (1 kB block size)</entry>
+                <entry>2<superscript>34</superscript> (16 GB)</entry>
+                <entry>2<superscript>41</superscript> (2 TB)</entry>
+              </row>
+              <row>
+                <entry>Ext2 or Ext3 (2 kB block size)</entry>
+                <entry>2<superscript>38</superscript> (256 GB)</entry>
+                <entry>2<superscript>43</superscript> (8 TB)</entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </informaltable>
+      </example>
+    </sect2>
 
-    </para>
-    </sect3>
-    <sect3 id="sec.ce.var">
-      <title>Variables</title>
-      <para>
-    There are currently two different kinds of variable environments used in
-    SUSE documentation:
-   </para>
-      <itemizedlist>
-        <listitem>
-          <para>
-      Substitutable contents that the user should replace with appropriate
-      values. For example:
-     </para>
-          <literallayout>To list the contents of a directory, execute <command>ls <replaceable>dir</replaceable></command>.</literallayout>
-        </listitem>
-        <listitem>
-          <para>
-      References to names of variables rather than to their value. Example:
-     </para>
-          <literallayout>To select another display manager, start the YaST
-      sysconfig editor and change the value of
-      <varname>DISPLAYMANAGER</varname>.</literallayout>
-        </listitem>
-      </itemizedlist>
-    </sect3>
-    <sect3 id="sec.ce.gui">
-      <title>Describing Graphical User Interfaces</title>
-      <sect4 id="sec.ce.gui.keys">
-        <title>Keys</title>
-        <para>
-     SUSE uses the standard elements and transformations offered by DocBook
-     V. 4.3 and the current XSLT stylesheets by Norman Walsh. For details on
-     key markup, refer to <xref linkend="sec.markup.inline.keys"/>.
-    </para>
-        <para>
-     Always use the capitalized version of characters, because this is how
-     they are printed on the keyboard. If you need to refer to a capitalized
-     character, use <keycombo action="simul"><keycap function="shift">Shift</keycap><keycap>Z</keycap></keycombo>,
-     for example. Introduce this convention by means of the
-     <quote>Typographical Conventions</quote> section of the introduction.
-    </para>
-        <para>
-     The localization of the identifiers for both modifiers and special keys is
-     handled by DocBook itself. Just use the
-     <sgmltag>keycap</sgmltag> tag and an appropriate
-     <literal>function</literal> value. Find details in
-     <xref linkend="sec.markup.inline.keys"/>.
-    </para>
-      </sect4>
-      <sect4 status="draft" id="sec.ce.gui.guielement">
-        <title>GUI Elements</title>
-        <para>
-     When using labels of GUI elements, do not include ending punctuation
-     like <literal>...</literal> or <literal>:</literal>. Whenever possible,
-     refer to the elements without identifying them as a special type of
-     dialog element. For example, use <quote>Click
-     <guimenu>OK</guimenu></quote> rather than <quote>Click the
-     <guimenu>OK</guimenu> button.</quote> However, some situations require
-     a more specific wording, for example, if a dialog has many different
-     graphical elements.
-    </para>
-        <para>
-     For detailed instructions for the appropriate markup, especially
-     concerning buttons, labels, and menu structures, refer to
-     <xref linkend="sec.markup.inline.menus"/>.
-    </para>
-      </sect4>
-    </sect3>
-    <sect3 id="sec.ce.namconv">
-      <title>Naming Conventions</title>
-      <para>
-    SUSE documentation is limited to describing the Linux operating system
-    and open source applications. The following sections summarize the
-    common naming and markup principles that apply to SUSE and openSUSE
-    documentation.
-   </para>
-      <sect4 id="sec.ce.namconf.dir">
-        <title>Directories and File names</title>
-        <para>
-     Linux does not know any drive names. Under Linux, everything is
-     considered a file (even a directory is considered a special kind of
-     file). Therefore, the naming and markup conventions are the same for
-     <quote>drives</quote> (for example, hard drives, CD-ROM drives, or
-     floppy drives), directories, or files.
-    </para>
-        <para>
-     The layout for file names and directory names is the same. See the
-     following example:
-    </para>
-        <literallayout>Open the file <filename>suseconfig</filename> under <filename>/etc</filename>. Access your
-home directory via <filename>/home/<replaceable>[your user name]</replaceable></filename>.</literallayout>
-        <para>
-     Use slashes properly when dealing with file and directory names:
-    </para>
-        <itemizedlist>
-          <listitem>
-            <para>
-       Use a leading slash to indicate that the directory is reached from
-       the root of the file system. If the directory lies below the current
-       working directory, do not use a leading slash.
-      </para>
-          </listitem>
-          <listitem>
-            <para>
-       Do not use a trailing slash to distinguish between a file and a
-       directory. When differentiation is needed, provide it textually.
-      </para>
-          </listitem>
-        </itemizedlist>
-        <para>
-     Linux is a case-sensitive operating system, so use capitals exactly as
-     they appear in the file system. For details on markup, refer to
-     <xref linkend="sec.markup.inline.filenames_and_dirs"/>.
-    </para>
-      </sect4>
-      <sect4 id="sec.ce.namconf.hn">
-        <title>Host names and IP Addresses</title>
-        <para>
-     Writers should use a well-defined set of IP addresses, host names, and
-     user names for their network documentation. The values are provided by
-     means of entities (see <xref linkend="sec.entity"/>).
-    </para>
-        <variablelist>
-          <varlistentry>
-            <term>IP Addresses</term>
-            <listitem>
-              <para>
-        Currently, we are using only a class C net
-        (<systemitem>netmask 255.255.255.0</systemitem>)
-        for our examples. To create examples using a larger setup, select
-        addresses from the private network ranges.
-       </para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>Host names and Domains</term>
-            <listitem>
-              <para>
-        SUSE uses
-        <systemitem class="fqdomainname">www.example.com</systemitem>
-        as a domain for most examples, because this is a real domain that
-        was designed for use in documentation. Host names are taken from the
-        solar system (such as <systemitem>sun</systemitem> or
-        <systemitem>earth</systemitem>).
-       </para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>User names</term>
-            <listitem>
-              <para>
-        SUSE currently uses mascots like
-        <systemitem class="username">geeko</systemitem> (SUSE),
-        <systemitem class="username">tux</systemitem> (Linux kernel),
-        <systemitem class="username">wilber</systemitem> (The GIMP),
-        <systemitem class="username">foxkeh</systemitem> (Firefox), and
-        <systemitem class="username">konqi</systemitem> (KDE) as example users.
-       </para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
-      </sect4>
-    </sect3>
-  </sect2>
-  <sect2 id="sec.index">
-    <title>Creating an Index</title>
-    <para>
-   An index is an important part of a book, especially when printing. Index
-   terms should be used to provide the reader with access to useful information.
-   Insert the term as close to the relevant text as possible to ensure that the
-   page reference points to the correct location. When more than a few
-   paragraphs contain information that should be indexed under this term,
-   use a page range. Page ranges help users determine how much information a
-   given section provides on a certain topic. Nest index terms up to
-   two levels deep.
-  </para>
-    <para>
-   When indexing, try to answer the question: Is a user likely to be looking
-   for this information? For example, a section about
-   configuring an application should be indexed to the application, but a
-   passing reference to the application should not be indexed at all.
-  </para>
-    <para>Some parts of a document should never be indexed, those include
-   <quote>For More Information</quote> sections, abstracts, or commands that
-   only appear as means to a different end (as in, do not index
-   <command>cd</command> when it is only used to change directories as part of
-   a procedure).
-  </para>
-    <para>
-   Be careful with consistently selecting the terms to index. However, consider
-   that users might not have the exact same terms in mind as you do, especially
-   when it comes to highly technical words or brands. Write nouns in the plural
-   and verbs in a gerund form (<emphasis>-ing</emphasis>).
-   Capitalize terms only if they would be capitalized if used in the middle of
-   a sentence.
-  </para>
-    <para>
-   When selecting terms, try to consider what else is included in the
-   manual. If the manual only includes a small amount of information on a given
-   topic, general index items are probably more appropriate. If indexing a
-   chapter about an application, much more specific index terms are needed
-   so that users can find exactly the information they need.
-  </para>
-    <para>
-   Finally, a few tips to help polish indexes:
-  </para>
-    <itemizedlist>
-      <listitem>
-        <para>
-     If an entry has six or more page references, check those references and
-     see if it is possible to create subentries.
-    </para>
-      </listitem>
-      <listitem>
-        <para>
-     If an entry has only a single subentry, consider deleting the subentry.
-    </para>
-      </listitem>
-      <listitem>
-        <para>
-     Check for spelling errors or inconsistencies that result in multiple
-     items in the index.
-    </para>
-      </listitem>
-      <listitem>
-        <para>
-     If there are copious third-level entries or third-level entries with
-     too many references, consider adjusting the index structure to use a
-     more specific primary entry.
-    </para>
-      </listitem>
-      <listitem>
-        <para>
-     Check all <emphasis>see</emphasis> and <emphasis>see also</emphasis>
-     references for consistency. An item should not have both a page and a
-     <emphasis>see</emphasis> reference. Where possible, avoid using page
-     references and <emphasis>see also</emphasis> together.
-    </para>
-      </listitem>
-    </itemizedlist>
-    <example id="ex.indexplain">
-      <title>A Plain Index Entry</title>
-      <screen>&lt;para&gt;
-  To configure DNS&lt;indexterm&gt;
-    &lt;primary&gt;DNS&lt;/primary&gt;
-    &lt;secondary&gt;configuring&lt;/secondary&gt;
-  &lt;/indexterm&gt; use ...
-&lt;/para&gt;</screen>
-    </example>
-    <example id="ex.index.range">
-      <title>An Index Range</title>
-      <screen>&lt;indexterm <emphasis role="bold">class="startofrange" id="idx.Installation"</emphasis>&gt;
-  &lt;primary&gt;installing&lt;/primary&gt;
-    &lt;/indexterm&gt;
-...
-&lt;indexterm <emphasis role="bold">class="endofrange" startref="idx.Installation"</emphasis>/&gt;</screen>
-    </example>
-    <example id="ex.index.see">
-      <title>A See Index Entry</title>
-      <screen>&lt;indexterm&gt;
-  &lt;primary&gt;installing&lt;/primary&gt;
-    &lt;secondary&gt;boot loaders&lt;/secondary&gt;
-     <emphasis role="bold">&lt;see&gt;GRUB&lt;/see</emphasis>&gt;
-&lt;/indexterm&gt;</screen>
-    </example>
-  </sect2>
-  <sect2 id="sec.gloss">
-    <title>Creating a Glossary</title>
-    <para>
-   An optional glossary contains terms and their definitions. Make sure that
-   the glossary entries are appropriate to the intended audience. Define
-   unfamiliar terms and specialized jargon.
-  </para>
-    <para>
-   Define infinitive forms of verbs and singular nouns. Use lowercase for
-   the term unless it is a proper noun.
-  </para>
-    <para>
-   Use cross-references to link acronyms with their written out forms.
-   Define the written out form. Use a <emphasis>See</emphasis> reference for
-   the acronym form to link it to the defined written out form.
-  </para>
-    <para>
-   The markup for a glossary entry is shown in
-   <xref linkend="ex.glossary"/>.
-  </para>
-    <example id="ex.glossary">
-      <title>A Typical Example of a Glossary</title>
-      <screen>&lt;glossary&gt;
- &lt;title&gt;Glossary&lt;/title&gt;
- &lt;glossdiv&gt;
-  &lt;title&gt;D&lt;/title&gt;
-  &lt;glossentry&gt;
-   &lt;glossterm&gt;DocBook&lt;/glossterm&gt;
-   &lt;glossdef&gt;
-    &lt;para&gt;
-     DocBook provides a system for writing structured documents
-     using SGML or XML. It is particularly well-suited to books
-     and papers about computer hardware and software, though it
-     is by no means limited to them.
-    &lt;/para&gt;
-   &lt;/glossdef&gt;
-  &lt;/glossentry&gt;
- &lt;/glossdiv&gt;
-&lt;/glossary&gt;
-</screen>
-    </example>
-  </sect2>
   </sect1>
   <sect1 id="sec.manage">
     <title>Managing Documents</title>
