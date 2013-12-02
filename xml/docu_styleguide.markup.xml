@@ -1153,8 +1153,9 @@ To save a file in Emacs, press &lt;keycombo action="seq"&gt;
      Use bold text with care.
     </para>
         <screen>&lt;para&gt;
- This is &lt;emphasis&gt;strong&lt;/emphasis&gt; word.
- This is a  &lt;emphasis role="bold"&gt;very strong&lt;/emphasis&gt; word.
+  This is a &lt;emphasis&gt;strongly emphasized&lt;/emphasis&gt; word.
+  This is a &lt;emphasis role="bold"&gt;very strongly
+  emphasized&lt;/emphasis&gt; word.
 &lt;/para&gt;</screen>
         <literallayout>This is a <emphasis>strong</emphasis> word.
 This is a <emphasis role="bold">very strong</emphasis> word.</literallayout>
