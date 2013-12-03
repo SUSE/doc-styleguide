@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE appendix PUBLIC
-  "-//OASIS//DTD DocBook XML V4.3//EN"
-  "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+  "-//OASIS//DTD DocBook XML V4.5//EN"
+  "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd"
 [
 ]>
 
@@ -1157,8 +1157,8 @@ To save a file in Emacs, press &lt;keycombo action="seq"&gt;
   This is a &lt;emphasis role="bold"&gt;very strongly
   emphasized&lt;/emphasis&gt; word.
 &lt;/para&gt;</screen>
-        <literallayout>This is a <emphasis>strong</emphasis> word.
-This is a <emphasis role="bold">very strong</emphasis> word.</literallayout>
+        <literallayout>This is a <emphasis>strongly emphasized</emphasis> word.
+This is a <emphasis role="bold">very strongly emphasized</emphasis> word.</literallayout>
       </sect2>
       <sect2 id="sec.markup.inline.comments">
         <title>Comments and Remarks</title>

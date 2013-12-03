@@ -1,24 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE appendix PUBLIC
-  "-//OASIS//DTD DocBook XML V4.3//EN"
-  "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+<!DOCTYPE article PUBLIC
+  "-//OASIS//DTD DocBook XML V4.5//EN"
+  "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd"
 [
 ]>
 
-<appendix id="app.changes">
-  <title>Changes</title>
-  <para>Find a list of changes of the style guide over its previous version
-    below.
-  </para>
-  <!-- Use simple past. Prepend new versions to the beginning of the list. -->
+<article id="art.styleguide.changes">
+  <title>List of Changes to the Style Guide</title>
+  <articleinfo>
+    <date><?dbtimestamp?></date>
+  </articleinfo>
+
+  <!-- Add new versions to the beginning of the list. -->
 
   <sect1 id="sec.changes.q4.2013">
     <title>January 2013 Release</title>
 
     <itemizedlist>
       <listitem>
-        <para>Restructured large parts of the Style Guide</para>
+        <para>Restructured large parts of the style guide</para>
         <itemizedlist>
+          <listitem>
+            <para>Promoted <xref linkend="sec.audience"/> to a
+              <sgmltag>sect1</sgmltag>. Added new paragraph about how to
+              mark the target audience in documentation.
+            </para>
+          </listitem>
           <listitem>
             <para>Removed <emphasis>Creating a Consistent Structure: Lessons
               for Lizards</emphasis> section.
@@ -27,16 +34,19 @@
           <listitem>
             <para>Renamed <emphasis>Creating a Consistent Structure: Official
               SUSE Manuals</emphasis> to
-              <emphasis>Outline of a Manual</emphasis>. Promoted
-              <emphasis>Outline of a Manual</emphasis> to a
-              <sgmltag>sect1</sgmltag>.
+              <emphasis>Outline of a Manual</emphasis> and promoted
+              to a <sgmltag>sect1</sgmltag>.
             </para>
           </listitem>
           <listitem>
             <para>Split <emphasis>Writing and Editing</emphasis> into
               <xref linkend="sec.language"/> and
               <xref linkend="sec.structure.markup"/> and moved its subsections
-              where they fit best. Moved <xref linkend="sec.procedure"/>
+              where they fit best.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Moved <xref linkend="sec.procedure"/>
               (formerly <emphasis>Creating Procedures</emphasis>)
               and <xref linkend="sec.computerelement"/> (formerly
               <emphasis>Presenting Computer Elements</emphasis>) as
@@ -55,23 +65,165 @@
             </para>
           </listitem>
           <listitem>
-            <para>Renamed <emphasis>Spelling Terms</emphasis> to
-              <xref linkend="app.terminology"/> moved it into an appendix.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Outsourced <xref linkend="app.terminology"/>,
+            <para>Outsourced <xref linkend="app.terminology"/> and
               <xref linkend="app.markup"/> into separate DocBook files.
             </para>
           </listitem>
         </itemizedlist>
       </listitem>
       <listitem>
-        <para>Added this list of changes as a separate file.
+        <para>Restructured terminology list, added more terminology</para>
+        <itemizedlist>
+          <listitem>
+            <para>Renamed <emphasis>Spelling Terms</emphasis> to
+              <xref linkend="app.terminology"/> and moved it into an appendix.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Centralized much of the information in the introductory
+              paragraph of <emphasis>Spelling Terms</emphasis> in
+              <xref linkend="sec.language"/>.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Change table layout from two columns (<quote>Word or
+              Phrase</quote> and <quote>Usage Guideline</quote>) to three
+              (<quote>Accepted</quote>, <quote>Rejected</quote>, and
+              <quote>Usage Guideline</quote>).
+            </para>
+          </listitem>
+          <listitem>
+            <para>Added prefix <emphasis>(to)</emphasis> to all verbs.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Added grammatical classification of word to all entries.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Added entries for <emphasis>advice</emphasis>,
+              <emphasis>(to) advise</emphasis>, <emphasis>after</emphasis>,
+              <emphasis>although</emphasis>, <emphasis>and</emphasis>,
+              <emphasis>appendixes</emphasis>, <emphasis>Audio CD</emphasis>,
+              <emphasis>because of</emphasis>,
+              <emphasis>(to) boot using/via PXE</emphasis>,
+              <emphasis>Btrfs</emphasis>, <emphasis>but</emphasis>,
+              <emphasis>CD</emphasis>, <emphasis>CD-ROM</emphasis>,
+              <emphasis>CUPS</emphasis>, <emphasis>(to) close sth.</emphasis>,
+              <emphasis>could</emphasis>,
+              <emphasis>Common Unix Printing System</emphasis>
+              <emphasis>dialog</emphasis>, <emphasis>directory</emphasis>,
+              <emphasis>DVD</emphasis>, <emphasis>e-book</emphasis>,
+              <emphasis>EPUB</emphasis>, <emphasis>easy, easily</emphasis>,
+              <emphasis>end user</emphasis>,
+              <emphasis>etc.</emphasis>, <emphasis>Ext3</emphasis>,
+              <emphasis>Ext4</emphasis>, <emphasis>flavor</emphasis>,
+              <emphasis>flash disk</emphasis>*,
+              <emphasis>graphical user interface</emphasis>,
+              <emphasis>HTTP</emphasis>, <emphasis>indexes</emphasis>,
+              <emphasis>IPv4</emphasis>, <emphasis>IPv6</emphasis>,
+              <emphasis>license</emphasis>,
+              <emphasis>(to) license sth.</emphasis>,
+              <emphasis>lowercase</emphasis>, <emphasis>just</emphasis>,
+              <emphasis>need to</emphasis>,
+              <emphasis>might</emphasis>, <emphasis>(to) multitask</emphasis>,
+              <emphasis>must</emphasis>, <emphasis>openSUSE</emphasis>,
+              <emphasis>open source</emphasis>,
+              <emphasis>(to) preconfigure sth.</emphasis>,
+              <emphasis>preconfigured</emphasis>,
+              <emphasis>(to) press sth.</emphasis>,
+              <emphasis>PXE</emphasis>, <emphasis>PXE boot</emphasis>,
+              <emphasis>(to) quit sth.</emphasis>,
+              <emphasis>(to) register</emphasis>,
+              <emphasis>(to) register at sth.</emphasis>,
+              <emphasis>(to) register for sth.</emphasis>,
+              <emphasis>SLE</emphasis>, <emphasis>SLED</emphasis>,
+              <emphasis>SLES</emphasis>, <emphasis>SUSE Cloud</emphasis>,
+              <emphasis>SUSE Linux Enterprise</emphasis>,
+              <emphasis>SUSE Linux Enterprise Desktop</emphasis>,
+              <emphasis>SUSE Linux Enterprise Server</emphasis>,
+              <emphasis>SUSE Manager</emphasis>,
+              <emphasis>SUSE Studio</emphasis>,
+              <emphasis>scrollbar</emphasis>*,
+              <emphasis>simple, simply</emphasis>,
+              <emphasis>(to) select sth.</emphasis>,
+              <emphasis>(to) shut sth. down</emphasis>,
+              <emphasis>shutdown</emphasis>,
+              <emphasis>(to) start sth. up</emphasis>,
+              <emphasis>TAR archive</emphasis>*,
+              <emphasis>(to) type sth. (into sth.)</emphasis>,
+              <emphasis>Unix</emphasis>, <emphasis>uppercase</emphasis>,
+              <emphasis>when</emphasis>, <emphasis>Wi-fi</emphasis>*, and
+              <emphasis>YaST</emphasis>.
+            </para>
+            <para>(An * marks potentially interesting changes.)</para>
+          </listitem>
+          <listitem>
+            <para>Modified entries where the second word of a compound is
+              <quote>name</quote>. These are now written as two words:
+              <emphasis>file name</emphasis>, <emphasis>host name</emphasis>,
+              <emphasis>path name</emphasis>, <emphasis>user name</emphasis>.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Modified entry for
+              <quote>screenshot</quote> (now one word).
+            </para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+      <listitem>
+        <para>Switched from
+          <citetitle>Merriam-Webster Collegiate Dictionary</citetitle> to
+          <ulink url="http://www.merriam-webster.com/"/> web site as the
+          authoritative source of spellings.
         </para>
       </listitem>
       <listitem>
-        <para>Added list of authors.
+        <para>Added <xref linkend="sec.prompt"/> to document how to use prompts
+          in <sgmltag>screen</sgmltag> elements.
+        </para>
+      </listitem>
+      <listitem>
+        <para>In <xref linkend="sec.name"/>, added Geeko, Foxkeh, Konqi, and
+          Duke to the list of mascots to choose from.
+        </para>
+      </listitem>
+      <listitem>
+        <para>Removed all occurrences of <quote>basically</quote> and
+          <quote>stuff</quote>. Removed other occurrences of colloquial
+          language.
+        </para>
+      </listitem>
+      <listitem>
+        <para>Updated various examples to use newer software versions or to not
+          specify a software version (<emphasis>soffice</emphasis> to
+          <emphasis>loffice</emphasis>, <emphasis>SUSE LINUX 9.1.4.2</emphasis>
+          to <emphasis>SUSE Linux Enterprise</emphasis>).
+        </para>
+      </listitem>
+      <listitem>
+        <para>Shortened and clarified many parts of the style guide to avoid
+          tautologies and unnecessary explanations. See:
+        </para>
+      </listitem>
+      <listitem>
+        <para>Removed differentiation between the many types of authors files
+          from <xref linkend="sec.outline"/>. This was too complicated to be
+          practical. Also, translators were so far never mentioned.
+        </para>
+      </listitem>
+      <listitem>
+        <para>Added <quote>Objective before Instruction</quote> rule to
+          <xref linkend="sec.sentence.structure"/>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>Added this list of changes as a separate article.
+        </para>
+      </listitem>
+      <listitem>
+        <para>Added list of authors as a separate DocBook file.
         </para>
       </listitem>
       <listitem>
@@ -82,4 +234,4 @@
     </itemizedlist>
 
   </sect1>
-</appendix>
+</article>

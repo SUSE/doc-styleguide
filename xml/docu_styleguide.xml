@@ -173,8 +173,9 @@
               <listitem>
                 <formalpara>
                   <title>Abstract</title>
-                  <para>Abstracts briefly summarize the information provided in
-                    a chapter. Rather than writing about what the chapter does,
+                  <para>Abstracts summarize the information provided in a
+                    chapter in five or fewer sentences. Rather than writing
+                    about what the chapter does,
                     summarize the information the chapter contains. This gives
                     readers an idea of what they can learn from the
                     chapter.
@@ -182,8 +183,8 @@
                 </formalpara>
                 <example id="ex.style.abstract">
                   <title>An Example Abstract</title>
-                  <para>openSUSE ships with a number of different file
-                    systems, including Btrfs, Ext3, Ext4, from
+                  <para>SUSE Linux Enterprise ships with a number of different
+                    file systems, including Btrfs, Ext3, Ext4, from
                     which you can choose at installation time. Each file system
                     has advantages and disadvantages that make it more or less
                     suitable for a scenario. Professional high-performance
@@ -265,7 +266,7 @@
   </sect1>
 
   <sect1 id="sec.name">
-      <title>Naming of Example Items</title>
+      <title>Names of Example Items</title>
 
       <para>This section summarizes some conventions to use for creating
         generic names for objects that can occur in documentation. At least
@@ -273,7 +274,7 @@
         (see <xref linkend="sec.entity"/>).
       </para>
 
-      <sect2>
+      <sect2 id="sec.domain">
         <title>Domains</title>
 
         <para>Use <ulink url="http://www.example.com"/> and
@@ -282,7 +283,7 @@
         </para>
       </sect2>
 
-      <sect2>
+      <sect2 id="sec.host">
         <title>Host Names</title>
 
         <para>Use <systemitem>sun</systemitem> and
@@ -299,21 +300,21 @@
           <literal>0</literal> and <literal>255</literal>.
           To create examples using a larger setup, use
           addresses from the private network ranges. See
-          <ulink url="http://en.wikipedia.org/wiki/Private_network#Private_IPv4_address_spaces"/>
+          <ulink url="http://en.wikipedia.org/wiki/Private_network"/>
           for more information.
         </para>
       </sect2>
 
       <sect2 id="sec.ipv6">
-        <title>IPv4 Adresses</title>
+        <title>IPv6 Adresses</title>
 
         <para>Use addresses from the subnet <literal>2001:0db8::/32</literal>
-          for examples. That is, after the <literal>2001:0db8:</literal> prefix
-          add six four-digit numbers, each separated by a colon on both sides
-          where. Each of the hexadecimal digits may have a value between
+          for examples. That is, after the <literal>2001:0db8:</literal> prefix,
+          add six four-digit numbers, each separated by a colon on both sides.
+          Each of the hexadecimal digits may have a value between
           <literal>0</literal> and <literal>f</literal>. A valid example URL is
           <literal>2001:0db8:0123:4567:89ab:cdef:1234:5678</literal>. See
-          <ulink url="http://en.wikipedia.org/wiki/Private_network#Private_IPv6_address_spaces"/>
+          <ulink url="http://en.wikipedia.org/wiki/IPv6_subnetting_reference"/>
           for more information.
         </para>
       </sect2>
@@ -501,6 +502,7 @@
       </itemizedlist>
       <para>Most Linux file systems are case-sensitive. Use capitals exactly
         as they appear in the file system. For details on markup, refer to
+        <xref linkend="sec.otherexternal"/> and
         <xref linkend="sec.markup.inline.filenames_and_dirs"/>.
       </para>
     </sect2>
@@ -521,7 +523,7 @@
     <sect2 id="sec.numbers">
       <title>Numbers and Measurements</title>
 
-      <para>Write out the numbers zero through nine and use numerals for all
+      <para>Write integers zero through ten as words and use numerals for all
         others. For measurements, always use numerals when an abbreviation is
         used for the unit. For more information, refer to
         <citetitle>The Chicago Manual of Style</citetitle> 9.6.
@@ -569,6 +571,10 @@
         Avoid complicated clauses. Make sure that the relationship between
         subject, verb, and object are clear. Avoid joining sentences with
         semicolons. Avoid ending sentences with prepositions.
+      </para>
+      <para>Always let the reader know the objective of an action before
+        describing the action itself. As an example, write: <quote>To
+        restore world peace, click <guimenu>Shake Hands</guimenu>.</quote>
       </para>
     </sect2>
 
@@ -752,7 +758,7 @@ title Disk
    <sgmltag>screen</sgmltag> element which creates a new block.
   </para>
 
-    <sect3 id="sec.ce.cmd">
+    <sect3 id="sec.command">
       <title>Commands</title>
       <para>
     When referring to an application, use the
@@ -779,12 +785,13 @@ title Disk
 
     </para>
     </sect3>
-    <sect3 id="sec.ce.var">
+
+    <sect3 id="sec.variable">
       <title>Variables</title>
-      <para>
-    There are currently two different kinds of variable environments used in
-    SUSE documentation:
-   </para>
+
+      <para>There are currently two different kinds of variable environments
+        used in SUSE documentation:
+      </para>
       <itemizedlist>
         <listitem>
           <para>
@@ -808,37 +815,39 @@ title Disk
       <title>Keys and Key Combinations</title>
 
       <para>Capitalize all keys as printed on a standard keyboard. Following
-        this rule, capitalize all letter keys. If you need to refer to a capitalized
-     character, use <keycombo><keycap function="shift"/><keycap>Z</keycap></keycombo>,
-     for example. Introduce this convention by means of the
-     <quote>Typographical Conventions</quote> section of the introduction.
-    </para>
-        <para>
-     The localization of the identifiers for both modifiers and special keys is
-     handled by DocBook itself. Just use the
-     <sgmltag>keycap</sgmltag> tag and an appropriate
-     <literal>function</literal> value. Find details in
-     <xref linkend="sec.markup.inline.keys"/>.
-    </para>
-      </sect3>
-      <sect3 id="sec.ce.gui.guielement">
-        <title>User Interface Elements</title>
-        <para>When using labels of GUI elements, do not include ending punctuation
-     like <literal>...</literal> or <literal>:</literal>. Whenever possible,
-     refer to the elements without identifying them as a special type of
-     dialog element. For example, use <quote>Click
-     <guimenu>OK</guimenu></quote> rather than <quote>Click the
-     <guimenu>OK</guimenu> button.</quote> However, some situations require
-     a more specific wording, for example, if a dialog has many different
-     graphical elements.
-    </para>
-        <para>
-     For detailed instructions for the appropriate markup, especially
-     concerning buttons, labels, and menu structures, refer to
-     <xref linkend="sec.markup.inline.menus"/>.
-    </para>
+        this rule, capitalize all letter keys. If you need to refer to a
+        capitalized character, use
+        <keycombo><keycap function="shift"/><keycap>Z</keycap></keycombo>,
+        for example. Introduce this convention by means of the
+        <quote>Typographical Conventions</quote> section of the introduction.
+      </para>
+      <para>Localization of the identifiers for both modifiers and
+        special keys can be handled by DocBook itself, if you use the
+        <sgmltag>keycap</sgmltag> tag and an appropriate
+        <literal>function</literal> value. For details, refer to
+        <xref linkend="sec.markup.inline.keys"/>.
+      </para>
+    </sect3>
+
+    <sect3 id="sec.uielement">
+      <title>User Interface Elements</title>
+
+      <para>When using labels of GUI elements, do not include ending punctuation
+        like <literal>...</literal> or <literal>:</literal>. Whenever possible,
+        refer to the elements without identifying them as a special type of
+        dialog element. For example, use <quote>Click
+        <guimenu>OK</guimenu></quote> rather than <quote>Click the
+        <guimenu>OK</guimenu> button.</quote> However, some situations require
+        a more specific wording, for example, if a dialog has many different
+        graphical elements.
+      </para>
+      <para>For detailed instructions for the appropriate markup, especially
+        concerning buttons, labels, and menu structures, refer to
+        <xref linkend="sec.markup.inline.menus"/>.
+      </para>
     </sect3>
   </sect2>
+
     <sect2 id="sec.crossreference">
       <title>Cross References</title>
 
@@ -1877,6 +1886,5 @@ kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="docu_styleguide.terminology.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="docu_styleguide.markup.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="docu_styleguide.changes.xml"/>
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gfdl.xml"/>
 </article>

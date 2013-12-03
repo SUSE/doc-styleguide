@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE appendix PUBLIC
-  "-//OASIS//DTD DocBook XML V4.3//EN"
-  "http://www.oasis-open.org/docbook/xml/4.3/docbookx.dtd"
+  "-//OASIS//DTD DocBook XML V4.5//EN"
+  "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd"
 [
 ]>
 
@@ -98,7 +98,7 @@
             </row>
             <row>
               <entry>Bash</entry>
-              <entry>bash</entry>
+              <entry>BASH, bash</entry>
               <entry>noun; spelling as per the GNU Bash manual</entry>
             </row>
             <row>
@@ -595,7 +595,7 @@
             </row>
             <row>
               <entry>kdump</entry>
-              <entry>KDUMP,Kdump</entry>
+              <entry>KDUMP, Kdump</entry>
               <entry>command; only for command
                 <remark>So, commands aren't nouns, then? -- sknorr, 2013-09-16
                 </remark>
@@ -751,11 +751,6 @@
               <entry>metadata</entry>
               <entry>meta data, meta-data, metadatas</entry>
               <entry>one word</entry>
-            </row>
-            <row>
-              <entry>submenu</entry>
-              <entry>sub menu, sub-menu</entry>
-              <entry>noun</entry>
             </row>
             <row>
               <entry>(to) middle-click sth.</entry>
@@ -1074,6 +1069,11 @@
               <entry>noun</entry>
             </row>
             <row>
+              <entry>submenu</entry>
+              <entry>sub menu, sub-menu</entry>
+              <entry>noun</entry>
+            </row>
+            <row>
               <entry>screenshot</entry>
               <entry>screen shot, screen-shot</entry>
               <entry>noun</entry>
@@ -1115,7 +1115,7 @@
             </row>
             <row>
               <entry>shutdown</entry>
-              <entry>shut down, shutdown</entry>
+              <entry>shut down, shut-down</entry>
               <entry>adjective or noun</entry>
             </row>
             <row>
