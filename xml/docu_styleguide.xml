@@ -762,7 +762,7 @@ title Disk
       <title>Commands</title>
       <para>
     When referring to an application, use the
-    <sgmltag>phrase role="productname"</sgmltag> element around it. This will
+    <sgmltag class="starttag">phrase role="productname"</sgmltag> element around it. This will
     not result in a visual change but disables hyphenation:
    </para>
       <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
@@ -1478,8 +1478,6 @@ title Disk
     <para>Most products referenced in the documentation are trademarked.
       Follow these rules when dealing with these terms:
     </para>
-    <para>
-    </para>
     <itemizedlist>
       <listitem>
         <para>Never use trademarks in headings.</para>
@@ -1849,7 +1847,7 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
         <varlistentry>
           <term>Entity Selection</term>
           <listitem>
-            <para>Use the entity name <literal>&amp;product;</literal> to
+            <para>Use the entity name <sgmltag class="genentity">product</sgmltag> to
               identify the product for which the documentation is built. Set the
               value of this entity is set once per release and let it
               expand to the name of the current product.
@@ -1869,7 +1867,7 @@ kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
               the preferred form of the name. If you do define an
               additional acronym version of a longer product name, append
               an <literal>a</literal> to the end of the entity name, such
-              as in <literal>&amp;slesa;</literal>.
+              as in <sgmltag class="genentity">slesa</sgmltag>.
               </para>
           </listitem>
         </varlistentry>
