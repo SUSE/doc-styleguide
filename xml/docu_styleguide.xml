@@ -24,38 +24,43 @@
       <para>All content is copyright &copy; 2007&ndash;<?dbtimestamp format="Y"?>
         SUSE LLC. All rights reserved.
       </para>
-      <para>Permission is granted to copy, distribute and/or modify this document
-        under the terms of the GNU Free Documentation License, Version 1.2 or
-        any later version published by the Free Software Foundation; with the
-        Invariant Section being Trademark Policy, with the Front-Cover Texts
-        being <citetitle>Documentation Style Guide</citetitle> and
-        <citetitle>SUSE and openSUSE</citetitle>. A copy of the license is
-        included in <xref linkend="app.gdfl"/>.
+      <para>This manual is protected under SUSE intellectual property rights.
+        By reproducing, duplicating or distributing this manual you explicitly
+        agree to conform to the terms and conditions of this license
+        agreement.
       </para>
-      <formalpara>
-        <title>Disclaimer</title>
-        <para>All information found in this book has been compiled with utmost
-          attention to detail. However, this does not guarantee complete
-          accuracy. Neither Novell, Inc., SUSE LINUX Products GmbH, the authors,
-          nor the translators shall be held liable for possible errors or the
-          consequences thereof.
-        </para>
-      </formalpara>
-      <formalpara>
-        <title>Trademark Policy</title>
-        <para>Novell, the Novell logo, the N logo, SUSE, openSUSE, and the SUSE
-          <quote>gecko</quote> logo are trademarks and registered trademarks of
-          Novell, Inc. in the United States and other countries. Linux is a
-          registered trademark of Linus Torvalds. All other third party
-          trademarks are the property of their respective owners.
-        </para>
-      </formalpara>
+      <para>This manual may be freely reproduced, duplicated and distributed
+        either as such or as part of a bundled package in electronic and/or
+        printed format, provided however that the following conditions are
+        fulfilled:
+      </para>
+      <para>That this copyright notice and the names of authors and contributors
+        appear clearly and distinctively on all reproduced, duplicated and
+        distributed copies. That this manual, specifically for the printed
+        format, is reproduced and/or distributed for noncommercial use only.
+        The express authorization of SUSE LLC must be obtained prior to
+        any other use of any manual or part thereof.
+      </para>
+      <para>For SUSE or Novell trademarks, see the Novell Trademark and Service
+        Mark list
+        <ulink
+          url="http://www.novell.com/company/legal/trademarks/tmlist.html"/>.
+        All other third party trademarks are the property of their respective
+        owners. A trademark symbol (&reg;, &trade; etc.) denotes a SUSE or
+        Novell trademark; an asterisk (*) denotes a third party trademark.
+      </para>
+      <para>All information found in this book has been compiled with utmost
+        attention to detail. However, this does not guarantee complete accuracy.
+        Neither SUSE LLC, SUSE LINUX Products GmbH, the authors, nor the
+        translators shall be held liable for possible errors or the consequences
+        thereof.
+      </para>
     </legalnotice>
   </articleinfo>
   <abstract>
     <para>This guide provides answers to writing, style, and layout questions
       commonly arising when editing SUSE or openSUSE documentation. The
-      NovDoc/DocBook markup reference at the end of this guide will help you
+      Novdoc/DocBook markup reference at the end of this guide will help you
       choose the right XML tag for your purpose. Following this guide will
       make your documentation more understandable and easier to translate.
     </para>
@@ -104,7 +109,8 @@
         <term>Title Page</term>
         <listitem>
           <para>The title page contains the logo, a title, the name of the
-            product described, and its version.
+            product described, and its version. This part of a book is created
+            automatically from the title and author information.
           </para>
         </listitem>
       </varlistentry>
@@ -114,7 +120,8 @@
           <para>The imprint on the second page lists edition, copyright
             notice, and the names of contributors. Add the names of all
             authors and contributors to a separate file
-            <filename>authors.xml</filename>.
+            <filename>authors.xml</filename>. This part of a book is then
+            created automatically from the title and author information.
           </para>
         </listitem>
       </varlistentry>
@@ -354,9 +361,9 @@
 
       <para>Do not use any abbreviations, except <emphasis>etc.</emphasis> or
         abbreviations of common units of measurement. Do not create
-        a plural of these abbreviations by adding an <quote>s.</quote> Use a
-        non-breaking (<sgmltag>&amp;nbsp;</sgmltag>) space between
-        the numeral and corresponding unit abbreviation.
+        a plural of abbreviations by adding an <quote>s.</quote> Refer to
+        <xref linkend="sec.number"/> for more information about units of
+        measurement.
       </para>
     </sect2>
     <sect2 id="sec.acronym">
@@ -434,8 +441,8 @@
     <sect2 id="sec.comma">
       <title>Commas</title>
 
-      <para>Use commas between all items in a series of three or more elements
-        (<quote>Oxford commas</quote>). For example, write <quote>a, b,
+      <para>Use commas between all items in a series of three or more elements.
+        For example, write <quote>a, b,
         and c.</quote> Use commas around phrases like <emphasis>for
         example</emphasis> and <emphasis>that is</emphasis>. Introductory
         phrases at the beginning of a sentence are normally followed by a comma.
@@ -520,12 +527,14 @@
       </para>
     </sect2>
 
-    <sect2 id="sec.numbers">
+    <sect2 id="sec.number">
       <title>Numbers and Measurements</title>
 
       <para>Write integers zero through ten as words and use numerals for all
         others. For measurements, always use numerals when an abbreviation is
-        used for the unit. For more information, refer to
+        used for the unit. Use a non-breaking (<sgmltag>&amp;nbsp;</sgmltag>)
+        space between the numeral and corresponding unit abbreviation.
+        For more information, refer to
         <citetitle>The Chicago Manual of Style</citetitle> 9.6.
       </para>
     </sect2>
@@ -603,7 +612,7 @@
         <quote>Administrative tasks are performed by the root user</quote>
         is passive voice. Passive voice can be used occasionally if
         there is a need to place emphasis on the object of the verb or
-        if the doer of the action is unknown. <quote>A SAMBA server
+        if the performer of the action is unknown. <quote>A SAMBA server
         must be configured in the network</quote> is an example of
         proper use of passive voice. The emphasis is on the server,
         not on the person configuring it.
@@ -649,8 +658,7 @@
     on the partition size. Do not try to interrupt
     this process. This could result in a corrupted file
     system that renders the installation
-    unusable. Proceed with the installation after
-    formatting has been completed.
+    unusable.
   &lt;/para&gt;
 &lt;/warning&gt;</screen>
             </example>
@@ -751,28 +759,27 @@ title Disk
       </sect2>
   <sect2 id="sec.computerelement">
     <title>Computer Elements</title>
-    <para>
-   Only specify the software component in ambiguous contexts. Format user input
-   and system output as an inline element when it is shorter than 30 characters.
-   In all other cases, close the current paragraph and use the
-   <sgmltag>screen</sgmltag> element which creates a new block.
-  </para>
+    <para>Only specify the software component in ambiguous contexts. Format
+      user input and system output as an inline element when it is shorter
+      than 30 characters. In all other cases, close the current paragraph and
+      use the <sgmltag>screen</sgmltag> element which creates a new block.
+    </para>
+
+
 
     <sect3 id="sec.command">
       <title>Commands</title>
-      <para>
-    When referring to an application, use the
-    <sgmltag class="starttag">phrase role="productname"</sgmltag> element around it. This will
-    not result in a visual change but disables hyphenation:
-   </para>
+      <para>When referring to an application, use the
+        <sgmltag class="starttag">phrase role="productname"</sgmltag> element around it.
+        This will not result in a visual change but disables hyphenation:
+      </para>
       <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
-      <para>
-    Linux commands are case-sensitive, so always present them as they appear
-    in the system. Commands can be embedded in the flowing text or presented
-    as part of screen environments or examples. In flowing text, use
-    <sgmltag>command</sgmltag> when referring to an actual command you would
-    use on a command line:
-   </para>
+      <para>Make sure to capitalize commands exactly as they are executed.
+        Commands can be embedded in running text or
+        presented as part of a screen environment. In running text,
+        use <sgmltag>command</sgmltag> when referring to an actual command you
+        would use on a command line:
+      </para>
       <literallayout>Use <command>loffice</command> to start LibreOffice from the command line.
    </literallayout>
       <para>
@@ -794,19 +801,18 @@ title Disk
       </para>
       <itemizedlist>
         <listitem>
-          <para>
-      Substitutable contents that the user should replace with appropriate
-      values. For example:
-     </para>
-          <literallayout>To list the contents of a directory, execute <command>ls <replaceable>dir</replaceable></command>.</literallayout>
+          <para>Placeholders that should be replace with appropriate
+            values. For example:
+          </para>
+          <literallayout>To list the contents of a directory, execute <command>ls <replaceable>directory</replaceable></command>.</literallayout>
         </listitem>
         <listitem>
-          <para>
-      References to names of variables rather than to their value. Example:
-     </para>
+          <para>References to names of variables rather than to their value.
+            Example:
+          </para>
           <literallayout>To select another display manager, start the YaST
-      sysconfig editor and change the value of
-      <varname>DISPLAYMANAGER</varname>.</literallayout>
+            sysconfig editor and change the value of
+            <replaceable>DISPLAYMANAGER</replaceable>.</literallayout>
         </listitem>
       </itemizedlist>
     </sect3>
@@ -889,8 +895,9 @@ title Disk
       </para>
       <para>Use the <sgmltag>ulink</sgmltag> tag to mark up URLs that can be
         opened with a web browser, such as <ulink url="http://www.suse.de"/>.
-        Always prefix the correct protocol (such as <literal>http://</literal>),
-        otherwise the links will not work. Never use <sgmltag>filename</sgmltag>
+        Always prefix the correct protocol (for examle,
+        <literal>http://</literal>),
+        otherwise links will not work. Never use <sgmltag>filename</sgmltag>
         for a link, as that would both disable the link checker and make the
         link unclickable. Avoid entering a text label between the
         <sgmltag>ulink</sgmltag> start and end tags.
@@ -919,54 +926,43 @@ title Disk
     </sect2>
       <sect2 id="sec.example">
         <title>Examples</title>
-        <para>
-     Like figures and screenshots, examples are used to illustrate complex
-     processes. Most of the rules established for the use of these elements
-     in <xref linkend="sec.graphic"/> also apply to examples.
-    </para>
-        <para>
-     If you intend to use examples, consider the following:
-    </para>
+        <para>Examples are used to illustrate complex processes.
+          Many of the rules established in <xref linkend="sec.graphic"/> also
+          apply to examples.
+        </para>
         <itemizedlist>
           <listitem>
-            <para>
-       Examples are used to present long commands and their output, lines of
-       code, configuration files, excerpts of configuration files, and
-       output, such as system messages.
-      </para>
+            <para>Examples are used to present long commands, commands
+              together with their output, lines of code, configuration files,
+              excerpts of configuration files, and output, such as system
+              messages.
+            </para>
           </listitem>
           <listitem>
-            <para>
-       Make sure that the example is crucial to the understanding of the
-       process as a whole. Like figures and screenshots, examples stick out
-       from the text and are distracting when overused or used improperly.
-      </para>
+            <para>Never indent text inside <sgmltag>screen</sgmltag>
+              elements as you do in other XML elements. All whitespace inside
+              <sgmltag>screen</sgmltag> elements shows up verbatim.
+            </para>
           </listitem>
           <listitem>
-            <para>
-       If you need to present just a function or application call on the
-       command line, it is normally sufficient to do so inline. However, if
-       you need to feature both a command and its output on screen, use an
-       example environment.
-      </para>
-            <example id="ex.ex.call">
-              <title>Calling ps to Get Process Information</title>
-              <screen><command>ps <option>-xa</option></command>
+            <para>Only use examples where they are necessary for understanding
+              the documentation.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Always give examples a title and an ID.</para>
+          </listitem>
+        </itemizedlist>
+        <example id="ex.ex.call">
+          <title>Calling ps to Get Process Information</title>
+          <screen><prompt>tux > </prompt><command>ps <option>-xa</option></command>
 
 5170 ?        S      0:00 kdeinit: khotkeys
 5172 ?        S      0:02 kdeinit: kdesktop
 5174 ?        S      0:04 kdeinit: kicker
 5177 ?        S      0:00 kdeinit: kpowersave
 5179 ?        S      0:00 kdeinit: klipper</screen>
-            </example>
-          </listitem>
-          <listitem>
-            <para>
-       The example environment should contain both a title and an ID to
-       enable referencing and easier coordination with the text.
-      </para>
-          </listitem>
-        </itemizedlist>
+        </example>
         <para>
      For details on markup, refer to
      <xref linkend="sec.markup.block.examples"/>.
@@ -1694,7 +1690,7 @@ geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
     <itemizedlist>
       <listitem>
         <para>Representation of special characters that cannot easily
-          be displayed or entered.
+          be displayed, entered or memorized.
         </para>
       </listitem>
       <listitem>

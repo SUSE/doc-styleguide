@@ -1,13 +1,16 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE book PUBLIC
-  "-//OASIS//DTD DocBook XML V4.5//EN"
-  "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd"
-[
+<?xml version="1.0"?>
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook45-profile.xsl"
+                 type="text/xml" title="Profiling step"?>
+<!DOCTYPE book PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY copy "©">
+<!ENTITY reg "®">
+<!ENTITY tm "™">
+<!ENTITY sm "℠">
 ]>
 
 <book lang="en" id="styleguide.all">
- <title>SUSE Documentation Style Guide</title>
-<?dbhtml filename="index.html"?>
+  <title>SUSE Documentation Style Guide</title>
+  <?dbhtml filename="index.html"?>
 
   <!-- Style Guide-->
   <xi:include href="docu_styleguide.xml" xmlns:xi="http://www.w3.org/2001/XInclude"/>
