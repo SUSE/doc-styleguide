@@ -162,18 +162,18 @@
               optional elements)
             </title>
             <screen>chapter
-+--- title
-+--- abstract
-+--- section
-.    +--- introductory text
-.    +--- procedure environment*
-.    +--- subsection
-.    .    ...
-.    +--- troubleshooting*
-.    +--- for more information*
-.
-+--- troubleshooting*
-+--- for more information*</screen>
+├─── title
+├─── abstract
+├─── section
+┊    ├───  introductory text
+┊    ├───  procedure environment*
+┊    ├───  subsection
+┊    ┊     ...
+┊    ├───  troubleshooting*
+┊    └───  for more information*
+┊
+├───  troubleshooting*
+└───  for more information*</screen>
           </example>
 
           <itemizedlist>
@@ -235,16 +235,16 @@
                 <para>If you know of common mistakes or other problems a
                   user might encounter in a certain situation, list them in
                   a section named <emphasis>Troubleshooting</emphasis>.
-                  Structure the section by using a
-                  <sgmltag>variablelist</sgmltag>, in which you name a typical
-                  symptom and then a solution. In case you want to describe
+                  Use the DocBook element <sgmltag>qandaset</sgmltag> (a
+                  Question and Answer section) to mark up
+                  <emphasis>Troubleshooting</emphasis> problems.
+                  In case you want to describe
                   solutions to more than ten problems, add topical subsections
+                  (<sgmltag class="starttag">qandadiv</sgmltag> elements)
                   below the <emphasis>Troubleshooting</emphasis> section.
                 </para>
               </formalpara>
-              <para>Use the DocBook element <sgmltag>qandaset</sgmltag> (a
-                Question and Answer section) to mark up
-                <emphasis>Troubleshooting</emphasis> problems.
+              <para>
               </para>
             </listitem>
             <listitem>
@@ -714,18 +714,20 @@
     </sect2>
       <sect2 id="sec.callout">
         <title>Callouts</title>
-        <para>
-     Do not use more than ten callouts per example.
-    </para>
-        <example id="ex.co.code">
+        <para>Add the <sgmltag class="starttag">co</sgmltag> elements directly
+          after the part of a screen that you want to annotate. Do not try to
+          align them above the part of a screen to annotate.
+          Do not use more than ten callouts per example.
+        </para>
+        <example id="example.callout">
           <title>A Configuration File with Callouts</title>
           <screen>
-color white/blue black/light-gray   <co id="col"/>
-default 0   <co id="def"/>
-timeout 8   <co id="time"/>
+color white/blue black/light-gray <co id="col"/>
+default 0 <co id="def"/>
+timeout 8 <co id="time"/>
 gfxmenu (hd0,0)/boot/message
 
-title SUSE Linux enterprise 12
+title SUSE Linux Enterprise
     kernel (hd0,0)/boot/vmlinuz root=/dev/hda1 vga=0x31a selinux=0
     splash=silent resume=/dev/hda2 desktop elevator=as  showopts
     initrd (hd0,0)/boot/initrd
@@ -756,22 +758,24 @@ title Disk
      For details on the markup of this element, refer to
      <xref linkend="sec.markup.block.callouts"/>.
     </para>
-      </sect2>
+  </sect2>
+
   <sect2 id="sec.computerelement">
     <title>Computer Elements</title>
+
     <para>Only specify the software component in ambiguous contexts. Format
       user input and system output as an inline element when it is shorter
       than 30 characters. In all other cases, close the current paragraph and
       use the <sgmltag>screen</sgmltag> element which creates a new block.
     </para>
 
-
-
     <sect3 id="sec.command">
       <title>Commands</title>
+
       <para>When referring to an application, use the
-        <sgmltag class="starttag">phrase role="productname"</sgmltag> element around it.
-        This will not result in a visual change but disables hyphenation:
+        <sgmltag class="starttag">phrase role="productname"</sgmltag> element
+        around it. This will not result in a visual change but disables
+        hyphenation:
       </para>
       <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
       <para>Make sure to capitalize commands exactly as they are executed.
@@ -780,41 +784,16 @@ title Disk
         use <sgmltag>command</sgmltag> when referring to an actual command you
         would use on a command line:
       </para>
-      <literallayout>Use <command>loffice</command> to start LibreOffice from the command line.
-   </literallayout>
-      <para>
-    Place options inside the command tags. Options can also be used in text,
-    separately from <sgmltag>command</sgmltag>. See
-    <xref linkend="sec.markup.inline.commands"/>.
-   </para>
-      <para>
-    Use markup for commands even inside <sgmltag>screen</sgmltag> environments.
-
-    </para>
-    </sect3>
-
-    <sect3 id="sec.variable">
-      <title>Variables</title>
-
-      <para>There are currently two different kinds of variable environments
-        used in SUSE documentation:
+      <literallayout>Use <command>loffice</command> to start LibreOffice from
+        the command line.
+      </literallayout>
+      <para>Place options inside the command tags. Options can also be used in
+        text, separately from <sgmltag>command</sgmltag>. See
+        <xref linkend="sec.markup.inline.commands"/>.
       </para>
-      <itemizedlist>
-        <listitem>
-          <para>Placeholders that should be replace with appropriate
-            values. For example:
-          </para>
-          <literallayout>To list the contents of a directory, execute <command>ls <replaceable>directory</replaceable></command>.</literallayout>
-        </listitem>
-        <listitem>
-          <para>References to names of variables rather than to their value.
-            Example:
-          </para>
-          <literallayout>To select another display manager, start the YaST
-            sysconfig editor and change the value of
-            <replaceable>DISPLAYMANAGER</replaceable>.</literallayout>
-        </listitem>
-      </itemizedlist>
+      <para> Use markup for commands even inside <sgmltag>screen</sgmltag>
+        environments.
+      </para>
     </sect3>
 
     <sect3 id="sec.keyboard">
@@ -835,6 +814,16 @@ title Disk
       </para>
     </sect3>
 
+    <sect3 id="sec.placeholder">
+      <title>Placeholders</title>
+
+      <para>To mark up text that readers need to replace, use the
+        <sgmltag class="starttag">replaceable</sgmltag> element.
+      </para>
+          <screen>To list the contents of a directory, execute
+&lt;command&gt;ls &lt;replaceable&gt;directory&lt;/replaceable&gt;&lt;/command&gt;.</screen>
+    </sect3>
+
     <sect3 id="sec.uielement">
       <title>User Interface Elements</title>
 
@@ -852,6 +841,16 @@ title Disk
         <xref linkend="sec.markup.inline.menus"/>.
       </para>
     </sect3>
+
+    <sect3 id="sec.variable">
+      <title>Variable Names</title>
+
+        <para>References to names of variables rather than to their value.</para>
+          <screen>To select another display manager, start the YaST sysconfig editor
+and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
+          </screen>
+    </sect3>
+
   </sect2>
 
     <sect2 id="sec.crossreference">
