@@ -61,7 +61,7 @@
     <para>This guide provides answers to writing, style, and layout questions
       commonly arising when editing SUSE or openSUSE documentation. The
       Novdoc/DocBook markup reference at the end of this guide will help you
-      choose the right XML tag for your purpose. Following this guide will
+      choose the right XML element for your purpose. Following this guide will
       make your documentation more understandable and easier to translate.
     </para>
   </abstract>
@@ -79,8 +79,8 @@
     </para>
     <para>For later reference, document the defined target audience in the
       main file of every book and article. Place an XML comment directly
-      before the relevant <sgmltag>book</sgmltag> or
-      <sgmltag>article</sgmltag> tag, such as this:
+      before the relevant <sgmltag class="emptytag">book</sgmltag> or
+      <sgmltag class="emptytag">article</sgmltag> element, such as this:
     </para>
     <screen>&lt;!-- Target audience: institutional desktop users. --&gt;</screen>
     <para>For more information about the usage of XML comments, see
@@ -235,12 +235,13 @@
                 <para>If you know of common mistakes or other problems a
                   user might encounter in a certain situation, list them in
                   a section named <emphasis>Troubleshooting</emphasis>.
-                  Use the DocBook element <sgmltag>qandaset</sgmltag> (a
-                  Question and Answer section) to mark up
+                  Use the DocBook element
+                  <sgmltag class="emptytag">qandaset</sgmltag>
+                  (a Question and Answer section) to mark up
                   <emphasis>Troubleshooting</emphasis> problems.
                   In case you want to describe
                   solutions to more than ten problems, add topical subsections
-                  (<sgmltag class="starttag">qandadiv</sgmltag> elements)
+                  (<sgmltag class="emptytag">qandadiv</sgmltag> elements)
                   below the <emphasis>Troubleshooting</emphasis> section.
                 </para>
               </formalpara>
@@ -532,7 +533,8 @@
 
       <para>Write integers zero through ten as words and use numerals for all
         others. For measurements, always use numerals when an abbreviation is
-        used for the unit. Use a non-breaking (<sgmltag>&amp;nbsp;</sgmltag>)
+        used for the unit. Use a non-breaking
+        (<sgmltag class="genentity">nbsp</sgmltag>)
         space between the numeral and corresponding unit abbreviation.
         For more information, refer to
         <citetitle>The Chicago Manual of Style</citetitle> 9.6.
@@ -640,7 +642,7 @@
       <variablelist>
         <varlistentry>
           <term>
-            <sgmltag>warning</sgmltag>
+            <sgmltag class="emptytag">warning</sgmltag>
           </term>
           <listitem>
             <para>
@@ -673,7 +675,7 @@
         </varlistentry>
         <varlistentry>
           <term>
-            <sgmltag>important</sgmltag>
+            <sgmltag class="emptytag">important</sgmltag>
           </term>
           <listitem>
             <para>
@@ -686,7 +688,7 @@
         </varlistentry>
         <varlistentry>
           <term>
-            <sgmltag>tip</sgmltag>
+            <sgmltag class="emptytag">tip</sgmltag>
           </term>
           <listitem>
             <para>
@@ -698,7 +700,7 @@
         </varlistentry>
         <varlistentry>
           <term>
-            <sgmltag>note</sgmltag>
+            <sgmltag class="emptytag">note</sgmltag>
           </term>
           <listitem>
             <para>
@@ -714,7 +716,7 @@
     </sect2>
       <sect2 id="sec.callout">
         <title>Callouts</title>
-        <para>Add the <sgmltag class="starttag">co</sgmltag> elements directly
+        <para>Add the <sgmltag class="emptytag">co</sgmltag> elements directly
           after the part of a screen that you want to annotate. Do not try to
           align them above the part of a screen to annotate.
           Do not use more than ten callouts per example.
@@ -766,14 +768,15 @@ title Disk
     <para>Only specify the software component in ambiguous contexts. Format
       user input and system output as an inline element when it is shorter
       than 30 characters. In all other cases, close the current paragraph and
-      use the <sgmltag>screen</sgmltag> element which creates a new block.
+      add a <sgmltag class="emptytag">screen</sgmltag> element which creates
+      a new block.
     </para>
 
     <sect3 id="sec.command">
       <title>Commands</title>
 
-      <para>When referring to an application, use the
-        <sgmltag class="starttag">phrase role="productname"</sgmltag> element
+      <para>When referring to an application, add a
+        <sgmltag class="emptytag">phrase role="productname"</sgmltag> element
         around it. This will not result in a visual change but disables
         hyphenation:
       </para>
@@ -781,17 +784,18 @@ title Disk
       <para>Make sure to capitalize commands exactly as they are executed.
         Commands can be embedded in running text or
         presented as part of a screen environment. In running text,
-        use <sgmltag>command</sgmltag> when referring to an actual command you
-        would use on a command line:
+        use <sgmltag class="emptytag">command</sgmltag> when referring
+        to an actual command you would use on a command line:
       </para>
-      <literallayout>Use <command>loffice</command> to start LibreOffice from
-        the command line.
-      </literallayout>
-      <para>Place options inside the command tags. Options can also be used in
-        text, separately from <sgmltag>command</sgmltag>. See
+      <literallayout>Use <command>loffice</command> to start LibreOffice from the command line.</literallayout>
+      <para>Nest options, surrounded by an
+        <sgmltag class="emptytag">option</sgmltag> element,
+        inside the command element. Options can also be used in
+        text, separately from <sgmltag class="emptytag">command</sgmltag>. See
         <xref linkend="sec.markup.inline.commands"/>.
       </para>
-      <para> Use markup for commands even inside <sgmltag>screen</sgmltag>
+      <para>Use markup for commands even inside
+        <sgmltag class="emptytag">screen</sgmltag>
         environments.
       </para>
     </sect3>
@@ -808,7 +812,7 @@ title Disk
       </para>
       <para>Localization of the identifiers for both modifiers and
         special keys can be handled by DocBook itself, if you use the
-        <sgmltag>keycap</sgmltag> tag and an appropriate
+        <sgmltag class="emptytag">keycap</sgmltag> element and an appropriate
         <literal>function</literal> value. For details, refer to
         <xref linkend="sec.markup.inline.keys"/>.
       </para>
@@ -818,7 +822,7 @@ title Disk
       <title>Placeholders</title>
 
       <para>To mark up text that readers need to replace, use the
-        <sgmltag class="starttag">replaceable</sgmltag> element.
+        <sgmltag class="emptytag">replaceable</sgmltag> element.
       </para>
           <screen>To list the contents of a directory, execute
 &lt;command&gt;ls &lt;replaceable&gt;directory&lt;/replaceable&gt;&lt;/command&gt;.</screen>
@@ -856,7 +860,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
     <sect2 id="sec.crossreference">
       <title>Cross References</title>
 
-      <para> Use the <sgmltag>xref</sgmltag> element (read:
+      <para> Use the <sgmltag class="emptytag">xref</sgmltag> element (read:
         <quote>cross ref</quote>) when referring to an appendix, chapter,
         example, figure, part, preface, section, table, or question and answer
         set. The referenced element needs an
@@ -868,8 +872,9 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
         automatically.
       </para>
       <para>Do not insert references to single paragraphs
-        (<sgmltag>para</sgmltag>). If you need a reference to a list,
-        insert <sgmltag>id</sgmltag> and <sgmltag>xreflabel</sgmltag>.
+        (<sgmltag class="emptytag">para</sgmltag>). If you need to reference
+        a list, insert <sgmltag class="emptytag">id</sgmltag> and
+        <sgmltag class="emptytag">xreflabel</sgmltag>.
       </para>
       <para>Other types of references to resources are described in
         <xref linkend="sec.otherexternal"/> and
@@ -886,20 +891,22 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
         them to other resources before they had a chance to read the end
         of the sentence.
       </para>
-      <para>To mark up multiple links, use a <sgmltag>itemizedlist</sgmltag>
-        environment. Do not use a list environment for only one link.
+      <para>To mark up multiple links, create an
+        <sgmltag class="emptytag">itemizedlist</sgmltag> around
+        them. Do not use a list environment for only one link.
         If you need to present a large number of links, group them by topic and
         create a separate list environment for each group. Provide a
         comprehensive title for each of the groups or an introductory sentence.
       </para>
-      <para>Use the <sgmltag>ulink</sgmltag> tag to mark up URLs that can be
-        opened with a web browser, such as <ulink url="http://www.suse.de"/>.
-        Always prefix the correct protocol (for examle,
+      <para>Use the <sgmltag class="emptytag">ulink</sgmltag> element to mark up
+        URLs that can be opened with a web browser, such as
+        <ulink url="http://www.suse.de"/>.
+        Always add the correct protocol prefix (for examle,
         <literal>http://</literal>),
         otherwise links will not work. Never use <sgmltag>filename</sgmltag>
         for a link, as that would both disable the link checker and make the
         link unclickable. Avoid entering a text label between the
-        <sgmltag>ulink</sgmltag> start and end tags.
+        <sgmltag class="emptytag">ulink</sgmltag> start and end tags.
       </para>
       <para>Try to make URLs as short as possible before pasting them into your
         documentation. Many long URLs can be shortened by leaving away
@@ -910,8 +917,8 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
         introduces an extra element of uncertainty, as the shortening service
         may disappear or become unreliable in the future.
       </para>
-      <para>Do not use <sgmltag>ulink</sgmltag> to link to SUSE
-        documentation outside of the current document set. Instead use the
+      <para>Do not use <sgmltag class="emptytag">ulink</sgmltag> to link to SUSE
+        documentation outside of the current document set. Instead, use the
         appropriate entity for the book title. Always reference the book
         itself, as chapter names can change.
       </para>
@@ -938,9 +945,11 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
             </para>
           </listitem>
           <listitem>
-            <para>Never indent text inside <sgmltag>screen</sgmltag>
+            <para>Never indent text inside
+              <sgmltag class="emptytag">screen</sgmltag>
               elements as you do in other XML elements. All whitespace inside
-              <sgmltag>screen</sgmltag> elements shows up verbatim.
+              <sgmltag class="emptytag">screen</sgmltag> elements shows up
+              verbatim.
             </para>
           </listitem>
           <listitem>
@@ -1050,7 +1059,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
           </listitem>
           <listitem>
             <para>Reference the figure from the text by means of an
-        <sgmltag>xref</sgmltag>.
+        <sgmltag class="emptytag">xref</sgmltag>.
       </para>
           </listitem>
         </itemizedlist>
@@ -1107,11 +1116,12 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
       <title>Lists</title>
       <para>
     SUSE and openSUSE documentation uses the following types of lists (the
-    respective XML tags are given in parentheses):
+    respective XML elements are given in parentheses):
    </para>
       <variablelist>
         <varlistentry>
-          <term> Bullet Lists (<sgmltag>itemizedlist</sgmltag>)</term>
+          <term>Bullet Lists
+            (<sgmltag class="emptytag">itemizedlist</sgmltag>)</term>
           <listitem>
             <para>
        See
@@ -1121,7 +1131,8 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
           </listitem>
         </varlistentry>
         <varlistentry>
-          <term> Numbered Lists (<sgmltag>orderedlist</sgmltag>)</term>
+          <term>Numbered Lists
+            (<sgmltag class="emptytag">orderedlist</sgmltag>)</term>
           <listitem>
             <para>
        See
@@ -1131,7 +1142,8 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
           </listitem>
         </varlistentry>
         <varlistentry>
-          <term> Descriptive Lists (<sgmltag>variablelist</sgmltag>)</term>
+          <term>Descriptive Lists
+            (<sgmltag class="emptytag">variablelist</sgmltag>)</term>
           <listitem>
             <para>
        See
@@ -1349,15 +1361,17 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
         for example <quote>(<command>man 9 command</command>)</quote>
         to the end.
       </para>
-      <para>To reference file names, use the <sgmltag>filename</sgmltag>
-        element. To reference e-mail addresses, use the <sgmltag>email</sgmltag>
+      <para>To reference file names, use the
+        <sgmltag class="emptytag">filename</sgmltag>
+        element. To reference e-mail addresses, use the
+        <sgmltag class="emptytag">email</sgmltag>
         element. In either case, do not include a protocol prefix, that is
         <literal>file://</literal> or <literal>mailto:</literal>, respectively.
       </para>
       <para>Insert references to external (not SUSE or openSUSE) physical
         books in the format <quote>Title by Author (ISBN #00000000).</quote>
-        Inclusion of the ISBN is optional. Place the title in
-        <sgmltag>citetitle</sgmltag> tags. For example:
+        Inclusion of the ISBN is optional. Place the title in a
+        <sgmltag class="emptytag">citetitle</sgmltag> element. For example:
       </para>
       <screen>&lt;citetitle&gt;Indexing Books&lt;/citetitle&gt; by Nancy C. Mulvany
 (ISBN 0-226-55014-1) is a useful guide for indexing.</screen>
@@ -1465,8 +1479,9 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
   <sect2 id="sec.product">
     <title>Products and Trademarks</title>
     <para>Always use the preferred product name instead of, for instance, an
-      acronym. When referring to a product, use the
-      <sgmltag>phrase role="productname"</sgmltag> element around it.
+      acronym. When referring to a product, add a
+      <sgmltag class="emptytag">phrase role="productname"</sgmltag> element
+      around it.
       This will not result in a visual change but disables hyphenation:
     </para>
     <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
@@ -1500,7 +1515,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
       <title>Prompts</title>
 
       <para>When documenting commands entered into Bash with a
-        <sgmltag>screen</sgmltag> element, always prefix them with a prompt
+        <sgmltag class="emptytag">screen</sgmltag> element, always prefix them with a prompt
         marked up this way:
       </para>
       <screen>&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ls&lt;/command&gt;</screen>
@@ -1570,122 +1585,72 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
 
     <sect2 id="sec.remark">
       <title>Remarks</title>
-      <para>
-    Remarks are used for the majority of editorial comments. It is possible
-    to have them be visible in the built document, improving the editing
-    process. Remarks must be placed before or after a para but inside
-    section tags.
-   </para>
-      <para>
-    Include a <sgmltag>role</sgmltag> to show the importance and type of
-    remark. Available roles and their uses are:
-   </para>
-      <variablelist>
-        <varlistentry>
-          <term>xml</term>
-          <listitem>
-            <para>
-       This type of remark is used for validation issues and questions and
-       comments regarding markup (wrong tag, validation problems the
-       commenter cannot resolve without help, etc.).
+      <para>Use remarks for editorial comments. Remarks can be placed within,
+        before, or after a para but must always be within a section element.
+        When creating output, remarks can be made visible and thus help the
+        editorial process.
       </para>
-          </listitem>
-        </varlistentry>
-        <varlistentry>
-          <term>layout</term>
-          <listitem>
-            <para>
-       Use this for remarks related to the layout. For example, use it for
-       comments suggesting a change in list type or those related to line
-       break problems in the output.
+      <para>Start remarks with your user name and the current date, then add
+        a colon (<literal>:</literal>) and finally your actual remark.
+        To comment on someone else's remark, add a new remark directly below it.
+        Delete remarks when the corresponding issue is resolved.
       </para>
-          </listitem>
-        </varlistentry>
-        <varlistentry>
-          <term>structural</term>
-          <listitem>
-            <para>
-       Structural remarks relate to how the text is put together, such as
-       whether content should be placed elsewhere or the appropriate level of
-       headings.
+      <screen>&lt;remark&gt;tux (2013-10-13): could not find the option for foo&lt;/remark&gt;
+&lt;remark&gt;geeko (2013-11-02): see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
+      <para>You can add a <sgmltag class="attribute">role</sgmltag> attribute
+        with one of the following values to show the type of the remark:
       </para>
-          </listitem>
-        </varlistentry>
-        <varlistentry>
-          <term>clarity</term>
+      <itemizedlist>
           <listitem>
-            <para>
-       This role should be used when text is unclear or changes are proposed
-       to improve the wording.
-      </para>
+            <formalpara>
+              <title><sgmltag class="attvalue">structure</sgmltag></title>
+              <para>Use this type of remark to suggest changes to the text
+                or XML structure.
+              </para>
+            </formalpara>
           </listitem>
-        </varlistentry>
-        <varlistentry>
-          <term>needinfo</term>
           <listitem>
-            <para>
-       The author should use this role to report when he or she is waiting
-       for information from a developer or other person or to request
-       information.
-      </para>
+            <formalpara>
+              <title><sgmltag class="attvalue">language</sgmltag></title>
+              <para>Use this type of remark to suggest language improvements.
+              </para>
+            </formalpara>
           </listitem>
-        </varlistentry>
-        <varlistentry>
-          <term>trans</term>
           <listitem>
-            <para>
-       Use this for comments to translators.
-      </para>
+            <formalpara>
+              <title><sgmltag class="attvalue">needinfo</sgmltag></title>
+              <para>Use this type of remark to mark sections where you need
+                input from others, such as developers.
+              </para>
+            </formalpara>
           </listitem>
-        </varlistentry>
-        <varlistentry>
-          <term>generic</term>
           <listitem>
-            <para>
-       Use this role for all remarks that do not fit into one of the other
-       categories.
-      </para>
+            <formalpara>
+              <title><sgmltag class="attvalue">trans</sgmltag></title>
+              <para>Use this type of remark give hints to translators.</para>
+            </formalpara>
           </listitem>
-        </varlistentry>
-      </variablelist>
-      <para>
-    The writer of the remark should start the remark with his or her
-    user name followed by a colon (<literal>:</literal>). Others responding to
-    the remark should insert their user name, a colon, and comments inside the
-    tags but starting on a new line. Comments should be deleted by the original
-    writer when they consider the issue resolved. The following is an
-    example remark:
-   </para>
-      <screen>&lt;remark role="needinfo"&gt;tux: could not find the option for foo
-geeko: see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
+      </itemizedlist>
     </sect2>
     <sect2 id="sec.xmlcomment">
       <title>XML Comments</title>
-      <para>
-    XML comments are primarily used for temporarily disabling portions of
-    text. Because they can appear at any point in a file, they can also be
-    used to point the reader of a remark to the appropriate point in a text.
-   </para>
-      <para>
-    The final use of comments is to mark changes made for layout reasons.
-    The following is an example of a layout comment.
-   </para>
-      <screen>&lt;!--layout tux: split para --&gt;</screen>
+      <para>XML comments can be used for temporarily disabling portions of
+        text. Another use of XML comments is to create more permanent internal
+        comments or to mark up changes made for layout reasons.
+      </para>
       <tip>
-        <title>Valid Comments</title>
-        <para>
-     Do not use <literal>--</literal> in comments. <literal>--</literal> is
-     the first part of end-of-comment string <literal>--&gt;</literal> and thus
-     causes validation to fail.
-    </para>
+        <title>Creating Valid Comments</title>
+        <para>Do not use <literal>--</literal> in comments.
+          <literal>--</literal> is the first part of end-of-comment string
+          <literal>--&gt;</literal> and thus causes validation to fail.
+        </para>
       </tip>
     </sect2>
   <sect2 id="sec.entity">
     <title>Entities</title>
-    <para>
-   Entities are used to expand text. There are several situations in which
-   they can be used:
-  </para>
+    <para>Entities are used to expand text. There are several situations in
+      which they can be used:
+    </para>
     <itemizedlist>
       <listitem>
         <para>Representation of special characters that cannot easily
