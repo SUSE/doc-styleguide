@@ -719,11 +719,6 @@
               <entry>noun</entry>
             </row>
             <row>
-              <entry>need to</entry>
-              <entry>have to</entry>
-              <entry>verb; see also <emphasis>must</emphasis></entry>
-            </row>
-            <row>
               <entry>mail server</entry>
               <entry>mail-server, mailserver</entry>
               <entry>noun</entry>
@@ -804,12 +799,17 @@
             <row>
               <entry>must</entry>
               <entry>have to</entry>
-              <entry>verb</entry>
+              <entry>verb; see also <emphasis>need to</emphasis></entry>
             </row>
             <row>
               <entry>name server</entry>
               <entry>name-server, nameserver</entry>
               <entry>two words</entry>
+            </row>
+            <row>
+              <entry>need to</entry>
+              <entry>have to</entry>
+              <entry>verb; see also <emphasis>need to</emphasis></entry>
             </row>
             <row>
               <entry>NFS</entry>
