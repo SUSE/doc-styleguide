@@ -463,8 +463,8 @@
     <sect2 id="sec.dash">
       <title>Dashes</title>
 
-      <para>Use en dashes (<literal>&ndash;</literal>) between numbers in a range
-        in tables and figures.
+      <para>Use en dashes (<literal>&ndash;</literal>) between numbers in a
+        range in tables and figures.
       </para>
       <para>For punctuation, use em dashes (<literal>&mdash;</literal>).
         Do not surround em dashes with spaces. Use em dashes sparingly.
@@ -643,94 +643,83 @@
 
   <sect1 id="sec.structure">
     <title>Structure and Markup</title>
+
     <para>Structure your documentation by tasks relevant to the user instead of
       providing reference documentation by describing each part of the user
       interface individually. In most cases, it is unnecessary to describe
       every minor functionality of a product. Describe what a product can do
       rather than its limitations.
     </para>
+
     <sect2 id="sec.admonition">
       <title>Admonitory and Advisory Paragraphs</title>
-      <para>
-    SUSE uses four different kinds of admonitory and advisory paragraphs.
-    These elements are formatted in a way to draw the attention of the reader.
-    Therefore, limit their use as much and avoid using more than one per
-    PDF output page.
-   </para>
-      <variablelist>
-        <varlistentry>
-          <term>
-            <sgmltag class="emptytag">warning</sgmltag>
-          </term>
-          <listitem>
-            <para>
-       These elements warn of security issues, potential loss of data,
-       damage to equipment (hardware), or physical hazards to the user. A
-       warning must always precede the action to which it applies. A typical
-       example is:
+
+      <para>To make readers aware of potential problems, recent changes, or
+        give them tips, use an admonition element. Avoid using more than one
+        admonition per page of PDF output.
       </para>
-            <example>
-              <title>A Typical Example of a Warning</title>
-              <screen>&lt;warning&gt;
- &lt;title&gt;Creating File Systems&lt;/title&gt;
-  &lt;para&gt;
-    Formatting can take up to several hours depending
-    on the partition size. Do not try to interrupt
-    this process. This could result in a corrupted file
-    system that renders the installation
-    unusable.
+      <orderedlist>
+        <listitem>
+          <formalpara>
+            <title><sgmltag class="emptytag">warning</sgmltag></title>
+            <para>Use these elements to warn of security issues, potential loss
+              of data, damage to hardware, or physical hazards. Warnings must
+              always precede the action to which they apply.
+            </para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title><sgmltag class="emptytag">important</sgmltag></title>
+            <para>Use these elements to give vital information.</para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title><sgmltag class="emptytag">tip</sgmltag></title>
+            <para>Use these elements to introduce guidelines or tips.</para>
+          </formalpara>
+        </listitem>
+        <listitem>
+          <formalpara>
+            <title><sgmltag class="emptytag">note</sgmltag></title>
+            <para>Use these elements to highlight software version differences.
+            </para>
+          </formalpara>
+        </listitem>
+      </orderedlist>
+      <para>Always add a <sgmltag class="emptytag">title</sgmltag> to
+        admonitions. In the title, state the subject of the admonitions
+        and, in the case of a <sgmltag class="emptytag">warning</sgmltag>, also
+        the source of danger.
+      </para>
+      <para>When writing a warning or important admonition:
+      </para>
+      <orderedlist>
+        <listitem>
+          <para>In the first paragraph, clearly state possible consequences
+            of ignoring the danger.
+          </para>
+        </listitem>
+        <listitem>
+          <para>In the second paragraph, explain how to
+            avoid the danger. If there are multiple ways to avoid a danger,
+            using a unordered list is helpful. In case multiple steps need
+            to be taken to avoid a danger, use an ordered list or use a
+            cross reference to refer to another part of the documentation.
+          </para>
+        </listitem>
+      </orderedlist>
+      <example>
+        <title>An Example of a Warning</title>
+        <screen>&lt;warning&gt;
+  &lt;title&gt;Creating File Systems Can Take Several Hours&lt;/title&gt;
+  &lt;para&gt;Interrupting this process will result in a corrupt file system
+    and an unusable installation.
   &lt;/para&gt;
+  &lt;para&gt;Always wait until formatting has finished.&lt;/para&gt;
 &lt;/warning&gt;</screen>
-            </example>
-            <para>
-       A warning consists of the warning headline, a title stating the
-       action considered dangerous, followed by a descriptive paragraph
-       explaining the nature and origin of the danger. Clearly state what
-       could happen if the reader ignored the warning. Finally, tell the
-       reader how to avoid the dangerous situation.
-      </para>
-          </listitem>
-        </varlistentry>
-        <varlistentry>
-          <term>
-            <sgmltag class="emptytag">important</sgmltag>
-          </term>
-          <listitem>
-            <para>
-       These elements introduce vital information that deserves particular
-       attention. Similar to the warning element,
-       <sgmltag>important</sgmltag> includes a title stating the topic
-       covered in the following explanation.
-      </para>
-          </listitem>
-        </varlistentry>
-        <varlistentry>
-          <term>
-            <sgmltag class="emptytag">tip</sgmltag>
-          </term>
-          <listitem>
-            <para>
-       A <sgmltag>tip</sgmltag> is used to introduce guidelines or tips that
-       are helpful to the user. Using an appropriate title is strongly
-       recommended.
-      </para>
-          </listitem>
-        </varlistentry>
-        <varlistentry>
-          <term>
-            <sgmltag class="emptytag">note</sgmltag>
-          </term>
-          <listitem>
-            <para>
-       The <sgmltag>note</sgmltag> element is useful for emphasizing
-       information that differs from previous versions, providing important
-       information that does not fit into the paragraph, and pointing out
-       architecture-specific information. Using an appropriate title is
-       strongly recommended.
-      </para>
-          </listitem>
-        </varlistentry>
-      </variablelist>
+      </example>
     </sect2>
 
   <sect2 id="sec.application">
