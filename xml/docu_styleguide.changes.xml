@@ -22,8 +22,8 @@
         <itemizedlist>
           <listitem>
             <para>Promoted <xref linkend="sec.audience"/> to a
-              <sgmltag>sect1</sgmltag>. Added new paragraph about how to
-              mark the target audience in documentation.
+              <sgmltag class="emptytag">sect1</sgmltag>. Added new paragraph
+              about how to mark the target audience in documentation.
             </para>
           </listitem>
           <listitem>
@@ -35,27 +35,41 @@
             <para>Renamed <emphasis>Creating a Consistent Structure: Official
               SUSE Manuals</emphasis> to
               <emphasis>Outline of a Manual</emphasis> and promoted
-              to a <sgmltag>sect1</sgmltag>.
+              to a <sgmltag class="emptytag">sect1</sgmltag>.
             </para>
           </listitem>
           <listitem>
             <para>Split <emphasis>Writing and Editing</emphasis> into
               <xref linkend="sec.language"/> and
-              <xref linkend="sec.structure.markup"/> and moved its subsections
+              <xref linkend="sec.structure"/> and moved its subsections
               where they fit best.
             </para>
           </listitem>
           <listitem>
             <para>Moved <xref linkend="sec.procedure"/>
               (formerly <emphasis>Creating Procedures</emphasis>)
-              and <xref linkend="sec.computerelement"/> (formerly
+              and <xref linkend="sec.commandline"/> (formerly
               <emphasis>Presenting Computer Elements</emphasis>) as
-              subsections into <xref linkend="sec.structure.markup"/>.
+              subsections into <xref linkend="sec.structure"/>.
             </para>
           </listitem>
           <listitem>
             <para>Renamed <emphasis>Discriminatory Language</emphasis> to
               <xref linkend="sec.bias"/>.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Renamed <emphasis>Keys</emphasis> to
+              <xref linkend="sec.keyboard"/> and promoted it to a
+              <sgmltag class="emptytag">sect2</sgmltag> within
+              <xref linkend="sec.structure"/>.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Renamed <emphasis>GUI Elements</emphasis> to
+              <xref linkend="sec.uielement"/> and promoted it to a
+              <sgmltag class="emptytag">sect2</sgmltag> within
+              <xref linkend="sec.language"/>.
             </para>
           </listitem>
           <listitem>
@@ -181,7 +195,7 @@
       </listitem>
       <listitem>
         <para>Added <xref linkend="sec.prompt"/> to document how to use prompts
-          in <sgmltag>screen</sgmltag> elements.
+          in <sgmltag class="emptytag">screen</sgmltag> elements.
         </para>
       </listitem>
       <listitem>
