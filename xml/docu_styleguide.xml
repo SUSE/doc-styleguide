@@ -621,9 +621,27 @@
       </para>
     </sect2>
 
+    <sect2 id="sec.uielement">
+      <title>User Interface Elements</title>
+
+      <para>When using labels of GUI elements, do not include ending punctuation
+        like <literal>...</literal> or <literal>:</literal>. Whenever possible,
+        refer to the elements without identifying them as a special type of
+        dialog element. For example, use <quote>Click
+        <guimenu>OK</guimenu></quote> rather than <quote>Click the
+        <guimenu>OK</guimenu> button.</quote> However, some situations require
+        a more specific wording, for example, if a dialog has many different
+        graphical elements.
+      </para>
+      <para>For detailed instructions for the appropriate markup, especially
+        concerning buttons, labels, and menu structures, refer to
+        <xref linkend="sec.markup.inline.menus"/>.
+      </para>
+    </sect2>
+
   </sect1>
 
-  <sect1 id="sec.structure.markup">
+  <sect1 id="sec.structure">
     <title>Structure and Markup</title>
     <para>Structure your documentation by tasks relevant to the user instead of
       providing reference documentation by describing each part of the user
@@ -714,8 +732,20 @@
         </varlistentry>
       </variablelist>
     </sect2>
+
+  <sect2 id="sec.application">
+    <title>Application Names</title>
+
+    <para>When referring to an application, add a
+        <sgmltag class="emptytag">phrase role="productname"</sgmltag> element
+        around it. This will not result in a visual change but disables
+        hyphenation:
+    </para>
+  </sect2>
+
       <sect2 id="sec.callout">
         <title>Callouts</title>
+
         <para>Add the <sgmltag class="emptytag">co</sgmltag> elements directly
           after the part of a screen that you want to annotate. Do not try to
           align them above the part of a screen to annotate.
@@ -762,24 +792,18 @@ title Disk
     </para>
   </sect2>
 
-  <sect2 id="sec.computerelement">
-    <title>Computer Elements</title>
+  <sect2 id="sec.commandline">
+    <title>Command Line Input and Output</title>
 
-    <para>Only specify the software component in ambiguous contexts. Format
-      user input and system output as an inline element when it is shorter
-      than 30 characters. In all other cases, close the current paragraph and
-      add a <sgmltag class="emptytag">screen</sgmltag> element which creates
-      a new block.
+    <para>When dealing with user input and system output shorter than 30
+      characters, format it as an inline element. In all other cases,
+      close the current paragraph and enclose it in a
+      <sgmltag class="emptytag">screen</sgmltag> element.
     </para>
 
     <sect3 id="sec.command">
       <title>Commands</title>
 
-      <para>When referring to an application, add a
-        <sgmltag class="emptytag">phrase role="productname"</sgmltag> element
-        around it. This will not result in a visual change but disables
-        hyphenation:
-      </para>
       <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
       <para>Make sure to capitalize commands exactly as they are executed.
         Commands can be embedded in running text or
@@ -798,23 +822,7 @@ title Disk
         <sgmltag class="emptytag">screen</sgmltag>
         environments.
       </para>
-    </sect3>
-
-    <sect3 id="sec.keyboard">
-      <title>Keys and Key Combinations</title>
-
-      <para>Capitalize all keys as printed on a standard keyboard. Following
-        this rule, capitalize all letter keys. If you need to refer to a
-        capitalized character, use
-        <keycombo><keycap function="shift"/><keycap>Z</keycap></keycombo>,
-        for example. Introduce this convention by means of the
-        <quote>Typographical Conventions</quote> section of the introduction.
-      </para>
-      <para>Localization of the identifiers for both modifiers and
-        special keys can be handled by DocBook itself, if you use the
-        <sgmltag class="emptytag">keycap</sgmltag> element and an appropriate
-        <literal>function</literal> value. For details, refer to
-        <xref linkend="sec.markup.inline.keys"/>.
+      <para>See also <xref linkend="sec.prompt"/>.
       </para>
     </sect3>
 
@@ -828,31 +836,13 @@ title Disk
 &lt;command&gt;ls &lt;replaceable&gt;directory&lt;/replaceable&gt;&lt;/command&gt;.</screen>
     </sect3>
 
-    <sect3 id="sec.uielement">
-      <title>User Interface Elements</title>
-
-      <para>When using labels of GUI elements, do not include ending punctuation
-        like <literal>...</literal> or <literal>:</literal>. Whenever possible,
-        refer to the elements without identifying them as a special type of
-        dialog element. For example, use <quote>Click
-        <guimenu>OK</guimenu></quote> rather than <quote>Click the
-        <guimenu>OK</guimenu> button.</quote> However, some situations require
-        a more specific wording, for example, if a dialog has many different
-        graphical elements.
-      </para>
-      <para>For detailed instructions for the appropriate markup, especially
-        concerning buttons, labels, and menu structures, refer to
-        <xref linkend="sec.markup.inline.menus"/>.
-      </para>
-    </sect3>
-
     <sect3 id="sec.variable">
       <title>Variable Names</title>
 
-        <para>References to names of variables rather than to their value.</para>
-          <screen>To select another display manager, start the YaST sysconfig editor
-and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
-          </screen>
+        <para>References to names of variables rather than to their value.
+        </para>
+        <screen>To select another display manager, start the YaST sysconfig editor
+and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen>
     </sect3>
 
   </sect2>
@@ -930,7 +920,8 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
         <xref linkend="sec.otherexternal"/>.
       </para>
     </sect2>
-      <sect2 id="sec.example">
+
+    <sect2 id="sec.example">
         <title>Examples</title>
         <para>Examples are used to illustrate complex processes.
           Many of the rules established in <xref linkend="sec.graphic"/> also
@@ -963,7 +954,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
         </itemizedlist>
         <example id="ex.ex.call">
           <title>Calling ps to Get Process Information</title>
-          <screen><prompt>tux > </prompt><command>ps <option>-xa</option></command>
+          <screen><prompt>tux &gt; </prompt><command>ps <option>-xa</option></command>
 
 5170 ?        S      0:00 kdeinit: khotkeys
 5172 ?        S      0:02 kdeinit: kdesktop
@@ -1079,8 +1070,9 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
     Provide content between a heading and its subheadings. In some cases,
     this is only a small paragraph of introductory information. In other
     cases, more information can be provided.
-   </para>
-    </sect2>
+    </para>
+  </sect2>
+
   <sect2 id="sec.index">
     <title>Indexes</title>
     <para>Insert index terms as close to the relevant text as possible.
@@ -1112,7 +1104,8 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
       references and <emphasis>see also</emphasis> together.
     </para>
   </sect2>
-    <sect2 id="sec.list">
+
+  <sect2 id="sec.list">
       <title>Lists</title>
       <para>
     SUSE and openSUSE documentation uses the following types of lists (the
@@ -1349,6 +1342,23 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
       </sect3>
     </sect2>
 
+    <sect2 id="sec.keyboard">
+      <title>Keys and Key Combinations</title>
+
+      <para>Capitalize all keys as printed on a standard keyboard. Following
+        this rule, capitalize all letter keys. If you need to refer to a
+        capitalized character, use
+        <keycombo><keycap function="shift"/><keycap>Z</keycap></keycombo>,
+        for example. Introduce this convention by means of the
+        <quote>Typographical Conventions</quote> section of the introduction.
+      </para>
+      <para>Localization of the identifiers for both modifiers and
+        special keys can be handled by DocBook itself, if you use the
+        <sgmltag class="emptytag">keycap</sgmltag> element and an appropriate
+        <literal>function</literal> value. For details, refer to
+        <xref linkend="sec.markup.inline.keys"/>.
+      </para>
+    </sect2>
 
     <sect2 id="sec.otherexternal">
       <title>References to Other External Resources</title>
@@ -1529,30 +1539,31 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
         always mark it up as following:
       </para>
       <screen>&lt;prompt&gt;root # &lt;/prompt&gt;&lt;command&gt;yast&lt;/command&gt;</screen>
+      <para>When documenting prompts other than the one of Bash, use a
+        custom prompt that is as generic as possible.
+      </para>
+      <para>For consistency, it is helpful to create an entity for the prompts
+        used in your documentation. To learn more, refer to
+        <xref linkend="sec.entity"/>.
+      </para>
     </sect2>
+
     <sect2 id="sec.table">
       <title>Tables</title>
-      <para>
-    Use tables to present a large number of similar facts. A table makes
-    them easy to scan and compare when presenting the same information
-    textually would require several paragraphs.
-   </para>
-      <para>
-    Always keep tables as simple as possible. They should not require
-    extensive explanations in the related text and should make sense even to
-    those readers who are not very familiar with the topic.
-   </para>
-      <para>
-    A table always has a title. If you assign an
-    <sgmltag class="attribute">id</sgmltag>, it can be identified and
-    referenced by this attribute.
-   </para>
-      <para>
-    Value and description pairs are better handled by means of a descriptive
-    list.
-   </para>
+
+      <para>Use tables to present large numbers of similar facts. Table are
+        easy to scan and compare. Always keep tables as simple enough that they
+        do not require long explanations even for readers largely unfamiliar
+        with the topic.
+      </para>
+      <para>A table always has a title and should have an
+        <sgmltag class="attribute">id</sgmltag> attribute.
+      </para>
+      <para>Value and description pairs are better handled by means of a
+        descriptive list.
+      </para>
       <example id="ex.tab">
-        <title>A Typical Table in SUSE Documentation</title>
+        <title>A Typical Table</title>
         <informaltable id="tab.maxsize">
           <tgroup cols="3">
             <thead>
@@ -1580,6 +1591,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.
     </sect2>
 
   </sect1>
+
   <sect1 id="sec.manage">
     <title>Managing Documents</title>
 
