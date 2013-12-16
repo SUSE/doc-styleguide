@@ -677,7 +677,9 @@
         <listitem>
           <formalpara>
             <title><sgmltag class="emptytag">tip</sgmltag></title>
-            <para>Use these elements to introduce guidelines or tips.</para>
+            <para>Use these elements to introduce guidelines or give
+              tips.
+            </para>
           </formalpara>
         </listitem>
         <listitem>
@@ -688,21 +690,27 @@
           </formalpara>
         </listitem>
       </itemizedlist>
-      <para>Always add a <sgmltag class="emptytag">title</sgmltag> to
-        admonitions. In the title, state the subject of the admonitions
-        and, in the case of a <sgmltag class="emptytag">warning</sgmltag>, also
-        the source of danger.
-      </para>
-      <para>When writing a warning or important admonition:
+      <para>Follow these rules when writing admonitions:
       </para>
       <itemizedlist>
         <listitem>
-          <para>In the first paragraph, clearly state possible consequences
+          <para>Add a <sgmltag class="emptytag">title</sgmltag> to
+            admonitions. In the title, state the subject of the admonition
+            and, in the case of a <sgmltag class="emptytag">warning</sgmltag>,
+            also the source of danger.
+          </para>
+        </listitem>
+        <listitem>
+          <para><emphasis><sgmltag class="emptytag">warning</sgmltag> or
+            <sgmltag class="emptytag">important</sgmltag>:</emphasis>
+            In the first paragraph, clearly state possible consequences
             of ignoring the danger.
           </para>
         </listitem>
         <listitem>
-          <para>In the second paragraph, explain how to
+          <para><emphasis><sgmltag class="emptytag">warning</sgmltag> or
+            <sgmltag class="emptytag">important</sgmltag>:</emphasis>
+            In the second paragraph, explain how to
             avoid the danger. If there are multiple ways to avoid a danger,
             using a unordered list is helpful. In case multiple steps need
             to be taken to avoid a danger, use an ordered list or use a
