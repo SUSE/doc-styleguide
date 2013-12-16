@@ -654,11 +654,11 @@
     <sect2 id="sec.admonition">
       <title>Admonitory and Advisory Paragraphs</title>
 
-      <para>To make readers aware of potential problems, recent changes, or
-        give them tips, use an admonition element. Avoid using more than one
+      <para>To make readers aware of potential problems and recent changes, or
+        to give them tips, use an admonition element. Avoid using more than one
         admonition per page of PDF output.
       </para>
-      <orderedlist>
+      <itemizedlist>
         <listitem>
           <formalpara>
             <title><sgmltag class="emptytag">warning</sgmltag></title>
@@ -687,7 +687,7 @@
             </para>
           </formalpara>
         </listitem>
-      </orderedlist>
+      </itemizedlist>
       <para>Always add a <sgmltag class="emptytag">title</sgmltag> to
         admonitions. In the title, state the subject of the admonitions
         and, in the case of a <sgmltag class="emptytag">warning</sgmltag>, also
@@ -695,7 +695,7 @@
       </para>
       <para>When writing a warning or important admonition:
       </para>
-      <orderedlist>
+      <itemizedlist>
         <listitem>
           <para>In the first paragraph, clearly state possible consequences
             of ignoring the danger.
@@ -709,7 +709,7 @@
             cross reference to refer to another part of the documentation.
           </para>
         </listitem>
-      </orderedlist>
+      </itemizedlist>
       <example>
         <title>An Example of a Warning</title>
         <screen>&lt;warning&gt;
