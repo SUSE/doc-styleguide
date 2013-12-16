@@ -1365,35 +1365,39 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
     <sect2 id="sec.procedure">
     <title>Procedures</title>
 
-      <para>Use procedures to describe sequential tasks. A procedure environment
+      <para>Use procedures to describe sequential tasks. A procedure
         consists of the following elements:
       </para>
       <itemizedlist>
         <listitem>
-          <para>An optional title. If you need to reference the procedure as a
-            whole, set an <sgmltag class="attribute">id</sgmltag>. The title is
-            then used as the label of the reference.
+          <para>A title and an <sgmltag class="attribute">id</sgmltag>
+            attribute.
           </para>
         </listitem>
         <listitem>
           <para>An introductory phrase establishing the purpose of the
-            procedure. If necessary, add the preconditions of the operation.
+            procedure. If the procedure is otherwise the only element in
+            its section, place the introductory phrase before the procedure.
+            If necessary, add any preconditions of the operation after the
+            introductory phrase.
           </para>
         </listitem>
         <listitem>
-          <para>Steps and substeps describing what the reader must do.
-            If needed, add an explanatory paragraph, but keep it short. Do not
-            use only one substep in a step or one step in a procedure.
-          </para>
-        </listitem>
-        <listitem>
-          <para>Alternative actions are introduced by a substep environment\
-            containing two steps linked by <quote>or.</quote> Each optional
-            step must have a <sgmltag class="attribute">performance</sgmltag>
-            attribute set to <sgmltag class="attvalue">optional</sgmltag>.
+          <para>Short, simple steps and substeps describing the actions to
+            be performed. See also <xref linkend="sec.sentence.structure"/>.
           </para>
         </listitem>
       </itemizedlist>
+      <para>Describe alternative actions inside a substep element
+        containing steps linked by <quote>or.</quote> Apply
+        <sgmltag class="attribute">
+          performance=<sgmltag class="attvalue">optional</sgmltag>
+        </sgmltag>
+        attribute optional steps.
+      </para>
+      <para>Steps may contain a link to an explanatory
+        subsection providing further details on the step.
+      </para>
       <procedure id="pro.useradd">
         <title>Adding Users with YaST</title>
         <para>To add a new user to the system, perform the following steps:
@@ -1428,12 +1432,6 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
           </para>
         </step>
       </procedure>
-      <para>If you need to structure complex tasks, procedure environments
-        are a means to provide an overview of the whole task and its sequential
-        character. Introduce the steps, substeps, and alternatives by a
-        procedure environment. A step may contain a link to an explanatory
-        subsection providing further details on the step.
-      </para>
     </sect2>
 
     <sect2 id="sec.product">
