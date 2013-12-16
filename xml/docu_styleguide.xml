@@ -730,28 +730,27 @@
       </example>
     </sect2>
 
-  <sect2 id="sec.application">
-    <title>Application Names</title>
+    <sect2 id="sec.application">
+      <title>Application Names</title>
 
-    <para>When referring to an application, add a
-        <sgmltag class="emptytag">phrase role="productname"</sgmltag> element
-        around it. This will not result in a visual change but disables
-        hyphenation:
-    </para>
-  </sect2>
+      <para>When referring to an application, add a
+          <sgmltag class="emptytag">phrase role="productname"</sgmltag> element
+          around it. This will not result in a visual change but disables
+          hyphenation:
+      </para>
+    </sect2>
 
-      <sect2 id="sec.callout">
-        <title>Callouts</title>
+    <sect2 id="sec.callout">
+      <title>Callouts</title>
 
-        <para>Add the <sgmltag class="emptytag">co</sgmltag> elements directly
-          after the part of a screen that you want to annotate. Do not try to
-          align them above the part of a screen to annotate.
-          Do not use more than ten callouts per example.
-        </para>
-        <example id="example.callout">
-          <title>A Configuration File with Callouts</title>
-          <screen>
-color white/blue black/light-gray <co id="col"/>
+      <para>Add the <sgmltag class="emptytag">co</sgmltag> elements directly
+        after the part of a screen that you want to annotate. Do not try to
+        align them above the part of a screen to annotate.
+        Do not use more than ten callouts per example.
+      </para>
+      <example id="example.callout">
+        <title>A Configuration File with Callouts</title>
+        <screen>color white/blue black/light-gray <co id="col"/>
 default 0 <co id="def"/>
 timeout 8 <co id="time"/>
 gfxmenu (hd0,0)/boot/message
@@ -764,85 +763,82 @@ title SUSE Linux Enterprise
 title Disk
     root (fd0)
     chainloader +1</screen>
-          <calloutlist>
-            <callout arearefs="col">
-              <para>
-        Here, define the colors used by the <application>GRUB</application>
-        menu.
-       </para>
-            </callout>
-            <callout arearefs="def">
-              <para>
-        Define the default option.
-       </para>
-            </callout>
-            <callout arearefs="time">
-              <para>
-        Select a time-out after which booting starts automatically.
-       </para>
-            </callout>
-          </calloutlist>
-        </example>
-        <para>
-     For details on the markup of this element, refer to
-     <xref linkend="sec.markup.block.callouts"/>.
-    </para>
-  </sect2>
-
-  <sect2 id="sec.commandline">
-    <title>Command Line Input and Output</title>
-
-    <para>When dealing with user input and system output shorter than 30
-      characters, format it as an inline element. In all other cases,
-      close the current paragraph and enclose it in a
-      <sgmltag class="emptytag">screen</sgmltag> element.
-    </para>
-
-    <sect3 id="sec.command">
-      <title>Commands</title>
-
-      <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
-      <para>Make sure to capitalize commands exactly as they are executed.
-        Commands can be embedded in running text or
-        presented as part of a screen environment. In running text,
-        use <sgmltag class="emptytag">command</sgmltag> when referring
-        to an actual command you would use on a command line:
+        <calloutlist>
+          <callout arearefs="col">
+            <para>Color definitions to be used by the
+              <phrase role="productname">GRUB</phrase> menu.
+            </para>
+          </callout>
+          <callout arearefs="def">
+            <para>Define the default option.</para>
+          </callout>
+          <callout arearefs="time">
+            <para>Select a time-out after which booting starts automatically.
+            </para>
+          </callout>
+        </calloutlist>
+      </example>
+      <para>For details on the markup of this element, refer to
+        <xref linkend="sec.markup.block.callouts"/>.
       </para>
-      <literallayout>Use <command>loffice</command> to start LibreOffice from the command line.</literallayout>
-      <para>Nest options, surrounded by an
-        <sgmltag class="emptytag">option</sgmltag> element,
-        inside the command element. Options can also be used in
-        text, separately from <sgmltag class="emptytag">command</sgmltag>. See
-        <xref linkend="sec.markup.inline.commands"/>.
-      </para>
-      <para>Use markup for commands even inside
-        <sgmltag class="emptytag">screen</sgmltag>
-        environments.
-      </para>
-      <para>See also <xref linkend="sec.prompt"/>.
-      </para>
-    </sect3>
+    </sect2>
 
-    <sect3 id="sec.placeholder">
-      <title>Placeholders</title>
+    <sect2 id="sec.commandline">
+      <title>Command Line Input and Output</title>
 
-      <para>To mark up text that readers need to replace, use the
-        <sgmltag class="emptytag">replaceable</sgmltag> element.
+      <para>When dealing with user input and system output shorter than 30
+        characters, format it with an inline element, such as
+        <sgmltag class="emptytag">command</sgmltag> or
+        <sgmltag class="emptytag">filename</sgmltag>. In all other cases,
+        close the current paragraph and enclose it in a
+        <sgmltag class="emptytag">screen</sgmltag> element.
       </para>
-          <screen>To list the contents of a directory, execute
-&lt;command&gt;ls &lt;replaceable&gt;directory&lt;/replaceable&gt;&lt;/command&gt;.</screen>
-    </sect3>
 
-    <sect3 id="sec.variable">
-      <title>Variable Names</title>
+      <sect3 id="sec.command">
+        <title>Commands</title>
 
-        <para>References to names of variables rather than to their value.
+        <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
+        <para>Make sure to capitalize commands exactly as they are executed.
+          Commands can be embedded in running text or
+          presented as part of a screen environment. In running text,
+          use <sgmltag class="emptytag">command</sgmltag> when referring
+          to an actual command you would use on a command line:
         </para>
-        <screen>To select another display manager, start the YaST sysconfig editor
-and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen>
-    </sect3>
+        <literallayout>Use <command>loffice</command> to start LibreOffice from the command line.</literallayout>
+        <para>Nest options, surrounded by an
+          <sgmltag class="emptytag">option</sgmltag> element,
+          inside the command element. Options can also be used in
+          text, separately from <sgmltag class="emptytag">command</sgmltag>. See
+          <xref linkend="sec.markup.inline.commands"/>.
+        </para>
+        <para>Use markup for commands even inside
+          <sgmltag class="emptytag">screen</sgmltag>
+          environments.
+        </para>
+        <para>See also <xref linkend="sec.prompt"/>.
+        </para>
+      </sect3>
 
-  </sect2>
+      <sect3 id="sec.placeholder">
+        <title>Placeholders</title>
+
+        <para>To mark up text that readers need to replace, use the
+          <sgmltag class="emptytag">replaceable</sgmltag> element.
+        </para>
+            <screen>To list the contents of a directory, execute
+&lt;command&gt;ls &lt;replaceable&gt;directory&lt;/replaceable&gt;&lt;/command&gt;.</screen>
+      </sect3>
+
+      <sect3 id="sec.variable">
+        <title>Variable Names</title>
+
+          <para>References to names of variables rather than to their value.
+          </para>
+          <screen>To select another display manager, start the YaST sysconfig editor
+and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen>
+      </sect3>
+
+    </sect2>
 
     <sect2 id="sec.crossreference">
       <title>Cross References</title>
@@ -888,7 +884,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
       <para>Use the <sgmltag class="emptytag">ulink</sgmltag> element to mark up
         URLs that can be opened with a web browser, such as
         <ulink url="http://www.suse.de"/>.
-        Always add the correct protocol prefix (for examle,
+        Always add the correct protocol prefix (for example,
         <literal>http://</literal>),
         otherwise links will not work. Never use <sgmltag>filename</sgmltag>
         for a link, as that would both disable the link checker and make the
@@ -919,74 +915,71 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
     </sect2>
 
     <sect2 id="sec.example">
-        <title>Examples</title>
-        <para>Examples are used to illustrate complex processes.
-          Many of the rules established in <xref linkend="sec.graphic"/> also
-          apply to examples.
-        </para>
-        <itemizedlist>
-          <listitem>
-            <para>Examples are used to present long commands, commands
-              together with their output, lines of code, configuration files,
-              excerpts of configuration files, and output, such as system
-              messages.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Never indent text inside
-              <sgmltag class="emptytag">screen</sgmltag>
-              elements as you do in other XML elements. All whitespace inside
-              <sgmltag class="emptytag">screen</sgmltag> elements shows up
-              verbatim.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Only use examples where they are necessary for understanding
-              the documentation.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Always give examples a title and an ID.</para>
-          </listitem>
-        </itemizedlist>
-        <example id="ex.ex.call">
-          <title>Calling ps to Get Process Information</title>
-          <screen><prompt>tux &gt; </prompt><command>ps <option>-xa</option></command>
+      <title>Examples</title>
+
+      <para>Use examples to illustrate complex processes.
+        Many of the rules established in <xref linkend="sec.graphic"/> also
+        apply to examples.
+      </para>
+      <itemizedlist>
+        <listitem>
+          <para>Examples are used to present long commands, commands
+            together with their output, lines of code, configuration files,
+            excerpts of configuration files, and output, such as system
+            messages.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Never indent text inside
+            <sgmltag class="emptytag">screen</sgmltag>
+            elements as you do in other XML elements. All whitespace inside
+            <sgmltag class="emptytag">screen</sgmltag> elements shows up
+            verbatim.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Only use examples where they are necessary for understanding
+            the documentation.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Always give examples a title and an ID.</para>
+        </listitem>
+      </itemizedlist>
+      <example id="ex.ex.call">
+        <title>Calling ps to Get Process Information</title>
+        <screen><prompt>tux &gt; </prompt><command>ps <option>-xa</option></command>
 
 5170 ?        S      0:00 kdeinit: khotkeys
 5172 ?        S      0:02 kdeinit: kdesktop
 5174 ?        S      0:04 kdeinit: kicker
 5177 ?        S      0:00 kdeinit: kpowersave
 5179 ?        S      0:00 kdeinit: klipper</screen>
-        </example>
-        <para>
-     For details on markup, refer to
-     <xref linkend="sec.markup.block.examples"/>.
-    </para>
-      </sect2>
-  <sect2 id="sec.glossary">
-    <title>Glossaries</title>
-    <para>
-   An optional glossary contains terms and their definitions. Make sure that
-   the glossary entries are appropriate to the intended audience. Define
-   unfamiliar terms and specialized jargon.
-  </para>
-    <para>
-   Define infinitive forms of verbs and singular nouns. Use lowercase for
-   the term unless it is a proper noun.
-  </para>
-    <para>
-   Use cross-references to link acronyms with their written out forms.
-   Define the written out form. Use a <emphasis>See</emphasis> reference for
-   the acronym form to link it to the defined written out form.
-  </para>
-    <para>
-   The markup for a glossary entry is shown in
-   <xref linkend="ex.glossary"/>.
-  </para>
-    <example id="ex.glossary">
-      <title>A Typical Example of a Glossary</title>
-      <screen>&lt;glossary&gt;
+      </example>
+      <para>For details on markup, refer to
+        <xref linkend="sec.markup.block.examples"/>.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.glossary">
+      <title>Glossaries</title>
+      <para>An optional glossary contains terms and their definitions. Make sure
+        that the glossary entries are appropriate to the intended audience. Define
+        unfamiliar terms and specialized jargon.
+      </para>
+      <para>Define infinitive forms of verbs and singular nouns. Use lowercase for
+        the term unless it is a proper noun.
+      </para>
+      <para>Use cross-references to link acronyms with their written out forms.
+        Define the written out form. Use a <emphasis>See</emphasis> reference for
+        the acronym form to link it to the defined written out form.
+      </para>
+      <para>The markup for a glossary entry is shown in
+        <xref linkend="ex.glossary"/>.
+      </para>
+      <example id="ex.glossary">
+        <title>A Typical Example of a Glossary</title>
+        <screen>&lt;glossary&gt;
  &lt;title&gt;Glossary&lt;/title&gt;
  &lt;glossdiv&gt;
   &lt;title&gt;D&lt;/title&gt;
@@ -1002,222 +995,203 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
    &lt;/glossdef&gt;
   &lt;/glossentry&gt;
  &lt;/glossdiv&gt;
-&lt;/glossary&gt;
-</screen>
-    </example>
-  </sect2>
-      <sect2 id="sec.graphic">
-        <title>Graphics and Figures</title>
-        <para>
-     Screenshots and graphics should only be used when helpful for
-     following the explanation. Using too many screenshots could add to the
-     confusion of the reader. If you intend to use screenshots in a document,
-     consider the following issues first:
-    </para>
-        <itemizedlist>
-          <listitem>
-            <para>
-       A screenshot should illustrate a complex situation in which the user
-       cannot easily follow the text otherwise.
+&lt;/glossary&gt;</screen>
+      </example>
+    </sect2>
+
+    <sect2 id="sec.graphic">
+      <title>Graphics and Figures</title>
+      <para>Where they are helpful for following the explanation, use
+        screenshots and graphics. If you intend to use screenshots in a
+        document, consider the following issues first:
       </para>
-          </listitem>
-          <listitem>
-            <para>Only illustrate steps where user meaningful user interactions are
-       necessary. Do not create screenshots of progress bars or confirmation
-       windows.
+      <itemizedlist>
+        <listitem>
+          <para>A screenshot should illustrate a complex situation in which
+            the user cannot easily follow the text otherwise.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Only illustrate steps where user meaningful user interactions
+            are necessary. Do not create screenshots of progress bars or
+            confirmation windows.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Choose only those screenshots that show the most important
+            dialogs or choices during the whole process is sufficient.
+          </para>
+        </listitem>
+      </itemizedlist>
+      <para>If you intend to use graphics in documentation, think of the
+        following issues first:
       </para>
-          </listitem>
-          <listitem>
-            <para>Choose only those screenshots that show the most important dialogs
-        or choices during the whole process is sufficient.
-      </para>
-          </listitem>
-        </itemizedlist>
-        <para>If you intend to use graphics in documentation, think of the following
-     issues first:
-    </para>
-        <itemizedlist>
-          <listitem>
-            <para> KISS (<quote>keep it short and simple</quote>). Graphics should
-       always simplify complex issues and not confuse the reader by their
-       complexity. Embedding text in graphic adds to complexity. Use as
-       little text as possible. Be aware that some languages use up to
-       twice as much space for a given phrase than English.
-      </para>
-          </listitem>
-          <listitem>
-            <para>Reference the figure from the text by means of an
-        <sgmltag class="emptytag">xref</sgmltag>.
-      </para>
-          </listitem>
-        </itemizedlist>
-      </sect2>
+      <itemizedlist>
+        <listitem>
+          <para>KISS (<quote>keep it short and simple</quote>). Graphics
+            should always simplify complex issues and not confuse the reader
+            by their complexity. Embedding text in graphic adds to complexity.
+            Use as little text as possible. Be aware that some languages use
+            up to twice as much space for a given phrase than English.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Reference the figure from the text by means of an
+            <sgmltag class="emptytag">xref</sgmltag>.
+          </para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+
     <sect2 id="sec.heading">
       <title>Headings</title>
-      <para>
-    Each level of heading should have two or more headings. Lonely
-    subheadings are not allowed. Make headings in a group parallel by using
-    a similar structure for the wording.
-   </para>
-      <para>
-    Keep headings short and simple. Do not use both an acronym and the
-    written-out form in a heading.
-   </para>
-      <para>
-    Provide content between a heading and its subheadings. In some cases,
-    this is only a small paragraph of introductory information. In other
-    cases, more information can be provided.
-    </para>
-  </sect2>
+      <para>Each level of heading should have two or more headings. Lonely
+        subheadings are not allowed. Make headings in a group parallel by using
+        a similar structure for the wording.
+      </para>
+      <para>Keep headings short and simple. Do not use both an acronym and the
+        written-out form in a heading.
+      </para>
+      <para>Provide content between a heading and its subheadings. In some
+        cases, this is only a small paragraph of introductory information.
+        In other cases, more information can be provided.
+      </para>
+    </sect2>
 
-  <sect2 id="sec.index">
-    <title>Indexes</title>
-    <para>Insert index terms as close to the relevant text as possible.
-      When more than five paragraphs belong to a topic, use a page range.
-      Nest index terms up to two levels deep.
-    </para>
-    <para>When indexing, look for information a user is likely to be trying to
-      find. Adapt breadth and depth of included index terms for a given
-      topic to the weight it has within the manual. Never index
-      <quote>For More Information</quote> sections, abstracts,
-      or commands that only appear as means to a different end.
-    </para>
-    <para>Be consistent in the terms you index. However,
-      consider that users might not have the exact same terms in mind as you
-      do, especially when it comes to highly technical words or brands.
-      Write nouns in the plural. Write verbs in a gerund form
-      (<emphasis>-ing</emphasis>). Use sentence-style capitalization for
-      index terms.
-    </para>
-    <para>If an entry has six or more page references, try to subsume them
-      as subentries under a single entry. If an entry has only a single
-      subentry, consider deleting the subentry.
-    </para>
-    <para>Check for inconsistencies that result in multiple items in
-      the index. Check all <emphasis>see</emphasis> and
-      <emphasis>see also</emphasis> references for consistency.
-      Items should not have both a page and a
-      <emphasis>see</emphasis> reference. Where possible, avoid using page
-      references and <emphasis>see also</emphasis> together.
-    </para>
-  </sect2>
+    <sect2 id="sec.index">
+      <title>Indexes</title>
+      <para>Insert index terms as close to the relevant text as possible.
+        When more than five paragraphs belong to a topic, use a page range.
+        Nest index terms up to two levels deep.
+      </para>
+      <para>When indexing, look for information a user is likely to be trying to
+        find. Adapt breadth and depth of included index terms for a given
+        topic to the weight it has within the manual. Never index
+        <quote>For More Information</quote> sections, abstracts,
+        or commands that only appear as means to a different end.
+      </para>
+      <para>Be consistent in the terms you index. However,
+        consider that users might not have the exact same terms in mind as you
+        do, especially when it comes to highly technical words or brands.
+        Write nouns in the plural. Write verbs in a gerund form
+        (<emphasis>-ing</emphasis>). Use sentence-style capitalization for
+        index terms.
+      </para>
+      <para>If an entry has six or more page references, try to subsume them
+        as subentries under a single entry. If an entry has only a single
+        subentry, consider deleting the subentry.
+      </para>
+      <para>Check for inconsistencies that result in multiple items in
+        the index. Check all <emphasis>see</emphasis> and
+        <emphasis>see also</emphasis> references for consistency.
+        Items should not have both a page and a
+        <emphasis>see</emphasis> reference. Where possible, avoid using page
+        references and <emphasis>see also</emphasis> together.
+      </para>
+    </sect2>
 
-  <sect2 id="sec.list">
+    <sect2 id="sec.list">
       <title>Lists</title>
-      <para>
-    SUSE and openSUSE documentation uses the following types of lists (the
-    respective XML elements are given in parentheses):
-   </para>
+
+      <para>SUSE and openSUSE documentation uses the following types of lists
+        (the respective XML elements are given in parentheses):
+      </para>
       <variablelist>
         <varlistentry>
-          <term>Bullet Lists
-            (<sgmltag class="emptytag">itemizedlist</sgmltag>)</term>
+          <term>Bullet Lists (<sgmltag class="emptytag">itemizedlist</sgmltag>)
+          </term>
           <listitem>
-            <para>
-       See
-       <ulink url="http://www.docbook.org/tdg/en/html/itemizedlist.html"/>
-       for details of markup.
-      </para>
+            <para>See
+              <ulink url="http://www.docbook.org/tdg/en/html/itemizedlist.html"/>
+              for details of markup.
+            </para>
           </listitem>
         </varlistentry>
         <varlistentry>
-          <term>Numbered Lists
-            (<sgmltag class="emptytag">orderedlist</sgmltag>)</term>
+          <term>Numbered Lists (<sgmltag class="emptytag">orderedlist</sgmltag>)
+          </term>
           <listitem>
-            <para>
-       See
-       <ulink url="http://www.docbook.org/tdg/en/html/orderedlist.html"/>
-       for details of markup.
-      </para>
+            <para>See
+              <ulink url="http://www.docbook.org/tdg/en/html/orderedlist.html"/>
+              for details of markup.
+            </para>
           </listitem>
         </varlistentry>
         <varlistentry>
           <term>Descriptive Lists
-            (<sgmltag class="emptytag">variablelist</sgmltag>)</term>
+            (<sgmltag class="emptytag">variablelist</sgmltag>)
+          </term>
           <listitem>
-            <para>
-       See
-       <ulink url="http://www.docbook.org/tdg/en/html/variablelist.html"/>
-       for details on markup.
-      </para>
+            <para>See
+              <ulink url="http://www.docbook.org/tdg/en/html/variablelist.html"/>
+              for details on markup.
+            </para>
           </listitem>
         </varlistentry>
       </variablelist>
-      <para>
-    Consider the following general rules when creating or editing list
-    environments:
-   </para>
+      <para>Consider the following general rules when creating or editing list
+        environments:
+      </para>
       <itemizedlist>
         <listitem>
-          <para>
-      List environments should be used cautiously. Their markup is quite
-      distinct and overusing them might disrupt the text flow.
-     </para>
+          <para>List environments should be used cautiously. Their markup is
+            quite distinct and overusing them might disrupt the text flow.
+          </para>
         </listitem>
         <listitem>
-          <para>
-      Always introduce a list in the text. If needed for reference or better
-      coordination with the related text, add an optional title and an
-      <sgmltag class="attribute">id</sgmltag> attribute.
-     </para>
+          <para>Always introduce a list in the text. If needed for reference or
+            better coordination with the related text, add an optional title
+            and an <sgmltag class="attribute">id</sgmltag> attribute.
+          </para>
         </listitem>
         <listitem>
-          <para>
-      A list must contain at least two items. If items are short and simple
-      in structure, consider incorporating them in the flowing text instead
-      of creating a list environment.
-     </para>
+          <para>A list must contain at least two items. If items are short
+            and simple in structure, consider incorporating them in the
+            flowing text instead of creating a list environment.
+          </para>
         </listitem>
         <listitem>
-          <para>
-      Use sentence-style capitalization for the list items. Use title-style
-      capitalization for terms in descriptive lists.
-     </para>
+          <para>Use sentence-style capitalization for the list items. Use
+            title-style capitalization for terms in descriptive lists.
+          </para>
         </listitem>
         <listitem>
-          <para>
-      If using multiple sentences as a list item, end all items in that list
-      with a period.
-     </para>
+          <para>When using multiple sentences as a list item, end all items
+            in that list with a period.
+          </para>
         </listitem>
         <listitem>
-          <para>
-      Make sure that the items are grammatically parallel constructions
-      providing a pattern that makes it easier to follow the text.
-     </para>
+          <para>Make sure that the items are grammatically parallel
+            constructions providing a pattern that makes it easier
+            to follow the text.
+          </para>
         </listitem>
       </itemizedlist>
-      <para>
-    The different types can be nested, but avoid nesting too many levels.
-    When nesting different types of lists or introducing multiple levels of
-    one type, always consider the flow of the text. It is rarely necessary
-    to have more than one level in a list. Using too many levels disrupts
-    the text flow, confuses readers, and heavily influences the document
-    layout. Consider these issues carefully before nesting lists or
-    introducing another list level. Restructuring the information using a
-    well-balanced combination of lists and flowing texts is a good
-    approach.
-   </para>
+      <para>Never nest more than three lists within each other. In such cases,
+        try to restructure the information using a combination of
+        lists and running texts.
+      </para>
+
       <sect3 id="sec.bullet">
         <title>Bullet Lists</title>
-        <para>
-     Bullet lists are often used to provide an overview of information or to
-     introduce or summarize information. They should be used when the order
-     of list items is irrelevant.
-    </para>
-        <para>
-     If needed, assign an <sgmltag class="attribute">id</sgmltag> attribute
-     to an itemized list and add a title to reference it. Individual list
-     items may be referenced by assigning an
-     <sgmltag class="attribute">id</sgmltag> and an
-     <sgmltag class="attribute">xreflabel</sgmltag> attribute. The entry is
-     then identified by the value of <sgmltag class="attribute">id</sgmltag>
-     and the value of <sgmltag class="attribute">xreflabel</sgmltag> is
-     printed as the label of this item. See
-     <xref linkend="sec.crossreference"/> and
-     <xref linkend="sec.markup.inline.referencing"/> for detailed
-     information.
-    </para>
+
+        <para>Bullet lists are often used to provide an overview of information
+          or to introduce or summarize information. They should be used when
+          the order of list items is irrelevant.
+        </para>
+        <para>If needed, assign an <sgmltag class="attribute">id</sgmltag>
+          attribute to an itemized list and add a title to reference it.
+          Individual list items may be referenced by assigning an
+          <sgmltag class="attribute">id</sgmltag> and an
+          <sgmltag class="attribute">xreflabel</sgmltag> attribute. The entry is
+          then identified by the value of
+          <sgmltag class="attribute">id</sgmltag>
+          and the value of <sgmltag class="attribute">xreflabel</sgmltag> is
+          printed as the label of this item. See
+          <xref linkend="sec.crossreference"/> and
+          <xref linkend="sec.markup.inline.referencing"/> for detailed
+          information.
+        </para>
         <example id="ex.bulllist">
           <title>A Bullet List</title>
           <para>The following operating systems are supported:</para>
@@ -1234,109 +1208,101 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
           </itemizedlist>
         </example>
       </sect3>
+
       <sect3 id="sec.numbered">
         <title>Numbered Lists</title>
-        <para>
-     Use numbered lists when items have a strict order, hierarchy, or
-     importance. If order is not relevant, use a bullet list or a
-     descriptive list. Do not use numbered lists to describe procedures.
-     Complex sequential actions are better described by means of the
-     procedure environment (see <xref linkend="sec.procedure"/> for a detailed
-     description).
-    </para>
-        <para>
-     If needed, assign an <sgmltag class="attribute">id</sgmltag> attribute
-     to a numbered list and add a title to it in order to reference it.
-     Individual list items may be referenced by assigning an
-     <sgmltag class="attribute">id</sgmltag> and
-     <sgmltag class="attribute">xreflabel</sgmltag> attribute. The
-     entry is then identified by the value of
-     <sgmltag class="attribute">id</sgmltag> and the value of
-     <sgmltag class="attribute">xreflabel</sgmltag> is printed as the label
-     of this item. See <xref linkend="sec.crossreference"/> and
-     <xref linkend="sec.markup.inline.referencing"/> for detailed
-     information.
-    </para>
+
+        <para>Use numbered lists when items have a strict order, hierarchy, or
+          importance. If order is not relevant, use a bullet list or a
+          descriptive list. Do not use numbered lists to describe procedures.
+          Complex sequential actions are better described by means of the
+          procedure environment (see <xref linkend="sec.procedure"/>
+          for a detailed description).
+        </para>
+        <para>If needed, assign an <sgmltag class="attribute">id</sgmltag>
+          attribute to a numbered list and add a title to it in order to
+          reference it. Individual list items may be referenced by assigning an
+          <sgmltag class="attribute">id</sgmltag> and
+          <sgmltag class="attribute">xreflabel</sgmltag> attribute. The
+          entry is then identified by the value of
+          <sgmltag class="attribute">id</sgmltag> and the value of
+          <sgmltag class="attribute">xreflabel</sgmltag> is printed as the label
+          of this item. See <xref linkend="sec.crossreference"/> and
+          <xref linkend="sec.markup.inline.referencing"/> for detailed
+          information.
+        </para>
         <example id="ex.numlist">
           <title>A Numbered List</title>
-          <para>
-      Make sure the following requirements are met before trying to set up the
-      Apache Web server:
-     </para>
+          <para>Make sure the following requirements are met before trying to
+            set up an Apache Web server:
+          </para>
           <orderedlist>
             <listitem>
-              <para>
-        The network connection of the machine is configured properly.
-       </para>
+              <para>The network connection of the machine is configured
+                properly.
+              </para>
             </listitem>
             <listitem>
-              <para>
-        The exact system time of the machine is maintained by synchronizing with
-        a time server. This is necessary because parts of the HTTP protocol
-        depend on the correct time.
-       </para>
+              <para>The exact system time of the machine is maintained by
+                synchronizing with a time server. This is necessary because
+                parts of the HTTP protocol depend on the correct time.
+              </para>
             </listitem>
             <listitem>
-              <para>
-        The latest security updates are installed. If in doubt, run an
-        online update.
-       </para>
+              <para>The latest security updates are installed. If in doubt,
+                run an online update.
+              </para>
             </listitem>
             <listitem>
-              <para>
-        The default Web server port (port 80) is opened in the firewall. For
-        this, configure the SUSEFirewall2 to allow the service <guimenu>HTTP
-        Server</guimenu> in the external zone. This can be done using YaST.
-       </para>
+              <para>The default Web server port (port 80) is opened in the
+                firewall. For this, configure the SUSEFirewall2 to allow the
+                service <guimenu>HTTP Server</guimenu> in the external zone.
+                This can be done using YaST.
+              </para>
             </listitem>
           </orderedlist>
         </example>
       </sect3>
+
       <sect3 id="sec.descriptive">
         <title>Descriptive Lists</title>
-        <para>
-     Use descriptive lists when defining terms or describing options. Each
-     item of a descriptive list contains a short term that is then further
-     explained by means of an explanatory paragraph.
-    </para>
-        <para>
-     Use title-style capitalization for the term. Use sentence-style for the
-     list item.
-    </para>
-        <para>
-     You may assign an <sgmltag class="attribute">id</sgmltag> attribute to
-     the list and add a title to it in order to reference it. Individual
-     list items may be referenced by assigning an
-     <sgmltag class="attribute">id</sgmltag>. The entry is then identified
-     by the value of <sgmltag class="attribute">id</sgmltag> and
-     referenced by the term.
-    </para>
+
+        <para>Use descriptive lists when defining terms or describing options.
+          Each item of a descriptive list contains a short term that is then
+          further explained by means of an explanatory paragraph.
+        </para>
+        <para>Use title-style capitalization for the term. Use sentence-style
+          for the list item.
+        </para>
+        <para>You may assign an <sgmltag class="attribute">id</sgmltag>
+          attribute to the list and add a title to it in order to reference it.
+          Individual list items may be referenced by assigning an
+          <sgmltag class="attribute">id</sgmltag>. The entry is then identified
+          by the value of <sgmltag class="attribute">id</sgmltag> and
+          referenced by the term.
+        </para>
         <example id="ex.varlist">
           <title>A Descriptive List</title>
-          <para>
-      This book consists of several parts:
-     </para>
+          <para>This book consists of several parts:</para>
           <variablelist>
             <varlistentry>
               <term>Installation</term>
               <listitem>
-                <para>
-         Learn about the installation and initial configuration of a Linux
-         system.
-        </para>
+                <para>Learn about the installation and initial configuration
+                  of a Linux system.
+                </para>
               </listitem>
             </varlistentry>
             <varlistentry>
               <term>System</term>
               <listitem>
-                <para>
-         Get a basic understanding of the system components.
-        </para>
+                <para>Get a basic understanding of the system components.</para>
               </listitem>
             </varlistentry>
           </variablelist>
         </example>
       </sect3>
+
     </sect2>
 
     <sect2 id="sec.keyboard">
@@ -1381,7 +1347,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         <sgmltag class="emptytag">citetitle</sgmltag> element. For example:
       </para>
       <screen>&lt;citetitle&gt;Indexing Books&lt;/citetitle&gt; by Nancy C. Mulvany
-(ISBN 0-226-55014-1) is a useful guide for indexing.</screen>
+(ISBN 0-226-55014-1) is a useful guide to indexing.</screen>
       <para>It is useful to provide language-specific references in the
         translated books. If the authors know of language-specific versions,
         they can include them in comments for translators. As time permits,
@@ -1395,135 +1361,124 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         <xref linkend="sec.link"/>.
       </para>
     </sect2>
-  <sect2 id="sec.procedure">
+
+    <sect2 id="sec.procedure">
     <title>Procedures</title>
-    <para>
-   Procedures are used to describe a task. A procedure consists of several
-   steps that are usually performed sequentially. A procedure environment
-   consists of the following elements:
-  </para>
-    <itemizedlist>
-      <listitem>
-        <para>
-     An optional title. If you need to reference the procedure as a whole,
-     set an <sgmltag class="attribute">id</sgmltag>. The title is then
-     used as the label of the reference.
-    </para>
-      </listitem>
-      <listitem>
-        <para>
-     An introductory phrase establishing the purpose of the procedure. If
-     necessary, add the preconditions of the operation.
-    </para>
-      </listitem>
-      <listitem>
-        <para>
-     Steps and substeps describing what the reader must do. If needed, add
-     an explanatory paragraph, but keep it short. Do not use only one
-     substep in a step or one step in a procedure.
-    </para>
-      </listitem>
-      <listitem>
-        <para>
-     Alternative actions are introduced by a substep environment containing
-     two steps linked by <quote>or.</quote> Each optional step must have a
-     <sgmltag class="attribute">performance</sgmltag> attribute set to
-     <sgmltag class="attvalue">optional</sgmltag>.
-    </para>
-      </listitem>
-    </itemizedlist>
-    <procedure id="pro.useradd">
-      <title>Adding Users with YaST</title>
-      <para>
-    To add new users to a Linux system, perform the following steps:
-   </para>
-      <step>
-        <para>
-     Start the YaST module (<menuchoice><guimenu>YaST</guimenu><guimenu>User Management</guimenu></menuchoice>)
-    </para>
-      </step>
-      <step>
-        <para>
-     Set the filter (type of users).
-    </para>
-      </step>
-      <step>
-        <para>
-     Add the first user:
-    </para>
-        <substeps>
-          <step>
-            <para>
-       Click <guimenu>Add</guimenu> to enter the <guimenu>Add a New
-       User</guimenu> dialog.
+
+      <para>Use procedures to describe sequential tasks. A procedure environment
+        consists of the following elements:
       </para>
-          </step>
-          <step>
-            <para>
-       Enter the user data and click <guimenu>Create</guimenu>.
+      <itemizedlist>
+        <listitem>
+          <para>An optional title. If you need to reference the procedure as a
+            whole, set an <sgmltag class="attribute">id</sgmltag>. The title is
+            then used as the label of the reference.
+          </para>
+        </listitem>
+        <listitem>
+          <para>An introductory phrase establishing the purpose of the
+            procedure. If necessary, add the preconditions of the operation.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Steps and substeps describing what the reader must do.
+            If needed, add an explanatory paragraph, but keep it short. Do not
+            use only one substep in a step or one step in a procedure.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Alternative actions are introduced by a substep environment\
+            containing two steps linked by <quote>or.</quote> Each optional
+            step must have a <sgmltag class="attribute">performance</sgmltag>
+            attribute set to <sgmltag class="attvalue">optional</sgmltag>.
+          </para>
+        </listitem>
+      </itemizedlist>
+      <procedure id="pro.useradd">
+        <title>Adding Users with YaST</title>
+        <para>To add a new user to the system, perform the following steps:
+        </para>
+        <step>
+          <para>Open <guimenu>YaST</guimenu></para>
+        </step>
+        <step performance="optional">
+          <para>If you are asked, type the password of the
+            <systemitem>root</systemitem> user and click <guimenu>OK</guimenu>.
+          </para>
+        </step>
+        <step>
+          <para>Click <guimenu>User and Group Management</guimenu>.</para>
+        </step>
+        <step>
+          <para>To open the <guimenu>Add a New User</guimenu> dialog, click
+            <guimenu>Add</guimenu>.
+          </para>
+        </step>
+        <step>
+          <para>Type in the user data and click <guimenu>Create</guimenu>.
+          </para>
+        </step>
+        <step>
+          <para performance="optional">Repeat from the third step to add more
+            users.
+          </para>
+        </step>
+        <step>
+          <para>Leave the YaST module by clicking <guimenu>OK</guimenu>.
+          </para>
+        </step>
+      </procedure>
+      <para>If you need to structure complex tasks, procedure environments
+        are a means to provide an overview of the whole task and its sequential
+        character. Introduce the steps, substeps, and alternatives by a
+        procedure environment. A step may contain a link to an explanatory
+        subsection providing further details on the step.
       </para>
-          </step>
-        </substeps>
-        <para>
-     Repeat this procedure for each user you want to add.
-    </para>
-      </step>
-      <step>
-        <para>
-     After the last user has been added, leave the YaST module by clicking
-     <guimenu>Finish</guimenu>.
-    </para>
-      </step>
-    </procedure>
-    <para>
-   If you need to structure complex tasks, procedure environments are a
-   means to provide an overview of the whole task and its sequential
-   character. Introduce the steps, substeps, and alternatives by a procedure
-   environment. A step may contain a link to an explanatory subsection
-   providing further details on the step.
-  </para>
-  </sect2>
-  <sect2 id="sec.product">
-    <title>Products and Trademarks</title>
-    <para>Always use the preferred product name instead of, for instance, an
-      acronym. When referring to a product, add a
-      <sgmltag class="emptytag">phrase role="productname"</sgmltag> element
-      around it.
-      This will not result in a visual change but disables hyphenation:
-    </para>
-    <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
-    <para>Most products referenced in the documentation are trademarked.
-      Follow these rules when dealing with these terms:
-    </para>
-    <itemizedlist>
-      <listitem>
-        <para>Never use trademarks in headings.</para>
-      </listitem>
-      <listitem>
-        <para>Only use the marked version on the first occurrence of the
-          product name in a chapter.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Only use the &reg;, &tm;, or &sm; marks for
-          <phrase role="companyname">Attachmate</phrase> products.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Use an * (asterisk) for all service marks or trademarks of
-          third-party companies. This both acknowledges the service mark
-          or trademark of the other company and protects SUSE in case the
-          protection of the brand changes in any way.
-        </para>
-      </listitem>
-    </itemizedlist>
-  </sect2>
+    </sect2>
+
+    <sect2 id="sec.product">
+      <title>Products and Trademarks</title>
+
+      <para>Always use the preferred product name instead of, for instance, an
+        acronym. When referring to a product, add a
+        <sgmltag class="emptytag">phrase role="productname"</sgmltag> element
+        around it.
+        This will not result in a visual change but disables hyphenation:
+      </para>
+      <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
+      <para>Most products referenced in the documentation are trademarked.
+        Follow these rules when dealing with these terms:
+      </para>
+      <itemizedlist>
+        <listitem>
+          <para>Never use trademarks in headings.</para>
+        </listitem>
+        <listitem>
+          <para>Only use the marked version on the first occurrence of the
+            product name in a chapter.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Only use the &reg;, &tm;, or &sm; marks for
+            <phrase role="companyname">Attachmate</phrase> products.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Use an * (asterisk) for all service marks or trademarks of
+            third-party companies. This both acknowledges the service mark
+            or trademark of the other company and protects SUSE in case the
+            protection of the brand changes in any way.
+          </para>
+        </listitem>
+      </itemizedlist>
+    </sect2>
+
     <sect2 id="sec.prompt">
       <title>Prompts</title>
 
       <para>When documenting commands entered into Bash with a
-        <sgmltag class="emptytag">screen</sgmltag> element, always prefix them with a prompt
-        marked up this way:
+        <sgmltag class="emptytag">screen</sgmltag> element, always prefix them
+        with a prompt marked up this way:
       </para>
       <screen>&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ls&lt;/command&gt;</screen>
       <para>Never include a host name or path in your prompts to avoid making
@@ -1539,7 +1494,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
       <para>When documenting prompts other than the one of Bash, use a
         custom prompt that is as generic as possible.
       </para>
-      <para>For consistency, it is helpful to create an entity for the prompts
+      <para>For consistency, it is helpful to create entities for the prompts
         used in your documentation. To learn more, refer to
         <xref linkend="sec.entity"/>.
       </para>
@@ -1548,10 +1503,9 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
     <sect2 id="sec.table">
       <title>Tables</title>
 
-      <para>Use tables to present large numbers of similar facts. Table are
-        easy to scan and compare. Always keep tables as simple enough that they
-        do not require long explanations even for readers largely unfamiliar
-        with the topic.
+      <para>Use tables to present large numbers of similar facts. Tables are
+        easy to scan and compare. Always keep tables simple enough to not
+        require long explanations even for readers unfamiliar with the topic.
       </para>
       <para>A table always has a title and should have an
         <sgmltag class="attribute">id</sgmltag> attribute.
@@ -1641,8 +1595,10 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
           </listitem>
       </itemizedlist>
     </sect2>
+
     <sect2 id="sec.xmlcomment">
       <title>XML Comments</title>
+
       <para>XML comments can be used for temporarily disabling portions of
         text. Another use of XML comments is to create more permanent internal
         comments or to mark up changes made for layout reasons.
@@ -1655,200 +1611,187 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         </para>
       </tip>
     </sect2>
-  <sect2 id="sec.entity">
-    <title>Entities</title>
-    <para>Entities are used to expand text. There are several situations in
-      which they can be used:
-    </para>
-    <itemizedlist>
-      <listitem>
-        <para>Representation of special characters that cannot easily
-          be displayed, entered or memorized.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Integration of external files by entities representing
-          references to their file names.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Text expansion for repeating content.</para>
-      </listitem>
-    </itemizedlist>
-    <para>Once an entity is defined, it can be used in many places. Entities
-      reduce the risk of translation errors and increase consistency because
-      they are translated once and automatically expanded elsewhere.
-    </para>
 
-    <sect3 id="sec.entity.handling">
-      <title>Using Entity Files</title>
-      <para>
-    SUSE uses a small set of custom entities. This set is localized for each
-    supported language. Find the SUSE set of entities in the file
-    <filename>entity-decl.ent</filename> under each documentation project
-    and each language. When the set has been modified for a new product
-    release, this file must be updated in the supported languages as well.
+    <sect2 id="sec.entity">
+      <title>Entities</title>
+
+      <para>Entities are used to expand text. There are several situations in
+        which they can be used:
       </para>
-      <para>
-    Each header of a SUSE XML file includes the entity declaration file (by
-    means of an entity):
-   </para>
-      <screen>&lt;!ENTITY % entities SYSTEM "../entity-decl.ent"&gt;
-%entities;
-</screen>
-      <example id="ex.entity">
-        <title>Excerpt from a SUSE entity-decl.ent</title>
-        <screen>&lt;!ENTITY<co id="co.decl"/> exampleserver<co id="co.def"/>   "sun<co id="co.val"/>"&gt;
-&lt;!ENTITY exampleserverip    "&amp;exampledomainip;.20"&gt;
-&lt;!ENTITY exampleserverfq    "&amp;exampleserver;.&amp;exampledomain;"<co id="co.ent"/>&gt;
-</screen>
-        <calloutlist>
-          <callout arearefs="co.decl">
-            <para>
-       The kind of declaration to be made.
-      </para>
-          </callout>
-          <callout arearefs="co.def">
-            <para>
-       Defines the entity name.
-      </para>
-          </callout>
-          <callout arearefs="co.val">
-            <para>
-       Sets the value to which the processed entity should be expanded.
-      </para>
-          </callout>
-          <callout arearefs="co.ent">
-            <para>
-       Nests an entity in the value.
-      </para>
-          </callout>
-        </calloutlist>
-      </example>
-      <para>
-    A few hints for working with entities in SUSE documentation projects:
-   </para>
       <itemizedlist>
         <listitem>
-          <para>
-      If there should be any need for defining special entities (for
-      example, for localization purposes), add the new definitions to the
-      appropriate <filename>entity-decl.ent</filename> file. Never include
-      these definitions in the file header.
-      <phrase condition="internal">Always check with the documentation team
-      members before introducing new entities.</phrase>
-     </para>
+          <para>Representation of special characters that cannot easily
+            be displayed, entered or memorized.
+          </para>
         </listitem>
         <listitem>
-          <para>
-      When translating entities, translate the value, but never change the
-      entity name (see <xref linkend="ex.entity"/>).
-     </para>
+          <para>Integration of external files by entities representing
+            references to their file names.
+          </para>
         </listitem>
         <listitem>
-          <para>
-      Always use the exact notation of the entities when translating files
-      to avoid processing errors.
-     </para>
-        </listitem>
-        <listitem>
-          <para>
-      Make sure that you use proper UTF-8 encoding when editing and saving
-      the entity declaration file or any of the SUSE XML files.
-     </para>
+          <para>Text expansion for repeating content.</para>
         </listitem>
       </itemizedlist>
-    </sect3>
-    <sect3 id="sec.entity.expansion">
-      <title>Common Types of Entities</title>
-      <para>
-    The following provides some background on the most important entities
-    used in creating documentation for SUSE products. To be able to adjust
-    product names of platform branding even past any deadlines, a set of
-    entities must represent the frequently-changing product names. The same
-    applies to book titles. An <filename>entity-decl.ent</filename> file
-    contains several different categories of entities. These are:
-   </para>
-      <variablelist>
-        <varlistentry>
-          <term>General Entities</term>
-          <listitem>
-            <para>
-       These feature mostly network IP addresses, host names, and user names.
+      <para>Once an entity is defined, it can be used in many places. Entities
+        reduce the risk of translation errors and increase consistency because
+        they are translated once and automatically expanded elsewhere.
       </para>
-          </listitem>
-        </varlistentry>
-        <varlistentry>
-          <term>Books</term>
-          <listitem>
-            <para>
-       If possible, any book created by our team has a title entity in case
-       sudden changes are necessary.
-      </para>
-          </listitem>
-        </varlistentry>
-        <varlistentry>
-          <term>Platforms</term>
-          <listitem>
-            <para>
-       To avoid touching our content whenever a hardware vendor rebrands its
-       products, we use entities for all hardware architectures referenced
-       in the books.
-      </para>
-          </listitem>
-        </varlistentry>
-        <varlistentry>
-          <term>Products</term>
-          <listitem>
-            <para>
-       We maintain a list of entities of all SUSE-based product names and
-       some other products and applications for which we write
-       documentation.
-      </para>
-          </listitem>
-        </varlistentry>
-      </variablelist>
-      <para>
-    There are several guidelines to consider when working with product
-    entities for SUSE documentation:
-      </para>
-      <variablelist>
-        <varlistentry>
-          <term>Entity Selection</term>
-          <listitem>
-            <para>Use the entity name <sgmltag class="genentity">product</sgmltag> to
-              identify the product for which the documentation is built. Set the
-              value of this entity is set once per release and let it
-              expand to the name of the current product.
-            </para>
-            <screen>&lt;phrase role="productname"&gt;&amp;product;&lt;/phrase&gt; includes openLDAP.</screen>
-            <para>If you need to reference a particular product, use a more
-              specific entity.
-            </para>
-            <screen>The ext2 file system has been included in the &lt;literal&gt;&amp;suse;&lt;/literal&gt;
-kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
-          </listitem>
-        </varlistentry>
-        <varlistentry>
-          <term>Acronyms</term>
-          <listitem>
-            <para>Avoid using acronyms of product names where they are not
-              the preferred form of the name. If you do define an
-              additional acronym version of a longer product name, append
-              an <literal>a</literal> to the end of the entity name, such
-              as in <sgmltag class="genentity">slesa</sgmltag>.
+
+      <sect3 id="sec.entity.handling">
+        <title>Using Entity Files</title>
+
+        <para>SUSE uses a small set of custom entities. This set is localized
+          for each supported language. Find the SUSE set of entities in the file
+          <filename>entity-decl.ent</filename> under each documentation project
+          and each language. When the set has been modified for a new product
+          release, this file must be updated in the supported languages as well.
+        </para>
+        <para>Each header of a SUSE XML file includes the entity declaration
+          file (by means of an entity):
+        </para>
+        <screen>&lt;!ENTITY % entities SYSTEM "../entity-decl.ent"&gt;
+%entities;</screen>
+        <example id="ex.entity">
+          <title>Excerpt from a SUSE entity-decl.ent</title>
+          <screen>&lt;!ENTITY<co id="co.decl"/> exampleserver<co id="co.def"/>   "sun<co id="co.val"/>"&gt;
+&lt;!ENTITY exampleserverip    "&amp;exampledomainip;.20"&gt;
+&lt;!ENTITY exampleserverfq    "&amp;exampleserver;.&amp;exampledomain;"<co id="co.ent"/>&gt;</screen>
+          <calloutlist>
+            <callout arearefs="co.decl">
+              <para>The kind of declaration to be made.</para>
+            </callout>
+            <callout arearefs="co.def">
+              <para>Defines the entity name.</para>
+            </callout>
+            <callout arearefs="co.val">
+              <para>Sets the value to which the processed entity should
+                be expanded.
               </para>
-          </listitem>
-        </varlistentry>
-        <varlistentry>
-          <term>Trademarks</term>
+            </callout>
+            <callout arearefs="co.ent">
+              <para>Nests an entity in the value.</para>
+            </callout>
+          </calloutlist>
+        </example>
+        <para>A few hints for working with entities in SUSE documentation
+          projects:
+        </para>
+        <itemizedlist>
           <listitem>
-            <para>Follow the rules under <xref linkend="sec.product"/>.</para>
+            <para>If there should be any need for defining special entities
+              (for example, for localization purposes), add the new
+              definitions to the appropriate
+              <filename>entity-decl.ent</filename> file. Never include
+              these definitions in the file header.
+            </para>
           </listitem>
-        </varlistentry>
-      </variablelist>
+          <listitem>
+            <para>When translating entities, translate the value, but never
+              change the entity name (see <xref linkend="ex.entity"/>).
+            </para>
+          </listitem>
+          <listitem>
+            <para>Always use the exact notation of the entities when
+              translating files to avoid processing errors.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Make sure that you use proper UTF-8 encoding when editing and
+              saving the entity declaration file or any of the SUSE XML files.
+            </para>
+          </listitem>
+        </itemizedlist>
       </sect3>
-  </sect2>
+
+      <sect3 id="sec.entity.expansion">
+        <title>Common Types of Entities</title>
+
+        <para>The following provides some background on the most important
+          entities used in creating documentation for SUSE products. To be able
+          to adjust product names of platform branding even past any deadlines,
+          a set of entities must represent the frequently-changing product names.
+          The same applies to book titles. An
+          <filename>entity-decl.ent</filename>
+          file contains several different categories of entities. These are:
+        </para>
+        <variablelist>
+          <varlistentry>
+            <term>General Entities</term>
+            <listitem>
+              <para>These feature mostly network IP addresses, host names, and
+                user names.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Books</term>
+            <listitem>
+              <para>If possible, any book created by our team has a title entity
+                in case sudden changes are necessary.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Platforms</term>
+            <listitem>
+              <para>To avoid touching our content whenever a hardware vendor
+                rebrands its products, we use entities for all hardware
+                architectures referenced in the books.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Products</term>
+            <listitem>
+              <para>We maintain a list of entities of all SUSE-based product
+                names and some other products and applications for which we
+                write documentation.
+              </para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+        <para>There are several guidelines to consider when working with product
+          entities for SUSE documentation:
+        </para>
+        <variablelist>
+          <varlistentry>
+            <term>Entity Selection</term>
+            <listitem>
+              <para>Use the entity name
+                <sgmltag class="genentity">product</sgmltag> to
+                identify the product for which the documentation is built. Set the
+                value of this entity is set once per release and let it
+                expand to the name of the current product.
+              </para>
+              <screen>&lt;phrase role="productname"&gt;&amp;product;&lt;/phrase&gt; includes openLDAP.</screen>
+              <para>If you need to reference a particular product, use a more
+                specific entity.
+              </para>
+              <screen>The ext2 file system has been included in the &lt;literal&gt;&amp;suse;&lt;/literal&gt;
+kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Acronyms</term>
+            <listitem>
+              <para>Avoid using acronyms of product names where they are not
+                the preferred form of the name. If you do define an
+                additional acronym version of a longer product name, append
+                an <literal>a</literal> to the end of the entity name, such
+                as in <sgmltag class="genentity">slesa</sgmltag>.
+              </para>
+            </listitem>
+          </varlistentry>
+          <varlistentry>
+            <term>Trademarks</term>
+            <listitem>
+              <para>Follow the rules under <xref linkend="sec.product"/>.</para>
+            </listitem>
+          </varlistentry>
+        </variablelist>
+      </sect3>
+    </sect2>
   </sect1>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="docu_styleguide.terminology.xml"/>
