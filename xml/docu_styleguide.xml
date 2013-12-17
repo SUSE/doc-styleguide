@@ -17,46 +17,10 @@
     <releaseinfo>$Revision$</releaseinfo>
     <date><?dbtimestamp?></date>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="authors.xml"/>
-
-    <legalnotice>
-      <title>Legal Notice</title>
-
-      <para>All content is copyright &copy; 2007&ndash;<?dbtimestamp format="Y"?>
-        SUSE LLC. All rights reserved.
-      </para>
-      <para>This manual is protected under SUSE intellectual property rights.
-        By reproducing, duplicating or distributing this manual you explicitly
-        agree to conform to the terms and conditions of this license
-        agreement.
-      </para>
-      <para>This manual may be freely reproduced, duplicated and distributed
-        either as such or as part of a bundled package in electronic and/or
-        printed format, provided however that the following conditions are
-        fulfilled:
-      </para>
-      <para>That this copyright notice and the names of authors and contributors
-        appear clearly and distinctively on all reproduced, duplicated and
-        distributed copies. That this manual, specifically for the printed
-        format, is reproduced and/or distributed for noncommercial use only.
-        The express authorization of SUSE LLC must be obtained prior to
-        any other use of any manual or part thereof.
-      </para>
-      <para>For SUSE or Novell trademarks, see the Novell Trademark and Service
-        Mark list
-        <ulink
-          url="http://www.novell.com/company/legal/trademarks/tmlist.html"/>.
-        All other third party trademarks are the property of their respective
-        owners. A trademark symbol (&reg;, &trade; etc.) denotes a SUSE or
-        Novell trademark; an asterisk (*) denotes a third party trademark.
-      </para>
-      <para>All information found in this book has been compiled with utmost
-        attention to detail. However, this does not guarantee complete accuracy.
-        Neither SUSE LLC, SUSE LINUX Products GmbH, the authors, nor the
-        translators shall be held liable for possible errors or the consequences
-        thereof.
-      </para>
-    </legalnotice>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+      href="legal_suse+gfdl.xml"/>
   </articleinfo>
+
   <abstract>
     <para>This guide provides answers to writing, style, and layout questions
       commonly arising when editing SUSE or openSUSE documentation. The
@@ -98,31 +62,115 @@
       can vary between different books or projects, but the most common type
       is documented here.
     </para>
-    <para>Manuals should always contain five elements: title page,
-      copyright notice, table of contents, preface, and chapters which are
-      split in sections. Optionally, use parts, appendixes, a glossary, and
-      an index. Descriptions and usage instructions for these elements are
-      provided below.
+    <para>You should always use a document structure that includes the
+      following elements, in that order: a preface, and
+      chapters which are split in sections. Optionally, add appendixes, a
+      glossary, and an index.
+    </para>
+    <para>If you are writing a book with many chapters, create parts at the
+      outline level above chapters. Every part should contain at least three
+      chapters.
     </para>
     <variablelist>
       <varlistentry>
-        <term>Title Page</term>
+        <term>Title Page and Imprint</term>
         <listitem>
-          <para>The title page contains the logo, a title, the name of the
-            product described, and its version. This part of a book is created
-            automatically from the title and author information.
+          <para>Both title page and imprint are created automatically, but
+            depend on information being present in the book.
           </para>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>Imprint</term>
-        <listitem>
-          <para>The imprint on the second page lists edition, copyright
-            notice, and the names of contributors. Add the names of all
-            authors and contributors to a separate file
-            <filename>authors.xml</filename>. This part of a book is then
-            created automatically from the title and author information.
-          </para>
+          <itemizedlist>
+            <listitem>
+              <formalpara>
+                <title>Title</title>
+                <para>Work with the marketing department to define the correct
+                  book title. The book title should not contain the product
+                  name and version.
+                </para>
+              </formalpara>
+            </listitem>
+            <listitem>
+              <formalpara>
+                <title>Product Name and Product Version</title>
+                <para>Work with the marketing department to find the correct
+                  product name and version number. Mark this information up
+                  with <sgmltag class="emptytag">productname</sgmltag> and
+                  <sgmltag class="emptytag">productnumber</sgmltag>,
+                  respectively.
+                </para>
+              </formalpara>
+            </listitem>
+            <listitem>
+              <formalpara>
+                <title>Documentation Version or Revision Information</title>
+                <para>Use the <sgmltag class="emptytag">releaseinfo</sgmltag>
+                  element to mark up version or revision numbers of the
+                  documentation itself. For further information
+                  on how to enable SVN revision information in your document,
+                  see
+                  <ulink url="http://svnbook.red-bean.com/en/1.7/svn.advanced.props.special.keywords.html"/>.
+                </para>
+              </formalpara>
+            </listitem>
+            <!-- sknorr, 2013-01-17: Not yet implemented. -->
+            <!-- <listitem>
+              <formalpara>
+                <title>Cover Image</title>
+                <para>Work with the marketing department to find a cover image.
+                  Use the <sgmltag class="emptytag">cover</sgmltag> element
+                  to include the image.
+                </para>
+              </formalpara>
+            </listitem> -->
+            <listitem>
+              <formalpara>
+                <title>Authorship Information</title>
+                <para>Create a separate file <filename>authors.xml</filename>
+                  and add an <sgmltag class="emptytag">authorgroup</sgmltag>
+                  listing all authors and contributors inside it. Include this
+                  file with an XInclude.
+                </para>
+              </formalpara>
+            </listitem>
+            <listitem>
+              <formalpara>
+                <title>Copyright Notice</title>
+                <para>Use the standard copyright notice reproduced below.
+                  Change the starting year of the copyright protection to the
+                  current year.
+                </para>
+              </formalpara>
+              <example>
+                <title>Standard Copyright Notice</title>
+                <screen>&lt;legalnotice&gt;
+ &lt;para&gt;
+  Copyright &amp;copy; <replaceable>[starting year]</replaceable>&amp;ndash;&lt;?dbtimestamp format="Y"?&gt;
+  SUSE LLC and contributors. All rights reserved.
+ &lt;/para&gt;
+ &lt;para&gt;
+  Permission is granted to copy, distribute and/or modify this document
+  under the terms of the GNU Free Documentation License, Version 1.2 or (at
+  your option) version 1.3; with the Invariant Section being this copyright
+  notice and license. A copy of the license version 1.2 is included in the
+  section entitled &lt;quote&gt;GNU Free Documentation License&lt;/quote&gt;.
+ &lt;/para&gt;
+ &lt;para&gt;
+  For &amp;suse; and Novell trademarks, see the Novell Trademark and Service
+  Mark list
+  &lt;ulink url="http://www.novell.com/company/legal/trademarks/tmlist.html"/&gt;.
+  All other third party trademarks are the property of their respective
+  owners. A trademark symbol (&amp;reg;, &amp;trade; etc.) denotes a &amp;suse; or
+  Novell trademark; an asterisk (*) denotes a third party trademark.
+ &lt;/para&gt;
+ &lt;para&gt;
+  All information found in this book has been compiled with utmost attention
+  to detail. However, this does not guarantee complete accuracy. Neither
+  SUSE LLC, its affiliates, the authors nor the translators shall be held
+  liable for possible errors or the consequences thereof.
+ &lt;/para&gt;
+&lt;/legalnotice&gt;</screen>
+              </example>
+            </listitem>
+          </itemizedlist>
         </listitem>
       </varlistentry>
       <varlistentry>
@@ -177,31 +225,12 @@
           <para>Chapters typically consist of the following elements (appendixes
             should be regarded an exception):
           </para>
-          <example>
-            <title>Structure of a Chapter (an <literal>*</literal> follows
-              optional elements)
-            </title>
-            <screen>chapter
-├─── title
-├─── highlights
-├─── section
-┊    ├───  introductory text
-┊    ├───  procedure environment*
-┊    ├───  subsection
-┊    ┊     ...
-┊    ├───  troubleshooting*
-┊    └───  for more information*
-┊
-├───  troubleshooting*
-└───  for more information*</screen>
-          </example>
-
           <itemizedlist>
               <listitem>
                 <formalpara>
                   <title>Highlights</title>
                   <para>Use a highlights section to summarize the information
-                    provided in a chapter or section in four or fewer bullet
+                    provided in a chapter in four or fewer bullet
                     points. Summarize the topic instead of summarizing the
                     outline.
                   </para>
@@ -251,18 +280,17 @@
                 the focus of the section. If the section describes a
                 sequential task, follow the introduction with a procedure
                 description, as discussed in <xref linkend="sec.procedure"/>.
-                Experienced users familiar with the topic can follow this
-                brief sketch. For less experienced readers, steps of
-                the procedure could contain a (usually clickable) reference
+                Steps of a procedure can contain a cross reference
                 to a subsection where the necessary background is provided
-                and the action explained in more detail.
+                and the action explained in more detail. See also:
+                <xref linkend="sec.crossreference"/>.
               </para>
             </listitem>
             <listitem>
               <formalpara>
                 <title>Troubleshooting</title>
                 <para>If you know of common mistakes or other problems a
-                  user might encounter in a certain situation, list them in
+                  user might encounter, list them in
                   a section named <emphasis>Troubleshooting</emphasis>.
                   Use the DocBook element
                   <sgmltag class="emptytag">qandaset</sgmltag>
@@ -300,6 +328,16 @@
         </listitem>
       </varlistentry>
     </variablelist>
+
+    <sect2>
+      <title>Articles</title>
+
+      <para>For articles, use a similar structure as for books. However,
+        that there is no equivalent of parts in articles. In articles,
+        the function of chapters is filled by first-level sections
+        (<sgmltag class="emptytag">sect1</sgmltag>).
+      </para>
+    </sect2>
   </sect1>
 
   <sect1 id="sec.name">
