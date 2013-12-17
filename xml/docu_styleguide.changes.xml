@@ -79,8 +79,9 @@
             </para>
           </listitem>
           <listitem>
-            <para>Outsourced <xref linkend="app.terminology"/> and
-              <xref linkend="app.markup"/> into separate DocBook files.
+            <para>Moved <xref linkend="app.terminology"/> and
+              <xref linkend="app.markup"/> and the copyright notice into
+              separate DocBook files.
             </para>
           </listitem>
         </itemizedlist>
@@ -222,6 +223,12 @@
         </para>
       </listitem>
       <listitem>
+        <para>Rewrote large parts of <xref linkend="sec.outline"/>, removed
+          example of structure, added copyright notice as an example, and
+          expanded on information needed for title pages and imprints.
+        </para>
+      </listitem>
+      <listitem>
         <para>Removed differentiation between the many types of authors files
           from <xref linkend="sec.outline"/>. This was too complicated to be
           practical. Also, translators were so far never mentioned.
@@ -233,15 +240,16 @@
         </para>
       </listitem>
       <listitem>
-        <para>Added this list of changes as a separate article.
-        </para>
+        <para>Added this list of changes as a separate article.</para>
       </listitem>
       <listitem>
-        <para>Added list of authors as a separate DocBook file.
-        </para>
+        <para>Added list of authors as a separate DocBook file.</para>
       </listitem>
       <listitem>
-        <para>Updated Legal Notice to refer to SUSE, LLC instead of
+        <para>Added standard entities as a separate file.</para>
+      </listitem>
+      <listitem>
+        <para>Updated copyright notice to refer to SUSE, LLC instead of
           Novell, Inc.
         </para>
       </listitem>
