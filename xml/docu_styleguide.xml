@@ -126,6 +126,26 @@
         </listitem>
       </varlistentry>
       <varlistentry>
+        <term>Abstract</term>
+        <listitem>
+          <para>Use an abstract to summarize the information provided in a
+            book, article, or set in five or fewer sentences. Summarize the
+            topic instead of summarizing the outline.
+          </para>
+          <example id="ex.abstract">
+            <title>An Abstract</title>
+            <para>SUSE Linux Enterprise ships with a number of different
+              file systems, including Btrfs, Ext3, Ext4. Each file system
+              has advantages and disadvantages that make it more or less
+              suitable for a scenario. Professional high-performance
+              setups can require a different choice of file system than
+              a home user setup. This guide will help you choose the right
+              one.
+            </para>
+          </example>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
         <term>Table of Contents</term>
         <listitem>
           <para>The table of contents is generated automatically.</para>
@@ -163,7 +183,7 @@
             </title>
             <screen>chapter
 ├─── title
-├─── abstract
+├─── highlights
 ├─── section
 ┊    ├───  introductory text
 ┊    ├───  procedure environment*
@@ -179,25 +199,34 @@
           <itemizedlist>
               <listitem>
                 <formalpara>
-                  <title>Abstract</title>
-                  <para>Abstracts summarize the information provided in a
-                    chapter in five or fewer sentences. Rather than writing
-                    about what the chapter does,
-                    summarize the information the chapter contains. This gives
-                    readers an idea of what they can learn from the
-                    chapter.
+                  <title>Highlights</title>
+                  <para>Use a highlights section to summarize the information
+                    provided in a chapter or section in four or fewer bullet
+                    points. Summarize the topic instead of summarizing the
+                    outline.
                   </para>
                 </formalpara>
-                <example id="ex.style.abstract">
-                  <title>An Example Abstract</title>
-                  <para>SUSE Linux Enterprise ships with a number of different
-                    file systems, including Btrfs, Ext3, Ext4, from
-                    which you can choose at installation time. Each file system
-                    has advantages and disadvantages that make it more or less
-                    suitable for a scenario. Professional high-performance
-                    setups can require a different choice of file system than
-                    a home user setup.
-                  </para>
+                <example id="ex.highlights">
+                  <title>A Highlights Section</title>
+                  <para>This chapter will:</para>
+                  <orderedlist>
+                    <listitem>
+                      <para>Give you an overview over the file systems
+                        available in
+                        <phrase role="productname">SUSE Linux Enterprise</phrase>,
+                        such as Ext3, Ext4, and Btrfs.
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>Inform you about their distinctive advantages and
+                        disadvantages.
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>Help you choose the right one for your purpose.
+                      </para>
+                    </listitem>
+                  </orderedlist>
                 </example>
               </listitem>
               <listitem>
