@@ -61,89 +61,89 @@
     <title>Outline of a Manual</title>
 
     <para>Maintain a consistent structure within your documents. The structure
-      can vary between different books or projects, but the most common type
-      is documented here.
+      can vary between different books, articles or projects, but the most
+      common type is documented here.
     </para>
-    <para>You should always use a document structure that includes the
-      following elements, in that order: a preface, and
-      chapters which are split in sections. Optionally, add appendixes, a
-      glossary, and an index.
-    </para>
-    <para>If you are writing a book with many chapters, create parts at the
-      outline level above chapters. Every part should contain at least three
-      chapters.
-    </para>
-    <variablelist>
-      <varlistentry>
-        <term>Title Page and Imprint</term>
-        <listitem>
-          <para>Both title page and imprint are created automatically, but
-            depend on information being present in the book.
-          </para>
-          <itemizedlist>
-            <listitem>
-              <formalpara>
-                <title>Title</title>
-                <para>Work with the marketing department to define the correct
-                  book title. The book title should not contain the product
-                  name and version.
-                </para>
-              </formalpara>
-            </listitem>
-            <listitem>
-              <formalpara>
-                <title>Product Name and Product Version</title>
-                <para>Work with the marketing department to find the correct
-                  product name and version number. Mark this information up
-                  with <sgmltag class="emptytag">productname</sgmltag> and
-                  <sgmltag class="emptytag">productnumber</sgmltag>,
-                  respectively.
-                </para>
-              </formalpara>
-            </listitem>
-            <listitem>
-              <formalpara>
-                <title>Documentation Version or Revision Information</title>
-                <para>Use the <sgmltag class="emptytag">releaseinfo</sgmltag>
-                  element to mark up version or revision numbers of the
-                  documentation itself. For further information
-                  on how to enable SVN revision information in your document,
-                  see
-                  <ulink url="http://svnbook.red-bean.com/en/1.7/svn.advanced.props.special.keywords.html"/>.
-                </para>
-              </formalpara>
-            </listitem>
-            <!-- sknorr, 2013-01-17: Not yet implemented. -->
-            <!-- <listitem>
-              <formalpara>
-                <title>Cover Image</title>
-                <para>Work with the marketing department to find a cover image.
-                  Use the <sgmltag class="emptytag">cover</sgmltag> element
-                  to include the image.
-                </para>
-              </formalpara>
-            </listitem> -->
-            <listitem>
-              <formalpara>
-                <title>Authorship Information</title>
-                <para>Create a separate file <filename>authors.xml</filename>
-                  and add an <sgmltag class="emptytag">authorgroup</sgmltag>
-                  listing all authors and contributors inside it. Include this
-                  file with an XInclude.
-                </para>
-              </formalpara>
-            </listitem>
-            <listitem>
-              <formalpara>
-                <title>Copyright Notice</title>
-                <para>Use the standard copyright notice reproduced below.
-                  Change the starting year of the copyright protection to the
-                  current year.
-                </para>
-              </formalpara>
-              <example>
-                <title>Standard Copyright Notice</title>
-                <screen>&lt;legalnotice&gt;
+
+    <sect2 id="sec.book">
+      <title>Books</title>
+      <para>You should always use a document structure that includes the
+        following elements, in that order: a preface, and
+        chapters which are split in sections. Optionally, add appendixes, a
+        glossary, and an index. In some cases, parts can be created at the
+        outline level above chapters.
+      </para>
+      <variablelist>
+        <varlistentry>
+          <term>Title Page and Imprint</term>
+          <listitem>
+            <para>Both title page and imprint are created automatically, but
+              depend on information being present in the book.
+            </para>
+            <itemizedlist>
+              <listitem>
+                <formalpara>
+                  <title>Title</title>
+                  <para>Work with the marketing department to define the correct
+                    book title. The book title should not contain the product
+                    name and version.
+                  </para>
+                </formalpara>
+              </listitem>
+              <listitem>
+                <formalpara>
+                  <title>Product Name and Product Version</title>
+                  <para>Work with the marketing department to find the correct
+                    product name and version number. Mark this information up
+                    with <sgmltag class="emptytag">productname</sgmltag> and
+                    <sgmltag class="emptytag">productnumber</sgmltag>,
+                    respectively.
+                  </para>
+                </formalpara>
+              </listitem>
+              <listitem>
+                <formalpara>
+                  <title>Documentation Version or Revision Information</title>
+                  <para>Use the <sgmltag class="emptytag">releaseinfo</sgmltag>
+                    element to mark up version or revision numbers of the
+                    documentation itself. For further information
+                    on how to enable SVN revision information in your document,
+                    see
+                      <ulink url="http://svnbook.red-bean.com/en/1.7/svn.advanced.props.special.keywords.html"/>.
+                  </para>
+                </formalpara>
+              </listitem>
+              <!-- sknorr, 2013-01-17: Not yet implemented. -->
+              <!-- <listitem>
+                <formalpara>
+                  <title>Cover Image</title>
+                  <para>Work with the marketing department to find a cover
+                    image. Use the <sgmltag class="emptytag">cover</sgmltag>
+                    element to include the image.
+                  </para>
+                </formalpara>
+              </listitem> -->
+              <listitem>
+                <formalpara>
+                  <title>Authorship Information</title>
+                  <para>Create a separate file <filename>authors.xml</filename>
+                    and add an <sgmltag class="emptytag">authorgroup</sgmltag>
+                    listing all authors and contributors inside it. Include this
+                    file with an XInclude.
+                  </para>
+                </formalpara>
+              </listitem>
+              <listitem>
+                <formalpara>
+                  <title>Copyright Notice</title>
+                  <para>Use the standard copyright notice reproduced below.
+                    Change the starting year of the copyright protection to the
+                    current year.
+                  </para>
+                </formalpara>
+                <example>
+                  <title>Standard Copyright Notice</title>
+                  <screen>&lt;legalnotice&gt;
  &lt;para&gt;
   Copyright &amp;copy; <replaceable>[starting year]</replaceable>&amp;ndash;&lt;?dbtimestamp format="Y"?&gt;
   SUSE LLC and contributors. All rights reserved.
@@ -172,64 +172,66 @@
   consequences thereof.
  &lt;/para&gt;
 &lt;/legalnotice&gt;</screen>
-              </example>
-            </listitem>
-          </itemizedlist>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>Abstract</term>
-        <listitem>
-          <para>Use an abstract to summarize the information provided in a
-            book, article, or set in five or fewer sentences. Summarize the
-            topic instead of summarizing the outline.
-          </para>
-          <example id="ex.abstract">
-            <title>An Abstract</title>
-            <para>SUSE Linux Enterprise ships with a number of different
-              file systems, including Btrfs, Ext3, Ext4. Each file system
-              has advantages and disadvantages that make it more or less
-              suitable for a scenario. Professional high-performance
-              setups can require a different choice of file system than
-              a home user setup. This guide will help you choose the right
-              one.
+                </example>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Abstract</term>
+          <listitem>
+            <para>Use an abstract to summarize the information provided in a
+              book, article, or set in five or fewer sentences. Summarize the
+              topic instead of summarizing the outline.
             </para>
-          </example>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>Table of Contents</term>
-        <listitem>
-          <para>The table of contents is generated automatically.</para>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>Preface</term>
-        <listitem>
-          <para>The preface of a book contains a brief overview of the content
-            of a manual, related manuals, and typographical conventions. It
-            may also contain information about its target audience.
-        </para>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>Parts</term>
-        <listitem>
-          <para>Parts add an additional element of structure to manuals with
-            many chapters to improve the usability of a book. Keep part titles
-            clear and concise. Often a single noun is enough. Typical part
-            titles include <emphasis>Installation</emphasis> or
-            <emphasis>Network</emphasis>.
+            <example id="ex.abstract">
+              <title>An Abstract</title>
+
+              <para>SUSE Linux Enterprise ships with a number of different
+                file systems, including Btrfs, Ext3, Ext4. Each file system
+                has advantages and disadvantages that make it more or less
+                suitable for a scenario. Professional high-performance
+                setups can require a different choice of file system than
+                a home user setup. This guide will help you choose the right
+                one.
+              </para>
+            </example>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Table of Contents</term>
+          <listitem>
+            <para>The table of contents is generated automatically.</para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Preface</term>
+          <listitem>
+            <para>The preface of a book contains a brief overview of the content
+              of a manual, related manuals, and typographical conventions. It
+              may also contain information about its target audience.
           </para>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>Chapters</term>
-        <listitem>
-          <para>Chapters typically consist of the following elements (appendixes
-            should be regarded an exception):
-          </para>
-          <itemizedlist>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Parts</term>
+          <listitem>
+            <para>If you are writing a book with many chapters, create parts at
+              the outline level above chapters. Parts should contain at least
+              three chapters. Keep part titles
+              clear and concise. Often a single noun is enough. Typical part
+              titles include <emphasis>Installation</emphasis> or
+              <emphasis>Network</emphasis>.
+            </para>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Chapters</term>
+          <listitem>
+            <para>Chapters typically consist of the following elements (appendixes
+              should be regarded an exception):
+            </para>
+            <itemizedlist>
               <listitem>
                 <formalpara>
                   <title>Highlights</title>
@@ -269,79 +271,79 @@
                   abstract and should not be placed in a separate section.
                 </para>
               </formalpara>
-            </listitem>
-            <listitem>
-              <formalpara>
-                <title>Sections</title>
-                <para>Structure the detailed information, so users can skim
-                  the text. Create sections for every major task, such as
-                  installing, configuring, monitoring, and administering. If
-                  helpful, split sections into subsections, but avoid going
-                  above three levels of sections.
+              </listitem>
+              <listitem>
+                <formalpara>
+                  <title>Sections</title>
+                  <para>Structure the detailed information, so users can skim
+                    the text. Create sections for every major task, such as
+                    installing, configuring, monitoring, and administering. If
+                    helpful, split sections into subsections, but avoid going
+                    above three levels of sections.
+                  </para>
+                </formalpara>
+                <para>Sections start with an introductory paragraph outlining
+                  the focus of the section. If the section describes a
+                  sequential task, follow the introduction with a procedure
+                  description, as discussed in <xref linkend="sec.procedure"/>.
+                  Steps of a procedure can contain a cross reference
+                  to a subsection where the necessary background is provided
+                  and the action explained in more detail. See also:
+                  <xref linkend="sec.crossreference"/>.
                 </para>
-              </formalpara>
-              <para>Sections start with an introductory paragraph outlining
-                the focus of the section. If the section describes a
-                sequential task, follow the introduction with a procedure
-                description, as discussed in <xref linkend="sec.procedure"/>.
-                Steps of a procedure can contain a cross reference
-                to a subsection where the necessary background is provided
-                and the action explained in more detail. See also:
-                <xref linkend="sec.crossreference"/>.
-              </para>
-            </listitem>
-            <listitem>
-              <formalpara>
-                <title>Troubleshooting</title>
-                <para>If you know of common mistakes or other problems a
-                  user might encounter, list them in
-                  a section named <emphasis>Troubleshooting</emphasis>.
-                  Use the DocBook element
-                  <sgmltag class="emptytag">qandaset</sgmltag>
-                  (a Question and Answer section) to mark up
-                  <emphasis>Troubleshooting</emphasis> problems.
-                  In case you want to describe
-                  solutions to more than ten problems, add topical subsections
-                  (<sgmltag class="emptytag">qandadiv</sgmltag> elements)
-                  below the <emphasis>Troubleshooting</emphasis> section.
-                </para>
-              </formalpara>
-              <para>
-              </para>
-            </listitem>
-            <listitem>
-              <formalpara>
-                <title>For More Information</title>
-                <para>This section contains links to all sources of
-                  information that might prove helpful in a given context.
-                  Follow the general referencing guidelines in
-                  <xref linkend="sec.crossreference"/> when creating such
-                  sections.
-                </para>
-              </formalpara>
-            </listitem>
-          </itemizedlist>
-        </listitem>
-      </varlistentry>
-      <varlistentry>
-        <term>Glossary</term>
-        <listitem>
-          <para>The optional glossary contains important terms in
-            alphabetical order and provides a brief explanation.
-          </para>
-        </listitem>
-      </varlistentry>
-    </variablelist>
+              </listitem>
+              <listitem>
+                <formalpara>
+                  <title>Troubleshooting</title>
+                  <para>If you know of common mistakes or other problems a
+                    user might encounter, list them in
+                    a section named <emphasis>Troubleshooting</emphasis>.
+                    Use the DocBook element
+                    <sgmltag class="emptytag">qandaset</sgmltag>
+                    (a Question and Answer section) to mark up
+                    <emphasis>Troubleshooting</emphasis> problems.
+                    In case you want to describe
+                    solutions to more than ten problems, add topical subsections
+                    (<sgmltag class="emptytag">qandadiv</sgmltag> elements)
+                    below the <emphasis>Troubleshooting</emphasis> section.
+                  </para>
+                </formalpara>
+              </listitem>
+              <listitem>
+                <formalpara>
+                  <title>For More Information</title>
+                  <para>This section contains links to all sources of
+                    information that might prove helpful in a given context.
+                    Follow the general referencing guidelines in
+                    <xref linkend="sec.crossreference"/> when creating such
+                    sections.
+                  </para>
+                </formalpara>
+              </listitem>
+            </itemizedlist>
+          </listitem>
+        </varlistentry>
+        <varlistentry>
+          <term>Glossary</term>
+          <listitem>
+            <para>The optional glossary contains important terms in
+              alphabetical order and provides a brief explanation.
+            </para>
+          </listitem>
+        </varlistentry>
+      </variablelist>
+    </sect2>
 
-    <sect2>
+    <sect2 id="sec.article">
       <title>Articles</title>
 
-      <para>For articles, use a similar structure as for books. However,
+      <para>For articles, use a structure similar to that of books. However,
         that there is no equivalent of parts in articles. In articles,
         the function of chapters is filled by first-level sections
         (<sgmltag class="emptytag">sect1</sgmltag>).
       </para>
     </sect2>
+
   </sect1>
 
   <sect1 id="sec.name">
