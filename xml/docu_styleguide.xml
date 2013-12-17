@@ -14,7 +14,7 @@
 <article lang="en" id="art.styleguide">
   <title>SUSE Documentation Style Guide</title>
   <articleinfo>
-    <releaseinfo>$Revision$</releaseinfo>
+    <releaseinfo>2014.01-beta</releaseinfo>
     <date><?dbtimestamp?></date>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="authors.xml"/>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
