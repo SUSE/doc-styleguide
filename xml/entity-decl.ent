@@ -1,0 +1,45 @@
+<!ENTITY exampleuser    "tux">
+<!ENTITY exampleuserII  "wilber">
+<!ENTITY examplegroup   "users">
+
+
+<!ENTITY rootuser       '<systemitem class="username">root</systemitem>'>
+<!ENTITY grub           "GRUB">
+
+<!ENTITY suse           "SUSE">
+<!ENTITY novell         "Novell">
+<!ENTITY suseonsitereg  "&suseonsite;&reg;">
+<!ENTITY yast           "YaST">
+
+
+
+<!-- ============================================================= -->
+<!--                    Platforms                                  -->
+<!-- ============================================================= -->
+
+<!ENTITY x86           "x86">
+<!ENTITY amd64         "AMD64">
+<!ENTITY s390          "S/390">
+<!ENTITY zseries       "System&nbsp;z">
+<!ENTITY ipf           "Itanium">
+<!ENTITY ipseries      "POWER">
+<!ENTITY ppc           "POWER">
+<!ENTITY em64t         "Intel EM64T">
+<!ENTITY intel64       "Intel&nbsp;64">
+
+
+<!-- ============================================================= -->
+<!--                    Products                                   -->
+<!-- ============================================================= -->
+
+<!ENTITY opensuse      "openSUSE">
+<!ENTITY sle           "SUSE Linux Enterprise">
+<!ENTITY sls           "SUSE Linux Enterprise Server">
+<!ENTITY slsa          "SLES">
+<!ENTITY slsreg        "SUSE&reg; Linux Enterprise Server">
+<!ENTITY sled          "SUSE Linux Enterprise Desktop">
+<!ENTITY sleda         "SLED">
+
+
+<!ENTITY euro           "&#x20AC;">
+
