@@ -1390,9 +1390,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
       </itemizedlist>
       <para>Describe alternative actions inside a substep element
         containing steps linked by <quote>or.</quote> Apply
-        <sgmltag class="attribute">
-          performance=<sgmltag class="attvalue">optional</sgmltag>
-        </sgmltag>
+        <sgmltag class="attribute">performance=optional</sgmltag>
         attribute optional steps.
       </para>
       <para>Steps may contain a link to an explanatory
@@ -1422,8 +1420,8 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
           <para>Type in the user data and click <guimenu>Create</guimenu>.
           </para>
         </step>
-        <step>
-          <para performance="optional">Repeat from the third step to add more
+        <step performance="optional">
+          <para>Repeat from the third step to add more
             users.
           </para>
         </step>
