@@ -990,7 +990,8 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
     <sect2 id="sec.example">
       <title>Examples</title>
 
-      <para>Use examples to illustrate complex processes.
+      <para>Use examples to illustrate complex processes. Avoid adding
+        paragraphs of text to examples.
         Many of the rules established in <xref linkend="sec.graphic"/> also
         apply to examples.
       </para>
@@ -1029,7 +1030,9 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
 5177 ?        S      0:00 kdeinit: kpowersave
 5179 ?        S      0:00 kdeinit: klipper</screen>
       </example>
-      <para>For details on markup, refer to
+      <para>For details on displaying computer input and output, refer to
+        <xref linkend="sec.commandline"/>.
+        For details on markup, refer to
         <xref linkend="sec.markup.block.examples"/>.
       </para>
     </sect2>
