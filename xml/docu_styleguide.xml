@@ -62,7 +62,8 @@
 
     <para>Maintain a consistent structure within your documents. The structure
       can vary between different books, articles or projects, but the most
-      common type is documented here.
+      common type is <remark>taroth 2014-01-03: use plural: "types are" (because you outline at
+        least two: book and article)</remark>documented here.
     </para>
 
     <sect2 id="sec.book">
@@ -237,7 +238,8 @@
                   <title>Highlights</title>
                   <para>Use a highlights section to summarize the information
                     provided in a chapter in four or fewer bullet
-                    points. Summarize the topic instead of summarizing the
+                    points. <remark>taroth 2014-01-03: as you mention bullet points here, better use
+                    an itemizedlist instead of an orderedlist in the following example</remark>Summarize the topic instead of summarizing the
                     outline.
                   </para>
                 </formalpara>
@@ -268,7 +270,9 @@
               <formalpara>
                 <title>Introductions</title>
                 <para>Any introductory information follows directly after the
-                  abstract and should not be placed in a separate section.
+                  abstract <remark>taroth 2014-01-03: as abstracts are mentioned above in the
+                    context of a book, an article, or a set, maybe replace "abstract" with
+                    "highlights section" here</remark>and should not be placed in a separate section.
                 </para>
               </formalpara>
               </listitem>
@@ -338,7 +342,7 @@
       <title>Articles</title>
 
       <para>For articles, use a structure similar to that of books. However,
-        that there is no equivalent of parts in articles. In articles,
+        note that there is no equivalent of parts in articles. In articles,
         the function of chapters is filled by first-level sections
         (<sgmltag class="emptytag">sect1</sgmltag>).
       </para>
@@ -404,7 +408,7 @@
         <title>Users</title>
 
         <para>For example users, use free-software mascots, such as Tux (Linux
-          kernel), Wilber (The GIMP), Geeko (SUSE), Foxkeh (Firefox), Konqi
+          Kernel), Wilber (The GIMP), Geeko (SUSE), Foxkeh (Firefox), Konqi
           (KDE), or Duke (Java). In prompts, use the lowercase version of these
           names.
         </para>
@@ -660,6 +664,14 @@
         describing the action itself. As an example, write: <quote>To
         restore world peace, click <guimenu>Shake Hands</guimenu>.</quote>
       </para>
+      <para><remark>taroth 2014-01-03: sknorr, if you think it's useful, please also add a para about
+        parentheses - for less disruption in reading and for the sake of translation (memories), if it
+      often useful to move parentheses to the end of a sentence. For example: "Before you start
+      deploying XYZ, make a note of the MAC addresses and the purpose (purposeA, purposeB, 
+      purposeC, purposeD, purposeE) of each node." can be rephrased to 
+      "Before you start deploying XYZ, make a note of the MAC addresses and the purpose of each
+      node, for example: purposeA, purposeB, purposeC,
+      purposeD, purposeE."</remark></para>
     </sect2>
 
     <sect2 id="sec.tense">
@@ -668,6 +680,11 @@
         to sentences with <quote>if</quote> or <quote>when</quote>
         clauses: <quote>If this happens, go there.</quote>
       </para>
+      <para><remark>taroth 2014-01-03: what about tenses for results and prerequisites of a step or
+        a procedure? For example (result): "Click OK. The dialog *will* close." (or "The dialog *closes*") -
+        ok, bad example as this could be rephrased to "Click OK to close the dialog" but you get the
+      meaning. Example for a prerequisite: "You have installed XYZ"/"XYZ is installed"/"You
+      installed XYZ"?</remark></para>
     </sect2>
 
     <sect2 id="sec.tone">
@@ -811,6 +828,7 @@
           around it. This will not result in a visual change but disables
           hyphenation:
       </para>
+      <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
     </sect2>
 
     <sect2 id="sec.callout">
@@ -871,14 +889,17 @@ title Disk
         <title>Commands</title>
 
         <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
-        <para>Make sure to capitalize commands exactly as they are executed.
+        <para><remark>taroth 2014-01-03: does the screen above really belong here? or is it a copy
+        and paste error? to me it was a  bit confusing as a start of the section....</remark>
+          Make sure to capitalize commands exactly as they are executed.
           Commands can be embedded in running text or
           presented as part of a screen environment. In running text,
           use <sgmltag class="emptytag">command</sgmltag> when referring
           to an actual command you would use on a command line:
         </para>
-        <literallayout>Use <command>loffice</command> to start LibreOffice from the command line.</literallayout>
-        <para>Nest options, surrounded by an
+        <literallayout>To start LibreOffice from the command line, use <command>loffice</command>.</literallayout>
+        <para><remark>taroth 2014-01-03: rephrased example above to match rule: let the reader know the
+          objective of an action before describing the action itself</remark>Nest options, surrounded by an
           <sgmltag class="emptytag">option</sgmltag> element,
           inside the command element. Options can also be used in
           text, separately from <sgmltag class="emptytag">command</sgmltag>. See
@@ -905,7 +926,7 @@ title Disk
       <sect3 id="sec.variable">
         <title>Variable Names</title>
 
-          <para>References to names of variables rather than to their value.
+          <para>Reference to names of variables rather than to their value.
           </para>
           <screen>To select another display manager, start the YaST sysconfig editor
 and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen>
@@ -955,7 +976,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         comprehensive title for each of the groups or an introductory sentence.
       </para>
       <para>Use the <sgmltag class="emptytag">ulink</sgmltag> element to mark up
-        URLs that can be opened with a web browser, such as
+        URLs that can be opened with a Web browser, such as
         <ulink url="http://www.suse.de"/>.
         Always add the correct protocol prefix (for example,
         <literal>http://</literal>),
@@ -967,7 +988,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
       <para>Try to make URLs as short as possible before pasting them into your
         documentation. Many long URLs can be shortened by leaving away
         non-essential pieces of them. This is often the case with search URLs
-        or URLs of Internet news media. If a web site provides a built-in URL
+        or URLs of Internet news media. If a Web site provides a built-in URL
         shortener, use that. Do not resort to using external URL shorteners, as
         that both hides the actual destination a link will take the user to and
         introduces an extra element of uncertainty, as the shortening service
@@ -1051,7 +1072,8 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         the acronym form to link it to the defined written out form.
       </para>
       <para>The markup for a glossary entry is shown in
-        <xref linkend="ex.glossary"/>.
+        <xref linkend="ex.glossary"/>.<remark>taroth 2014-01-03: I would have liked an example for
+          an entry with an acronym and an entry for the written out form with a *See* reference...</remark>
       </para>
       <example id="ex.glossary">
         <title>A Typical Example of a Glossary</title>
@@ -1089,7 +1111,8 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         </listitem>
         <listitem>
           <para>Only illustrate steps where user meaningful user interactions
-            are necessary. Do not create screenshots of progress bars or
+            are necessary. <remark>taroth 2014-01-03: is the double "user" intentionally? or is the
+              first one a typo?</remark>Do not create screenshots of progress bars or
             confirmation windows.
           </para>
         </listitem>
@@ -1121,7 +1144,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
 
     <sect2 id="sec.heading">
       <title>Headings</title>
-      <para>Each level of heading should have two or more headings. Lonely
+      <para>Each level of heading should have two or more <remark>taroth 2014-01-03: subheadings?</remark>headings. Lonely
         subheadings are not allowed. Make headings in a group parallel by using
         a similar structure for the wording.
       </para>
@@ -1276,7 +1299,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
               <para>Windows 2000 and newer</para>
             </listitem>
             <listitem>
-              <para>Linux, kernel 2.4 and newer</para>
+              <para>Linux, Kernel 2.4 and newer</para>
             </listitem>
             <listitem>
               <para>FreeBSD 7 and newer</para>
@@ -1465,9 +1488,9 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         </listitem>
       </itemizedlist>
       <para>Describe alternative actions inside a substep element
-        containing steps linked by <quote>or.</quote> Apply
+        containing steps linked by <quote>or.</quote> Apply a
         <sgmltag class="attribute">performance=optional</sgmltag>
-        attribute optional steps.
+        attribute to optional steps.
       </para>
       <para>Steps may contain a link to an explanatory
         subsection providing further details on the step.
@@ -1477,7 +1500,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         <para>To add a new user to the system, perform the following steps:
         </para>
         <step>
-          <para>Open <guimenu>YaST</guimenu></para>
+          <para>Open <guimenu>YaST</guimenu>.</para>
         </step>
         <step performance="optional">
           <para>If you are asked, type the password of the
@@ -1559,7 +1582,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         see <xref linkend="sec.bias"/>.
       </para>
       <para>Avoid using root prompts in your documentation by using the
-        <command>sudo</command> where applicable. If you do need a root prompt,
+        <command>sudo</command> command where applicable. If you do need a root prompt,
         always mark it up as following:
       </para>
       <screen>&lt;prompt&gt;root # &lt;/prompt&gt;&lt;command&gt;yast&lt;/command&gt;</screen>
@@ -1617,7 +1640,8 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
 
   <sect1 id="sec.manage">
     <title>Managing Documents</title>
-
+    <para><remark>taroth 2014-01-03: intro is missing, see the instructions for use of sections
+      in sec.book  ;)</remark></para>
     <sect2 id="sec.remark">
       <title>Remarks</title>
       <para>Use remarks for editorial comments. Remarks can be placed within,
@@ -1662,7 +1686,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
           <listitem>
             <formalpara>
               <title><sgmltag class="attvalue">trans</sgmltag></title>
-              <para>Use this type of remark give hints to translators.</para>
+              <para>Use this type of remark to give hints to translators.</para>
             </formalpara>
           </listitem>
       </itemizedlist>
@@ -1833,7 +1857,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
               <para>Use the entity name
                 <sgmltag class="genentity">product</sgmltag> to
                 identify the product for which the documentation is built. Set the
-                value of this entity is set once per release and let it
+                value of this entity once per release and let it
                 expand to the name of the current product.
               </para>
               <screen>&lt;phrase role="productname"&gt;&amp;product;&lt;/phrase&gt; includes openLDAP.</screen>
@@ -1841,7 +1865,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
                 specific entity.
               </para>
               <screen>The ext2 file system has been included in the &lt;literal&gt;&amp;suse;&lt;/literal&gt;
-kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
+Kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
             </listitem>
           </varlistentry>
           <varlistentry>

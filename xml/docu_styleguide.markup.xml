@@ -942,7 +942,8 @@ To save a file in Emacs, press &lt;keycombo action="seq"&gt;
               <para>
         SUSE uses this element to simplify GUI element markup. It is used
         for all types of menu entries and also for buttons and GUI labels.
-       </para>
+       <remark>taroth 2014-01-03: what about titles of dialogs? I often use it
+         for those, too - should that be avoided or is it allowed?</remark></para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -1015,7 +1016,7 @@ To save a file in Emacs, press &lt;keycombo action="seq"&gt;
                 <ulink url="http://www.docbook.org/tdg/en/html/replaceable.html"/>
               </para>
               <para>
-        Content that may or must be replaced by the user
+        Content that may or must be replaced by the user.
        </para>
             </listitem>
           </varlistentry>
@@ -1046,8 +1047,8 @@ To save a file in Emacs, press &lt;keycombo action="seq"&gt;
           </varlistentry>
         </variablelist>
         <para>
-     Because SUSE does not distinguish between file names and directories by
-     adding a trailing slash to the path or with markup.
+     Because SUSE does not distinguish between file names and directories (by
+     adding a trailing slash to the path or with markup),
      <sgmltag class="emptytag">filename</sgmltag> is used for both directories and file names.
     </para>
         <screen>&lt;para&gt;

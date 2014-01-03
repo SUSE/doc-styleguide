@@ -12,7 +12,10 @@
     the table below. All terms use sentence-style capitalization. Refer to
     <xref linkend="sec.language"/> for further advice.
   </para>
-
+<para><remark>taroth 2014-01-03: I'm missing the term "add-on" which is used
+very often within our docs, please add it</remark>
+  <remark>taroth 2014-01-03: what about adding a term for "config file" (IMHO this should
+    be rejected in favor of "configuration file")</remark></para>
       <table>
         <title>Terms Common in SUSE Documentation</title>
         <tgroup cols="3">
@@ -297,7 +300,7 @@
               <entry>noun
                 <remark>Eeek&#x2026; Novell use dialog box, apparently, but
                   that sounds rather colloquial. And then, a dialog doesn't
-                  have to boxed in or in a window &#x2013; see web applications
+                  have to boxed in or in a window &#x2013; see Web applications
                   -- sknorr, 2013-09-17
                 </remark>
               </entry>
@@ -809,7 +812,9 @@
             <row>
               <entry>need to</entry>
               <entry>have to</entry>
-              <entry>verb; see also <emphasis>need to</emphasis></entry>
+              <entry>verb; see also <emphasis>need to</emphasis><remark>taroth
+                2014-01-03: this reference to itself is strange - shouldn't this rather point to "have to", which is
+                missing as an entry (and if only as a rejected term?)</remark></entry>
             </row>
             <row>
               <entry>NFS</entry>
@@ -1305,7 +1310,12 @@
               </entry>
             </row>
             <row>
-              <entry>whether</entry>
+              <entry>whether<remark>taroth 2014-01-03: I'm not sure if "whether"
+              is a good choice - IMHO it should be rejected in favor of "if"
+              which is a) shorter b) probably more of a "signal word" that can
+              attract more attention (if someone is only skimming a text
+              for any conditions that might either apply to his situation or
+              not)</remark></entry>
               <entry>whether or not</entry>
               <entry>pronoun</entry>
             </row>
