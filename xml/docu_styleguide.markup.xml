@@ -922,7 +922,7 @@ To save a file in Emacs, press &lt;keycombo action="seq"&gt;
             </term>
             <listitem>
               <para>
-        These are not used in SUSE documentation.
+        Not used in SUSE documentation.
        </para>
             </listitem>
           </varlistentry>
@@ -940,10 +940,8 @@ To save a file in Emacs, press &lt;keycombo action="seq"&gt;
                 <ulink url="http://www.docbook.org/tdg/en/html/guimenu.html"/>
               </para>
               <para>
-        SUSE uses this element to simplify GUI element markup. It is used
-        for all types of menu entries and also for buttons and GUI labels.
-       <remark>taroth 2014-01-03: what about titles of dialogs? I often use it
-         for those, too - should that be avoided or is it allowed?</remark></para>
+        Use this element for all types of menu entries, buttons, labels and window titles.
+              </para>
             </listitem>
           </varlistentry>
         </variablelist>
@@ -1047,9 +1045,8 @@ To save a file in Emacs, press &lt;keycombo action="seq"&gt;
           </varlistentry>
         </variablelist>
         <para>
-     Because SUSE does not distinguish between file names and directories (by
-     adding a trailing slash to the path or with markup),
-     <sgmltag class="emptytag">filename</sgmltag> is used for both directories and file names.
+     Use <sgmltag class="emptytag">filename</sgmltag> for both directories and
+     file names (see also <xref linkend="sec.file"/>).
     </para>
         <screen>&lt;para&gt;
  See file &lt;filename&gt;foo.xml&lt;/filename&gt;. Look at the
@@ -1105,9 +1102,9 @@ To save a file in Emacs, press &lt;keycombo action="seq"&gt;
         <para>
      Use <sgmltag class="emptytag">ulink</sgmltag> to reference to a URL:
     </para>
-        <screen>&lt;para&gt; See &lt;ulink url="http://www.suse.de"/&gt;. See &lt;ulink
-     url="http://www.novell.de"&gt;Novell Deutschland&lt;/ulink&gt;.</screen>
-        <literallayout>See <ulink url="http://www.suse.de"/>. See <ulink url="http://www.novell.de">Novell Deutschland</ulink>.
+        <screen>&lt;para&gt; See &lt;ulink url="http://www.suse.com"/&gt;. See &lt;ulink
+     url="http://www.novell.com"&gt;Novell&lt;/ulink&gt;.</screen>
+        <literallayout>See <ulink url="http://www.suse.com"/>. See <ulink url="http://www.novell.com">Novell</ulink>.
     </literallayout>
         <para>
      If you need references to another chapter, section, etc., in the same

@@ -12,10 +12,6 @@
     the table below. All terms use sentence-style capitalization. Refer to
     <xref linkend="sec.language"/> for further advice.
   </para>
-<para><remark>taroth 2014-01-03: I'm missing the term "add-on" which is used
-very often within our docs, please add it</remark>
-  <remark>taroth 2014-01-03: what about adding a term for "config file" (IMHO this should
-    be rejected in favor of "configuration file")</remark></para>
       <table>
         <title>Terms Common in SUSE Documentation</title>
         <tgroup cols="3">
@@ -29,14 +25,24 @@ very often within our docs, please add it</remark>
           <!-- Sorting (pseudo-regex): (?<=((to)|The))\.-–+\/[0-9][A-Z][a-z] -->
           <tbody>
             <row>
+              <entry>32-bit</entry>
+              <entry>32 Bit, 32 bit, 32-Bit, 32Bit, 32bit</entry>
+              <entry>adjective</entry>
+            </row>
+            <row>
               <entry>3D</entry>
               <entry>3 D, 3 d, 3.D., 3.d., 3-D, 3-d, 3d, Three-D</entry>
               <entry>adjective</entry>
             </row>
             <row>
-              <entry>32-bit</entry>
-              <entry>32 Bit, 32 bit, 32-Bit, 32Bit, 32bit</entry>
+              <entry>64-bit</entry>
+              <entry>64 Bit, 64 bit, 64-Bit, 64Bit, 64bit</entry>
               <entry>adjective</entry>
+            </row>
+            <row>
+              <entry>add-on</entry>
+              <entry>add on, AddOn, addOn, addon</entry>
+              <entry>noun</entry>
             </row>
             <row>
               <entry>address book</entry>
@@ -259,6 +265,16 @@ very often within our docs, please add it</remark>
               <entry>command line</entry>
               <entry>command-line, commandline</entry>
               <entry>noun</entry>
+            </row>
+            <row>
+              <entry>configuration</entry>
+              <entry>config</entry>
+              <entry>noun; unless when referring to file extension</entry>
+            </row>
+            <row>
+              <entry>(to) configure</entry>
+              <entry>(to) config</entry>
+              <entry>verb</entry>
             </row>
             <row>
               <entry>control center</entry>
@@ -545,6 +561,16 @@ very often within our docs, please add it</remark>
               <entry>noun or adjective
                 <remark>Really a noun? -- sknorr, 2013-09-16</remark>
               </entry>
+            </row>
+            <row>
+              <entry>initialization</entry>
+              <entry>init, initialisation [British]</entry>
+              <entry>noun</entry>
+            </row>
+            <row>
+              <entry>(to) initialize</entry>
+              <entry>(to) init, (to) initialise [British]</entry>
+              <entry>verb</entry>
             </row>
             <row>
               <entry>installation source</entry>

@@ -62,8 +62,7 @@
 
     <para>Maintain a consistent structure within your documents. The structure
       can vary between different books, articles or projects, but the most
-      common type is <remark>taroth 2014-01-03: use plural: "types are" (because you outline at
-        least two: book and article)</remark>documented here.
+      common types are documented here.
     </para>
 
     <sect2 id="sec.book">
@@ -238,15 +237,14 @@
                   <title>Highlights</title>
                   <para>Use a highlights section to summarize the information
                     provided in a chapter in four or fewer bullet
-                    points. <remark>taroth 2014-01-03: as you mention bullet points here, better use
-                    an itemizedlist instead of an orderedlist in the following example</remark>Summarize the topic instead of summarizing the
+                    points. Summarize the topic instead of summarizing the
                     outline.
                   </para>
                 </formalpara>
                 <example id="ex.highlights">
                   <title>A Highlights Section</title>
                   <para>This chapter will:</para>
-                  <orderedlist>
+                  <itemizedlist>
                     <listitem>
                       <para>Give you an overview over the file systems
                         available in
@@ -263,16 +261,15 @@
                       <para>Help you choose the right one for your purpose.
                       </para>
                     </listitem>
-                  </orderedlist>
+                  </itemizedlist>
                 </example>
               </listitem>
               <listitem>
               <formalpara>
                 <title>Introductions</title>
                 <para>Any introductory information follows directly after the
-                  abstract <remark>taroth 2014-01-03: as abstracts are mentioned above in the
-                    context of a book, an article, or a set, maybe replace "abstract" with
-                    "highlights section" here</remark>and should not be placed in a separate section.
+                  highlights section and should not be placed in a separate
+                  section.
                 </para>
               </formalpara>
               </listitem>
@@ -590,6 +587,10 @@
         <xref linkend="sec.otherexternal"/> and
         <xref linkend="sec.markup.inline.filenames_and_dirs"/>.
       </para>
+      <para>When it is necessary to refer to file extensions, such as in
+        compound words like <quote>PDF file</quote>, always capitalize the
+        extension.
+      </para>
     </sect2>
 
     <sect2 id="sec.bias">
@@ -663,12 +664,14 @@
       <para>Always let the reader know the objective of an action before
         describing the action itself. As an example, write: <quote>To
         restore world peace, click <guimenu>Shake Hands</guimenu>.</quote>
+        <remark>sknorr 2014-01-07: it's hard to take this quote seriously.
+        Find something better.</remark>
       </para>
       <para><remark>taroth 2014-01-03: sknorr, if you think it's useful, please also add a para about
         parentheses - for less disruption in reading and for the sake of translation (memories), if it
       often useful to move parentheses to the end of a sentence. For example: "Before you start
-      deploying XYZ, make a note of the MAC addresses and the purpose (purposeA, purposeB, 
-      purposeC, purposeD, purposeE) of each node." can be rephrased to 
+      deploying XYZ, make a note of the MAC addresses and the purpose (purposeA, purposeB,
+      purposeC, purposeD, purposeE) of each node." can be rephrased to
       "Before you start deploying XYZ, make a note of the MAC addresses and the purpose of each
       node, for example: purposeA, purposeB, purposeC,
       purposeD, purposeE."</remark></para>
@@ -888,18 +891,14 @@ title Disk
       <sect3 id="sec.command">
         <title>Commands</title>
 
-        <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
-        <para><remark>taroth 2014-01-03: does the screen above really belong here? or is it a copy
-        and paste error? to me it was a  bit confusing as a start of the section....</remark>
-          Make sure to capitalize commands exactly as they are executed.
+        <para>Make sure to capitalize commands exactly as they are executed.
           Commands can be embedded in running text or
           presented as part of a screen environment. In running text,
           use <sgmltag class="emptytag">command</sgmltag> when referring
           to an actual command you would use on a command line:
         </para>
         <literallayout>To start LibreOffice from the command line, use <command>loffice</command>.</literallayout>
-        <para><remark>taroth 2014-01-03: rephrased example above to match rule: let the reader know the
-          objective of an action before describing the action itself</remark>Nest options, surrounded by an
+        <para>Nest options, surrounded by an
           <sgmltag class="emptytag">option</sgmltag> element,
           inside the command element. Options can also be used in
           text, separately from <sgmltag class="emptytag">command</sgmltag>. See
@@ -1110,9 +1109,8 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
           </para>
         </listitem>
         <listitem>
-          <para>Only illustrate steps where user meaningful user interactions
-            are necessary. <remark>taroth 2014-01-03: is the double "user" intentionally? or is the
-              first one a typo?</remark>Do not create screenshots of progress bars or
+          <para>Only illustrate steps where meaningful user interactions
+            are necessary. Do not create screenshots of progress bars or
             confirmation windows.
           </para>
         </listitem>
@@ -1144,7 +1142,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
 
     <sect2 id="sec.heading">
       <title>Headings</title>
-      <para>Each level of heading should have two or more <remark>taroth 2014-01-03: subheadings?</remark>headings. Lonely
+      <para>Each level of heading contain have two or more subheadings. Lone
         subheadings are not allowed. Make headings in a group parallel by using
         a similar structure for the wording.
       </para>

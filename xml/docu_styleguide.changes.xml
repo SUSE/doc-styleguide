@@ -116,7 +116,8 @@
             </para>
           </listitem>
           <listitem>
-            <para>Added entries for <emphasis>advice</emphasis>,
+            <para>Added entries for <emphasis>add-on</emphasis>,
+              <emphasis>advice</emphasis>,
               <emphasis>(to) advise</emphasis>, <emphasis>after</emphasis>,
               <emphasis>although</emphasis>, <emphasis>and</emphasis>,
               <emphasis>appendixes</emphasis>, <emphasis>Audio CD</emphasis>,
@@ -125,7 +126,8 @@
               <emphasis>Btrfs</emphasis>, <emphasis>but</emphasis>,
               <emphasis>CD</emphasis>, <emphasis>CD-ROM</emphasis>,
               <emphasis>CUPS</emphasis>, <emphasis>(to) close sth.</emphasis>,
-              <emphasis>could</emphasis>,
+              <emphasis>configuration</emphasis>,
+              <emphasis>(to) configure</emphasis>, <emphasis>could</emphasis>,
               <emphasis>Common Unix Printing System</emphasis>
               <emphasis>dialog</emphasis>, <emphasis>directory</emphasis>,
               <emphasis>DVD</emphasis>, <emphasis>e-book</emphasis>,
@@ -136,6 +138,8 @@
               <emphasis>flash disk</emphasis>*,
               <emphasis>graphical user interface</emphasis>,
               <emphasis>HTTP</emphasis>, <emphasis>indexes</emphasis>,
+              <emphasis>initialization</emphasis>,
+              <emphasis>(to) initialize</emphasis>,
               <emphasis>IPv4</emphasis>, <emphasis>IPv6</emphasis>,
               <emphasis>license</emphasis>,
               <emphasis>(to) license sth.</emphasis>,
@@ -232,6 +236,11 @@
         <para>Removed differentiation between the many types of authors files
           from <xref linkend="sec.outline"/>. This was too complicated to be
           practical. Also, translators were so far never mentioned.
+        </para>
+      </listitem>
+      <listitem>
+        <para>Added short guideline about file extensions to
+          <xref linkend="sec.file"/>.
         </para>
       </listitem>
       <listitem>
