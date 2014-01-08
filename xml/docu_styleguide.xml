@@ -1096,48 +1096,84 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
       </example>
     </sect2>
 
-    <sect2 id="sec.graphic">
-      <title>Graphics and Figures</title>
-      <para>Where they are helpful for following the explanation, use
-        screenshots and graphics. If you intend to use screenshots in a
-        document, consider the following issues first:
+    <sect2 id="sec.figure">
+      <title>Figures</title>
+
+      <para>For figures within lists or procedures, use the
+        <sgmltag class="emptytag">informalfigure</sgmltag> element. In all
+        other cases, use the <sgmltag class="emptytag">figure</sgmltag> element.
+        Reference figures from the text by means of a cross reference.
+        For more information, see <xref linkend="sec.crossreference"/>.
       </para>
-      <itemizedlist>
-        <listitem>
-          <para>A screenshot should illustrate a complex situation in which
-            the user cannot easily follow the text otherwise.
-          </para>
-        </listitem>
-        <listitem>
-          <para>Only illustrate steps where meaningful user interactions
-            are necessary. Do not create screenshots of progress bars or
-            confirmation windows.
-          </para>
-        </listitem>
-        <listitem>
-          <para>Choose only those screenshots that show the most important
-            dialogs or choices during the whole process is sufficient.
-          </para>
-        </listitem>
-      </itemizedlist>
-      <para>If you intend to use graphics in documentation, think of the
-        following issues first:
-      </para>
-      <itemizedlist>
-        <listitem>
-          <para>KISS (<quote>keep it short and simple</quote>). Graphics
-            should always simplify complex issues and not confuse the reader
-            by their complexity. Embedding text in graphic adds to complexity.
-            Use as little text as possible. Be aware that some languages use
-            up to twice as much space for a given phrase than English.
-          </para>
-        </listitem>
-        <listitem>
-          <para>Reference the figure from the text by means of an
-            <sgmltag class="emptytag">xref</sgmltag>.
-          </para>
-        </listitem>
-      </itemizedlist>
+
+      <sect3 id="sec.graphic">
+        <title>Graphics</title>
+
+        <para>Apply the KISS principle: <quote>keep it short and simple.</quote>
+          Graphics should always simplify complex issues and not confuse the
+          reader with their complexity.
+        </para>
+        <para>Use as little text as possible. To allow for translation,
+          reserve twice as much space for runs of text as the English version
+          of it consumes.
+        </para>
+      </sect3>
+
+      <sect3 id="sec.screenshot">
+        <title>Screenshots</title>
+
+        <para>Use screenshots to illustrate complex situations in which
+          the user cannot easily follow the instructions otherwise.
+        </para>
+        <itemizedlist>
+          <listitem>
+            <para>Be selective. Only illustrate steps in which meaningful user
+              interactions are necessary. Do not create screenshots of progress
+              bars or confirmation windows. In most cases, it is
+              unnecessary to create a screenshot of every step of an
+              instruction.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Make sure screenshots focus on what they are supposed to
+              illustrate. When documenting application windows, create a
+              screenshot of the window only. When documenting web applications,
+              only reproduce the contents of the tab, instead of the entire
+              browser window.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Create screenshots that are recognizable to readers. For
+              instance, create screenshots of KDE applications on a KDE desktop
+              with the default KDE theme and disable any toolbar modifications
+              you may have made.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Use grayscale font antialiasing (default on SUSE
+              operating systems). Subpixel font antialiasing creates colored
+              letter edges on some screens and in print.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Where applicable, follow the rules in
+              <xref linkend="sec.name"/>.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Avoid editing screenshots. If you need to edit a
+              screenshot, use the
+              <phrase role="programname">Shutter</phrase> application. To
+              anonymize portions of a screenshot, use the
+              <guimenu>Pixelize</guimenu> tool. To highlight parts of a
+              screenshot, use the <guimenu>Rectangle</guimenu> tool or the
+              <guimenu>Arrow</guimenu> tool. Avoid using callouts. Never add
+              text or freely drawn objects. Always select colors providing a
+              good contrast with their background.
+            </para>
+          </listitem>
+        </itemizedlist>
+      </sect3>
     </sect2>
 
     <sect2 id="sec.heading">

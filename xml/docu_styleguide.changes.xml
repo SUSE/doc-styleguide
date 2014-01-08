@@ -239,15 +239,22 @@
         </para>
       </listitem>
       <listitem>
+        <para>Added <quote>Objective before Instruction</quote> rule to
+          <xref linkend="sec.sentence.structure"/>.
+        </para>
+      </listitem>
+      <listitem>
         <para>Added short guideline about file extensions to
           <xref linkend="sec.file"/>.
         </para>
       </listitem>
       <listitem>
-        <para>Added <quote>Objective before Instruction</quote> rule to
-          <xref linkend="sec.sentence.structure"/>.
+        <para>Reworked <xref linkend="sec.figure"/> to be more structured and
+          added instructions for preparing and editing screenshots.
         </para>
       </listitem>
+
+
       <listitem>
         <para>Added this list of changes as a separate article.</para>
       </listitem>
