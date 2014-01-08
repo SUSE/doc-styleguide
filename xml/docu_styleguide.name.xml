@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook45-profile.xsl"
+                 type="text/xml" title="Profiling step"?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY copy "©">
+<!ENTITY reg "®">
+<!ENTITY tm "™">
+<!ENTITY sm "℠">
+]>
+
+  <sect1 id="sec.name">
+      <title>Names of Example Items</title>
+
+      <para>This section summarizes some conventions to use for creating
+        generic names for objects that can occur in documentation. At least
+        some of the following values should be provided through entities
+        (see <xref linkend="sec.entity"/>).
+      </para>
+
+      <sect2 id="sec.domain">
+        <title>Domains</title>
+
+        <para>Use <ulink url="http://www.example.com"/> and
+          <ulink url="http://www.example.org"/> as example domains. Both
+          domains were registered for use in documentation.
+        </para>
+      </sect2>
+
+      <sect2 id="sec.host">
+        <title>Host Names</title>
+
+        <para>Use <systemitem>sun</systemitem> and
+          <systemitem>earth</systemitem> or other planets of the solar system.
+        </para>
+      </sect2>
+
+      <sect2 id="sec.ipv4">
+        <title>IPv4 Adresses</title>
+
+        <para>Use addresses from the class C
+          subnet <literal>255.255.255.0</literal> for examples. That is,
+          replace the final <literal>0</literal> by any integer between
+          <literal>0</literal> and <literal>255</literal>.
+          To create examples using a larger setup, use
+          addresses from the private network ranges. See
+          <ulink url="http://en.wikipedia.org/wiki/Private_network"/>
+          for more information.
+        </para>
+      </sect2>
+
+      <sect2 id="sec.ipv6">
+        <title>IPv6 Adresses</title>
+
+        <para>Use addresses from the subnet <literal>2001:0db8::/32</literal>
+          for examples. That is, after the <literal>2001:0db8:</literal> prefix,
+          add six four-digit numbers, each separated by a colon on both sides.
+          Each of the hexadecimal digits may have a value between
+          <literal>0</literal> and <literal>f</literal>. A valid example URL is
+          <literal>2001:0db8:0123:4567:89ab:cdef:1234:5678</literal>. See
+          <ulink url="http://en.wikipedia.org/wiki/IPv6_subnetting_reference"/>
+          for more information.
+        </para>
+      </sect2>
+
+      <sect2 id="sec.user">
+        <title>Users</title>
+
+        <para>For example users, use free-software mascots, such as Tux (Linux
+          Kernel), Wilber (The GIMP), Geeko (SUSE), Foxkeh (Firefox), Konqi
+          (KDE), or Duke (Java). In prompts, use the lowercase version of these
+          names.
+        </para>
+      </sect2>
+  </sect1>

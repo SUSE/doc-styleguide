@@ -4,8 +4,8 @@
 ## ----------------------------
 ##
 ## Basics
-MAIN="MAIN.styleguide.xml"
-ROOTID="styleguide.all"
+MAIN="MAIN.styleguide.changes.xml"
+ROOTID="art.styleguide"
 
 ## Profiling
 PROFARCH="x86;amd64;em64t"

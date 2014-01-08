@@ -1,0 +1,38 @@
+
+
+<!ENTITY sections '
+  <title>SUSE Documentation Style Guide</title>
+  <articleinfo>
+    <releaseinfo>2014.01-beta2</releaseinfo>
+    <date><?dbtimestamp?></date>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="authors.xml"/>
+    <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
+      href="legal_suse+gfdl.xml"/>
+  </articleinfo>
+
+  <abstract>
+    <para>This guide provides answers to writing, style, and layout questions
+      commonly arising when editing SUSE or openSUSE documentation. The
+      <phrase role="productname">Novdoc</phrase>/
+      <phrase role="productname">DocBook</phrase>
+      markup reference at the end of this guide will help you
+      choose the right XML element for your purpose. Following this guide will
+      make your documentation more understandable and easier to translate.
+    </para>
+  </abstract>
+
+
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="docu_styleguide.audience.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="docu_styleguide.name.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="docu_styleguide.outline.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="docu_styleguide.language.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="docu_styleguide.structure.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="docu_styleguide.manage.xml"/>
+
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="docu_styleguide.terminology.xml"/>
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="docu_styleguide.markup.xml"/>
+'>
+
+<!ENTITY license '
+  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gfdl.xml"/>
+  '>

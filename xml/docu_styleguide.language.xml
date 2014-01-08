@@ -1,0 +1,325 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook45-profile.xsl"
+                 type="text/xml" title="Profiling step"?>
+<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
+<!ENTITY copy "©">
+<!ENTITY reg "®">
+<!ENTITY tm "™">
+<!ENTITY sm "℠">
+]>
+
+  <sect1 id="sec.language">
+    <title>Language</title>
+
+    <para>The following rules are intentionally kept concise.
+      When in doubt about a style rule, refer to
+      <citetitle>The Chicago Manual of Style</citetitle>, 15th
+      Edition. When in doubt about the spelling or usage of a word, first refer
+      to <xref linkend="app.terminology"/>. When the usage of a word is not
+      regulated there, use American English spellings as defined on
+      <ulink url="http://www.merriam-webster.com/"/>
+      (<ulink url="http://www.m-w.com/"/> for short).
+    </para>
+    <para>If a product you are documenting is not listed in the terminology
+      table, refer to the SUSE home page, <ulink url="http://www.suse.com"/>.
+      If the product is not mentioned on the SUSE home page, refer to the
+      Marketing department.
+    </para>
+
+    <sect2 id="sec.abbreviation">
+      <title>Abbreviations</title>
+
+      <para>Do not use any abbreviations, except <emphasis>etc.</emphasis> or
+        abbreviations of common units of measurement. Do not create
+        a plural of abbreviations by adding an <quote>s.</quote> Refer to
+        <xref linkend="sec.number"/> for more information about units of
+        measurement.
+      </para>
+    </sect2>
+    <sect2 id="sec.acronym">
+      <title>Acronyms</title>
+      <para>A title must not contain both an acronym and its expansion. When
+        dealing with a term that is commonly written as an acronym, use the
+        acronym in the title. When mentioning the term for the first time in
+        the following text, use its expanded form. All following occurrences
+        of the term in this chapter should then use the acronym.
+      </para>
+      <para>Because sometimes chapters and parts are used across multiple
+        documents, it is important to provide the expansion of an acronym at
+        least once per chapter. Be consistent in how you provide the
+        expansion. If you use the acronym followed by the written out form
+        in one chapter, do this in all other chapters too.
+      </para>
+      <para>Create plural forms of acronyms by adding a lowercase
+        <quote>s,</quote> for example, <quote>CDs</quote> and
+        <quote>BIOSs.</quote> Avoid using possessive forms of acronyms
+        (a negative example would be <quote>XMLʼs specification</quote>)
+        for reasons of clarity.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.capitalization">
+      <title>Capitalization and Title Style</title>
+
+      <para>In all running text, use sentence-style capitalization, that is,
+        only capitalize the first word of a sentence and proper names.
+      </para>
+      <para>Use title-style capitalization for all types of headings and titles,
+        including figure and table titles. This style is explained in
+        <citetitle>The Chicago Manual of Style</citetitle> 8.167.
+        A simplified version of these rules is below:
+      </para>
+
+      <orderedlist>
+        <listitem>
+          <para>Capitalize the first and the last word.</para>
+        </listitem>
+        <listitem>
+          <para>Lowercase articles, that is, <emphasis>the</emphasis>,
+            <emphasis>a</emphasis>, and <emphasis>an</emphasis>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Lowercase prepositions, such as <emphasis>up</emphasis>,
+            <emphasis>in</emphasis>, <emphasis>of</emphasis>,
+            <emphasis>through</emphasis>, and <emphasis>between</emphasis>,
+            unless they are used with a verb, such as <quote>Logging In</quote>
+            or with a noun, as in <quote>The On Button</quote>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Lowercase the following conjunctions: <emphasis>and</emphasis>,
+            <emphasis>but</emphasis>, <emphasis>for</emphasis>,
+            <emphasis>nor</emphasis>, and <emphasis>or</emphasis>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Lowercase <emphasis>as</emphasis> and <emphasis>to</emphasis>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Capitalize everything that is not mentioned above.</para>
+        </listitem>
+      </orderedlist>
+
+      <para>In variable lists, capitalize the term in title style unless it
+        is a complete sentence. In all list items, use sentence-style
+        capitalization (capitalize the first letter and proper nouns only).
+        Use title style for row and column labels in tables.
+      </para>
+    </sect2>
+    <sect2 id="sec.comma">
+      <title>Commas</title>
+
+      <para>Use commas between all items in a series of three or more elements.
+        For example, write <quote>a, b,
+        and c.</quote> Use commas around phrases like <emphasis>for
+        example</emphasis> and <emphasis>that is</emphasis>. Introductory
+        phrases at the beginning of a sentence are normally followed by a comma.
+        For example, <quote>Before using YaST Online Update, configure
+        a network connection.</quote>
+      </para>
+    </sect2>
+
+    <sect2 id="sec.contraction">
+      <title>Contractions</title>
+
+      <para>Do not use contractions, unless you are purposefully writing
+        a casual document.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.dash">
+      <title>Dashes</title>
+
+      <para>Use en dashes (<literal>&ndash;</literal>) between numbers in a
+        range in tables and figures.
+      </para>
+      <para>For punctuation, use em dashes (<literal>&mdash;</literal>).
+        Do not surround em dashes with spaces. Use em dashes sparingly.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.sentence.end">
+      <title>End of Sentence Punctuation</title>
+
+      <para>End sentences in a period. Avoid using exclamation marks.
+        Restrict question marks to question and answer sections.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.file">
+      <title>File and Directory Names</title>
+
+      <para>Under Linux, objects like directories, printers, or flash drives
+        are all considered files. Therefore, the naming and markup
+        conventions are the same for <quote>drives</quote> (for example,
+        hard drives, CD-ROM drives, or flash drives), directories, or files.
+      </para>
+      <para>The layout for file names and directory names is the same. See the
+       following example:
+      </para>
+      <itemizedlist>
+        <listitem>
+          <para>Use forward slashes to separate nested directory or file
+            names.
+          </para>
+        </listitem>
+        <listitem>
+          <para>When giving absolute paths, always start with a leading slash
+            to indicate the root of the file system.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Do not use a trailing slash to distinguish between a file
+            and a directory. Where differentiation is needed, provide it
+            textually.
+          </para>
+        </listitem>
+      </itemizedlist>
+      <para>Most Linux file systems are case-sensitive. Use capitals exactly
+        as they appear in the file system. For details on markup, refer to
+        <xref linkend="sec.otherexternal"/> and
+        <xref linkend="sec.markup.inline.filenames_and_dirs"/>.
+      </para>
+      <para>When it is necessary to refer to file extensions, such as in
+        compound words like <quote>PDF file</quote>, always capitalize the
+        extension.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.bias">
+      <title>Gender Bias</title>
+
+      <para>Avoid indicating gender in your documentation. If possible,
+        use plural to allow use of <quote>they</quote> as the pronoun.
+        Otherwise, use <quote>he or she.</quote>
+      </para>
+      <para>For naming of example items, refer to <xref linkend="sec.name"/>.
+        For more information on how to avoid gender bias, refer to
+        <citetitle>The Chicago Manual of Style</citetitle> 5.43.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.number">
+      <title>Numbers and Measurements</title>
+
+      <para>Write integers zero through ten as words and use numerals for all
+        others. For measurements, always use numerals when an abbreviation is
+        used for the unit. Use a non-breaking
+        (<sgmltag class="genentity">nbsp</sgmltag>)
+        space between the numeral and corresponding unit abbreviation.
+        For more information, refer to
+        <citetitle>The Chicago Manual of Style</citetitle> 9.6.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.possessive">
+      <title>Possessives</title>
+
+      <para>Do not use possessives of acronyms and trademarked terms.
+        Avoid possessives of inanimate objects.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.prefix">
+      <title>Prefixes</title>
+
+      <para>Do not add a hyphen after the prefix to prefixed words
+        unless either the last letter of the prefix and the first letter of
+        the word are the same or you foresee misunderstandings.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.semicolon">
+      <title>Semicolons</title>
+
+      <para>Avoid using semicolons to join sentences. You may use semicolons
+        in place of commas in very complicated series.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.slash">
+      <title>Slashes</title>
+
+      <para>Do not use slashes except when they are part of a standard
+        technical term, such as <emphasis>TCP/IP</emphasis> or
+        <emphasis>client/server</emphasis>.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.sentence.structure">
+      <title>Sentence Structure</title>
+
+      <para>Form clear and direct sentences with 20 words or less.
+        Avoid complicated clauses. Make sure that the relationship between
+        subject, verb, and object are clear. Avoid joining sentences with
+        semicolons. Avoid ending sentences with prepositions.
+      </para>
+      <para>Avoid using parentheses. Where they are necessary, move them to
+        the end of the sentence. Never nest parentheses.
+      </para>
+      <para>Always let the reader know the objective of an action before
+        describing the action itself. As an example, write: <quote>To
+        restore world peace, click <guimenu>Shake Hands</guimenu>.</quote>
+        <remark>sknorr 2014-01-07: it's hard to take this quote seriously.
+        Find something better.</remark>
+      </para>
+    </sect2>
+
+    <sect2 id="sec.tense">
+      <title>Tense</title>
+      <para>Use the simple present tense. Apply the simple present tense even
+        to sentences with <quote>if</quote> or <quote>when</quote>
+        clauses: <quote>If this happens, go there.</quote>
+      </para>
+      <para>Prerequisites of an action should be expressed in the present tense
+        as well: <quote>Glibc is installed.</quote> In some cases, no
+        verb is necessary before the prerequisite of an action:
+        <quote>a 1&nbsp;GHz processor or better.</quote>
+      </para>
+    </sect2>
+
+    <sect2 id="sec.tone">
+      <title>Tone and Voice</title>
+      <para>Maintain a professional tone. Do not use contractions, except in
+        casual documents. Do not use humor. Be honest and
+        avoid absolutes and exaggerations, but focus on positive aspects.
+      </para>
+      <para>Use second person (<quote>you</quote>) to refer to the reader.
+        Normally, the reader is the user or administrator that does
+        the actions described. Do not overuse <quote>you.</quote> It
+        is often understood, especially in directions.
+      </para>
+      <para>Use active voice. Active voice means that the subject of the
+        sentence performs the verb. For example, <quote>The root user
+        performs administrative tasks</quote> is active voice.
+        <quote>Administrative tasks are performed by the root user</quote>
+        is passive voice. Passive voice can be used occasionally if
+        there is a need to place emphasis on the object of the verb or
+        if the performer of the action is unknown. <quote>A SAMBA server
+        must be configured in the network</quote> is an example of
+        proper use of passive voice. The emphasis is on the server,
+        not on the person configuring it.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.uielement">
+      <title>User Interface Elements</title>
+
+      <para>When using labels of GUI elements, do not include ending punctuation
+        like <literal>...</literal> or <literal>:</literal>. Whenever possible,
+        refer to the elements without identifying them as a special type of
+        dialog element. For example, use <quote>Click
+        <guimenu>OK</guimenu></quote> rather than <quote>Click the
+        <guimenu>OK</guimenu> button.</quote> However, some situations require
+        a more specific wording, for example, if a dialog has many different
+        graphical elements.
+      </para>
+      <para>For detailed instructions for the appropriate markup, especially
+        concerning buttons, labels, and menu structures, refer to
+        <xref linkend="sec.markup.inline.menus"/>.
+      </para>
+    </sect2>
+
+  </sect1>

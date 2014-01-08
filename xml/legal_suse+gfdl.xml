@@ -2,8 +2,11 @@
 <!DOCTYPE legalnotice PUBLIC "-//Novell//DTD NovDoc XML V1.0//EN" "novdocx.dtd"
 [
   <!ENTITY % NOVDOC.DEACTIVATE.IDREF "INCLUDE">
-  <!ENTITY % entities SYSTEM "entity-decl.ent">
-  %entities;
+  <!ENTITY copy "©">
+  <!ENTITY reg "®">
+  <!ENTITY trade "™">
+  <!ENTITY sm "℠">
+  <!ENTITY suse "SUSE">
 ]>
 <!--
      Please keep this document neatly formatted, because a text version

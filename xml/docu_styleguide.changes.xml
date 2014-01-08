@@ -5,11 +5,8 @@
 [
 ]>
 
-<article id="art.styleguide.changes">
+<appendix id="app.changes">
   <title>List of Changes to the Style Guide</title>
-  <articleinfo>
-    <date><?dbtimestamp?></date>
-  </articleinfo>
 
   <!-- Add new versions to the beginning of the list. -->
 
@@ -278,4 +275,4 @@
     </itemizedlist>
 
   </sect1>
-</article>
+</appendix>
