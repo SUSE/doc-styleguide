@@ -253,6 +253,9 @@
           added instructions for preparing and editing screenshots.
         </para>
       </listitem>
+      <listitem>
+        <para>Added <xref linkend="sec.xinclude"/>.</para>
+      </listitem>
 
 
       <listitem>

@@ -1010,9 +1010,8 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
     <sect2 id="sec.example">
       <title>Examples</title>
 
-      <para>Use examples to illustrate complex processes. Avoid adding
-        paragraphs of text to examples.
-        Many of the rules established in <xref linkend="sec.graphic"/> also
+      <para>Use examples to illustrate complex processes.
+        The rules established in <xref linkend="sec.graphic"/> also
         apply to examples.
       </para>
       <itemizedlist>
@@ -1674,8 +1673,10 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
 
   <sect1 id="sec.manage">
     <title>Managing Documents</title>
-    <para><remark>taroth 2014-01-03: intro is missing, see the instructions for use of sections
-      in sec.book  ;)</remark></para>
+
+    <para>This section provides an overview over some features of XML you can
+      use to manage documents.</para>
+
     <sect2 id="sec.remark">
       <title>Remarks</title>
       <para>Use remarks for editorial comments. Remarks can be placed within,
@@ -1922,6 +1923,30 @@ Kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
         </variablelist>
       </sect3>
     </sect2>
+
+    <sect2 id="sec.xinclude">
+      <title>XInclude Elements</title>
+
+      <para>XInclude elements help create modular source files.
+        When editing a book, create a new source file for every chapter and
+        then use XInclude elements to
+        reference all chapters in order from a small central file like this:
+      </para>
+      <screen>&lt;xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gfdl.xml"/&gt;</screen>
+      <para>XInclude elements let you easily add common sections, such as
+        licenses and information on typographical conventions in multiple
+        books or articles without having to maintain the text in multiple
+        places. They also ease co-editing documentation with others in a version
+        control system as they reduces the chance of merge conflicts occurring.
+      </para>
+      <para>Files referenced via XIncludes must be valid XML files. This
+        means that they must have a single top-level element. Files that are
+        supposed to be referenced multiple times from
+        within the same set, book or article must not contain any
+        <sgmltag class="attribute">id</sgmltag> attributes.
+      </para>
+    </sect2>
+
   </sect1>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="docu_styleguide.terminology.xml"/>
