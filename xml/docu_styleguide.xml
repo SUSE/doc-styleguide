@@ -661,20 +661,15 @@
         subject, verb, and object are clear. Avoid joining sentences with
         semicolons. Avoid ending sentences with prepositions.
       </para>
+      <para>Avoid using parentheses. Where they are necessary, move them to
+        the end of the sentence. Never nest parentheses.
+      </para>
       <para>Always let the reader know the objective of an action before
         describing the action itself. As an example, write: <quote>To
         restore world peace, click <guimenu>Shake Hands</guimenu>.</quote>
         <remark>sknorr 2014-01-07: it's hard to take this quote seriously.
         Find something better.</remark>
       </para>
-      <para><remark>taroth 2014-01-03: sknorr, if you think it's useful, please also add a para about
-        parentheses - for less disruption in reading and for the sake of translation (memories), if it
-      often useful to move parentheses to the end of a sentence. For example: "Before you start
-      deploying XYZ, make a note of the MAC addresses and the purpose (purposeA, purposeB,
-      purposeC, purposeD, purposeE) of each node." can be rephrased to
-      "Before you start deploying XYZ, make a note of the MAC addresses and the purpose of each
-      node, for example: purposeA, purposeB, purposeC,
-      purposeD, purposeE."</remark></para>
     </sect2>
 
     <sect2 id="sec.tense">
@@ -683,11 +678,11 @@
         to sentences with <quote>if</quote> or <quote>when</quote>
         clauses: <quote>If this happens, go there.</quote>
       </para>
-      <para><remark>taroth 2014-01-03: what about tenses for results and prerequisites of a step or
-        a procedure? For example (result): "Click OK. The dialog *will* close." (or "The dialog *closes*") -
-        ok, bad example as this could be rephrased to "Click OK to close the dialog" but you get the
-      meaning. Example for a prerequisite: "You have installed XYZ"/"XYZ is installed"/"You
-      installed XYZ"?</remark></para>
+      <para>Prerequisites of an action should be expressed in the present tense
+        as well: <quote>Glibc is installed.</quote> In some cases, no
+        verb is necessary before the prerequisite of an action:
+        <quote>a 1&nbsp;GHz processor or better.</quote>
+      </para>
     </sect2>
 
     <sect2 id="sec.tone">
@@ -1070,27 +1065,26 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         the acronym form to link it to the defined written out form.
       </para>
       <para>The markup for a glossary entry is shown in
-        <xref linkend="ex.glossary"/>.<remark>taroth 2014-01-03: I would have liked an example for
-          an entry with an acronym and an entry for the written out form with a *See* reference...</remark>
+        <xref linkend="ex.glossary"/>.
       </para>
       <example id="ex.glossary">
         <title>A Typical Example of a Glossary</title>
         <screen>&lt;glossary&gt;
- &lt;title&gt;Glossary&lt;/title&gt;
- &lt;glossdiv&gt;
-  &lt;title&gt;D&lt;/title&gt;
+&lt;title&gt;Glossary&lt;/title&gt;
   &lt;glossentry&gt;
-   &lt;glossterm&gt;DocBook&lt;/glossterm&gt;
-   &lt;glossdef&gt;
-    &lt;para&gt;
-     DocBook provides a system for writing structured documents
-     using SGML or XML. It is particularly well-suited to books
-     and papers about computer hardware and software, though it
-     is by no means limited to them.
-    &lt;/para&gt;
-   &lt;/glossdef&gt;
+    &lt;glossterm id="gt.extensible"&gt;Extensible Markup Language&lt;/glossterm&gt;
+    &lt;glossdef&gt;
+      &lt;para&gt;A markup language that defines a set of rules for encoding
+        documents in a format that is both human-readable and machine-readable.
+      &lt;/para&gt;
+    &lt;/glossdef&gt;
   &lt;/glossentry&gt;
- &lt;/glossdiv&gt;
+  &lt;glossentry&gt;
+    &lt;glossterm&gt;XML&lt;/glossterm&gt;
+    &lt;glossdef&gt;
+      &lt;para&gt;See also &lt;xref linkend="gt.extensible"/&gt;.&lt;/para&gt;
+    &lt;/glossdef&gt;
+  &lt;/glossentry&gt;
 &lt;/glossary&gt;</screen>
       </example>
     </sect2>

@@ -256,6 +256,9 @@
       <listitem>
         <para>Added <xref linkend="sec.xinclude"/>.</para>
       </listitem>
+      <listitem>
+        <para>More informative example in <xref linkend="sec.glossary"/>.</para>
+      </listitem>
 
 
       <listitem>
