@@ -7,9 +7,10 @@
 
 <appendix id="app.markup">
     <title>Markup Conventions</title>
-    <para>Refer to Norman Walsh's DocBook Guide,
+    <para>Refer to Norman Walsh's
+      <citetitle>DocBook: The Definitive Guide</citetitle>,
       <ulink url="http://www.docbook.org/tdg/en/html/docbook.html"/>,
-      in case of further open questions about markup.
+      in case of further questions about markup.
     </para>
 
     <sect1 id="sec.markup.conv">
@@ -108,9 +109,8 @@
                   <entry>
                     <sgmltag class="attvalue">il</sgmltag>
                     <footnote id="fn.vl">
-                      <para>Insert an <sgmltag>id</sgmltag> attribute only when
-                        you also put a <sgmltag>title</sgmltag> element inside
-                        this list.
+                      <para>Only add an <sgmltag>id</sgmltag> attribute when
+                        the list has a <sgmltag>title</sgmltag> element
                       </para>
                     </footnote>
                   </entry>
@@ -130,7 +130,7 @@
                   <entry>
                     <sgmltag class="attvalue">idx</sgmltag>
                     <footnote>
-                      <para>Only use it if you create index ranges</para>
+                      <para>Only add when creating index ranges</para>
                     </footnote>
                   </entry>
                 </row>
@@ -231,18 +231,21 @@
         <listitem>
           <para>
       Identify a chapter with short, easy-to-remember English labels, like
-      <sgmltag class="attvalue">inst_yast</sgmltag> for a chapter or section
-      about YaST installation.
+      <sgmltag class="attvalue">yast</sgmltag> for a chapter or section
+      about YaST installation. Avoid using non-obvious abbreviations. Always
+      use the singular of nouns and the infinitive of verbs.
      </para>
         </listitem>
         <listitem>
           <para>
-      Each section inherits the label of its parent plus a unique part that
-      characterizes it. For example: <literal>sec.inst_yast</literal> might
-      have a subsection labeled <literal>sec.inst_yast.lang</literal>. Other
-      elements with IDs inherit the ID of the parent chapter. For example, a
-      table in this chapter about foo could have the ID
-      <literal>tab.inst_yast.foo</literal>.
+      In books, use the part after <literal>cha.</literal> of the chapter ID as
+      a part of the name of each ID inside it. For instance, if the chapter is
+      named <literal>cha.install</literal>, a section in it could be called
+      <literal>cha.install.yast</literal>. An example inside the same chapter
+      could be called <literal>ex.install.keyboardlayout</literal>.
+      </para>
+      <para>In articles, simply append the name of the section to the
+        <literal>sec.</literal> prefix.
      </para>
         </listitem>
         <listitem>
@@ -250,7 +253,7 @@
       Separate the prefix and the following parts with a dot
       (<literal>.</literal>). Do not use colons (<literal>:</literal>),
       semicolons (<literal>;</literal>), or other <quote>special
-      characters.</quote> The underbar (<literal>_</literal>) character is
+      characters.</quote> The underscore character (<literal>_</literal>) is
       allowed.
      </para>
           <example>
@@ -268,8 +271,9 @@ id="tab.yast.sources"</screen>
       <title>The Book Structure</title>
       <para>
     SUSE follows the definition of the DocBook DTD. For more detailed
-    descriptions about book elements, refer to the TDG sections listed in
-    <xref linkend="tab.bookstructure"/>.
+    descriptions about book elements, refer to the
+    <citetitle>DocBook: The Definitive Guide</citetitle>
+    sections listed in <xref linkend="tab.bookstructure"/>.
    </para>
       <table id="tab.bookstructure">
         <title>Elements Used in a SUSE Book</title>
@@ -277,7 +281,7 @@ id="tab.yast.sources"</screen>
           <thead>
             <row>
               <entry>Element</entry>
-              <entry>Link to TDG</entry>
+              <entry>Web Link</entry>
             </row>
           </thead>
           <tbody>
