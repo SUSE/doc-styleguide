@@ -377,15 +377,15 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         Reference figures from the text by means of a cross reference.
         For more information, see <xref linkend="sec.crossreference"/>.
       </para>
+      <para>All referenced image files must have a lowercase alphanumeric
+        file name.
+      </para>
 
       <sect3 id="sec.graphic">
         <title>Graphics</title>
 
-        <para>Apply the KISS principle: <quote>keep it short and simple.</quote>
-          Graphics should always simplify complex issues and not confuse the
-          reader with their complexity.
-        </para>
-        <para>Use as little text as possible. To allow for translation,
+        <para>Keep graphics as simple as possible. Use as little text as
+          possible. To allow for translation,
           reserve twice as much space for runs of text as the English version
           of it consumes.
         </para>
@@ -412,6 +412,14 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
               screenshot of the window only. When documenting web applications,
               only reproduce the contents of the tab, instead of the entire
               browser window.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Avoid creating screenshots of windows higher or
+              wider than 800&nbsp;pixels at 96&nbsp;pixels per inch. When
+              creating screenshots of applications scaled for a higher
+              pixel-per-inch count, apply a proportionally larger maximum window
+              size.
             </para>
           </listitem>
           <listitem>
