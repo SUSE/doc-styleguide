@@ -113,7 +113,9 @@
             </para>
           </listitem>
           <listitem>
-            <para>Added entries for <emphasis>add-on</emphasis>,
+            <para>Added entries for
+              <emphasis>(to) activate sth.</emphasis>,
+              <emphasis>add-on</emphasis>,
               <emphasis>advice</emphasis>,
               <emphasis>(to) advise</emphasis>, <emphasis>after</emphasis>,
               <emphasis>although</emphasis>, <emphasis>and</emphasis>,
@@ -123,9 +125,11 @@
               <emphasis>Btrfs</emphasis>, <emphasis>but</emphasis>,
               <emphasis>CD</emphasis>, <emphasis>CD-ROM</emphasis>,
               <emphasis>CUPS</emphasis>, <emphasis>(to) close sth.</emphasis>,
+              <emphasis>computer</emphasis>*,
               <emphasis>configuration</emphasis>,
               <emphasis>(to) configure</emphasis>, <emphasis>could</emphasis>,
-              <emphasis>Common Unix Printing System</emphasis>
+              <emphasis>Common Unix Printing System</emphasis>,
+              <emphasis>(to) deactivate sth.</emphasis>,
               <emphasis>dialog</emphasis>, <emphasis>directory</emphasis>,
               <emphasis>DVD</emphasis>, <emphasis>e-book</emphasis>,
               <emphasis>EPUB</emphasis>, <emphasis>easy, easily</emphasis>,
@@ -134,8 +138,8 @@
               <emphasis>Ext4</emphasis>, <emphasis>flavor</emphasis>,
               <emphasis>flash disk</emphasis>*,
               <emphasis>graphical user interface</emphasis>,
-              <emphasis>HTTP</emphasis>, <emphasis>indexes</emphasis>,
-              <emphasis>initialization</emphasis>,
+              <emphasis>HTTP</emphasis>, <emphasis>if</emphasis>,
+              <emphasis>indexes</emphasis>, <emphasis>initialization</emphasis>,
               <emphasis>(to) initialize</emphasis>,
               <emphasis>IPv4</emphasis>, <emphasis>IPv6</emphasis>,
               <emphasis>license</emphasis>,
@@ -144,7 +148,9 @@
               <emphasis>need to</emphasis>,
               <emphasis>might</emphasis>, <emphasis>(to) multitask</emphasis>,
               <emphasis>must</emphasis>, <emphasis>openSUSE</emphasis>,
+              <emphasis>(to) open sth.</emphasis>,
               <emphasis>open source</emphasis>,
+              <emphasis>(to) print sth.</emphasis>,
               <emphasis>(to) preconfigure sth.</emphasis>,
               <emphasis>preconfigured</emphasis>,
               <emphasis>(to) press sth.</emphasis>,
@@ -168,8 +174,10 @@
               <emphasis>(to) start sth. up</emphasis>,
               <emphasis>TAR archive</emphasis>*,
               <emphasis>(to) type sth. (into sth.)</emphasis>,
+              <emphasis>usage</emphasis>
               <emphasis>Unix</emphasis>, <emphasis>uppercase</emphasis>,
-              <emphasis>when</emphasis>, <emphasis>Wi-fi</emphasis>*, and
+              <emphasis>when</emphasis>, <emphasis>want sth.</emphasis>,
+              <emphasis>Wi-fi</emphasis>*, and
               <emphasis>YaST</emphasis>.
             </para>
             <para>(An * marks potentially interesting changes.)</para>
@@ -255,6 +263,11 @@
       </listitem>
       <listitem>
         <para>More informative example in <xref linkend="sec.glossary"/>.</para>
+      </listitem>
+      <listitem>
+        <para>Simplify rules for creating IDs in <xref linkend="sec.id"/>. This
+          should shorten the length of the average ID and help guessing IDs.
+        </para>
       </listitem>
 
 
