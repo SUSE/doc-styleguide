@@ -13,7 +13,7 @@
     <xref linkend="sec.language"/> for further advice.
   </para>
       <table>
-        <title>Terms Common in SUSE Documentation</title>
+        <title>SUSE Documentation Terminology</title>
         <tgroup cols="3">
           <thead>
             <row>
@@ -38,6 +38,14 @@
               <entry>64-bit</entry>
               <entry>64 Bit, 64 bit, 64-Bit, 64Bit, 64bit</entry>
               <entry>adjective</entry>
+            </row>
+            <row>
+              <entry>(to) activate sth.</entry>
+              <entry>(to) block sth., (to) check sth., (to) choose sth.,
+                (to) highlight sth., (to) tick sth.
+              </entry>
+              <entry>verb; when referring to check boxes
+              </entry>
             </row>
             <row>
               <entry>add-on</entry>
@@ -211,20 +219,20 @@
             </row>
             <row>
               <entry>check box</entry>
-              <entry>check-box, checkbox, tick box [British], tick-box, tickbox
+              <entry>check-box, checkbox, tick box, tick-box, tickbox
               </entry>
               <entry>noun; avoid, just mention name of option</entry>
             </row>
             <row>
               <entry>checklist</entry>
-              <entry>check list, check-list, tick list [British], tick-list,
+              <entry>check list, check-list, tick list, tick-list,
                 ticklist
               </entry>
               <entry>noun</entry>
             </row>
             <row>
               <entry>check mark</entry>
-              <entry>check, check-mark, checkmark, tick [British], tick mark,
+              <entry>check, check-mark, checkmark, tick, tick mark,
                 tick-mark, tickmark
               </entry>
               <entry>noun</entry>
@@ -267,6 +275,11 @@
               <entry>noun</entry>
             </row>
             <row>
+              <entry>computer</entry>
+              <entry>machine, PC or Mac, system</entry>
+              <entry>noun; where used as a generic reference</entry>
+            </row>
+            <row>
               <entry>configuration</entry>
               <entry>config</entry>
               <entry>noun; unless when referring to file extension</entry>
@@ -294,11 +307,20 @@
               </entry>
             </row>
             <row>
-              <entry>(to) deselect sth.</entry>
-              <entry>(to) de-select sth., (to) un-select sth.,
-                (to) unselect sth.
+              <entry>(to) deactivate sth.</entry>
+              <entry>(to) deblock sth., (to) uncheck sth., (to) untick sth.
               </entry>
-              <entry>verb</entry>
+              <entry>verb; when referring to check boxes
+              </entry>
+            </row>
+            <row>
+              <entry>(to) deselect sth.</entry>
+              <entry>(to) de-select sth., (to) remove the selection from sth.,
+                (to) un-select sth., (to) unselect sth.
+              </entry>
+              <entry>verb; when referring to text, for check boxes, use
+                <emphasis>(to) deactivate sth.</emphasis>
+              </entry>
             </row>
             <row>
               <entry>DHCP</entry>
@@ -316,7 +338,7 @@
               <entry>noun
                 <remark>Eeek&#x2026; Novell use dialog box, apparently, but
                   that sounds rather colloquial. And then, a dialog doesn't
-                  have to boxed in or in a window &#x2013; see Web applications
+                  have to be in a boxed or window &#x2013; see Web applications
                   -- sknorr, 2013-09-17
                 </remark>
               </entry>
@@ -549,6 +571,13 @@
                 hypervizor
               </entry>
               <entry>noun</entry>
+            </row>
+            <row>
+              <entry>if</entry>
+              <entry></entry>
+              <entry>pronoun; use if an event depends on a condition; also see
+                <emphasis>when</emphasis>
+              </entry>
             </row>
             <row>
               <entry>indexes</entry>
@@ -838,9 +867,7 @@
             <row>
               <entry>need to</entry>
               <entry>have to</entry>
-              <entry>verb; see also <emphasis>need to</emphasis><remark>taroth
-                2014-01-03: this reference to itself is strange - shouldn't this rather point to "have to", which is
-                missing as an entry (and if only as a rejected term?)</remark></entry>
+              <entry>verb; see also <emphasis>must</emphasis></entry>
             </row>
             <row>
               <entry>NFS</entry>
@@ -855,6 +882,11 @@
               <entry>noun; often: <emphasis>NIS client</emphasis>,
                 <emphasis>NIS server</emphasis>
               </entry>
+            </row>
+            <row>
+              <entry>(to) open sth.</entry>
+              <entry>(to) open up sth.</entry>
+              <entry>verb</entry>
             </row>
             <row>
               <entry>openSUSE</entry>
@@ -916,6 +948,11 @@
               <entry>adjective</entry>
             </row>
             <row>
+              <entry>(to) print sth.</entry>
+              <entry>(to) print out sth.</entry>
+              <entry>verb</entry>
+            </row>
+            <row>
               <entry>print queue</entry>
               <entry>print<emphasis>er</emphasis> queue,
                 print<emphasis>ing</emphasis> queue
@@ -957,7 +994,7 @@
               <entry>(to) quit sth.</entry>
               <entry>(to) abort sth., (to) exit sth., (to) terminate sth.</entry>
               <entry>noun; quitting an application; always use
-                <quote>close</quote> for windows
+                <quote>close</quote> when referring to windows
               </entry>
             </row>
             <row>
@@ -1132,7 +1169,8 @@
               <entry>(to) select sth.</entry>
               <entry>(to) block sth., (to) choose sth., (to) highlight sth.
               </entry>
-              <entry>verb; selecting text or options</entry>
+              <entry>verb; when referring to text, for check boxes, use
+                <emphasis>(to) activate sth.</emphasis></entry>
             </row>
             <row>
               <entry>(to) set sth. up</entry>
@@ -1274,8 +1312,13 @@
               <entry>adjective; selection state</entry>
             </row>
             <row>
+              <entry>usage</entry>
+              <entry>utilisation [British], utilization</entry>
+              <entry>noun</entry>
+            </row>
+            <row>
               <entry>(to) use sth.</entry>
-              <entry>(to) utilize sth.</entry>
+              <entry>(to) utilise sth. [British], (to) utilize sth.</entry>
               <entry>verb</entry>
             </row>
             <row>
@@ -1329,29 +1372,40 @@
               <entry>noun</entry>
             </row>
             <row>
-              <entry>when</entry>
-              <entry>once</entry>
-              <entry>adverb; use <emphasis>once</emphasis> only in the meaning
-                <quote>one time only</quote>
+              <entry>want sth.</entry>
+              <entry>(to) wish sth., would like sth.</entry>
+              <entry>noun; you may use <emphasis>World Wide Web</emphasis> or
+                <emphasis>WWW</emphasis> in historical contexts
               </entry>
             </row>
             <row>
-              <entry>whether<remark>taroth 2014-01-03: I'm not sure if "whether"
-              is a good choice - IMHO it should be rejected in favor of "if"
-              which is a) shorter b) probably more of a "signal word" that can
-              attract more attention (if someone is only skimming a text
-              for any conditions that might either apply to his situation or
-              not)</remark></entry>
+              <entry>when</entry>
+              <entry>once</entry>
+              <entry>adverb; use <emphasis>once</emphasis> only in the meaning
+                <quote>one time only</quote>;
+              </entry>
+            </row>
+            <row>
+              <entry>when</entry>
+              <entry/>
+              <entry>pronoun; use if an event is inevitable; also see
+                <emphasis>if</emphasis>
+              </entry>
+            </row>
+            <row>
+              <entry>whether</entry>
               <entry>whether or not</entry>
-              <entry>pronoun</entry>
+              <entry>pronoun; use only where <emphasis>if</emphasis> does not
+                work; also see <emphasis>if</emphasis>
+              </entry>
             </row>
             <row>
               <entry>Wi-fi</entry>
               <entry>Wi fi, Wifi, WLAN, Wlan</entry>
               <entry>noun; use the <emphasis>Wi-fi</emphasis> brand name
-                whenever referring to IEEE 802.11-based networks; you may use
+                whenever referring to IEEE 802.11-based networks; use
                 the term <emphasis>WLAN</emphasis> when referring to other
-                wireless networks.
+                wireless LANs.
               </entry>
             </row>
             <row>
