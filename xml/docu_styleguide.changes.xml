@@ -5,12 +5,12 @@
 [
 ]>
 
-<appendix id="app.changes">
+<appendix id="app.change">
   <title>List of Changes to the Style Guide</title>
 
   <!-- Add new versions to the beginning of the list. -->
 
-  <sect1 id="sec.changes.01.2014">
+  <sect1 id="sec.change_2014-01">
     <title>Release 2014.01&mdash;January 2014</title>
 
     <itemizedlist>
@@ -45,7 +45,7 @@
           <listitem>
             <para>Moved <xref linkend="sec.procedure"/>
               (formerly <emphasis>Creating Procedures</emphasis>)
-              and <xref linkend="sec.commandline"/> (formerly
+              and <xref linkend="sec.command_line"/> (formerly
               <emphasis>Presenting Computer Elements</emphasis>) as
               subsections into <xref linkend="sec.structure"/>.
             </para>
@@ -64,7 +64,7 @@
           </listitem>
           <listitem>
             <para>Renamed <emphasis>GUI Elements</emphasis> to
-              <xref linkend="sec.uielement"/> and promoted it to a
+              <xref linkend="sec.ui_element"/> and promoted it to a
               <sgmltag class="emptytag">sect2</sgmltag> within
               <xref linkend="sec.language"/>.
             </para>
@@ -245,7 +245,7 @@
       </listitem>
       <listitem>
         <para>Added <quote>Objective before Instruction</quote> rule to
-          <xref linkend="sec.sentence.structure"/>.
+          <xref linkend="sec.structure_sentence"/>.
         </para>
       </listitem>
       <listitem>
@@ -269,7 +269,6 @@
           should shorten the length of the average ID and help guessing IDs.
         </para>
       </listitem>
-
 
       <listitem>
         <para>Added this list of changes as a separate article.</para>

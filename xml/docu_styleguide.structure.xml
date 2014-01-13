@@ -116,7 +116,7 @@
         align them above the part of a screen to annotate.
         Do not use more than ten callouts per example.
       </para>
-      <example id="example.callout">
+      <example id="ex.callout">
         <title>A Configuration File with Callouts</title>
         <screen>color white/blue black/light-gray <co id="col"/>
 default 0 <co id="def"/>
@@ -151,7 +151,7 @@ title Disk
       </para>
     </sect2>
 
-    <sect2 id="sec.commandline">
+    <sect2 id="sec.command_line">
       <title>Command Line Input and Output</title>
 
       <para>When dealing with user input and system output shorter than 30
@@ -227,7 +227,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         <sgmltag class="emptytag">xreflabel</sgmltag>.
       </para>
       <para>Other types of references to resources are described in
-        <xref linkend="sec.otherexternal"/> and
+        <xref linkend="sec.other_external"/> and
         <xref linkend="sec.link"/>.
       </para>
     </sect2>
@@ -277,7 +277,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
       </para>
       <para>Other types of references to resources are described in
         <xref linkend="sec.crossreference"/> and
-        <xref linkend="sec.otherexternal"/>.
+        <xref linkend="sec.other_external"/>.
       </para>
     </sect2>
 
@@ -313,7 +313,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
           <para>Always give examples a title and an ID.</para>
         </listitem>
       </itemizedlist>
-      <example id="ex.ex.call">
+      <example id="ex.call_ps">
         <title>Calling ps to Get Process Information</title>
         <screen><prompt>tux &gt; </prompt><command>ps <option>-xa</option></command>
 
@@ -324,7 +324,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
 5179 ?        S      0:00 kdeinit: klipper</screen>
       </example>
       <para>For details on displaying computer input and output, refer to
-        <xref linkend="sec.commandline"/>.
+        <xref linkend="sec.command_line"/>.
         For details on markup, refer to
         <xref linkend="sec.markup.block.examples"/>.
       </para>
@@ -644,7 +644,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
           <xref linkend="sec.markup.inline.referencing"/> for detailed
           information.
         </para>
-        <example id="ex.numlist">
+        <example id="ex.numbered">
           <title>A Numbered List</title>
           <para>Make sure the following requirements are met before trying to
             set up an Apache Web server:
@@ -736,7 +736,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
       </para>
     </sect2>
 
-    <sect2 id="sec.otherexternal">
+    <sect2 id="sec.other_external">
       <title>References to Other External Resources</title>
 
       <para>References to man pages and info pages should generally be
@@ -797,7 +797,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         </listitem>
         <listitem>
           <para>Short, simple steps and substeps describing the actions to
-            be performed. See also <xref linkend="sec.sentence.structure"/>.
+            be performed. See also <xref linkend="sec.structure_sentence"/>.
           </para>
         </listitem>
       </itemizedlist>
@@ -922,9 +922,9 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
       <para>Value and description pairs are better handled by means of a
         descriptive list.
       </para>
-      <example id="ex.tab">
+      <example id="ex.table">
         <title>A Typical Table</title>
-        <informaltable id="tab.maxsize">
+        <informaltable>
           <tgroup cols="3">
             <thead>
               <row>

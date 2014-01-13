@@ -140,7 +140,7 @@
       </para>
     </sect2>
 
-    <sect2 id="sec.sentence.end">
+    <sect2 id="sec.end_sentence">
       <title>End of Sentence Punctuation</title>
 
       <para>End sentences in a period. Avoid using exclamation marks.
@@ -179,7 +179,7 @@
       </itemizedlist>
       <para>Most Linux file systems are case-sensitive. Use capitals exactly
         as they appear in the file system. For details on markup, refer to
-        <xref linkend="sec.otherexternal"/> and
+        <xref linkend="sec.other_external"/> and
         <xref linkend="sec.markup.inline.filenames_and_dirs"/>.
       </para>
       <para>When it is necessary to refer to file extensions, such as in
@@ -248,7 +248,7 @@
       </para>
     </sect2>
 
-    <sect2 id="sec.sentence.structure">
+    <sect2 id="sec.structure_sentence">
       <title>Sentence Structure</title>
 
       <para>Form clear and direct sentences with 20 words or less.
@@ -304,7 +304,7 @@
       </para>
     </sect2>
 
-    <sect2 id="sec.uielement">
+    <sect2 id="sec.ui_element">
       <title>User Interface Elements</title>
 
       <para>When using labels of GUI elements, do not include ending punctuation

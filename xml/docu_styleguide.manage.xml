@@ -105,7 +105,7 @@
         they are translated once and automatically expanded elsewhere.
       </para>
 
-      <sect3 id="sec.entity.handling">
+      <sect3 id="sec.use_entity">
         <title>Using Entity Files</title>
 
         <para>SUSE uses a small set of custom entities. This set is localized
@@ -171,7 +171,7 @@
         </itemizedlist>
       </sect3>
 
-      <sect3 id="sec.entity.expansion">
+      <sect3 id="sec.type_entity">
         <title>Common Types of Entities</title>
 
         <para>The following provides some background on the most important
