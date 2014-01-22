@@ -132,10 +132,10 @@
     <sect2 id="sec.dash">
       <title>Dashes</title>
 
-      <para>Use en dashes (<literal>&ndash;</literal>) between numbers in a
+      <para>Use en dashes (&ndash;) between numbers in a
         range in tables and figures.
       </para>
-      <para>For punctuation, use em dashes (<literal>&mdash;</literal>).
+      <para>For punctuation, use em dashes (&mdash;).
         Do not surround em dashes with spaces. Use em dashes sparingly.
       </para>
     </sect2>
@@ -148,7 +148,7 @@
       </para>
     </sect2>
 
-    <sect2 id="sec.file">
+    <sect2 id="sec.file_language">
       <title>File and Directory Names</title>
 
       <para>Under Linux, objects like directories, printers, or flash drives
@@ -180,7 +180,7 @@
       <para>Most Linux file systems are case-sensitive. Use capitals exactly
         as they appear in the file system. For details on markup, refer to
         <xref linkend="sec.other_external"/> and
-        <xref linkend="sec.markup.inline.filenames_and_dirs"/>.
+        <xref linkend="sec.file_markup"/>.
       </para>
       <para>When it is necessary to refer to file extensions, such as in
         compound words like <quote>PDF file</quote>, always capitalize the
@@ -304,21 +304,51 @@
       </para>
     </sect2>
 
-    <sect2 id="sec.ui_element">
-      <title>User Interface Elements</title>
+    <sect2 id="sec.trademark">
+      <title>Trademarks</title>
 
-      <para>When using labels of GUI elements, do not include ending punctuation
-        like <literal>...</literal> or <literal>:</literal>. Whenever possible,
-        refer to the elements without identifying them as a special type of
-        dialog element. For example, use <quote>Click
-        <guimenu>OK</guimenu></quote> rather than <quote>Click the
-        <guimenu>OK</guimenu> button.</quote> However, some situations require
-        a more specific wording, for example, if a dialog has many different
-        graphical elements.
+      <para>Most products referenced in the documentation are trademarked.
+        Follow these rules when dealing with these terms:
       </para>
-      <para>For detailed instructions for the appropriate markup, especially
-        concerning buttons, labels, and menu structures, refer to
-        <xref linkend="sec.markup.inline.menus"/>.
+      <itemizedlist>
+        <listitem>
+          <para>Never use trademarks in headings.</para>
+        </listitem>
+        <listitem>
+          <para>Only use the marked version on the first occurrence of the
+            product name in a chapter.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Only use the &reg;, &tm;, or &sm; marks for
+            <phrase role="companyname">Attachmate</phrase> products.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Use an * (asterisk) for all service marks or trademarks of
+            third-party companies. This both acknowledges the service mark
+            or trademark of the other company and protects SUSE in case the
+            protection of the brand changes in any way.
+          </para>
+        </listitem>
+      </itemizedlist>
+      <para>See <xref linkend="sec.product"/> for markup advice.</para>
+    </sect2>
+
+    <sect2 id="sec.ui_item_language">
+      <title>User Interface Item</title>
+
+      <para>When referring to labels of user interface items, do not include
+        ending punctuation
+        such as <literal>…</literal> or <literal>:</literal>. Whenever possible,
+        refer to the items without identifying them as any special type of
+        dialog element. For example, use <quote>click
+        <guimenu>OK</guimenu></quote> rather than <quote>click the
+        <guimenu>OK</guimenu> button.</quote> However, complex dialogs may
+        require more sepcific wording.
+      </para>
+      <para>For instructions concerning markup, refer to
+        <xref linkend="sec.ui_item_markup"/>.
       </para>
     </sect2>
 

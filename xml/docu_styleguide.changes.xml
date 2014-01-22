@@ -11,7 +11,7 @@
   <!-- Add new versions to the beginning of the list. -->
 
   <sect1 id="sec.change_2014-01">
-    <title>Release 2014.01&mdash;January 2014</title>
+    <title>Release 2014-01&mdash;January 2014</title>
 
     <itemizedlist>
       <listitem>
@@ -36,10 +36,15 @@
             </para>
           </listitem>
           <listitem>
-            <para>Split <emphasis>Writing and Editing</emphasis> into
-              <xref linkend="sec.language"/> and
-              <xref linkend="sec.structure"/> and moved its subsections
-              where they fit best.
+            <para>Split the chapter <emphasis>Writing and Editing</emphasis> into
+              <xref linkend="sec.language"/>, <xref linkend="sec.structure"/>,
+              and <xref linkend="sec.manage"/>. Moved the subsections of
+              <emphasis>Writing and Editing</emphasis> where they fit best.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Integrated the <emphasis>Markup</emphasis> appendix into to
+              <xref linkend="sec.structure"/> and <xref linkend="sec.manage"/>.
             </para>
           </listitem>
           <listitem>
@@ -64,21 +69,20 @@
           </listitem>
           <listitem>
             <para>Renamed <emphasis>GUI Elements</emphasis> to
-              <xref linkend="sec.ui_element"/> and promoted it to a
+              <xref linkend="sec.ui_item_language"/> and promoted it to a
               <sgmltag class="emptytag">sect2</sgmltag> within
               <xref linkend="sec.language"/>.
             </para>
           </listitem>
           <listitem>
             <para>Created <xref linkend="sec.manage"/> and moved
-              <xref linkend="sec.remark"/>, <xref linkend="sec.xmlcomment"/>,
+              <xref linkend="sec.remark"/>, <xref linkend="sec.xml_comment"/>,
               and <xref linkend="sec.entity"/> as subsections into it.
             </para>
           </listitem>
           <listitem>
-            <para>Moved <xref linkend="app.terminology"/> and
-              <xref linkend="app.markup"/> and the copyright notice into
-              separate DocBook files.
+            <para>Moved <xref linkend="app.terminology"/> and the copyright
+              notice into separate DocBook files.
             </para>
           </listitem>
         </itemizedlist>
@@ -250,7 +254,7 @@
       </listitem>
       <listitem>
         <para>Added short guideline about file extensions to
-          <xref linkend="sec.file"/>.
+          <xref linkend="sec.file_language"/>.
         </para>
       </listitem>
       <listitem>

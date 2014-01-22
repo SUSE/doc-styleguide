@@ -3,7 +3,7 @@
 <!ENTITY sections '
   <title>SUSE Documentation Style Guide</title>
   <articleinfo>
-    <releaseinfo>2014.01-beta2</releaseinfo>
+    <releaseinfo>2014.01-rc1</releaseinfo>
     <date><?dbtimestamp?></date>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="authors.xml"/>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
@@ -30,7 +30,6 @@
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="docu_styleguide.manage.xml"/>
 
   <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="docu_styleguide.terminology.xml"/>
-  <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="docu_styleguide.markup.xml"/>
 '>
 
 <!ENTITY license '

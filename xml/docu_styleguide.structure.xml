@@ -17,6 +17,80 @@
       every minor functionality of a product. Describe what a product can do
       rather than its limitations.
     </para>
+    <para>SUSE uses the Novdoc DTD which is compatible with DocBook. Thus, for
+      more detailed descriptions of the elements of a book, refer to the
+      <citetitle>DocBook: The Definitive Guide</citetitle>
+      sections listed in <xref linkend="tab.book"/>.
+    </para>
+    <table id="tab.book">
+      <title>Important Elements</title>
+      <tgroup cols="2">
+        <thead>
+          <row>
+            <entry>Element</entry>
+            <entry>Web Link</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>
+              <sgmltag class="emptytag">appendix</sgmltag>
+            </entry>
+            <entry>
+              <ulink url="http://www.docbook.org/tdg/en/html/appendix.html"/>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <sgmltag class="emptytag">book</sgmltag>
+            </entry>
+            <entry>
+              <ulink url="http://www.docbook.org/tdg/en/html/book.html"/>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <sgmltag class="emptytag">chapter</sgmltag>
+            </entry>
+            <entry>
+              <ulink url="http://www.docbook.org/tdg/en/html/chapter.html"/>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <sgmltag class="emptytag">glossary</sgmltag>
+            </entry>
+            <entry>
+              <ulink url="http://www.docbook.org/tdg/en/html/glossary.html"/>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <sgmltag class="emptytag">part</sgmltag>
+            </entry>
+            <entry>
+              <ulink url="http://www.docbook.org/tdg/en/html/part.html"/>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <sgmltag class="emptytag">preface</sgmltag>
+            </entry>
+            <entry>
+              <ulink url="http://www.docbook.org/tdg/en/html/preface.html"/>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <sgmltag class="emptytag">sect1</sgmltag>
+            </entry>
+            <entry>
+              <ulink url="http://www.docbook.org/tdg/en/html/sect1.html"/>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
 
     <sect2 id="sec.admonition">
       <title>Admonitory and Advisory Paragraphs</title>
@@ -116,39 +190,91 @@
         align them above the part of a screen to annotate.
         Do not use more than ten callouts per example.
       </para>
-      <example id="ex.callout">
-        <title>A Configuration File with Callouts</title>
+      <example id="ex.callout_output">
+        <title>Example of Callouts (Source)</title>
+        <screen>&lt;example id="ex.callout"&gt;
+  &lt;title&gt;Example of Callouts&lt;/title&gt;
+        &lt;screen&gt;color white/blue black/light-gray &lt;co id="col"/&gt;
+default 0 &lt;co id="def"/&gt;&lt;/screen&gt;
+        &lt;calloutlist&gt;
+          &lt;callout arearefs="col"&gt;
+            &lt;para&gt;Colors of the boot loader menu.&lt;/para&gt;
+          &lt;/callout&gt;
+          &lt;callout arearefs="def"&gt;
+            &lt;para&gt;Defines the preselected option.&lt;/para&gt;
+          &lt;/callout&gt;
+        &lt;/calloutlist&gt;
+      &lt;/example&gt;</screen>
+      </example>
+      <example id="ex.callout_source">
+        <title>Example of Callouts (Output)</title>
         <screen>color white/blue black/light-gray <co id="col"/>
-default 0 <co id="def"/>
-timeout 8 <co id="time"/>
-gfxmenu (hd0,0)/boot/message
-
-title SUSE Linux Enterprise
-    kernel (hd0,0)/boot/vmlinuz root=/dev/hda1 vga=0x31a selinux=0
-    splash=silent resume=/dev/hda2 desktop elevator=as  showopts
-    initrd (hd0,0)/boot/initrd
-
-title Disk
-    root (fd0)
-    chainloader +1</screen>
+default 0 <co id="def"/></screen>
         <calloutlist>
           <callout arearefs="col">
-            <para>Color definitions to be used by the
-              <phrase role="productname">GRUB</phrase> menu.
-            </para>
+            <para>Colors of the boot loader menu.</para>
           </callout>
           <callout arearefs="def">
-            <para>Define the default option.</para>
-          </callout>
-          <callout arearefs="time">
-            <para>Select a time-out after which booting starts automatically.
-            </para>
+            <para>Defines the preselected option.</para>
           </callout>
         </calloutlist>
       </example>
-      <para>For details on the markup of this element, refer to
-        <xref linkend="sec.markup.block.callouts"/>.
-      </para>
+      <table id="tab.callout">
+        <title>Elements Related to <sgmltag class="emptytag">callout</sgmltag>
+        </title>
+        <tgroup cols="2">
+          <thead>
+            <row>
+              <entry>Element</entry>
+              <entry>Web Link</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">co</sgmltag>
+                  </title>
+                  <para>Inline element to mark an area within a
+                    <sgmltag class="emptytag">screen</sgmltag>.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/co.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">calloutlist</sgmltag></title>
+                  <para>Block element containg a list of descriptions for each
+                    of the marked areas.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/calloutlist.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">callout</sgmltag>
+                  </title>
+                  <para>Block element containing a description of a single
+                    area marked with <sgmltag class="emptytag">co</sgmltag>.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/callout.html"/>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+      <para>Also see <xref linkend="sec.example"/>.</para>
     </sect2>
 
     <sect2 id="sec.command_line">
@@ -159,8 +285,105 @@ title Disk
         <sgmltag class="emptytag">command</sgmltag> or
         <sgmltag class="emptytag">filename</sgmltag>. In all other cases,
         close the current paragraph and enclose it in a
-        <sgmltag class="emptytag">screen</sgmltag> element.
+        <sgmltag class="emptytag">screen</sgmltag> element. Also see
+        <xref linkend="sec.example"/>.
       </para>
+
+      <table id="tab.command_line">
+        <title>Elements Related to Command Line Input and Output</title>
+        <tgroup cols="2">
+          <thead>
+            <row>
+              <entry>Element</entry>
+              <entry>Web Link</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">screen</sgmltag></title>
+                  <para>Block element in which all characters are reproduced
+                    exactly as they are in the source of the document. Also see
+                    <xref linkend="sec.example"/>. May contain any of the inline
+                    elemeents listed in this table
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/screen.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">command</sgmltag>
+                  </title>
+                  <para>Inline element that contains the name of an executable
+                    program or the command that a user types to
+                    execute a program. Can contain an
+                    <sgmltag class="emptytag">option</sgmltag> element.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/command.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">option</sgmltag></title>
+                  <para>Inline element that contains an argument to a
+                    command or instruction.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/option.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">replaceable</sgmltag></title>
+                  <para>Inline element that contains content that can or must
+                    be replaced by the user.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/replaceable.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">filename</sgmltag></title>
+                  <para>Inline element that contains the name of a directory
+                    or file. See also <xref linkend="sec.file_language"/>.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/filename.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">variable</sgmltag></title>
+                  <para>Inline element that contains the name of a variable.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/variable.html"/>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
 
       <sect3 id="sec.command">
         <title>Commands</title>
@@ -171,12 +394,17 @@ title Disk
           use <sgmltag class="emptytag">command</sgmltag> when referring
           to an actual command you would use on a command line:
         </para>
-        <literallayout>To start LibreOffice from the command line, use <command>loffice</command>.</literallayout>
+        <screen>To start LibreOffice from the command line, use
+&lt;command&gt;loffice &lt;/command&gt;.</screen>
         <para>Nest options, surrounded by an
           <sgmltag class="emptytag">option</sgmltag> element,
-          inside the command element. Options can also be used in
-          text, separately from <sgmltag class="emptytag">command</sgmltag>. See
-          <xref linkend="sec.markup.inline.commands"/>.
+          inside the command element.
+        </para>
+        <screen>To start LibreOffice Writer from the command line, use
+&lt;command&gt;loffice &lt;option&gt;--writer&lt;/option&gt;&lt;/command&gt;.</screen>
+        <para>
+          Options can also be used in
+          text, separately from <sgmltag class="emptytag">command</sgmltag>.
         </para>
         <para>Use markup for commands even inside
           <sgmltag class="emptytag">screen</sgmltag>
@@ -184,6 +412,21 @@ title Disk
         </para>
         <para>See also <xref linkend="sec.prompt"/>.
         </para>
+      </sect3>
+
+      <sect3 id="sec.file_markup">
+        <title>File Names</title>
+
+        <para>A file name is the name of a file on a local or network disk.
+          Can contain a simple name or could include a path or other elements
+          specific to the operating system. See also
+          <xref linkend="sec.file_language"/>.
+        </para>
+        <screen>Find the log file &lt;filename&gt;configuration.xml&lt;/filename&gt;
+in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
+        <remark>sknorr, 2014-01-21: this is bad practice, I guess, since one
+          could simply append the file name to the path...
+        </remark>
       </sect3>
 
       <sect3 id="sec.placeholder">
@@ -196,21 +439,59 @@ title Disk
 &lt;command&gt;ls &lt;replaceable&gt;directory&lt;/replaceable&gt;&lt;/command&gt;.</screen>
       </sect3>
 
+      <sect3 id="sec.literal">
+        <title>Literals</title>
+
+        <para>Use <sgmltag class="emptytag">literal</sgmltag> to mark up data
+          taken literally from a computer system.
+       </para>
+        <screen>To create a comment, insert &lt;literal&gt;#&lt;/literal&gt; characters.</screen>
+      </sect3>
+
+      <sect3 id="sec.prompt">
+        <title>Prompts</title>
+
+        <para>When documenting commands entered into Bash with a
+          <sgmltag class="emptytag">screen</sgmltag> element, always prefix them
+          with a prompt marked up this way:
+        </para>
+        <screen>&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ls&lt;/command&gt;</screen>
+        <para>Never include a host name or path in your prompts to avoid making
+          them longer than necessary. The first restricted user should always use
+          the name <emphasis>tux</emphasis>. For other names of restricted users,
+          see <xref linkend="sec.name"/>.
+        </para>
+        <para>Avoid using root prompts in your documentation by using the
+          <command>sudo</command> command where applicable. If you do need a root prompt,
+          always mark it up as following:
+        </para>
+        <screen>&lt;prompt&gt;root # &lt;/prompt&gt;&lt;command&gt;yast&lt;/command&gt;</screen>
+        <para>When documenting prompts other than the one of Bash, use a
+          custom prompt that is as generic as possible.
+        </para>
+        <para>For consistency, it is helpful to create entities for the prompts
+          used in your documentation. To learn more, refer to
+          <xref linkend="sec.entity"/>.
+        </para>
+      </sect3>
+
       <sect3 id="sec.variable">
         <title>Variable Names</title>
 
-          <para>Reference to names of variables rather than to their value.
+          <para>To reference to names of variables, use the
+            <sgmltag class="emptytag">variable</sgmltag> element:
           </para>
-          <screen>To select another display manager, start the YaST sysconfig editor
+          <screen>To select another display manager, start the YaST system configuration editor
 and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen>
       </sect3>
 
     </sect2>
 
-    <sect2 id="sec.crossreference">
+    <sect2 id="sec.cross_reference">
       <title>Cross References</title>
 
-      <para> Use the <sgmltag class="emptytag">xref</sgmltag> element (read:
+      <remark>toms, Dec 2013: How do we use the attribute xrefstyle?</remark>
+      <para>Use the <sgmltag class="emptytag">xref</sgmltag> element (read:
         <quote>cross ref</quote>) when referring to an appendix, chapter,
         example, figure, part, preface, section, table, or question and answer
         set. The referenced element needs an
@@ -221,64 +502,46 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         <quote>figure</quote>, and <quote>example</quote>. These are inserted
         automatically.
       </para>
-      <para>Do not insert references to single paragraphs
-        (<sgmltag class="emptytag">para</sgmltag>). If you need to reference
-        a list, insert <sgmltag class="emptytag">id</sgmltag> and
-        <sgmltag class="emptytag">xreflabel</sgmltag>.
+      <para>To be able reference an otherwise untitled element, add the
+        attribute <sgmltag class="attribute">xreflabel</sgmltag> to the element
+        with a useful title as its value. Never create references to
+        single paragraphs (<sgmltag class="emptytag">para</sgmltag>).
       </para>
       <para>Other types of references to resources are described in
         <xref linkend="sec.other_external"/> and
-        <xref linkend="sec.link"/>.
+        <xref linkend="sec.link"/>. Create identifiers to
+        reference from cross references using the rules under
+        <xref linkend="sec.id"/>.
       </para>
+      <example id="ex.cross_reference_source">
+        <title>Example of a Cross Reference (Source)</title>
+        <screen>&lt;sect2 id="sec.cross_reference"&gt;
+  &lt;title&gt;Cross References&lt;/title&gt;
+  &lt;para&gt;Use the &lt;sgmltag class="emptytag"&gt;xref&lt;/sgmltag&gt; element;...&lt;/para&gt;
+...
+  &lt;para&gt;See &lt;xref linkend="sec.cross_reference"/&gt;.&lt;/para&gt;
+&lt;/sect2&gt;
+...</screen>
+      </example>
+      <example id="ex.cross_reference_output">
+        <title>Example of a Cross Reference (Output)</title>
+        <remark>sknorr, 2014-01-21: does this work for the average reader?</remark>
+        <para>See <xref linkend="sec.cross_reference"/>.</para>
+      </example>
     </sect2>
 
-    <sect2 id="sec.link">
-      <title>External Links</title>
+    <sect2 id="sec.emphasis">
+      <title>Emphasis</title>
 
-      <para>Where possible, collect links in a
-        <quote>For More Information</quote> section at the end of the chapter.
-        This will help users focus on your documentation instead of leading
-        them to other resources before they had a chance to read the end
-        of the sentence.
+      <para>Where possible, indicate stress with language only. If that is not
+        possible, use the <sgmltag class="emptytag">emphasis</sgmltag> element
+        to indicate stress.
       </para>
-      <para>To mark up multiple links, create an
-        <sgmltag class="emptytag">itemizedlist</sgmltag> around
-        them. Do not use a list environment for only one link.
-        If you need to present a large number of links, group them by topic and
-        create a separate list environment for each group. Provide a
-        comprehensive title for each of the groups or an introductory sentence.
+      <para>Where added emphasis is needed, use the
+        <sgmltag class="attribute">role="bold"</sgmltag> attribute.
       </para>
-      <para>Use the <sgmltag class="emptytag">ulink</sgmltag> element to mark up
-        URLs that can be opened with a Web browser, such as
-        <ulink url="http://www.suse.de"/>.
-        Always add the correct protocol prefix (for example,
-        <literal>http://</literal>),
-        otherwise links will not work. Never use <sgmltag>filename</sgmltag>
-        for a link, as that would both disable the link checker and make the
-        link unclickable. Avoid entering a text label between the
-        <sgmltag class="emptytag">ulink</sgmltag> start and end tags.
-      </para>
-      <para>Try to make URLs as short as possible before pasting them into your
-        documentation. Many long URLs can be shortened by leaving away
-        non-essential pieces of them. This is often the case with search URLs
-        or URLs of Internet news media. If a Web site provides a built-in URL
-        shortener, use that. Do not resort to using external URL shorteners, as
-        that both hides the actual destination a link will take the user to and
-        introduces an extra element of uncertainty, as the shortening service
-        may disappear or become unreliable in the future.
-      </para>
-      <para>Do not use <sgmltag class="emptytag">ulink</sgmltag> to link to SUSE
-        documentation outside of the current document set. Instead, use the
-        appropriate entity for the book title. Always reference the book
-        itself, as chapter names can change.
-      </para>
-      <para>Where possible, provide translators with localized versions of
-        links in the comments of the source file.
-      </para>
-      <para>Other types of references to resources are described in
-        <xref linkend="sec.crossreference"/> and
-        <xref linkend="sec.other_external"/>.
-      </para>
+      <screen>This will be displayed in &lt;emphasis&gt;italics&lt;/emphasis&gt;. This
+will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     </sect2>
 
     <sect2 id="sec.example">
@@ -305,67 +568,130 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
           </para>
         </listitem>
         <listitem>
+          <para>To enable line numbering, add the attribute
+            <sgmltag class="attribute">linenumbering="numbered"</sgmltag>.
+            Never use hardcoded line numbers in the
+            <sgmltag class="emptytag">screen</sgmltag> environment.
+          </para>
+        </listitem>
+        <listitem>
           <para>Only use examples where they are necessary for understanding
             the documentation.
           </para>
         </listitem>
         <listitem>
-          <para>Always give examples a title and an ID.</para>
+          <para>Always give examples a title and an identifier.</para>
         </listitem>
       </itemizedlist>
-      <example id="ex.call_ps">
-        <title>Calling ps to Get Process Information</title>
-        <screen><prompt>tux &gt; </prompt><command>ps <option>-xa</option></command>
+      <example id="ex.example">
+        <title>Example of an Example</title>
+        <screen>&lt;example id="ex.example"&gt;
+  &lt;title&gt;Example of an Example&lt;/title&gt;
+  &lt;screen&gt;&lt;prompt&gt;tux &gt; &lt;/prompt&gt;&lt;command&gt;ps &lt;option&gt;-xa&lt;/option&gt;&lt;/command&gt;
 
 5170 ?        S      0:00 kdeinit: khotkeys
 5172 ?        S      0:02 kdeinit: kdesktop
-5174 ?        S      0:04 kdeinit: kicker
-5177 ?        S      0:00 kdeinit: kpowersave
-5179 ?        S      0:00 kdeinit: klipper</screen>
+5174 ?        S      0:04 kdeinit: kicker&lt;/screen&gt;</screen>
       </example>
+      <table id="tab.example">
+        <title>Elements Related to <sgmltag class="emptytag">example</sgmltag>
+        </title>
+        <tgroup cols="2">
+          <thead>
+            <row>
+              <entry>Element</entry>
+              <entry>Web Link</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">example</sgmltag></title>
+                  <para>Formal block element containing a
+                    <sgmltag class="emptytag">title</sgmltag> and a
+                    <sgmltag class="emptytag">screen</sgmltag> or other elements
+                    such as lists or paragraphs.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/example.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">screen</sgmltag>
+                  </title>
+                  <para>Verbatim block element for displaying text that readers
+                    might see on a computer terminal or in a text file.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/screen.html"/>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
       <para>For details on displaying computer input and output, refer to
-        <xref linkend="sec.command_line"/>.
-        For details on markup, refer to
-        <xref linkend="sec.markup.block.examples"/>.
+        <xref linkend="sec.command_line"/>. To annotate examples, use callouts.
+        Callouts are described in <xref linkend="sec.callout"/>.
       </para>
     </sect2>
 
-    <sect2 id="sec.glossary">
-      <title>Glossaries</title>
-      <para>An optional glossary contains terms and their definitions. Make sure
-        that the glossary entries are appropriate to the intended audience. Define
-        unfamiliar terms and specialized jargon.
+    <sect2 id="sec.link">
+      <title>External Links</title>
+
+      <para>Where possible, collect links in a
+        <quote>For More Information</quote> section at the end of the chapter.
+        This will help users focus on your documentation instead of leading
+        them to other resources before they had a chance to read the end
+        of the sentence.
       </para>
-      <para>Define infinitive forms of verbs and singular nouns. Use lowercase for
-        the term unless it is a proper noun.
+      <para>To mark up multiple links, create an
+        <sgmltag class="emptytag">itemizedlist</sgmltag> around
+        them. Do not use a list environment for only one link.
+        If you need to present a large number of links, group them by topic and
+        create a separate list environment for each group. Provide a
+        comprehensive title for each of the groups or an introductory sentence.
+        On creating lists, see <xref linkend="sec.bullet"/>.
       </para>
-      <para>Use cross-references to link acronyms with their written out forms.
-        Define the written out form. Use a <emphasis>See</emphasis> reference for
-        the acronym form to link it to the defined written out form.
+      <para>Use the <sgmltag class="emptytag">ulink</sgmltag> element to mark up
+        URLs that can be opened with a Web browser, such as
+        <ulink url="http://www.example.org/"/>.
+        Always add the correct protocol prefix (for example,
+        <literal>http://</literal>),
+        otherwise links will not work. Never use <sgmltag>filename</sgmltag>
+        for a link, as that would both disable the link checker and make the
+        link unclickable. Avoid entering a text label between
+        <sgmltag class="emptytag">ulink</sgmltag> start and end tags. Instead,
+        use a self-closing tag:
       </para>
-      <para>The markup for a glossary entry is shown in
-        <xref linkend="ex.glossary"/>.
+      <screen>&lt;ulink url="http://www.example.org/"/&gt;</screen>
+      <para>Try to make URLs as short as possible before pasting them into your
+        documentation. Many long URLs can be shortened by leaving away
+        non-essential pieces of them. This is often the case with search URLs
+        or URLs of Internet news media. If a Web site provides a built-in URL
+        shortener, use that. Do not resort to using external URL shorteners, as
+        that both hides the actual destination a link will take the user to and
+        introduces an extra element of uncertainty, as the shortening service
+        may disappear or become unreliable in the future.
       </para>
-      <example id="ex.glossary">
-        <title>A Typical Example of a Glossary</title>
-        <screen>&lt;glossary&gt;
-&lt;title&gt;Glossary&lt;/title&gt;
-  &lt;glossentry&gt;
-    &lt;glossterm id="gt.extensible"&gt;Extensible Markup Language&lt;/glossterm&gt;
-    &lt;glossdef&gt;
-      &lt;para&gt;A markup language that defines a set of rules for encoding
-        documents in a format that is both human-readable and machine-readable.
-      &lt;/para&gt;
-    &lt;/glossdef&gt;
-  &lt;/glossentry&gt;
-  &lt;glossentry&gt;
-    &lt;glossterm&gt;XML&lt;/glossterm&gt;
-    &lt;glossdef&gt;
-      &lt;para&gt;See also &lt;xref linkend="gt.extensible"/&gt;.&lt;/para&gt;
-    &lt;/glossdef&gt;
-  &lt;/glossentry&gt;
-&lt;/glossary&gt;</screen>
-      </example>
+      <para>Do not use <sgmltag class="emptytag">ulink</sgmltag> to link to SUSE
+        documentation outside of the current document set. Instead, use the
+        appropriate entity for the book title. Always reference the book
+        itself, as chapter names can change.
+      </para>
+      <para>Where possible, provide translators with localized versions of
+        links in the comments of the source file.
+      </para>
+      <para>Other types of references to resources are described in
+        <xref linkend="sec.cross_reference"/> and
+        <xref linkend="sec.other_external"/>.
+      </para>
     </sect2>
 
     <sect2 id="sec.figure">
@@ -374,12 +700,130 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
       <para>For figures within lists or procedures, use the
         <sgmltag class="emptytag">informalfigure</sgmltag> element. In all
         other cases, use the <sgmltag class="emptytag">figure</sgmltag> element.
+        Always assign an <sgmltag class="attribute">id</sgmltag>
+        attribute to <sgmltag class="emptytag">figure</sgmltag> elements.
         Reference figures from the text by means of a cross reference.
-        For more information, see <xref linkend="sec.crossreference"/>.
+        For more information, see <xref linkend="sec.cross_reference"/>.
       </para>
       <para>All referenced image files must have a lowercase alphanumeric
-        file name.
+        file name. Provide an appropriate image width using the
+        <sgmltag class="attvalue">width</sgmltag> attribute. Always add a
+        <sgmltag class="emptytag">textobject role="description"</sgmltag> as in
+        <xref linkend="ex.figure"/> to provide an alternative text for the
+        HTML output.
       </para>
+      <example id="ex.figure">
+        <title>Example of a Figure</title>
+        <screen>&lt;figure id="fig.picture"&gt;
+  &lt;title&gt;An Interesting Picture&lt;/title&gt;
+  &lt;textobject role="description"&gt;
+    &lt;phrase&gt;Cat chasing Geeko&lt;/phrase&gt;
+  &lt;/textobject&gt;
+  &lt;mediaobject&gt;
+    &lt;imageobject role="fo"&gt;
+      &lt;imagedata fileref="picture.eps" width="80%" format="EPS"/&gt;
+    &lt;/imageobject&gt;
+    &lt;imageobject role="html"&gt;
+      &lt;imagedata fileref="picture.png" width="80%" format="PNG"/&gt;
+    &lt;/imageobject&gt;
+  &lt;/mediaobject&gt;
+&lt;/figure&gt;</screen>
+      </example>
+      <table id="tab.figure">
+        <title>Elements Related to <sgmltag class="emptytag">figure</sgmltag>
+        </title>
+        <tgroup cols="2">
+          <thead>
+            <row>
+              <entry>Element</entry>
+              <entry>Web Link</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">figure</sgmltag></title>
+                  <para>Formal block element containing a
+                    <sgmltag class="emptytag">title</sgmltag> and a
+                    <sgmltag class="emptytag">mediaobject</sgmltag>.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/figure.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">informalfigure</sgmltag>
+                  </title>
+                  <para>Informal block element containing a
+                    <sgmltag class="emptytag">mediaobject</sgmltag>.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/informalfigure.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">mediaobject</sgmltag></title>
+                  <para>Block element containing one or more
+                    <sgmltag class="emptytag">imageobject</sgmltag> elements.
+                    Place additional textual descriptions inside
+                    <sgmltag class="emptytag">textobject</sgmltag> elements.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/mediaobject.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">imageobject</sgmltag></title>
+                  <para>Element containing
+                    <sgmltag class="emptytag">imagedata</sgmltag>
+                    and meta information about the image.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/imageobject.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">imagedata</sgmltag></title>
+                  <para>Element that points to an external image file.</para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/glossary.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">textobject</sgmltag></title>
+                  <para>Element containing textual description of a media
+                    object as a fallback option.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/textobject.html"/>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
 
       <sect3 id="sec.graphic">
         <title>Graphics</title>
@@ -456,6 +900,44 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
       </sect3>
     </sect2>
 
+    <sect2 id="sec.glossary">
+      <title>Glossaries</title>
+      <para>An optional glossary contains terms and their definitions. Make sure
+        that the glossary entries are appropriate to the intended audience.
+        Define unfamiliar terms and special jargon.
+      </para>
+      <para>Define infinitive forms of verbs and singular nouns. Use lowercase
+        for the term unless it is a proper noun.
+      </para>
+      <para>Use cross-references to link acronyms with their written out forms.
+        Define the written out form. Use a <emphasis>See</emphasis> reference
+        for the acronym form to link it to the defined written out form.
+      </para>
+      <para>The markup for a glossary entry is shown in
+        <xref linkend="ex.glossary"/>.
+      </para>
+      <example id="ex.glossary">
+        <title>A Typical Example of a Glossary</title>
+        <screen>&lt;glossary&gt;
+&lt;title&gt;Glossary&lt;/title&gt;
+  &lt;glossentry&gt;
+    &lt;glossterm id="gt.extensible"&gt;Extensible Markup Language&lt;/glossterm&gt;
+    &lt;glossdef&gt;
+      &lt;para&gt;A markup language that defines a set of rules for encoding
+        documents in a format that is both human-readable and machine-readable.
+      &lt;/para&gt;
+    &lt;/glossdef&gt;
+  &lt;/glossentry&gt;
+  &lt;glossentry&gt;
+    &lt;glossterm&gt;XML&lt;/glossterm&gt;
+    &lt;glossdef&gt;
+      &lt;para&gt;See also &lt;xref linkend="gt.extensible"/&gt;.&lt;/para&gt;
+    &lt;/glossdef&gt;
+  &lt;/glossentry&gt;
+&lt;/glossary&gt;</screen>
+      </example>
+    </sect2>
+
     <sect2 id="sec.heading">
       <title>Headings</title>
       <para>Each level of heading contain have two or more subheadings. Lone
@@ -469,6 +951,259 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         cases, this is only a small paragraph of introductory information.
         In other cases, more information can be provided.
       </para>
+    </sect2>
+
+    <sect2 id="sec.id">
+      <title>Identifiers</title>
+
+      <itemizedlist>
+        <listitem>
+          <para>Always use an <sgmltag class="attribute">id</sgmltag> attribute
+          in parts, chapters, appendixes, sections, figures, and examples.
+          Identifiers can be used in other elements as well, such as tables and
+          procedures.
+          </para>
+        </listitem>
+        <listitem>
+          <para>In identifiers, only use alphanumeric characters,
+            <literal>.</literal>, <literal>_</literal>, and
+            <literal>-</literal>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Identifiers consist of up to two to three parts. Join these parts
+            with a <literal>.</literal>.</para>
+          <orderedlist>
+            <listitem>
+              <formalpara>
+                <title>Prefix</title>
+                <para>Signifies the type of XML element. Use in accordance with
+                  <xref linkend="tab.id_prefix"/>.
+                </para>
+              </formalpara>
+            </listitem>
+            <listitem>
+              <formalpara>
+                <title>Chapter Title Label</title>
+                <para>Shortened version of the title of the parent chapter or
+                  parent chapter-level element (preface, appendix, etc.). Do not
+                  add a chapter title label to chapters and chapter-level
+                  elements themselves. Do not add chapter title identifiers within
+                  articles. Do not use <literal>.</literal> within the chapter
+                  title label.
+                </para>
+              </formalpara>
+            </listitem>
+            <listitem>
+              <formalpara>
+                <title>Element Title Label</title>
+                <para>Shortened version of name of the title of the element
+                  itself. Do not use <literal>.</literal> within the element
+                  title label.
+                </para>
+              </formalpara>
+            </listitem>
+          </orderedlist>
+          <example>
+            <title>Examples of Identifiers</title>
+            <screen>id="cha.install"
+id="sec.install.yast"
+id="tab.install.sources"</screen>
+          </example>
+        </listitem>
+        <listitem>
+          <para>Use short, memorable, English terms ro phrases as title labels.
+            Favor longer terms over non-obvious abbreviations. Always use the
+            singular of nouns and the infinitive of verbs. For example, a section
+            about installing with <phrase role="productname">YaST</phrase>
+            could be called
+            <sgmltag class="attvalue">sec.install.yast</sgmltag>.
+          </para>
+        </listitem>
+      </itemizedlist>
+      <para>Do not rework identifiers in existing documentation, instead apply
+        these rules to newly created documentation only.
+      </para>
+
+      <table id="tab.id_prefix">
+        <title>Abbreviations for Different Elements in an
+          <sgmltag class="attribute">id</sgmltag> Attribute
+        </title>
+        <tgroup cols="2">
+          <thead>
+            <row>
+              <entry>Element</entry>
+              <entry>Abbreviation</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <sgmltag class="emptytag">appendix</sgmltag>
+              </entry>
+              <entry>
+                <sgmltag class="attvalue">app</sgmltag>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag class="emptytag">book</sgmltag>
+              </entry>
+              <entry>
+                <sgmltag class="attvalue">book</sgmltag>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag class="emptytag">chapter</sgmltag>
+              </entry>
+              <entry>
+                <sgmltag class="attvalue">cha</sgmltag>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag class="emptytag">example</sgmltag>
+              </entry>
+              <entry>
+                <sgmltag class="attvalue">ex</sgmltag>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag class="emptytag">figure</sgmltag>
+              </entry>
+              <entry>
+                <sgmltag class="attvalue">fig</sgmltag>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag class="emptytag">glossary</sgmltag>,
+                <sgmltag class="emptytag">glossterm</sgmltag>
+              </entry>
+              <entry>
+                <sgmltag class="attvalue">gl</sgmltag>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag class="emptytag">itemizedlist</sgmltag>
+              </entry>
+              <entry>
+                <sgmltag class="attvalue">il</sgmltag>
+                <footnote id="fn.vl">
+                  <para>Only add an <sgmltag>id</sgmltag> attribute when
+                    the list has a <sgmltag>title</sgmltag> element
+                  </para>
+                </footnote>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag class="emptytag">listitem</sgmltag>
+              </entry>
+              <entry>
+                <!-- This used to be "it," which occurred zero times in
+                     existing documentation. "li" occurred eight times
+                     already. -->
+                <sgmltag class="attvalue">li</sgmltag>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag class="emptytag">indexterm</sgmltag>
+              </entry>
+              <entry>
+                <sgmltag class="attvalue">idx</sgmltag>
+                <footnote>
+                  <para>Only add when creating index ranges</para>
+                </footnote>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag class="emptytag">orderedlist</sgmltag>
+              </entry>
+              <entry>
+                <sgmltag class="attvalue">ol</sgmltag>
+                <footnoteref linkend="fn.vl"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag class="emptytag">part</sgmltag>
+              </entry>
+              <entry>
+                <sgmltag class="attvalue">part</sgmltag>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag class="emptytag">procedure</sgmltag>
+              </entry>
+              <entry>
+                <sgmltag class="attvalue">pro</sgmltag>
+              </entry>
+            </row>
+            <row>
+              <entry><sgmltag class="emptytag">qandaset</sgmltag>,
+                <sgmltag class="emptytag">qandadiv</sgmltag>,
+                <sgmltag class="emptytag">qandaentry</sgmltag>
+              </entry>
+              <entry><sgmltag class="attvalue">qa</sgmltag>
+              </entry>
+            </row>
+            <row>
+              <entry><sgmltag class="emptytag">sect1</sgmltag>,
+              <sgmltag class="emptytag">sect2</sgmltag>, etc.</entry>
+              <entry>
+                <sgmltag class="attvalue">sec</sgmltag>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag class="emptytag">set</sgmltag>
+              </entry>
+              <entry>
+                <sgmltag class="attvalue">set</sgmltag>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag class="emptytag">step</sgmltag>
+              </entry>
+              <entry>
+                <sgmltag class="attvalue">st</sgmltag>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag class="emptytag">table</sgmltag>
+              </entry>
+              <entry>
+                <sgmltag class="attvalue">tab</sgmltag>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag class="emptytag">variablelist</sgmltag>
+              </entry>
+              <entry>
+                <sgmltag class="attvalue">vl</sgmltag>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag class="emptytag">varlistentry</sgmltag>
+              </entry>
+              <entry>
+                <sgmltag class="attvalue">vle</sgmltag>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
     </sect2>
 
     <sect2 id="sec.index">
@@ -501,6 +1236,41 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         <emphasis>see</emphasis> reference. Where possible, avoid using page
         references and <emphasis>see also</emphasis> together.
       </para>
+      <para><sgmltag class="emptytag">indexterm</sgmltag> elements mark
+        text passages that should be referenced in an
+        <sgmltag class="emptytag">index</sgmltag>. A simple index entry is
+        placed in the flow of the document at the exact place where the
+        <sgmltag class="emptytag">indexentry</sgmltag> in the Index should
+        point to.
+      </para>
+      <example id="ex.index_plain">
+        <title>Example of a Simple Index Entry</title>
+        <screen>To configure DNS
+&lt;indexterm&gt;
+  &lt;primary&gt;DNS&lt;/primary&gt;
+  &lt;secondary&gt;configuring&lt;/secondary&gt;
+&lt;/indexterm&gt;, use the DNS configuration utility.</screen>
+      </example>
+      <para>An index range consists of two separate
+        <sgmltag class="emptytag">indexterm</sgmltag> elements, the first one
+        signifying the start, the second the end of the indexed range.
+      </para>
+      <example id="ex.index_range">
+        <title>Example of an Index Range</title>
+          <screen>&lt;indexterm <emphasis role="bold">class="startofrange" id="idx.install"</emphasis>&gt;
+  &lt;primary&gt;installing&lt;/primary&gt;
+&lt;/indexterm&gt;
+…
+&lt;indexterm <emphasis role="bold">class="endofrange" startref="idx.install"</emphasis>/&gt;</screen>
+      </example>
+      <example id="ex.index_see">
+        <title>Example of a See Index Entry</title>
+          <screen>&lt;indexterm&gt;
+  &lt;primary&gt;installing&lt;/primary&gt;
+  &lt;secondary&gt;boot loaders&lt;/secondary&gt;
+  <emphasis role="bold">&lt;see&gt;GRUB&lt;/see</emphasis>&gt;
+&lt;/indexterm&gt;</screen>
+      </example>
     </sect2>
 
     <sect2 id="sec.list">
@@ -516,7 +1286,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
           <listitem>
             <para>See
               <ulink url="http://www.docbook.org/tdg/en/html/itemizedlist.html"/>
-              for details of markup.
+              for details on markup.
             </para>
           </listitem>
         </varlistentry>
@@ -526,7 +1296,7 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
           <listitem>
             <para>See
               <ulink url="http://www.docbook.org/tdg/en/html/orderedlist.html"/>
-              for details of markup.
+              for details on markup.
             </para>
           </listitem>
         </varlistentry>
@@ -584,6 +1354,11 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         try to restructure the information using a combination of
         lists and running texts.
       </para>
+      <para>To be able to reference untitled lists, use the
+        <sgmltag class="attribute">xreflabel</sgmltag> attribute. See
+        <xref linkend="sec.cross_reference"/> for more
+        information.
+      </para>
 
       <sect3 id="sec.bullet">
         <title>Bullet Lists</title>
@@ -591,19 +1366,6 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         <para>Bullet lists are often used to provide an overview of information
           or to introduce or summarize information. They should be used when
           the order of list items is irrelevant.
-        </para>
-        <para>If needed, assign an <sgmltag class="attribute">id</sgmltag>
-          attribute to an itemized list and add a title to reference it.
-          Individual list items may be referenced by assigning an
-          <sgmltag class="attribute">id</sgmltag> and an
-          <sgmltag class="attribute">xreflabel</sgmltag> attribute. The entry is
-          then identified by the value of
-          <sgmltag class="attribute">id</sgmltag>
-          and the value of <sgmltag class="attribute">xreflabel</sgmltag> is
-          printed as the label of this item. See
-          <xref linkend="sec.crossreference"/> and
-          <xref linkend="sec.markup.inline.referencing"/> for detailed
-          information.
         </para>
         <example id="ex.bulllist">
           <title>A Bullet List</title>
@@ -631,18 +1393,6 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
           Complex sequential actions are better described by means of the
           procedure environment (see <xref linkend="sec.procedure"/>
           for a detailed description).
-        </para>
-        <para>If needed, assign an <sgmltag class="attribute">id</sgmltag>
-          attribute to a numbered list and add a title to it in order to
-          reference it. Individual list items may be referenced by assigning an
-          <sgmltag class="attribute">id</sgmltag> and
-          <sgmltag class="attribute">xreflabel</sgmltag> attribute. The
-          entry is then identified by the value of
-          <sgmltag class="attribute">id</sgmltag> and the value of
-          <sgmltag class="attribute">xreflabel</sgmltag> is printed as the label
-          of this item. See <xref linkend="sec.crossreference"/> and
-          <xref linkend="sec.markup.inline.referencing"/> for detailed
-          information.
         </para>
         <example id="ex.numbered">
           <title>A Numbered List</title>
@@ -722,55 +1472,243 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
       <title>Keys and Key Combinations</title>
 
       <para>Capitalize all keys as printed on a standard keyboard. Following
-        this rule, capitalize all letter keys. If you need to refer to a
+        this rule, capitalize all letter keys. To refer to a
         capitalized character, use
         <keycombo><keycap function="shift"/><keycap>Z</keycap></keycombo>,
         for example. Introduce this convention by means of the
         <quote>Typographical Conventions</quote> section of the introduction.
       </para>
-      <para>Localization of the identifiers for both modifiers and
-        special keys can be handled by DocBook itself, if you use the
-        <sgmltag class="emptytag">keycap</sgmltag> element and an appropriate
-        <literal>function</literal> value. For details, refer to
-        <xref linkend="sec.markup.inline.keys"/>.
+      <para>To mark up keyboard combinations, use
+        <sgmltag class="emptytag">keycombo</sgmltag> as
+        wrapper for multiple <sgmltag class="emptytag">keycap</sgmltag>
+        elements. Separators between <sgmltag class="emptytag">keycap</sgmltag>
+        elements are then created automatically.
       </para>
-    </sect2>
+      <para>When marking up modifier keys, the keys around to Insert,
+        cursor keys, <keycap function="enter"/>,
+        <keycap function="backspace"/>, or <keycap function="escape"/>, add the
+        <literal>function</literal> attribute to the
+        <sgmltag class="emptytag">keycap</sgmltag> element. See
+        <xref linkend="tab.keycap"/> for appropriate
+        <sgmltag class="attribute">function</sgmltag> values. When using the
+        <sgmltag class="attribute">function</sgmltag> attribute,
+        make the tag self-closing&mdash;DocBook's language files will insert
+        key names automatically. This simplifies both your work and
+        translation.
+      </para>
+      <para>To learn how to create cross references, see
+        <xref linkend="sec.cross_reference"/>.
+      </para>
+      <example id="ex.key">
+        <title>Example of a Key</title>
+        <screen>To create a screenshot, press
+  &lt;keycap&gt;Print Screen&lt;/keycap&gt;.</screen>
+      </example>
+      <example id="ex.keyboard">
+        <title>Example of a Keyboard Combination</title>
+        <screen>To save a file, press
+  &lt;keycombo&gt;
+    &lt;keycap function="control"/&gt;
+    &lt;keycap&gt;S&lt;/keycap&gt;
+  &lt;/keycombo&gt;.</screen>
+      </example>
+      <table id="tab.keycap">
+        <title>Elements Related to <sgmltag class="emptytag">keycap</sgmltag>
+          </title>
+          <tgroup cols="2">
+            <thead>
+              <row>
+                <entry>Element</entry>
+                <entry>Web Link</entry>
+              </row>
+            </thead>
+            <tbody>
+              <row>
+                <entry>
+                  <formalpara>
+                    <title><sgmltag class="emptytag">keycombo</sgmltag></title>
+                    <para>Inline element containing multiple
+                      <sgmltag class="emptytag">keycap</sgmltag> elements that
+                      together form a keyboard combination.
+                    </para>
+                  </formalpara>
+                </entry>
+                <entry>
+                  <ulink url="http://www.docbook.org/tdg/en/html/keycombo.html"/>
+                </entry>
+              </row>
+              <row>
+                <entry>
+                  <formalpara>
+                    <title><sgmltag class="emptytag">keycap</sgmltag>
+                    </title>
+                    <para>Inline element to mark up a single key. Contains
+                      either the key labels text inside it or is self-closing
+                      and has a <sgmltag class="attribute">function</sgmltag>
+                      attribute with one of the following values:
+                    </para>
+                  </formalpara>
+                  <itemizedlist>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">alt</sgmltag>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">backspace</sgmltag>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">command</sgmltag>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">control</sgmltag>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">delete</sgmltag>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">down</sgmltag>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">end</sgmltag>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">enter</sgmltag>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">escape</sgmltag>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">home</sgmltag>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">insert</sgmltag>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">left</sgmltag>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">meta</sgmltag> (also
+                        known as <keycap>Win</keycap>,
+                        <keycap>Windows</keycap>, or <keycap>Super</keycap>)
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">option</sgmltag> (OS X only)
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">pagedown</sgmltag>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">pageup</sgmltag>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">right</sgmltag>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">shift</sgmltag>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">space</sgmltag>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">tab</sgmltag>
+                      </para>
+                    </listitem>
+                    <listitem>
+                      <para>
+                        <sgmltag class="attvalue">up</sgmltag>
+                      </para>
+                    </listitem>
+                  </itemizedlist>
+                </entry>
+                <entry>
+                  <ulink url="http://www.docbook.org/tdg/en/html/keycap.html"/>
+                </entry>
+              </row>
+            </tbody>
+          </tgroup>
+        </table>
+      </sect2>
 
     <sect2 id="sec.other_external">
       <title>References to Other External Resources</title>
 
-      <para>References to man pages and info pages should generally be
-        made in the format <quote>the man page of
-        <command>command</command></quote> or
-        <quote>the info page of <command>command</command></quote>. In a
-        situation where the category of the page is needed, add
-        for example <quote>(<command>man 9 command</command>)</quote>
-        to the end.
-      </para>
+      <remark>sknorr, 2014-01-22: This section could probably use a better
+        structure instead of this mishmash.
+      </remark>
       <para>To reference file names, use the
         <sgmltag class="emptytag">filename</sgmltag>
         element. To reference e-mail addresses, use the
         <sgmltag class="emptytag">email</sgmltag>
         element. In either case, do not include a protocol prefix, that is
         <literal>file://</literal> or <literal>mailto:</literal>, respectively.
+        Also refer to <xref linkend="sec.file_markup"/>.
       </para>
+      <para>References to man pages and info pages should generally be
+        made in the format <quote>the man page of
+        <command>command</command></quote> or
+        <quote>the info page of <command>command</command></quote>: In a
+        situation where the category of the page is needed, add
+        for example <quote>(<command>man 9 command</command>)</quote>
+        to the end.
+      </para>
+      <screen>To learn more about subcommands, see the man page of
+&lt;command&gt;command&lt;/command&gt;.</screen>
       <para>Insert references to external (not SUSE or openSUSE) physical
         books in the format <quote>Title by Author (ISBN #00000000).</quote>
         Inclusion of the ISBN is optional. Place the title in a
         <sgmltag class="emptytag">citetitle</sgmltag> element. For example:
       </para>
-      <screen>&lt;citetitle&gt;Indexing Books&lt;/citetitle&gt; by Nancy C. Mulvany
-(ISBN 0-226-55014-1) is a useful guide to indexing.</screen>
-      <para>It is useful to provide language-specific references in the
-        translated books. If the authors know of language-specific versions,
-        they can include them in comments for translators. As time permits,
-        translators should look for corresponding language-specific resources.
+      <screen>&lt;citetitle&gt;Lorem Ipsum&lt;/citetitle&gt; by Dolores S. Amet
+(ISBN 0-246-52044-7) is a useful guide.</screen>
+      <para>As an author, where possible, provide language-specific references
+        to translators in XML comments
+        (also see <xref linkend="sec.xml_comment"/>).
+        As a translator, look for corresponding language-specific resources
+        where none have been provided.
         For URLs, provide only the language-specific version of a site. Use the
         English as a fall-back. For books, provide the title of the translated
         version along with the original title if such a translation exists.
       </para>
       <para>Other types of references to resources are described in
-        <xref linkend="sec.crossreference"/> and
+        <xref linkend="sec.cross_reference"/> and
         <xref linkend="sec.link"/>.
       </para>
     </sect2>
@@ -801,28 +1739,43 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
           </para>
         </listitem>
       </itemizedlist>
-      <para>Describe alternative actions inside a substep element
-        containing steps linked by <quote>or.</quote> Apply a
+      <para>To link alternative actions inside the same substep element, use
+        <quote>or.</quote> Apply a
         <sgmltag class="attribute">performance=optional</sgmltag>
         attribute to optional steps.
       </para>
       <para>Steps may contain a link to an explanatory
         subsection providing further details on the step.
       </para>
-      <procedure id="pro.useradd">
-        <title>Adding Users with YaST</title>
+      <example id="ex.procedure_source">
+        <title>Example of a Procedure (Source)</title>
+        <screen>&lt;procedure id="pro.procedure"&gt;
+  &lt;title&gt;Example of a Procedure&lt;/title&gt;
+    &lt;para&gt;To add a new user to the system, perform the following steps:
+    &lt;/para&gt;
+    &lt;step&gt;
+      &lt;para&gt;In the &lt;phrase role="productname"&gt;YaST&lt;/phrase&gt; window,
+        click &lt;guimenu&gt;User and Group Management&lt;/guimenu&gt;.
+      &lt;/para&gt;
+    &lt;/step&gt;
+    &lt;step&gt;
+      &lt;para&gt;To open the &lt;guimenu&gt;Add a New User&lt;/guimenu&gt; dialog, click
+        &lt;guimenu&gt;Add&lt;/guimenu&gt;.
+      &lt;/para&gt;
+    &lt;/step&gt;
+    &lt;step&gt;
+      &lt;para&gt;Type in the user data and click &lt;guimenu&gt;Create&lt;/guimenu&gt;.
+      &lt;/para&gt;
+    &lt;/step&gt;
+&lt;/procedure&gt;</screen>
+      </example>
+      <procedure id="pro.procedure_output">
+        <title>Example of a Procedure (Output)</title>
         <para>To add a new user to the system, perform the following steps:
         </para>
         <step>
-          <para>Open <guimenu>YaST</guimenu>.</para>
-        </step>
-        <step performance="optional">
-          <para>If you are asked, type the password of the
-            <systemitem>root</systemitem> user and click <guimenu>OK</guimenu>.
-          </para>
-        </step>
-        <step>
-          <para>Click <guimenu>User and Group Management</guimenu>.</para>
+          <para>In the <phrase role="productname">YaST</phrase> window,
+            click <guimenu>User and Group Management</guimenu>.</para>
         </step>
         <step>
           <para>To open the <guimenu>Add a New User</guimenu> dialog, click
@@ -833,20 +1786,68 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
           <para>Type in the user data and click <guimenu>Create</guimenu>.
           </para>
         </step>
-        <step performance="optional">
-          <para>Repeat from the third step to add more
-            users.
-          </para>
-        </step>
-        <step>
-          <para>Leave the YaST module by clicking <guimenu>OK</guimenu>.
-          </para>
-        </step>
       </procedure>
+      <table id="tab.procedure">
+        <title>Elements Related to <sgmltag class="emptytag">procedure</sgmltag>
+        </title>
+        <tgroup cols="2">
+          <thead>
+            <row>
+              <entry>Element</entry>
+              <entry>Web Link</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">procedure</sgmltag></title>
+                  <para>Block element containing a
+                    <sgmltag class="emptytag">title</sgmltag> (optional) and
+                    multiple <sgmltag class="emptytag">step</sgmltag> elements.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/procedure.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">step</sgmltag>
+                  </title>
+                  <para>Element signifying a single unit of action. Usually
+                    contains a <sgmltag class="emptytag">para</sgmltag> element,
+                    but can also house a
+                    <sgmltag class="emptytag">substeps</sgmltag> element.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/step.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">substeps</sgmltag></title>
+                  <para>Element containing a multiple, subordinate
+                    <sgmltag class="emptytag">step</sgmltag> elements.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/substeps.html"/>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
     </sect2>
 
     <sect2 id="sec.product">
-      <title>Products and Trademarks</title>
+      <title>Products</title>
 
       <para>Always use the preferred product name instead of, for instance, an
         acronym. When referring to a product, add a
@@ -855,58 +1856,170 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         This will not result in a visual change but disables hyphenation:
       </para>
       <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
-      <para>Most products referenced in the documentation are trademarked.
-        Follow these rules when dealing with these terms:
-      </para>
-      <itemizedlist>
-        <listitem>
-          <para>Never use trademarks in headings.</para>
-        </listitem>
-        <listitem>
-          <para>Only use the marked version on the first occurrence of the
-            product name in a chapter.
-          </para>
-        </listitem>
-        <listitem>
-          <para>Only use the &reg;, &tm;, or &sm; marks for
-            <phrase role="companyname">Attachmate</phrase> products.
-          </para>
-        </listitem>
-        <listitem>
-          <para>Use an * (asterisk) for all service marks or trademarks of
-            third-party companies. This both acknowledges the service mark
-            or trademark of the other company and protects SUSE in case the
-            protection of the brand changes in any way.
-          </para>
-        </listitem>
-      </itemizedlist>
     </sect2>
 
-    <sect2 id="sec.prompt">
-      <title>Prompts</title>
+    <sect2 id="sec.question">
+      <title>Questions and Answers</title>
 
-      <para>When documenting commands entered into Bash with a
-        <sgmltag class="emptytag">screen</sgmltag> element, always prefix them
-        with a prompt marked up this way:
+      <para>Use questions-and-answers sections to present information about
+        troubleshooting or commonly asked questions about a product. Never
+        use questions-and-answers sections to explain trivia, such as how a
+        product got its name. Keep your audience in mind. See also
+        <xref linkend="sec.audience"/>.
       </para>
-      <screen>&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ls&lt;/command&gt;</screen>
-      <para>Never include a host name or path in your prompts to avoid making
-        them longer than necessary. The first restricted user should always use
-        the name <emphasis>tux</emphasis>. For other names of restricted users,
-        see <xref linkend="sec.bias"/>.
+      <para>Questions must always end in a <literal>?</literal>. Where
+        explanations longer than three paragraphs are necessary for an answer,
+        add a cross reference to an explanation outside of the
+        questions-and-answers section. See also
+        <xref linkend="sec.cross_reference"/>.
       </para>
-      <para>Avoid using root prompts in your documentation by using the
-        <command>sudo</command> command where applicable. If you do need a root prompt,
-        always mark it up as following:
+      <para>When a questions-and-answers section contains over 10 questions
+        and there are clear topical divisions, add
+        <sgmltag class="emptytag">qandadiv</sgmltag> elements to further
+        structure the section.
       </para>
-      <screen>&lt;prompt&gt;root # &lt;/prompt&gt;&lt;command&gt;yast&lt;/command&gt;</screen>
-      <para>When documenting prompts other than the one of Bash, use a
-        custom prompt that is as generic as possible.
-      </para>
-      <para>For consistency, it is helpful to create entities for the prompts
-        used in your documentation. To learn more, refer to
-        <xref linkend="sec.entity"/>.
-      </para>
+      <example id="ex.question">
+        <title>Example of a Questions-and-Answers Section (Source)</title>
+        <screen>&lt;qandaset&gt;
+  &lt;title&gt;Example of a Questions-and-Answers Section&lt;/title&gt;
+  &lt;qandaentry&gt;
+    &lt;question&gt;
+      &lt;para&gt;How can I check if the product was correctly installed?&lt;/para&gt;
+    &lt;/question&gt;
+    &lt;answer&gt;
+      &lt;para&gt;Open the log file. Look for entries starting with
+        &lt;literal&gt;Failed&lt;/literal&gt;.
+      &lt;/para&gt;
+    &lt;/answer&gt;
+  &lt;/qandaentry&gt;
+  &lt;qandaentry&gt;
+    &lt;question&gt;
+      &lt;para&gt;Why does the error
+        &lt;literal&gt;Not enough disk space&lt;/literal&gt; occur
+        during installation?
+      &lt;/para&gt;
+    &lt;/question&gt;
+    &lt;answer&gt;
+      &lt;para&gt;There is less than 4 GB of space available on the selected
+        partition.
+      &lt;/para&gt;
+    &lt;/answer&gt;
+  &lt;/qandaentry&gt;
+&lt;/qandaset&gt;</screen>
+      </example>
+      <qandaset>
+        <title>Example of a Questions-and-Answers Section (Output)</title>
+        <qandaentry>
+          <question>
+            <para>How can I check if the product was correctly installed?</para>
+          </question>
+          <answer>
+            <para>Open the log file. Look for entries starting with
+              <literal>Failed</literal>.
+            </para>
+          </answer>
+        </qandaentry>
+        <qandaentry>
+          <question>
+            <para>Why does the error
+              <literal>Not enough disk space</literal> occur
+              during installation?
+            </para>
+          </question>
+          <answer>
+            <para>There is less than 4 GB of space available on the selected
+              partition.
+            </para>
+          </answer>
+        </qandaentry>
+      </qandaset>
+      <table id="tab.qandaset">
+        <title>Elements Related to <sgmltag class="emptytag">qandaset</sgmltag>
+        </title>
+        <tgroup cols="2">
+          <thead>
+            <row>
+              <entry>Element</entry>
+              <entry>Web Link</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">qandaset</sgmltag></title>
+                  <para>Block element containing a
+                    <sgmltag class="emptytag">title</sgmltag> (optional) and
+                    multiple <sgmltag class="emptytag">qandaentry</sgmltag> or
+                    <sgmltag class="emptytag">qandadiv</sgmltag> elements.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/qandaset.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">qandadiv</sgmltag>
+                  </title>
+                  <para>Block element containing a
+                    <sgmltag class="emptytag">title</sgmltag> and multiple
+                    <sgmltag class="emptytag">qandaentry</sgmltag>elements.
+                    Used to structure a
+                    <sgmltag class="emptytag">qandaset</sgmltag> into
+                    smaller topical subsections.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/qandadiv.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">qandaentry</sgmltag></title>
+                  <para>Block element used to associate a
+                    <sgmltag class="emptytag">question</sgmltag> with an
+                    <sgmltag class="emptytag">answer</sgmltag>.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/qandaentry.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">question</sgmltag></title>
+                  <para>Block element containing the question. Use a single
+                    <sgmltag class="emptytag">para</sgmltag> element inside.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/question.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">answer</sgmltag></title>
+                  <para>Block element containing the answer. Use
+                    <sgmltag class="emptytag">para</sgmltag> elements inside.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/answer.html"/>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
     </sect2>
 
     <sect2 id="sec.table">
@@ -922,32 +2035,121 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
       <para>Value and description pairs are better handled by means of a
         descriptive list.
       </para>
-      <example id="ex.table">
-        <title>A Typical Table</title>
+      <example id="ex.table_source">
+        <title>Example of a Table (Source)</title>
+        <screen>&lt;informaltable&gt;
+  &lt;tgroup cols="2"&gt;
+    &lt;thead&gt;
+      &lt;row&gt;
+        &lt;entry&gt;File System&lt;/entry&gt;
+        &lt;entry&gt;Maximum File Size&lt;/entry&gt;
+      &lt;/row&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+      &lt;row&gt;
+        &lt;entry&gt;Ext2 (1 kB block size)&lt;/entry&gt;
+        &lt;entry&gt;16 GB&lt;/entry&gt;
+      &lt;/row&gt;
+      &lt;row&gt;
+        &lt;entry&gt;Ext2 (2 kB block size)&lt;/entry&gt;
+        &lt;entry&gt;256 GB&lt;/entry&gt;
+      &lt;/row&gt;
+    &lt;/tbody&gt;
+  &lt;/tgroup&gt;
+&lt;/informaltable&gt;</screen>
+      </example>
+      <example id="ex.table_output">
+        <title>Example of a Table (Output)</title>
         <informaltable>
-          <tgroup cols="3">
+          <tgroup cols="2">
             <thead>
               <row>
                 <entry>File System</entry>
-                <entry>File Size (Bytes)</entry>
-                <entry>File System Size (Bytes)</entry>
+                <entry>Maximum File Size</entry>
               </row>
             </thead>
             <tbody>
               <row>
-                <entry>Ext2 or Ext3 (1 kB block size)</entry>
-                <entry>2<superscript>34</superscript> (16 GB)</entry>
-                <entry>2<superscript>41</superscript> (2 TB)</entry>
+                <entry>Ext2 (1 kB block size)</entry>
+                <entry>16 GB</entry>
               </row>
               <row>
-                <entry>Ext2 or Ext3 (2 kB block size)</entry>
-                <entry>2<superscript>38</superscript> (256 GB)</entry>
-                <entry>2<superscript>43</superscript> (8 TB)</entry>
+                <entry>Ext2 (2 kB block size)</entry>
+                <entry>256 GB</entry>
               </row>
             </tbody>
           </tgroup>
         </informaltable>
       </example>
+      <!-- #FIXME: element table -->
+    </sect2>
+
+    <sect2 id="sec.ui_item_markup">
+      <title>User Interface Items</title>
+
+      <para>To mark up single user interface items, use
+        <sgmltag class="emptytag">guimenu</sgmltag>. To mark up nested menu
+        structures, use <sgmltag class="emptytag">menuchoice</sgmltag> as
+        wrapper for multiple <sgmltag class="emptytag">guimenu</sgmltag>
+        elements. Separators between <sgmltag class="emptytag">guimenu</sgmltag>
+        elements are then created automatically.
+      </para>
+      <para>For instructions concerning markup, refer to
+        <xref linkend="sec.ui_item_language"/>.
+      </para>
+      <example id="ex.single_ui_item">
+        <title>Example of a Single User Interface Item</title>
+        <screen>To open a file, click &lt;guimenu&gt;Open&lt;/guimenu&gt;.</screen>
+      </example>
+      <example id="ex.nested_ui_item">
+        <title>Example of Nested User Interface Items</title>
+        <screen>To save a file, use
+  &lt;menuchoice&gt;
+    &lt;guimenu&gt;File&lt;/guimenu&gt;
+    &lt;guimenu&gt;Save&lt;/guimenu&gt;
+  &lt;/menuchoice&gt;.</screen>
+      </example>
+      <table id="tab.guimenu">
+        <title>Elements Related to <sgmltag class="emptytag">guimenu</sgmltag>
+        </title>
+        <tgroup cols="2">
+          <thead>
+            <row>
+              <entry>Element</entry>
+              <entry>Web Link</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">menuchoice</sgmltag></title>
+                  <para>Inline element containing multiple
+                    <sgmltag class="emptytag">guimenu</sgmltag> elements that
+                    together form a nested menu structure.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/menuchoice.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">guimenu</sgmltag>
+                  </title>
+                  <para>Inline element to mark up a single user interface item.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/guimenu.html"/>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
     </sect2>
 
   </sect1>

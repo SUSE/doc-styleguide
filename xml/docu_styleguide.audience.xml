@@ -25,7 +25,7 @@
     </para>
     <screen>&lt;!-- Target audience: institutional desktop users. --&gt;</screen>
     <para>For more information about the usage of XML comments, see
-      <xref linkend="sec.xmlcomment"/>. In many cases, there is no need to
+      <xref linkend="sec.xml_comment"/>. In many cases, there is no need to
       also add information about the target audience to the book or
       article text itself.
     </para>

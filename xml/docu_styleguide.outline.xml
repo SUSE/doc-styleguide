@@ -241,7 +241,7 @@
                   Steps of a procedure can contain a cross reference
                   to a subsection where the necessary background is provided
                   and the action explained in more detail. See also:
-                  <xref linkend="sec.crossreference"/>.
+                  <xref linkend="sec.cross_reference"/>.
                 </para>
               </listitem>
               <listitem>
@@ -267,7 +267,7 @@
                   <para>This section contains links to all sources of
                     information that might prove helpful in a given context.
                     Follow the general referencing guidelines in
-                    <xref linkend="sec.crossreference"/> when creating such
+                    <xref linkend="sec.cross_reference"/> when creating such
                     sections.
                   </para>
                 </formalpara>

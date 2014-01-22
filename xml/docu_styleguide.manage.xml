@@ -17,8 +17,9 @@
       <title>Remarks</title>
       <para>Use remarks for editorial comments. Remarks can be placed within,
         before, or after a para but must always be within a section element.
-        When creating output, remarks can be made visible and thus help the
-        editorial process.
+        When creating output, remarks can be made visible in the output
+        and thus help within the editorial process. When creating the final
+        output, deactivate remarks.
       </para>
       <para>Start remarks with your user name and the current date, then add
         a colon (<literal>:</literal>) and finally your actual remark.
@@ -63,13 +64,15 @@
       </itemizedlist>
     </sect2>
 
-    <sect2 id="sec.xmlcomment">
+    <sect2 id="sec.xml_comment">
       <title>XML Comments</title>
 
       <para>XML comments can be used for temporarily disabling portions of
         text. Another use of XML comments is to create more permanent internal
-        comments or to mark up changes made for layout reasons.
+        comments or to mark up changes made for layout reasons. XML comments
+        are never visible in a publication.
       </para>
+      <screen>&lt;-- This is an XML comment. --!&gt;</screen>
       <tip>
         <title>Creating Valid Comments</title>
         <para>Do not use <literal>--</literal> in comments.
