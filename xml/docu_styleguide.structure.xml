@@ -153,14 +153,14 @@
             <sgmltag class="emptytag">important</sgmltag>:</emphasis>
             In the second paragraph, explain how to
             avoid the danger. If there are multiple ways to avoid a danger,
-            using a unordered list is helpful. In case multiple steps need
+            using an unordered list is helpful. In case multiple steps need
             to be taken to avoid a danger, use an ordered list or use a
             cross reference to refer to another part of the documentation.
           </para>
         </listitem>
       </itemizedlist>
-      <example>
-        <title>An Example of a Warning</title>
+      <example id="ex.warning_source">
+        <title>An Example of a Warning (Source)</title>
         <screen>&lt;warning&gt;
   &lt;title&gt;Creating File Systems Can Take Several Hours&lt;/title&gt;
   &lt;para&gt;Interrupting this process will result in a corrupt file system
@@ -169,6 +169,13 @@
   &lt;para&gt;Always wait until formatting has finished.&lt;/para&gt;
 &lt;/warning&gt;</screen>
       </example>
+      <warning id="ex.warning_output">
+        <title>Creating File Systems Can Take Several Hours</title>
+        <para>Interrupting this process will result in a corrupt file system
+          and an unusable installation.
+        </para>
+        <para>Always wait until formatting has finished.</para>
+      </warning>
     </sect2>
 
     <sect2 id="sec.application">
@@ -190,21 +197,19 @@
         align them above the part of a screen to annotate.
         Do not use more than ten callouts per example.
       </para>
+      <para>Also see <xref linkend="sec.example"/>.</para>
       <example id="ex.callout_output">
         <title>Example of Callouts (Source)</title>
-        <screen>&lt;example id="ex.callout"&gt;
-  &lt;title&gt;Example of Callouts&lt;/title&gt;
-        &lt;screen&gt;color white/blue black/light-gray &lt;co id="col"/&gt;
+        <screen>&lt;screen&gt;color white/blue black/light-gray &lt;co id="col"/&gt;
 default 0 &lt;co id="def"/&gt;&lt;/screen&gt;
-        &lt;calloutlist&gt;
-          &lt;callout arearefs="col"&gt;
-            &lt;para&gt;Colors of the boot loader menu.&lt;/para&gt;
-          &lt;/callout&gt;
-          &lt;callout arearefs="def"&gt;
-            &lt;para&gt;Defines the preselected option.&lt;/para&gt;
-          &lt;/callout&gt;
-        &lt;/calloutlist&gt;
-      &lt;/example&gt;</screen>
+&lt;calloutlist&gt;
+  &lt;callout arearefs="col"&gt;
+    &lt;para&gt;Colors of the boot loader menu.&lt;/para&gt;
+  &lt;/callout&gt;
+  &lt;callout arearefs="def"&gt;
+    &lt;para&gt;Defines the preselected option.&lt;/para&gt;
+  &lt;/callout&gt;
+&lt;/calloutlist&gt;</screen>
       </example>
       <example id="ex.callout_source">
         <title>Example of Callouts (Output)</title>
@@ -274,7 +279,6 @@ default 0 <co id="def"/></screen>
           </tbody>
         </tgroup>
       </table>
-      <para>Also see <xref linkend="sec.example"/>.</para>
     </sect2>
 
     <sect2 id="sec.command_line">
@@ -305,8 +309,8 @@ default 0 <co id="def"/></screen>
                   <title><sgmltag class="emptytag">screen</sgmltag></title>
                   <para>Block element in which all characters are reproduced
                     exactly as they are in the source of the document. Also see
-                    <xref linkend="sec.example"/>. May contain any of the inline
-                    elemeents listed in this table
+                    <xref linkend="sec.example"/>. Can contain any of the inline
+                    elements listed in this table.
                   </para>
                 </formalpara>
               </entry>
@@ -321,8 +325,9 @@ default 0 <co id="def"/></screen>
                   </title>
                   <para>Inline element that contains the name of an executable
                     program or the command that a user types to
-                    execute a program. Can contain an
-                    <sgmltag class="emptytag">option</sgmltag> element.
+                    execute a program. Can contain
+                    <sgmltag class="emptytag">option</sgmltag> or
+                    <sgmltag class="emptytag">replaceable</sgmltag> elements.
                   </para>
                 </formalpara>
               </entry>
@@ -335,7 +340,8 @@ default 0 <co id="def"/></screen>
                 <formalpara>
                   <title><sgmltag class="emptytag">option</sgmltag></title>
                   <para>Inline element that contains an argument to a
-                    command or instruction.
+                    command or instruction. Can contain
+                    <sgmltag class="emptytag">replaceable</sgmltag> elements.
                   </para>
                 </formalpara>
               </entry>
@@ -361,7 +367,8 @@ default 0 <co id="def"/></screen>
                 <formalpara>
                   <title><sgmltag class="emptytag">filename</sgmltag></title>
                   <para>Inline element that contains the name of a directory
-                    or file. See also <xref linkend="sec.file_language"/>.
+                    or file. Can contain
+                    <sgmltag class="emptytag">replaceable</sgmltag> elements.
                   </para>
                 </formalpara>
               </entry>
@@ -372,13 +379,15 @@ default 0 <co id="def"/></screen>
             <row>
               <entry>
                 <formalpara>
-                  <title><sgmltag class="emptytag">variable</sgmltag></title>
+                  <title><sgmltag class="emptytag">varname</sgmltag></title>
                   <para>Inline element that contains the name of a variable.
+                    Can contain <sgmltag class="emptytag">replaceable</sgmltag>
+                    elements.
                   </para>
                 </formalpara>
               </entry>
               <entry>
-                <ulink url="http://www.docbook.org/tdg/en/html/variable.html"/>
+                <ulink url="http://www.docbook.org/tdg/en/html/varname.html"/>
               </entry>
             </row>
           </tbody>
@@ -388,8 +397,7 @@ default 0 <co id="def"/></screen>
       <sect3 id="sec.command">
         <title>Commands</title>
 
-        <para>Make sure to capitalize commands exactly as they are executed.
-          Commands can be embedded in running text or
+        <para>Commands can be embedded in running text or
           presented as part of a screen environment. In running text,
           use <sgmltag class="emptytag">command</sgmltag> when referring
           to an actual command you would use on a command line:
@@ -408,7 +416,9 @@ default 0 <co id="def"/></screen>
         </para>
         <para>Use markup for commands even inside
           <sgmltag class="emptytag">screen</sgmltag>
-          environments.
+          environments. To avoid spelling or capitalization
+          errors, where possible, run commands before
+          adding them to the documentation.
         </para>
         <para>See also <xref linkend="sec.prompt"/>.
         </para>
@@ -479,10 +489,10 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
         <title>Variable Names</title>
 
           <para>To reference to names of variables, use the
-            <sgmltag class="emptytag">variable</sgmltag> element:
+            <sgmltag class="emptytag">varname</sgmltag> element:
           </para>
           <screen>To select another display manager, start the YaST system configuration editor
-and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen>
+and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
       </sect3>
 
     </sect2>
@@ -517,11 +527,10 @@ and change the value of &lt;variable&gt;DISPLAYMANAGER&lt;/variable&gt;.</screen
         <title>Example of a Cross Reference (Source)</title>
         <screen>&lt;sect2 id="sec.cross_reference"&gt;
   &lt;title&gt;Cross References&lt;/title&gt;
-  &lt;para&gt;Use the &lt;sgmltag class="emptytag"&gt;xref&lt;/sgmltag&gt; element;...&lt;/para&gt;
+  &lt;para&gt;Use the &lt;sgmltag class="emptytag"&gt;xref&lt;/sgmltag&gt; element ...&lt;/para&gt;
 ...
-  &lt;para&gt;See &lt;xref linkend="sec.cross_reference"/&gt;.&lt;/para&gt;
-&lt;/sect2&gt;
-...</screen>
+  <emphasis role="bold">&lt;para&gt;See &lt;xref linkend="sec.cross_reference"/&gt;.&lt;/para&gt;</emphasis>
+&lt;/sect2&gt;</screen>
       </example>
       <example id="ex.cross_reference_output">
         <title>Example of a Cross Reference (Output)</title>
@@ -583,11 +592,15 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
           <para>Always give examples a title and an identifier.</para>
         </listitem>
       </itemizedlist>
+      <para>For details on displaying computer input and output, refer to
+        <xref linkend="sec.command_line"/>. To annotate examples, use callouts.
+        Callouts are described in <xref linkend="sec.callout"/>.
+      </para>
       <example id="ex.example">
         <title>Example of an Example</title>
         <screen>&lt;example id="ex.example"&gt;
   &lt;title&gt;Example of an Example&lt;/title&gt;
-  &lt;screen&gt;&lt;prompt&gt;tux &gt; &lt;/prompt&gt;&lt;command&gt;ps &lt;option&gt;-xa&lt;/option&gt;&lt;/command&gt;
+  &lt;screen&gt;&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ps &lt;option&gt;-xa&lt;/option&gt;&lt;/command&gt;
 
 5170 ?        S      0:00 kdeinit: khotkeys
 5172 ?        S      0:02 kdeinit: kdesktop
@@ -636,29 +649,11 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
           </tbody>
         </tgroup>
       </table>
-      <para>For details on displaying computer input and output, refer to
-        <xref linkend="sec.command_line"/>. To annotate examples, use callouts.
-        Callouts are described in <xref linkend="sec.callout"/>.
-      </para>
     </sect2>
 
     <sect2 id="sec.link">
       <title>External Links</title>
 
-      <para>Where possible, collect links in a
-        <quote>For More Information</quote> section at the end of the chapter.
-        This will help users focus on your documentation instead of leading
-        them to other resources before they had a chance to read the end
-        of the sentence.
-      </para>
-      <para>To mark up multiple links, create an
-        <sgmltag class="emptytag">itemizedlist</sgmltag> around
-        them. Do not use a list environment for only one link.
-        If you need to present a large number of links, group them by topic and
-        create a separate list environment for each group. Provide a
-        comprehensive title for each of the groups or an introductory sentence.
-        On creating lists, see <xref linkend="sec.bullet"/>.
-      </para>
       <para>Use the <sgmltag class="emptytag">ulink</sgmltag> element to mark up
         URLs that can be opened with a Web browser, such as
         <ulink url="http://www.example.org/"/>.
@@ -684,6 +679,20 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
         documentation outside of the current document set. Instead, use the
         appropriate entity for the book title. Always reference the book
         itself, as chapter names can change.
+      </para>
+      <para>Where possible, collect links in a
+        <quote>For More Information</quote> section at the end of the chapter.
+        This will help users focus on your documentation instead of leading
+        them to other resources before they had a chance to read the end
+        of the sentence.
+      </para>
+      <para>To mark up multiple links, create an
+        <sgmltag class="emptytag">itemizedlist</sgmltag> around
+        them. Do not use a list environment for a single link.
+        If you need to present a large number of links, group them by topic and
+        create a separate list environment for each group. Provide a
+        comprehensive title for each of the groups or an introductory sentence.
+        On creating lists, see <xref linkend="sec.unordered"/>.
       </para>
       <para>Where possible, provide translators with localized versions of
         links in the comments of the source file.
@@ -862,8 +871,8 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
             <para>Avoid creating screenshots of windows higher or
               wider than 800&nbsp;pixels at 96&nbsp;pixels per inch. When
               creating screenshots of applications scaled for a higher
-              pixel-per-inch count, apply a proportionally larger maximum window
-              size.
+              pixel-per-inch count, you can use a proportionally larger
+              maximum window size.
             </para>
           </listitem>
           <listitem>
@@ -876,7 +885,7 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
           <listitem>
             <para>Use grayscale font antialiasing (default on SUSE
               operating systems). Subpixel font antialiasing creates colored
-              letter edges on some screens and in print.
+              letter edges when zoomed or printed.
             </para>
           </listitem>
           <listitem>
@@ -891,8 +900,8 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
               anonymize portions of a screenshot, use the
               <guimenu>Pixelize</guimenu> tool. To highlight parts of a
               screenshot, use the <guimenu>Rectangle</guimenu> tool or the
-              <guimenu>Arrow</guimenu> tool. Avoid using callouts. Never add
-              text or freely drawn objects. Always select colors providing a
+              <guimenu>Arrow</guimenu> tool. Never add callouts,
+              text or freely drawn objects. Always select colors that provide a
               good contrast with their background.
             </para>
           </listitem>
@@ -947,9 +956,8 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
       <para>Keep headings short and simple. Do not use both an acronym and the
         written-out form in a heading.
       </para>
-      <para>Provide content between a heading and its subheadings. In some
-        cases, this is only a small paragraph of introductory information.
-        In other cases, more information can be provided.
+      <para>Provide at least some introductory information between a heading
+        and its subheadings.
       </para>
     </sect2>
 
@@ -1279,45 +1287,38 @@ id="tab.install.sources"</screen>
       <para>SUSE and openSUSE documentation uses the following types of lists
         (the respective XML elements are given in parentheses):
       </para>
-      <variablelist>
-        <varlistentry>
-          <term>Bullet Lists (<sgmltag class="emptytag">itemizedlist</sgmltag>)
-          </term>
-          <listitem>
-            <para>See
-              <ulink url="http://www.docbook.org/tdg/en/html/itemizedlist.html"/>
-              for details on markup.
-            </para>
-          </listitem>
-        </varlistentry>
-        <varlistentry>
-          <term>Numbered Lists (<sgmltag class="emptytag">orderedlist</sgmltag>)
-          </term>
-          <listitem>
-            <para>See
-              <ulink url="http://www.docbook.org/tdg/en/html/orderedlist.html"/>
-              for details on markup.
-            </para>
-          </listitem>
-        </varlistentry>
-        <varlistentry>
-          <term>Descriptive Lists
-            (<sgmltag class="emptytag">variablelist</sgmltag>)
-          </term>
-          <listitem>
-            <para>See
-              <ulink url="http://www.docbook.org/tdg/en/html/variablelist.html"/>
-              for details on markup.
-            </para>
-          </listitem>
-        </varlistentry>
-      </variablelist>
+      <itemizedlist>
+        <listitem>
+          <para>Unordered lists
+            (<sgmltag class="emptytag">itemizedlist</sgmltag>). Also known as
+            bullet lists.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Numbered lists
+            (<sgmltag class="emptytag">orderedlist</sgmltag>).
+          </para>
+        </listitem>
+        <listitem>
+          <para>Descriptive lists
+            (<sgmltag class="emptytag">variablelist</sgmltag>). Also known
+            as definition lists or variable lists.
+          </para>
+        </listitem>
+        <listitem>
+          <para>Procedures
+            (<sgmltag class="emptytag">procedure</sgmltag>). Also known
+            as step-by-step instruction lists. Described in
+            <xref linkend="sec.procedure"/>.
+          </para>
+        </listitem>
+      </itemizedlist>
       <para>Consider the following general rules when creating or editing list
         environments:
       </para>
       <itemizedlist>
         <listitem>
-          <para>List environments should be used cautiously. Their markup is
+          <para>List environments should be used with caution. Their markup is
             quite distinct and overusing them might disrupt the text flow.
           </para>
         </listitem>
@@ -1334,7 +1335,7 @@ id="tab.install.sources"</screen>
           </para>
         </listitem>
         <listitem>
-          <para>Use sentence-style capitalization for the list items. Use
+          <para>Use sentence-style capitalization for list items. Use
             title-style capitalization for terms in descriptive lists.
           </para>
         </listitem>
@@ -1359,21 +1360,126 @@ id="tab.install.sources"</screen>
         <xref linkend="sec.cross_reference"/> for more
         information.
       </para>
+      <table id="tab.list">
+        <title>Elements Related to Lists</title>
+        <tgroup cols="2">
+          <thead>
+            <row>
+              <entry>Element</entry>
+              <entry>Web Link</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">itemizedlist</sgmltag></title>
+                  <para>Block element for an unordered list. Contains
+                    multiple <sgmltag class="emptytag">listitem</sgmltag>
+                    elements.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/itemizedlist.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">orderedlist</sgmltag>
+                  </title>
+                  <para>Block element for a numbered list. Contains multiple
+                    <sgmltag class="emptytag">listitem</sgmltag> elements.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/orderedlist.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">variablelist</sgmltag></title>
+                  <para>Block element for a descriptive list. Contains multiple
+                    <sgmltag class="emptytag">varlistentry</sgmltag> elements.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/variablelist.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">varlistentry</sgmltag></title>
+                  <para>Element of a that associates a
+                    <sgmltag class="emptytag">term</sgmltag> and a
+                    <sgmltag class="emptytag">listitem</sgmltag> inside a
+                    <sgmltag class="emptytag">variablelist</sgmltag>.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/varlistentry.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">term</sgmltag></title>
+                  <para>Element whose content serves as the title of an
+                    element of a
+                    <sgmltag class="emptytag">variablelist</sgmltag>.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/term.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">listitem</sgmltag></title>
+                  <para>A single list element. To add text to this item, first
+                    add a <sgmltag class="emptytag">para</sgmltag> element.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/listitem.html"/>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
 
-      <sect3 id="sec.bullet">
-        <title>Bullet Lists</title>
+      <sect3 id="sec.unordered">
+        <title>Unordered Lists</title>
 
-        <para>Bullet lists are often used to provide an overview of information
-          or to introduce or summarize information. They should be used when
-          the order of list items is irrelevant.
+        <para>Unordered lists are often used to provide an overview of
+          information or to introduce or summarize information. They should be
+          used when the order of list items is irrelevant.
         </para>
-        <example id="ex.bulllist">
-          <title>A Bullet List</title>
+        <example id="ex.unordered_source">
+          <title>Example of an Unordered List (Source)</title>
+          <screen>&lt;para&gt;The following operating systems are supported:&lt;/para&gt;
+&lt;itemizedlist&gt;
+  &lt;listitem&gt;
+    &lt;para&gt;Linux, Kernel 2.4 and newer&lt;/para&gt;
+  &lt;/listitem&gt;
+  &lt;listitem&gt;
+    &lt;para&gt;FreeBSD 7 and newer&lt;/para&gt;
+  &lt;/listitem&gt;
+&lt;/itemizedlist&gt;</screen>
+        </example>
+        <example id="ex.unordered_output">
+          <title>Example of an Unordered List (Output)</title>
           <para>The following operating systems are supported:</para>
           <itemizedlist>
-            <listitem>
-              <para>Windows 2000 and newer</para>
-            </listitem>
             <listitem>
               <para>Linux, Kernel 2.4 and newer</para>
             </listitem>
@@ -1388,39 +1494,40 @@ id="tab.install.sources"</screen>
         <title>Numbered Lists</title>
 
         <para>Use numbered lists when items have a strict order, hierarchy, or
-          importance. If order is not relevant, use a bullet list or a
+          importance. If order is not relevant, use an unordered list or a
           descriptive list. Do not use numbered lists to describe procedures.
           Complex sequential actions are better described by means of the
           procedure environment (see <xref linkend="sec.procedure"/>
           for a detailed description).
         </para>
-        <example id="ex.numbered">
-          <title>A Numbered List</title>
-          <para>Make sure the following requirements are met before trying to
-            set up an Apache Web server:
-          </para>
+        <example id="ex.numbered_source">
+          <title>Example of a Numbered List (Source)</title>
+          <screen>&lt;para&gt;Before installing, make sure of the following:&lt;/para&gt;
+&lt;orderedlist&gt;
+  &lt;listitem&gt;
+    &lt;para&gt;The network connection of the computer is configured
+      properly.
+    &lt;/para&gt;
+  &lt;/listitem&gt;
+  &lt;listitem&gt;
+    &lt;para&gt;The latest security updates are installed. If you are in
+      doubt, run an online update.
+    &lt;/para&gt;
+  &lt;/listitem&gt;
+&lt;/orderedlist&gt;</screen>
+        </example>
+        <example id="ex.numbered_output">
+          <title>Example of a Numbered List (Output)</title>
+          <para>Before installing, make sure of the following:</para>
           <orderedlist>
             <listitem>
-              <para>The network connection of the machine is configured
+              <para>The network connection of the computer is configured
                 properly.
               </para>
             </listitem>
             <listitem>
-              <para>The exact system time of the machine is maintained by
-                synchronizing with a time server. This is necessary because
-                parts of the HTTP protocol depend on the correct time.
-              </para>
-            </listitem>
-            <listitem>
-              <para>The latest security updates are installed. If in doubt,
-                run an online update.
-              </para>
-            </listitem>
-            <listitem>
-              <para>The default Web server port (port 80) is opened in the
-                firewall. For this, configure the SUSEFirewall2 to allow the
-                service <guimenu>HTTP Server</guimenu> in the external zone.
-                This can be done using YaST.
+              <para>The latest security updates are installed. If you are in
+                doubt, run an online update.
               </para>
             </listitem>
           </orderedlist>
@@ -1444,8 +1551,28 @@ id="tab.install.sources"</screen>
           by the value of <sgmltag class="attribute">id</sgmltag> and
           referenced by the term.
         </para>
-        <example id="ex.varlist">
-          <title>A Descriptive List</title>
+        <example id="ex.descriptive_source">
+          <title>Example of a Descriptive List (Source)</title>
+          <screen>&lt;para&gt;This book consists of several parts:&lt;/para&gt;
+&lt;variablelist&gt;
+  &lt;varlistentry&gt;
+    &lt;term&gt;Installation&lt;/term&gt;
+    &lt;listitem&gt;
+      &lt;para&gt;Learn about the installation and initial configuration
+        of a Linux system.
+      &lt;/para&gt;
+    &lt;/listitem&gt;
+  &lt;/varlistentry&gt;
+  &lt;varlistentry&gt;
+    &lt;term&gt;System&lt;/term&gt;
+    &lt;listitem&gt;
+      &lt;para&gt;Get a basic understanding of the system components.&lt;/para&gt;
+    &lt;/listitem&gt;
+  &lt;/varlistentry&gt;
+&lt;/variablelist&gt;</screen>
+        </example>
+        <example id="ex.descriptive">
+          <title>Example of a Descriptive List (Output)</title>
           <para>This book consists of several parts:</para>
           <variablelist>
             <varlistentry>
@@ -1501,16 +1628,15 @@ id="tab.install.sources"</screen>
       </para>
       <example id="ex.key">
         <title>Example of a Key</title>
-        <screen>To create a screenshot, press
-  &lt;keycap&gt;Print Screen&lt;/keycap&gt;.</screen>
+        <screen>To create a screenshot, press &lt;keycap&gt;Print Screen&lt;/keycap&gt;.</screen>
       </example>
       <example id="ex.keyboard">
         <title>Example of a Keyboard Combination</title>
         <screen>To save a file, press
-  &lt;keycombo&gt;
-    &lt;keycap function="control"/&gt;
-    &lt;keycap&gt;S&lt;/keycap&gt;
-  &lt;/keycombo&gt;.</screen>
+&lt;keycombo&gt;
+  &lt;keycap function="control"/&gt;
+  &lt;keycap&gt;S&lt;/keycap&gt;
+&lt;/keycombo&gt;.</screen>
       </example>
       <table id="tab.keycap">
         <title>Elements Related to <sgmltag class="emptytag">keycap</sgmltag>
@@ -1529,7 +1655,7 @@ id="tab.install.sources"</screen>
                     <title><sgmltag class="emptytag">keycombo</sgmltag></title>
                     <para>Inline element containing multiple
                       <sgmltag class="emptytag">keycap</sgmltag> elements that
-                      together form a keyboard combination.
+                      together make up a keyboard combination.
                     </para>
                   </formalpara>
                 </entry>
@@ -2081,7 +2207,132 @@ id="tab.install.sources"</screen>
           </tgroup>
         </informaltable>
       </example>
-      <!-- #FIXME: element table -->
+      <table id="tab.table">
+        <title>Elements Related to <sgmltag class="emptytag">table</sgmltag>
+        </title>
+        <tgroup cols="2">
+          <thead>
+            <row>
+              <entry>Element</entry>
+              <entry>Web Link</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">table</sgmltag></title>
+                  <para>Formal block element that contains a
+                    <sgmltag class="emptytag">title</sgmltag> and a
+                    <sgmltag class="emptytag">tgroup</sgmltag> element.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/table.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">informaltable</sgmltag>
+                  </title>
+                  <para>Informal block element that contains a
+                    <sgmltag class="emptytag">tgroup</sgmltag> element.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/informaltable.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">tgroup</sgmltag>
+                  </title>
+                  <para>Wrapper for the content of a table. Can contain one or
+                    more <sgmltag class="emptytag">colspec</sgmltag> and one
+                    <sgmltag class="emptytag">thead</sgmltag>. Contains a
+                    <sgmltag class="emptytag">tbody</sgmltag>
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/tgroup.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">colspec</sgmltag>
+                  </title>
+                  <para>Element to define common properties for a column.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/colspec.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">thead</sgmltag>
+                  </title>
+                  <para>Element to mark up a table head. Contains a
+                    <sgmltag class="emptytag">row</sgmltag> element.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/thead.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">tbody</sgmltag>
+                  </title>
+                  <para>Element to mark up the table body. Contains multiple
+                    <sgmltag class="emptytag">row</sgmltag> elements.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/tbody.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">row</sgmltag>
+                  </title>
+                  <para>Element to mark up a table row. Contains multiple
+                    <sgmltag class="emptytag">entry</sgmltag> elements.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/row.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">entry</sgmltag>
+                  </title>
+                  <para>Element to mark up a table cell.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/entry.html"/>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
     </sect2>
 
     <sect2 id="sec.ui_item_markup">
