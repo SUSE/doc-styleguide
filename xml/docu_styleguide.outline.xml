@@ -18,7 +18,7 @@
 
     <sect2 id="sec.book">
       <title>Books</title>
-      <para>You should always use a document structure that includes the
+      <para>Always use a document structure that includes the
         following elements, in that order: a preface, and
         chapters which are split in sections. Optionally, add appendixes, a
         glossary, and an index. In some cases, parts can be created at the
