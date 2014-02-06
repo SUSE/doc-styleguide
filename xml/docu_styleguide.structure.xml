@@ -1041,7 +1041,7 @@ id="tab.install.sources"</screen>
           <thead>
             <row>
               <entry>Element</entry>
-              <entry>Abbreviation</entry>
+              <entry>Prefix</entry>
             </row>
           </thead>
           <tbody>
@@ -1059,6 +1059,14 @@ id="tab.install.sources"</screen>
               </entry>
               <entry>
                 <sgmltag class="attvalue">book</sgmltag>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <sgmltag class="emptytag">co</sgmltag>
+              </entry>
+              <entry>
+                <sgmltag class="attvalue">co</sgmltag>
               </entry>
             </row>
             <row>
