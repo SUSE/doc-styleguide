@@ -151,7 +151,9 @@
               <emphasis>lowercase</emphasis>, <emphasis>just</emphasis>,
               <emphasis>need to</emphasis>,
               <emphasis>might</emphasis>, <emphasis>(to) multitask</emphasis>,
-              <emphasis>must</emphasis>, <emphasis>openSUSE</emphasis>,
+              <emphasis>must</emphasis>, <emphasis>obvious</emphasis>,
+              <emphasis>obviously</emphasis>,
+              <emphasis>openSUSE</emphasis>,
               <emphasis>(to) open sth.</emphasis>,
               <emphasis>open source</emphasis>,
               <emphasis>(to) print sth.</emphasis>,
@@ -170,6 +172,8 @@
               <emphasis>SUSE Linux Enterprise Server</emphasis>,
               <emphasis>SUSE Manager</emphasis>,
               <emphasis>SUSE Studio</emphasis>,
+              <emphasis>self-evident</emphasis>,
+              <emphasis>self-evidently</emphasis>,
               <emphasis>scrollbar</emphasis>*,
               <emphasis>simple, simply</emphasis>,
               <emphasis>(to) select sth.</emphasis>,
@@ -232,7 +236,7 @@
       </listitem>
       <listitem>
         <para>Shortened and clarified many parts of the style guide to avoid
-          tautologies and unnecessary explanations. See:
+          tautologies and unnecessary explanations.
         </para>
       </listitem>
       <listitem>
@@ -242,9 +246,10 @@
         </para>
       </listitem>
       <listitem>
-        <para>Removed differentiation between the many types of authors files
+        <para>Removed differentiation between the many types of
+          <filename>authors</filename> files
           from <xref linkend="sec.outline"/>. This was too complicated to be
-          practical. Also, translators were so far never mentioned.
+          practical. Also, current practice is to never mention translators.
         </para>
       </listitem>
       <listitem>
@@ -269,13 +274,19 @@
         <para>More informative example in <xref linkend="sec.glossary"/>.</para>
       </listitem>
       <listitem>
-        <para>Simplify rules for creating IDs in <xref linkend="sec.id"/>. This
-          should shorten the length of the average ID and help guessing IDs.
+        <para>Simplified rules for creating IDs in <xref linkend="sec.id"/>.
+          The aim is to shorten the length of the average ID and to help to
+          create predictable IDs.
+        </para>
+      </listitem>
+      <listitem>
+        <para>Added the <sgmltag class="attvalue">co</sgmltag> prefix to
+          <xref linkend="tab.id_prefix"/>.
         </para>
       </listitem>
 
       <listitem>
-        <para>Added this list of changes as a separate article.</para>
+        <para>Added this list of changes as an appendix.</para>
       </listitem>
       <listitem>
         <para>Added list of authors as a separate DocBook file.</para>
