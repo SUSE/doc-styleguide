@@ -276,7 +276,7 @@ Kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
         licenses and information on typographical conventions in multiple
         books or articles without having to maintain the text in multiple
         places. They also ease co-editing documentation with others in a version
-        control system as they reduces the chance of merge conflicts occurring.
+        control system as they reduce the chance of merge conflicts occurring.
       </para>
       <para>Files referenced via XIncludes must be valid XML files. This
         means that they must have a single top-level element. Files that are
