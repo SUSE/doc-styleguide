@@ -6,11 +6,11 @@
 ]>
 
 <appendix id="app.terminology">
-  <title>Terminology</title>
+  <title>Terminology and General Vocabulary</title>
 
-  <para>Always use the terminology listed under <quote>Accepted</quote> in
-    the table below. All terms use sentence-style capitalization. Refer to
-    <xref linkend="sec.language"/> for further advice.
+  <para>Use the terminology and general vocabulary listed under
+    <quote>Accepted</quote> in the table below. All terms use sentence-style
+    capitalization. Refer to <xref linkend="sec.language"/> for further advice.
   </para>
   <informaltable>
     <tgroup cols="3">
@@ -43,8 +43,7 @@
           <entry>(to) block sth., (to) check sth., (to) choose sth.,
             (to) highlight sth., (to) tick sth.
           </entry>
-          <entry>verb; when referring to check boxes
-          </entry>
+          <entry>verb; when referring to check boxes</entry>
         </row>
         <row>
           <entry>add-on</entry>
@@ -148,8 +147,8 @@
             btrfs
           </entry>
           <entry>noun; not an acronym
-            <remark>Really, though? "B-tree File System"? -- sknorr,
-              2013-09-18
+            <remark>sknorr, 2013-09-18: Really, though? Origin is
+              "B-tree File System"?
             </remark>
           </entry>
         </row>
@@ -255,7 +254,9 @@
         </row>
         <row>
           <entry>(to) close sth.</entry>
-          <entry>(to) abort sth., (to) exit sth., (to) terminate sth.</entry>
+          <entry>(to) abort sth. [negative], (to) exit sth.,
+            (to) terminate sth. [negative]
+          </entry>
           <entry>verb; when referring to closing a window or quitting
             a GUI application
           </entry>
@@ -275,7 +276,9 @@
         </row>
         <row>
           <entry>computer</entry>
-          <entry>machine, PC or Mac, system</entry>
+          <entry>machine [colloquial, sounds as if it were an appliance],
+            PC or Mac [specific], system [restrict usage to software]
+          </entry>
           <entry>noun; where used as a generic reference to a computer</entry>
         </row>
         <row>
@@ -335,10 +338,9 @@
           <entry>dialog</entry>
           <entry>dialog box, dialog window, dialogue [British]</entry>
           <entry>noun
-            <remark>Eeek&#x2026; Novell use dialog box, apparently, but
+            <remark>sknorr, 2013-09-17: Novell use dialog box, apparently, but
               that sounds rather colloquial. And then, a dialog doesn't
               have to be in a boxed or window &#x2013; see Web applications
-              -- sknorr, 2013-09-17
             </remark>
           </entry>
         </row>
@@ -400,7 +402,7 @@
           <entry/>
           <entry>easy [filler], easily</entry>
           <entry>adjective, adverb; avoid
-            <remark>Should this stand? -- sknorr, 2013-09-16</remark>
+            <remark>sknorr, 2013-09-16: Should this stand?</remark>
           </entry>
         </row>
         <row>
@@ -432,11 +434,11 @@
         </row>
         <row>
           <entry/>
-          <entry>(to) facilitate</entry>
+          <entry>(to) facilitate sth.</entry>
           <entry>avoid
-            <remark>Reasonable alternative, "ease," "simplify"? Or was this
-              rejected for tending to be filler/subjective? -- sknorr,
-              2013-09-16
+            <remark>sknorr, 2013-09-16: Reasonable alternatives,
+              "ease," "simplify"? Or was this rejected for tending to be
+              filler/subjective?
             </remark>
           </entry>
         </row>
@@ -502,8 +504,8 @@
           <entry>graphical user interface</entry>
           <entry>Graphical User Interface, graphical UI</entry>
           <entry>noun; acronym for <emphasis>graphical user interface</emphasis>
-            <remark>Not completely sure about rejecting graphical UI
-              -- sknorr, 2013-09-16
+            <remark>sknorr, 2013-09-16: Not completely sure about rejecting
+              graphical UI
             </remark>
           </entry>
         </row>
@@ -532,8 +534,7 @@
           <entry>home page</entry>
           <entry>home-page, homepage</entry>
           <entry>noun
-            <remark>I can't accept the accepted spelling. -- sknorr,
-              2013-09-16
+            <remark>sknorr, 2013-09-16: I can't accept the accepted spelling.
             </remark>
           </entry>
         </row>
@@ -573,9 +574,9 @@
         </row>
         <row>
           <entry>if</entry>
-          <entry></entry>
+          <entry/>
           <entry>pronoun; use if an event depends on a condition; also see
-            <emphasis>when</emphasis>
+            <emphasis>when</emphasis> and <emphasis>whether</emphasis>
           </entry>
         </row>
         <row>
@@ -587,7 +588,7 @@
           <entry>infrared</entry>
           <entry>infra red, infra-red</entry>
           <entry>noun or adjective
-            <remark>Really a noun? -- sknorr, 2013-09-16</remark>
+            <remark>sknorr, 2013-09-16: Really a noun?</remark>
           </entry>
         </row>
         <row>
@@ -604,7 +605,7 @@
           <entry>installation source</entry>
           <entry>installation data source, installation media</entry>
           <entry>noun; source of installation data for operating systems
-            <remark>Really reject installation media? -- sknorr, 2013-09-16
+            <remark>sknorr, 2013-09-16: Really reject installation media?
             </remark>
           </entry>
         </row>
@@ -659,7 +660,7 @@
           <entry>kdump</entry>
           <entry>KDUMP, Kdump</entry>
           <entry>command; only for command
-            <remark>So, commands aren't nouns, then? -- sknorr, 2013-09-16
+            <remark>sknorr, 2013-09-16: So, commands aren't nouns, then?
             </remark>
           </entry>
         </row>
@@ -685,8 +686,7 @@
           <entry>kprobes</entry>
           <entry>Kprobes</entry>
           <entry>command; only for command
-            <remark>So, commands aren't nouns, then? -- sknorr,
-              2013-09-16
+            <remark>sknorr, 2013-09-16: So, commands aren't nouns, then?
             </remark>
           </entry>
         </row>
@@ -750,10 +750,10 @@
         </row>
         <row>
           <entry>(to) log out</entry>
-          <entry>(to) log off, (to) log-off, (to) logoff, (to) log-out, (to) logout,
-            (to) sign off, (to) sign-off, (to) signoff,
-            <remark>In code review systems (e.g.), sign-off means
-              something different. -- sknorr, 2013-09-17
+          <entry>(to) log off, (to) log-off, (to) logoff, (to) log-out,
+            (to) logout, (to) sign off, (to) sign-off, (to) signoff,
+            <remark>sknorr, 2013-09-17: In code review systems (e.g.),
+              sign-off means something completely different.
             </remark>
             (to) sign out, (to) sign-out,
             (to) signout
@@ -972,7 +972,8 @@
         </row>
         <row>
           <entry>(to) press sth.</entry>
-          <entry>(to) hit sth., (to) punch sth.</entry>
+          <entry>(to) hit sth. [colloquial], (to) punch sth. [colloquial]
+          </entry>
           <entry>verb; when referring to keys or mouse buttons</entry>
         </row>
         <row>
@@ -1211,7 +1212,7 @@
           <entry/>
           <entry>noun; GUI element that is used manipulate values that have
             an upper and a lower bound
-            <remark>A little complicated -- sknorr, 2013-09-17</remark>
+            <remark>sknorr, 2013-09-17: A little complicated</remark>
           </entry>
         </row>
         <row>
@@ -1246,8 +1247,7 @@
         </row>
         <row>
           <entry>TAR archive</entry>
-          <entry>TAR ball, tar ball, tar-ball,
-            tarball [less neutral, less Windows user-friendly]
+          <entry>TAR ball [Unix jargon], tar ball, tar-ball, tarball
           </entry>
           <entry>noun</entry>
         </row>
@@ -1282,18 +1282,12 @@
           <entry>noun</entry>
         </row>
         <row>
-          <entry>(to) type sth. (into sth.)</entry>
-          <entry>(to) enter sth. (into sth.) [ambiguous for some users]
-          </entry>
-          <entry>verb; where possible, replace by
-            <emphasis>specify</emphasis> or <emphasis>provide</emphasis>
-            <remark>This strays from Novell's Style Guide but the difference
-              between Novell's meaning for "enter" (= type something, then
-              press Enter) and Novell's meaning for "type" (= type
-              something, don't press Enter) is so small from a user's point
-              of view that it doesn't make sense to keep the second verb
-              around. -- sknorr, 2013-09-18
-            </remark>
+          <entry>(to) enter sth. (into sth.)</entry>
+          <entry/>
+          <entry>verb; only when a value needs to be specified and
+            <keycap function="enter"/> should be pressed afterwards; where
+            possible, replace by <emphasis>specify</emphasis> or
+            <emphasis>provide</emphasis>
           </entry>
         </row>
         <row>
@@ -1309,9 +1303,9 @@
           <entry>(to) uninstall</entry>
           <entry>(to) de-install, (to) deinstall, (to) un-install</entry>
           <entry>verb
-            <remark>Packages are usually "removed," not uninstalled (say
-              YaST and zypper, but also my intuition). Should this word be
-              restricted to Windows software? -- sknorr, 2013-09-17
+            <remark>sknorr, 2013-09-17: Packages are usually "removed," not
+              uninstalled (say YaST and zypper, but also my intuition). Should
+              this word be restricted to Windows software?
             </remark>
           </entry>
         </row>
@@ -1404,8 +1398,12 @@
         <row>
           <entry>whether</entry>
           <entry>whether or not</entry>
-          <entry>pronoun; use only where <emphasis>if</emphasis> does not
-            work; also see <emphasis>if</emphasis>
+          <entry>pronoun; use to present two alternatives which are not
+            conditions, otherwise use <emphasis>if</emphasis>; also see
+            <emphasis>if</emphasis>
+            <remark>sknorr, 2014-02-18: This is helpful:
+              http://www.grammar-monster.com/easily_confused/if_and_whether.htm
+            </remark>
           </entry>
         </row>
         <row>
@@ -1426,7 +1424,7 @@
           <entry>X Window System</entry>
           <entry>X Window, X Windows, X window, X window system, X windows, XWS</entry>
           <entry>noun
-            <remark>What about X11, X.org, XFree86? -- sknorr, 2013-09-17</remark>
+            <remark>sknorr, 2013-09-17: What about X11, X.org, XFree86?</remark>
           </entry>
         </row>
         <row>
