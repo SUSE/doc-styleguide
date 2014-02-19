@@ -534,8 +534,11 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
       </example>
       <example id="ex.cross_reference_output">
         <title>Example of a Cross Reference (Output)</title>
-        <remark>sknorr, 2014-01-21: does this work for the average reader?</remark>
-        <para>See <xref linkend="sec.cross_reference"/>.</para>
+        <para>See <xref linkend="sec.cross_reference"/>.
+          <remark>sknorr, 2014-01-21: does this work for the average
+            reader?
+          </remark>
+        </para>
       </example>
     </sect2>
 
