@@ -247,9 +247,9 @@
               <listitem>
                 <formalpara>
                   <title>Troubleshooting</title>
-                  <para>If you know of common mistakes or other problems a
-                    user might encounter, list them in
-                    a section named <emphasis>Troubleshooting</emphasis>.
+                  <para>In this section, collect common mistakes and
+                    problems. The section should always be named
+                    <emphasis>Troubleshooting</emphasis>.
                     Use the DocBook element
                     <sgmltag class="emptytag">qandaset</sgmltag>
                     (a Question and Answer section) to mark up
@@ -264,7 +264,7 @@
               <listitem>
                 <formalpara>
                   <title>For More Information</title>
-                  <para>This section contains links to all sources of
+                  <para>In this section, collect Web links to all sources of
                     information that might prove helpful in a given context.
                     Follow the general referencing guidelines in
                     <xref linkend="sec.cross_reference"/> when creating such
@@ -290,8 +290,8 @@
       <title>Articles</title>
 
       <para>For articles, use a structure similar to that of books. However,
-        note that there is no equivalent of parts in articles. In articles,
-        the function of chapters is filled by first-level sections
+        note that there is no equivalent of parts in articles. Additionally, in
+        articles, the function of chapters is filled by first-level sections
         (<sgmltag class="emptytag">sect1</sgmltag>).
       </para>
     </sect2>
