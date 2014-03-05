@@ -142,7 +142,8 @@
           <entry>noun</entry>
         </row>
         <row>
-          <entry>(to) boot using/via PXE</entry>
+          <entry>(to) boot using PXE <emphasis>or</emphasis> (to) boot via PXE
+          </entry>
           <entry>(to) PXE boot</entry>
           <entry>verb</entry>
         </row>
@@ -285,8 +286,8 @@
           <entry>noun; unless when referring to file extension</entry>
         </row>
         <row>
-          <entry>(to) configure</entry>
-          <entry>(to) config</entry>
+          <entry>(to) configure sth.</entry>
+          <entry>(to) config sth.</entry>
           <entry>verb</entry>
         </row>
         <row>
@@ -744,7 +745,7 @@
           <entry>noun</entry>
         </row>
         <row>
-          <entry>(to) log in</entry>
+          <entry>(to) log in [see below for appropriate preposition]</entry>
           <entry>(to) log-in, (to) login, (to) log on, (to) log-on,
             (to) logon, (to) sign in, (to) sign-in, (to) signin,
             (to) sign on, (to) sign-on, (to) signon
@@ -754,10 +755,15 @@
         <row>
           <entry>(to) log in to sth.</entry>
           <entry>(to) log in at sth., (to) log into sth.</entry>
-          <entry>verb</entry>
+          <entry>verb; for logging in to a software</entry>
         </row>
         <row>
-          <entry>(to) log out</entry>
+          <entry>(to) log in on sth.</entry>
+          <entry>(to) log in at sth., (to) log in from sth.</entry>
+          <entry>verb; for logging in on the console/a host system</entry>
+        </row>
+        <row>
+          <entry>(to) log out [see below for appropriate preposition]</entry>
           <entry>(to) log off, (to) log-off, (to) logoff, (to) log-out,
             (to) logout, (to) sign off, (to) sign-off, (to) signoff,
             <remark>sknorr, 2013-09-17: In code review systems (e.g.),
@@ -770,7 +776,7 @@
         </row>
         <row>
           <entry>(to) log out of sth.</entry>
-          <entry>(to) log in from sth.</entry>
+          <entry>(to) log out at sth., (to) log out from sth.</entry>
           <entry>verb</entry>
         </row>
         <row>
@@ -1046,7 +1052,7 @@
           <entry>verb</entry>
         </row>
         <row>
-          <entry>(to) register</entry>
+          <entry>(to) register [see below for appropriate preposition]</entry>
           <entry>(to) sign up, (to) sign-up, (to) signup</entry>
           <entry>verb; register as a user</entry>
         </row>
@@ -1313,8 +1319,9 @@
           </entry>
         </row>
         <row>
-          <entry>(to) uninstall</entry>
-          <entry>(to) de-install, (to) deinstall, (to) un-install</entry>
+          <entry>(to) uninstall sth.</entry>
+          <entry>(to) de-install sth., (to) deinstall sth., (to) un-install sth.
+          </entry>
           <entry>verb
             <remark>sknorr, 2013-09-17: Packages are usually "removed," not
               uninstalled (say YaST and zypper, but also my intuition). Should
@@ -1394,7 +1401,7 @@
         </row>
         <row>
           <entry>want sth.</entry>
-          <entry>(to) wish sth., would like sth.</entry>
+          <entry>(to) wish sth., (to) wish for sth., would like sth.</entry>
           <entry>noun; you may use <emphasis>World Wide Web</emphasis> or
             <emphasis>WWW</emphasis> in historical contexts
           </entry>
@@ -1435,7 +1442,7 @@
         </row>
         <row>
           <entry>wild card</entry>
-          <entry>wild-card, wildcard</entry>
+          <entry>joker [Germanism], wild-card, wildcard</entry>
           <entry>noun</entry>
         </row>
         <row>
