@@ -162,17 +162,18 @@
       <example id="ex.warning_source">
         <title>An Example of a Warning (Source)</title>
         <screen>&lt;warning&gt;
-  &lt;title&gt;Creating File Systems Can Take Several Hours&lt;/title&gt;
-  &lt;para&gt;Interrupting this process will result in a corrupt file system
-    and an unusable installation.
+  &lt;title&gt;Do not interrupt creation of file systems&lt;/title&gt;
+  &lt;para&gt;Creating a file system can take multiple hours. Interrupting this
+    process will result in a corrupt file system and an unusable installation.
   &lt;/para&gt;
   &lt;para&gt;Always wait until formatting has finished.&lt;/para&gt;
 &lt;/warning&gt;</screen>
       </example>
       <warning id="ex.warning_output">
-        <title>Creating File Systems Can Take Several Hours</title>
-        <para>Interrupting this process will result in a corrupt file system
-          and an unusable installation.
+        <title>Do not interrupt creation of file systems</title>
+        <para>Creating a file system can take multiple hours. Interrupting this
+            process will result in a corrupt file system and an unusable
+            installation.
         </para>
         <para>Always wait until formatting has finished.</para>
       </warning>
