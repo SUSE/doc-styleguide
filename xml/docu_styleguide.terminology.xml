@@ -280,13 +280,6 @@
           <entry>noun</entry>
         </row>
         <row>
-          <entry>computer</entry>
-          <entry>machine [colloquial, sounds as if it were an appliance],
-            PC or Mac [specific], system [restrict usage to software]
-          </entry>
-          <entry>noun; where used as a generic reference to a computer</entry>
-        </row>
-        <row>
           <entry>configuration</entry>
           <entry>config</entry>
           <entry>noun; unless when referring to file extension</entry>
@@ -683,11 +676,6 @@
             <remark>sknorr, 2013-09-16: So, commands aren't nouns, then?
             </remark>
           </entry>
-        </row>
-        <row>
-          <entry>Kernel</entry>
-          <entry>kernel</entry>
-          <entry>noun; capitalize if referring to Linux kernel</entry>
         </row>
         <row>
           <entry>Kprobes</entry>
