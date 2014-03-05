@@ -1,9 +1,10 @@
 
+<!ENTITY version '2014-02-1pre'>
 
 <!ENTITY sections '
   <title>SUSE Documentation Style Guide</title>
   <articleinfo>
-    <releaseinfo>2014-02</releaseinfo>
+    <releaseinfo>&version;</releaseinfo>
     <date><?dbtimestamp?></date>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="authors.xml"/>
     <xi:include xmlns:xi="http://www.w3.org/2001/XInclude"
