@@ -61,7 +61,7 @@
     <sect2 id="sec.capitalization">
       <title>Capitalization and Title Style</title>
 
-      <para>In all running text, use sentence-style capitalization, that is,
+      <para>In all running text, use sentence-style capitalization. That is,
         only capitalize the first word of a sentence and proper names.
       </para>
       <para>Use title-style capitalization for all types of headings and titles,
@@ -291,12 +291,14 @@
         the actions described. Do not overuse <quote>you.</quote> It
         is often understood, especially in directions.
       </para>
-      <para>Use active voice. Active voice means that the subject of the
-        sentence performs the verb. For example, <quote>The root user
+      <para>Where possible, use active voice. In active voice, the subject of
+        the sentence performs the verb. For example, <quote>The root user
         performs administrative tasks</quote> is active voice.
         <quote>Administrative tasks are performed by the root user</quote>
-        is passive voice. Passive voice can be used occasionally if
-        there is a need to place emphasis on the object of the verb or
+        is passive voice.
+      </para>
+      <para>Use passive voice if there is a need to place emphasis on the
+        object of the verb or
         if the performer of the action is unknown. <quote>A SAMBA server
         must be configured in the network</quote> is an example of
         proper use of passive voice. The emphasis is on the server,
@@ -336,16 +338,16 @@
     </sect2>
 
     <sect2 id="sec.ui_item_language">
-      <title>User Interface Item</title>
+      <title>User Interface Items</title>
 
       <para>When referring to labels of user interface items, do not include
         ending punctuation
         such as <literal>…</literal> or <literal>:</literal>. Whenever possible,
-        refer to the items without identifying them as any special type of
-        dialog element. For example, use <quote>click
+        refer to user interface item without identifying them as any special
+        type of element. For example, use <quote>click
         <guimenu>OK</guimenu></quote> rather than <quote>click the
         <guimenu>OK</guimenu> button.</quote> However, complex dialogs may
-        require more sepcific wording.
+        require more specific wording.
       </para>
       <para>For instructions concerning markup, refer to
         <xref linkend="sec.ui_item_markup"/>.

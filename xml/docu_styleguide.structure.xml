@@ -253,7 +253,7 @@ default 0 <co id="def"/></screen>
               <entry>
                 <formalpara>
                   <title><sgmltag class="emptytag">calloutlist</sgmltag></title>
-                  <para>Block element containg a list of descriptions for each
+                  <para>Block element containing a list of descriptions for each
                     of the marked areas.
                   </para>
                 </formalpara>
@@ -466,9 +466,9 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
           with a prompt marked up this way:
         </para>
         <screen>&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ls&lt;/command&gt;</screen>
-        <para>Never include a host name or path in your prompts to avoid making
-          them longer than necessary. The first restricted user should always use
-          the name <emphasis>tux</emphasis>. For other names of restricted users,
+        <para>To avoid making prompts longer than necessary, never include a
+          host name or a path. The first restricted user should always be named
+          <emphasis>tux</emphasis>. For other names of restricted users,
           see <xref linkend="sec.name"/>.
         </para>
         <para>Avoid using root prompts in your documentation by using the
@@ -504,13 +504,11 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
       <para>Use the <sgmltag class="emptytag">xref</sgmltag> element (read:
         <quote>cross ref</quote>) when referring to an appendix, chapter,
         example, figure, part, preface, section, table, or question and answer
-        set. The referenced element needs an
-        <sgmltag class="attribute">id</sgmltag> attribute. When
-        referencing these elements, do not insert a text label like
-        <quote>appendix</quote>, <quote>chapter</quote>, <quote>part</quote>,
-        <quote>preface</quote>, <quote>section</quote>, <quote>table</quote>,
-        <quote>figure</quote>, and <quote>example</quote>. These are inserted
-        automatically.
+        set. The element referenced needs to have an
+        <sgmltag class="attribute">id</sgmltag> attribute. Do not insert text
+        labels such as <quote>appendix,</quote> <quote>chapter,</quote>
+        <quote>table,</quote> or <quote>figure.</quote> These labels
+        are generated automatically.
       </para>
       <para>To be able reference an otherwise untitled element, add the
         attribute <sgmltag class="attribute">xreflabel</sgmltag> to the element
@@ -669,9 +667,9 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
         use a self-closing tag:
       </para>
       <screen>&lt;ulink url="http://www.example.org/"/&gt;</screen>
-      <para>Try to make URLs as short as possible before pasting them into your
-        documentation. Many long URLs can be shortened by leaving away
-        non-essential pieces of them. This is often the case with search URLs
+      <para>Make URLs as short as possible before adding them to documentation.
+        Many long URLs can be shortened by leaving away non-essential pieces.
+        This is especially often the case with search URLs
         or URLs of Internet news media. If a Web site provides a built-in URL
         shortener, use that. Do not resort to using external URL shorteners, as
         that both hides the actual destination a link will take the user to and
@@ -1023,7 +1021,7 @@ id="tab.install.sources"</screen>
           </example>
         </listitem>
         <listitem>
-          <para>Use short, memorable, English terms ro phrases as title labels.
+          <para>Use short, memorable, English terms or phrases as title labels.
             Favor longer terms over non-obvious abbreviations. Always use the
             singular of nouns and the infinitive of verbs. For example, a section
             about installing with <phrase role="productname">YaST</phrase>
