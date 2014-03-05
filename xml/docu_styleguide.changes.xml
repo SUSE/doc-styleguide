@@ -10,8 +10,76 @@
 
   <!-- Add new versions to the beginning of the list. -->
 
+  <sect1 id="sec.change_2014-02-1">
+    <title>Release 2014-02-1&mdash;March 2014 Minor Update</title>
+
+    <itemizedlist>
+      <listitem>
+        <para>Improved clarity and fixed typos.</para>
+      </listitem>
+      <listitem>
+        <para>Improved example of a warning in <xref linkend="sec.admonition"/>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>Added an instruction where to insert screenshots in
+          <xref linkend="sec.screenshot"/>.
+          <remark>sknorr, 2014-03-05: Thanks, Frank!</remark>
+        </para>
+      </listitem>
+      <listitem>
+        <para>Updated terminology table ins <xref linkend="app.terminology"/>.
+        </para>
+        <itemizedlist>
+          <listitem>
+            <para>Added entries for
+              <emphasis>AOO</emphasis>, <emphasis>Apache OpenOffice</emphasis>,
+              <emphasis>Bluetooth</emphasis>, <emphasis>HTML page</emphasis>,
+              <emphasis>HTTPS</emphasis>, <emphasis>KDE</emphasis>,
+              <emphasis>LibreOffice</emphasis>,
+              <emphasis>OpenOffice.org</emphasis>, <emphasis>OOo</emphasis>,
+              <emphasis>please</emphasis>, <emphasis>(to) save sth.</emphasis>,
+              <emphasis>(to) write sth.</emphasis>,
+              <emphasis>video DVD</emphasis>.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Added <emphasis>HTML web page</emphasis> as a rejected entry
+              to <emphasis>Web page</emphasis>.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Added <emphasis>Joker</emphasis> as a rejected entry to
+              <emphasis>wild card</emphasis>.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Added <emphasis>screen</emphasis> as a rejected entry to
+              <emphasis>dialog</emphasis>.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Clarified usage of <emphasis>(to) log in</emphasis> and
+            <emphasis>(to) log out</emphasis>.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Changed accepted entry from <emphasis>Audio CD</emphasis> to
+            <emphasis>audio CD</emphasis>.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Removed entries for <emphasis>computer</emphasis>,
+              <emphasis>Kernel</emphasis>.
+            </para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </itemizedlist>
+  </sect1>
+
   <sect1 id="sec.change_2014-02">
-    <title>Release 2014-02&mdash;February 2014</title>
+    <title>Release 2014-02&mdash;February 2014 Major Update</title>
 
     <itemizedlist>
       <listitem>
