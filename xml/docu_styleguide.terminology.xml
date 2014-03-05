@@ -87,6 +87,25 @@
           </entry>
         </row>
         <row>
+          <entry>AOO</entry>
+          <entry>Oo.o, Ooo, OOoo, OO, oo</entry>
+          <entry>noun; when referring to versions 3.4 and after; spelling
+            according to project standard; acronym of
+            <emphasis>Apache OpenOffice</emphasis>; see also
+            <emphasis>OOo</emphasis>
+          </entry>
+        </row>
+        <row>
+          <entry>Apache OpenOffice</entry>
+          <entry>Apache Open Office, Open Office, Openoffice, Openoffice,
+            openoffice</entry>
+          <entry>noun; when referring to versions 3.4 and after; spelling
+            according to project standard; acronym is
+            <emphasis>AOO</emphasis>; see also
+            <emphasis>OpenOffice.org</emphasis>
+          </entry>
+        </row>
+        <row>
           <entry>appendixes</entry>
           <entry>appendices</entry>
           <entry>noun; plural of appendix</entry>
@@ -721,6 +740,13 @@
           <entry>verb</entry>
         </row>
         <row>
+          <entry>LibreOffice</entry>
+          <entry>Libre Office, Libreoffice, LibO, LO, libreoffice</entry>
+          <entry>noun; spelling according to project standard; no acronym
+            available
+          </entry>
+        </row>
+        <row>
           <entry>license</entry>
           <entry>licen<emphasis>c</emphasis>e [British]</entry>
           <entry>noun</entry>
@@ -913,9 +939,28 @@
           <entry>adjective, adverb</entry>
         </row>
         <row>
+          <entry>OOo</entry>
+          <entry>Oo.o, Ooo, OOoo, OO, oo</entry>
+          <entry>noun; only when referring to versions prior to 3.4; spelling
+            according to former project standard; acronym of
+            <emphasis>OpenOffice.org</emphasis>; see also
+            <emphasis>AOO</emphasis>
+          </entry>
+        </row>
+        <row>
           <entry>(to) open sth.</entry>
           <entry>(to) open up sth.</entry>
           <entry>verb</entry>
+        </row>
+        <row>
+          <entry>OpenOffice.org</entry>
+          <entry>Open Office, Open Office Org, Openoffice, Openoffice.org,
+            openoffice, openoffice.org</entry>
+          <entry>noun; only when referring to versions prior to 3.4; spelling
+            according to former project standard; acronym is
+            <emphasis>OOo</emphasis>; see also
+            <emphasis>Apache OpenOffice</emphasis>
+          </entry>
         </row>
         <row>
           <entry>openSUSE</entry>
