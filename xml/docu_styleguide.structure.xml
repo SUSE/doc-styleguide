@@ -1248,7 +1248,7 @@ id="tab.install.sources"</screen>
         (<emphasis>-ing</emphasis>). Use sentence-style capitalization for
         index terms.
       </para>
-      <para>If an entry has six or more page references, try to subsume them
+      <para>If an entry has six or more page references, subsume them
         as subentries under a single entry. If an entry has only a single
         subentry, consider deleting the subentry.
       </para>
@@ -1367,7 +1367,7 @@ id="tab.install.sources"</screen>
         </listitem>
       </itemizedlist>
       <para>Never nest more than three lists within each other. In such cases,
-        try to restructure the information using a combination of
+        restructure the information using a combination of
         lists and running texts.
       </para>
       <para>To be able to reference untitled lists, use the
