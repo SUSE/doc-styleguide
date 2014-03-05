@@ -560,6 +560,13 @@
           <entry>adjective</entry>
         </row>
         <row>
+          <entry>HTML page</entry>
+          <entry>HTML document, HTML Web page, HTML web page</entry>
+          <entry>noun; when referring to a local file; see also
+            <emphasis>Web page</emphasis>
+          </entry>
+        </row>
+        <row>
           <entry>HTTP</entry>
           <entry>H.T.T.P., Http, http</entry>
           <entry>noun</entry>
@@ -658,12 +665,16 @@
         <row>
           <entry>K Desktop Environment</entry>
           <entry>Kool Desktop Environment</entry>
-          <entry>noun</entry>
+          <entry>noun; spelling according to project standard; acronym is
+            <emphasis>KDE</emphasis>
+          </entry>
         </row>
         <row>
           <entry>KDE</entry>
           <entry>KDE Desktop Environment, K.D.E., Kde, kde</entry>
-          <entry>noun</entry>
+          <entry>noun; spelling according to project standard; acronym for
+            <emphasis>K Desktop Environment</emphasis>
+          </entry>
         </row>
         <row>
           <entry>Kdump</entry>
@@ -1011,7 +1022,8 @@
           <entry>PXE boot</entry>
           <entry>PXE Boot</entry>
           <entry>noun only; as a verb, use
-            <quote>(to) boot using/via PXE</quote> instead
+            <quote>(to) boot using PXE</quote> or
+            <quote>(to) boot via PXE</quote> instead
           </entry>
         </row>
         <row>
@@ -1381,8 +1393,10 @@
         </row>
         <row>
           <entry>Web page</entry>
-          <entry>Web-page, Webpage</entry>
-          <entry>noun</entry>
+          <entry>HTML Web page, Web-page, Webpage</entry>
+          <entry>noun; when referring to page on the internet; see also
+            <emphasis>HTML page</emphasis>
+          </entry>
         </row>
         <row>
           <entry>Web server</entry>
