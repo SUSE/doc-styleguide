@@ -445,12 +445,12 @@
         <row>
           <entry>file name</entry>
           <entry>file-name, filename</entry>
-          <entry>one word</entry>
+          <entry>noun</entry>
         </row>
         <row>
           <entry>file server</entry>
           <entry>file-server, fileserver</entry>
-          <entry>two words</entry>
+          <entry>noun</entry>
         </row>
         <row>
           <entry>file system</entry>
@@ -470,7 +470,7 @@
         <row>
           <entry>framebuffer</entry>
           <entry>frame buffer, frame-buffer</entry>
-          <entry>one word</entry>
+          <entry>noun</entry>
         </row>
         <row>
           <entry>front-end</entry>
@@ -677,7 +677,7 @@
         <row>
           <entry>key combination</entry>
           <entry>key accelerator, keyboard accelerator, key combo,
-            keyboard combo, key combination, keyboard shortcut,
+            keyboard combo, keyboard combination, keyboard shortcut,
             key shortcut
           </entry>
           <entry>noun</entry>
@@ -807,7 +807,7 @@
         <row>
           <entry>metadata</entry>
           <entry>meta data, meta-data, metadatas</entry>
-          <entry>one word</entry>
+          <entry>noun</entry>
         </row>
         <row>
           <entry>(to) middle-click sth.</entry>
@@ -1274,7 +1274,7 @@
         <row>
           <entry>toolbar</entry>
           <entry>tool bar, tool-bar</entry>
-          <entry>one word</entry>
+          <entry>noun</entry>
         </row>
         <row>
           <entry>tooltip</entry>
