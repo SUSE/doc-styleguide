@@ -1104,6 +1104,14 @@
           <entry>noun</entry>
         </row>
         <row>
+          <entry>(to) save sth.</entry>
+          <entry>(to) store sth., (to) write sth. out</entry>
+          <entry>verb; when saving or overwriting a file from a GUI program or
+            via a parameter of a command line program; see also
+            <emphasis>(to) write sth.</emphasis>.
+          </entry>
+        </row>
+        <row>
           <entry>SCSI</entry>
           <entry>S.C.S.I., Scsi, scsi</entry>
           <entry>noun</entry>
@@ -1458,6 +1466,15 @@
           <entry>wild card</entry>
           <entry>joker [Germanism], wild-card, wildcard</entry>
           <entry>noun</entry>
+        </row>
+        <row>
+          <entry>(to) write sth.</entry>
+          <entry>(to) pipe sth. [Unix jargon],
+            (to) write sth. out</entry>
+          <entry>verb; when saving the command line output of a program as a
+            file using <literal>&gt;</literal> or <literal>&gt;&gt;</literal>;
+            see also <emphasis>(to) save sth.</emphasis>.
+          </entry>
         </row>
         <row>
           <entry>X Window System</entry>
