@@ -861,6 +861,11 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
             </para>
           </listitem>
           <listitem>
+            <para>Add screenshots from before an action has been taken directly
+              after the textual description of the action.
+            </para>
+          </listitem>
+          <listitem>
             <para>Make sure screenshots focus on what they are supposed to
               illustrate. When documenting application windows, create a
               screenshot of the window only. When documenting web applications,
