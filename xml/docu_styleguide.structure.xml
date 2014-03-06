@@ -1235,29 +1235,29 @@ id="tab.install.sources"</screen>
         When more than five paragraphs belong to a topic, use a page range.
         Nest index terms up to two levels deep.
       </para>
-      <para>When indexing, look for information a user is likely to be trying to
-        find. Adapt breadth and depth of included index terms for a given
-        topic to the weight it has within the manual. Never index
-        <quote>For More Information</quote> sections, abstracts,
-        or commands that only appear as means to a different end.
-      </para>
-      <para>Be consistent in the terms you index. However,
-        consider that users might not have the exact same terms in mind as you
+      <para>Index information users are likely to be looking for. Consider that
+        users might not have the exact same terms in mind as you
         do, especially when it comes to highly technical words or brands.
-        Write nouns in the plural. Write verbs in a gerund form
-        (<emphasis>-ing</emphasis>). Use sentence-style capitalization for
-        index terms.
+        Adapt breadth and depth of included index terms for a given
+        topic to the weight it has within the manual. Do not index
+        <quote>For More Information</quote> sections, abstracts,
+        or passing mentions of items.
       </para>
-      <para>If an entry has six or more page references, subsume them
-        as subentries under a single entry. If an entry has only a single
-        subentry, consider deleting the subentry.
+      <para>Be consistent in the terms you index. Write nouns in the plural.
+        Write verbs in the gerund (<emphasis>-ing</emphasis> form).
+        Use sentence-style capitalization.
       </para>
-      <para>Check for inconsistencies that result in multiple items in
-        the index. Check all <emphasis>see</emphasis> and
+      <para>If an entry has six or more page references, create more
+        specific subentries. If an entry only has a single
+        subentry, delete the subentry.
+      </para>
+      <para>Check for spelling errors and inconsistencies that result in
+        multiple items in the index. Check all <emphasis>see</emphasis> and
         <emphasis>see also</emphasis> references for consistency.
-        Items should not have both a page and a
-        <emphasis>see</emphasis> reference. Where possible, avoid using page
-        references and <emphasis>see also</emphasis> together.
+        Do no create index entries that have both a page and a
+        <emphasis>see</emphasis> reference. Avoid creating index entries that
+        have both a page references and a <emphasis>see also</emphasis>
+        reference.
       </para>
       <para><sgmltag class="emptytag">indexterm</sgmltag> elements mark
         text passages that should be referenced in an
@@ -1328,8 +1328,7 @@ id="tab.install.sources"</screen>
           </para>
         </listitem>
       </itemizedlist>
-      <para>Consider the following general rules when creating or editing list
-        environments:
+      <para>Follow these rules when creating or editing lists:
       </para>
       <itemizedlist>
         <listitem>
