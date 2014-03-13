@@ -18,10 +18,10 @@
         <row>
           <entry>Accepted</entry>
           <entry>Rejected [Reason]</entry>
-          <entry>Usage Guidelines</entry>
+          <entry>Part of Speech; Usage Guideline/Definition</entry>
         </row>
       </thead>
-      <!-- Sorting (pseudo-regex): (?<=((to)|The))\.-–+\/[0-9][A-Z][a-z] -->
+      <!-- Sorting (pseudo-regex): (?<=((to)|The))\.-–+\/[0-9][A-Za-z] -->
       <tbody>
         <row>
           <entry>32-bit</entry>
@@ -342,6 +342,13 @@
           <entry>(to) deblock sth., (to) uncheck sth., (to) untick sth.
           </entry>
           <entry>verb; when referring to check boxes</entry>
+        </row>
+        <row>
+          <entry>delta RPM</entry>
+          <entry>delta-RPM, deltarpm</entry>
+          <entry>noun; RPM package that only includes files that changed between
+            a previous and the current version of the package
+          </entry>
         </row>
         <row>
           <entry>(to) deselect sth.</entry>
