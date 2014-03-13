@@ -1457,9 +1457,12 @@
         </row>
         <row>
           <entry>text box</entry>
-          <entry>entry box, entry field, input box, input field, text field
+          <entry>entry area, entry box, entry field, input area, input box,
+            input field, text area, text field
           </entry>
-          <entry>noun; GUI element that text can be typed into</entry>
+          <entry>noun; GUI element that text can be typed into with one or
+            more lines
+          </entry>
         </row>
         <row>
           <entry>(to) terminate sth.</entry>
