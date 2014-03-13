@@ -477,9 +477,9 @@
         <row>
           <entry>Ext3</entry>
           <entry>EXT3, EXT 3, Ext 3, Ext-3, ext 3, ext-3, ext3</entry>
-          <entry>noun; use this capitalization for all version of the Ext
-            file system; intentionally inconsistent with project standard
-            to emphasize that this is a proper name</entry>
+          <entry>noun; use this capitalization for all versions of the Ext
+            file system standard; intentionally inconsistent with project
+            standard to emphasize that this is a proper name</entry>
         </row>
         <row>
           <entry>Ext4</entry>
@@ -557,18 +557,16 @@
         </row>
         <row>
           <entry>graphical user interface</entry>
-          <entry>Graphical User Interface, graphical UI</entry>
+          <entry>Graphical User Interface</entry>
           <entry>noun; acronym for
             <emphasis>graphical user interface</emphasis>
-            <remark>sknorr, 2013-09-16: Not completely sure about rejecting
-              graphical UI
+            <remark>sknorr, 2013-09-16: Not completely sure about graphical UI
             </remark>
           </entry>
         </row>
         <row>
           <entry>GUI</entry>
-          <entry>G.U.I., GUI interface, GUI user interface, Gui,
-            graphical UI
+          <entry>G.U.I., GUI interface, GUI user interface, Gui
           </entry>
           <entry>noun; acronym for
             <emphasis>graphical user interface</emphasis>
@@ -1053,7 +1051,7 @@
         <row>
           <entry/>
           <entry>please</entry>
-          <entry>adverb</entry>
+          <entry>adverb; avoid</entry>
         </row>
         <row>
           <entry>plug-in</entry>
@@ -1141,10 +1139,15 @@
           </entry>
         </row>
         <row>
+          <entry>RAM</entry>
+          <entry>R.A.M., RAM memory, Ram, ram</entry>
+          <entry>noun; acronym for <emphasis>random access memory</emphasis>
+          </entry>
+        </row>
+        <row>
           <entry>RAM disk</entry>
-          <entry>R.A.M. disk, RAM drive, RAM-disk, RAM-drive, RAMdisk,
-            RAM-drive, Ram disk, Ram drive, Ram-disk, Ram-drive, Ramdisk,
-            Ramdrive
+          <entry>RAM drive, RAM-disk, RAM-drive, RAMdisk,
+            RAM-drive, Ramdisk, Ramdrive
           </entry>
           <entry>noun; either treating RAM as a hard disk or a
             type of solid-state storage
@@ -1430,7 +1433,9 @@
         <row>
           <entry>submenu</entry>
           <entry>sub menu, sub-menu</entry>
-          <entry>noun</entry>
+          <entry>noun; <emphasis>menu</emphasis> that is nested inside another
+            menu
+          </entry>
         </row>
         <row>
           <entry>TAR archive</entry>
