@@ -152,6 +152,12 @@
           <entry>noun</entry>
         </row>
         <row>
+          <entry>Bluetooth card</entry>
+          <entry>wireless card [card has wires attached to it]</entry>
+          <entry>noun; card that enables Bluetooth connections.
+          </entry>
+        </row>
+        <row>
           <entry>boot disk</entry>
           <entry>boot-disk, bootdisk</entry>
           <entry>noun; disk for starting the system</entry>
@@ -172,7 +178,7 @@
           <entry>B.T.R.F.S., Better FS, BetterFS, Butter FS, ButterFS,
             btrfs
           </entry>
-          <entry>noun; not an acronym
+          <entry>noun; not an acronym.
             <remark>sknorr, 2013-09-18: Really, though? Origin is
               "B-tree File System"?
             </remark>
@@ -231,7 +237,7 @@
           <entry>may</entry>
           <entry>verb; use <emphasis>can</emphasis> to express an ability,
             only use <emphasis>may</emphasis> to express permissions
-            sought/given
+            sought/given.
           </entry>
         </row>
         <row>
@@ -280,11 +286,14 @@
         </row>
         <row>
           <entry>(to) close sth.</entry>
-          <entry>(to) abort sth. [negative], (to) exit sth.,
-            (to) terminate sth. [negative]
+          <entry>(to) abort sth. [negative], (to) exit sth., (to) kill sth.,
+            (to) terminate sth.
           </entry>
-          <entry>verb; when referring to closing a window or quitting
-            a GUI application
+          <entry>verb; when referring to closing a window; always use
+            <emphasis>quit</emphasis> when
+            ending an application normally; always use
+            <emphasis>terminate</emphasis> when
+            ending an application forcefully.
           </entry>
         </row>
         <row>
@@ -316,31 +325,31 @@
             Control-center, control-center, Controlcenter, controlcenter
           </entry>
           <entry>noun; generic term, as in:
-            <emphasis>the YaST control center</emphasis> or
-            <emphasis>the KDE control center</emphasis></entry>
+            <quote>the YaST control center</quote> or
+            <quote>the KDE control center</quote>
+          </entry>
         </row>
         <row>
           <entry>could</entry>
           <entry>may</entry>
           <entry>verb; use <emphasis>could</emphasis> to express a
             possibility, only use <emphasis>may</emphasis> to express
-            permissions sought/given
+            permissions sought/given.
           </entry>
         </row>
         <row>
           <entry>(to) deactivate sth.</entry>
           <entry>(to) deblock sth., (to) uncheck sth., (to) untick sth.
           </entry>
-          <entry>verb; when referring to check boxes
-          </entry>
+          <entry>verb; when referring to check boxes</entry>
         </row>
         <row>
           <entry>(to) deselect sth.</entry>
           <entry>(to) de-select sth., (to) remove the selection from sth.,
             (to) un-select sth., (to) unselect sth.
           </entry>
-          <entry>verb; when referring to text, for check boxes, use
-            <emphasis>(to) deactivate sth.</emphasis>
+          <entry>verb; when referring to text or list entries; for check boxes,
+            use <emphasis>deactivate</emphasis>
           </entry>
         </row>
         <row>
@@ -356,7 +365,7 @@
         <row>
           <entry>dialog</entry>
           <entry>dialog box, dialog window, dialogue [British], screen</entry>
-          <entry>noun
+          <entry>noun.
             <remark>sknorr, 2013-09-17: Novell use dialog box, apparently, but
               that sounds rather colloquial. And then, a dialog doesn't
               have to be in a box/window, as with Web applications
@@ -384,6 +393,16 @@
           <entry>verb</entry>
         </row>
         <row>
+          <entry>drop-down box</entry>
+          <entry>combination box, combo box, combobox, dropdown, drop-down,
+            drop-down menu, drop-down list box
+          </entry>
+          <entry>noun; GUI element with a list that can opened by
+            clicking on it, whether combined with a text box or not; if list
+            entries start actions, use <emphasis>menu</emphasis> instead
+          </entry>
+        </row>
+        <row>
           <entry>DVD</entry>
           <entry>D.V.D., Dvd</entry>
           <entry>noun; acronym for
@@ -401,6 +420,13 @@
           <entry>noun</entry>
         </row>
         <row>
+          <entry>Ethernet card</entry>
+          <entry>wired card [sounds as if wires attached to the card are meant]
+          </entry>
+          <entry>noun; card that connects to networks via Ethernet.
+          </entry>
+        </row>
+        <row>
           <entry>e-book</entry>
           <entry>E-book, E-book, Ebook, electronic book, ebook</entry>
           <entry>noun</entry>
@@ -409,7 +435,7 @@
           <entry>EPUB</entry>
           <entry>E-PUB, e-PUB, e-Pub, EPub, Epub, ePUB, ePub</entry>
           <entry>noun; project logo uses <quote>ePub</quote>, but the
-              project standard is <quote>EPUB</quote> anyway
+              project standard is <quote>EPUB</quote>
           </entry>
         </row>
         <row>
@@ -420,7 +446,7 @@
         <row>
           <entry/>
           <entry>easy [filler], easily</entry>
-          <entry>adjective, adverb; avoid
+          <entry>adjective, adverb; avoid.
             <remark>sknorr, 2013-09-16: Should this stand?</remark>
           </entry>
         </row>
@@ -432,10 +458,19 @@
           </entry>
         </row>
         <row>
+          <entry>(to) enter sth. (into sth.)</entry>
+          <entry/>
+          <entry>verb; only when a value needs to be specified and
+            <keycap function="enter"/> should be pressed afterwards; where
+            possible, replace by <emphasis>specify</emphasis> or
+            <emphasis>provide</emphasis>
+          </entry>
+        </row>
+        <row>
           <entry>etc.</entry>
           <entry/>
           <entry>abbreviation; avoid; do not use together with
-            <quote>for example</quote> or <quote>such as.</quote>; always
+            <quote>for example</quote> and <quote>such as</quote>; always
               precede with a comma.
           </entry>
         </row>
@@ -452,14 +487,9 @@
           <entry>noun</entry>
         </row>
         <row>
-          <entry/>
-          <entry>(to) facilitate sth.</entry>
-          <entry>avoid
-            <remark>sknorr, 2013-09-16: Reasonable alternatives,
-              "ease," "simplify"? Or was this rejected for tending to be
-              filler/subjective?
-            </remark>
-          </entry>
+          <entry>(to) simplify sth.</entry>
+          <entry>(to) ease sth., (to) facilitate sth.</entry>
+          <entry>verb; avoid</entry>
         </row>
         <row>
           <entry>file name</entry>
@@ -502,11 +532,12 @@
           <entry>noun</entry>
         </row>
         <row>
-          <entry>The GIMP</entry>
-          <entry>the G.I.M.P., the GIMP, The Gimp, the Gimp, the gimp
-          </entry>
+          <entry>GIMP</entry>
+          <entry>G.I.M.P., Gimp, gimp</entry>
           <entry>noun; spelling as per project standard; acronym for
-            <emphasis>GNU Image Manipulation Program</emphasis>
+            <emphasis>GNU Image Manipulation Program</emphasis>; if
+            <quote>the</quote> occurs directly before
+            <emphasis>GIMP</emphasis>, capitalize it: <quote>The</quote>
           </entry>
         </row>
         <row>
@@ -514,7 +545,7 @@
           <entry>G.N.O.M.E., GNU Networked Object Model Environment,
             Gnome
           </entry>
-          <entry>noun; spelling as per project standard; not an acronym
+          <entry>noun; spelling as per project standard; not an acronym.
           </entry>
         </row>
         <row>
@@ -527,7 +558,8 @@
         <row>
           <entry>graphical user interface</entry>
           <entry>Graphical User Interface, graphical UI</entry>
-          <entry>noun; acronym for <emphasis>graphical user interface</emphasis>
+          <entry>noun; acronym for
+            <emphasis>graphical user interface</emphasis>
             <remark>sknorr, 2013-09-16: Not completely sure about rejecting
               graphical UI
             </remark>
@@ -557,7 +589,7 @@
         <row>
           <entry>home page</entry>
           <entry>home-page, homepage</entry>
-          <entry>noun
+          <entry>noun.
             <remark>sknorr, 2013-09-16: I can't accept the accepted spelling.
             </remark>
           </entry>
@@ -623,7 +655,7 @@
         <row>
           <entry>infrared</entry>
           <entry>infra red, infra-red</entry>
-          <entry>noun or adjective
+          <entry>noun or adjective.
             <remark>sknorr, 2013-09-16: Really a noun?</remark>
           </entry>
         </row>
@@ -669,13 +701,15 @@
           <entry>IPv4</entry>
           <entry>IP v4, IPV4, Ipv4</entry>
           <entry>noun; acronym for <emphasis>internet protocol version
-            four</emphasis></entry>
+            four</emphasis>
+          </entry>
         </row>
         <row>
           <entry>IPv6</entry>
           <entry>IP v6, IPV6, Ipv6</entry>
           <entry>noun; acronym for <emphasis>internet protocol version
-            six</emphasis></entry>
+            six</emphasis>
+          </entry>
         </row>
         <row>
           <entry>journaling</entry>
@@ -748,8 +782,8 @@
         <row>
           <entry>LibreOffice</entry>
           <entry>Libre Office, Libreoffice, LibO, LO, libreoffice</entry>
-          <entry>noun; spelling according to project standard; no acronym
-            available
+          <entry>noun; spelling according to project standard; do not create
+            acronyms of <emphasis>LibreOffice</emphasis>
           </entry>
         </row>
         <row>
@@ -761,6 +795,18 @@
           <entry>(to) license sth.</entry>
           <entry>(to) licen<emphasis>c</emphasis>e sth. [British]</entry>
           <entry>verb</entry>
+        </row>
+        <row>
+          <entry>Linux</entry>
+          <entry>LINUX, linux</entry>
+          <entry>noun; spelling according to project standard</entry>
+        </row>
+        <row>
+          <entry>list box</entry>
+          <entry>list, list field</entry>
+          <entry>noun; GUI element that is a list showing multiple elements even
+            before interacting with it
+          </entry>
         </row>
         <row>
           <entry>local host</entry>
@@ -862,6 +908,13 @@
           <entry>noun; Format for e-mail storage</entry>
         </row>
         <row>
+          <entry>menu</entry>
+          <entry>drop-down menu</entry>
+          <entry>noun; GUI element that is a list whose entries each start an
+            action; see also <emphasis>drop-down box</emphasis>
+          </entry>
+        </row>
+        <row>
           <entry>metadata</entry>
           <entry>meta data, meta-data, metadatas</entry>
           <entry>noun</entry>
@@ -928,15 +981,15 @@
         <row>
           <entry>NFS</entry>
           <entry>N.F.S., NFS file system, Nfs</entry>
-          <entry>noun; often: <emphasis>NFS client</emphasis>,
-            <emphasis>NFS server</emphasis>
+          <entry>noun; often: <quote>NFS client</quote>,
+            <quote>NFS server</quote>
           </entry>
         </row>
         <row>
           <entry>NIS</entry>
           <entry>N.I.S., NIS information service, NIS service, Nis</entry>
-          <entry>noun; often: <emphasis>NIS client</emphasis>,
-            <emphasis>NIS server</emphasis>
+          <entry>noun; often: <quote>NIS client</quote>,
+            <quote>NIS server</quote>
           </entry>
         </row>
         <row>
@@ -988,7 +1041,7 @@
         <row>
           <entry>path name</entry>
           <entry>path-name, pathname</entry>
-          <entry>noun; avoid, check if <quote>path</quote> can be used
+          <entry>noun; avoid, check if <emphasis>path</emphasis> can be used
             instead
           </entry>
         </row>
@@ -1079,9 +1132,12 @@
         </row>
         <row>
           <entry>(to) quit sth.</entry>
-          <entry>(to) abort sth., (to) exit sth., (to) terminate sth.</entry>
+          <entry>(to) abort sth., (to) exit sth., (to) kill sth.,
+            (to) terminate sth.
+          </entry>
           <entry>noun; quitting an application; always use
-            <quote>close</quote> when referring to windows
+            <quote>close</quote> when referring to windows; always use
+            <quote>terminate</quote> when ending an application forcefully
           </entry>
         </row>
         <row>
@@ -1142,7 +1198,8 @@
         <row>
           <entry>RPM</entry>
           <entry>R.P.M., Rpm, rpm [different meaning]</entry>
-          <entry>noun; acronym for <emphasis>RPM Package Manager</emphasis></entry>
+          <entry>noun; acronym for <emphasis>RPM Package Manager</emphasis>
+          </entry>
         </row>
         <row>
           <entry>runlevel</entry>
@@ -1159,7 +1216,7 @@
           <entry>(to) store sth., (to) write sth. out</entry>
           <entry>verb; when saving or overwriting a file from a GUI program or
             via a parameter of a command line program; see also
-            <emphasis>(to) write sth.</emphasis>.
+            <emphasis>write</emphasis>
           </entry>
         </row>
         <row>
@@ -1200,6 +1257,70 @@
           <entry>noun</entry>
         </row>
         <row>
+          <entry>screenshot</entry>
+          <entry>screen shot, screen-shot</entry>
+          <entry>noun</entry>
+        </row>
+        <row>
+          <entry>screen saver</entry>
+          <entry>screen-saver, screensaver</entry>
+          <entry>noun</entry>
+        </row>
+        <row>
+          <entry>scrollbar</entry>
+          <entry>scroll-bar, scroll bar, scroll-box, scroll box, scrollbox,
+            scroller, slide bar, slide-bar, slidebar
+          </entry>
+          <entry>noun; GUI element that is used change which portion of a
+            screen area is visible
+          </entry>
+        </row>
+        <row>
+          <entry>(to) select sth.</entry>
+          <entry>(to) block sth., (to) choose sth., (to) highlight sth.
+          </entry>
+          <entry>verb; when referring to text or list entries; for check boxes,
+            use <emphasis>activate</emphasis>
+          </entry>
+        </row>
+        <row>
+          <entry>selected</entry>
+          <entry>blocked, chosen, highlighted</entry>
+          <entry>adjective; selection state of text or list entry; opposite of
+            <emphasis>deselected</emphasis>
+          </entry>
+        </row>
+        <row>
+          <entry/>
+          <entry>self-evident [insulting], self-evidently</entry>
+          <entry>adjective, adverb</entry>
+        </row>
+        <row>
+          <entry>(to) set sth. up</entry>
+          <entry>(to) set-up sth., (to) setup sth.</entry>
+          <entry>verb</entry>
+        </row>
+        <row>
+          <entry>setup</entry>
+          <entry>set up, set-up</entry>
+          <entry>adjective or noun</entry>
+        </row>
+        <row>
+          <entry>(to) shut sth. down</entry>
+          <entry>(to) shut-down sth., (to) shutdown sth.</entry>
+          <entry>verb</entry>
+        </row>
+        <row>
+          <entry>shutdown</entry>
+          <entry>shut down, shut-down</entry>
+          <entry>adjective or noun</entry>
+        </row>
+        <row>
+          <entry/>
+          <entry>simple [filler], simply</entry>
+          <entry>adjective, adverb; avoid</entry>
+        </row>
+        <row>
           <entry>SLE</entry>
           <entry>S.L.E., SLE Enterprise, SLE Linux, Sle, sle</entry>
           <entry>noun; avoid; acronym for
@@ -1223,6 +1344,44 @@
           <entry>noun; avoid; acronym for
             <emphasis>SUSE Linux Enterprise Server</emphasis>
           </entry>
+        </row>
+        <row>
+          <entry>slider</entry>
+          <entry/>
+          <entry>noun; GUI element that is used manipulate values that have
+            an upper and a lower bound
+            <remark>sknorr, 2013-09-17: A little complicated</remark>
+          </entry>
+        </row>
+        <row>
+          <entry>spec file</entry>
+          <entry>Spec file, Spec-file, Specfile, spec-file, specfile</entry>
+          <entry>noun</entry>
+        </row>
+        <row>
+          <entry>stand-alone</entry>
+          <entry>stand alone, standalone</entry>
+          <entry/>
+        </row>
+        <row>
+          <entry>(to) start sth. up</entry>
+          <entry>(to) start-up sth., (to) startup sth.</entry>
+          <entry>verb</entry>
+        </row>
+        <row>
+          <entry>start-up</entry>
+          <entry>start up, startup</entry>
+          <entry>noun</entry>
+        </row>
+        <row>
+          <entry>statusbar</entry>
+          <entry>status bar, status-bar</entry>
+          <entry>two words</entry>
+        </row>
+        <row>
+          <entry/>
+          <entry>stuff, stuffs [colloquial]</entry>
+          <entry>avoid</entry>
         </row>
         <row>
           <entry>SSH</entry>
@@ -1274,100 +1433,6 @@
           <entry>noun</entry>
         </row>
         <row>
-          <entry>screenshot</entry>
-          <entry>screen shot, screen-shot</entry>
-          <entry>noun</entry>
-        </row>
-        <row>
-          <entry>screen saver</entry>
-          <entry>screen-saver, screensaver</entry>
-          <entry>noun</entry>
-        </row>
-        <row>
-          <entry>scrollbar</entry>
-          <entry>scroll-bar, scroll bar, scroll-box, scroll box, scrollbox,
-            scroller, slide bar, slide-bar, slidebar
-          </entry>
-          <entry>noun; GUI element that is used change which portion of a
-            screen area is visible
-          </entry>
-        </row>
-        <row>
-          <entry>(to) select sth.</entry>
-          <entry>(to) block sth., (to) choose sth., (to) highlight sth.
-          </entry>
-          <entry>verb; when referring to text, for check boxes, use
-            <emphasis>(to) activate sth.</emphasis></entry>
-        </row>
-        <row>
-          <entry/>
-          <entry>self-evident [insulting], self-evidently</entry>
-          <entry>adjective, adverb</entry>
-        </row>
-        <row>
-          <entry>(to) set sth. up</entry>
-          <entry>(to) set-up sth., (to) setup sth.</entry>
-          <entry>verb</entry>
-        </row>
-        <row>
-          <entry>setup</entry>
-          <entry>set up, set-up</entry>
-          <entry>adjective or noun</entry>
-        </row>
-        <row>
-          <entry>(to) shut sth. down</entry>
-          <entry>(to) shut-down sth., (to) shutdown sth.</entry>
-          <entry>verb</entry>
-        </row>
-        <row>
-          <entry>shutdown</entry>
-          <entry>shut down, shut-down</entry>
-          <entry>adjective or noun</entry>
-        </row>
-        <row>
-          <entry/>
-          <entry>simple [filler], simply</entry>
-          <entry>adjective, adverb; avoid</entry>
-        </row>
-        <row>
-          <entry>slider</entry>
-          <entry/>
-          <entry>noun; GUI element that is used manipulate values that have
-            an upper and a lower bound
-            <remark>sknorr, 2013-09-17: A little complicated</remark>
-          </entry>
-        </row>
-        <row>
-          <entry>spec file</entry>
-          <entry>Spec file, Spec-file, Specfile, spec-file, specfile</entry>
-          <entry>noun</entry>
-        </row>
-        <row>
-          <entry>stand-alone</entry>
-          <entry>stand alone, standalone</entry>
-          <entry/>
-        </row>
-        <row>
-          <entry>(to) start sth. up</entry>
-          <entry>(to) start-up sth., (to) startup sth.</entry>
-          <entry>verb</entry>
-        </row>
-        <row>
-          <entry>start-up</entry>
-          <entry>start up, startup</entry>
-          <entry>noun</entry>
-        </row>
-        <row>
-          <entry>statusbar</entry>
-          <entry>status bar, status-bar</entry>
-          <entry>two words</entry>
-        </row>
-        <row>
-          <entry/>
-          <entry>stuff, stuffs [colloquial]</entry>
-          <entry>avoid</entry>
-        </row>
-        <row>
           <entry>TAR archive</entry>
           <entry>TAR ball [Unix jargon], tar ball, tar-ball, tarball
           </entry>
@@ -1377,6 +1442,22 @@
           <entry>taskbar</entry>
           <entry>task bar, task-bar</entry>
           <entry>noun</entry>
+        </row>
+        <row>
+          <entry>text box</entry>
+          <entry>entry box, entry field, input box, input field, text field
+          </entry>
+          <entry>noun; GUI element that text can be typed into</entry>
+        </row>
+        <row>
+          <entry>(to) terminate sth.</entry>
+          <entry>(to) abort sth., (to) close sth., (to) exit sth.,
+            (to) kill sth., (to) quit sth.
+          </entry>
+          <entry>noun; ending an application forcefully; always use
+            <emphasis>close</emphasis> when referring to windows; always use
+            <emphasis>quit</emphasis> when ending an application normally
+          </entry>
         </row>
         <row>
           <entry>TFTP</entry>
@@ -1404,17 +1485,8 @@
           <entry>noun</entry>
         </row>
         <row>
-          <entry>(to) enter sth. (into sth.)</entry>
-          <entry/>
-          <entry>verb; only when a value needs to be specified and
-            <keycap function="enter"/> should be pressed afterwards; where
-            possible, replace by <emphasis>specify</emphasis> or
-            <emphasis>provide</emphasis>
-          </entry>
-        </row>
-        <row>
           <entry>Unix</entry>
-          <entry>UNIX [brand name registered by <emphasis>Open Group</emphasis>],
+          <entry>UNIX [brand name registered by Open Group],
             unix
           </entry>
           <entry>noun; use this capitalization for all general references
@@ -1435,7 +1507,9 @@
         <row>
           <entry>unselected</entry>
           <entry>deselected, de-selected, un-selected</entry>
-          <entry>adjective; selection state</entry>
+          <entry>adjective; selection state of text or list entry; opposite of
+            <emphasis>selected</emphasis>
+          </entry>
         </row>
         <row>
           <entry>usage</entry>
@@ -1472,7 +1546,7 @@
           <entry>VLAN</entry>
           <entry>V.L.A.N., Vlan, vlan</entry>
           <entry>noun; acronym for
-            <quote>Virtualized Local Area Network</quote>
+            <emphasis>Virtualized Local Area Network</emphasis>
           </entry>
         </row>
         <row>
@@ -1513,7 +1587,7 @@
           <entry>when</entry>
           <entry>once</entry>
           <entry>adverb; use <emphasis>once</emphasis> only in the meaning
-            <quote>one time only</quote>;
+            <quote>one time only</quote>
           </entry>
         </row>
         <row>
@@ -1544,6 +1618,18 @@
           </entry>
         </row>
         <row>
+          <entry>Wi-fi card</entry>
+          <entry>wireless card [card has wires attached to it]</entry>
+          <entry>noun; card that connects to Wi-fi networks.
+          </entry>
+        </row>
+        <row>
+          <entry>Wi-fi/Bluetooth card</entry>
+          <entry>wireless card [card has wires attached to it]</entry>
+          <entry>noun; card that combines a Wi-fi and a Bluetooth card.
+          </entry>
+        </row>
+        <row>
           <entry>wild card</entry>
           <entry>joker [Germanism], wild-card, wildcard</entry>
           <entry>noun</entry>
@@ -1554,7 +1640,7 @@
             (to) write sth. out</entry>
           <entry>verb; when saving the command line output of a program as a
             file using <literal>&gt;</literal> or <literal>&gt;&gt;</literal>;
-            see also <emphasis>(to) save sth.</emphasis>.
+            see also <emphasis>save</emphasis>
           </entry>
         </row>
         <row>
