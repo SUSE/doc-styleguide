@@ -197,8 +197,8 @@
           <varlistentry>
             <term>Books</term>
             <listitem>
-              <para>If possible, any book created by our team has a title entity
-                in case sudden changes are necessary.
+              <para>Title entities should be defined for all SUSE books
+                in case sudden name changes are necessary.
               </para>
             </listitem>
           </varlistentry>
@@ -266,20 +266,23 @@ Kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
     <sect2 id="sec.xinclude">
       <title>XInclude Elements</title>
 
-      <para>XInclude elements help create modular source files.
-        When editing a book, create a new source file for every chapter and
-        then use XInclude elements to
-        reference all chapters in order from a small central file like this:
+      <para>XInclude elements are used to create modular source files that are
+        easier to work with and can be re-used.
+        When editing a book, create a new source file for every chapter. Later,
+        create a new Novdoc file that can serve as the central point. In this
+        file, use XInclude elements to reference all chapters in the correct
+        order:
       </para>
       <screen>&lt;xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gfdl.xml"/&gt;</screen>
-      <para>XInclude elements let you easily add common sections, such as
+      <para>XInclude elements allow adding common sections, such as
         licenses and information on typographical conventions in multiple
         books or articles without having to maintain the text in multiple
-        places. They also ease co-editing documentation with others in a version
-        control system as they reduce the chance of merge conflicts occurring.
+        places. They also simplify co-editing documentation with others in a
+        version control system as they reduce the chance of merge conflicts.
       </para>
-      <para>Files referenced via XIncludes must be valid XML files. This
-        means that they must have a single top-level element. Files that are
+      <para>Files referenced via XIncludes must be well-formed XML files but do
+        not need to be valid DocBook files. This means that they must have a
+        single top-level element. Files that are
         supposed to be referenced multiple times from
         within the same set, book or article must not contain any
         <sgmltag class="attribute">id</sgmltag> attributes.

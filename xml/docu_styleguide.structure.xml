@@ -1869,8 +1869,12 @@ id="tab.install.sources"</screen>
           <para>An introductory phrase establishing the purpose of the
             procedure. If the procedure is otherwise the only element in
             its section, place the introductory phrase before the procedure.
-            If necessary, add any preconditions of the operation after the
-            introductory phrase.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            If there are preconditions or prerequisites, add them as a
+            a second paragraph after the introduction.
           </para>
         </listitem>
         <listitem>
