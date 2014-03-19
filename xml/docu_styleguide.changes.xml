@@ -10,6 +10,40 @@
 
   <!-- Add new versions to the beginning of the list. -->
 
+  <sect1 id="sec.change_2014-02.2">
+    <title>Release 2014-02.2</title>
+
+    <para>Version 2014-02.2 was a minor update focused on adding terminology and
+      fixing small errors. Version 2014-02.2 was released on ?.
+    </para>
+    <itemizedlist>
+      <listitem>
+        <para>Improved clarity and fixed typos.</para>
+      </listitem>
+      <listitem>
+        <para>Updated terminology table in <xref linkend="app.terminology"/>.
+        </para>
+        <itemizedlist>
+          <listitem>
+            <para>Changed accepted spellings from
+              <emphasis>Wi-fi</emphasis> to <emphasis>Wi-Fi</emphasis>,
+              <emphasis>Wi-fi card</emphasis> to <emphasis>Wi-Fi card</emphasis>,
+              and <emphasis>Wi-fi/Bluetooth card</emphasis> to
+              <emphasis>Wi-Fi/Bluetooth card</emphasis> to reflect correct
+              spelling of the brand.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Corrected rejected entries of <emphasis>AOO</emphasis>.</para>
+          </listitem>
+          <listitem>
+            <para>Improved alphabetical sorting.</para>
+          </listitem>
+        </itemizedlist>
+      </listitem>
+    </itemizedlist>
+  </sect1>
+
   <sect1 id="sec.change_2014-02.1">
     <title>Release 2014-02.1</title>
 
@@ -49,8 +83,8 @@
               <emphasis>please</emphasis>, <emphasis>delta RPM</emphasis>,
               <emphasis>(to) save sth.</emphasis> (with sub-entries),
               <emphasis>selected</emphasis>, <emphasis>terminate</emphasis>,
-              <emphasis>text box</emphasis>, <emphasis>Wi-Fi card</emphasis>,
-              <emphasis>Wi-Fi/Bluetooth card</emphasis>,
+              <emphasis>text box</emphasis>, <emphasis>Wi-fi card</emphasis>,
+              <emphasis>Wi-fi/Bluetooth card</emphasis>,
               <emphasis>(to) write sth.</emphasis> and
               <emphasis>video DVD</emphasis>.
             </para>
@@ -281,7 +315,7 @@
               <emphasis>usage</emphasis>
               <emphasis>Unix</emphasis>, <emphasis>uppercase</emphasis>,
               <emphasis>when</emphasis>, <emphasis>want sth.</emphasis>,
-              <emphasis>Wi-Fi</emphasis>*, and
+              <emphasis>Wi-fi</emphasis>*, and
               <emphasis>YaST</emphasis>.
             </para>
             <para>(An * marks potentially interesting changes.)</para>
