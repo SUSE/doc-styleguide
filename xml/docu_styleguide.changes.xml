@@ -21,6 +21,14 @@
         <para>Improved clarity and fixed typos.</para>
       </listitem>
       <listitem>
+        <para>Moved <xref linkend="sec.heading"/> from
+          <xref linkend="sec.structure"/> into <xref linkend="sec.language"/>.
+          Added new section <xref linkend="sec.outline_level"/> with
+          the information on structure that the former
+          <emphasis>Headings</emphasis> section contained.
+        </para>
+      </listitem>
+      <listitem>
         <para>Updated terminology table in <xref linkend="app.terminology"/>.
         </para>
         <itemizedlist>
@@ -31,6 +39,7 @@
               and <emphasis>Wi-fi/Bluetooth card</emphasis> to
               <emphasis>Wi-Fi/Bluetooth card</emphasis> to reflect correct
               spelling of the brand.
+              <remark>sknorr, 2014-03-19: Thanks, Tom!</remark>
             </para>
           </listitem>
           <listitem>

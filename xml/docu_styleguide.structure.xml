@@ -954,20 +954,6 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
       </example>
     </sect2>
 
-    <sect2 id="sec.heading">
-      <title>Headings</title>
-      <para>Each level of heading contain have two or more subheadings. Lone
-        subheadings are not allowed. Make headings in a group parallel by using
-        a similar structure for the wording.
-      </para>
-      <para>Keep headings short and simple. Do not use both an acronym and the
-        written-out form in a heading.
-      </para>
-      <para>Provide at least some introductory information between a heading
-        and its subheadings.
-      </para>
-    </sect2>
-
     <sect2 id="sec.id">
       <title>Identifiers</title>
 
@@ -986,7 +972,7 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
           </para>
         </listitem>
         <listitem>
-          <para>Identifiers consist of up to two to three parts. Join these parts
+          <para>Identifiers consist of up to three parts. Join these parts
             with a <literal>.</literal>.</para>
           <orderedlist>
             <listitem>
@@ -1654,158 +1640,158 @@ id="tab.install.sources"</screen>
       </example>
       <table id="tab.keycap">
         <title>Elements Related to <sgmltag class="emptytag">keycap</sgmltag>
-          </title>
-          <tgroup cols="2">
-            <thead>
-              <row>
-                <entry>Element</entry>
-                <entry>Web Link</entry>
-              </row>
-            </thead>
-            <tbody>
-              <row>
-                <entry>
-                  <formalpara>
-                    <title><sgmltag class="emptytag">keycombo</sgmltag></title>
-                    <para>Inline element containing multiple
-                      <sgmltag class="emptytag">keycap</sgmltag> elements that
-                      together make up a keyboard combination.
+        </title>
+        <tgroup cols="2">
+          <thead>
+            <row>
+              <entry>Element</entry>
+              <entry>Web Link</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">keycombo</sgmltag></title>
+                  <para>Inline element containing multiple
+                    <sgmltag class="emptytag">keycap</sgmltag> elements that
+                    together make up a keyboard combination.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/keycombo.html"/>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <formalpara>
+                  <title><sgmltag class="emptytag">keycap</sgmltag>
+                  </title>
+                  <para>Inline element to mark up a single key. Contains
+                    either the key labels text inside it or is self-closing
+                    and has a <sgmltag class="attribute">function</sgmltag>
+                    attribute with one of the following values:
+                  </para>
+                </formalpara>
+                <itemizedlist>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">alt</sgmltag>
                     </para>
-                  </formalpara>
-                </entry>
-                <entry>
-                  <ulink url="http://www.docbook.org/tdg/en/html/keycombo.html"/>
-                </entry>
-              </row>
-              <row>
-                <entry>
-                  <formalpara>
-                    <title><sgmltag class="emptytag">keycap</sgmltag>
-                    </title>
-                    <para>Inline element to mark up a single key. Contains
-                      either the key labels text inside it or is self-closing
-                      and has a <sgmltag class="attribute">function</sgmltag>
-                      attribute with one of the following values:
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">backspace</sgmltag>
                     </para>
-                  </formalpara>
-                  <itemizedlist>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">alt</sgmltag>
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">backspace</sgmltag>
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">command</sgmltag>
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">control</sgmltag>
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">delete</sgmltag>
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">down</sgmltag>
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">end</sgmltag>
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">enter</sgmltag>
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">escape</sgmltag>
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">home</sgmltag>
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">insert</sgmltag>
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">left</sgmltag>
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">meta</sgmltag> (also
-                        known as <keycap>Win</keycap>,
-                        <keycap>Windows</keycap>, or <keycap>Super</keycap>)
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">option</sgmltag> (OS X only)
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">pagedown</sgmltag>
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">pageup</sgmltag>
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">right</sgmltag>
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">shift</sgmltag>
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">space</sgmltag>
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">tab</sgmltag>
-                      </para>
-                    </listitem>
-                    <listitem>
-                      <para>
-                        <sgmltag class="attvalue">up</sgmltag>
-                      </para>
-                    </listitem>
-                  </itemizedlist>
-                </entry>
-                <entry>
-                  <ulink url="http://www.docbook.org/tdg/en/html/keycap.html"/>
-                </entry>
-              </row>
-            </tbody>
-          </tgroup>
-        </table>
-      </sect2>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">command</sgmltag>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">control</sgmltag>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">delete</sgmltag>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">down</sgmltag>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">end</sgmltag>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">enter</sgmltag>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">escape</sgmltag>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">home</sgmltag>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">insert</sgmltag>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">left</sgmltag>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">meta</sgmltag> (also
+                      known as <keycap>Win</keycap>,
+                      <keycap>Windows</keycap>, or <keycap>Super</keycap>)
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">option</sgmltag> (OS X only)
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">pagedown</sgmltag>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">pageup</sgmltag>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">right</sgmltag>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">shift</sgmltag>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">space</sgmltag>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">tab</sgmltag>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      <sgmltag class="attvalue">up</sgmltag>
+                    </para>
+                  </listitem>
+                </itemizedlist>
+              </entry>
+              <entry>
+                <ulink url="http://www.docbook.org/tdg/en/html/keycap.html"/>
+              </entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </table>
+    </sect2>
 
     <sect2 id="sec.other_external">
       <title>References to Other External Resources</title>
@@ -1850,6 +1836,22 @@ id="tab.install.sources"</screen>
       <para>Other types of references to resources are described in
         <xref linkend="sec.cross_reference"/> and
         <xref linkend="sec.link"/>.
+      </para>
+    </sect2>
+
+    <sect2 id="sec.outline_level">
+      <title>Outline Levels</title>
+      <para>Create sections using the <sgmltag class="emptytag">sect1</sgmltag>
+        through <sgmltag class="emptytag">sect5</sgmltag> elements. Avoid
+        outlines that require <sgmltag class="emptytag">sect4</sgmltag> and
+        <sgmltag class="emptytag">sect5</sgmltag> elements. Instead, create
+        a flatter structure in which more elements are visible at a glance.
+      </para>
+      <para>Do not create lone subsections. A lone subsection is a section that
+        is the only subsection of its parent section.
+      </para>
+      <para>For advice on creating headline titles, refer to
+        <xref linkend="sec.heading"/>.
       </para>
     </sect2>
 

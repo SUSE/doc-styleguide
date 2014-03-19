@@ -201,6 +201,20 @@
       </para>
     </sect2>
 
+    <sect2 id="sec.heading">
+      <title>Headings</title>
+      <para>Keep headings short and simple. Do not use both an acronym and the
+        written-out form in a heading. Make sure that headlines in a
+        chapter follow the same pattern.
+      </para>
+      <para>Provide at least some introductory information between a heading
+        and its subheadings.
+      </para>
+      <para>For advice on how to nest sections, refer to
+        <xref linkend="sec.outline_level"/>.
+      </para>
+    </sect2>
+
     <sect2 id="sec.number">
       <title>Numbers and Measurements</title>
 
