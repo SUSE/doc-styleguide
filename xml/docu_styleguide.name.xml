@@ -11,10 +11,10 @@
   <sect1 id="sec.name">
       <title>Names of Example Items</title>
 
-      <para>This section summarizes some conventions to use for creating
-        generic names for objects that can occur in documentation. At least
-        some of the following values should be provided through entities
-        (see <xref linkend="sec.entity"/>).
+      <para>This section summarizes conventions for creating
+        generic names for objects in documentation. At least
+        some of the following names should be provided through entities
+        (see also <xref linkend="sec.entity"/>).
       </para>
 
       <sect2 id="sec.domain">
