@@ -88,7 +88,7 @@
         </row>
         <row>
           <entry>AOO</entry>
-          <entry>Oo.o, Ooo, OOoo, OO, oo</entry>
+          <entry>Aoo, aoo, OO, oo</entry>
           <entry>noun; when referring to versions 3.4 and after; spelling
             according to project standard; acronym of
             <emphasis>Apache OpenOffice</emphasis>; see also
@@ -422,15 +422,10 @@
           <entry>noun; acronym is <emphasis>DNS</emphasis></entry>
         </row>
         <row>
-          <entry>Ethernet</entry>
-          <entry>ethernet</entry>
-          <entry>noun</entry>
-        </row>
-        <row>
-          <entry>Ethernet card</entry>
-          <entry>wired card [sounds as if wires attached to the card are meant]
-          </entry>
-          <entry>noun; card that connects to networks via Ethernet.
+          <entry/>
+          <entry>easy [filler], easily</entry>
+          <entry>adjective, adverb; avoid.
+            <remark>sknorr, 2013-09-16: Should this stand?</remark>
           </entry>
         </row>
         <row>
@@ -446,15 +441,10 @@
           </entry>
         </row>
         <row>
-          <entry>e-mail</entry>
-          <entry>E-Mail, E-mail, Email, electronic mail, email</entry>
-          <entry>noun</entry>
-        </row>
-        <row>
-          <entry/>
-          <entry>easy [filler], easily</entry>
-          <entry>adjective, adverb; avoid.
-            <remark>sknorr, 2013-09-16: Should this stand?</remark>
+          <entry>EPUB</entry>
+          <entry>E-PUB, e-PUB, e-Pub, EPub, Epub, ePUB, ePub</entry>
+          <entry>noun; project logo uses <quote>ePub</quote>, but the
+              project standard is <quote>EPUB</quote>
           </entry>
         </row>
         <row>
@@ -482,6 +472,18 @@
           </entry>
         </row>
         <row>
+          <entry>Ethernet</entry>
+          <entry>ethernet</entry>
+          <entry>noun</entry>
+        </row>
+        <row>
+          <entry>Ethernet card</entry>
+          <entry>wired card [sounds as if wires attached to the card are meant]
+          </entry>
+          <entry>noun; card that connects to networks via Ethernet.
+          </entry>
+        </row>
+        <row>
           <entry>Ext3</entry>
           <entry>EXT3, EXT 3, Ext 3, Ext-3, ext 3, ext-3, ext3</entry>
           <entry>noun; use this capitalization for all versions of the Ext
@@ -492,11 +494,6 @@
           <entry>Ext4</entry>
           <entry>EXT4, EXT 4, Ext 4, Ext-4, ext 4, ext-4, ext4</entry>
           <entry>noun</entry>
-        </row>
-        <row>
-          <entry>(to) simplify sth.</entry>
-          <entry>(to) ease sth., (to) facilitate sth.</entry>
-          <entry>verb; avoid</entry>
         </row>
         <row>
           <entry>file name</entry>
@@ -1331,6 +1328,11 @@
           <entry>adjective, adverb; avoid</entry>
         </row>
         <row>
+          <entry>(to) simplify sth.</entry>
+          <entry>(to) ease sth., (to) facilitate sth.</entry>
+          <entry>verb; avoid</entry>
+        </row>
+        <row>
           <entry>SLE</entry>
           <entry>S.L.E., SLE Enterprise, SLE Linux, Sle, sle</entry>
           <entry>noun; avoid; acronym for
@@ -1625,7 +1627,7 @@
         </row>
         <row>
           <entry>Wi-Fi</entry>
-          <entry>Wi fi, Wifi, WLAN, Wlan</entry>
+          <entry>Wi fi, Wi-fi, Wifi, WLAN, Wlan</entry>
           <entry>noun; use the <emphasis>Wi-Fi</emphasis> brand name
             whenever referring to IEEE 802.11-based networks; use
             the term <emphasis>WLAN</emphasis> when referring to other
