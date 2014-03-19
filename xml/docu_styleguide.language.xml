@@ -204,11 +204,15 @@
     <sect2 id="sec.number">
       <title>Numbers and Measurements</title>
 
-      <para>Write integers zero through ten as words and use numerals for all
-        others. For measurements, always use numerals when an abbreviation is
-        used for the unit. Use a non-breaking
+      <para>Write the integers zero through nine as words. Use numerals for all
+        other numbers.
+      </para>
+      <para>When the unit of a measurement is abbreviated, always use
+        numerals for the number. In measurements, add a non-breaking space
         (<sgmltag class="genentity">nbsp</sgmltag>)
-        space between the numeral and corresponding unit abbreviation.
+        between the numeral and its corresponding unit abbreviation.
+      </para>
+      <para>
         For more information, refer to
         <citetitle>The Chicago Manual of Style</citetitle> 9.6.
       </para>
