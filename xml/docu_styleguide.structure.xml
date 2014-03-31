@@ -13,7 +13,7 @@
 
     <para>Structure your documentation by tasks relevant to the user instead of
       providing reference documentation by describing each part of the user
-      interface individually. In most cases, it is unnecessary to describe
+      interface individually. Often, it is unnecessary to describe
       every minor functionality of a product. Describe what a product can do
       rather than its limitations.
     </para>
@@ -153,9 +153,10 @@
             <sgmltag class="emptytag">important</sgmltag>:</emphasis>
             In the second paragraph, explain how to
             avoid the danger. If there are multiple ways to avoid a danger,
-            using an unordered list is helpful. In case multiple steps need
-            to be taken to avoid a danger, use an ordered list or use a
-            cross reference to refer to another part of the documentation.
+            use an unordered list. If fewer than five consecutive steps need
+            to be taken to avoid a danger, use an ordered list. If more than
+            five consecutive steps need to be taken, use a
+            cross reference to another part of the documentation.
           </para>
         </listitem>
       </itemizedlist>
@@ -201,26 +202,26 @@
       <para>Also see <xref linkend="sec.example"/>.</para>
       <example id="ex.callout_output">
         <title>Example of Callouts (Source)</title>
-        <screen>&lt;screen&gt;color white/blue black/light-gray &lt;co id="col"/&gt;
-default 0 &lt;co id="def"/&gt;&lt;/screen&gt;
+        <screen>&lt;screen&gt;color white/blue black/light-gray &lt;co id="co.color"/&gt;
+default 0 &lt;co id="co.default"/&gt;&lt;/screen&gt;
 &lt;calloutlist&gt;
-  &lt;callout arearefs="col"&gt;
+  &lt;callout arearefs="co.color"&gt;
     &lt;para&gt;Colors of the boot loader menu.&lt;/para&gt;
   &lt;/callout&gt;
-  &lt;callout arearefs="def"&gt;
+  &lt;callout arearefs="co.default"&gt;
     &lt;para&gt;Defines the preselected option.&lt;/para&gt;
   &lt;/callout&gt;
 &lt;/calloutlist&gt;</screen>
       </example>
       <example id="ex.callout_source">
         <title>Example of Callouts (Output)</title>
-        <screen>color white/blue black/light-gray <co id="col"/>
-default 0 <co id="def"/></screen>
+        <screen>color white/blue black/light-gray <co id="co.color"/>
+default 0 <co id="co.default"/></screen>
         <calloutlist>
-          <callout arearefs="col">
+          <callout arearefs="co.color">
             <para>Colors of the boot loader menu.</para>
           </callout>
-          <callout arearefs="def">
+          <callout arearefs="co.default">
             <para>Defines the preselected option.</para>
           </callout>
         </calloutlist>
@@ -564,11 +565,23 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
       </para>
       <itemizedlist>
         <listitem>
-          <para>Examples are used to present long commands, commands
-            together with their output, lines of code, configuration files,
-            excerpts of configuration files, and output, such as system
-            messages.
-          </para>
+          <para>Examples are used to present:</para>
+          <itemizedlist>
+            <listitem>
+              <para>long commands and commands together with their output
+              </para>
+            </listitem>
+            <listitem>
+              <para>lines of code</para>
+            </listitem>
+            <listitem>
+              <para>configuration files or excerpts of configuration files
+              </para>
+            </listitem>
+            <listitem>
+              <para>system output, such as system messages</para>
+            </listitem>
+          </itemizedlist>
         </listitem>
         <listitem>
           <para>Never indent text inside
@@ -672,9 +685,9 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
         Many long URLs can be shortened by leaving away non-essential pieces.
         This is especially often the case with search URLs
         or URLs of Internet news media. If a Web site provides a built-in URL
-        shortener, use that. Do not resort to using external URL shorteners, as
-        that both hides the actual destination a link will take the user to and
-        introduces an extra element of uncertainty, as the shortening service
+        shortener, use that. Do not use external URL shorteners. External URL
+        shorteners hide the destination a link points to. They also
+        introduce an extra element of uncertainty, as the shortening service
         may disappear or become unreliable in the future.
       </para>
       <para>Do not use <sgmltag class="emptytag">ulink</sgmltag> to link to SUSE
@@ -684,14 +697,13 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
       </para>
       <para>Where possible, collect links in a
         <quote>For More Information</quote> section at the end of the chapter.
-        This will help users focus on your documentation instead of leading
-        them to other resources before they had a chance to read the end
-        of the sentence.
+        This helps readers focus on your documentation instead of leading
+        them immediately to other resources.
       </para>
       <para>To mark up multiple links, create an
         <sgmltag class="emptytag">itemizedlist</sgmltag> around
         them. Do not use a list environment for a single link.
-        If you need to present a large number of links, group them by topic and
+        If you need to present many links, group them by topic and
         create a separate list environment for each group. Provide a
         comprehensive title for each of the groups or an introductory sentence.
         On creating lists, see <xref linkend="sec.unordered"/>.
@@ -856,7 +868,7 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
           <listitem>
             <para>Be selective. Only illustrate steps in which meaningful user
               interactions are necessary. Do not create screenshots of progress
-              bars or confirmation windows. In most cases, it is
+              bars or confirmation windows. Generally, it is
               unnecessary to create a screenshot of every step of an
               instruction.
             </para>
@@ -869,8 +881,8 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
           <listitem>
             <para>Make sure screenshots focus on what they are supposed to
               illustrate. When documenting application windows, create a
-              screenshot of the window only. When documenting web applications,
-              only reproduce the contents of the tab, instead of the entire
+              screenshot of the window only. When documenting Web applications,
+              only reproduce the contents of the tab instead of the entire
               browser window.
             </para>
           </listitem>
@@ -878,15 +890,15 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
             <para>Avoid creating screenshots of windows higher or
               wider than 800&nbsp;pixels at 96&nbsp;pixels per inch. When
               creating screenshots of applications scaled for a higher
-              pixel-per-inch count, you can use a proportionally larger
+              pixel-per-inch count, apply a proportionally larger
               maximum window size.
             </para>
           </listitem>
           <listitem>
             <para>Create screenshots that are recognizable to readers. For
-              instance, create screenshots of KDE applications on a KDE desktop
-              with the default KDE theme and disable any toolbar modifications
-              you may have made.
+              example, create screenshots of KDE applications on a KDE desktop
+              with the default KDE theme and disable toolbar modifications
+              you have made.
             </para>
           </listitem>
           <listitem>
@@ -1222,10 +1234,12 @@ id="tab.install.sources"</screen>
         Nest index terms up to two levels deep.
       </para>
       <para>Index information users are likely to be looking for. Consider that
-        users might not have the exact same terms in mind as you
-        do, especially when it comes to highly technical words or brands.
-        Adapt breadth and depth of included index terms for a given
-        topic to the weight it has within the manual. Do not index
+        users might not have in mind the same terms you do. This is
+        especially often the case when it comes to highly technical words or
+        brands.
+      </para>
+      <para>Adapt breadth and depth of index terms included of a topic to the
+        weight the topic has within the manual. Do not index
         <quote>For More Information</quote> sections, abstracts,
         or passing mentions of items.
       </para>
@@ -1247,10 +1261,10 @@ id="tab.install.sources"</screen>
       </para>
       <para><sgmltag class="emptytag">indexterm</sgmltag> elements mark
         text passages that should be referenced in an
-        <sgmltag class="emptytag">index</sgmltag>. A simple index entry is
-        placed in the flow of the document at the exact place where the
-        <sgmltag class="emptytag">indexentry</sgmltag> in the Index should
-        point to.
+        <sgmltag class="emptytag">index</sgmltag>. Simple
+        <sgmltag class="emptytag">indexterm</sgmltag> elements are
+        placed in the flow of the document at the exact point which the
+        Index page should refer to.
       </para>
       <example id="ex.index_plain">
         <title>Example of a Simple Index Entry</title>
@@ -1324,7 +1338,7 @@ id="tab.install.sources"</screen>
         </listitem>
         <listitem>
           <para>Always introduce a list in the text. If needed for reference or
-            better coordination with the related text, add an optional title
+            better coordination with the related text, add a title
             and an <sgmltag class="attribute">id</sgmltag> attribute.
           </para>
         </listitem>
@@ -1611,13 +1625,9 @@ id="tab.install.sources"</screen>
         elements. Separators between <sgmltag class="emptytag">keycap</sgmltag>
         elements are then created automatically.
       </para>
-      <para>When marking up modifier keys, the keys around to Insert,
-        cursor keys, <keycap function="enter"/>,
-        <keycap function="backspace"/>, or <keycap function="escape"/>, add the
-        <literal>function</literal> attribute to the
-        <sgmltag class="emptytag">keycap</sgmltag> element. See
-        <xref linkend="tab.keycap"/> for appropriate
-        <sgmltag class="attribute">function</sgmltag> values. When using the
+      <para>If a key is listed in <xref linkend="tab.keycap"/>, use the
+        <sgmltag class="attribute">function</sgmltag> attribute with appropriate
+        value. When using the
         <sgmltag class="attribute">function</sgmltag> attribute,
         make the tag self-closing&mdash;DocBook's language files will insert
         key names automatically. This simplifies both your work and
@@ -1807,13 +1817,20 @@ id="tab.install.sources"</screen>
         <literal>file://</literal> or <literal>mailto:</literal>, respectively.
         Also refer to <xref linkend="sec.file_markup"/>.
       </para>
-      <para>References to man pages and info pages should generally be
-        made in the format <quote>the man page of
-        <command>command</command></quote> or
-        <quote>the info page of <command>command</command></quote>: In a
-        situation where the category of the page is needed, add
-        for example <quote>(<command>man 9 command</command>)</quote>
-        to the end.
+      <para>Reference man pages and info pages in this format:</para>
+      <itemizedlist>
+        <listitem>
+          <para><quote>the man page of <command>command</command></quote>
+          </para>
+        </listitem>
+        <listitem>
+          <para><quote>the info page of <command>command</command></quote>
+          </para>
+        </listitem>
+      </itemizedlist>
+      <para>In a situation where the category of the page is needed, append
+        the category in parentheses. Use, for example
+        <quote>(<command>man 9 command</command>)</quote>.
       </para>
       <screen>To learn more about subcommands, see the man page of
 &lt;command&gt;command&lt;/command&gt;.</screen>
@@ -1876,7 +1893,7 @@ id="tab.install.sources"</screen>
         <listitem>
           <para>
             If there are preconditions or prerequisites, add them as a
-            a second paragraph after the introduction.
+            second paragraph after the introduction.
           </para>
         </listitem>
         <listitem>

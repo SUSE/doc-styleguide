@@ -27,7 +27,7 @@
     <para>For more information about the usage of XML comments, see
       <xref linkend="sec.xml_comment"/>.
     </para>
-    <para>In many cases, there is no need to add information about the target
+    <para>Generally, there is no need to add information about the target
       audience to the book or article content itself.
     </para>
   </sect1>

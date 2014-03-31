@@ -8,6 +8,9 @@
 <appendix id="app.change">
   <title>List of Changes to the Style Guide</title>
 
+  <para>This section lists the changes between versions of this Style Guide.
+  </para>
+
   <!-- Add new versions to the beginning of the list. -->
 
   <sect1 id="sec.change_2014-02.2">
@@ -19,6 +22,11 @@
     <itemizedlist>
       <listitem>
         <para>Improved clarity and fixed typos.</para>
+      </listitem>
+      <listitem>
+        <para>Brought Style Guide into better compliance with itself using the
+          style checker tool.
+        </para>
       </listitem>
       <listitem>
         <para>Moved <xref linkend="sec.heading"/> from
@@ -37,8 +45,8 @@
               <emphasis>Wi-fi</emphasis> to <emphasis>Wi-Fi</emphasis>,
               <emphasis>Wi-fi card</emphasis> to <emphasis>Wi-Fi card</emphasis>,
               and <emphasis>Wi-fi/Bluetooth card</emphasis> to
-              <emphasis>Wi-Fi/Bluetooth card</emphasis> to reflect correct
-              spelling of the brand.
+              <emphasis>Wi-Fi/Bluetooth card</emphasis>. This matches the
+              correct spelling of the brand.
               <remark>sknorr, 2014-03-19: Thanks, Tom!</remark>
             </para>
           </listitem>
@@ -109,7 +117,7 @@
             </para>
           </listitem>
           <listitem>
-            <para>Added <emphasis>Joker</emphasis> as a rejected entry to
+            <para>Added <emphasis>joker</emphasis> as a rejected entry to
               <emphasis>wild card</emphasis>.
             </para>
           </listitem>
@@ -321,7 +329,7 @@
               <emphasis>(to) start sth. up</emphasis>,
               <emphasis>TAR archive</emphasis>*,
               <emphasis>(to) type sth. (into sth.)</emphasis>,
-              <emphasis>usage</emphasis>
+              <emphasis>usage</emphasis>,
               <emphasis>Unix</emphasis>, <emphasis>uppercase</emphasis>,
               <emphasis>when</emphasis>, <emphasis>want sth.</emphasis>,
               <emphasis>Wi-fi</emphasis>*, and
@@ -330,15 +338,17 @@
             <para>(An * marks potentially interesting changes.)</para>
           </listitem>
           <listitem>
-            <para>Modified entries where the second word of a compound is
-              <quote>name</quote>. These are now written as two words:
+            <para>Changed accepted spellings of compund words whose
+              second part is <quote>name</quote>. These are now written
+              with a space:
               <emphasis>file name</emphasis>, <emphasis>host name</emphasis>,
               <emphasis>path name</emphasis>, <emphasis>user name</emphasis>.
             </para>
           </listitem>
           <listitem>
-            <para>Modified entry for
-              <quote>screenshot</quote> (now one word).
+            <para>Changed accepted spelling from
+              <emphasis>screen shot</emphasis> to
+              <emphasis>screenshot</emphasis>.
             </para>
           </listitem>
         </itemizedlist>
@@ -346,7 +356,7 @@
       <listitem>
         <para>Switched from
           <citetitle>Merriam-Webster Collegiate Dictionary</citetitle> to
-          <ulink url="http://www.merriam-webster.com/"/> web site as the
+          <ulink url="http://www.merriam-webster.com/"/> Web site as the
           authoritative source of spellings.
         </para>
       </listitem>
@@ -368,8 +378,8 @@
       </listitem>
       <listitem>
         <para>Updated various examples to use newer software versions or to not
-          specify a software version (<emphasis>soffice</emphasis> to
-          <emphasis>loffice</emphasis>, <emphasis>SUSE LINUX 9.1.4.2</emphasis>
+          specify a software version. (Examples are <emphasis>soffice</emphasis>
+          to <emphasis>loffice</emphasis>, <emphasis>SUSE LINUX 9.1.4.2</emphasis>
           to <emphasis>SUSE Linux Enterprise</emphasis>).
         </para>
       </listitem>
@@ -379,9 +389,9 @@
         </para>
       </listitem>
       <listitem>
-        <para>Rewrote large parts of <xref linkend="sec.outline"/>, removed
-          example of structure, added copyright notice as an example, and
-          expanded on information needed for title pages and imprints.
+        <para>Rewrote large parts of <xref linkend="sec.outline"/>. Removed
+          example of structure. Added copyright notice as an example.
+          Expanded on information needed for title pages and imprints.
         </para>
       </listitem>
       <listitem>

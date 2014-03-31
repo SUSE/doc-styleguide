@@ -138,7 +138,7 @@
             <example id="ex.abstract">
               <title>An Abstract</title>
 
-              <para>SUSE Linux Enterprise ships with a number of different
+              <para>SUSE Linux Enterprise ships with several different
                 file systems, including Btrfs, Ext3, Ext4. Each file system
                 has advantages and disadvantages that make it more or less
                 suitable for a scenario. Professional high-performance
@@ -239,8 +239,8 @@
                   sequential task, follow the introduction with a procedure
                   description, as discussed in <xref linkend="sec.procedure"/>.
                   Steps of a procedure can contain a cross reference
-                  to a subsection where the necessary background is provided
-                  and the action explained in more detail. See also:
+                  to subsections where topical background is provided
+                  and an action is explained in detail. See also:
                   <xref linkend="sec.cross_reference"/>.
                 </para>
               </listitem>

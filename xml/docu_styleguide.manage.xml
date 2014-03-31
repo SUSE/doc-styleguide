@@ -103,7 +103,7 @@
           <para>Text expansion for repeating content.</para>
         </listitem>
       </itemizedlist>
-      <para>Once an entity is defined, it can be used in many places. Entities
+      <para>When an entity is defined, it can be used in many places. Entities
         reduce the risk of translation errors and increase consistency because
         they are translated once and automatically expanded elsewhere.
       </para>
@@ -205,8 +205,8 @@
           <varlistentry>
             <term>Platforms</term>
             <listitem>
-              <para>To avoid touching our content whenever a hardware vendor
-                rebrands its products, we use entities for all hardware
+              <para>To avoid changing the documentation itself if a
+                vendor rebrands products, use entities for all hardware
                 architectures referenced in the books.
               </para>
             </listitem>
@@ -248,8 +248,9 @@ Kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
               <para>Avoid using acronyms of product names where they are not
                 the preferred form of the name. If you do define an
                 additional acronym version of a longer product name, append
-                an <literal>a</literal> to the end of the entity name, such
-                as in <sgmltag class="genentity">slesa</sgmltag>.
+                an <literal>a</literal> to the end of the entity name.
+                For example, use <sgmltag class="genentity">slesa</sgmltag> the
+                acronym <quote>SLES</quote>.
               </para>
             </listitem>
           </varlistentry>
@@ -274,11 +275,12 @@ Kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
         order:
       </para>
       <screen>&lt;xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gfdl.xml"/&gt;</screen>
-      <para>XInclude elements allow adding common sections, such as
-        licenses and information on typographical conventions in multiple
+      <para>XInclude elements allow adding common sections to multiple
         books or articles without having to maintain the text in multiple
-        places. They also simplify co-editing documentation with others in a
-        version control system as they reduce the chance of merge conflicts.
+        places. Common sections include licenses and information on
+        typographical conventions. XIncludes also simplify co-editing
+        documentation with others in a version control system as they reduce
+        the chance of merge conflicts.
       </para>
       <para>Files referenced via XIncludes must be well-formed XML files but do
         not need to be valid DocBook files. This means that they must have a

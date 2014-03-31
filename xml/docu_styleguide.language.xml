@@ -44,8 +44,8 @@
         the following text, use its expanded form. All following occurrences
         of the term in this chapter should then use the acronym.
       </para>
-      <para>Because sometimes chapters and parts are used across multiple
-        documents, it is important to provide the expansion of an acronym at
+      <para>Sometimes chapters and parts are used across multiple
+        documents, therefore provide the expansion of an acronym at
         least once per chapter. Be consistent in how you provide the
         expansion. If you use the acronym followed by the written out form
         in one chapter, do this in all other chapters too.
@@ -75,26 +75,28 @@
           <para>Capitalize the first and the last word.</para>
         </listitem>
         <listitem>
-          <para>Lowercase articles, that is, <emphasis>the</emphasis>,
+          <para>Write articles in lowercase. Articles are: <emphasis>the</emphasis>,
             <emphasis>a</emphasis>, and <emphasis>an</emphasis>.
           </para>
         </listitem>
         <listitem>
-          <para>Lowercase prepositions, such as <emphasis>up</emphasis>,
-            <emphasis>in</emphasis>, <emphasis>of</emphasis>,
-            <emphasis>through</emphasis>, and <emphasis>between</emphasis>,
-            unless they are used with a verb, such as <quote>Logging In</quote>
-            or with a noun, as in <quote>The On Button</quote>.
+          <para>Write prepositions in lowercase unless they are used with a verb
+            (<quote>Logging In</quote>) or in a noun
+            (<quote>The On Button</quote>). Prepositions are for example:
+            <emphasis>up</emphasis>, <emphasis>in</emphasis>,
+            <emphasis>of</emphasis>, <emphasis>through</emphasis>, and
+            <emphasis>between</emphasis>.
           </para>
         </listitem>
         <listitem>
-          <para>Lowercase the following conjunctions: <emphasis>and</emphasis>,
+          <para>Write certain conjunctions in lowercase: <emphasis>and</emphasis>,
             <emphasis>but</emphasis>, <emphasis>for</emphasis>,
             <emphasis>nor</emphasis>, and <emphasis>or</emphasis>.
           </para>
         </listitem>
         <listitem>
-          <para>Lowercase <emphasis>as</emphasis> and <emphasis>to</emphasis>.
+          <para>Write <emphasis>as</emphasis> and <emphasis>to</emphasis> in
+            lowercase.
           </para>
         </listitem>
         <listitem>
@@ -151,10 +153,10 @@
     <sect2 id="sec.file_language">
       <title>File and Directory Names</title>
 
-      <para>Under Linux, objects like directories, printers, or flash drives
+      <para>Under Linux, objects like directories, printers, or flash disks
         are all considered files. Therefore, the naming and markup
         conventions are the same for <quote>drives</quote> (for example,
-        hard drives, CD-ROM drives, or flash drives), directories, or files.
+        hard disks, CD-ROM drives, or flash disks), directories, or files.
       </para>
       <para>The layout for file names and directory names is the same. See the
        following example:
@@ -243,10 +245,20 @@
     <sect2 id="sec.prefix">
       <title>Prefixes</title>
 
-      <para>Do not add a hyphen after the prefix to prefixed words
-        unless either the last letter of the prefix and the first letter of
-        the word are the same or you foresee misunderstandings.
-      </para>
+      <para>Add a hyphen after the prefix to prefixed words only if:</para>
+      <itemizedlist>
+        <listitem>
+          <para>The last letter of the prefix and the first letter of the word
+            are the same.
+          </para>
+        </listitem>
+        <listitem>
+          <para>You foresee misunderstandings. For example, there is a
+            difference in meaning between <quote>recreate</quote> and
+            <quote>re-create</quote>.
+          </para>
+        </listitem>
+      </itemizedlist>
     </sect2>
 
     <sect2 id="sec.semicolon">
@@ -315,9 +327,8 @@
         <quote>Administrative tasks are performed by the root user</quote>
         is passive voice.
       </para>
-      <para>Use passive voice if there is a need to place emphasis on the
-        object of the verb or
-        if the performer of the action is unknown. <quote>A SAMBA server
+      <para>Use passive voice if there is no emphasis on the object of the verb
+        or if the performer of the action is unknown. <quote>A SAMBA server
         must be configured in the network</quote> is an example of
         proper use of passive voice. The emphasis is on the server,
         not on the person configuring it.
@@ -346,8 +357,8 @@
         </listitem>
         <listitem>
           <para>Use an * (asterisk) for all service marks or trademarks of
-            third-party companies. This both acknowledges the service mark
-            or trademark of the other company and protects SUSE in case the
+            third-party companies. This acknowledges the service mark
+            or trademark of the other company. It also protects SUSE if the
             protection of the brand changes in any way.
           </para>
         </listitem>
