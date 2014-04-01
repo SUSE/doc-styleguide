@@ -37,6 +37,11 @@
         </para>
       </listitem>
       <listitem>
+        <para>Separated list items for <sgmltag class="attribute">id</sgmltag>
+          attribute and title in <xref linkend="sec.procedure"/>.
+        </para>
+      </listitem>
+      <listitem>
         <para>Updated terminology table in <xref linkend="app.terminology"/>.
         </para>
         <itemizedlist>
