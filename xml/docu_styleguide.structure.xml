@@ -1876,12 +1876,15 @@ id="tab.install.sources"</screen>
     <title>Procedures</title>
 
       <para>Use procedures to describe sequential tasks. A procedure
-        consists of the following elements:
+        consists of the following elements and attributes:
       </para>
       <itemizedlist>
         <listitem>
-          <para>A title and an <sgmltag class="attribute">id</sgmltag>
-            attribute.
+          <para>An <sgmltag class="attribute">id</sgmltag> attribute.
+          </para>
+        </listitem>
+        <listitem>
+          <para>A title.
           </para>
         </listitem>
         <listitem>
@@ -1897,8 +1900,9 @@ id="tab.install.sources"</screen>
           </para>
         </listitem>
         <listitem>
-          <para>Short, simple steps and substeps describing the actions to
-            be performed. See also <xref linkend="sec.structure_sentence"/>.
+          <para>Short, simple steps and, if necessary, substeps describing the
+            actions to be performed. See also
+            <xref linkend="sec.structure_sentence"/>.
           </para>
         </listitem>
       </itemizedlist>
@@ -1927,7 +1931,7 @@ id="tab.install.sources"</screen>
       &lt;/para&gt;
     &lt;/step&gt;
     &lt;step&gt;
-      &lt;para&gt;Type in the user data and click &lt;guimenu&gt;Create&lt;/guimenu&gt;.
+      &lt;para&gt;Type in the user name and click &lt;guimenu&gt;Create&lt;/guimenu&gt;.
       &lt;/para&gt;
     &lt;/step&gt;
 &lt;/procedure&gt;</screen>
@@ -1946,7 +1950,7 @@ id="tab.install.sources"</screen>
           </para>
         </step>
         <step>
-          <para>Type in the user data and click <guimenu>Create</guimenu>.
+          <para>Type in the user name and click <guimenu>Create</guimenu>.
           </para>
         </step>
       </procedure>
@@ -1995,7 +1999,7 @@ id="tab.install.sources"</screen>
               <entry>
                 <formalpara>
                   <title><sgmltag class="emptytag">substeps</sgmltag></title>
-                  <para>Element containing a multiple, subordinate
+                  <para>Element containing multiple, subordinate
                     <sgmltag class="emptytag">step</sgmltag> elements.
                   </para>
                 </formalpara>
