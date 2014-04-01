@@ -13,7 +13,7 @@
 
   <abstract>
     <para>This guide provides answers to writing, style, and layout questions
-      commonly arising when editing SUSE or openSUSE documentation. The
+      commonly arising when editing SUSE documentation. The
       <phrase role="productname">Novdoc</phrase>/
       <phrase role="productname">DocBook</phrase>
       markup reference at the end of this guide will help you

@@ -1299,7 +1299,7 @@ id="tab.install.sources"</screen>
     <sect2 id="sec.list">
       <title>Lists</title>
 
-      <para>SUSE and openSUSE documentation uses the following types of lists
+      <para>SUSE documentation uses the following types of lists
         (the respective XML elements are given in parentheses):
       </para>
       <itemizedlist>
@@ -1429,10 +1429,11 @@ id="tab.install.sources"</screen>
               <entry>
                 <formalpara>
                   <title><sgmltag class="emptytag">varlistentry</sgmltag></title>
-                  <para>Element of a that associates a
+                  <para>Element within a
+                    <sgmltag class="emptytag">variablelist</sgmltag> that
+                    associates a
                     <sgmltag class="emptytag">term</sgmltag> and a
-                    <sgmltag class="emptytag">listitem</sgmltag> inside a
-                    <sgmltag class="emptytag">variablelist</sgmltag>.
+                    <sgmltag class="emptytag">listitem</sgmltag>.
                   </para>
                 </formalpara>
               </entry>
@@ -1834,7 +1835,7 @@ id="tab.install.sources"</screen>
       </para>
       <screen>To learn more about subcommands, see the man page of
 &lt;command&gt;command&lt;/command&gt;.</screen>
-      <para>Insert references to external (not SUSE or openSUSE) physical
+      <para>Insert references to external (non-SUSE) physical
         books in the format <quote>Title by Author (ISBN #00000000).</quote>
         Inclusion of the ISBN is optional. Place the title in a
         <sgmltag class="emptytag">citetitle</sgmltag> element. For example:
