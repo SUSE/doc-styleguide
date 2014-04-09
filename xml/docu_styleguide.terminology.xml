@@ -106,6 +106,13 @@
           </entry>
         </row>
         <row>
+          <entry>architecture</entry>
+          <entry>arch</entry>
+          <entry>noun; hardware platform, especially concerning processor
+            platform
+          </entry>
+        </row>
+        <row>
           <entry>appendixes</entry>
           <entry>appendices</entry>
           <entry>noun; plural of appendix</entry>
@@ -159,7 +166,7 @@
         </row>
         <row>
           <entry>boot disk</entry>
-          <entry>boot-disk, bootdisk</entry>
+          <entry>boot disc [usually a misspelling], boot-disk, bootdisk</entry>
           <entry>noun; disk for starting the system</entry>
         </row>
         <row>
@@ -206,13 +213,13 @@
         <row>
           <entry>CD</entry>
           <entry>C.D., Cd</entry>
-          <entry>noun; acronym for <emphasis>compact disk</emphasis></entry>
+          <entry>noun; acronym for <emphasis>compact disc</emphasis></entry>
         </row>
         <row>
           <entry>CD-ROM</entry>
           <entry>CD ROM, CD-Rom, CD Rom</entry>
           <entry>noun; acronym for
-            <emphasis>compact disk read-only memory</emphasis>
+            <emphasis>compact disc read-only memory</emphasis>
           </entry>
         </row>
         <row>
@@ -249,7 +256,8 @@
         </row>
         <row>
           <entry>check box</entry>
-          <entry>check-box, checkbox, tick box, tick-box, tickbox
+          <entry>check-box, checkbox, checking option, tick box, tick-box,
+            tickbox
           </entry>
           <entry>noun; avoid, only mention name of option</entry>
         </row>
@@ -338,6 +346,18 @@
           </entry>
         </row>
         <row>
+          <entry>(to) create a hard link (to sth.)</entry>
+          <entry>(to) hard link (sth.), (to) hardlink (sth.)</entry>
+          <entry>verb; see also <emphasis>hard link</emphasis></entry>
+        </row>
+        <row>
+          <entry>(to) create a symbolic link (to sth.)</entry>
+          <entry>(to) soft link (sth.), (to) softlink (sth.),
+            (to) symbolic link (sth.), (to) symlink (sth.)
+          </entry>
+          <entry>verb; see also <emphasis>hard link</emphasis></entry>
+        </row>
+        <row>
           <entry>(to) deactivate sth.</entry>
           <entry>(to) deblock sth., (to) uncheck sth., (to) untick sth.
           </entry>
@@ -367,7 +387,7 @@
         <row>
           <entry>dial-up</entry>
           <entry>dial up, dialup</entry>
-          <entry>only as adjective</entry>
+          <entry>only as an adjective</entry>
         </row>
         <row>
           <entry>dialog</entry>
@@ -402,7 +422,7 @@
         <row>
           <entry>drop-down box</entry>
           <entry>combination box, combo box, combobox, dropdown, drop-down,
-            drop-down menu, drop-down list box
+            drop-down menu, drop-down list box, popover
           </entry>
           <entry>noun; GUI element with a list that can opened by
             clicking on it, whether combined with a text box or not; if list
@@ -413,7 +433,7 @@
           <entry>DVD</entry>
           <entry>D.V.D., Dvd</entry>
           <entry>noun; acronym for
-            <emphasis>digital versatile disk</emphasis>
+            <emphasis>digital versatile disc</emphasis>
           </entry>
         </row>
         <row>
@@ -436,8 +456,8 @@
         <row>
           <entry>EPUB</entry>
           <entry>E-PUB, e-PUB, e-Pub, EPub, Epub, ePUB, ePub</entry>
-          <entry>noun; project logo uses <quote>ePub</quote>, but the
-              project standard is <quote>EPUB</quote>
+          <entry>noun; project logo uses the capitalization <quote>ePub</quote>,
+              but the vendor standard is <quote>EPUB</quote>
           </entry>
         </row>
         <row>
@@ -517,7 +537,9 @@
         </row>
         <row>
           <entry>flash disk</entry>
-          <entry>flash drive, USB disk, USB drive, USB stick</entry>
+          <entry>flash disc [misspelling], flash drive, USB disk, USB drive,
+            USB stick
+          </entry>
           <entry>noun</entry>
         </row>
         <row>
@@ -578,15 +600,20 @@
         </row>
         <row>
           <entry>hard disk</entry>
-          <entry>HDD, HD, hard disk drive, hard drive, hard-disk,
-            hard-drive, harddisk, harddrive, hdd, hd
+          <entry>HDD, HD, hard disc [misspelling], hard disk drive, hard drive,
+            hard-disk, hard-drive, harddisk, harddrive, hdd, hd
           </entry>
           <entry>noun</entry>
         </row>
         <row>
           <entry>hard link</entry>
           <entry>hard-link, hardlink</entry>
-          <entry>noun</entry>
+          <entry>only as a noun; as a verb, use
+            <emphasis>create a hardlink link</emphasis>; directory entry
+            that contains an alternative name for an existing file, in
+            contrast to that, <emphasis>symbolic links</emphasis> are
+            themselves files which link to the name of another file
+          </entry>
         </row>
         <row>
           <entry>home page</entry>
@@ -604,18 +631,21 @@
         <row>
           <entry>(to) hotplug sth. (into sth.)</entry>
           <entry>(to) hot plug sth. (into sth.), (to) hot-plug sth. (into
-            sth.)
+            sth.), (to) hotadd sth., (to) hotswap sth.
           </entry>
-          <entry>verb</entry>
+          <entry>verb; adding a component or device to a system while it is
+            running; use <emphasis>remove at runtime</emphasis> where the
+            specific action of removing a component or device is concerned
+          </entry>
         </row>
         <row>
           <entry>hotplugging</entry>
-          <entry>hot plugging, hot-plugging</entry>
+          <entry>hot plugging, hot-plugging, hotadding, hotswapping</entry>
           <entry>noun</entry>
         </row>
         <row>
           <entry>hotpluggable</entry>
-          <entry>hot pluggable, hot-pluggable</entry>
+          <entry>hot pluggable, hot-pluggable, hotaddable, hotswappable</entry>
           <entry>adjective</entry>
         </row>
         <row>
@@ -660,6 +690,12 @@
           <entry>noun or adjective.
             <remark>sknorr, 2013-09-16: Really a noun?</remark>
           </entry>
+        </row>
+        <row>
+          <entry>init script</entry>
+          <entry>init-script, initscript, initialization script [incorrect,
+            when referring to script run by <command>init</command>]</entry>
+          <entry>noun; a script run by <command>init</command></entry>
         </row>
         <row>
           <entry>initialization</entry>
@@ -888,7 +924,7 @@
         <row>
           <entry>Maildir</entry>
           <entry>Mail dir, mail dir</entry>
-          <entry>noun; Format for e-mail storage, not the directory for
+          <entry>noun; specific format for e-mail storage, not a directory for
             e-mails
           </entry>
         </row>
@@ -907,7 +943,7 @@
         <row>
           <entry>Mbox</entry>
           <entry>mbox</entry>
-          <entry>noun; Format for e-mail storage</entry>
+          <entry>noun; specific format for e-mail storage</entry>
         </row>
         <row>
           <entry>menu</entry>
@@ -1026,12 +1062,12 @@
         <row>
           <entry>openSUSE</entry>
           <entry>Open SUSE, Open-SUSE, open SUSE, open-SUSE</entry>
-          <entry>noun</entry>
+          <entry>noun; never capitalize first letter</entry>
         </row>
         <row>
           <entry>open source</entry>
           <entry>Open Source, Open-Source, open-source, opensource</entry>
-          <entry>only as noun</entry>
+          <entry>only as a noun</entry>
         </row>
         <row>
           <entry>paravirtualized</entry>
@@ -1075,7 +1111,7 @@
         <row>
           <entry>PostScript</entry>
           <entry>POSTSCRIPT, Postscript, postscript</entry>
-          <entry>noun; spelling as per project standard</entry>
+          <entry>noun; spelling as per vendor standard</entry>
         </row>
         <row>
           <entry>(to) preconfigure sth.</entry>
@@ -1108,14 +1144,15 @@
         </row>
         <row>
           <entry>(to) press sth.</entry>
-          <entry>(to) hit sth. [colloquial], (to) punch sth. [colloquial]
+          <entry>(to) depress sth. [negative], (to) hit sth. [colloquial],
+            (to) punch sth. [colloquial], (to) strike sth. [colloquial]
           </entry>
           <entry>verb; when referring to keys or mouse buttons</entry>
         </row>
         <row>
           <entry>proxy</entry>
           <entry/>
-          <entry>only as noun</entry>
+          <entry>only as a noun</entry>
         </row>
         <row>
           <entry>PXE</entry>
@@ -1127,7 +1164,7 @@
         <row>
           <entry>PXE boot</entry>
           <entry>PXE Boot</entry>
-          <entry>noun only; as a verb, use
+          <entry>only as a noun; as a verb, use
             <quote>(to) boot using PXE</quote> or
             <quote>(to) boot via PXE</quote> instead
           </entry>
@@ -1150,7 +1187,7 @@
         </row>
         <row>
           <entry>RAM disk</entry>
-          <entry>RAM drive, RAM-disk, RAM-drive, RAMdisk,
+          <entry>RAM disc [misspelling], RAM drive, RAM-disk, RAM-drive, RAMdisk,
             RAM-drive, Ramdisk, Ramdrive
           </entry>
           <entry>noun; either treating RAM as a hard disk or a
@@ -1174,7 +1211,7 @@
         </row>
         <row>
           <entry>(to) re-create sth.</entry>
-          <entry>(to) recreate (different meaning)</entry>
+          <entry>(to) recreate [different meaning]</entry>
           <entry>verb</entry>
         </row>
         <row>
@@ -1191,6 +1228,14 @@
           <entry>(to) register for sth.</entry>
           <entry/>
           <entry>verb; register for a service</entry>
+        </row>
+        <row>
+          <entry>(to) remove sth. at runtime (from sth.)</entry>
+          <entry>(to) hotremove sth.</entry>
+          <entry>verb; removing a component or device to a system while it is
+            running; where sensible, use the more generic term
+            <emphasis>hotplug</emphasis>
+          </entry>
         </row>
         <row>
           <entry>(to) right-click sth.</entry>
@@ -1275,8 +1320,8 @@
         </row>
         <row>
           <entry>scrollbar</entry>
-          <entry>scroll-bar, scroll bar, scroll-box, scroll box, scrollbox,
-            scroller, slide bar, slide-bar, slidebar
+          <entry>scroll-bar, scroll bar, scrollbox,
+            scroller, slidebar
           </entry>
           <entry>noun; GUI element that is used change which portion of a
             screen area is visible
@@ -1359,21 +1404,45 @@
         </row>
         <row>
           <entry>slider</entry>
-          <entry/>
+          <entry>slide bar, slidebar</entry>
           <entry>noun; GUI element that is used manipulate values that have
             an upper and a lower bound
             <remark>sknorr, 2013-09-17: A little complicated</remark>
           </entry>
         </row>
         <row>
+          <entry>solid-state drive</entry>
+          <entry>SD [misleading], solid state disc [misspelling],
+            solid-state disk drive, solid-state disk, solid state drive,
+            solidstate drive, sd
+          </entry>
+          <entry>noun; acronym is <emphasis>SSD</emphasis>; a type of
+            mass storage that does not depend on mechanical parts
+            <remark>sknorr, 2014-04-09: This is inconsistent with the
+              use of ... drive in most other cases. For now,
+              intentionally so, as the accepted term gives much more
+              on Google. Review this entry.
+            </remark>
+          </entry>
+        </row>
+        <row>
           <entry>spec file</entry>
-          <entry>Spec file, Spec-file, Specfile, spec-file, specfile</entry>
+          <entry>Spec file, Spec-file, Specfile, spec-file, specfile
+          </entry>
           <entry>noun</entry>
+        </row>
+        <row>
+          <entry>SSD</entry>
+          <entry>S.S.D., SD [misleading], SS-D, sd, ss-d</entry>
+          <entry>noun; acronym of <emphasis>solid-state
+            drive</emphasis>; a type of mass storage that does not
+            depend on mechanical parts
+          </entry>
         </row>
         <row>
           <entry>stand-alone</entry>
           <entry>stand alone, standalone</entry>
-          <entry/>
+          <entry>adjective</entry>
         </row>
         <row>
           <entry>(to) start sth. up</entry>
@@ -1392,7 +1461,7 @@
         </row>
         <row>
           <entry/>
-          <entry>stuff, stuffs [colloquial]</entry>
+          <entry>stuff [colloquial], stuffs</entry>
           <entry>avoid</entry>
         </row>
         <row>
@@ -1444,6 +1513,31 @@
           <entry>sub menu, sub-menu</entry>
           <entry>noun; <emphasis>menu</emphasis> that is nested inside another
             menu
+          </entry>
+        </row>
+        <row>
+          <entry>symbolic link</entry>
+          <entry>soft link, softlink, symlink [jargon]</entry>
+          <entry>only as a noun; as a verb, use
+            <emphasis>create a symbolic link</emphasis>; a file with a
+            reference to another file or a directory, in contrast to
+            that, a <emphasis>hard link</emphasis> is a directory entry
+            that contains an alternative name for an existing file
+          </entry>
+        </row>
+        <row>
+          <entry>synchronization</entry>
+          <entry>sync, synch, synchronisation [British]</entry>
+          <entry>noun; two-way or many-way copying process to ensure data is
+            consistent across two or more locations
+          </entry>
+        </row>
+        <row>
+          <entry>(to) synchronize sth. (with sth.)</entry>
+          <entry>(to) sync sth., (to) synch sth., (to) synchronise sth.
+            [British], (to) synchronize sth. (and sth.)</entry>
+          <entry>noun; copy data in two or more ways to ensure it is
+            consistent across two or more locations
           </entry>
         </row>
         <row>
@@ -1555,9 +1649,23 @@
         </row>
         <row>
           <entry>virtualization</entry>
-          <entry>Virtualisation [British], Virtualization, virtualisation
+          <entry>Virtualization, virtualisation [British]
           </entry>
-          <entry>noun</entry>
+          <entry>noun; referring to software (usually an operating system)
+            running on a virtual computer created by software running on a
+            physical computer <emphasis>or</emphasis>
+            virtual computer created with a software running on a physical
+            computer</entry>
+        </row>
+        <row>
+          <entry>(to) virtualize sth.</entry>
+          <entry>virtualise [British]</entry>
+          <entry>verb; running software (usually an operating system) on a
+            virtual computer created by software running on a physical computer
+            <emphasis>or</emphasis>
+            creating a virtual computer with a software running on a physical
+            computer
+          </entry>
         </row>
         <row>
           <entry>VLAN</entry>
@@ -1627,11 +1735,11 @@
         </row>
         <row>
           <entry>Wi-Fi</entry>
-          <entry>Wi fi, Wi-fi, Wifi, WLAN, Wlan</entry>
+          <entry>Wi fi, Wi-fi, Wifi, wireless fidelity, WLAN, Wlan</entry>
           <entry>noun; use the <emphasis>Wi-Fi</emphasis> brand name
-            whenever referring to IEEE 802.11-based networks; use
-            the term <emphasis>WLAN</emphasis> when referring to other
-            wireless LANs.
+            whenever referring to IEEE 802.11-based networks or access points;
+            use <emphasis>WLAN</emphasis> when referring to
+            non-IEEE 802.11-based wireless LANs.
           </entry>
         </row>
         <row>
@@ -1650,6 +1758,14 @@
           <entry>wild card</entry>
           <entry>joker [Germanism], wild-card, wildcard</entry>
           <entry>noun</entry>
+        </row>
+        <row>
+          <entry>WLAN</entry>
+          <entry>Wlan</entry>
+          <entry>noun; avoid; use only when referring to wireless LANs that are
+            not IEEE 802.11-based; use <emphasis>Wi-Fi</emphasis>in all other
+            cases.
+          </entry>
         </row>
         <row>
           <entry>(to) write sth.</entry>
