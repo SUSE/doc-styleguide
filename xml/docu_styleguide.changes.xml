@@ -46,6 +46,21 @@
         </para>
         <itemizedlist>
           <listitem>
+            <para>Added entries for <emphasis>architecture</emphasis>,
+              <emphasis>create a hard link</emphasis>,
+              <emphasis>create a symbolic link</emphasis>,
+              <emphasis>init script</emphasis>,
+              <emphasis>installation medium</emphasis>,
+              <emphasis>remove at runtime</emphasis>,
+              <emphasis>solid-state drive</emphasis>,
+              <emphasis>SSD</emphasis>,
+              <emphasis>symbolic link</emphasis>,
+              <emphasis>synchronization</emphasis>,
+              <emphasis>synchronize</emphasis>,
+              <emphasis>virtualize</emphasis>, <emphasis>WLAN</emphasis>.
+            </para>
+          </listitem>
+          <listitem>
             <para>Changed accepted spellings from
               <emphasis>Wi-fi</emphasis> to <emphasis>Wi-Fi</emphasis>,
               <emphasis>Wi-fi card</emphasis> to <emphasis>Wi-Fi card</emphasis>,
@@ -56,7 +71,24 @@
             </para>
           </listitem>
           <listitem>
-            <para>Corrected rejected entries of <emphasis>AOO</emphasis>.</para>
+            <para>Corrected rejected terms in the entry of
+              <emphasis>AOO</emphasis>.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Added rejected terms to the entries of
+              <emphasis>boot disk</emphasis> (<quote>boot disc</quote>),
+              <emphasis>check box</emphasis> (<quote>checking option</quote>),
+              <emphasis>flash disk</emphasis>, <emphasis>hard disk</emphasis>,
+              <emphasis>hotplug</emphasis> (<quote>hotadd</quote>,
+              <quote>hotswap</quote>), <emphasis>hotpluggable</emphasis>,
+              <emphasis>hotplugging</emphasis>, <emphasis>press</emphasis>,
+              <emphasis>slider</emphasis> (<quote>slidebar</quote>).
+            </para>
+          </listitem>
+          <listitem>
+            <para>Removed <quote>installation media</quote> from rejected terms
+              of <emphasis>installation source</emphasis>.
           </listitem>
           <listitem>
             <para>Improved alphabetical sorting.</para>

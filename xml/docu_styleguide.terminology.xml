@@ -97,8 +97,8 @@
         </row>
         <row>
           <entry>Apache OpenOffice</entry>
-          <entry>Apache Open Office, Open Office, Openoffice, Openoffice,
-            openoffice</entry>
+          <entry>Apache Open Office, Apache Openoffice, OpenOffice
+          </entry>
           <entry>noun; when referring to versions 3.4 and after; spelling
             according to project standard; acronym is
             <emphasis>AOO</emphasis>; see also
@@ -119,12 +119,13 @@
         </row>
         <row>
           <entry>audio CD</entry>
-          <entry>Audio CD, Audio-CD, CD-Audio, CD Audio, CD audio</entry>
+          <entry>Audio CD, Audio-CD, CD-Audio, CD Audio, CD audio
+          </entry>
           <entry>noun</entry>
         </row>
         <row>
           <entry>back-end</entry>
-          <entry>backend</entry>
+          <entry>back end, backend</entry>
           <entry>noun</entry>
         </row>
         <row>
@@ -250,29 +251,25 @@
         <row>
           <entry>certificate authority</entry>
           <entry>certifica<emphasis>tion</emphasis> authority,
-            certifica<emphasis>ting</emphasis> authority
+            certifica<emphasis>ting</emphasis> authority,
+            certif<emphasis>ied</emphasis> authority
           </entry>
           <entry>noun; acronym is <emphasis>CA</emphasis></entry>
         </row>
         <row>
           <entry>check box</entry>
-          <entry>check-box, checkbox, checking option, tick box, tick-box,
-            tickbox
-          </entry>
+          <entry>check-box, checkbox, checking option, tick box</entry>
           <entry>noun; avoid, only mention name of option</entry>
         </row>
         <row>
           <entry>checklist</entry>
-          <entry>check list, check-list, tick list, tick-list,
-            ticklist
+          <entry>check list, check-list, ticklist
           </entry>
           <entry>noun</entry>
         </row>
         <row>
           <entry>check mark</entry>
-          <entry>check, check-mark, checkmark, tick, tick mark,
-            tick-mark, tickmark
-          </entry>
+          <entry>check, check-mark, checkmark, tick, tick mark</entry>
           <entry>noun</entry>
         </row>
         <row>
@@ -412,10 +409,8 @@
         </row>
         <row>
           <entry>(to) double-click sth.</entry>
-          <entry>(to) double click sth., (to) double click on sth.,
-            (to) double click onto sth., (to) double-click on sth.,
-            (to) double-click onto sth., (to) doubleclick sth.,
-            (to) doubleclick on sth., (to) doubleclick onto sth.
+          <entry>(to) double click sth., (to) double-click on sth.,
+            (to) double-click onto sth., (to) doubleclick sth.
           </entry>
           <entry>verb</entry>
         </row>
@@ -667,8 +662,7 @@
         </row>
         <row>
           <entry>hypervisor</entry>
-          <entry>hyper visor, hyper-visor, hyper vizor, hyper-vizor,
-            hypervizor
+          <entry>hyper visor, hyper-visor, hypervizor
           </entry>
           <entry>noun</entry>
         </row>
@@ -708,11 +702,19 @@
           <entry>verb</entry>
         </row>
         <row>
+          <entry>installation medium</entry>
+          <entry>installation data medium</entry>
+          <entry>noun; often in plural, <quote>installation medium</quote>;
+            where possible, use the more generic term
+            <emphasis>installation source</emphasis>;
+            flash disk-based or disc-based source of installation data for
+            operating systems;
+          </entry>
+        </row>
+        <row>
           <entry>installation source</entry>
-          <entry>installation data source, installation media</entry>
+          <entry>installation data source</entry>
           <entry>noun; source of installation data for operating systems
-            <remark>sknorr, 2013-09-16: Really reject installation media?
-            </remark>
           </entry>
         </row>
         <row>
@@ -810,10 +812,8 @@
         <row>
           <entry>(to) left-click sth.</entry>
           <entry>(to) click the left mouse, (to) click the left mouse button,
-            (to) left click sth., (to) left click on sth.,
-            (to) left click onto sth., (to) left-click on sth.,
-            (to) left-click onto sth., (to) leftclick sth.,
-            (to) leftclick on sth., (to) leftclick onto sth.
+            (to) left click sth., (to) left-click on sth.,
+            (to) left-click onto sth., (to) leftclick sth.
           </entry>
           <entry>verb</entry>
         </row>
@@ -874,8 +874,7 @@
         <row>
           <entry>(to) log in [see below for appropriate preposition]</entry>
           <entry>(to) log-in, (to) login, (to) log on, (to) log-on,
-            (to) logon, (to) sign in, (to) sign-in, (to) signin,
-            (to) sign on, (to) sign-on, (to) signon
+            (to) logon, (to) sign in, (to) sign on
           </entry>
           <entry>verb</entry>
         </row>
@@ -891,13 +890,8 @@
         </row>
         <row>
           <entry>(to) log out [see below for appropriate preposition]</entry>
-          <entry>(to) log off, (to) log-off, (to) logoff, (to) log-out,
-            (to) logout, (to) sign off, (to) sign-off, (to) signoff,
-            <remark>sknorr, 2013-09-17: In code review systems (e.g.),
-              sign-off means something completely different.
-            </remark>
-            (to) sign out, (to) sign-out,
-            (to) signout
+          <entry>(to) log off, (to) log-out, (to) logout, (to) sign off,
+            (to) sign out
           </entry>
           <entry>verb</entry>
         </row>
@@ -960,10 +954,8 @@
         <row>
           <entry>(to) middle-click sth.</entry>
           <entry>(to) click the middle mouse, (to) click the middle mouse button,
-            (to) middle click sth., (to) middle click on sth.,
-            (to) middle click onto sth., (to) middle-click on sth.,
-            (to) middle-click onto sth., (to) middleclick sth.,
-            (to) middleclick on sth., to middle-click onto sth.
+            (to) middle click sth., (to) middle-click on sth.,
+            (to) middle-click onto sth., (to) middleclick sth.
           </entry>
           <entry>verb</entry>
         </row>
@@ -1025,7 +1017,7 @@
         </row>
         <row>
           <entry>NIS</entry>
-          <entry>N.I.S., NIS information service, NIS service, Nis</entry>
+          <entry>N.I.S., NIS information service, Nis</entry>
           <entry>noun; often: <quote>NIS client</quote>,
             <quote>NIS server</quote>
           </entry>
@@ -1051,7 +1043,7 @@
         </row>
         <row>
           <entry>OpenOffice.org</entry>
-          <entry>Open Office, Open Office Org, Openoffice, Openoffice.org,
+          <entry>Open Office Org, OpenOffice, Openoffice.org,
             openoffice, openoffice.org</entry>
           <entry>noun; only when referring to versions prior to 3.4; spelling
             according to former project standard; acronym is
@@ -1240,10 +1232,8 @@
         <row>
           <entry>(to) right-click sth.</entry>
           <entry>(to) click the right mouse, (to) click the right mouse button,
-            (to) right click sth., (to) right click on sth.,
-            (to) right click onto sth., (to) right-click on sth.,
-            (to) right-click onto sth., (to) rightclick sth.,
-            (to) rightclick on sth., (to) rightclick onto sth.
+            (to) right click sth., (to) right-click on sth.,
+            (to) right-click onto sth., (to) rightclick sth.
           </entry>
           <entry>verb</entry>
         </row>
@@ -1606,7 +1596,7 @@
         </row>
         <row>
           <entry>(to) uninstall sth.</entry>
-          <entry>(to) de-install sth., (to) deinstall sth., (to) un-install sth.
+          <entry>(to) deinstall sth., (to) un-install sth.
           </entry>
           <entry>verb
             <remark>sknorr, 2013-09-17: Packages are usually "removed," not
@@ -1617,7 +1607,7 @@
         </row>
         <row>
           <entry>unselected</entry>
-          <entry>deselected, de-selected, un-selected</entry>
+          <entry>deselected, un-selected</entry>
           <entry>adjective; selection state of text or list entry; opposite of
             <emphasis>selected</emphasis>
           </entry>
@@ -1644,7 +1634,7 @@
         </row>
         <row>
           <entry>video DVD</entry>
-          <entry>Video DVD, Video-DVD, DVD-Video, DVD Video, DVD video</entry>
+          <entry>Video DVD, Video-DVD, DVD video</entry>
           <entry>noun</entry>
         </row>
         <row>
@@ -1735,7 +1725,7 @@
         </row>
         <row>
           <entry>Wi-Fi</entry>
-          <entry>Wi fi, Wi-fi, Wifi, wireless fidelity, WLAN, Wlan</entry>
+          <entry>Wi fi, Wi-fi, Wifi, wireless fidelity, WLAN</entry>
           <entry>noun; use the <emphasis>Wi-Fi</emphasis> brand name
             whenever referring to IEEE 802.11-based networks or access points;
             use <emphasis>WLAN</emphasis> when referring to
@@ -1795,7 +1785,7 @@
         </row>
         <row>
           <entry>YaST</entry>
-          <entry>YAST, YAST2, Yast, Yast2, yast, yast2</entry>
+          <entry>YAST, YAST2, Yast, YaST2, yast, yast2</entry>
           <entry>noun; spelling according to project standard; acronym for
             <emphasis>Yet another Setup Tool</emphasis>
           </entry>
