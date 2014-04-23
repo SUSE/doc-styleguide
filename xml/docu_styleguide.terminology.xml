@@ -642,9 +642,10 @@
           <entry>(to) hot plug sth. (into sth.), (to) hot-plug sth. (into
             sth.), (to) hotadd sth., (to) hotswap sth.
           </entry>
-          <entry>verb; adding a component or device to a system while it is
-            running; use <emphasis>remove at runtime</emphasis> where the
-            specific action of removing a component or device is concerned
+          <entry>verb; adding a component or device from a system while the
+            system is running; use <emphasis>remove at runtime</emphasis>
+            where the specific action of removing a component or device is
+            concerned
           </entry>
         </row>
         <row>

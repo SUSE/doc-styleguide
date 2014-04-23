@@ -30,9 +30,8 @@
       <title>Abbreviations</title>
 
       <para>Where possible, avoid using abbreviations. Especially avoid
-        unusual abbreviations. Creating plurals by adding an <quote>s</quote>
-        is only allowed for acronyms. In all other cases, avoid creating
-        plurals of abbreviations.
+        unusual abbreviations. You may create plurals of acronyms.
+        In all other cases, avoid creating plurals of abbreviations.
       </para>
 
       <sect3 id="sec.acronym">
@@ -50,8 +49,9 @@
           parentheses after the acronym.
         </para>
         <para>Create plural forms of acronyms by adding a lowercase
-          <quote>s,</quote> for example, <quote>CDs</quote> and
-          <quote>BIOSs.</quote>
+          <quote>s,</quote> for example, use <quote>CDs</quote> and
+          <quote>BIOSs.</quote> Never add an apostrophe before the
+          <quote>s.</quote>
         </para>
         <para>Avoid using possessive forms of acronyms
           (a negative example would be <quote>XMLʼs specification</quote>)
@@ -63,8 +63,9 @@
         <title>Latin Abbreviations</title>
 
         <para>Do not use Latin abbreviations. Use the full English form:
-          for example, <quote>that is</quote> instead of <quote>i.e.</quote>.
-          As an exception to this rule, <emphasis>etc.</emphasis> is allowed.
+          for example, use <quote>that is</quote> instead of <quote>i.e.</quote>.
+          As an exception to this rule, the abbreviation
+          <emphasis>etc.</emphasis> is allowed.
         </para>
       </sect3>
 
@@ -72,7 +73,7 @@
         <title>Units of Measurement</title>
 
         <para>
-          Abbreviations of common units of measurement are allowed. Refer to
+          You may use abbreviations of common units of measurement. Refer to
           <xref linkend="sec.number"/> for more information about units of
           measurement.
         </para>

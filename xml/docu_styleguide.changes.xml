@@ -17,7 +17,7 @@
     <title>Release 2014-02.2</title>
 
     <para>Version 2014-02.2 was a minor update focused on adding terminology and
-      fixing small errors. Version 2014-02.2 was released on 2014-04-23.
+      fixing small errors. Version 2014-02.2 was released on 2014-04-24.
     </para>
     <itemizedlist>
       <listitem>
@@ -101,6 +101,7 @@
           <listitem>
             <para>Removed <quote>installation media</quote> from rejected terms
               of <emphasis>installation source</emphasis>.
+            </para>
           </listitem>
           <listitem>
             <para>Improved alphabetical sorting.</para>
