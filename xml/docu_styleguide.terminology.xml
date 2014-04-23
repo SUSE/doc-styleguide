@@ -46,6 +46,11 @@
           <entry>verb; when referring to check boxes</entry>
         </row>
         <row>
+          <entry>adapter</entry>
+          <entry>adaptor</entry>
+          <entry>noun</entry>
+        </row>
+        <row>
           <entry>add-on</entry>
           <entry>add on, AddOn, addOn, addon</entry>
           <entry>noun</entry>
@@ -186,7 +191,7 @@
           <entry>B.T.R.F.S., Better FS, BetterFS, Butter FS, ButterFS,
             btrfs
           </entry>
-          <entry>noun; not an acronym.
+          <entry>noun; not an acronym
             <remark>sknorr, 2013-09-18: Really, though? Origin is
               "B-tree File System"?
             </remark>
@@ -325,6 +330,15 @@
           <entry>verb</entry>
         </row>
         <row>
+          <entry>(to) connect via SSH (to sth.)</entry>
+          <entry>(to) connect by SSH (to sth.), (to) connect over SSH (to sth.),
+            (to) connect through SSH (to sth.), (to) connect with SSH (to sth.),
+            (to) SSH (to sth.), (to) ssh (to sth.), (to) ssh in (to sth.),
+            (to) ssh into sth.
+          </entry>
+          <entry>verb</entry>
+        </row>
+        <row>
           <entry>control center</entry>
           <entry>Control Center, Control center, Control-Center,
             Control-center, control-center, Controlcenter, controlcenter
@@ -389,7 +403,7 @@
         <row>
           <entry>dialog</entry>
           <entry>dialog box, dialog window, dialogue [British], screen</entry>
-          <entry>noun.
+          <entry>noun
             <remark>sknorr, 2013-09-17: Novell use dialog box, apparently, but
               that sounds rather colloquial. And then, a dialog doesn't
               have to be in a box/window, as with Web applications
@@ -613,7 +627,7 @@
         <row>
           <entry>home page</entry>
           <entry>home-page, homepage</entry>
-          <entry>noun.
+          <entry>noun
             <remark>sknorr, 2013-09-16: I can't accept the accepted spelling.
             </remark>
           </entry>
@@ -783,9 +797,7 @@
         <row>
           <entry>kdump</entry>
           <entry>KDUMP, Kdump</entry>
-          <entry>command; only for command
-            <remark>sknorr, 2013-09-16: So, commands aren't nouns, then?
-            </remark>
+          <entry>noun; only for command
           </entry>
         </row>
         <row>
@@ -804,9 +816,7 @@
         <row>
           <entry>kprobes</entry>
           <entry>Kprobes</entry>
-          <entry>command; only for command
-            <remark>sknorr, 2013-09-16: So, commands aren't nouns, then?
-            </remark>
+          <entry>noun; only for command
           </entry>
         </row>
         <row>
@@ -887,6 +897,15 @@
           <entry>(to) log in on sth.</entry>
           <entry>(to) log in at sth., (to) log in from sth.</entry>
           <entry>verb; for logging in on the console/a host system</entry>
+        </row>
+        <row>
+          <entry>(to) log in (to sth.) via SSH</entry>
+          <entry>(to) log in (to sth.) by SSH, (to) log in (to sth.) over SSH,
+            (to) log in (to sth.) through SSH, (to) log in (to sth.) with SSH,
+            (to) SSH (to sth.), (to) ssh (to sth.), (to) ssh in (to sth.),
+            (to) ssh into sth.,
+          </entry>
+          <entry>verb</entry>
         </row>
         <row>
           <entry>(to) log out [see below for appropriate preposition]</entry>
@@ -1001,7 +1020,7 @@
         <row>
           <entry>name server</entry>
           <entry>name-server, nameserver</entry>
-          <entry>two words</entry>
+          <entry>noun</entry>
         </row>
         <row>
           <entry>need to</entry>
@@ -1088,7 +1107,7 @@
         <row>
           <entry>plug-in</entry>
           <entry>plug in, plugin</entry>
-          <entry>noun or adjective</entry>
+          <entry>noun|adjective</entry>
         </row>
         <row>
           <entry>pop-up</entry>
@@ -1098,7 +1117,7 @@
         <row>
           <entry>on port</entry>
           <entry>at port</entry>
-          <entry>preposition, noun</entry>
+          <entry>preposition noun</entry>
         </row>
         <row>
           <entry>PostScript</entry>
@@ -1345,7 +1364,7 @@
         <row>
           <entry>setup</entry>
           <entry>set up, set-up</entry>
-          <entry>adjective or noun</entry>
+          <entry>adjective|noun</entry>
         </row>
         <row>
           <entry>(to) shut sth. down</entry>
@@ -1355,7 +1374,7 @@
         <row>
           <entry>shutdown</entry>
           <entry>shut down, shut-down</entry>
-          <entry>adjective or noun</entry>
+          <entry>adjective|noun</entry>
         </row>
         <row>
           <entry/>
@@ -1447,12 +1466,12 @@
         <row>
           <entry>statusbar</entry>
           <entry>status bar, status-bar</entry>
-          <entry>two words</entry>
+          <entry>noun</entry>
         </row>
         <row>
           <entry/>
           <entry>stuff [colloquial], stuffs</entry>
-          <entry>avoid</entry>
+          <entry>noun</entry>
         </row>
         <row>
           <entry>SSH</entry>
@@ -1750,6 +1769,11 @@
           <entry>noun</entry>
         </row>
         <row>
+          <entry>with regard to</entry>
+          <entry>as regards, in regard to, with regards to</entry>
+          <entry>conjunction noun preposition</entry>
+        </row>
+        <row>
           <entry>WLAN</entry>
           <entry>Wlan</entry>
           <entry>noun; avoid; use only when referring to wireless LANs that are
@@ -1798,7 +1822,7 @@
         <row>
           <entry>zypper</entry>
           <entry>Zypper</entry>
-          <entry>command; only for command</entry>
+          <entry>noun; only for command</entry>
         </row>
       </tbody>
     </tgroup>
