@@ -868,14 +868,19 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
           <listitem>
             <para>Be selective. Only illustrate steps in which meaningful user
               interactions are necessary. Do not create screenshots of progress
-              bars or confirmation windows. Generally, it is
+              bars or confirmation windows. Usually, it is
               unnecessary to create a screenshot of every step of an
               instruction.
             </para>
           </listitem>
           <listitem>
-            <para>Add screenshots from before an action has been taken directly
-              after the textual description of the action.
+            <para>Create screenshots before the action that is illustrated has
+              been taken.
+            </para>
+          </listitem>
+          <listitem>
+            <para>Insert screenshots directly after the textual description of
+              the action.
             </para>
           </listitem>
           <listitem>
