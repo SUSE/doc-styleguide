@@ -17,7 +17,7 @@
     <title>Release 2014-02.2</title>
 
     <para>Version 2014-02.2 was a minor update focused on adding terminology and
-      fixing small errors. Version 2014-02.2 was released on ?.
+      fixing small errors. Version 2014-02.2 was released on 2014-04-23.
     </para>
     <itemizedlist>
       <listitem>
@@ -37,6 +37,14 @@
         </para>
       </listitem>
       <listitem>
+        <para>Split existing section <emphasis>Abbreviations</emphasis> into
+          <xref linkend="sec.latin"/> and <xref linkend="sec.measurement"/>.
+          Added <xref linkend="sec.latin"/>,<xref linkend="sec.measurement"/>,
+          and <xref linkend="sec.acronym"/> to newly created
+          <xref linkend="sec.abbreviation"/>.
+        </para>
+      </listitem>
+      <listitem>
         <para>Separated list items for <sgmltag class="attribute">id</sgmltag>
           attribute and title in <xref linkend="sec.procedure"/>.
         </para>
@@ -46,18 +54,22 @@
         </para>
         <itemizedlist>
           <listitem>
-            <para>Added entries for <emphasis>architecture</emphasis>,
+            <para>Added entries for <emphasis>adapter</emphasis>,
+              <emphasis>architecture</emphasis>,
               <emphasis>create a hard link</emphasis>,
               <emphasis>create a symbolic link</emphasis>,
+              <emphasis>connect via SSH</emphasis>,
               <emphasis>init script</emphasis>,
               <emphasis>installation medium</emphasis>,
+              <emphasis>log in via SSH</emphasis>,
               <emphasis>remove at runtime</emphasis>,
               <emphasis>solid-state drive</emphasis>,
               <emphasis>SSD</emphasis>,
               <emphasis>symbolic link</emphasis>,
               <emphasis>synchronization</emphasis>,
               <emphasis>synchronize</emphasis>,
-              <emphasis>virtualize</emphasis>, <emphasis>WLAN</emphasis>.
+              <emphasis>virtualize</emphasis>, <emphasis>WLAN</emphasis>,
+              <emphasis>with regard to</emphasis>.
             </para>
           </listitem>
           <listitem>
