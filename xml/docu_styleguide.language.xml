@@ -29,33 +29,54 @@
     <sect2 id="sec.abbreviation">
       <title>Abbreviations</title>
 
-      <para>Do not use any abbreviations, except <emphasis>etc.</emphasis> or
-        abbreviations of common units of measurement. Do not create
-        a plural of abbreviations by adding an <quote>s.</quote> Refer to
-        <xref linkend="sec.number"/> for more information about units of
-        measurement.
+      <para>Where possible, avoid using abbreviations. Especially avoid
+        unusual abbreviations. Creating plurals by adding an <quote>s</quote>
+        is only allowed for acronyms. In all other cases, avoid creating
+        plurals of abbreviations.
       </para>
-    </sect2>
-    <sect2 id="sec.acronym">
-      <title>Acronyms</title>
-      <para>A title must not contain both an acronym and its expansion. When
-        dealing with a term that is commonly written as an acronym, use the
-        acronym in the title. When mentioning the term for the first time in
-        the following text, use its expanded form. All following occurrences
-        of the term in this chapter should then use the acronym.
-      </para>
-      <para>Sometimes chapters and parts are used across multiple
-        documents, therefore provide the expansion of an acronym at
-        least once per chapter. Be consistent in how you provide the
-        expansion. If you use the acronym followed by the written out form
-        in one chapter, do this in all other chapters too.
-      </para>
-      <para>Create plural forms of acronyms by adding a lowercase
-        <quote>s,</quote> for example, <quote>CDs</quote> and
-        <quote>BIOSs.</quote> Avoid using possessive forms of acronyms
-        (a negative example would be <quote>XMLʼs specification</quote>)
-        for reasons of clarity.
-      </para>
+
+      <sect3 id="sec.acronym">
+        <title>Acronyms</title>
+        <para>Headlines or captions must not contain both an acronym and its
+          expansion. When dealing with a term that is commonly written as an
+          acronym, use the acronym in the title. When mentioning the term for
+          the first time in the following text, use its expanded form.
+          All following occurrences
+          of the term in this chapter should then use the acronym.
+        </para>
+        <para>Sometimes chapters and parts are used across multiple
+          documents, therefore provide the expansion of an acronym at
+          least once per chapter. Provide the expansion by adding it in
+          parentheses after the acronym.
+        </para>
+        <para>Create plural forms of acronyms by adding a lowercase
+          <quote>s,</quote> for example, <quote>CDs</quote> and
+          <quote>BIOSs.</quote>
+        </para>
+        <para>Avoid using possessive forms of acronyms
+          (a negative example would be <quote>XMLʼs specification</quote>)
+          for reasons of clarity.
+        </para>
+      </sect3>
+
+      <sect3 id="sec.latin">
+        <title>Latin Abbreviations</title>
+
+        <para>Do not use Latin abbreviations. Use the full English form:
+          for example, <quote>that is</quote> instead of <quote>i.e.</quote>.
+          As an exception to this rule, <emphasis>etc.</emphasis> is allowed.
+        </para>
+      </sect3>
+
+      <sect3 id="sec.measurement">
+        <title>Units of Measurement</title>
+
+        <para>
+          Abbreviations of common units of measurement are allowed. Refer to
+          <xref linkend="sec.number"/> for more information about units of
+          measurement.
+        </para>
+      </sect3>
     </sect2>
 
     <sect2 id="sec.capitalization">
