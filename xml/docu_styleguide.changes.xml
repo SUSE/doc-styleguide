@@ -50,7 +50,14 @@
         </para>
       </listitem>
       <listitem>
-        <para>Updated terminology table in <xref linkend="app.terminology"/>.
+        <para>Split the table in <xref linkend="app.terminology"/> into
+          <xref linkend="sec.terminology"/> and <xref linkend="sec.vocabulary"/>
+          to better reflect the roles of the terms listed there.
+        </para>
+      </listitem>
+      <listitem>
+        <para>Updated terminology and general vocabulary tables in
+          <xref linkend="app.terminology"/>.
         </para>
         <itemizedlist>
           <listitem>
@@ -68,6 +75,8 @@
               <emphasis>symbolic link</emphasis>,
               <emphasis>synchronization</emphasis>,
               <emphasis>synchronize</emphasis>,
+              <emphasis>UEFI</emphasis>,
+              <emphasis>Unified Extensible Firmware Interface</emphasis>,
               <emphasis>virtualize</emphasis>, <emphasis>WLAN</emphasis>,
               <emphasis>with regard to</emphasis>.
             </para>
