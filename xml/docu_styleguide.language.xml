@@ -405,4 +405,30 @@
       </para>
     </sect2>
 
+    <sect2 id="sec.quotation">
+      <title>Quotations</title>
+
+      <para>Use quotations to quote from sources, such as books.
+        In most other cases, you should not use quotation marks.
+        For example, avoid ironic usage of words entirely.
+        In the case of computer input and output or user interface
+        elements, use more appropriate markup. See also
+        <xref linkend="sec.command_line"/> and
+        <xref linkend="sec.ui_item_markup"/>.
+      </para>
+      <para>To create quotations, use the
+        <sgmltag class="emptytag">quote</sgmltag>
+        element, as it is easier to localize than hardcoded quotation
+        marks and always provides typographic quotes.
+      </para>
+      <para>Punctuation directly following the quoted text should be
+        included within the quotation marks, as illustrated in
+        <xref linkend="ex.quote"/>.
+      </para>
+      <example id="ex.quote">
+        <title>Quote</title>
+        <para><quote>Suds may froth,</quote> the sign reads.</para>
+      </example>
+    </sect2>
+
   </sect1>
