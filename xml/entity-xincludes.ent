@@ -14,8 +14,7 @@
   <abstract>
     <para>This guide provides answers to writing, style, and layout questions
       commonly arising when editing SUSE documentation. The
-      <phrase role="productname">Novdoc</phrase>/
-      <phrase role="productname">DocBook</phrase>
+      <phrase role="productname">Novdoc</phrase>/<phrase role="productname">DocBook</phrase>
       markup reference at the end of this guide will help you
       choose the right XML element for your purpose. Following this guide will
       make your documentation more understandable and easier to translate.
