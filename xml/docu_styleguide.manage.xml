@@ -238,7 +238,7 @@
               <para>If you need to reference a particular product, use a more
                 specific entity.
               </para>
-              <screen>The ext2 file system has been included in the &lt;literal&gt;&amp;suse;&lt;/literal&gt;
+              <screen>The Ext4 file system has been included in the &lt;literal&gt;&amp;suse;&lt;/literal&gt;
 Kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
             </listitem>
           </varlistentry>
