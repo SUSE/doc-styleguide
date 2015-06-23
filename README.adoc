@@ -6,7 +6,10 @@ the guide will help you choose the right XML element for your
 purpose. Following this guide will make your documentation more understandable
 and easier to translate.
 
-A PDF build of the current version of the styleguide is https://github.com/fsundermeyer/doc-styleguide/raw/develop/prebuilt/current/styleguide_2014-02.2-with_changelog.pdf[available for download].  
+A PDF can be reached in different versions:
+
+* the https://github.com/SUSE/doc-styleguide/raw/master/prebuilt/current/styleguide_with_changelog.pdf[stable version]
+* the https://github.com/SUSE/doc-styleguide/raw/develop/prebuilt/current/styleguide_with_changelog.pdf[development version]
 
 Contributing
 -------------
