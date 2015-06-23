@@ -1,513 +1,565 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE article PUBLIC
-  "-//OASIS//DTD DocBook XML V4.5//EN"
-  "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd"
+<!DOCTYPE appendix
 [
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+    %entities;
 ]>
+<!-- Converted by suse-upgrade version 1.1 -->
+<appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="app.change">
+<!-- Add new versions to the beginning of the list. -->
+ <title>List of Changes to the Style Guide</title>
+ <info/>
+ <para>
+  This section lists the changes between versions of this Style Guide.
+ </para>
+<!-- Add new versions to the beginning of the list. -->
+ <sect1 xml:id="sec.change_2014-02.2">
+  <title>Release 2014-02.2</title>
 
-<appendix id="app.change">
-  <title>List of Changes to the Style Guide</title>
-
-  <para>This section lists the changes between versions of this Style Guide.
+  <para>
+   Version 2014-02.2 was a minor update focused on adding terminology and
+   fixing small errors. Version 2014-02.2 was released on 2014-04-24.
   </para>
 
-  <!-- Add new versions to the beginning of the list. -->
-
-  <sect1 id="sec.change_2014-02.2">
-    <title>Release 2014-02.2</title>
-
-    <para>Version 2014-02.2 was a minor update focused on adding terminology and
-      fixing small errors. Version 2014-02.2 was released on 2014-04-24.
+  <itemizedlist>
+   <listitem>
+    <para>
+     Improved clarity and fixed typos.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Brought Style Guide into better compliance with itself using the style
+     checker tool.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Moved <xref linkend="sec.heading"/> from
+     <xref linkend="sec.structure"/> into <xref linkend="sec.language"/>.
+     Added new section <xref linkend="sec.outline_level"/> with the
+     information on structure that the former <emphasis>Headings</emphasis>
+     section contained.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Split existing section <emphasis>Abbreviations</emphasis> into
+     <xref linkend="sec.latin"/> and <xref linkend="sec.measurement"/>.
+     Added <xref linkend="sec.latin"/>,<xref linkend="sec.measurement"/>,
+     and <xref linkend="sec.acronym"/> to newly created
+     <xref linkend="sec.abbreviation"/>.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Separated list items for
+     <tag class="attribute">id</tag>
+     attribute and title in <xref linkend="sec.procedure"/>.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Split the table in <xref linkend="app.terminology"/> into
+     <xref linkend="sec.terminology"/> and <xref linkend="sec.vocabulary"/>
+     to better reflect the roles of the terms listed there.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Updated terminology and general vocabulary tables in
+     <xref linkend="app.terminology"/>.
     </para>
     <itemizedlist>
-      <listitem>
-        <para>Improved clarity and fixed typos.</para>
-      </listitem>
-      <listitem>
-        <para>Brought Style Guide into better compliance with itself using the
-          style checker tool.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Moved <xref linkend="sec.heading"/> from
-          <xref linkend="sec.structure"/> into <xref linkend="sec.language"/>.
-          Added new section <xref linkend="sec.outline_level"/> with
-          the information on structure that the former
-          <emphasis>Headings</emphasis> section contained.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Split existing section <emphasis>Abbreviations</emphasis> into
-          <xref linkend="sec.latin"/> and <xref linkend="sec.measurement"/>.
-          Added <xref linkend="sec.latin"/>,<xref linkend="sec.measurement"/>,
-          and <xref linkend="sec.acronym"/> to newly created
-          <xref linkend="sec.abbreviation"/>.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Separated list items for <sgmltag class="attribute">id</sgmltag>
-          attribute and title in <xref linkend="sec.procedure"/>.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Split the table in <xref linkend="app.terminology"/> into
-          <xref linkend="sec.terminology"/> and <xref linkend="sec.vocabulary"/>
-          to better reflect the roles of the terms listed there.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Updated terminology and general vocabulary tables in
-          <xref linkend="app.terminology"/>.
-        </para>
-        <itemizedlist>
-          <listitem>
-            <para>Added entries for <emphasis>adapter</emphasis>,
-              <emphasis>architecture</emphasis>,
-              <emphasis>create a hard link</emphasis>,
-              <emphasis>create a symbolic link</emphasis>,
-              <emphasis>connect via SSH</emphasis>,
-              <emphasis>init script</emphasis>,
-              <emphasis>installation medium</emphasis>,
-              <emphasis>log in via SSH</emphasis>,
-              <emphasis>remove at runtime</emphasis>,
-              <emphasis>solid-state drive</emphasis>,
-              <emphasis>SSD</emphasis>,
-              <emphasis>symbolic link</emphasis>,
-              <emphasis>synchronization</emphasis>,
-              <emphasis>synchronize</emphasis>,
-              <emphasis>UEFI</emphasis>,
-              <emphasis>Unified Extensible Firmware Interface</emphasis>,
-              <emphasis>virtualize</emphasis>, <emphasis>WLAN</emphasis>,
-              <emphasis>with regard to</emphasis>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Changed accepted spellings from
-              <emphasis>Wi-fi</emphasis> to <emphasis>Wi-Fi</emphasis>,
-              <emphasis>Wi-fi card</emphasis> to <emphasis>Wi-Fi card</emphasis>,
-              and <emphasis>Wi-fi/Bluetooth card</emphasis> to
-              <emphasis>Wi-Fi/Bluetooth card</emphasis>. This matches the
-              correct spelling of the brand.
-              <remark>sknorr, 2014-03-19: Thanks, Tom!</remark>
-            </para>
-          </listitem>
-          <listitem>
-            <para>Corrected rejected terms in the entry of
-              <emphasis>AOO</emphasis>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Added rejected terms to the entries of
-              <emphasis>boot disk</emphasis> (<quote>boot disc</quote>),
-              <emphasis>check box</emphasis> (<quote>checking option</quote>),
-              <emphasis>flash disk</emphasis>, <emphasis>hard disk</emphasis>,
-              <emphasis>hotplug</emphasis> (<quote>hotadd</quote>,
-              <quote>hotswap</quote>), <emphasis>hotpluggable</emphasis>,
-              <emphasis>hotplugging</emphasis>, <emphasis>press</emphasis>,
-              <emphasis>slider</emphasis> (<quote>slidebar</quote>).
-            </para>
-          </listitem>
-          <listitem>
-            <para>Removed <quote>installation media</quote> from rejected terms
-              of <emphasis>installation source</emphasis>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Improved alphabetical sorting.</para>
-          </listitem>
-        </itemizedlist>
-      </listitem>
+     <listitem>
+      <para>
+       Added entries for <emphasis>adapter</emphasis>,
+       <emphasis>architecture</emphasis>, <emphasis>create a hard
+       link</emphasis>, <emphasis>create a symbolic link</emphasis>,
+       <emphasis>connect via SSH</emphasis>, <emphasis>init
+       script</emphasis>, <emphasis>installation medium</emphasis>,
+       <emphasis>log in via SSH</emphasis>, <emphasis>remove at
+       runtime</emphasis>, <emphasis>solid-state drive</emphasis>,
+       <emphasis>SSD</emphasis>, <emphasis>symbolic link</emphasis>,
+       <emphasis>synchronization</emphasis>,
+       <emphasis>synchronize</emphasis>, <emphasis>UEFI</emphasis>,
+       <emphasis>Unified Extensible Firmware Interface</emphasis>,
+       <emphasis>virtualize</emphasis>, <emphasis>WLAN</emphasis>,
+       <emphasis>with regard to</emphasis>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Changed accepted spellings from <emphasis>Wi-fi</emphasis> to
+       <emphasis>Wi-Fi</emphasis>, <emphasis>Wi-fi card</emphasis> to
+       <emphasis>Wi-Fi card</emphasis>, and <emphasis>Wi-fi/Bluetooth
+       card</emphasis> to <emphasis>Wi-Fi/Bluetooth card</emphasis>. This
+       matches the correct spelling of the brand.
+       <remark>sknorr, 2014-03-19: Thanks, Tom!</remark>
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Corrected rejected terms in the entry of <emphasis>AOO</emphasis>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Added rejected terms to the entries of <emphasis>boot disk</emphasis>
+       (<quote>boot disc</quote>), <emphasis>check box</emphasis>
+       (<quote>checking option</quote>), <emphasis>flash disk</emphasis>,
+       <emphasis>hard disk</emphasis>, <emphasis>hotplug</emphasis>
+       (<quote>hotadd</quote>, <quote>hotswap</quote>),
+       <emphasis>hotpluggable</emphasis>, <emphasis>hotplugging</emphasis>,
+       <emphasis>press</emphasis>, <emphasis>slider</emphasis>
+       (<quote>slidebar</quote>).
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Removed <quote>installation media</quote> from rejected terms of
+       <emphasis>installation source</emphasis>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Improved alphabetical sorting.
+      </para>
+     </listitem>
     </itemizedlist>
-  </sect1>
+   </listitem>
+  </itemizedlist>
+ </sect1>
+ <sect1 xml:id="sec.change_2014-02.1">
+  <title>Release 2014-02.1</title>
 
-  <sect1 id="sec.change_2014-02.1">
-    <title>Release 2014-02.1</title>
+  <para>
+   Version 2014-02.1 was a minor update focused on adding terminology and
+   fixing small errors. Version 2014-02.1 was released on 2014-03-13.
+  </para>
 
-    <para>Version 2014-02.1 was a minor update focused on adding terminology and
-      fixing small errors. Version 2014-02.1 was released on 2014-03-13.
+  <itemizedlist>
+   <listitem>
+    <para>
+     Improved clarity and fixed typos.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Improved example of a warning in <xref linkend="sec.admonition"/>.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Added an instruction where to insert screenshots to
+     <xref linkend="sec.screenshot"/>.
+     <remark>sknorr, 2014-03-05: Thanks, Frank!</remark>
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Updated terminology table in <xref linkend="app.terminology"/>.
     </para>
     <itemizedlist>
-      <listitem>
-        <para>Improved clarity and fixed typos.</para>
-      </listitem>
-      <listitem>
-        <para>Improved example of a warning in <xref linkend="sec.admonition"/>.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Added an instruction where to insert screenshots to
-          <xref linkend="sec.screenshot"/>.
-          <remark>sknorr, 2014-03-05: Thanks, Frank!</remark>
-        </para>
-      </listitem>
-      <listitem>
-        <para>Updated terminology table in <xref linkend="app.terminology"/>.
-        </para>
-        <itemizedlist>
-          <listitem>
-            <para>Added entries for
-              <emphasis>AOO</emphasis>, <emphasis>Apache OpenOffice</emphasis>,
-              <emphasis>Bluetooth</emphasis>,
-              <emphasis>Bluetooth card</emphasis>,
-              <emphasis>drop-down box</emphasis>,
-              <emphasis>Ethernet card</emphasis>,
-              <emphasis>HTML page</emphasis>,
-              <emphasis>HTTPS</emphasis>, <emphasis>KDE</emphasis>,
-              <emphasis>LibreOffice</emphasis>, <emphasis>Linux</emphasis>,
-              <emphasis>list box</emphasis>, <emphasis>menu</emphasis>,
-              <emphasis>OpenOffice.org</emphasis>, <emphasis>OOo</emphasis>,
-              <emphasis>please</emphasis>, <emphasis>delta RPM</emphasis>,
-              <emphasis>(to) save sth.</emphasis> (with sub-entries),
-              <emphasis>selected</emphasis>, <emphasis>terminate</emphasis>,
-              <emphasis>text box</emphasis>, <emphasis>Wi-fi card</emphasis>,
-              <emphasis>Wi-fi/Bluetooth card</emphasis>,
-              <emphasis>(to) write sth.</emphasis> and
-              <emphasis>video DVD</emphasis>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Replaced entry for <emphasis>facilitate</emphasis> with entry
-              for <emphasis>simplify</emphasis>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Added <emphasis>HTML web page</emphasis> as a rejected entry
-              to <emphasis>Web page</emphasis>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Added <emphasis>joker</emphasis> as a rejected entry to
-              <emphasis>wild card</emphasis>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Added <emphasis>screen</emphasis> as a rejected entry to
-              <emphasis>dialog</emphasis>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Removed <emphasis>graphical UI</emphasis> as a rejected entry
-              from <emphasis>GUI</emphasis> and
-              <emphasis>graphical user interface</emphasis>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Clarified usage of <emphasis>(to) close sth.</emphasis>,
-              <emphasis>(to) log in</emphasis>,
-              <emphasis>(to) log out</emphasis>,
-              and <emphasis>(to) quit sth.</emphasis>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Changed accepted entry from <emphasis>Audio CD</emphasis> to
-            <emphasis>audio CD</emphasis>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Removed entries for <emphasis>computer</emphasis> and
-              <emphasis>Kernel</emphasis>.
-            </para>
-          </listitem>
-        </itemizedlist>
-      </listitem>
+     <listitem>
+      <para>
+       Added entries for <emphasis>AOO</emphasis>, <emphasis>Apache
+       OpenOffice</emphasis>, <emphasis>Bluetooth</emphasis>,
+       <emphasis>Bluetooth card</emphasis>, <emphasis>drop-down
+       box</emphasis>, <emphasis>Ethernet card</emphasis>, <emphasis>HTML
+       page</emphasis>, <emphasis>HTTPS</emphasis>,
+       <emphasis>KDE</emphasis>, <emphasis>LibreOffice</emphasis>,
+       <emphasis>Linux</emphasis>, <emphasis>list box</emphasis>,
+       <emphasis>menu</emphasis>, <emphasis>OpenOffice.org</emphasis>,
+       <emphasis>OOo</emphasis>, <emphasis>please</emphasis>,
+       <emphasis>delta RPM</emphasis>, <emphasis>(to) save sth.</emphasis>
+       (with sub-entries), <emphasis>selected</emphasis>,
+       <emphasis>terminate</emphasis>, <emphasis>text box</emphasis>,
+       <emphasis>Wi-fi card</emphasis>, <emphasis>Wi-fi/Bluetooth
+       card</emphasis>, <emphasis>(to) write sth.</emphasis> and
+       <emphasis>video DVD</emphasis>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Replaced entry for <emphasis>facilitate</emphasis> with entry for
+       <emphasis>simplify</emphasis>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Added <emphasis>HTML web page</emphasis> as a rejected entry to
+       <emphasis>Web page</emphasis>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Added <emphasis>joker</emphasis> as a rejected entry to
+       <emphasis>wild card</emphasis>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Added <emphasis>screen</emphasis> as a rejected entry to
+       <emphasis>dialog</emphasis>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Removed <emphasis>graphical UI</emphasis> as a rejected entry from
+       <emphasis>GUI</emphasis> and <emphasis>graphical user
+       interface</emphasis>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Clarified usage of <emphasis>(to) close sth.</emphasis>,
+       <emphasis>(to) log in</emphasis>, <emphasis>(to) log out</emphasis>,
+       and <emphasis>(to) quit sth.</emphasis>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Changed accepted entry from <emphasis>Audio CD</emphasis> to
+       <emphasis>audio CD</emphasis>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Removed entries for <emphasis>computer</emphasis> and
+       <emphasis>Kernel</emphasis>.
+      </para>
+     </listitem>
     </itemizedlist>
-  </sect1>
+   </listitem>
+  </itemizedlist>
+ </sect1>
+ <sect1 xml:id="sec.change_2014-02">
+  <title>Release 2014-02&mdash;February 2014 Major Update</title>
 
-  <sect1 id="sec.change_2014-02">
-    <title>Release 2014-02&mdash;February 2014 Major Update</title>
+  <para>
+   2014-02 was a major update focused on restructuring the style guide and
+   adding terminology. Version 2014-02 was released on 2014-02-18.
+  </para>
 
-    <para>2014-02 was a major update focused on restructuring the style guide
-      and adding terminology. Version 2014-02 was released on 2014-02-18.
+  <itemizedlist>
+   <listitem>
+    <para>
+     Restructured large parts of the style guide
     </para>
     <itemizedlist>
-      <listitem>
-        <para>Restructured large parts of the style guide</para>
-        <itemizedlist>
-          <listitem>
-            <para>Promoted <xref linkend="sec.audience"/> to a
-              <sgmltag class="emptytag">sect1</sgmltag>. Added new paragraph
-              about how to mark the target audience in documentation.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Removed <emphasis>Creating a Consistent Structure: Lessons
-              for Lizards</emphasis> section.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Renamed <emphasis>Creating a Consistent Structure: Official
-              SUSE Manuals</emphasis> to
-              <emphasis>Outline of a Manual</emphasis> and promoted
-              to a <sgmltag class="emptytag">sect1</sgmltag>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Split the chapter <emphasis>Writing and Editing</emphasis> into
-              <xref linkend="sec.language"/>, <xref linkend="sec.structure"/>,
-              and <xref linkend="sec.manage"/>. Moved the subsections of
-              <emphasis>Writing and Editing</emphasis> where they fit best.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Integrated the <emphasis>Markup</emphasis> appendix into to
-              <xref linkend="sec.structure"/> and <xref linkend="sec.manage"/>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Moved <xref linkend="sec.procedure"/>
-              (formerly <emphasis>Creating Procedures</emphasis>)
-              and <xref linkend="sec.command_line"/> (formerly
-              <emphasis>Presenting Computer Elements</emphasis>) as
-              subsections into <xref linkend="sec.structure"/>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Renamed <emphasis>Discriminatory Language</emphasis> to
-              <xref linkend="sec.bias"/>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Renamed <emphasis>Keys</emphasis> to
-              <xref linkend="sec.keyboard"/> and promoted it to a
-              <sgmltag class="emptytag">sect2</sgmltag> within
-              <xref linkend="sec.structure"/>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Renamed <emphasis>GUI Elements</emphasis> to
-              <xref linkend="sec.ui_item_language"/> and promoted it to a
-              <sgmltag class="emptytag">sect2</sgmltag> within
-              <xref linkend="sec.language"/>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Created <xref linkend="sec.manage"/> and moved
-              <xref linkend="sec.remark"/>, <xref linkend="sec.xml_comment"/>,
-              and <xref linkend="sec.entity"/> as subsections into it.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Moved <xref linkend="app.terminology"/> and the copyright
-              notice into separate DocBook files.
-            </para>
-          </listitem>
-        </itemizedlist>
-      </listitem>
-      <listitem>
-        <para>Restructured terminology list, added more terminology</para>
-        <itemizedlist>
-          <listitem>
-            <para>Renamed <emphasis>Spelling Terms</emphasis> to
-              <xref linkend="app.terminology"/> and moved it into an appendix.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Centralized much of the information in the introductory
-              paragraph of <emphasis>Spelling Terms</emphasis> in
-              <xref linkend="sec.language"/>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Change table layout from two columns (<quote>Word or
-              Phrase</quote> and <quote>Usage Guideline</quote>) to three
-              (<quote>Accepted</quote>, <quote>Rejected</quote>, and
-              <quote>Usage Guideline</quote>).
-            </para>
-          </listitem>
-          <listitem>
-            <para>Added prefix <emphasis>(to)</emphasis> to all verbs.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Added grammatical classification of word to all entries.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Added entries for
-              <emphasis>(to) activate sth.</emphasis>,
-              <emphasis>add-on</emphasis>,
-              <emphasis>advice</emphasis>,
-              <emphasis>(to) advise</emphasis>, <emphasis>after</emphasis>,
-              <emphasis>although</emphasis>, <emphasis>and</emphasis>,
-              <emphasis>appendixes</emphasis>, <emphasis>Audio CD</emphasis>,
-              <emphasis>because of</emphasis>, <emphasis>basically</emphasis>,
-              <emphasis>(to) boot using/via PXE</emphasis>,
-              <emphasis>Btrfs</emphasis>, <emphasis>but</emphasis>,
-              <emphasis>CD</emphasis>, <emphasis>CD-ROM</emphasis>,
-              <emphasis>CUPS</emphasis>, <emphasis>(to) close sth.</emphasis>,
-              <emphasis>computer</emphasis>*,
-              <emphasis>configuration</emphasis>,
-              <emphasis>(to) configure</emphasis>, <emphasis>could</emphasis>,
-              <emphasis>Common Unix Printing System</emphasis>,
-              <emphasis>(to) deactivate sth.</emphasis>,
-              <emphasis>dialog</emphasis>, <emphasis>directory</emphasis>,
-              <emphasis>DVD</emphasis>, <emphasis>e-book</emphasis>,
-              <emphasis>EPUB</emphasis>, <emphasis>easy, easily</emphasis>,
-              <emphasis>end user</emphasis>,
-              <emphasis>etc.</emphasis>, <emphasis>Ext3</emphasis>,
-              <emphasis>Ext4</emphasis>, <emphasis>flavor</emphasis>,
-              <emphasis>flash disk</emphasis>*,
-              <emphasis>graphical user interface</emphasis>,
-              <emphasis>HTTP</emphasis>, <emphasis>if</emphasis>,
-              <emphasis>indexes</emphasis>, <emphasis>initialization</emphasis>,
-              <emphasis>(to) initialize</emphasis>,
-              <emphasis>IPv4</emphasis>, <emphasis>IPv6</emphasis>,
-              <emphasis>license</emphasis>,
-              <emphasis>(to) license sth.</emphasis>,
-              <emphasis>lowercase</emphasis>, <emphasis>just</emphasis>,
-              <emphasis>need to</emphasis>,
-              <emphasis>might</emphasis>, <emphasis>(to) multitask</emphasis>,
-              <emphasis>must</emphasis>, <emphasis>obvious</emphasis>,
-              <emphasis>obviously</emphasis>,
-              <emphasis>openSUSE</emphasis>,
-              <emphasis>(to) open sth.</emphasis>,
-              <emphasis>open source</emphasis>,
-              <emphasis>(to) print sth.</emphasis>,
-              <emphasis>(to) preconfigure sth.</emphasis>,
-              <emphasis>preconfigured</emphasis>,
-              <emphasis>(to) press sth.</emphasis>,
-              <emphasis>PXE</emphasis>, <emphasis>PXE boot</emphasis>,
-              <emphasis>(to) quit sth.</emphasis>,
-              <emphasis>(to) register</emphasis>,
-              <emphasis>(to) register at sth.</emphasis>,
-              <emphasis>(to) register for sth.</emphasis>,
-              <emphasis>SLE</emphasis>, <emphasis>SLED</emphasis>,
-              <emphasis>SLES</emphasis>, <emphasis>SUSE Cloud</emphasis>,
-              <emphasis>SUSE Linux Enterprise</emphasis>,
-              <emphasis>SUSE Linux Enterprise Desktop</emphasis>,
-              <emphasis>SUSE Linux Enterprise Server</emphasis>,
-              <emphasis>SUSE Manager</emphasis>,
-              <emphasis>SUSE Studio</emphasis>,
-              <emphasis>self-evident</emphasis>,
-              <emphasis>self-evidently</emphasis>,
-              <emphasis>scrollbar</emphasis>*,
-              <emphasis>simple, simply</emphasis>,
-              <emphasis>(to) select sth.</emphasis>,
-              <emphasis>(to) shut sth. down</emphasis>,
-              <emphasis>shutdown</emphasis>,
-              <emphasis>(to) start sth. up</emphasis>,
-              <emphasis>TAR archive</emphasis>*,
-              <emphasis>(to) type sth. (into sth.)</emphasis>,
-              <emphasis>usage</emphasis>,
-              <emphasis>Unix</emphasis>, <emphasis>uppercase</emphasis>,
-              <emphasis>when</emphasis>, <emphasis>want sth.</emphasis>,
-              <emphasis>Wi-fi</emphasis>*, and
-              <emphasis>YaST</emphasis>.
-            </para>
-            <para>(An * marks potentially interesting changes.)</para>
-          </listitem>
-          <listitem>
-            <para>Changed accepted spellings of compund words whose
-              second part is <quote>name</quote>. These are now written
-              with a space:
-              <emphasis>file name</emphasis>, <emphasis>host name</emphasis>,
-              <emphasis>path name</emphasis>, <emphasis>user name</emphasis>.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Changed accepted spelling from
-              <emphasis>screen shot</emphasis> to
-              <emphasis>screenshot</emphasis>.
-            </para>
-          </listitem>
-        </itemizedlist>
-      </listitem>
-      <listitem>
-        <para>Switched from
-          <citetitle>Merriam-Webster Collegiate Dictionary</citetitle> to
-          <ulink url="http://www.merriam-webster.com/"/> Web site as the
-          authoritative source of spellings.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Added <xref linkend="sec.prompt"/> to document how to use prompts
-          in <sgmltag class="emptytag">screen</sgmltag> elements.
-        </para>
-      </listitem>
-      <listitem>
-        <para>In <xref linkend="sec.name"/>, added Geeko, Foxkeh, Konqi, and
-          Duke to the list of mascots to choose from.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Removed all occurrences of <quote>basically</quote> and
-          <quote>stuff</quote>. Removed other occurrences of colloquial
-          language.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Updated various examples to use newer software versions or to not
-          specify a software version. (Examples are <emphasis>soffice</emphasis>
-          to <emphasis>loffice</emphasis>, <emphasis>SUSE LINUX 9.1.4.2</emphasis>
-          to <emphasis>SUSE Linux Enterprise</emphasis>).
-        </para>
-      </listitem>
-      <listitem>
-        <para>Shortened and clarified many parts of the style guide to avoid
-          tautologies and unnecessary explanations.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Rewrote large parts of <xref linkend="sec.outline"/>. Removed
-          example of structure. Added copyright notice as an example.
-          Expanded on information needed for title pages and imprints.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Removed differentiation between the many types of
-          <filename>authors</filename> files
-          from <xref linkend="sec.outline"/>. This was too complicated to be
-          practical. Also, current practice is to never mention translators.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Added <quote>Objective before Instruction</quote> rule to
-          <xref linkend="sec.structure_sentence"/>.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Added short guideline about file extensions to
-          <xref linkend="sec.file_language"/>.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Reworked <xref linkend="sec.figure"/> to be more structured and
-          added instructions for preparing and editing screenshots.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Added <xref linkend="sec.xinclude"/>.</para>
-      </listitem>
-      <listitem>
-        <para>More informative example in <xref linkend="sec.glossary"/>.</para>
-      </listitem>
-      <listitem>
-        <para>Simplified rules for creating IDs in <xref linkend="sec.id"/>.
-          The aim is to shorten the length of the average ID and to help to
-          create predictable IDs.
-        </para>
-      </listitem>
-      <listitem>
-        <para>Added the <sgmltag class="attvalue">co</sgmltag> prefix to
-          <xref linkend="tab.id_prefix"/>.
-        </para>
-      </listitem>
-
-      <listitem>
-        <para>Added this list of changes as an appendix.</para>
-      </listitem>
-      <listitem>
-        <para>Added list of authors as a separate DocBook file.</para>
-      </listitem>
-      <listitem>
-        <para>Added standard entities as a separate file.</para>
-      </listitem>
-      <listitem>
-        <para>Updated copyright notice to refer to SUSE, LLC instead of
-          Novell, Inc.
-        </para>
-      </listitem>
+     <listitem>
+      <para>
+       Promoted <xref linkend="sec.audience"/> to a
+       <tag class="emptytag">sect1</tag>
+       . Added new paragraph about how to mark the target audience in
+       documentation.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Removed <emphasis>Creating a Consistent Structure: Lessons for
+       Lizards</emphasis> section.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Renamed <emphasis>Creating a Consistent Structure: Official SUSE
+       Manuals</emphasis> to <emphasis>Outline of a Manual</emphasis> and
+       promoted to a
+       <tag class="emptytag">sect1</tag>
+       .
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Split the chapter <emphasis>Writing and Editing</emphasis> into
+       <xref linkend="sec.language"/>, <xref linkend="sec.structure"/>, and
+       <xref linkend="sec.manage"/>. Moved the subsections of
+       <emphasis>Writing and Editing</emphasis> where they fit best.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Integrated the <emphasis>Markup</emphasis> appendix into to
+       <xref linkend="sec.structure"/> and <xref linkend="sec.manage"/>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Moved <xref linkend="sec.procedure"/> (formerly <emphasis>Creating
+       Procedures</emphasis>) and <xref linkend="sec.command_line"/>
+       (formerly <emphasis>Presenting Computer Elements</emphasis>) as
+       subsections into <xref linkend="sec.structure"/>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Renamed <emphasis>Discriminatory Language</emphasis> to
+       <xref linkend="sec.bias"/>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Renamed <emphasis>Keys</emphasis> to <xref linkend="sec.keyboard"/>
+       and promoted it to a
+       <tag class="emptytag">sect2</tag>
+       within <xref linkend="sec.structure"/>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Renamed <emphasis>GUI Elements</emphasis> to
+       <xref linkend="sec.ui_item_language"/> and promoted it to a
+       <tag class="emptytag">sect2</tag>
+       within <xref linkend="sec.language"/>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Created <xref linkend="sec.manage"/> and moved
+       <xref linkend="sec.remark"/>, <xref linkend="sec.xml_comment"/>, and
+       <xref linkend="sec.entity"/> as subsections into it.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Moved <xref linkend="app.terminology"/> and the copyright notice into
+       separate DocBook files.
+      </para>
+     </listitem>
     </itemizedlist>
-
-  </sect1>
+   </listitem>
+   <listitem>
+    <para>
+     Restructured terminology list, added more terminology
+    </para>
+    <itemizedlist>
+     <listitem>
+      <para>
+       Renamed <emphasis>Spelling Terms</emphasis> to
+       <xref linkend="app.terminology"/> and moved it into an appendix.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Centralized much of the information in the introductory paragraph of
+       <emphasis>Spelling Terms</emphasis> in
+       <xref linkend="sec.language"/>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Change table layout from two columns (<quote>Word or Phrase</quote>
+       and <quote>Usage Guideline</quote>) to three
+       (<quote>Accepted</quote>, <quote>Rejected</quote>, and <quote>Usage
+       Guideline</quote>).
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Added prefix <emphasis>(to)</emphasis> to all verbs.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Added grammatical classification of word to all entries.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Added entries for <emphasis>(to) activate sth.</emphasis>,
+       <emphasis>add-on</emphasis>, <emphasis>advice</emphasis>,
+       <emphasis>(to) advise</emphasis>, <emphasis>after</emphasis>,
+       <emphasis>although</emphasis>, <emphasis>and</emphasis>,
+       <emphasis>appendixes</emphasis>, <emphasis>Audio CD</emphasis>,
+       <emphasis>because of</emphasis>, <emphasis>basically</emphasis>,
+       <emphasis>(to) boot using/via PXE</emphasis>,
+       <emphasis>Btrfs</emphasis>, <emphasis>but</emphasis>,
+       <emphasis>CD</emphasis>, <emphasis>CD-ROM</emphasis>,
+       <emphasis>CUPS</emphasis>, <emphasis>(to) close sth.</emphasis>,
+       <emphasis>computer</emphasis>*, <emphasis>configuration</emphasis>,
+       <emphasis>(to) configure</emphasis>, <emphasis>could</emphasis>,
+       <emphasis>Common Unix Printing System</emphasis>, <emphasis>(to)
+       deactivate sth.</emphasis>, <emphasis>dialog</emphasis>,
+       <emphasis>directory</emphasis>, <emphasis>DVD</emphasis>,
+       <emphasis>e-book</emphasis>, <emphasis>EPUB</emphasis>,
+       <emphasis>easy, easily</emphasis>, <emphasis>end user</emphasis>,
+       <emphasis>etc.</emphasis>, <emphasis>Ext3</emphasis>,
+       <emphasis>Ext4</emphasis>, <emphasis>flavor</emphasis>,
+       <emphasis>flash disk</emphasis>*, <emphasis>graphical user
+       interface</emphasis>, <emphasis>HTTP</emphasis>,
+       <emphasis>if</emphasis>, <emphasis>indexes</emphasis>,
+       <emphasis>initialization</emphasis>, <emphasis>(to)
+       initialize</emphasis>, <emphasis>IPv4</emphasis>,
+       <emphasis>IPv6</emphasis>, <emphasis>license</emphasis>,
+       <emphasis>(to) license sth.</emphasis>,
+       <emphasis>lowercase</emphasis>, <emphasis>just</emphasis>,
+       <emphasis>need to</emphasis>, <emphasis>might</emphasis>,
+       <emphasis>(to) multitask</emphasis>, <emphasis>must</emphasis>,
+       <emphasis>obvious</emphasis>, <emphasis>obviously</emphasis>,
+       <emphasis>openSUSE</emphasis>, <emphasis>(to) open sth.</emphasis>,
+       <emphasis>open source</emphasis>, <emphasis>(to) print
+       sth.</emphasis>, <emphasis>(to) preconfigure sth.</emphasis>,
+       <emphasis>preconfigured</emphasis>, <emphasis>(to) press
+       sth.</emphasis>, <emphasis>PXE</emphasis>, <emphasis>PXE
+       boot</emphasis>, <emphasis>(to) quit sth.</emphasis>, <emphasis>(to)
+       register</emphasis>, <emphasis>(to) register at sth.</emphasis>,
+       <emphasis>(to) register for sth.</emphasis>,
+       <emphasis>SLE</emphasis>, <emphasis>SLED</emphasis>,
+       <emphasis>SLES</emphasis>, <emphasis>SUSE Cloud</emphasis>,
+       <emphasis>SUSE Linux Enterprise</emphasis>, <emphasis>SUSE Linux
+       Enterprise Desktop</emphasis>, <emphasis>SUSE Linux Enterprise
+       Server</emphasis>, <emphasis>SUSE Manager</emphasis>, <emphasis>SUSE
+       Studio</emphasis>, <emphasis>self-evident</emphasis>,
+       <emphasis>self-evidently</emphasis>, <emphasis>scrollbar</emphasis>*,
+       <emphasis>simple, simply</emphasis>, <emphasis>(to) select
+       sth.</emphasis>, <emphasis>(to) shut sth. down</emphasis>,
+       <emphasis>shutdown</emphasis>, <emphasis>(to) start sth.
+       up</emphasis>, <emphasis>TAR archive</emphasis>*, <emphasis>(to) type
+       sth. (into sth.)</emphasis>, <emphasis>usage</emphasis>,
+       <emphasis>Unix</emphasis>, <emphasis>uppercase</emphasis>,
+       <emphasis>when</emphasis>, <emphasis>want sth.</emphasis>,
+       <emphasis>Wi-fi</emphasis>*, and <emphasis>YaST</emphasis>.
+      </para>
+      <para>
+       (An * marks potentially interesting changes.)
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Changed accepted spellings of compund words whose second part is
+       <quote>name</quote>. These are now written with a space:
+       <emphasis>file name</emphasis>, <emphasis>host name</emphasis>,
+       <emphasis>path name</emphasis>, <emphasis>user name</emphasis>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Changed accepted spelling from <emphasis>screen shot</emphasis> to
+       <emphasis>screenshot</emphasis>.
+      </para>
+     </listitem>
+    </itemizedlist>
+   </listitem>
+   <listitem>
+    <para>
+     Switched from <citetitle>Merriam-Webster Collegiate
+     Dictionary</citetitle> to
+     <link xlink:href="http://www.merriam-webster.com/"/> Web site as the
+     authoritative source of spellings.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Added <xref linkend="sec.prompt"/> to document how to use prompts in
+     <tag class="emptytag">screen</tag>
+     elements.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     In <xref linkend="sec.name"/>, added Geeko, Foxkeh, Konqi, and Duke to
+     the list of mascots to choose from.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Removed all occurrences of <quote>basically</quote> and
+     <quote>stuff</quote>. Removed other occurrences of colloquial language.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Updated various examples to use newer software versions or to not
+     specify a software version. (Examples are <emphasis>soffice</emphasis>
+     to <emphasis>loffice</emphasis>, <emphasis>SUSE LINUX
+     9.1.4.2</emphasis> to <emphasis>SUSE Linux Enterprise</emphasis>).
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Shortened and clarified many parts of the style guide to avoid
+     tautologies and unnecessary explanations.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Rewrote large parts of <xref linkend="sec.outline"/>. Removed example
+     of structure. Added copyright notice as an example. Expanded on
+     information needed for title pages and imprints.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Removed differentiation between the many types of
+     <filename>authors</filename> files from <xref linkend="sec.outline"/>.
+     This was too complicated to be practical. Also, current practice is to
+     never mention translators.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Added <quote>Objective before Instruction</quote> rule to
+     <xref linkend="sec.structure_sentence"/>.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Added short guideline about file extensions to
+     <xref linkend="sec.file_language"/>.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Reworked <xref linkend="sec.figure"/> to be more structured and added
+     instructions for preparing and editing screenshots.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Added <xref linkend="sec.xinclude"/>.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     More informative example in <xref linkend="sec.glossary"/>.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Simplified rules for creating IDs in <xref linkend="sec.id"/>. The aim
+     is to shorten the length of the average ID and to help to create
+     predictable IDs.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Added the
+     <tag class="attvalue">co</tag>
+     prefix to <xref linkend="tab.id_prefix"/>.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Added this list of changes as an appendix.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Added list of authors as a separate DocBook file.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Added standard entities as a separate file.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Updated copyright notice to refer to SUSE, LLC instead of Novell, Inc.
+    </para>
+   </listitem>
+  </itemizedlist>
+ </sect1>
 </appendix>

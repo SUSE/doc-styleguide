@@ -1,33 +1,43 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1
+[
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+    %entities;
+]>
+<!-- Converted by suse-upgrade version 1.1 -->
 <?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook45-profile.xsl"
                  type="text/xml" title="Profiling step"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-<!ENTITY copy "©">
-<!ENTITY reg "®">
-<!ENTITY tm "™">
-<!ENTITY sm "℠">
-]>
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.audience">
+ <title>Audience</title>
 
-  <sect1 id="sec.audience">
-    <title>Audience</title>
+ <para>
+  Before starting to write, define the target audience of your
+  documentation. Adjust tone, style, and technicality of the text based on
+  the intended audience. Keep in mind that not all facts that seem obvious
+  to you will be obvious to your readers. If you move parts of documents
+  into other documents, make sure to adapt the parts you move to the new
+  document.
+ </para>
 
-    <para>Before starting to write, define the target audience of your
-      documentation. Adjust tone, style, and technicality of the text based on
-      the intended audience. Keep in mind that not all facts that seem
-      obvious to you will be obvious to your readers. If you move parts of
-      documents into other documents, make sure to adapt the parts you
-      move to the new document.
-    </para>
-    <para>For later reference, document the defined target audience in the
-      main file of every book and article. Place an XML comment directly
-      before the relevant <sgmltag class="emptytag">book</sgmltag> or
-      <sgmltag class="emptytag">article</sgmltag> element, such as this:
-    </para>
-    <screen>&lt;!-- Target audience: institutional desktop users. --&gt;</screen>
-    <para>For more information about the usage of XML comments, see
-      <xref linkend="sec.xml_comment"/>.
-    </para>
-    <para>Generally, there is no need to add information about the target
-      audience to the book or article content itself.
-    </para>
-  </sect1>
+ <para>
+  For later reference, document the defined target audience in the main file
+  of every book and article. Place an XML comment directly before the
+  relevant
+  <tag class="emptytag">book</tag>
+  or
+  <tag class="emptytag">article</tag>
+  element, such as this:
+ </para>
+
+<screen>&lt;!-- Target audience: institutional desktop users. --&gt;</screen>
+
+ <para>
+  For more information about the usage of XML comments, see
+  <xref linkend="sec.xml_comment"/>.
+ </para>
+
+ <para>
+  Generally, there is no need to add information about the target audience
+  to the book or article content itself.
+ </para>
+</sect1>

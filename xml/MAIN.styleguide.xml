@@ -1,18 +1,36 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE article
+[
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+    %entities;
+]>
+<!-- Converted by suse-upgrade version 1.1 -->
 <?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook45-profile.xsl"
                  type="text/xml" title="Profiling step"?>
-<!DOCTYPE article PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-<!ENTITY % entities SYSTEM "entity-xincludes.ent">
-%entities;
-<!ENTITY copy "©">
-<!ENTITY reg "®">
-<!ENTITY tm "™">
-<!ENTITY sm "℠">
-]>
-
-<article lang="en" id="art.styleguide">
-
-  &sections;
-  &license;
-
+<article xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:lang="en" xml:id="art.styleguide">
+ <title>SUSE Documentation Style Guide</title>
+ <info>
+  <releaseinfo>&version;</releaseinfo><date>
+<?dbtimestamp?></date>
+  <xi:include href="authors.xml"/>
+  <xi:include href="legal_suse+gfdl.xml"/>
+  <abstract>
+   <para>
+    This guide provides answers to writing, style, and layout questions
+    commonly arising when editing SUSE documentation. The
+    <phrase role="productname">Novdoc</phrase>/<phrase role="productname">DocBook</phrase>
+    markup reference at the end of this guide will help you choose the right
+    XML element for your purpose. Following this guide will make your
+    documentation more understandable and easier to translate.
+   </para>
+  </abstract>
+ </info>
+ <xi:include href="docu_styleguide.audience.xml"/>
+ <xi:include href="docu_styleguide.name.xml"/>
+ <xi:include href="docu_styleguide.outline.xml"/>
+ <xi:include href="docu_styleguide.language.xml"/>
+ <xi:include href="docu_styleguide.structure.xml"/>
+ <xi:include href="docu_styleguide.manage.xml"/>
+ <xi:include href="docu_styleguide.terminology.xml"/>
+ <xi:include href="gfdl.xml"/>
 </article>

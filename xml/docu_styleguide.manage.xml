@@ -1,294 +1,328 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1
+[
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+    %entities;
+]>
+<!-- Converted by suse-upgrade version 1.1 -->
 <?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook45-profile.xsl"
                  type="text/xml" title="Profiling step"?>
-<!DOCTYPE sect1 PUBLIC "-//OASIS//DTD DocBook XML V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/docbookx.dtd" [
-<!ENTITY copy "©">
-<!ENTITY reg "®">
-<!ENTITY tm "™">
-<!ENTITY sm "℠">
-]>
-  <sect1 id="sec.manage">
-    <title>Managing Documents</title>
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.manage">
+ <title>Managing Documents</title>
 
-    <para>This section provides an overview over some features of XML you can
-      use to manage documents.</para>
+ <para>
+  This section provides an overview over some features of XML you can use to
+  manage documents.
+ </para>
 
-    <sect2 id="sec.remark">
-      <title>Remarks</title>
-      <para>Use remarks for editorial comments. Remarks can be placed within,
-        before, or after a para but must always be within a section element.
-        When creating output, remarks can be made visible in the output
-        and thus help within the editorial process. When creating the final
-        output, deactivate remarks.
-      </para>
-      <para>Start remarks with your user name and the current date, then add
-        a colon (<literal>:</literal>) and finally your actual remark.
-        To comment on someone else's remark, add a new remark directly below it.
-        Delete remarks when the corresponding issue is resolved.
-      </para>
-      <screen>&lt;remark&gt;tux (2013-10-13): could not find the option for foo&lt;/remark&gt;
+ <sect2 xml:id="sec.remark">
+  <title>Remarks</title>
+  <para>
+   Use remarks for editorial comments. Remarks can be placed within, before,
+   or after a para but must always be within a section element. When
+   creating output, remarks can be made visible in the output and thus help
+   within the editorial process. When creating the final output, deactivate
+   remarks.
+  </para>
+  <para>
+   Start remarks with your user name and the current date, then add a colon
+   (<literal>:</literal>) and finally your actual remark. To comment on
+   someone else's remark, add a new remark directly below it. Delete remarks
+   when the corresponding issue is resolved.
+  </para>
+<screen>&lt;remark&gt;tux (2013-10-13): could not find the option for foo&lt;/remark&gt;
 &lt;remark&gt;geeko (2013-11-02): see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
-      <para>You can add a <sgmltag class="attribute">role</sgmltag> attribute
-        with one of the following values to show the type of the remark:
-      </para>
-      <itemizedlist>
-          <listitem>
-            <formalpara>
-              <title><sgmltag class="attvalue">structure</sgmltag></title>
-              <para>Use this type of remark to suggest changes to the text
-                or XML structure.
-              </para>
-            </formalpara>
-          </listitem>
-          <listitem>
-            <formalpara>
-              <title><sgmltag class="attvalue">language</sgmltag></title>
-              <para>Use this type of remark to suggest language improvements.
-              </para>
-            </formalpara>
-          </listitem>
-          <listitem>
-            <formalpara>
-              <title><sgmltag class="attvalue">needinfo</sgmltag></title>
-              <para>Use this type of remark to mark sections where you need
-                input from others, such as developers.
-              </para>
-            </formalpara>
-          </listitem>
-          <listitem>
-            <formalpara>
-              <title><sgmltag class="attvalue">trans</sgmltag></title>
-              <para>Use this type of remark to give hints to translators.</para>
-            </formalpara>
-          </listitem>
-      </itemizedlist>
-    </sect2>
+  <para>
+   You can add a
+   <tag class="attribute">role</tag>
+   attribute with one of the following values to show the type of the
+   remark:
+  </para>
+  <itemizedlist>
+   <listitem>
+    <formalpara>
+     <title><tag class="attvalue">structure</tag></title>
+     <para>
+      Use this type of remark to suggest changes to the text or XML
+      structure.
+     </para>
+    </formalpara>
+   </listitem>
+   <listitem>
+    <formalpara>
+     <title><tag class="attvalue">language</tag></title>
+     <para>
+      Use this type of remark to suggest language improvements.
+     </para>
+    </formalpara>
+   </listitem>
+   <listitem>
+    <formalpara>
+     <title><tag class="attvalue">needinfo</tag></title>
+     <para>
+      Use this type of remark to mark sections where you need input from
+      others, such as developers.
+     </para>
+    </formalpara>
+   </listitem>
+   <listitem>
+    <formalpara>
+     <title><tag class="attvalue">trans</tag></title>
+     <para>
+      Use this type of remark to give hints to translators.
+     </para>
+    </formalpara>
+   </listitem>
+  </itemizedlist>
+ </sect2>
 
-    <sect2 id="sec.xml_comment">
-      <title>XML Comments</title>
+ <sect2 xml:id="sec.xml_comment">
+  <title>XML Comments</title>
+  <para>
+   XML comments can be used for temporarily disabling portions of text.
+   Another use of XML comments is to create more permanent internal comments
+   or to mark up changes made for layout reasons. XML comments are never
+   visible in a publication.
+  </para>
+<screen>&lt;-- This is an XML comment. --!&gt;</screen>
+  <tip>
+   <title>Creating Valid Comments</title>
+   <para>
+    Do not use <literal>--</literal> in comments. <literal>--</literal> is
+    the first part of end-of-comment string <literal>--&gt;</literal> and
+    thus causes validation to fail.
+   </para>
+  </tip>
+ </sect2>
 
-      <para>XML comments can be used for temporarily disabling portions of
-        text. Another use of XML comments is to create more permanent internal
-        comments or to mark up changes made for layout reasons. XML comments
-        are never visible in a publication.
-      </para>
-      <screen>&lt;-- This is an XML comment. --!&gt;</screen>
-      <tip>
-        <title>Creating Valid Comments</title>
-        <para>Do not use <literal>--</literal> in comments.
-          <literal>--</literal> is the first part of end-of-comment string
-          <literal>--&gt;</literal> and thus causes validation to fail.
-        </para>
-      </tip>
-    </sect2>
-
-    <sect2 id="sec.entity">
-      <title>Entities</title>
-
-      <para>Entities are used to expand text. There are several situations in
-        which they can be used:
-      </para>
-      <itemizedlist>
-        <listitem>
-          <para>Representation of special characters that cannot easily
-            be displayed, entered or memorized.
-          </para>
-        </listitem>
-        <listitem>
-          <para>Integration of external files by entities representing
-            references to their file names.
-          </para>
-        </listitem>
-        <listitem>
-          <para>Text expansion for repeating content.</para>
-        </listitem>
-      </itemizedlist>
-      <para>When an entity is defined, it can be used in many places. Entities
-        reduce the risk of translation errors and increase consistency because
-        they are translated once and automatically expanded elsewhere.
-      </para>
-
-      <sect3 id="sec.use_entity">
-        <title>Using Entity Files</title>
-
-        <para>SUSE uses a small set of custom entities. This set is localized
-          for each supported language. Find the SUSE set of entities in the file
-          <filename>entity-decl.ent</filename> under each documentation project
-          and each language. When the set has been modified for a new product
-          release, this file must be updated in the supported languages as well.
-        </para>
-        <para>Each header of a SUSE XML file includes the entity declaration
-          file (by means of an entity):
-        </para>
-        <screen>&lt;!ENTITY % entities SYSTEM "../entity-decl.ent"&gt;
+ <sect2 xml:id="sec.entity">
+  <title>Entities</title>
+  <para>
+   Entities are used to expand text. There are several situations in which
+   they can be used:
+  </para>
+  <itemizedlist>
+   <listitem>
+    <para>
+     Representation of special characters that cannot easily be displayed,
+     entered or memorized.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Integration of external files by entities representing references to
+     their file names.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Text expansion for repeating content.
+    </para>
+   </listitem>
+  </itemizedlist>
+  <para>
+   When an entity is defined, it can be used in many places. Entities reduce
+   the risk of translation errors and increase consistency because they are
+   translated once and automatically expanded elsewhere.
+  </para>
+  <sect3 xml:id="sec.use_entity">
+   <title>Using Entity Files</title>
+   <para>
+    SUSE uses a small set of custom entities. This set is localized for each
+    supported language. Find the SUSE set of entities in the file
+    <filename>entity-decl.ent</filename> under each documentation project
+    and each language. When the set has been modified for a new product
+    release, this file must be updated in the supported languages as well.
+   </para>
+   <para>
+    Each header of a SUSE XML file includes the entity declaration file (by
+    means of an entity):
+   </para>
+<screen>&lt;!ENTITY % entities SYSTEM "../entity-decl.ent"&gt;
 %entities;</screen>
-        <example id="ex.entity">
-          <title>Excerpt from a SUSE entity-decl.ent</title>
-          <screen>&lt;!ENTITY<co id="co.decl"/> exampleserver<co id="co.def"/>   "sun<co id="co.val"/>"&gt;
+   <example xml:id="ex.entity">
+    <title>Excerpt from a SUSE entity-decl.ent</title>
+<screen>&lt;!ENTITY<co xml:id="co.decl"/> exampleserver<co xml:id="co.def"/>   "sun<co xml:id="co.val"/>"&gt;
 &lt;!ENTITY exampleserverip    "&amp;exampledomainip;.20"&gt;
-&lt;!ENTITY exampleserverfq    "&amp;exampleserver;.&amp;exampledomain;"<co id="co.ent"/>&gt;</screen>
-          <calloutlist>
-            <callout arearefs="co.decl">
-              <para>The kind of declaration to be made.</para>
-            </callout>
-            <callout arearefs="co.def">
-              <para>Defines the entity name.</para>
-            </callout>
-            <callout arearefs="co.val">
-              <para>Sets the value to which the processed entity should
-                be expanded.
-              </para>
-            </callout>
-            <callout arearefs="co.ent">
-              <para>Nests an entity in the value.</para>
-            </callout>
-          </calloutlist>
-        </example>
-        <para>A few hints for working with entities in SUSE documentation
-          projects:
-        </para>
-        <itemizedlist>
-          <listitem>
-            <para>If there should be any need for defining special entities
-              (for example, for localization purposes), add the new
-              definitions to the appropriate
-              <filename>entity-decl.ent</filename> file. Never include
-              these definitions in the file header.
-            </para>
-          </listitem>
-          <listitem>
-            <para>When translating entities, translate the value, but never
-              change the entity name (see <xref linkend="ex.entity"/>).
-            </para>
-          </listitem>
-          <listitem>
-            <para>Always use the exact notation of the entities when
-              translating files to avoid processing errors.
-            </para>
-          </listitem>
-          <listitem>
-            <para>Make sure that you use proper UTF-8 encoding when editing and
-              saving the entity declaration file or any of the SUSE XML files.
-            </para>
-          </listitem>
-        </itemizedlist>
-      </sect3>
-
-      <sect3 id="sec.type_entity">
-        <title>Common Types of Entities</title>
-
-        <para>The following provides some background on the most important
-          entities used in creating documentation for SUSE products. To be able
-          to adjust product names of platform branding even past any deadlines,
-          a set of entities must represent the frequently-changing product names.
-          The same applies to book titles. An
-          <filename>entity-decl.ent</filename>
-          file contains several different categories of entities. These are:
-        </para>
-        <variablelist>
-          <varlistentry>
-            <term>General Entities</term>
-            <listitem>
-              <para>These feature mostly network IP addresses, host names, and
-                user names.
-              </para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>Books</term>
-            <listitem>
-              <para>Title entities should be defined for all SUSE books
-                in case sudden name changes are necessary.
-              </para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>Platforms</term>
-            <listitem>
-              <para>To avoid changing the documentation itself if a
-                vendor rebrands products, use entities for all hardware
-                architectures referenced in the books.
-              </para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>Products</term>
-            <listitem>
-              <para>We maintain a list of entities of all SUSE-based product
-                names and some other products and applications for which we
-                write documentation.
-              </para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
-        <para>There are several guidelines to consider when working with product
-          entities for SUSE documentation:
-        </para>
-        <variablelist>
-          <varlistentry>
-            <term>Entity Selection</term>
-            <listitem>
-              <para>Use the entity name
-                <sgmltag class="genentity">product</sgmltag> to
-                identify the product for which the documentation is built. Set the
-                value of this entity once per release and let it
-                expand to the name of the current product.
-              </para>
-              <screen>&lt;phrase role="productname"&gt;&amp;product;&lt;/phrase&gt; includes openLDAP.</screen>
-              <para>If you need to reference a particular product, use a more
-                specific entity.
-              </para>
-              <screen>The Ext4 file system has been included in the &lt;literal&gt;&amp;suse;&lt;/literal&gt;
+&lt;!ENTITY exampleserverfq    "&amp;exampleserver;.&amp;exampledomain;"<co xml:id="co.ent"/>&gt;</screen>
+    <calloutlist>
+     <callout arearefs="co.decl">
+      <para>
+       The kind of declaration to be made.
+      </para>
+     </callout>
+     <callout arearefs="co.def">
+      <para>
+       Defines the entity name.
+      </para>
+     </callout>
+     <callout arearefs="co.val">
+      <para>
+       Sets the value to which the processed entity should be expanded.
+      </para>
+     </callout>
+     <callout arearefs="co.ent">
+      <para>
+       Nests an entity in the value.
+      </para>
+     </callout>
+    </calloutlist>
+   </example>
+   <para>
+    A few hints for working with entities in SUSE documentation projects:
+   </para>
+   <itemizedlist>
+    <listitem>
+     <para>
+      If there should be any need for defining special entities (for
+      example, for localization purposes), add the new definitions to the
+      appropriate <filename>entity-decl.ent</filename> file. Never include
+      these definitions in the file header.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      When translating entities, translate the value, but never change the
+      entity name (see <xref linkend="ex.entity"/>).
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Always use the exact notation of the entities when translating files
+      to avoid processing errors.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Make sure that you use proper UTF-8 encoding when editing and saving
+      the entity declaration file or any of the SUSE XML files.
+     </para>
+    </listitem>
+   </itemizedlist>
+  </sect3>
+  <sect3 xml:id="sec.type_entity">
+   <title>Common Types of Entities</title>
+   <para>
+    The following provides some background on the most important entities
+    used in creating documentation for SUSE products. To be able to adjust
+    product names of platform branding even past any deadlines, a set of
+    entities must represent the frequently-changing product names. The same
+    applies to book titles. An <filename>entity-decl.ent</filename> file
+    contains several different categories of entities. These are:
+   </para>
+   <variablelist>
+    <varlistentry>
+     <term>General Entities</term>
+     <listitem>
+      <para>
+       These feature mostly network IP addresses, host names, and user
+       names.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Books</term>
+     <listitem>
+      <para>
+       Title entities should be defined for all SUSE books in case sudden
+       name changes are necessary.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Platforms</term>
+     <listitem>
+      <para>
+       To avoid changing the documentation itself if a vendor rebrands
+       products, use entities for all hardware architectures referenced in
+       the books.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Products</term>
+     <listitem>
+      <para>
+       We maintain a list of entities of all SUSE-based product names and
+       some other products and applications for which we write
+       documentation.
+      </para>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+   <para>
+    There are several guidelines to consider when working with product
+    entities for SUSE documentation:
+   </para>
+   <variablelist>
+    <varlistentry>
+     <term>Entity Selection</term>
+     <listitem>
+      <para>
+       Use the entity name
+       <tag class="genentity">product</tag>
+       to identify the product for which the documentation is built. Set the
+       value of this entity once per release and let it expand to the name
+       of the current product.
+      </para>
+<screen>&lt;phrase role="productname"&gt;&amp;product;&lt;/phrase&gt; includes openLDAP.</screen>
+      <para>
+       If you need to reference a particular product, use a more specific
+       entity.
+      </para>
+<screen>The Ext4 file system has been included in the &lt;literal&gt;&amp;suse;&lt;/literal&gt;
 Kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>Acronyms</term>
-            <listitem>
-              <para>Avoid using acronyms of product names where they are not
-                the preferred form of the name. If you do define an
-                additional acronym version of a longer product name, append
-                an <literal>a</literal> to the end of the entity name.
-                For example, use <sgmltag class="genentity">slesa</sgmltag> the
-                acronym <quote>SLES</quote>.
-              </para>
-            </listitem>
-          </varlistentry>
-          <varlistentry>
-            <term>Trademarks</term>
-            <listitem>
-              <para>Follow the rules under <xref linkend="sec.product"/>.</para>
-            </listitem>
-          </varlistentry>
-        </variablelist>
-      </sect3>
-    </sect2>
-
-    <sect2 id="sec.xinclude">
-      <title>XInclude Elements</title>
-
-      <para>XInclude elements are used to create modular source files that are
-        easier to work with and can be re-used.
-        When editing a book, create a new source file for every chapter. Later,
-        create a new Novdoc file that can serve as the central point. In this
-        file, use XInclude elements to reference all chapters in the correct
-        order:
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Acronyms</term>
+     <listitem>
+      <para>
+       Avoid using acronyms of product names where they are not the
+       preferred form of the name. If you do define an additional acronym
+       version of a longer product name, append an <literal>a</literal> to
+       the end of the entity name. For example, use
+       <tag class="genentity">slesa</tag>
+       the acronym <quote>SLES</quote>.
       </para>
-      <screen>&lt;xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gfdl.xml"/&gt;</screen>
-      <para>XInclude elements allow adding common sections to multiple
-        books or articles without having to maintain the text in multiple
-        places. Common sections include licenses and information on
-        typographical conventions. XIncludes also simplify co-editing
-        documentation with others in a version control system as they reduce
-        the chance of merge conflicts.
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>Trademarks</term>
+     <listitem>
+      <para>
+       Follow the rules under <xref linkend="sec.product"/>.
       </para>
-      <para>Files referenced via XIncludes must be well-formed XML files but do
-        not need to be valid DocBook files. This means that they must have a
-        single top-level element. Files that are
-        supposed to be referenced multiple times from
-        within the same set, book or article must not contain any
-        <sgmltag class="attribute">id</sgmltag> attributes.
-      </para>
-    </sect2>
+     </listitem>
+    </varlistentry>
+   </variablelist>
+  </sect3>
+ </sect2>
 
-  </sect1>
+ <sect2 xml:id="sec.xinclude">
+  <title>XInclude Elements</title>
+  <para>
+   XInclude elements are used to create modular source files that are easier
+   to work with and can be re-used. When editing a book, create a new source
+   file for every chapter. Later, create a new Novdoc file that can serve as
+   the central point. In this file, use XInclude elements to reference all
+   chapters in the correct order:
+  </para>
+<screen>&lt;xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gfdl.xml"/&gt;</screen>
+  <para>
+   XInclude elements allow adding common sections to multiple books or
+   articles without having to maintain the text in multiple places. Common
+   sections include licenses and information on typographical conventions.
+   XIncludes also simplify co-editing documentation with others in a version
+   control system as they reduce the chance of merge conflicts.
+  </para>
+  <para>
+   Files referenced via XIncludes must be well-formed XML files but do not
+   need to be valid DocBook files. This means that they must have a single
+   top-level element. Files that are supposed to be referenced multiple
+   times from within the same set, book or article must not contain any
+   <tag class="attribute">id</tag>
+   attributes.
+  </para>
+ </sect2>
+</sect1>

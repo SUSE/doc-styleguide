@@ -1,4 +1,7 @@
 <!ENTITY version '2014-02.2'>
+<!ENTITY suse 'SUSE'>
+<!ENTITY tm "™">
+<!ENTITY sm "℠">
 
 <!ENTITY % sgml.features "IGNORE">
 <!ENTITY % xml.features "INCLUDE">
