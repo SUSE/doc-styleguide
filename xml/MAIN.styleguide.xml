@@ -8,13 +8,22 @@
 <article version="5.0" xml:lang="en" xml:id="art.styleguide"
   xmlns="http://docbook.org/ns/docbook"
   xmlns:xi="http://www.w3.org/2001/XInclude"
-  xmlns:xlink="http://www.w3.org/1999/xlink">
+  xmlns:xlink="http://www.w3.org/1999/xlink"
+  xmlns:dm="urn:x-suse:ns:docmanager">
  <title>SUSE Documentation Style Guide</title>
  <info>
   <releaseinfo>&version;</releaseinfo>
   <date><?dbtimestamp?></date>
   <xi:include href="authors.xml"/>
   <xi:include href="legal_suse+gfdl.xml"/>
+  <dm:docmanager>
+     <dm:bugtracker>
+       <dm:url>https://bugzilla.suse.com/enter_bug.cgi</dm:url>
+       <dm:product>SUSE Linux Enterprise Server 12 (SLES 12)</dm:product>
+       <dm:component>Documentation</dm:component>
+       <dm:assignee>fs@suse.com</dm:assignee>
+     </dm:bugtracker>
+  </dm:docmanager>
   <abstract>
    <para>
     This guide provides answers to writing, style, and layout questions
@@ -24,6 +33,7 @@
     XML element for your purpose. Following this guide will make your
     documentation more understandable and easier to translate.
    </para>
+    
   </abstract>
  </info>
  <xi:include href="docu_styleguide.audience.xml"/>
