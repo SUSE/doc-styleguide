@@ -423,7 +423,7 @@ default 0 <co xml:id="co.default"/></screen>
     when referring to an actual command you would use on a command line:
    </para>
 <screen>To start LibreOffice from the command line, use
-&lt;command&gt;loffice &lt;/command&gt;.</screen>
+&lt;command&gt;loffice&lt;/command&gt;.</screen>
    <para>
     Nest options, surrounded by an
     <tag class="emptytag">option</tag>
@@ -582,7 +582,7 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
    attribute.
   </para>
 <screen>This will be displayed in &lt;emphasis&gt;italics&lt;/emphasis&gt;. This
-will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
+will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
  </sect2>
 
  <sect2 xml:id="sec.example">
@@ -930,8 +930,8 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     </listitem>
     <listitem>
      <para>
-      Create screenshots before the action that is illustrated has been
-      taken.
+      Always create screenshots illustrating the situation right before an
+      action has been taken.
      </para>
     </listitem>
     <listitem>
@@ -1091,7 +1091,7 @@ will be in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
      <title>Examples of Identifiers</title>
 <screen>id="cha.install"
 id="sec.install.yast"
-id="tab.install.sources"</screen>
+id="tab.install.source"</screen>
     </example>
    </listitem>
    <listitem>
@@ -1336,7 +1336,7 @@ id="tab.install.sources"</screen>
   <para>
    Check for spelling errors and inconsistencies that result in multiple
    items in the index. Check all <emphasis>see</emphasis> and <emphasis>see
-   also</emphasis> references for consistency. Do no create index entries
+   also</emphasis> references for consistency. Do not create index entries
    that have both a page and a <emphasis>see</emphasis> reference. Avoid
    creating index entries that have both a page references and a
    <emphasis>see also</emphasis> reference.
@@ -1740,7 +1740,7 @@ id="tab.install.sources"</screen>
   <para>
    To mark up keyboard combinations, use
    <tag class="emptytag">keycombo</tag>
-   as wrapper for multiple
+   as a wrapper for multiple
    <tag class="emptytag">keycap</tag>
    elements. Separators between
    <tag class="emptytag">keycap</tag>
@@ -1749,11 +1749,11 @@ id="tab.install.sources"</screen>
   <para>
    If a key is listed in <xref linkend="tab.keycap"/>, use the
    <tag class="attribute">function</tag>
-   attribute with appropriate value. When using the
+   attribute with the appropriate value. When using the
    <tag class="attribute">function</tag>
    attribute, make the tag self-closing&mdash;DocBook's language files
    will insert key names automatically. This simplifies both your work and
-   translation.
+   the work of translators.
   </para>
   <para>
    To learn how to create cross references, see
@@ -2551,7 +2551,7 @@ id="tab.install.sources"</screen>
    <tag class="emptytag">guimenu</tag>
    . To mark up nested menu structures, use
    <tag class="emptytag">menuchoice</tag>
-   as wrapper for multiple
+   as a wrapper for multiple
    <tag class="emptytag">guimenu</tag>
    elements. Separators between
    <tag class="emptytag">guimenu</tag>

@@ -418,7 +418,7 @@
   <para>
    When referring to labels of user interface items, do not include ending
    punctuation such as <literal>…</literal> or <literal>:</literal>.
-   Whenever possible, refer to user interface item without identifying them
+   Whenever possible, refer to user interface items without identifying them
    as any special type of element. For example, use <quote>click
    <guimenu>OK</guimenu></quote> rather than <quote>click the
    <guimenu>OK</guimenu> button.</quote> However, complex dialogs may
