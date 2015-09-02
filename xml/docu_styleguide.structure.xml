@@ -1731,14 +1731,14 @@ id="tab.install.source"</screen>
  <sect2 xml:id="sec.keyboard">
   <title>Keys and Key Combinations</title>
   <para>
-   Capitalize all keys as printed on a standard keyboard. Following this
-   rule, capitalize all letter keys. To refer to a capitalized character,
+   Capitalize all keys as printed on a standard keyboard. Capitalize all letter
+   keys. To refer to a capitalized character,
    use <keycombo><keycap function="shift"/><keycap>Z</keycap></keycombo>,
    for example. Introduce this convention by means of the
    <quote>Typographical Conventions</quote> section of the introduction.
   </para>
   <para>
-   To mark up keyboard combinations, use
+   To mark up key combinations, use
    <tag class="emptytag">keycombo</tag>
    as a wrapper for multiple
    <tag class="emptytag">keycap</tag>
@@ -1789,7 +1789,7 @@ id="tab.install.source"</screen>
         <para>
          Inline element containing multiple
          <tag class="emptytag">keycap</tag>
-         elements that together make up a keyboard combination.
+         elements that together make up a key combination.
         </para>
        </formalpara>
       </entry>
