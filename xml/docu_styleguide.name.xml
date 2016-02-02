@@ -11,7 +11,7 @@
  <para>
   This section summarizes conventions for creating generic names for objects
   in documentation. At least some of the following names should be provided
-  through entities (see also <xref linkend="sec.entity"/>).
+  through entities. See also <xref linkend="sec.entity"/>.
  </para>
 
  <sect2 xml:id="sec.domain">
@@ -38,9 +38,8 @@
    for examples. That is, replace the final <literal>0</literal> by any
    integer between <literal>0</literal> and <literal>255</literal>. To
    create examples using a larger setup, use addresses from the private
-   network ranges. See
-   <link xlink:href="http://en.wikipedia.org/wiki/Private_network"/> for
-   more information.
+   network ranges. For more information, see
+   <link xlink:href="http://en.wikipedia.org/wiki/Private_network"/>.
   </para>
  </sect2>
 
@@ -52,9 +51,9 @@
    six four-digit numbers, each separated by a colon on both sides. Each of
    the hexadecimal digits may have a value between <literal>0</literal> and
    <literal>f</literal>. A valid example URL is
-   <literal>2001:0db8:0123:4567:89ab:cdef:1234:5678</literal>. See
-   <link xlink:href="http://en.wikipedia.org/wiki/IPv6_subnetting_reference"/>
-   for more information.
+   <literal>2001:0db8:0123:4567:89ab:cdef:1234:5678</literal>.
+   For more information, see
+   <link xlink:href="http://en.wikipedia.org/wiki/IPv6_subnetting_reference"/>.
   </para>
  </sect2>
 

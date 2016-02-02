@@ -181,7 +181,7 @@
     <listitem>
      <para>
       When translating entities, translate the value, but never change the
-      entity name (see <xref linkend="ex.entity"/>).
+      entity name. See also <xref linkend="ex.entity"/>.
      </para>
     </listitem>
     <listitem>

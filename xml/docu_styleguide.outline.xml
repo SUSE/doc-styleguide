@@ -61,7 +61,7 @@
          Use the
          <tag class="emptytag">releaseinfo</tag>
          element to mark up version or revision numbers of the documentation
-         itself. For further information on how to enable SVN revision
+         itself. For more information on enabling SVN revision
          information in your document, see
          <link xlink:href="http://svnbook.red-bean.com/en/1.7/svn.advanced.props.special.keywords.html"/>.
         </para>
@@ -252,7 +252,7 @@
         introduction with a procedure description, as discussed in
         <xref linkend="sec.procedure"/>. Steps of a procedure can contain a
         cross reference to subsections where topical background is provided
-        and an action is explained in detail. See also:
+        and an action is explained in detail. See also
         <xref linkend="sec.cross_reference"/>.
        </para>
       </listitem>
@@ -304,9 +304,8 @@
   <para>
    For articles, use a structure similar to that of books. However, note
    that there is no equivalent of parts in articles. Additionally, in
-   articles, the function of chapters is filled by first-level sections (
-   <tag class="emptytag">sect1</tag>
-   ).
+   articles, the function of chapters is filled by first-level sections
+   (<tag class="emptytag">sect1</tag>).
   </para>
  </sect2>
 </sect1>

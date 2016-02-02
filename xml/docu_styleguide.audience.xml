@@ -30,7 +30,7 @@
 <screen>&lt;!-- Target audience: institutional desktop users. --&gt;</screen>
 
  <para>
-  For more information about the usage of XML comments, see
+  For more information using XML comments, see
   <xref linkend="sec.xml_comment"/>.
  </para>
 

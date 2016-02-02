@@ -10,9 +10,9 @@
 
  <para>
   The following rules are intentionally kept concise. When in doubt about a
-  style rule, refer to <citetitle>The Chicago Manual of Style</citetitle>,
+  style rule, see <citetitle>The Chicago Manual of Style</citetitle>,
   15th Edition. When in doubt about the spelling or usage of a word, first
-  refer to <xref linkend="app.terminology"/>. When the usage of a word is
+  see <xref linkend="app.terminology"/>. When the usage of a word is
   not regulated there, use American English spellings as defined on
   <link xlink:href="http://www.merriam-webster.com/"/>
   (<link xlink:href="http://www.m-w.com/"/> for short).
@@ -68,9 +68,9 @@
   <sect3 xml:id="sec.measurement">
    <title>Units of Measurement</title>
    <para>
-    You may use abbreviations of common units of measurement. Refer to
-    <xref linkend="sec.number"/> for more information about units of
-    measurement.
+    You may use abbreviations of common units of measurement.
+    For more information on units of measurement, see
+    <xref linkend="sec.number"/>.
    </para>
   </sect3>
  </sect2>
@@ -207,7 +207,7 @@
   </itemizedlist>
   <para>
    Most Linux file systems are case-sensitive. Use capitals exactly as they
-   appear in the file system. For details on markup, refer to
+   appear in the file system. For more information on markup aspects, see
    <xref linkend="sec.other_external"/> and
    <xref linkend="sec.file_markup"/>.
   </para>
@@ -409,7 +409,7 @@
    </listitem>
   </itemizedlist>
   <para>
-   See <xref linkend="sec.product"/> for markup advice.
+   For more information on markup aspects, see <xref linkend="sec.product"/>.
   </para>
  </sect2>
 

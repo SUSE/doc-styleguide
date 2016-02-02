@@ -18,7 +18,7 @@
 
  <para>
   SUSE uses the Novdoc DTD which is compatible with DocBook. Thus, for more
-  detailed descriptions of the elements of a book, refer to the
+  detailed descriptions of the elements of a book, see the
   <citetitle>DocBook: The Definitive Guide</citetitle> sections listed in
   <xref linkend="tab.book"/>.
  </para>
@@ -211,7 +211,7 @@
    use more than ten callouts per example.
   </para>
   <para>
-   Also see <xref linkend="sec.example"/>.
+   See also <xref linkend="sec.example"/>.
   </para>
   <example xml:id="ex.callout_output">
    <title>Example of Callouts (Source)</title>
@@ -310,7 +310,7 @@ default 0 <co xml:id="co.default"/></screen>
    <tag class="emptytag">filename</tag>
    . In all other cases, close the current paragraph and enclose it in a
    <tag class="emptytag">screen</tag>
-   element. Also see <xref linkend="sec.example"/>.
+   element. See also <xref linkend="sec.example"/>.
   </para>
   <table xml:id="tab.command_line">
    <title>Elements Related to Command Line Input and Output</title>
@@ -328,7 +328,7 @@ default 0 <co xml:id="co.default"/></screen>
         <title><tag class="emptytag">screen</tag></title>
         <para>
          Block element in which all characters are reproduced exactly as
-         they are in the source of the document. Also see
+         they are in the source of the document. See also
          <xref linkend="sec.example"/>. Can contain any of the inline
          elements listed in this table.
         </para>
@@ -489,8 +489,8 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
    <para>
     To avoid making prompts longer than necessary, never include a host name
     or a path. The first restricted user should always be named
-    <emphasis>tux</emphasis>. For other names of restricted users, see
-    <xref linkend="sec.name"/>.
+    <emphasis>tux</emphasis>. For more information on names of restricted users,
+    see <xref linkend="sec.name"/>.
    </para>
    <para>
     Avoid using root prompts in your documentation by using the
@@ -504,7 +504,7 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
    </para>
    <para>
     For consistency, it is helpful to create entities for the prompts used
-    in your documentation. To learn more, refer to
+    in your documentation. For more information, see
     <xref linkend="sec.entity"/>.
    </para>
   </sect3>
@@ -650,7 +650,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    </listitem>
   </itemizedlist>
   <para>
-   For details on displaying computer input and output, refer to
+   For more information on displaying computer input and output, see
    <xref linkend="sec.command_line"/>. To annotate examples, use callouts.
    Callouts are described in <xref linkend="sec.callout"/>.
   </para>
@@ -752,8 +752,8 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    around them. Do not use a list environment for a single link. If you need
    to present many links, group them by topic and create a separate list
    environment for each group. Provide a comprehensive title for each of the
-   groups or an introductory sentence. On creating lists, see
-   <xref linkend="sec.unordered"/>.
+   groups or an introductory sentence. For more information on creating lists,
+   see <xref linkend="sec.unordered"/>.
   </para>
   <para>
    Where possible, provide translators with localized versions of links in
@@ -1471,8 +1471,7 @@ id="tab.install.source"</screen>
   <para>
    To be able to reference untitled lists, use the
    <tag class="attribute">xreflabel</tag>
-   attribute. See <xref linkend="sec.cross_reference"/> for more
-   information.
+   attribute. For more information, see <xref linkend="sec.cross_reference"/>.
   </para>
   <table xml:id="tab.list">
    <title>Elements Related to Lists</title>
@@ -1620,8 +1619,8 @@ id="tab.install.source"</screen>
     importance. If order is not relevant, use an unordered list or a
     descriptive list. Do not use numbered lists to describe procedures.
     Complex sequential actions are better described by means of the
-    procedure environment (see <xref linkend="sec.procedure"/> for a
-    detailed description).
+    procedure environment. For more information, see
+    <xref linkend="sec.procedure"/>.
    </para>
    <example xml:id="ex.numbered_source">
     <title>Example of a Numbered List (Source)</title>
@@ -1756,7 +1755,7 @@ id="tab.install.source"</screen>
    the work of translators.
   </para>
   <para>
-   To learn how to create cross references, see
+   For more information on creating cross references, see
    <xref linkend="sec.cross_reference"/>.
   </para>
   <example xml:id="ex.key">
@@ -1938,7 +1937,7 @@ id="tab.install.source"</screen>
    <tag class="emptytag">email</tag>
    element. In either case, do not include a protocol prefix, that is
    <literal>file://</literal> or <literal>mailto:</literal>, respectively.
-   Also refer to <xref linkend="sec.file_markup"/>.
+   See also <xref linkend="sec.file_markup"/>.
   </para>
   <para>
    Reference man pages and info pages in this format:
@@ -1973,7 +1972,7 @@ id="tab.install.source"</screen>
 (ISBN 0-246-52044-7) is a useful guide.</screen>
   <para>
    As an author, where possible, provide language-specific references to
-   translators in XML comments (also see <xref linkend="sec.xml_comment"/>).
+   translators in XML comments (see also <xref linkend="sec.xml_comment"/>).
    As a translator, look for corresponding language-specific resources where
    none have been provided. For URLs, provide only the language-specific
    version of a site. Use the English as a fall-back. For books, provide the
@@ -2005,7 +2004,7 @@ id="tab.install.source"</screen>
    the only subsection of its parent section.
   </para>
   <para>
-   For advice on creating headline titles, refer to
+   For more information on creating headline titles, see
    <xref linkend="sec.heading"/>.
   </para>
  </sect2>
@@ -2558,7 +2557,7 @@ id="tab.install.source"</screen>
    elements are then created automatically.
   </para>
   <para>
-   For instructions concerning markup, refer to
+   For more information on language aspects, see
    <xref linkend="sec.ui_item_language"/>.
   </para>
   <example xml:id="ex.single_ui_item">
