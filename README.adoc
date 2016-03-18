@@ -6,10 +6,10 @@ the guide will help you choose the right XML element for your
 purpose. Following this guide will make your documentation more understandable
 and easier to translate.
 
-A PDF can be reached in different versions:
+The Style Guide is published at
+https://doc.opensuse.org/products/opensuse/Styleguide/opensuse_documentation_styleguide_sd/[doc.opensuse.org, HTML without change log].
 
-* the https://github.com/SUSE/doc-styleguide/raw/master/prebuilt/current/styleguide_with_changelog.pdf[stable version]
-* the https://github.com/SUSE/doc-styleguide/raw/develop/prebuilt/current/styleguide_with_changelog.pdf[development version]
+You can also find pre-built PDF versions in this repository  https://github.com/SUSE/doc-styleguide/raw/master/prebuilt/current/styleguide_2014-02.2-with_changelog.pdf[PDF with change log].
 
 Contributing
 -------------
