@@ -26,8 +26,10 @@
  <sect2 xml:id="sec.host">
   <title>Host Names</title>
   <para>
-   Use <systemitem>sun</systemitem> and <systemitem>earth</systemitem> or
-   other planets of the solar system.
+   Use objects of the solar system: For the most important system, use
+   <systemitem>sun</systemitem>. For other systems, use the names of
+   planets such as <systemitem>earth</systemitem> or
+   <systemitem>mars</systemitem>.
   </para>
  </sect2>
 
