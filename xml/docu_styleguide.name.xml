@@ -34,7 +34,7 @@
  <sect2 xml:id="sec.ipv4">
   <title>IPv4 Adresses</title>
   <para>
-   Use addresses from the class C subnet <literal>255.255.255.0</literal>
+   Use addresses from the class C subnet <literal>192.168.255.0</literal>
    for examples. That is, replace the final <literal>0</literal> by any
    integer between <literal>0</literal> and <literal>255</literal>. To
    create examples using a larger setup, use addresses from the private
