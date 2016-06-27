@@ -49,6 +49,12 @@
       <entry>adjective</entry>
      </row>
      <row>
+      <entry>AArch64</entry>
+      <entry>ARM64, ARMv8</entry>
+      <entry>noun; processor architecture
+      </entry>
+     </row>
+     <row>
       <entry>(to) activate sth.</entry>
       <entry>(to) block sth., (to) check sth., (to) choose sth.,
               (to) highlight sth., (to) tick sth.
@@ -79,6 +85,13 @@
       <entry>(to) advise sth.</entry>
       <entry>(to) advi<emphasis>c</emphasis>e sth. [misspelling]</entry>
       <entry>verb</entry>
+     </row>
+     <row>
+      <entry>AMD64/Intel 64</entry>
+      <entry>x64, x86_64, x86-64, 64-bit AMD/Intel, AMD/Intel64</entry>
+      <entry>noun; processor architecture; see also
+        <emphasis>x86</emphasis>
+      </entry>
      </row>
      <row>
       <entry>AOO</entry>
@@ -685,6 +698,12 @@
       <entry>noun</entry>
      </row>
      <row>
+      <entry>ipf</entry>
+      <entry>IA-64, ia64, Itanium</entry>
+      <entry>noun; processor architecture
+      </entry>
+     </row>
+     <row>
       <entry>IPsec</entry>
       <entry>IPSEC, Ipsec</entry>
       <entry>noun</entry>
@@ -1056,6 +1075,12 @@
       <entry>PostScript</entry>
       <entry>POSTSCRIPT, Postscript, postscript</entry>
       <entry>noun; spelling as per vendor standard</entry>
+     </row>
+     <row>
+      <entry>POWER</entry>
+      <entry>ppc64le, POWER8, Power</entry>
+      <entry>noun; processor architecture
+      </entry>
      </row>
      <row>
       <entry>(to) preconfigure sth.</entry>
@@ -1729,6 +1754,13 @@
       </entry>
      </row>
      <row>
+      <entry>x86</entry>
+      <entry>32-bit AMD/Intel, i686, i386</entry>
+      <entry>noun; processor architecture; see also
+        <emphasis>AMD64/Intel 64</emphasis>
+      </entry>
+     </row>
+     <row>
       <entry>X Window System</entry>
       <entry>X Window, X Windows, X window, X window system, X windows, XWS</entry>
       <entry>noun
@@ -1750,6 +1782,13 @@
       <entry>YAST, YAST2, Yast, YaST2, yast, yast2</entry>
       <entry>noun; spelling according to project standard; acronym for
               <emphasis>Yet another Setup Tool</emphasis>
+      </entry>
+     </row>
+     <row>
+      <entry>z Systems</entry>
+      <entry>System z, zSeries, z System, zsystems, S390x</entry>
+      <entry>noun; processor architecture; see also
+        <emphasis>AMD64/Intel 64</emphasis>
       </entry>
      </row>
      <row>
