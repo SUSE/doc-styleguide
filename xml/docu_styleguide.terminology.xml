@@ -725,6 +725,13 @@
             </entry>
      </row>
      <row>
+      <entry>kernel space</entry>
+      <entry>kernel-space, kernelspace</entry>
+      <entry>noun; memory area reserved for the kernel and device drivers;
+              see also <emphasis>user space</emphasis>
+      </entry>
+     </row>
+     <row>
       <entry>key combination</entry>
       <entry>key accelerator, keyboard accelerator, key combo,
               keyboard combo, keyboard combination, keyboard shortcut,
@@ -1549,6 +1556,13 @@
       <entry>user name</entry>
       <entry>user-name, username</entry>
       <entry>noun</entry>
+     </row>
+     <row>
+      <entry>user space</entry>
+      <entry>user-space, userspace, userland</entry>
+      <entry>noun; memory area used by applications; see also
+              <emphasis>kernel space</emphasis>
+      </entry>
      </row>
      <row>
       <entry>video DVD</entry>
