@@ -177,6 +177,13 @@
       </entry>
      </row>
      <row>
+      <entry>cursor</entry>
+      <entry>pointer [used for pointing device input]</entry>
+      <entry>noun; on-screen item indicating the position of keyboard input
+        focus; see also <emphasis>pointer</emphasis>
+      </entry>
+     </row>
+     <row>
       <entry>CA</entry>
       <entry>C.A., Ca</entry>
       <entry>noun; acronym for
@@ -1024,6 +1031,14 @@
       <entry>plug-in</entry>
       <entry>plug in, plugin</entry>
       <entry>noun|adjective</entry>
+     </row>
+     <row>
+      <entry>pointer</entry>
+      <entry>cursor [used for keyboard input], mouse cursor</entry>
+      <entry>noun; on-screen item echoing the movement of a pointing device,
+        such as a mouse; <emphasis>mouse pointer</emphasis> is also acceptable;
+        see also <emphasis>cursor</emphasis>
+      </entry>
      </row>
      <row>
       <entry>pop-up</entry>
