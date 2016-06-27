@@ -429,7 +429,7 @@
       <entry>(to) enter sth. (into sth.)</entry>
       <entry/>
       <entry>verb; only when a value needs to be specified and
-              <keycap function="enter"/> should be pressed afterwards; where
+              <keycap function="enter"/> should be pressed afterward; where
               possible, replace by <emphasis>specify</emphasis> or
               <emphasis>provide</emphasis>
       </entry>
@@ -1762,6 +1762,12 @@
       </entry>
      </row>
      <row>
+      <entry>afterward</entry>
+      <entry>afterwards [BrE]</entry>
+      <entry>adverb
+      </entry>
+     </row>
+     <row>
       <entry>although</entry>
       <entry>while</entry>
       <entry>conjunction; only use <emphasis>while</emphasis> in the
@@ -1773,6 +1779,12 @@
       <entry>while</entry>
       <entry>conjunction; only use <emphasis>while</emphasis> in the
               meaning of <quote>during the time that</quote>
+      </entry>
+     </row>
+     <row>
+      <entry>backward</entry>
+      <entry>backwards [BrE]</entry>
+      <entry>adverb
       </entry>
      </row>
      <row>
@@ -1828,10 +1840,22 @@
             </entry>
      </row>
      <row>
+      <entry>forward</entry>
+      <entry>forwards [BrE]</entry>
+      <entry>adverb
+      </entry>
+     </row>
+     <row>
       <entry>if</entry>
       <entry/>
       <entry>pronoun; use if an event depends on a condition; also see
               <emphasis>when</emphasis> and <emphasis>whether</emphasis>
+      </entry>
+     </row>
+     <row>
+      <entry>inward</entry>
+      <entry>inwards [BrE]</entry>
+      <entry>adverb
       </entry>
      </row>
      <row>
@@ -1865,6 +1889,12 @@
       <entry>adjective, adverb</entry>
      </row>
      <row>
+      <entry>outward</entry>
+      <entry>outwards [BrE]</entry>
+      <entry>adverb
+      </entry>
+     </row>
+     <row>
       <entry/>
       <entry>please</entry>
       <entry>adverb; avoid</entry>
@@ -1873,6 +1903,12 @@
       <entry/>
       <entry>self-evident [insulting], self-evidently</entry>
       <entry>adjective, adverb</entry>
+     </row>
+     <row>
+      <entry>sideward</entry>
+      <entry>sidewards [BrE]</entry>
+      <entry>adverb
+      </entry>
      </row>
      <row>
       <entry/>
@@ -1888,6 +1924,12 @@
       <entry/>
       <entry>stuff [colloquial], stuffs</entry>
       <entry>noun</entry>
+     </row>
+     <row>
+      <entry>toward</entry>
+      <entry>towards [BrE]</entry>
+      <entry>adverb
+      </entry>
      </row>
      <row>
       <entry>want sth.</entry>
