@@ -492,6 +492,104 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
     <xref linkend="sec.entity"/>.
    </para>
   </sect3>
+  <sect3 xml:id="sec.screen">
+   <title>Screens</title>
+   <para>
+    Screens are used to present:
+   </para>
+   <itemizedlist>
+    <listitem>
+     <para>
+      long commands and commands together with their output
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      system output, such as system messages
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      code or configuration examples
+     </para>
+    </listitem>
+   </itemizedlist>
+<screen>&lt;screen&gt;&lt;prompt&gt;tux &gt; &lt;/prompt&gt;&lt;command&gt;ls /&lt;/command&gt;
+bin   dev   lib         mnt     proc  sbin     suse  usr
+boot  etc   lib64       mounts  root  selinux  sys   var
+data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
+   <itemizedlist>
+    <listitem>
+     <para>
+      Use screens only where necessary for understanding the documentation.
+      Present longer screens as examples. For more information, see
+      <xref linkend="sec.example"/>.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Do not add empty lines at the beginning or end of screens. They can
+      be cut away by the <literal>suse2013</literal> stylesheets, however, most
+      stylesheets do not have such functionality.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Text in screens should not follow the indentation level of the XML around
+      them: All indentation will be reproduced verbatim.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Lines in a screen should be at most 80 characters long. If you are working
+      in a structure with less available space, such as within a list or within
+      a table, work with appropriate shorter line lengths.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      To make long shell commands less unwieldy, split them into multiple lines
+      at appropriate positions, such as after the end of an option.
+      At the end of each line but the last, append a <literal> \</literal>.
+      The character <literal>\</literal> informs the shell that the command
+      invocation will continue after the end of the line. Splitting commands
+      into lines can also be helpful for aligning callouts with the right option.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      To work with long output, especially tabular output, use either of the
+      following strategies:
+     </para>
+     <itemizedlist>
+      <listitem>
+       <para>
+        Remove or replace items that are irrelevant to your goal.
+        For example, replace long file names by shorter ones or remove a table
+        column and replace it with <literal>[...]</literal>.
+       </para>
+      </listitem>
+      <listitem>
+       <para>
+        Use a processing instruction at the beginning of the screen to decrease
+        font size:
+       </para>
+       <screen>&lt;?dbsuse-fo font-size="<replaceable>SIZE</replaceable>em"?&gt;</screen>
+       <para>
+        Replace <replaceable>SIZE</replaceable> by a suitable value, such
+        <literal>0.7</literal>. Choose a value between <literal>0.55</literal>
+        and <literal>1</literal>. Values outside that range will lead to either
+        unreadably small or unsuitably large text.
+       </para>
+      </listitem>
+     </itemizedlist>
+    </listitem>
+   </itemizedlist>
+   <para>
+    See also <xref linkend="sec.example"/>, <xref linkend="sec.command"/>,
+    <xref linkend="sec.prompt"/>, and <xref linkend="sec.callout"/>.
+   </para>
+  </sect3>
   <sect3 xml:id="sec.variable">
    <title>Variable Names</title>
    <para>
@@ -575,65 +673,16 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    Use examples to illustrate complex processes. The rules established in
    <xref linkend="sec.graphic"/> also apply to examples.
   </para>
-  <itemizedlist>
-   <listitem>
-    <para>
-     Examples are used to present:
-    </para>
-    <itemizedlist>
-     <listitem>
-      <para>
-       long commands and commands together with their output
-      </para>
-     </listitem>
-     <listitem>
-      <para>
-       lines of code
-      </para>
-     </listitem>
-     <listitem>
-      <para>
-       configuration files or excerpts of configuration files
-      </para>
-     </listitem>
-     <listitem>
-      <para>
-       system output, such as system messages
-      </para>
-     </listitem>
-    </itemizedlist>
-   </listitem>
-   <listitem>
-    <para>
-     Never indent text inside
-     <tag class="emptytag">screen</tag>
-     elements as you do in other XML elements. All whitespace inside
-     <tag class="emptytag">screen</tag>
-     elements shows up verbatim.
-    </para>
-   </listitem>
-   <listitem>
-    <para>
-     To enable line numbering, add the attribute
-     <tag class="attribute">linenumbering="numbered"</tag>.
-     Never use hardcoded line numbers in the
-     <tag class="emptytag">screen</tag>
-     environment.
-    </para>
-   </listitem>
-   <listitem>
-    <para>
-     Only use examples where they are necessary for understanding the
-     documentation.
-    </para>
-   </listitem>
-   <listitem>
-    <para>
-     Always give examples a title and an identifier.
-    </para>
-   </listitem>
-  </itemizedlist>
   <para>
+   Examples usually contain <tag class="emptytag">screen</tag> elements.
+   Additionally, there can be callouts and explanatory text.
+  </para>
+  <para>
+   Always give examples a title and an identifier.
+  </para>
+  <para>
+   For more information on screen environments, see
+   <xref linkend="sec.screen"/>.
    For more information on displaying computer input and output, see
    <xref linkend="sec.command_line"/>. To annotate examples, use callouts.
    Callouts are described in <xref linkend="sec.callout"/>.
