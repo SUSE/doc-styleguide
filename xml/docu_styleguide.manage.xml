@@ -206,7 +206,7 @@
     product names of platform branding even past any deadlines, a set of
     entities must represent the frequently-changing product names. The same
     applies to book titles. An <filename>entity-decl.ent</filename> file
-    contains several different categories of entities. These are:
+    contains several categories of entities. These are:
    </para>
    <variablelist>
     <varlistentry>

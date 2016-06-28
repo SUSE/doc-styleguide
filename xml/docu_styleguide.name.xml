@@ -34,7 +34,7 @@
  </sect2>
 
  <sect2 xml:id="sec.ipv4">
-  <title>IPv4 Adresses</title>
+  <title>IPv4 Addresses</title>
   <para>
    Use addresses from the class C subnet <literal>192.168.255.0</literal>
    for examples. That is, replace the final <literal>0</literal> by any
@@ -46,7 +46,7 @@
  </sect2>
 
  <sect2 xml:id="sec.ipv6">
-  <title>IPv6 Adresses</title>
+  <title>IPv6 Addresses</title>
   <para>
    Use addresses from the subnet <literal>2001:0db8::/32</literal> for
    examples. That is, after the <literal>2001:0db8:</literal> prefix, add

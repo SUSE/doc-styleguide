@@ -1697,9 +1697,8 @@ xml:id="tab.install.source"</screen>
     list item.
    </para>
    <para>
-    You may assign an
-    <tag class="attribute">xml:id</tag>
-    attribute to the list and add a title to it in order to reference it.
+    To reference the list, assign it a <tag class="attribute">xml:id</tag>
+    attribute and add a title.
     Individual list items may be referenced by assigning an
     <tag class="attribute">xml:id</tag>. The entry is then identified by the value
     of
@@ -1904,7 +1903,7 @@ xml:id="tab.install.source"</screen>
         <listitem>
          <para>
           <tag class="attvalue">option</tag>
-          (OS X only)
+          (macOS only)
          </para>
         </listitem>
         <listitem>
@@ -2195,7 +2194,7 @@ xml:id="tab.install.source"</screen>
  <sect2 xml:id="sec.product">
   <title>Products</title>
   <para>
-   Always use the preferred product name instead of, for instance, an
+   Always use the preferred product name instead of, for example, an
    acronym. When referring to a product, add a
    <tag class="emptytag">phrase role="productname"</tag>
    element around it. This will not result in a visual change but disables
@@ -2381,7 +2380,7 @@ xml:id="tab.install.source"</screen>
  <sect2 xml:id="sec.table">
   <title>Tables</title>
   <para>
-   Use tables to present large numbers of similar facts. Tables are easy to
+   Use tables to present many similar facts. Tables are easy to
    scan and compare. Always keep tables simple enough to not require long
    explanations even for readers unfamiliar with the topic.
   </para>
