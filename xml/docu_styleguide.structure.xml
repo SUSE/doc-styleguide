@@ -713,7 +713,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   <title>External Links</title>
   <para>
    Use the
-   <tag class="emptytag">ulink</tag>
+   <tag class="emptytag">link</tag>
    element to mark up URLs that can be opened with a Web browser, such as
    <link xlink:href="http://www.example.org/"/>. Always add the correct
    protocol prefix (for example, <literal>http://</literal>), otherwise
@@ -721,10 +721,10 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    <tag>filename</tag>
    for a link, as that would both disable the link checker and make the link
    unclickable. Avoid entering a text label between
-   <tag class="emptytag">ulink</tag>
+   <tag class="emptytag">link</tag>
    start and end tags. Instead, use a self-closing tag:
   </para>
-<screen>&lt;ulink url="http://www.example.org/"/&gt;</screen>
+<screen>&lt;link xlink:href="http://www.example.org/"/&gt;</screen>
   <para>
    Make URLs as short as possible before adding them to documentation. Many
    long URLs can be shortened by leaving away non-essential pieces. This is
@@ -736,7 +736,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   </para>
   <para>
    Do not use
-   <tag class="emptytag">ulink</tag>
+   <tag class="emptytag">link</tag>
    to link to SUSE documentation outside of the current document set.
    Instead, use the appropriate entity for the book title. Always reference
    the book itself, as chapter names can change.
