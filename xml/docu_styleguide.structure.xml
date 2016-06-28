@@ -344,10 +344,7 @@ default 0 <co xml:id="co.default"/></screen>
         <para>
          Inline element that contains the name of an executable program or
          the command that a user types to execute a program. Can contain
-         <tag class="emptytag">option</tag>
-         or
-         <tag class="emptytag">replaceable</tag>
-         elements.
+         <tag class="emptytag">replaceable</tag> elements.
         </para>
        </formalpara>
       </entry>
@@ -425,17 +422,11 @@ default 0 <co xml:id="co.default"/></screen>
 <screen>To start LibreOffice from the command line, use
 &lt;command&gt;loffice&lt;/command&gt;.</screen>
    <para>
-    Nest options, surrounded by an
-    <tag class="emptytag">option</tag>
-    element, inside the command element.
+    Where options belong to a command, add them after the command markup and a
+    space character using the element <tag class="emptytag">option</tag>:
    </para>
 <screen>To start LibreOffice Writer from the command line, use
-&lt;command&gt;loffice &lt;option&gt;--writer&lt;/option&gt;&lt;/command&gt;.</screen>
-   <para>
-    Options can also be used in text, separately from
-    <tag class="emptytag">command</tag>
-    .
-   </para>
+&lt;command&gt;loffice&lt;/command&gt; &lt;option&gt;--writer&lt;/option&gt;.</screen>
    <para>
     Use markup for commands even inside
     <tag class="emptytag">screen</tag>
