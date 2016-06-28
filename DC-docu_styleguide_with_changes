@@ -4,11 +4,12 @@
 ## ----------------------------
 ##
 ## Basics
-MAIN="MAIN.styleguide.changes.xml"
+MAIN="MAIN.styleguide.xml"
 ROOTID="art.styleguide"
 
 ## stylesheet location
 STYLEROOT="/usr/share/xml/docbook/stylesheet/suse2013-ns"
+PROFCONDITION="guide;changes"
 
 ## enable sourcing
 export DOCCONF=$BASH_SOURCE

@@ -32,12 +32,11 @@
    <para>
     This guide provides answers to writing, style, and layout questions
     commonly arising when editing SUSE documentation. The
-    <phrase role="productname">Novdoc</phrase>/<phrase role="productname">DocBook</phrase>
+    <phrase role="productname">GeekoDoc</phrase>/<phrase role="productname">DocBook</phrase>
     markup reference at the end of this guide will help you choose the right
     XML element for your purpose. Following this guide will make your
     documentation more understandable and easier to translate.
    </para>
-    
   </abstract>
  </info>
  <xi:include href="docu_styleguide.audience.xml"/>
@@ -47,5 +46,6 @@
  <xi:include href="docu_styleguide.structure.xml"/>
  <xi:include href="docu_styleguide.manage.xml"/>
  <xi:include href="docu_styleguide.terminology.xml"/>
+ <xi:include href="docu_styleguide.changes.xml" condition="changes"/>
  <xi:include href="gfdl.xml"/>
 </article>
