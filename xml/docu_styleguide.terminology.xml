@@ -823,6 +823,27 @@
             </entry>
      </row>
      <row>
+      <entry>live CD</entry>
+      <entry>LiveCD, live-CD</entry>
+      <entry>noun; CD that allows booting an operating system without
+        installing
+      </entry>
+     </row>
+     <row>
+      <entry>live DVD</entry>
+      <entry>LiveDVD, live-DVD</entry>
+      <entry>noun; DVD that allows booting an operating system without
+        installing
+      </entry>
+     </row>
+     <row>
+      <entry>live image</entry>
+      <entry>live disk image, LiveImage, live-image</entry>
+      <entry>noun; disk image that can be copied to a medium and then allows
+        booting an operating system without installing
+      </entry>
+     </row>
+     <row>
       <entry>local host</entry>
       <entry>local-host, localhost</entry>
       <entry>noun; when describing the concept of hosting locally</entry>
