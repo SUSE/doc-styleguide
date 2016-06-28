@@ -139,27 +139,22 @@
      <tag class="emptytag">title</tag>
      to admonitions. In the title, state the subject of the admonition and,
      in the case of a
-     <tag class="emptytag">warning</tag>
-     , also the source of danger.
+     <tag class="emptytag">warning</tag>, also the source of danger.
     </para>
    </listitem>
    <listitem>
     <para>
-     <emphasis>
-     <tag class="emptytag">warning</tag>
-     or
-     <tag class="emptytag">important</tag>
-     :</emphasis> In the first paragraph, clearly state possible
+     <emphasis><tag class="emptytag">warning</tag> or
+     <tag class="emptytag">important</tag>:</emphasis>
+     In the first paragraph, clearly state possible
      consequences of ignoring the danger.
     </para>
    </listitem>
    <listitem>
     <para>
-     <emphasis>
-     <tag class="emptytag">warning</tag>
-     or
-     <tag class="emptytag">important</tag>
-     :</emphasis> In the second paragraph, explain how to avoid the danger.
+     <emphasis><tag class="emptytag">warning</tag> or
+     <tag class="emptytag">important</tag>:</emphasis>
+     In the second paragraph, explain how to avoid the danger.
      If there are multiple ways to avoid a danger, use an unordered list. If
      fewer than five consecutive steps need to be taken to avoid a danger,
      use an ordered list. If more than five consecutive steps need to be
@@ -260,8 +255,7 @@ default 0 <co xml:id="co.default"/></screen>
         <title><tag class="emptytag">co</tag></title>
         <para>
          Inline element to mark an area within a
-         <tag class="emptytag">screen</tag>
-         .
+         <tag class="emptytag">screen</tag>.
         </para>
        </formalpara>
       </entry>
@@ -287,8 +281,7 @@ default 0 <co xml:id="co.default"/></screen>
         <title><tag class="emptytag">callout</tag></title>
         <para>
          Block element containing a description of a single area marked with
-         <tag class="emptytag">co</tag>
-         .
+         <tag class="emptytag">co</tag>.
         </para>
        </formalpara>
       </entry>
@@ -307,8 +300,8 @@ default 0 <co xml:id="co.default"/></screen>
    characters, format it with an inline element, such as
    <tag class="emptytag">command</tag>
    or
-   <tag class="emptytag">filename</tag>
-   . In all other cases, close the current paragraph and enclose it in a
+   <tag class="emptytag">filename</tag>. In all other cases, close the current
+   paragraph and enclose it in a
    <tag class="emptytag">screen</tag>
    element. See also <xref linkend="sec.example"/>.
   </para>
@@ -622,8 +615,8 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    <listitem>
     <para>
      To enable line numbering, add the attribute
-     <tag class="attribute">linenumbering="numbered"</tag>
-     . Never use hardcoded line numbers in the
+     <tag class="attribute">linenumbering="numbered"</tag>.
+     Never use hardcoded line numbers in the
      <tag class="emptytag">screen</tag>
      environment.
     </para>
@@ -816,8 +809,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
          Formal block element containing a
          <tag class="emptytag">title</tag>
          and a
-         <tag class="emptytag">mediaobject</tag>
-         .
+         <tag class="emptytag">mediaobject</tag>.
         </para>
        </formalpara>
       </entry>
@@ -830,8 +822,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
         <title><tag class="emptytag">informalfigure</tag></title>
         <para>
          Informal block element containing a
-         <tag class="emptytag">mediaobject</tag>
-         .
+         <tag class="emptytag">mediaobject</tag>.
         </para>
        </formalpara>
       </entry>
@@ -1092,8 +1083,7 @@ id="tab.install.source"</screen>
      nouns and the infinitive of verbs. For example, a section about
      installing with <phrase role="productname">YaST</phrase> could be
      called
-     <tag class="attvalue">sec.install.yast</tag>
-     .
+     <tag class="attvalue">sec.install.yast</tag>.
     </para>
    </listitem>
   </itemizedlist>
@@ -1335,8 +1325,7 @@ id="tab.install.source"</screen>
   <para>
    <tag class="emptytag">indexterm</tag>
    elements mark text passages that should be referenced in an
-   <tag class="emptytag">index</tag>
-   . Simple
+   <tag class="emptytag">index</tag>. Simple
    <tag class="emptytag">indexterm</tag>
    elements are placed in the flow of the document at the exact point which
    the Index page should refer to.
@@ -1526,8 +1515,7 @@ id="tab.install.source"</screen>
          that associates a
          <tag class="emptytag">term</tag>
          and a
-         <tag class="emptytag">listitem</tag>
-         .
+         <tag class="emptytag">listitem</tag>.
         </para>
        </formalpara>
       </entry>
@@ -1540,8 +1528,7 @@ id="tab.install.source"</screen>
         <title><tag class="emptytag">term</tag></title>
         <para>
          Element whose content serves as the title of an element of a
-         <tag class="emptytag">variablelist</tag>
-         .
+         <tag class="emptytag">variablelist</tag>.
         </para>
        </formalpara>
       </entry>
@@ -1665,8 +1652,8 @@ id="tab.install.source"</screen>
     <tag class="attribute">id</tag>
     attribute to the list and add a title to it in order to reference it.
     Individual list items may be referenced by assigning an
-    <tag class="attribute">id</tag>
-    . The entry is then identified by the value of
+    <tag class="attribute">id</tag>. The entry is then identified by the value
+    of
     <tag class="attribute">id</tag>
     and referenced by the term.
    </para>
@@ -2302,8 +2289,7 @@ id="tab.install.source"</screen>
          Block element used to associate a
          <tag class="emptytag">question</tag>
          with an
-         <tag class="emptytag">answer</tag>
-         .
+         <tag class="emptytag">answer</tag>.
         </para>
        </formalpara>
       </entry>
@@ -2454,8 +2440,7 @@ id="tab.install.source"</screen>
          Wrapper for the content of a table. Can contain one or more
          <tag class="emptytag">colspec</tag>
          and one
-         <tag class="emptytag">thead</tag>
-         . Contains a
+         <tag class="emptytag">thead</tag>. Contains a
          <tag class="emptytag">tbody</tag>
         </para>
        </formalpara>
@@ -2538,8 +2523,7 @@ id="tab.install.source"</screen>
   <title>User Interface Items</title>
   <para>
    To mark up single user interface items, use
-   <tag class="emptytag">guimenu</tag>
-   . To mark up nested menu structures, use
+   <tag class="emptytag">guimenu</tag>. To mark up nested menu structures, use
    <tag class="emptytag">menuchoice</tag>
    as a wrapper for multiple
    <tag class="emptytag">guimenu</tag>

@@ -251,8 +251,8 @@
      <listitem>
       <para>
        Promoted <xref linkend="sec.audience"/> to a
-       <tag class="emptytag">sect1</tag>
-       . Added new paragraph about how to mark the target audience in
+       <tag class="emptytag">sect1</tag>.
+       Added new paragraph about how to mark the target audience in
        documentation.
       </para>
      </listitem>
@@ -267,8 +267,7 @@
        Renamed <emphasis>Creating a Consistent Structure: Official SUSE
        Manuals</emphasis> to <emphasis>Outline of a Manual</emphasis> and
        promoted to a
-       <tag class="emptytag">sect1</tag>
-       .
+       <tag class="emptytag">sect1</tag>.
       </para>
      </listitem>
      <listitem>

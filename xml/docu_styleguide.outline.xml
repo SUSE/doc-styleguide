@@ -49,8 +49,7 @@
          and version number. Mark this information up with
          <tag class="emptytag">productname</tag>
          and
-         <tag class="emptytag">productnumber</tag>
-         , respectively.
+         <tag class="emptytag">productnumber</tag>, respectively.
         </para>
        </formalpara>
       </listitem>
