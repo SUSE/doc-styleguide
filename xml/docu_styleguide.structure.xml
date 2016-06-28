@@ -210,8 +210,8 @@
   </para>
   <example xml:id="ex.callout_output">
    <title>Example of Callouts (Source)</title>
-<screen>&lt;screen&gt;color white/blue black/light-gray &lt;co id="co.color"/&gt;
-default 0 &lt;co id="co.default"/&gt;&lt;/screen&gt;
+<screen>&lt;screen&gt;color white/blue black/light-gray &lt;co xml:id="co.color"/&gt;
+default 0 &lt;co xml:id="co.default"/&gt;&lt;/screen&gt;
 &lt;calloutlist&gt;
   &lt;callout arearefs="co.color"&gt;
     &lt;para&gt;Colors of the boot loader menu.&lt;/para&gt;
@@ -513,7 +513,7 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
    element (read: <quote>cross ref</quote>) when referring to an appendix,
    chapter, example, figure, part, preface, section, table, or question and
    answer set. The element referenced needs to have an
-   <tag class="attribute">id</tag>
+   <tag class="attribute">xml:id</tag>
    attribute. Do not insert text labels such as <quote>appendix,</quote>
    <quote>chapter,</quote> <quote>table,</quote> or <quote>figure.</quote>
    These labels are generated automatically.
@@ -534,7 +534,7 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
   </para>
   <example xml:id="ex.cross_reference_source">
    <title>Example of a Cross Reference (Source)</title>
-<screen>&lt;sect2 id="sec.cross_reference"&gt;
+<screen>&lt;sect2 xml:id="sec.cross_reference"&gt;
   &lt;title&gt;Cross References&lt;/title&gt;
   &lt;para&gt;Use the &lt;sgmltag class="emptytag"&gt;xref&lt;/sgmltag&gt; element ...&lt;/para&gt;
 ...
@@ -640,7 +640,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   </para>
   <example xml:id="ex.example">
    <title>Example of an Example</title>
-<screen>&lt;example id="ex.example"&gt;
+<screen>&lt;example xml:id="ex.example"&gt;
   &lt;title&gt;Example of an Example&lt;/title&gt;
   &lt;screen&gt;&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ps &lt;option&gt;-xa&lt;/option&gt;&lt;/command&gt;
 
@@ -758,7 +758,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    element. In all other cases, use the
    <tag class="emptytag">figure</tag>
    element. Always assign an
-   <tag class="attribute">id</tag>
+   <tag class="attribute">xml:id</tag>
    attribute to
    <tag class="emptytag">figure</tag>
    elements. Reference figures from the text by means of a cross reference.
@@ -775,7 +775,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   </para>
   <example xml:id="ex.figure">
    <title>Example of a Figure</title>
-<screen>&lt;figure id="fig.picture"&gt;
+<screen>&lt;figure xml:id="fig.picture"&gt;
   &lt;title&gt;An Interesting Picture&lt;/title&gt;
   &lt;textobject role="description"&gt;
     &lt;phrase&gt;Cat chasing Geeko&lt;/phrase&gt;
@@ -997,7 +997,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
 <screen>&lt;glossary&gt;
 &lt;title&gt;Glossary&lt;/title&gt;
   &lt;glossentry&gt;
-    &lt;glossterm id="gt.extensible"&gt;Extensible Markup Language&lt;/glossterm&gt;
+    &lt;glossterm xml:id="gt.extensible"&gt;Extensible Markup Language&lt;/glossterm&gt;
     &lt;glossdef&gt;
       &lt;para&gt;A markup language that defines a set of rules for encoding
         documents in a format that is both human-readable and machine-readable.
@@ -1020,7 +1020,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    <listitem>
     <para>
      Always use an
-     <tag class="attribute">id</tag>
+     <tag class="attribute">xml:id</tag>
      attribute in parts, chapters, appendixes, sections, figures, and
      examples. Identifiers can be used in other elements as well, such as
      tables and procedures.
@@ -1071,9 +1071,9 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     </orderedlist>
     <example>
      <title>Examples of Identifiers</title>
-<screen>id="cha.install"
-id="sec.install.yast"
-id="tab.install.source"</screen>
+<screen>xml:id="cha.install"
+xml:id="sec.install.yast"
+xml:id="tab.install.source"</screen>
     </example>
    </listitem>
    <listitem>
@@ -1093,7 +1093,7 @@ id="tab.install.source"</screen>
   </para>
   <table xml:id="tab.id_prefix">
    <title>Abbreviations for Different Elements in an
-    <tag class="attribute">id</tag>
+    <tag class="attribute">xml:id</tag>
     Attribute</title>
    <tgroup cols="2">
     <thead>
@@ -1169,7 +1169,7 @@ id="tab.install.source"</screen>
        <footnote xml:id="fn.vl">
         <para>
          Only add an
-         <tag>id</tag>
+         <tag>xml:id</tag>
          attribute when the list has a
          <tag>title</tag>
          element
@@ -1346,7 +1346,7 @@ id="tab.install.source"</screen>
   </para>
   <example xml:id="ex.index_range">
    <title>Example of an Index Range</title>
-<screen>&lt;indexterm <emphasis role="bold">class="startofrange" id="idx.install"</emphasis>&gt;
+<screen>&lt;indexterm <emphasis role="bold">class="startofrange" xml:id="idx.install"</emphasis>&gt;
   &lt;primary&gt;installing&lt;/primary&gt;
 &lt;/indexterm&gt;
 …
@@ -1413,7 +1413,7 @@ id="tab.install.source"</screen>
     <para>
      Always introduce a list in the text. If needed for reference or better
      coordination with the related text, add a title and an
-     <tag class="attribute">id</tag>
+     <tag class="attribute">xml:id</tag>
      attribute.
     </para>
    </listitem>
@@ -1649,12 +1649,12 @@ id="tab.install.source"</screen>
    </para>
    <para>
     You may assign an
-    <tag class="attribute">id</tag>
+    <tag class="attribute">xml:id</tag>
     attribute to the list and add a title to it in order to reference it.
     Individual list items may be referenced by assigning an
-    <tag class="attribute">id</tag>. The entry is then identified by the value
+    <tag class="attribute">xml:id</tag>. The entry is then identified by the value
     of
-    <tag class="attribute">id</tag>
+    <tag class="attribute">xml:id</tag>
     and referenced by the term.
    </para>
    <example xml:id="ex.descriptive_source">
@@ -1997,7 +1997,7 @@ id="tab.install.source"</screen>
    <listitem>
     <para>
      An
-     <tag class="attribute">id</tag>
+     <tag class="attribute">xml:id</tag>
      attribute.
     </para>
    </listitem>
@@ -2038,7 +2038,7 @@ id="tab.install.source"</screen>
   </para>
   <example xml:id="ex.procedure_source">
    <title>Example of a Procedure (Source)</title>
-<screen>&lt;procedure id="pro.procedure"&gt;
+<screen>&lt;procedure xml:id="pro.procedure"&gt;
   &lt;title&gt;Example of a Procedure&lt;/title&gt;
     &lt;para&gt;To add a new user to the system, perform the following steps:
     &lt;/para&gt;
@@ -2338,7 +2338,7 @@ id="tab.install.source"</screen>
   </para>
   <para>
    A table always has a title and should have an
-   <tag class="attribute">id</tag>
+   <tag class="attribute">xml:id</tag>
    attribute.
   </para>
   <para>

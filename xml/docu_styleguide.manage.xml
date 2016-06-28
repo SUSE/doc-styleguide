@@ -319,7 +319,7 @@ Kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
    need to be valid DocBook files. This means that they must have a single
    top-level element. Files that are supposed to be referenced multiple
    times from within the same set, book or article must not contain any
-   <tag class="attribute">id</tag>
+   <tag class="attribute">xml:id</tag>
    attributes.
   </para>
  </sect2>
