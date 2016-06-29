@@ -378,12 +378,15 @@
      </row>
      <row>
       <entry>dialog</entry>
-      <entry>dialog box, dialog window, dialogue [British], screen</entry>
-      <entry>noun
-              <remark>sknorr, 2013-09-17: Novell use dialog box, apparently, but
-                that sounds rather colloquial. And then, a dialog doesn't
-                have to be in a box/window, as with Web applications
-              </remark>
+      <entry>dialog box, dialog window, dialogue [British], mask [Germanism],
+        screen
+      </entry>
+      <entry>noun; a page or window that asks you to make one or more decisions
+        before proceeding
+        <remark>sknorr, 2013-09-17: Novell use dialog box, apparently, but
+          that sounds rather colloquial. And then, a dialog doesn't
+          have to be in a box/window, as with Web applications
+        </remark>
       </entry>
      </row>
      <row>

@@ -100,6 +100,13 @@
      </listitem>
      <listitem>
       <para>
+       Added <emphasis>mask</emphasis> as a rejected entry to
+       <emphasis>dialog</emphasis>. Added a definition for
+       <emphasis>dialog</emphasis>.
+      </para>
+     </listitem>
+     <listitem>
+      <para>
        Removed duplicate entry <emphasis>EPUB</emphasis>.
       </para>
      </listitem>
