@@ -81,6 +81,8 @@
        <emphasis>pointer</emphasis>,
        <emphasis>POWER</emphasis>,
        <emphasis>Samba</emphasis>,
+       <emphasis>SUSE Enterprise Storage</emphasis>,
+       <emphasis>SUSE Linux Enterprise Server for SAP Applications</emphasis>,
        <emphasis>systemd</emphasis>,
        <emphasis>System V init</emphasis>,
        <emphasis>toolchain</emphasis>,
@@ -90,6 +92,12 @@
        <emphasis>z Systems</emphasis>,
        words with <emphasis>-ward</emphasis> (such as
        <emphasis>afterward</emphasis> or <emphasis>backward</emphasis>),
+      </para>
+     </listitem>
+     <listitem>
+      <para>
+       Changed accepted entry from <emphasis>SUSE Cloud</emphasis> to
+       <emphasis>SUSE OpenStack Cloud</emphasis>. Updated rejected entries.
       </para>
      </listitem>
      <listitem>

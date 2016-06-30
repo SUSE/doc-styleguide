@@ -1387,6 +1387,13 @@
       </entry>
      </row>
      <row>
+      <entry>SLES for SAP Applications</entry>
+      <entry>SLES for SAP, SLE for SAP</entry>
+      <entry>noun; acronym for <emphasis>SUSE Linux Enterprise Server for
+        SAP Applications</emphasis>
+      </entry>
+     </row>
+     <row>
       <entry>slider</entry>
       <entry>slide bar, slidebar</entry>
       <entry>noun; GUI element that is used manipulate values that have
@@ -1456,9 +1463,9 @@
       <entry>noun; not an acronym</entry>
      </row>
      <row>
-      <entry>SUSE Cloud</entry>
-      <entry>SUSE Linux Cloud</entry>
-      <entry>noun</entry>
+      <entry>SUSE Enterprise Storage</entry>
+      <entry>SUSE Storage, SUSE Linux Enterprise Storage</entry>
+      <entry>noun; acronym is <emphasis>SES</emphasis></entry>
      </row>
      <row>
       <entry>SUSE Linux Enterprise</entry>
@@ -1470,19 +1477,32 @@
      </row>
      <row>
       <entry>SUSE Linux Enterprise Desktop</entry>
-      <entry>SUSE Linux Enterprise desktop</entry>
+      <entry>SUSE Desktop, SUSE Linux Enterprise desktop</entry>
       <entry>noun; acronym is <emphasis>SLED</emphasis>
       </entry>
      </row>
      <row>
       <entry>SUSE Linux Enterprise Server</entry>
-      <entry>SUSE Linux Enterprise server</entry>
+      <entry>SUSE Server, SUSE Linux Enterprise server</entry>
       <entry>noun; acronym is <emphasis>SLES</emphasis>
+      </entry>
+     </row>
+     <row>
+      <entry>SUSE Linux Enterprise Server for SAP Applications</entry>
+      <entry>SUSE Linux Enterprise for SAP, SUSE Linux Enterprise Server for
+        SAP, SUSE Server for SAP
+      </entry>
+      <entry>noun; acronym is <emphasis>SLES for SAP Applications</emphasis>
       </entry>
      </row>
      <row>
       <entry>SUSE Manager</entry>
       <entry>SUSE Linux Manager</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
+      <entry>SUSE OpenStack Cloud</entry>
+      <entry>SUSE Cloud, SUSE Linux Cloud</entry>
       <entry>noun</entry>
      </row>
      <row>
