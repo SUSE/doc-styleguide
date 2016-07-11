@@ -61,6 +61,13 @@
    </listitem>
    <listitem>
     <para>
+     Corrected syntax of <xref linkend="ex.figure"/>:
+     <tag class="emptytag">textobject</tag> must be within
+     <tag class="emptytag">mediaobject</tag>.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
      Updated terminology and general vocabulary tables in
      <xref linkend="app.terminology"/>.
     </para>

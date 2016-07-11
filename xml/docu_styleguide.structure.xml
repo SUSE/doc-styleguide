@@ -825,9 +825,6 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    <title>Example of a Figure</title>
 <screen>&lt;figure xml:id="fig.picture"&gt;
   &lt;title&gt;An Interesting Picture&lt;/title&gt;
-  &lt;textobject role="description"&gt;
-    &lt;phrase&gt;Cat chasing Geeko&lt;/phrase&gt;
-  &lt;/textobject&gt;
   &lt;mediaobject&gt;
     &lt;imageobject role="fo"&gt;
       &lt;imagedata fileref="picture.eps" width="80%" format="EPS"/&gt;
@@ -835,6 +832,9 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     &lt;imageobject role="html"&gt;
       &lt;imagedata fileref="picture.png" width="80%" format="PNG"/&gt;
     &lt;/imageobject&gt;
+    &lt;textobject role="description"&gt;
+      &lt;phrase&gt;Cat chasing Geeko&lt;/phrase&gt;
+    &lt;/textobject&gt;
   &lt;/mediaobject&gt;
 &lt;/figure&gt;</screen>
   </example>
