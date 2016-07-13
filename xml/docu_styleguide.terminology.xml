@@ -362,7 +362,7 @@
       <entry>(to) de-select sth., (to) remove the selection from sth.,
               (to) un-select sth., (to) unselect sth.
             </entry>
-      <entry>verb; when referring to text or list entries; for check boxes,
+      <entry>verb; when referring to list entries or text; for check boxes,
               use <emphasis>deactivate</emphasis>
       </entry>
      </row>
@@ -1330,14 +1330,14 @@
       <entry>(to) select sth.</entry>
       <entry>(to) block sth., (to) choose sth., (to) highlight sth.
             </entry>
-      <entry>verb; when referring to text or list entries; for check boxes,
+      <entry>verb; when referring to list entries or text; for check boxes,
               use <emphasis>activate</emphasis>
       </entry>
      </row>
      <row>
       <entry>selected</entry>
       <entry>blocked, chosen, highlighted</entry>
-      <entry>adjective; selection state of text or list entry; opposite of
+      <entry>adjective; selection state of list entries or text; opposite of
               <emphasis>deselected</emphasis>
       </entry>
      </row>
@@ -1661,7 +1661,7 @@
      <row>
       <entry>unselected</entry>
       <entry>deselected, un-selected</entry>
-      <entry>adjective; selection state of text or list entry; opposite of
+      <entry>adjective; selection state of list entries or text; opposite of
               <emphasis>selected</emphasis>
       </entry>
      </row>
