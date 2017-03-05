@@ -464,23 +464,84 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
   <sect3 xml:id="sec.prompt">
    <title>Prompts</title>
    <para>
-    When documenting commands entered into Bash with a
-    <tag class="emptytag">screen</tag>
-    element, always prefix them with a prompt marked up this way:
-   </para>
-<screen>&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ls&lt;/command&gt;</screen>
-   <para>
-    To avoid making prompts longer than necessary, never include a host name
-    or a path. The first restricted user should always be named
-    <emphasis>tux</emphasis>. For more information on names of restricted users,
-    see <xref linkend="sec.name"/>.
+     Prompts are added inside <tag>screen</tag> as a hint to inform
+     the reader of the pivileges needed to run commands.
    </para>
    <para>
-    Avoid using root prompts in your documentation by using the
-    <command>sudo</command> command where applicable. If you do need a root
-    prompt, always mark it up as following:
+     Basically, use the following two rules to decide when a prompt is
+     necessary:
    </para>
-<screen>&lt;prompt&gt;root # &lt;/prompt&gt;&lt;command&gt;yast&lt;/command&gt;</screen>
+   <itemizedlist>
+     <listitem>
+       <para>
+         If there is one or more commands within a screen, use a prompt.
+       </para>
+     </listitem>
+     <listitem>
+       <para>
+         If there is a short, usually exemplary and usually
+         not-to-be-directly-executed command within running text, do not add
+         a prompt.
+       </para>
+     </listitem>
+   </itemizedlist>
+
+   <para>
+     To avoid making prompts longer than necessary, never include a host
+      name or a path. The first restricted user should always be named
+     <systemitem class="username">&exampleuser_plain;</systemitem>. To make user names
+     consistent throughout our documents, better use the <tag
+       class="genentity">prompt.user</tag> entity for a normal user and
+     the <tag class="genentity">prompt.root</tag> entity for the root user,
+     respectively. For more information on  names of restricted users, see <xref
+      linkend="sec.name"/>.
+   </para>
+   <para>
+     The following list shows some examples using the most common
+     use cases for Bash commands:
+   </para>
+   <variablelist>
+     <varlistentry>
+       <term>A single command without output</term>
+       <listitem>
+         <para>
+           Add the command and the options and arguments directly after
+           <tag class="starttag">screen</tag>. To discern between normal
+         and root user, add a clarifying note in the text before:
+         </para>
+         <screen>&lt;para>Run &lt;command>mount&lt;/command> as user root:&lt;para>
+&lt;screen>mount /dev/sda&lt;/screen></screen>
+       </listitem>
+     </varlistentry>
+     <varlistentry>
+       <term>Multiple commands executed as root user without output</term>
+       <listitem>
+         <para>
+           Use the entity <tag class="genentity">prompt.root</tag>
+           for each input line:
+         </para>
+         <screen>&lt;screen>&amp;prompt.root;systemctl enable cups
+&amp;prompt.root;systemctl disable sendmail&lt;/screen></screen>
+       </listitem>
+     </varlistentry>
+     <varlistentry>
+       <term>Command(s) executed by a specific user</term>
+       <listitem>
+         <para>Create your own entity (here: <tag
+           class="genentity">prompt.cephadm</tag>) and define it inside
+           the file <filename>entity-decl.ent</filename>:</para>
+         <screen>&lt;screen>&amp;prompt.cephadm;ceph-deploy [...]&lt;/screen></screen>
+       </listitem>
+     </varlistentry>
+  </variablelist>
+
+   <para> If needed, use <tag>replaceable</tag> to mark any
+        placeholders. However, avoid the <tag>option</tag> tag; it does
+        not add any value. </para>
+   <para>
+     If you need to discern input and output, markup your commands with the
+     <tag>command</tag> tag.
+   </para>
    <para>
     When documenting prompts other than the one of Bash, use a custom prompt
     that is as generic as possible.

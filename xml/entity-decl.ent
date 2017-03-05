@@ -7,3 +7,10 @@
 <!ENTITY % xml.features "INCLUDE">
 <!ENTITY % dbcent PUBLIC "-//OASIS//ENTITIES DocBook Character Entities V4.5//EN" "http://www.oasis-open.org/docbook/xml/4.5/dbcentx.mod">
   %dbcent;
+
+<!ENTITY exampleuser_plain    "tux">
+<!ENTITY exampleuserII_plain    "wilber">
+
+<!ENTITY prompt.root     "<prompt xmlns='http://docbook.org/ns/docbook' role='root'>root # </prompt>">
+<!ENTITY prompt.user     "<prompt xmlns='http://docbook.org/ns/docbook'>&exampleuser_plain; &gt; </prompt>">
+<!ENTITY prompt.user2    "<prompt xmlns='http://docbook.org/ns/docbook'>&exampleuserII_plain; &gt; </prompt>">
