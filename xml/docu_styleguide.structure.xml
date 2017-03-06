@@ -304,6 +304,13 @@ default 0 <co xml:id="co.default"/></screen>
    <tag class="emptytag">screen</tag>
    element. See also <xref linkend="sec.example"/>.
   </para>
+  <para>
+   When using <tag class="emptytag">command</tag> elements standalone, that
+   is outside of a <tag class="emptytag">screen</tag>, do not use
+   <tag class="emptytag">prompt</tag> elements before or within them. For
+   more information about <tag class="emptytag">prompt</tag>, see
+   <xref linkend="sec.prompt"/>.
+  </para>
   <table xml:id="tab.command_line">
    <title>Elements Related to Command Line Input and Output</title>
    <tgroup cols="2">
@@ -555,6 +562,17 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
       into lines can also be helpful for aligning callouts with the right option.
      </para>
     </listitem>
+    <!-- Comment this for the moment... - sknorr, 2017-03-06 -->
+    <!-- <listitem>
+     <para>
+      When showing multiple commands together with their output in a
+      <tag class="emptytag">screen</tag>, you can use
+      <tag class="emptytag">command</tag> elements mark up commands. This
+      effectively separates commands from their output. However, applying
+      such markup is not a must and there are currently no firm rules at what
+      point to use this construct.
+     </para>
+    </listitem>-->
     <listitem>
      <para>
       To work with long output, especially tabular output, use either of the
