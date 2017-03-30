@@ -247,6 +247,31 @@
   </para>
  </sect2>
 
+ <sect2 xml:id="sec.lists">
+  <title>Lists</title>
+  <para>
+    The following rules apply to both ordered and unordered lists:
+  </para>
+     <itemizedlist>
+   <listitem>
+    <para>
+    Each list entry starts with a capital letter if it is a complete
+    sentence 
+    </para>
+    </listitem>
+    <listitem>
+      <para>
+	If a list entry consists of a single sentence, do not use period
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+	Use periods if a list entry contains two or more sentences
+      </para>
+    </listitem>
+     </itemizedlist>
+ </sect2>
+
  <sect2 xml:id="sec.number">
   <title>Numbers and Measurements</title>
   <para>
