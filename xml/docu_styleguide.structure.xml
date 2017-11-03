@@ -1152,6 +1152,14 @@ xml:id="tab.install.source"</screen>
      <tag class="attvalue">sec.install.yast</tag>.
     </para>
    </listitem>
+   <listitem>
+    <para>
+     Keep in mind that section and chapter identifiers are used
+     in the online documentation URLs. Choosing understandable keywords helps
+     readers to understand what the page is about and also improves the
+     search engine ranking.
+    </para>
+   </listitem>
   </itemizedlist>
   <para>
    Do not rework identifiers in existing documentation, instead apply these
