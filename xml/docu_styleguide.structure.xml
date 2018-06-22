@@ -1293,6 +1293,14 @@ xml:id="tab.install.source"</screen>
      </row>
      <row>
       <entry>
+       <tag class="emptytag">preface</tag>
+      </entry>
+      <entry>
+       <tag class="attvalue">pre</tag>
+      </entry>
+     </row>
+     <row>
+      <entry>
        <tag class="emptytag">procedure</tag>
       </entry>
       <entry>
