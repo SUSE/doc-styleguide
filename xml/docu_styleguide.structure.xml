@@ -998,6 +998,13 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     </listitem>
     <listitem>
      <para>
+      Do not scale screenshots using graphics software. Embed screenshots at
+      their original resolution and use DocBook attributes to scale them
+      appropriately.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
       Avoid creating screenshots of windows higher or wider than
       800&nbsp;pixels at 96&nbsp;pixels per inch. When creating
       screenshots of applications scaled for a higher pixel-per-inch count,
