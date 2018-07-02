@@ -82,14 +82,10 @@
    visible in a publication.
   </para>
 <screen>&lt;-- This is an XML comment. --!&gt;</screen>
-  <tip>
-   <title>Creating Valid Comments</title>
-   <para>
-    Do not use <literal>--</literal> in comments. <literal>--</literal> is
-    the first part of end-of-comment string <literal>--&gt;</literal> and
-    thus causes validation to fail.
-   </para>
-  </tip>
+  <para>
+   For information about formatting XML comments, see
+   <xref linkend="sec.format_xml"/>.
+  </para>
  </sect2>
 
  <sect2 xml:id="sec.entity">
