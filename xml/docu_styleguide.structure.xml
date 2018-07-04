@@ -421,11 +421,15 @@ default 0 <co xml:id="co.default"/></screen>
 <screen>To start LibreOffice from the command line, use
 &lt;command&gt;loffice&lt;/command&gt;.</screen>
    <para>
-    Where options belong to a command, add them after the command markup and a
-    space character using the element <tag class="emptytag">option</tag>:
+    Where options or subcommands belong with a command, include
+    them within the element <tag class="emptytag">command</tag> itself:
    </para>
 <screen>To start LibreOffice Writer from the command line, use
-&lt;command&gt;loffice&lt;/command&gt; &lt;option&gt;--writer&lt;/option&gt;.</screen>
+&lt;command&gt;loffice --writer&lt;/command&gt;.</screen>
+   <para>
+    If options or subcommands stand for themselves in a text, wrap them in the
+    element <tag class="emptytag">option</tag>.
+   </para>
    <para>
     Use markup for commands even inside
     <tag class="emptytag">screen</tag>
@@ -708,7 +712,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    <title>Example of an Example</title>
 <screen>&lt;example xml:id="ex.example"&gt;
   &lt;title&gt;Example of an Example&lt;/title&gt;
-  &lt;screen&gt;&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ps &lt;option&gt;-xa&lt;/option&gt;&lt;/command&gt;
+  &lt;screen&gt;&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ps -xa&lt;/command&gt;
 
 5170 ?        S      0:00 kdeinit: khotkeys
 5172 ?        S      0:02 kdeinit: kdesktop
