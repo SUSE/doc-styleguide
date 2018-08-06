@@ -199,8 +199,9 @@
    </listitem>
    <listitem>
     <para>
-     Do not use a trailing slash to distinguish between a file and a
-     directory. Where differentiation is needed, provide it textually.
+     Use a trailing slash to distinguish between a file and a
+     directory. If the distinction is important in the current context, in
+     addition comment on it in the accompanying or surrounding running text.
     </para>
    </listitem>
   </itemizedlist>
