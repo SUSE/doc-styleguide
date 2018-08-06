@@ -188,13 +188,18 @@
   <itemizedlist>
    <listitem>
     <para>
-     Use forward slashes to separate nested directory or file names.
+     In general, use forward slashes (<literal>/</literal>) to separate
+     nested directory or file names. If you are describing actions performed
+     on Windows&thrdmrk; systems and within a Windows-native file system,
+     use backward slashes (<literal>\</literal>) instead.
     </para>
    </listitem>
    <listitem>
     <para>
-     When giving absolute paths, always start with a leading slash to
-     indicate the root of the file system.
+     In general, when giving absolute paths, always start with a leading
+     slash to indicate the root of the file system. If you are describing
+     actions performed on Windows systems and within a Windows-native file
+     system, do not add a leading slash to absolute paths.
     </para>
    </listitem>
    <listitem>

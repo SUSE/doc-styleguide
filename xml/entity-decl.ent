@@ -2,6 +2,7 @@
 <!ENTITY suse 'SUSE'>
 <!ENTITY tm "™">
 <!ENTITY sm "℠">
+<!ENTITY thrdmrk "*">
 
 <!ENTITY % sgml.features "IGNORE">
 <!ENTITY % xml.features "INCLUDE">
