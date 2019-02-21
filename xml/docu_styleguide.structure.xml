@@ -458,10 +458,11 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
    <para>
     To mark up text that readers need to replace, use the
     <tag class="emptytag">replaceable</tag>
-    element.
+    element. Capitalize placeholder text in all contexts where this is not
+    detrimental to content intelligibility.
    </para>
 <screen>To list the contents of a directory, execute
-&lt;command&gt;ls &lt;replaceable&gt;directory&lt;/replaceable&gt;&lt;/command&gt;.</screen>
+&lt;command&gt;ls &lt;replaceable&gt;DIRECTORY&lt;/replaceable&gt;&lt;/command&gt;.</screen>
   </sect3>
   <sect3 xml:id="sec.literal">
    <title>Literals</title>
