@@ -1045,6 +1045,12 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
       contrast with their background.
      </para>
     </listitem>
+    <listitem>
+     <para>
+      If possible, avoid screenshots with dates, version numbers, or other
+      version-specific information that frequently changes.
+     </para>
+    </listitem>
    </itemizedlist>
   </sect3>
  </sect2>
