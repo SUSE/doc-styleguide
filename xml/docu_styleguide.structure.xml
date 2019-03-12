@@ -558,6 +558,12 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
     </listitem>
     <listitem>
      <para>
+      Avoid command output that contains dates, version numbers, or other
+      version-specific information that frequently changes.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
       To make long shell commands less unwieldy, split them into multiple lines
       at appropriate positions, such as after the end of an option.
       At the end of each line but the last, append a <literal> \</literal>.
