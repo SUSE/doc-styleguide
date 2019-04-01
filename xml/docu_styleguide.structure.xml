@@ -1024,6 +1024,33 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     </listitem>
     <listitem>
      <para>
+      To ensure readability and consistency, scale screenshots with the
+      <literal>width</literal> attribute. Choose the appropriate scaling from
+      the following list:
+     </para>
+     <itemizedlist>
+      <listitem>
+       <para>
+        Screenshots of the whole desktop should be scaled to 90&ndash;99 %
+        page width.
+       </para>
+      </listitem>
+      <listitem>
+       <para>
+        Screenshots of individual application windows should be scaled to
+        75&ndash;99 % page width.
+       </para>
+      </listitem>
+      <listitem>
+       <para>
+        Small windows such as message boxes should be scaled to
+        50&ndash;60 % page width.
+       </para>
+      </listitem>
+     </itemizedlist>
+    </listitem>
+    <listitem>
+     <para>
       Create screenshots that are recognizable to readers. For example,
       create screenshots of KDE applications on a KDE desktop with the
       default KDE theme and disable toolbar modifications you have made.
