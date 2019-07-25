@@ -4,7 +4,7 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.structure">
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-structure">
  <title>Structure and Markup</title>
 
  <para>
@@ -19,10 +19,10 @@
   SUSE uses the GeekoDoc Relax NG schema which is compatible with DocBook 5.1.
   Thus, for more detailed descriptions of the elements of a book, see the
   <citetitle>DocBook 5.1: The Definitive Guide</citetitle> sections listed in
-  <xref linkend="tab.book"/>.
+  <xref linkend="tab-book"/>.
  </para>
 
- <table xml:id="tab.book">
+ <table xml:id="tab-book">
   <title>Important Elements</title>
   <tgroup cols="2">
    <thead>
@@ -85,7 +85,7 @@
   </tgroup>
  </table>
 
- <sect2 xml:id="sec.admonition">
+ <sect2 xml:id="sec-admonition">
   <title>Admonitory and Advisory Paragraphs</title>
   <para>
    To make readers aware of potential problems and recent changes, or to
@@ -161,7 +161,7 @@
     </para>
    </listitem>
   </itemizedlist>
-  <example xml:id="ex.warning_source">
+  <example xml:id="ex-warning-source">
    <title>An Example of a Warning (Source)</title>
 <screen>&lt;warning&gt;
   &lt;title&gt;Do not interrupt creation of file systems&lt;/title&gt;
@@ -171,7 +171,7 @@
   &lt;para&gt;Always wait until formatting has finished.&lt;/para&gt;
 &lt;/warning&gt;</screen>
   </example>
-  <warning xml:id="ex.warning_output">
+  <warning xml:id="ex-warning-output">
    <title>Do not interrupt creation of file systems</title>
    <para>
     Creating a file system can take multiple hours. Interrupting this
@@ -184,7 +184,7 @@
   </warning>
  </sect2>
 
- <sect2 xml:id="sec.application">
+ <sect2 xml:id="sec-application">
   <title>Application Names</title>
   <para>
    When referring to an application, add a
@@ -195,7 +195,7 @@
 <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
  </sect2>
 
- <sect2 xml:id="sec.callout">
+ <sect2 xml:id="sec-callout">
   <title>Callouts</title>
   <para>
    Add the
@@ -205,39 +205,39 @@
    use more than ten callouts per example.
   </para>
   <para>
-   See also <xref linkend="sec.example"/>.
+   See also <xref linkend="sec-example"/>.
   </para>
-  <example xml:id="ex.callout_output">
+  <example xml:id="ex-callout-output">
    <title>Example of Callouts (Source)</title>
-<screen>&lt;screen&gt;color white/blue black/light-gray &lt;co xml:id="co.color"/&gt;
-default 0 &lt;co xml:id="co.default"/&gt;&lt;/screen&gt;
+<screen>&lt;screen&gt;color white/blue black/light-gray &lt;co xml:id="co-color"/&gt;
+default 0 &lt;co xml:id="co-default"/&gt;&lt;/screen&gt;
 &lt;calloutlist&gt;
-  &lt;callout arearefs="co.color"&gt;
+  &lt;callout arearefs="co-color"&gt;
     &lt;para&gt;Colors of the boot loader menu.&lt;/para&gt;
   &lt;/callout&gt;
-  &lt;callout arearefs="co.default"&gt;
+  &lt;callout arearefs="co-default"&gt;
     &lt;para&gt;Defines the preselected option.&lt;/para&gt;
   &lt;/callout&gt;
 &lt;/calloutlist&gt;</screen>
   </example>
-  <example xml:id="ex.callout_source">
+  <example xml:id="ex-callout-source">
    <title>Example of Callouts (Output)</title>
-<screen>color white/blue black/light-gray <co xml:id="co.color"/>
-default 0 <co xml:id="co.default"/></screen>
+<screen>color white/blue black/light-gray <co xml:id="co-color"/>
+default 0 <co xml:id="co-default"/></screen>
    <calloutlist>
-    <callout arearefs="co.color">
+    <callout arearefs="co-color">
      <para>
       Colors of the boot loader menu.
      </para>
     </callout>
-    <callout arearefs="co.default">
+    <callout arearefs="co-default">
      <para>
       Defines the preselected option.
      </para>
     </callout>
    </calloutlist>
   </example>
-  <table xml:id="tab.callout">
+  <table xml:id="tab-callout">
    <title>Elements Related to
     <tag class="emptytag">callout</tag></title>
    <tgroup cols="2">
@@ -292,7 +292,7 @@ default 0 <co xml:id="co.default"/></screen>
   </table>
  </sect2>
 
- <sect2 xml:id="sec.command_line">
+ <sect2 xml:id="sec-command-line">
   <title>Command Line Input and Output</title>
   <para>
    When dealing with user input and system output shorter than 30
@@ -302,16 +302,16 @@ default 0 <co xml:id="co.default"/></screen>
    <tag class="emptytag">filename</tag>. In all other cases, close the current
    paragraph and enclose it in a
    <tag class="emptytag">screen</tag>
-   element. See also <xref linkend="sec.example"/>.
+   element. See also <xref linkend="sec-example"/>.
   </para>
   <para>
    When using <tag class="emptytag">command</tag> elements standalone, that
    is outside of a <tag class="emptytag">screen</tag>, do not use
    <tag class="emptytag">prompt</tag> elements before or within them. For
    more information about <tag class="emptytag">prompt</tag>, see
-   <xref linkend="sec.prompt"/>.
+   <xref linkend="sec-prompt"/>.
   </para>
-  <table xml:id="tab.command_line">
+  <table xml:id="tab-command-line">
    <title>Elements Related to Command Line Input and Output</title>
    <tgroup cols="2">
     <thead>
@@ -328,7 +328,7 @@ default 0 <co xml:id="co.default"/></screen>
         <para>
          Block element in which all characters are reproduced exactly as
          they are in the source of the document. See also
-         <xref linkend="sec.example"/>. Can contain any of the inline
+         <xref linkend="sec-example"/>. Can contain any of the inline
          elements listed in this table.
         </para>
        </formalpara>
@@ -410,7 +410,7 @@ default 0 <co xml:id="co.default"/></screen>
     </tbody>
    </tgroup>
   </table>
-  <sect3 xml:id="sec.command">
+  <sect3 xml:id="sec-command">
    <title>Commands</title>
    <para>
     Commands can be embedded in running text or presented as part of a
@@ -437,15 +437,15 @@ default 0 <co xml:id="co.default"/></screen>
     possible, run commands before adding them to the documentation.
    </para>
    <para>
-    See also <xref linkend="sec.prompt"/>.
+    See also <xref linkend="sec-prompt"/>.
    </para>
   </sect3>
-  <sect3 xml:id="sec.file_markup">
+  <sect3 xml:id="sec-file-markup">
    <title>File Names</title>
    <para>
     A file name is the name of a file on a local or network disk. Can
     contain a simple name or could include a path or other elements specific
-    to the operating system. See also <xref linkend="sec.file_language"/>.
+    to the operating system. See also <xref linkend="sec-file-language"/>.
    </para>
 <screen>Find the log file &lt;filename&gt;configuration.xml&lt;/filename&gt;
 in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
@@ -453,7 +453,7 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
           could simply append the file name to the path...
         </remark>
   </sect3>
-  <sect3 xml:id="sec.placeholder">
+  <sect3 xml:id="sec-placeholder">
    <title>Placeholders</title>
    <para>
     To mark up text that readers need to replace, use the
@@ -464,7 +464,7 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
 <screen>To list the contents of a directory, execute
 &lt;command&gt;ls &lt;replaceable&gt;DIRECTORY&lt;/replaceable&gt;&lt;/command&gt;.</screen>
   </sect3>
-  <sect3 xml:id="sec.literal">
+  <sect3 xml:id="sec-literal">
    <title>Literals</title>
    <para>
     Use
@@ -473,7 +473,7 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
    </para>
 <screen>To create a comment, insert &lt;literal&gt;#&lt;/literal&gt; characters.</screen>
   </sect3>
-  <sect3 xml:id="sec.prompt">
+  <sect3 xml:id="sec-prompt">
    <title>Prompts</title>
    <para>
     When documenting commands entered into Bash with a
@@ -485,7 +485,7 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
     To avoid making prompts longer than necessary, never include a host name
     or a path. The first restricted user should always be named
     <emphasis>tux</emphasis>. For more information on names of restricted users,
-    see <xref linkend="sec.name"/>.
+    see <xref linkend="sec-name"/>.
    </para>
    <para>
     Avoid using root prompts in your documentation by using the
@@ -500,10 +500,10 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
    <para>
     For consistency, it is helpful to create entities for the prompts used
     in your documentation. For more information, see
-    <xref linkend="sec.entity"/>.
+    <xref linkend="sec-entity"/>.
    </para>
   </sect3>
-  <sect3 xml:id="sec.screen">
+  <sect3 xml:id="sec-screen">
    <title>Screens</title>
    <para>
     Screens are used to present:
@@ -534,7 +534,7 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
      <para>
       Use screens only where necessary for understanding the documentation.
       Present longer screens as examples. For more information, see
-      <xref linkend="sec.example"/>.
+      <xref linkend="sec-example"/>.
      </para>
     </listitem>
     <listitem>
@@ -614,11 +614,11 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
     </listitem>
    </itemizedlist>
    <para>
-    See also <xref linkend="sec.example"/>, <xref linkend="sec.command"/>,
-    <xref linkend="sec.prompt"/>, and <xref linkend="sec.callout"/>.
+    See also <xref linkend="sec-example"/>, <xref linkend="sec-command"/>,
+    <xref linkend="sec-prompt"/>, and <xref linkend="sec-callout"/>.
    </para>
   </sect3>
-  <sect3 xml:id="sec.variable">
+  <sect3 xml:id="sec-variable">
    <title>Variable Names</title>
    <para>
     To reference to names of variables, use the
@@ -630,7 +630,7 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
   </sect3>
  </sect2>
 
- <sect2 xml:id="sec.cross_reference">
+ <sect2 xml:id="sec-cross-reference">
   <title>Cross References</title>
   <remark>toms, Dec 2013: How do we use the attribute xrefstyle?</remark>
   <para>
@@ -654,23 +654,23 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
   </para>
   <para>
    Other types of references to resources are described in
-   <xref linkend="sec.other_external"/> and <xref linkend="sec.link"/>.
+   <xref linkend="sec-other-external"/> and <xref linkend="sec-link"/>.
    Create identifiers to reference from cross references using the rules
-   under <xref linkend="sec.id"/>.
+   under <xref linkend="sec-id"/>.
   </para>
-  <example xml:id="ex.cross_reference_source">
+  <example xml:id="ex-cross-reference-source">
    <title>Example of a Cross Reference (Source)</title>
-<screen>&lt;sect2 xml:id="sec.cross_reference"&gt;
+<screen>&lt;sect2 xml:id="sec-cross-reference"&gt;
   &lt;title&gt;Cross References&lt;/title&gt;
   &lt;para&gt;Use the &lt;sgmltag class="emptytag"&gt;xref&lt;/sgmltag&gt; element ...&lt;/para&gt;
 ...
-  <emphasis role="bold">&lt;para&gt;See &lt;xref linkend="sec.cross_reference"/&gt;.&lt;/para&gt;</emphasis>
+  <emphasis role="bold">&lt;para&gt;See &lt;xref linkend="sec-cross-reference"/&gt;.&lt;/para&gt;</emphasis>
 &lt;/sect2&gt;</screen>
   </example>
-  <example xml:id="ex.cross_reference_output">
+  <example xml:id="ex-cross-reference-output">
    <title>Example of a Cross Reference (Output)</title>
    <para>
-    See <xref linkend="sec.cross_reference"/>.
+    See <xref linkend="sec-cross-reference"/>.
     <remark>sknorr, 2014-01-21: does this work for the average
             reader?
           </remark>
@@ -678,7 +678,7 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
   </example>
  </sect2>
 
- <sect2 xml:id="sec.emphasis">
+ <sect2 xml:id="sec-emphasis">
   <title>Emphasis</title>
   <para>
    Where possible, indicate stress with language only. If that is not
@@ -695,11 +695,11 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
 will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
  </sect2>
 
- <sect2 xml:id="sec.example">
+ <sect2 xml:id="sec-example">
   <title>Examples</title>
   <para>
    Use examples to illustrate complex processes. The rules established in
-   <xref linkend="sec.graphic"/> also apply to examples.
+   <xref linkend="sec-graphic"/> also apply to examples.
   </para>
   <para>
    Examples usually contain <tag class="emptytag">screen</tag> elements.
@@ -710,14 +710,14 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   </para>
   <para>
    For more information on screen environments, see
-   <xref linkend="sec.screen"/>.
+   <xref linkend="sec-screen"/>.
    For more information on displaying computer input and output, see
-   <xref linkend="sec.command_line"/>. To annotate examples, use callouts.
-   Callouts are described in <xref linkend="sec.callout"/>.
+   <xref linkend="sec-command-line"/>. To annotate examples, use callouts.
+   Callouts are described in <xref linkend="sec-callout"/>.
   </para>
-  <example xml:id="ex.example">
+  <example xml:id="ex-example">
    <title>Example of an Example</title>
-<screen>&lt;example xml:id="ex.example"&gt;
+<screen>&lt;example xml:id="ex-example"&gt;
   &lt;title&gt;Example of an Example&lt;/title&gt;
   &lt;screen&gt;&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ps -xa&lt;/command&gt;
 
@@ -725,7 +725,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
 5172 ?        S      0:02 kdeinit: kdesktop
 5174 ?        S      0:04 kdeinit: kicker&lt;/screen&gt;</screen>
   </example>
-  <table xml:id="tab.example">
+  <table xml:id="tab-example">
    <title>Elements Related to
     <tag class="emptytag">example</tag></title>
    <tgroup cols="2">
@@ -770,7 +770,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   </table>
  </sect2>
 
- <sect2 xml:id="sec.link">
+ <sect2 xml:id="sec-link">
   <title>External Links</title>
   <para>
    Use the
@@ -814,7 +814,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    to present many links, group them by topic and create a separate list
    environment for each group. Provide a comprehensive title for each of the
    groups or an introductory sentence. For more information on creating lists,
-   see <xref linkend="sec.unordered"/>.
+   see <xref linkend="sec-unordered"/>.
   </para>
   <para>
    Where possible, provide translators with localized versions of links in
@@ -822,12 +822,12 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   </para>
   <para>
    Other types of references to resources are described in
-   <xref linkend="sec.cross_reference"/> and
-   <xref linkend="sec.other_external"/>.
+   <xref linkend="sec-cross-reference"/> and
+   <xref linkend="sec-other-external"/>.
   </para>
  </sect2>
 
- <sect2 xml:id="sec.figure">
+ <sect2 xml:id="sec-figure">
   <title>Figures</title>
   <para>
    For figures within lists or procedures, use the
@@ -839,7 +839,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    attribute to
    <tag class="emptytag">figure</tag>
    elements. Reference figures from the text by means of a cross reference.
-   For more information, see <xref linkend="sec.cross_reference"/>.
+   For more information, see <xref linkend="sec-cross-reference"/>.
   </para>
   <para>
    All referenced image files must have a lowercase alphanumeric file name.
@@ -847,12 +847,12 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    <tag class="attvalue">width</tag>
    attribute. Always add a
    <tag class="emptytag">textobject role="description"</tag>
-   as in <xref linkend="ex.figure"/> to provide an alternative text for the
+   as in <xref linkend="ex-figure"/> to provide an alternative text for the
    HTML output.
   </para>
-  <example xml:id="ex.figure">
+  <example xml:id="ex-figure">
    <title>Example of a Figure</title>
-<screen>&lt;figure xml:id="fig.picture"&gt;
+<screen>&lt;figure xml:id="fig-picture"&gt;
   &lt;title&gt;An Interesting Picture&lt;/title&gt;
   &lt;mediaobject&gt;
     &lt;imageobject role="fo"&gt;
@@ -867,7 +867,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   &lt;/mediaobject&gt;
 &lt;/figure&gt;</screen>
   </example>
-  <table xml:id="tab.figure">
+  <table xml:id="tab-figure">
    <title>Elements Related to
     <tag class="emptytag">figure</tag></title>
    <tgroup cols="2">
@@ -964,7 +964,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     </tbody>
    </tgroup>
   </table>
-  <sect3 xml:id="sec.graphic">
+  <sect3 xml:id="sec-graphic">
    <title>Graphics</title>
    <para>
     Keep graphics as simple as possible. Use as little text as possible. To
@@ -972,7 +972,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     the English version of it consumes.
    </para>
   </sect3>
-  <sect3 xml:id="sec.screenshot">
+  <sect3 xml:id="sec-screenshot">
    <title>Screenshots</title>
    <para>
     Use screenshots to illustrate complex situations in which the user
@@ -1038,7 +1038,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     </listitem>
     <listitem>
      <para>
-      Where applicable, follow the rules in <xref linkend="sec.name"/>.
+      Where applicable, follow the rules in <xref linkend="sec-name"/>.
      </para>
     </listitem>
     <listitem>
@@ -1062,7 +1062,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   </sect3>
  </sect2>
 
- <sect2 xml:id="sec.glossary">
+ <sect2 xml:id="sec-glossary">
   <title>Glossaries</title>
   <para>
    An optional glossary contains terms and their definitions. Make sure that
@@ -1080,14 +1080,14 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   </para>
   <para>
    The markup for a glossary entry is shown in
-   <xref linkend="ex.glossary"/>.
+   <xref linkend="ex-glossary"/>.
   </para>
-  <example xml:id="ex.glossary">
+  <example xml:id="ex-glossary">
    <title>A Typical Example of a Glossary</title>
 <screen>&lt;glossary&gt;
 &lt;title&gt;Glossary&lt;/title&gt;
   &lt;glossentry&gt;
-    &lt;glossterm xml:id="gt.extensible"&gt;Extensible Markup Language&lt;/glossterm&gt;
+    &lt;glossterm xml:id="gt-extensible"&gt;Extensible Markup Language&lt;/glossterm&gt;
     &lt;glossdef&gt;
       &lt;para&gt;A markup language that defines a set of rules for encoding
         documents in a format that is both human-readable and machine-readable.
@@ -1097,14 +1097,14 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   &lt;glossentry&gt;
     &lt;glossterm&gt;XML&lt;/glossterm&gt;
     &lt;glossdef&gt;
-      &lt;para&gt;See also &lt;xref linkend="gt.extensible"/&gt;.&lt;/para&gt;
+      &lt;para&gt;See also &lt;xref linkend="gt-extensible"/&gt;.&lt;/para&gt;
     &lt;/glossdef&gt;
   &lt;/glossentry&gt;
 &lt;/glossary&gt;</screen>
   </example>
  </sect2>
 
- <sect2 xml:id="sec.id">
+ <sect2 xml:id="sec-id">
   <title>Identifiers</title>
   <itemizedlist>
    <listitem>
@@ -1134,7 +1134,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
        <title>Prefix</title>
        <para>
         Signifies the type of XML element. Use in accordance with
-        <xref linkend="tab.id_prefix"/>.
+        <xref linkend="tab-id-prefix"/>.
        </para>
       </formalpara>
      </listitem>
@@ -1190,7 +1190,7 @@ xml:id="tab-install-source"</screen>
    Do not rework identifiers in existing documentation, instead apply these
    rules to newly created documentation only.
   </para>
-  <table xml:id="tab.id_prefix">
+  <table xml:id="tab-id-prefix">
    <title>Abbreviations for Different Elements in an
     <tag class="attribute">xml:id</tag>
     Attribute</title>
@@ -1265,7 +1265,7 @@ xml:id="tab-install-source"</screen>
       </entry>
       <entry>
        <tag class="attvalue">il</tag>
-       <footnote xml:id="fn.vl">
+       <footnote xml:id="fn-vl">
         <para>
          Only add an
          <tag>xml:id</tag>
@@ -1305,7 +1305,7 @@ xml:id="tab-install-source"</screen>
        <tag class="emptytag">orderedlist</tag>
       </entry>
       <entry>
-       <tag class="attvalue">ol</tag><footnoteref linkend="fn.vl"/>
+       <tag class="attvalue">ol</tag><footnoteref linkend="fn-vl"/>
       </entry>
      </row>
      <row>
@@ -1395,7 +1395,7 @@ xml:id="tab-install-source"</screen>
   </table>
  </sect2>
 
- <sect2 xml:id="sec.index">
+ <sect2 xml:id="sec-index">
   <title>Indexes</title>
   <para>
    Insert index terms as close to the relevant text as possible. When more
@@ -1437,7 +1437,7 @@ xml:id="tab-install-source"</screen>
    elements are placed in the flow of the document at the exact point which
    the Index page should refer to.
   </para>
-  <example xml:id="ex.index_plain">
+  <example xml:id="ex-index-plain">
    <title>Example of a Simple Index Entry</title>
 <screen>To configure DNS
 &lt;indexterm&gt;
@@ -1451,15 +1451,15 @@ xml:id="tab-install-source"</screen>
    elements, the first one signifying the start, the second the end of the
    indexed range.
   </para>
-  <example xml:id="ex.index_range">
+  <example xml:id="ex-index-range">
    <title>Example of an Index Range</title>
-<screen>&lt;indexterm <emphasis role="bold">class="startofrange" xml:id="idx.install"</emphasis>&gt;
+<screen>&lt;indexterm <emphasis role="bold">class="startofrange" xml:id="idx-install"</emphasis>&gt;
   &lt;primary&gt;installing&lt;/primary&gt;
 &lt;/indexterm&gt;
 …
 &lt;indexterm <emphasis role="bold">class="endofrange" startref="idx.install"</emphasis>/&gt;</screen>
   </example>
-  <example xml:id="ex.index_see">
+  <example xml:id="ex-index-see">
    <title>Example of a See Index Entry</title>
 <screen>&lt;indexterm&gt;
   &lt;primary&gt;installing&lt;/primary&gt;
@@ -1469,7 +1469,7 @@ xml:id="tab-install-source"</screen>
   </example>
  </sect2>
 
- <sect2 xml:id="sec.list">
+ <sect2 xml:id="sec-list">
   <title>Lists</title>
   <para>
    SUSE documentation uses the following types of lists (the respective XML
@@ -1502,7 +1502,7 @@ xml:id="tab-install-source"</screen>
      Procedures (
      <tag class="emptytag">procedure</tag>
      ). Also known as step-by-step instruction lists. Described in
-     <xref linkend="sec.procedure"/>.
+     <xref linkend="sec-procedure"/>.
     </para>
    </listitem>
   </itemizedlist>
@@ -1558,9 +1558,9 @@ xml:id="tab-install-source"</screen>
   <para>
    To be able to reference untitled lists, use the
    <tag class="attribute">xreflabel</tag>
-   attribute. For more information, see <xref linkend="sec.cross_reference"/>.
+   attribute. For more information, see <xref linkend="sec-cross-reference"/>.
   </para>
-  <table xml:id="tab.list">
+  <table xml:id="tab-list">
    <title>Elements Related to Lists</title>
    <tgroup cols="2">
     <thead>
@@ -1659,14 +1659,14 @@ xml:id="tab-install-source"</screen>
     </tbody>
    </tgroup>
   </table>
-  <sect3 xml:id="sec.unordered">
+  <sect3 xml:id="sec-unordered">
    <title>Unordered Lists</title>
    <para>
     Unordered lists are often used to provide an overview of information or
     to introduce or summarize information. They should be used when the
     order of list items is irrelevant.
    </para>
-   <example xml:id="ex.unordered_source">
+   <example xml:id="ex-unordered-source">
     <title>Example of an Unordered List (Source)</title>
 <screen>&lt;para&gt;The following operating systems are supported:&lt;/para&gt;
 &lt;itemizedlist&gt;
@@ -1678,7 +1678,7 @@ xml:id="tab-install-source"</screen>
   &lt;/listitem&gt;
 &lt;/itemizedlist&gt;</screen>
    </example>
-   <example xml:id="ex.unordered_output">
+   <example xml:id="ex-unordered-output">
     <title>Example of an Unordered List (Output)</title>
     <para>
      The following operating systems are supported:
@@ -1697,7 +1697,7 @@ xml:id="tab-install-source"</screen>
     </itemizedlist>
    </example>
   </sect3>
-  <sect3 xml:id="sec.numbered">
+  <sect3 xml:id="sec-numbered">
    <title>Numbered Lists</title>
    <para>
     Use numbered lists when items have a strict order, hierarchy, or
@@ -1705,9 +1705,9 @@ xml:id="tab-install-source"</screen>
     descriptive list. Do not use numbered lists to describe procedures.
     Complex sequential actions are better described by means of the
     procedure environment. For more information, see
-    <xref linkend="sec.procedure"/>.
+    <xref linkend="sec-procedure"/>.
    </para>
-   <example xml:id="ex.numbered_source">
+   <example xml:id="ex-numbered-source">
     <title>Example of a Numbered List (Source)</title>
 <screen>&lt;para&gt;Before installing, make sure of the following:&lt;/para&gt;
 &lt;orderedlist&gt;
@@ -1723,7 +1723,7 @@ xml:id="tab-install-source"</screen>
   &lt;/listitem&gt;
 &lt;/orderedlist&gt;</screen>
    </example>
-   <example xml:id="ex.numbered_output">
+   <example xml:id="ex-numbered-output">
     <title>Example of a Numbered List (Output)</title>
     <para>
      Before installing, make sure of the following:
@@ -1743,7 +1743,7 @@ xml:id="tab-install-source"</screen>
     </orderedlist>
    </example>
   </sect3>
-  <sect3 xml:id="sec.descriptive">
+  <sect3 xml:id="sec-descriptive">
    <title>Descriptive Lists</title>
    <para>
     Use descriptive lists when defining terms or describing options. Each
@@ -1763,7 +1763,7 @@ xml:id="tab-install-source"</screen>
     <tag class="attribute">xml:id</tag>
     and referenced by the term.
    </para>
-   <example xml:id="ex.descriptive_source">
+   <example xml:id="ex-descriptive-source">
     <title>Example of a Descriptive List (Source)</title>
 <screen>&lt;para&gt;This book consists of several parts:&lt;/para&gt;
 &lt;variablelist&gt;
@@ -1783,7 +1783,7 @@ xml:id="tab-install-source"</screen>
   &lt;/varlistentry&gt;
 &lt;/variablelist&gt;</screen>
    </example>
-   <example xml:id="ex.descriptive">
+   <example xml:id="ex-descriptive">
     <title>Example of a Descriptive List (Output)</title>
     <para>
      This book consists of several parts:
@@ -1811,7 +1811,7 @@ xml:id="tab-install-source"</screen>
   </sect3>
  </sect2>
 
- <sect2 xml:id="sec.keyboard">
+ <sect2 xml:id="sec-keyboard">
   <title>Keys and Key Combinations</title>
   <para>
    Capitalize all keys as printed on a standard keyboard. Capitalize all letter
@@ -1830,7 +1830,7 @@ xml:id="tab-install-source"</screen>
    elements are then created automatically.
   </para>
   <para>
-   If a key is listed in <xref linkend="tab.keycap"/>, use the
+   If a key is listed in <xref linkend="tab-keycap"/>, use the
    <tag class="attribute">function</tag>
    attribute with the appropriate value. When using the
    <tag class="attribute">function</tag>
@@ -1840,13 +1840,13 @@ xml:id="tab-install-source"</screen>
   </para>
   <para>
    For more information on creating cross references, see
-   <xref linkend="sec.cross_reference"/>.
+   <xref linkend="sec-cross-reference"/>.
   </para>
-  <example xml:id="ex.key">
+  <example xml:id="ex-key">
    <title>Example of a Key</title>
 <screen>To create a screenshot, press &lt;keycap&gt;Print Screen&lt;/keycap&gt;.</screen>
   </example>
-  <example xml:id="ex.keyboard">
+  <example xml:id="ex-keyboard">
    <title>Example of a Keyboard Combination</title>
 <screen>To save a file, press
 &lt;keycombo&gt;
@@ -1854,7 +1854,7 @@ xml:id="tab-install-source"</screen>
   &lt;keycap&gt;S&lt;/keycap&gt;
 &lt;/keycombo&gt;.</screen>
   </example>
-  <table xml:id="tab.keycap">
+  <table xml:id="tab-keycap">
    <title>Elements Related to
     <tag class="emptytag">keycap</tag></title>
    <tgroup cols="2">
@@ -2009,7 +2009,7 @@ xml:id="tab-install-source"</screen>
   </table>
  </sect2>
 
- <sect2 xml:id="sec.other_external">
+ <sect2 xml:id="sec-other-external">
   <title>References to Other External Resources</title>
   <remark>sknorr, 2014-01-22: This section could probably use a better
         structure instead of this mishmash.
@@ -2021,7 +2021,7 @@ xml:id="tab-install-source"</screen>
    <tag class="emptytag">email</tag>
    element. In either case, do not include a protocol prefix, that is
    <literal>file://</literal> or <literal>mailto:</literal>, respectively.
-   See also <xref linkend="sec.file_markup"/>.
+   See also <xref linkend="sec-file-markup"/>.
   </para>
   <para>
    Reference man pages and info pages in this format:
@@ -2056,7 +2056,7 @@ xml:id="tab-install-source"</screen>
 (ISBN 0-246-52044-7) is a useful guide.</screen>
   <para>
    As an author, where possible, provide language-specific references to
-   translators in XML comments (see also <xref linkend="sec.xml_comment"/>).
+   translators in XML comments (see also <xref linkend="sec-xml-comment"/>).
    As a translator, look for corresponding language-specific resources where
    none have been provided. For URLs, provide only the language-specific
    version of a site. Use the English as a fall-back. For books, provide the
@@ -2065,11 +2065,11 @@ xml:id="tab-install-source"</screen>
   </para>
   <para>
    Other types of references to resources are described in
-   <xref linkend="sec.cross_reference"/> and <xref linkend="sec.link"/>.
+   <xref linkend="sec-cross-reference"/> and <xref linkend="sec-link"/>.
   </para>
  </sect2>
 
- <sect2 xml:id="sec.outline_level">
+ <sect2 xml:id="sec-outline-level">
   <title>Outline Levels</title>
   <para>
    Create sections using the
@@ -2089,11 +2089,11 @@ xml:id="tab-install-source"</screen>
   </para>
   <para>
    For more information on creating headline titles, see
-   <xref linkend="sec.heading"/>.
+   <xref linkend="sec-heading"/>.
   </para>
  </sect2>
 
- <sect2 xml:id="sec.procedure">
+ <sect2 xml:id="sec-procedure">
   <title>Procedures</title>
   <para>
    Use procedures to describe sequential tasks. A procedure consists of the
@@ -2128,7 +2128,7 @@ xml:id="tab-install-source"</screen>
    <listitem>
     <para>
      Short, simple steps and, if necessary, substeps describing the actions
-     to be performed. See also <xref linkend="sec.structure_sentence"/>.
+     to be performed. See also <xref linkend="sec-structure-sentence"/>.
     </para>
    </listitem>
   </itemizedlist>
@@ -2142,9 +2142,9 @@ xml:id="tab-install-source"</screen>
    Steps may contain a link to an explanatory subsection providing further
    details on the step.
   </para>
-  <example xml:id="ex.procedure_source">
+  <example xml:id="ex-procedure-source">
    <title>Example of a Procedure (Source)</title>
-<screen>&lt;procedure xml:id="pro.procedure"&gt;
+<screen>&lt;procedure xml:id="pro-procedure"&gt;
   &lt;title&gt;Example of a Procedure&lt;/title&gt;
     &lt;para&gt;To add a new user to the system, perform the following steps:
     &lt;/para&gt;
@@ -2164,7 +2164,7 @@ xml:id="tab-install-source"</screen>
     &lt;/step&gt;
 &lt;/procedure&gt;</screen>
   </example>
-  <procedure xml:id="pro.procedure_output">
+  <procedure xml:id="pro-procedure-output">
    <title>Example of a Procedure (Output)</title>
    <para>
     To add a new user to the system, perform the following steps:
@@ -2187,7 +2187,7 @@ xml:id="tab-install-source"</screen>
     </para>
    </step>
   </procedure>
-  <table xml:id="tab.procedure">
+  <table xml:id="tab-procedure">
    <title>Elements Related to
     <tag class="emptytag">procedure</tag></title>
    <tgroup cols="2">
@@ -2249,7 +2249,7 @@ xml:id="tab-install-source"</screen>
   </table>
  </sect2>
 
- <sect2 xml:id="sec.product">
+ <sect2 xml:id="sec-product">
   <title>Products</title>
   <para>
    Always use the preferred product name instead of, for example, an
@@ -2261,20 +2261,20 @@ xml:id="tab-install-source"</screen>
 <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
  </sect2>
 
- <sect2 xml:id="sec.question">
+ <sect2 xml:id="sec-question">
   <title>Questions and Answers</title>
   <para>
    Use questions-and-answers sections to present information about
    troubleshooting or commonly asked questions about a product. Never use
    questions-and-answers sections to explain trivia, such as how a product
    got its name. Keep your audience in mind. See also
-   <xref linkend="sec.audience"/>.
+   <xref linkend="sec-audience"/>.
   </para>
   <para>
    Questions must always end in a <literal>?</literal>. Where explanations
    longer than three paragraphs are necessary for an answer, add a cross
    reference to an explanation outside of the questions-and-answers section.
-   See also <xref linkend="sec.cross_reference"/>.
+   See also <xref linkend="sec-cross-reference"/>.
   </para>
   <para>
    When a questions-and-answers section contains over 10 questions and there
@@ -2282,7 +2282,7 @@ xml:id="tab-install-source"</screen>
    <tag class="emptytag">qandadiv</tag>
    elements to further structure the section.
   </para>
-  <example xml:id="ex.question">
+  <example xml:id="ex-question">
    <title>Example of a Questions-and-Answers Section (Source)</title>
 <screen>&lt;qandaset&gt;
   &lt;title&gt;Example of a Questions-and-Answers Section&lt;/title&gt;
@@ -2340,7 +2340,7 @@ xml:id="tab-install-source"</screen>
     </answer>
    </qandaentry>
   </qandaset>
-  <table xml:id="tab.qandaset">
+  <table xml:id="tab-qandaset">
    <title>Elements Related to
     <tag class="emptytag">qandaset</tag></title>
    <tgroup cols="2">
@@ -2435,7 +2435,7 @@ xml:id="tab-install-source"</screen>
   </table>
  </sect2>
 
- <sect2 xml:id="sec.table">
+ <sect2 xml:id="sec-table">
   <title>Tables</title>
   <para>
    Use tables to present many similar facts. Tables are easy to
@@ -2451,7 +2451,7 @@ xml:id="tab-install-source"</screen>
    Value and description pairs are better handled by means of a descriptive
    list.
   </para>
-  <example xml:id="ex.table_source">
+  <example xml:id="ex-table-source">
    <title>Example of a Table (Source)</title>
 <screen>&lt;informaltable&gt;
   &lt;tgroup cols="2"&gt;
@@ -2474,7 +2474,7 @@ xml:id="tab-install-source"</screen>
   &lt;/tgroup&gt;
 &lt;/informaltable&gt;</screen>
   </example>
-  <example xml:id="ex.table_output">
+  <example xml:id="ex-table-output">
    <title>Example of a Table (Output)</title>
    <informaltable>
     <tgroup cols="2">
@@ -2497,7 +2497,7 @@ xml:id="tab-install-source"</screen>
     </tgroup>
    </informaltable>
   </example>
-  <table xml:id="tab.table">
+  <table xml:id="tab-table">
    <title>Elements Related to
     <tag class="emptytag">table</tag></title>
    <tgroup cols="2">
@@ -2625,7 +2625,7 @@ xml:id="tab-install-source"</screen>
   </table>
  </sect2>
 
- <sect2 xml:id="sec.ui_item_markup">
+ <sect2 xml:id="sec-ui-item-markup">
   <title>User Interface Items</title>
   <para>
    To mark up single user interface items, use
@@ -2639,13 +2639,13 @@ xml:id="tab-install-source"</screen>
   </para>
   <para>
    For more information on language aspects, see
-   <xref linkend="sec.ui_item_language"/>.
+   <xref linkend="sec-ui-item-language"/>.
   </para>
-  <example xml:id="ex.single_ui_item">
+  <example xml:id="ex-single-ui-item">
    <title>Example of a Single User Interface Item</title>
 <screen>To open a file, click &lt;guimenu&gt;Open&lt;/guimenu&gt;.</screen>
   </example>
-  <example xml:id="ex.nested_ui_item">
+  <example xml:id="ex-nested-ui-item">
    <title>Example of Nested User Interface Items</title>
 <screen>To save a file, use
   &lt;menuchoice&gt;
@@ -2653,7 +2653,7 @@ xml:id="tab-install-source"</screen>
     &lt;guimenu&gt;Save&lt;/guimenu&gt;
   &lt;/menuchoice&gt;.</screen>
   </example>
-  <table xml:id="tab.guimenu">
+  <table xml:id="tab-guimenu">
    <title>Elements Related to
     <tag class="emptytag">guimenu</tag></title>
    <tgroup cols="2">

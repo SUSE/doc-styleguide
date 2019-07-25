@@ -4,7 +4,7 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="app.change">
+<appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="app-change">
 <!-- Add new versions to the beginning of the list. -->
  <title>List of Changes to the Style Guide</title>
  <info/>
@@ -12,7 +12,7 @@
   This section lists the changes between versions of this Style Guide.
  </para>
 <!-- Add new versions to the beginning of the list. -->
- <sect1 xml:id="sec.change_2014-07">
+ <sect1 xml:id="sec-change-2014-07">
   <title>Release 2016-07&mdash;July 2016 Major Update</title>
 
   <para>
@@ -45,23 +45,23 @@
    </listitem>
    <listitem>
     <para>
-     Updated legal notice reproduced in <xref linkend="sec.book"/>.
+     Updated legal notice reproduced in <xref linkend="sec-book"/>.
     </para>
    </listitem>
    <listitem>
     <para>
-     Added <xref linkend="sec.quotation"/>.
+     Added <xref linkend="sec-quotation"/>.
     </para>
    </listitem>
    <listitem>
     <para>
-     Added <xref linkend="sec.screen"/>. Removed some now-duplicated content
-     out of <xref linkend="sec.example"/>.
+     Added <xref linkend="sec-screen"/>. Removed some now-duplicated content
+     out of <xref linkend="sec-example"/>.
     </para>
    </listitem>
    <listitem>
     <para>
-     Corrected syntax of <xref linkend="ex.figure"/>:
+     Corrected syntax of <xref linkend="ex-figure"/>:
      <tag class="emptytag">textobject</tag> must be within
      <tag class="emptytag">mediaobject</tag>.
     </para>
@@ -69,7 +69,7 @@
    <listitem>
     <para>
      Updated terminology and general vocabulary tables in
-     <xref linkend="app.terminology"/>.
+     <xref linkend="app-terminology"/>.
     </para>
     <itemizedlist>
      <listitem>
@@ -136,7 +136,7 @@
   </itemizedlist>
  </sect1>
 
- <sect1 xml:id="sec.change_2014-02.2">
+ <sect1 xml:id="sec-change-2014-02-2">
   <title>Release 2014-02.2</title>
 
   <para>
@@ -158,9 +158,9 @@
    </listitem>
    <listitem>
     <para>
-     Moved <xref linkend="sec.heading"/> from
-     <xref linkend="sec.structure"/> into <xref linkend="sec.language"/>.
-     Added new section <xref linkend="sec.outline_level"/> with the
+     Moved <xref linkend="sec-heading"/> from
+     <xref linkend="sec-structure"/> into <xref linkend="sec-language"/>.
+     Added new section <xref linkend="sec-outline-level"/> with the
      information on structure that the former <emphasis>Headings</emphasis>
      section contained.
     </para>
@@ -168,30 +168,30 @@
    <listitem>
     <para>
      Split existing section <emphasis>Abbreviations</emphasis> into
-     <xref linkend="sec.latin"/> and <xref linkend="sec.measurement"/>.
-     Added <xref linkend="sec.latin"/>,<xref linkend="sec.measurement"/>,
-     and <xref linkend="sec.acronym"/> to newly created
-     <xref linkend="sec.abbreviation"/>.
+     <xref linkend="sec-latin"/> and <xref linkend="sec-measurement"/>.
+     Added <xref linkend="sec-latin"/>,<xref linkend="sec-measurement"/>,
+     and <xref linkend="sec-acronym"/> to newly created
+     <xref linkend="sec-abbreviation"/>.
     </para>
    </listitem>
    <listitem>
     <para>
      Separated list items for
      <tag class="attribute">id</tag>
-     attribute and title in <xref linkend="sec.procedure"/>.
+     attribute and title in <xref linkend="sec-procedure"/>.
     </para>
    </listitem>
    <listitem>
     <para>
-     Split the table in <xref linkend="app.terminology"/> into
-     <xref linkend="sec.terminology"/> and <xref linkend="sec.vocabulary"/>
+     Split the table in <xref linkend="app-terminology"/> into
+     <xref linkend="sec-terminology"/> and <xref linkend="sec-vocabulary"/>
      to better reflect the roles of the terms listed there.
     </para>
    </listitem>
    <listitem>
     <para>
      Updated terminology and general vocabulary tables in
-     <xref linkend="app.terminology"/>.
+     <xref linkend="app-terminology"/>.
     </para>
     <itemizedlist>
      <listitem>
@@ -253,7 +253,7 @@
    </listitem>
   </itemizedlist>
  </sect1>
- <sect1 xml:id="sec.change_2014-02.1">
+ <sect1 xml:id="sec-change-2014-02-1">
   <title>Release 2014-02.1</title>
 
   <para>
@@ -269,19 +269,19 @@
    </listitem>
    <listitem>
     <para>
-     Improved example of a warning in <xref linkend="sec.admonition"/>.
+     Improved example of a warning in <xref linkend="sec-admonition"/>.
     </para>
    </listitem>
    <listitem>
     <para>
      Added an instruction where to insert screenshots to
-     <xref linkend="sec.screenshot"/>.
+     <xref linkend="sec-screenshot"/>.
      <remark>sknorr, 2014-03-05: Thanks, Frank!</remark>
     </para>
    </listitem>
    <listitem>
     <para>
-     Updated terminology table in <xref linkend="app.terminology"/>.
+     Updated terminology table in <xref linkend="app-terminology"/>.
     </para>
     <itemizedlist>
      <listitem>
@@ -357,7 +357,7 @@
    </listitem>
   </itemizedlist>
  </sect1>
- <sect1 xml:id="sec.change_2014-02">
+ <sect1 xml:id="sec-change-2014-02">
   <title>Release 2014-02&mdash;February 2014 Major Update</title>
 
   <para>
@@ -373,7 +373,7 @@
     <itemizedlist>
      <listitem>
       <para>
-       Promoted <xref linkend="sec.audience"/> to a
+       Promoted <xref linkend="sec-audience"/> to a
        <tag class="emptytag">sect1</tag>.
        Added new paragraph about how to mark the target audience in
        documentation.
@@ -396,57 +396,57 @@
      <listitem>
       <para>
        Split the chapter <emphasis>Writing and Editing</emphasis> into
-       <xref linkend="sec.language"/>, <xref linkend="sec.structure"/>, and
-       <xref linkend="sec.manage"/>. Moved the subsections of
+       <xref linkend="sec-language"/>, <xref linkend="sec-structure"/>, and
+       <xref linkend="sec-manage"/>. Moved the subsections of
        <emphasis>Writing and Editing</emphasis> where they fit best.
       </para>
      </listitem>
      <listitem>
       <para>
        Integrated the <emphasis>Markup</emphasis> appendix into to
-       <xref linkend="sec.structure"/> and <xref linkend="sec.manage"/>.
+       <xref linkend="sec-structure"/> and <xref linkend="sec-manage"/>.
       </para>
      </listitem>
      <listitem>
       <para>
-       Moved <xref linkend="sec.procedure"/> (formerly <emphasis>Creating
-       Procedures</emphasis>) and <xref linkend="sec.command_line"/>
+       Moved <xref linkend="sec-procedure"/> (formerly <emphasis>Creating
+       Procedures</emphasis>) and <xref linkend="sec-command-line"/>
        (formerly <emphasis>Presenting Computer Elements</emphasis>) as
-       subsections into <xref linkend="sec.structure"/>.
+       subsections into <xref linkend="sec-structure"/>.
       </para>
      </listitem>
      <listitem>
       <para>
        Renamed <emphasis>Discriminatory Language</emphasis> to
-       <xref linkend="sec.bias"/>.
+       <xref linkend="sec-bias"/>.
       </para>
      </listitem>
      <listitem>
       <para>
-       Renamed <emphasis>Keys</emphasis> to <xref linkend="sec.keyboard"/>
+       Renamed <emphasis>Keys</emphasis> to <xref linkend="sec-keyboard"/>
        and promoted it to a
        <tag class="emptytag">sect2</tag>
-       within <xref linkend="sec.structure"/>.
+       within <xref linkend="sec-structure"/>.
       </para>
      </listitem>
      <listitem>
       <para>
        Renamed <emphasis>GUI Elements</emphasis> to
-       <xref linkend="sec.ui_item_language"/> and promoted it to a
+       <xref linkend="sec-ui-item-language"/> and promoted it to a
        <tag class="emptytag">sect2</tag>
-       within <xref linkend="sec.language"/>.
+       within <xref linkend="sec-language"/>.
       </para>
      </listitem>
      <listitem>
       <para>
-       Created <xref linkend="sec.manage"/> and moved
-       <xref linkend="sec.remark"/>, <xref linkend="sec.xml_comment"/>, and
-       <xref linkend="sec.entity"/> as subsections into it.
+       Created <xref linkend="sec-manage"/> and moved
+       <xref linkend="sec-remark"/>, <xref linkend="sec-xml-comment"/>, and
+       <xref linkend="sec-entity"/> as subsections into it.
       </para>
      </listitem>
      <listitem>
       <para>
-       Moved <xref linkend="app.terminology"/> and the copyright notice into
+       Moved <xref linkend="app-terminology"/> and the copyright notice into
        separate DocBook files.
       </para>
      </listitem>
@@ -460,14 +460,14 @@
      <listitem>
       <para>
        Renamed <emphasis>Spelling Terms</emphasis> to
-       <xref linkend="app.terminology"/> and moved it into an appendix.
+       <xref linkend="app-terminology"/> and moved it into an appendix.
       </para>
      </listitem>
      <listitem>
       <para>
        Centralized much of the information in the introductory paragraph of
        <emphasis>Spelling Terms</emphasis> in
-       <xref linkend="sec.language"/>.
+       <xref linkend="sec-language"/>.
       </para>
      </listitem>
      <listitem>
@@ -574,14 +574,14 @@
    </listitem>
    <listitem>
     <para>
-     Added <xref linkend="sec.prompt"/> to document how to use prompts in
+     Added <xref linkend="sec-prompt"/> to document how to use prompts in
      <tag class="emptytag">screen</tag>
      elements.
     </para>
    </listitem>
    <listitem>
     <para>
-     In <xref linkend="sec.name"/>, added Geeko, Foxkeh, Konqi, and Duke to
+     In <xref linkend="sec-name"/>, added Geeko, Foxkeh, Konqi, and Duke to
      the list of mascots to choose from.
     </para>
    </listitem>
@@ -607,7 +607,7 @@
    </listitem>
    <listitem>
     <para>
-     Rewrote large parts of <xref linkend="sec.outline"/>. Removed example
+     Rewrote large parts of <xref linkend="sec-outline"/>. Removed example
      of structure. Added copyright notice as an example. Expanded on
      information needed for title pages and imprints.
     </para>
@@ -615,7 +615,7 @@
    <listitem>
     <para>
      Removed differentiation between the many types of
-     <filename>authors</filename> files from <xref linkend="sec.outline"/>.
+     <filename>authors</filename> files from <xref linkend="sec-outline"/>.
      This was too complicated to be practical. Also, current practice is to
      never mention translators.
     </para>
@@ -623,34 +623,34 @@
    <listitem>
     <para>
      Added <quote>Objective before Instruction</quote> rule to
-     <xref linkend="sec.structure_sentence"/>.
+     <xref linkend="sec-structure-sentence"/>.
     </para>
    </listitem>
    <listitem>
     <para>
      Added short guideline about file extensions to
-     <xref linkend="sec.file_language"/>.
+     <xref linkend="sec-file-language"/>.
     </para>
    </listitem>
    <listitem>
     <para>
-     Reworked <xref linkend="sec.figure"/> to be more structured and added
+     Reworked <xref linkend="sec-figure"/> to be more structured and added
      instructions for preparing and editing screenshots.
     </para>
    </listitem>
    <listitem>
     <para>
-     Added <xref linkend="sec.xinclude"/>.
+     Added <xref linkend="sec-xinclude"/>.
     </para>
    </listitem>
    <listitem>
     <para>
-     More informative example in <xref linkend="sec.glossary"/>.
+     More informative example in <xref linkend="sec-glossary"/>.
     </para>
    </listitem>
    <listitem>
     <para>
-     Simplified rules for creating IDs in <xref linkend="sec.id"/>. The aim
+     Simplified rules for creating IDs in <xref linkend="sec-id"/>. The aim
      is to shorten the length of the average ID and to help to create
      predictable IDs.
     </para>
@@ -659,7 +659,7 @@
     <para>
      Added the
      <tag class="attvalue">co</tag>
-     prefix to <xref linkend="tab.id_prefix"/>.
+     prefix to <xref linkend="tab-id-prefix"/>.
     </para>
    </listitem>
    <listitem>
