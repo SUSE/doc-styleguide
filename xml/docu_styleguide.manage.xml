@@ -4,7 +4,7 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.manage">
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-manage">
  <title>Managing Documents</title>
 
  <para>
@@ -12,7 +12,7 @@
   manage documents.
  </para>
 
- <sect2 xml:id="sec.remark">
+ <sect2 xml:id="sec-remark">
   <title>Remarks</title>
   <para>
    Use remarks for editorial comments. Remarks can be placed within, before,
@@ -73,7 +73,7 @@
   </itemizedlist>
  </sect2>
 
- <sect2 xml:id="sec.xml_comment">
+ <sect2 xml:id="sec-xml-comment">
   <title>XML Comments</title>
   <para>
    XML comments can be used for temporarily disabling portions of text.
@@ -84,11 +84,11 @@
 <screen>&lt;-- This is an XML comment. --!&gt;</screen>
   <para>
    For information about formatting XML comments, see
-   <xref linkend="sec.format_xml"/>.
+   <xref linkend="sec-format-xml"/>.
   </para>
  </sect2>
 
- <sect2 xml:id="sec.entity">
+ <sect2 xml:id="sec-entity">
   <title>Entities</title>
   <para>
    Entities are used to expand text. There are several situations in which
@@ -118,7 +118,7 @@
    the risk of translation errors and increase consistency because they are
    translated once and automatically expanded elsewhere.
   </para>
-  <sect3 xml:id="sec.use_entity">
+  <sect3 xml:id="sec-use-entity">
    <title>Using Entity Files</title>
    <para>
     SUSE uses a small set of custom entities. This set is localized for each
@@ -133,28 +133,28 @@
    </para>
 <screen>&lt;!ENTITY % entities SYSTEM "../entity-decl.ent"&gt;
 %entities;</screen>
-   <example xml:id="ex.entity">
+   <example xml:id="ex-entity">
     <title>Excerpt from a SUSE entity-decl.ent</title>
-<screen>&lt;!ENTITY<co xml:id="co.decl"/> exampleserver<co xml:id="co.def"/>   "sun<co xml:id="co.val"/>"&gt;
+<screen>&lt;!ENTITY<co xml:id="co-decl"/> exampleserver<co xml:id="co-def"/>   "sun<co xml:id="co-val"/>"&gt;
 &lt;!ENTITY exampleserverip    "&amp;exampledomainip;.20"&gt;
-&lt;!ENTITY exampleserverfq    "&amp;exampleserver;.&amp;exampledomain;"<co xml:id="co.ent"/>&gt;</screen>
+&lt;!ENTITY exampleserverfq    "&amp;exampleserver;.&amp;exampledomain;"<co xml:id="co-ent"/>&gt;</screen>
     <calloutlist>
-     <callout arearefs="co.decl">
+     <callout arearefs="co-decl">
       <para>
        The kind of declaration to be made.
       </para>
      </callout>
-     <callout arearefs="co.def">
+     <callout arearefs="co-def">
       <para>
        Defines the entity name.
       </para>
      </callout>
-     <callout arearefs="co.val">
+     <callout arearefs="co-val">
       <para>
        Sets the value to which the processed entity should be expanded.
       </para>
      </callout>
-     <callout arearefs="co.ent">
+     <callout arearefs="co-ent">
       <para>
        Nests an entity in the value.
       </para>
@@ -176,7 +176,7 @@
     <listitem>
      <para>
       When translating entities, translate the value, but never change the
-      entity name. See also <xref linkend="ex.entity"/>.
+      entity name. See also <xref linkend="ex-entity"/>.
      </para>
     </listitem>
     <listitem>
@@ -193,7 +193,7 @@
     </listitem>
    </itemizedlist>
   </sect3>
-  <sect3 xml:id="sec.type_entity">
+  <sect3 xml:id="sec-type-entity">
    <title>Common Types of Entities</title>
    <para>
     The following provides some background on the most important entities
@@ -284,7 +284,7 @@ Kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
      <term>Trademarks</term>
      <listitem>
       <para>
-       Follow the rules under <xref linkend="sec.product"/>.
+       Follow the rules under <xref linkend="sec-product"/>.
       </para>
      </listitem>
     </varlistentry>
@@ -292,7 +292,7 @@ Kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
   </sect3>
  </sect2>
 
- <sect2 xml:id="sec.xinclude">
+ <sect2 xml:id="sec-xinclude">
   <title>XInclude Elements</title>
   <para>
    XInclude elements are used to create modular source files that are easier

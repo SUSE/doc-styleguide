@@ -4,7 +4,7 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.outline">
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-outline">
  <title>Outline of a Manual</title>
 
  <para>
@@ -13,7 +13,7 @@
   parts of the document structure are documented here.
  </para>
 
- <sect2 xml:id="sec.book">
+ <sect2 xml:id="sec-book">
   <title>Books</title>
   <para>
    Always use a document structure that includes the following elements, in
@@ -138,7 +138,7 @@
       article, or set in five or fewer sentences. Summarize the topic
       instead of summarizing the outline.
      </para>
-     <example xml:id="ex.abstract">
+     <example xml:id="ex-abstract">
       <title>An Abstract</title>
       <para>
        SUSE Linux Enterprise ships with several file systems,
@@ -198,7 +198,7 @@
          of summarizing the outline.
         </para>
        </formalpara>
-       <example xml:id="ex.highlight">
+       <example xml:id="ex-highlight">
         <title>A Highlights Section</title>
         <para>
          This chapter will:
@@ -248,10 +248,10 @@
         Sections start with an introductory paragraph outlining the focus of
         the section. If the section describes a sequential task, follow the
         introduction with a procedure description, as discussed in
-        <xref linkend="sec.procedure"/>. Steps of a procedure can contain a
+        <xref linkend="sec-procedure"/>. Steps of a procedure can contain a
         cross reference to subsections where topical background is provided
         and an action is explained in detail. See also
-        <xref linkend="sec.cross_reference"/>.
+        <xref linkend="sec-cross-reference"/>.
        </para>
       </listitem>
       <listitem>
@@ -277,7 +277,7 @@
         <para>
          In this section, collect Web links to all sources of information
          that might prove helpful in a given context. Follow the general
-         referencing guidelines in <xref linkend="sec.cross_reference"/>
+         referencing guidelines in <xref linkend="sec-cross-reference"/>
          when creating such sections.
         </para>
        </formalpara>
@@ -297,7 +297,7 @@
   </variablelist>
  </sect2>
 
- <sect2 xml:id="sec.article">
+ <sect2 xml:id="sec-article">
   <title>Articles</title>
   <para>
    For articles, use a structure similar to that of books. However, note

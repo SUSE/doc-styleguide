@@ -4,16 +4,16 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.name">
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-name">
  <title>Names of Example Items</title>
 
  <para>
   This section summarizes conventions for creating generic names for objects
   in documentation. At least some of the following names should be provided
-  through entities. See also <xref linkend="sec.entity"/>.
+  through entities. See also <xref linkend="sec-entity"/>.
  </para>
 
- <sect2 xml:id="sec.domain">
+ <sect2 xml:id="sec-domain">
   <title>Domains</title>
   <para>
    Use <link xlink:href="http://www.example.com"/> and
@@ -22,7 +22,7 @@
   </para>
  </sect2>
 
- <sect2 xml:id="sec.host">
+ <sect2 xml:id="sec-host">
   <title>Host Names</title>
   <para>
    Use objects of the solar system: For the most important system, use
@@ -32,7 +32,7 @@
   </para>
  </sect2>
 
- <sect2 xml:id="sec.ipv4">
+ <sect2 xml:id="sec-ipv4">
   <title>IPv4 Addresses</title>
   <para>
    Use addresses from the class C subnet <literal>192.168.255.0</literal>
@@ -44,7 +44,7 @@
   </para>
  </sect2>
 
- <sect2 xml:id="sec.ipv6">
+ <sect2 xml:id="sec-ipv6">
   <title>IPv6 Addresses</title>
   <para>
    Use addresses from the subnet <literal>2001:0db8::/32</literal> for
@@ -58,7 +58,7 @@
   </para>
  </sect2>
 
- <sect2 xml:id="sec.user">
+ <sect2 xml:id="sec-user">
   <title>Users</title>
   <para>
    For example users, use free-software mascots, such as Tux (Linux Kernel),

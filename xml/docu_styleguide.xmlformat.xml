@@ -4,7 +4,7 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec.format_xml">
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-format-xml">
  <title>Formatting XML</title>
 
  <para>
@@ -92,7 +92,7 @@
 </screen>
    <para>
     For information about the usage of <tag class="emptytag">screen</tag>, see
-    <xref linkend="sec.screen"/>.
+    <xref linkend="sec-screen"/>.
    </para>
   </listitem>
   <listitem>
@@ -164,7 +164,7 @@
    </para>
    <para>
     For information about the usage of XML comments, see
-    <xref linkend="sec.xml_comment"/>.
+    <xref linkend="sec-xml-comment"/>.
    </para>
   </listitem>
   <listitem>

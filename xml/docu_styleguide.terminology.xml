@@ -4,14 +4,14 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="app.terminology">
+<appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="app-terminology">
  <title>Terminology and General Vocabulary</title>
  <info/>
  <para>
   The following two tables define technical terms and general vocabulary for
-  use in SUSE documentation. See also <xref linkend="sec.language"/>.
+  use in SUSE documentation. See also <xref linkend="sec-language"/>.
  </para>
- <sect1 xml:id="sec.terminology">
+ <sect1 xml:id="sec-terminology">
   <title>Terminology</title>
 
   <para>
@@ -1886,7 +1886,7 @@
    </tgroup>
   </informaltable>
  </sect1>
- <sect1 xml:id="sec.vocabulary">
+ <sect1 xml:id="sec-vocabulary">
   <title>General Vocabulary</title>
 
   <para>

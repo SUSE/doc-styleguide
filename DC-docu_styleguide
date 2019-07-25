@@ -5,7 +5,7 @@
 ##
 ## Basics
 MAIN="MAIN.styleguide.xml"
-ROOTID="art.styleguide"
+ROOTID=art-styleguide
 DOCBOOK5_RNG_URI="http://www.docbook.org/xml/5.0/rng/docbookxi.rnc"
 
 ## stylesheet location
