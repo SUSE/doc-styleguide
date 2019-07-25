@@ -1118,14 +1118,15 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    </listitem>
    <listitem>
     <para>
-     In identifiers, only use alphanumeric characters, <literal>.</literal>,
-     <literal>_</literal>, and <literal>-</literal>.
+     In identifiers, only use alphanumeric characters and <literal>-</literal>.
+     Do not use <literal>_</literal> and <literal>.</literal> characters, as
+     they may hurt search engine optimization.
     </para>
    </listitem>
    <listitem>
     <para>
-     Identifiers consist of up to three parts. Join these parts with a
-     <literal>.</literal>.
+     Identifiers can consist of multiple parts. Join these parts with a
+     <literal>-</literal>.
     </para>
     <orderedlist>
      <listitem>
@@ -1161,9 +1162,9 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     </orderedlist>
     <example>
      <title>Examples of Identifiers</title>
-<screen>xml:id="cha.install"
-xml:id="sec.install.yast"
-xml:id="tab.install.source"</screen>
+<screen>xml:id="cha-install"
+xml:id="sec-install-yast"
+xml:id="tab-install-source"</screen>
     </example>
    </listitem>
    <listitem>
@@ -1173,7 +1174,7 @@ xml:id="tab.install.source"</screen>
      nouns and the infinitive of verbs. For example, a section about
      installing with <phrase role="productname">YaST</phrase> could be
      called
-     <tag class="attvalue">sec.install.yast</tag>.
+     <tag class="attvalue">sec-install-yast</tag>.
     </para>
    </listitem>
    <listitem>
