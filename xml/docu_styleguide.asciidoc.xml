@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1
+[
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+    %entities;
+]>
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-asciidoc">
+ <title>Working With AsciiDoc</title>
+
+ <para>
+  This section collects resources on how to use AsciiDoc.
+ </para>
+
+ <para>
+  The following things are important when working with AsciiDoc:
+ </para>
+ <itemizedlist>
+  <listitem>
+   <para>
+    Only use formatting that is supported by the AsciiDoctor tool.
+    Ignore features that are only documented for the outdated
+    <command>asciidoc</command> (Python) tool. In particular, ignore the
+    documentation at <literal>http://powerman.name</literal>.
+    <!-- Intentionally not linked. -->
+   </para>
+  </listitem>
+  <listitem>
+   <para>
+    Adhere to
+    <link xlink:href="https://asciidoctor.org/docs/asciidoc-recommended-practices"/>.
+   </para>
+  </listitem>
+  <listitem>
+   <para>
+    Most recommendations from
+    <link xlink:href="https://github.com/SUSE/doc-susemanager/wiki/markup-syntax"/>
+    are applicable generally. Some recommendations, however, are specific to
+    &suse; Manager documentation, in particular:
+   </para>
+   <itemizedlist>
+    <listitem>
+     <para>
+      The section <citetitle>Images</citetitle>&mdash;images need to be added
+      the same way they are added in other DAPS-based documentation, under the
+      <filename>images/src/<replaceable>FORMAT</replaceable></filename>
+      directory of the repo.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      The section <citetitle>Working with Drafts</citetitle>&mdash;there is
+      currently no equivalent standard functionality.
+     </para>
+    </listitem>
+   </itemizedlist>
+  </listitem>
+ </itemizedlist>
+
+
+</sect1>

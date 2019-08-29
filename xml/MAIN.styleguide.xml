@@ -15,21 +15,21 @@
   xmlns:dm="urn:x-suse:ns:docmanager">
  <title>SUSE Documentation Style Guide</title>
  <info>
-      <releaseinfo>&version;</releaseinfo>
-      <date>
-        <?dbtimestamp?>
-      </date>
-      <xi:include href="authors.xml"/>
-      <xi:include href="legal_suse+gfdl.xml"/>
-      <dm:docmanager>
-        <dm:bugtracker>
-          <dm:url>https://github.com/SUSE/doc-styleguide/issues/new</dm:url>
-          <dm:labels>via-report-link</dm:labels>
-          <dm:assignee>sknorr</dm:assignee>
-        </dm:bugtracker>
-      </dm:docmanager>
-      <abstract>
-        <para>
+  <releaseinfo>&version;</releaseinfo>
+  <date>
+   <?dbtimestamp?>
+  </date>
+  <xi:include href="authors.xml"/>
+  <xi:include href="legal_suse+gfdl.xml"/>
+  <dm:docmanager>
+   <dm:bugtracker>
+    <dm:url>https://github.com/SUSE/doc-styleguide/issues/new</dm:url>
+    <dm:labels>via-report-link</dm:labels>
+    <dm:assignee>sknorr</dm:assignee>
+   </dm:bugtracker>
+  </dm:docmanager>
+  <abstract>
+   <para>
     This guide provides answers to writing, style, and layout questions
     commonly arising when editing SUSE documentation. The
     <phrase role="productname">GeekoDoc</phrase>/<phrase role="productname">DocBook</phrase>
@@ -37,15 +37,16 @@
     XML element for your purpose. Following this guide will make your
     documentation more understandable and easier to translate.
    </para>
-      </abstract>
-    </info>
-    <xi:include href="docu_styleguide.audience.xml"/>
+  </abstract>
+ </info>
+ <xi:include href="docu_styleguide.audience.xml"/>
  <xi:include href="docu_styleguide.name.xml"/>
  <xi:include href="docu_styleguide.outline.xml"/>
  <xi:include href="docu_styleguide.language.xml"/>
  <xi:include href="docu_styleguide.structure.xml"/>
  <xi:include href="docu_styleguide.manage.xml"/>
  <xi:include href="docu_styleguide.xmlformat.xml"/>
+ <xi:include href="docu_styleguide.asciidoc.xml"/>
  <xi:include href="docu_styleguide.terminology.xml"/>
  <xi:include href="docu_styleguide.changes.xml" condition="changes"/>
  <xi:include href="gfdl.xml"/>
