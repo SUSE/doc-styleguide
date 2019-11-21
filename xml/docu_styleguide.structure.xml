@@ -1059,8 +1059,8 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     <listitem>
      <para>
       Use grayscale font antialiasing (default on SUSE operating systems).
-      Subpixel font antialiasing creates colored letter edges when zoomed or
-      printed.
+      Subpixel font antialiasing (default on Windows and macOS operating
+      systems) creates colored letter edges when zoomed or printed.
      </para>
     </listitem>
     <listitem>
