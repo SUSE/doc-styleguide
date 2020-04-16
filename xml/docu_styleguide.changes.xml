@@ -12,7 +12,146 @@
   This section lists the changes between versions of this Style Guide.
  </para>
 <!-- Add new versions to the beginning of the list. -->
- <sect1 xml:id="sec-change-2014-07">
+ <sect1 xml:id="sec-change-2019-11">
+  <title>Changes 2019-11</title>
+  <para>
+   Added guidance regarding appropriate on-page screenshot sizing.
+  </para>
+ </sect1>
+
+ <sect1 xml:id="sec-change-2019-08">
+  <title>Changes 2019-08</title>
+  <para>
+   Added minimal guidance regarding AsciiDoc documents.
+  </para>
+ </sect1>
+
+ <sect1 xml:id="sec-change-2019-07">
+  <title>Changes 2019-07</title>
+  <para>
+   Updated guidance regarding use of <literal>.</literal> and <literal>_</literal> in XML IDs.
+  </para>
+ </sect1>
+
+ <sect1 xml:id="sec-change-2019-03">
+  <title>Changes 2019-03</title>
+  <para>
+   Added guidance regarding easily outdated information in screens and screenshots.
+  </para>
+ </sect1>
+
+ <sect1 xml:id="sec-change-2018-11">
+  <title>Changes 2018-11</title>
+  <itemizedlist>
+   <listitem>
+    <para>
+     Added terminology entry for <emphasis>subsystem</emphasis>.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Improved guidance regarding numbers and measurments.
+    </para>
+   </listitem>
+  </itemizedlist>
+ </sect1>
+
+ <sect1 xml:id="sec-change-2018-08">
+  <title>Changes 2018-08</title>
+  <para>
+   Improved guidance regarding path names.
+  </para>
+ </sect1>
+
+ <sect1 xml:id="sec-change-2018-07">
+  <title>Changes 2018-07</title>
+  <itemizedlist>
+   <listitem>
+    <para>
+     Added guidance regarding XML formatting.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Improved guidance regarding commands.
+    </para>
+   </listitem>
+  </itemizedlist>
+ </sect1>
+
+ <sect1 xml:id="sec-change-2018-06">
+  <title>Changes 2018-06</title>
+  <itemizedlist>
+   <listitem>
+    <para>
+     Documented ID prefix for prefaces.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Added guidance regarding scaling of screenshots.
+    </para>
+   </listitem>
+  </itemizedlist>
+ </sect1>
+
+ <sect1 xml:id="sec-change-2018-04">
+  <title>Changes 2018-04</title>
+  <para>
+   Added terminology entry for <emphasis>namespace</emphasis>.
+  </para>
+ </sect1>
+
+ <sect1 xml:id="sec-change-2017-11">
+  <title>Changes 2017-11</title>
+  <para>
+   Improved guidance regarding XML IDs.
+  </para>
+ </sect1>
+
+ <sect1 xml:id="sec-change-2017-10">
+  <title>Changes 2017-10</title>
+  <para>
+   Updated terminology entry for <emphasis>IBM Z</emphasis>.
+  </para>
+ </sect1>
+
+ <sect1 xml:id="sec-change-2017-04">
+  <title>Changes 2017-04</title>
+  <para>
+   Added terminology entries for <emphasis>e-mail</emphasis>, <emphasis>hot key</emphasis>.
+  </para>
+ </sect1>
+
+ <sect1 xml:id="sec-change-2017-03">
+  <title>Changes 2017-03</title>
+  <itemizedlist>
+   <listitem>
+    <para>
+     Added terminology entries for <emphasis>use case</emphasis>, <emphasis>business case</emphasis>.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Improved guidance regarding use of prompts.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Added guidance regarding list structure.
+    </para>
+   </listitem>
+  </itemizedlist>
+ </sect1>
+
+ <sect1 xml:id="sec-change-2016-12">
+  <title>Changes 2016-12</title>
+  <para>
+   Corrected SLES for SAP Applications product name.
+  </para>
+ </sect1>
+
+ <sect1 xml:id="sec-change-2016-07">
   <title>Release 2016-07&mdash;July 2016 Major Update</title>
 
   <para>
