@@ -15,5 +15,3 @@ Contributing
 
 To contribute, send pull requests. Use the `master` branch as the basis for
 feature branches.
-
-Be aware that the `develop` branch does not exist anymore in this repository.
