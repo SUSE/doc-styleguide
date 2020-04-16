@@ -1,6 +1,6 @@
-= SUSE Documentation Styleguide
+= SUSE Documentation Style Guide
 
-This guide provides answers to writing, style, and layout questions commonly
+This style guide provides answers to writing, style, and layout questions commonly
 arising when editing SUSE documentation. The markup reference at the end of
 the guide will help you choose the right XML element for your
 purpose. Following this guide will make your documentation more understandable
