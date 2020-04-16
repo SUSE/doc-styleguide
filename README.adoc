@@ -7,12 +7,7 @@ purpose. Following this guide will make your documentation more understandable
 and easier to translate.
 
 The Style Guide is published at
-https://doc.opensuse.org/documentation/styleguide/[doc.opensuse.org, HTML without change log].
-
-You can also find pre-built PDF versions in this repository:
-
-* https://github.com/SUSE/doc-styleguide/raw/master/prebuilt/current/styleguide_with_changelog.pdf[PDF with change log]
-* https://github.com/SUSE/doc-styleguide/raw/master/prebuilt/current/styleguide_plain.pdf[PDF without change log]
+https://doc.suse.com/style/current/[doc.suse.com/style].
 
 
 Contributing
