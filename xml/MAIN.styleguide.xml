@@ -13,9 +13,8 @@
   xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:dm="urn:x-suse:ns:docmanager">
- <title>SUSE Documentation Style Guide</title>
+ <title>SUSE Documentation Style Guide<phrase condition="changes"> (with change log)</phrase></title>
  <info>
-  <releaseinfo>&version;</releaseinfo>
   <date>
    <?dbtimestamp?>
   </date>
