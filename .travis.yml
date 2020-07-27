@@ -1,0 +1,24 @@
+language: bash
+dist: xenial
+services:
+  - docker
+
+env:
+  global:
+    - secure: d9lkHLn92BdsWbj0uxnMshD4urb+ZpdO0m1HrlXlsnRlv2zORUkeJ9Fz9duZS+DCAwE9zAAWwRHMrcFVbwXdSCTotGhbJboC8wbKREhF0HAcFnm/ACLSrytDwmiyLdC1ZRF72NYf16qMiFNWUx1s7O0poYzkGJcgtdRfXn5Ii4aFj5O8JDfaBo8gShu+FRtEcdxdp/HcJuK6JohKjwiobCVWPEOjiWkjzqpHxmc3PXKiSJL3UVZ2mdXMhwjn38psNpfSTAaafc2odTydcZ+u9OUCDPGJSA+vMhm+TbPkaKbMFndMYFEqeHb3vUk3+u536LlzzxYzjDNXXHYGEnwCwdtFR1ealjsOBYRdpzmdN2i/ecxeLrPTMGREWv72RiqxgRuFwwXGhI91O4AoMPHdPq51XzP0H022vQLlBRCjy27A7D5nwMo9xFknS/OP8/aVckKzqIticemzDQIEkOImvXeJPA0rFaLoWlTwNFdI7XxhOlCSTwfQEM6YEOjaygLwRY3Tr418EqmMVfA6f7+HQPU7WBrM0Q8ncJQo8Hqbum2bF36FCQtWfDLs6NJvjOT2PppoLNzhCd7VM0blbmA4YUKfIzwQWDzanyaDP7gAqXBf8DXL+ZACmsMajbRmALXEH00YtM297KsAKhfbNYuKOVZitPlEyS4OIvcBBmqKTxs=
+
+before_install:
+  - echo "TRAVIS_PULL_REQUEST=$TRAVIS_PULL_REQUEST" >> env.list
+  - echo "TRAVIS_BRANCH=$TRAVIS_BRANCH" >> env.list
+  - echo "TRAVIS_REPO_SLUG=$TRAVIS_REPO_SLUG" >> env.list
+  - echo "ENCRYPTED_PRIVKEY_SECRET=$ENCRYPTED_PRIVKEY_SECRET" >> env.list
+  - echo "TRAVIS_COMMIT=$TRAVIS_COMMIT" >> env.list
+  - wget https://raw.githubusercontent.com/openSUSE/doc-ci/master/travis/travis.sh
+
+script:
+  - docker run --rm -it --volume ${PWD}:/usr/src/app --workdir /usr/src/app susedoc/ci:latest /bin/bash -c '/bin/bash travis.sh'
+
+notifications:
+  email:
+    on_success: change
+    on_failure: always
