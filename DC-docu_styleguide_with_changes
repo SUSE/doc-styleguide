@@ -1,13 +1,11 @@
-## ----------------------------
-## Doc Config File for SUSE
-## Documentation Style Guide
-## ----------------------------
-##
-## Basics
+# Doc Config File for SUSE
+# Documentation Style Guide
+
+# basics
 MAIN="MAIN.styleguide.xml"
 ROOTID=art-styleguide
 DOCBOOK5_RNG_URI="http://www.docbook.org/xml/5.0/rng/docbookxi.rnc"
 
-## stylesheet location
+# stylesheet location
 STYLEROOT="/usr/share/xml/docbook/stylesheet/suse2013-ns"
 PROFCONDITION="guide;changes"
