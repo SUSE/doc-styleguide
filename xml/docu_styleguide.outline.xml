@@ -16,10 +16,34 @@
  <sect2 xml:id="sec-book">
   <title>Books</title>
   <para>
-   Always use a document structure that includes the following elements, in
-   that order: a preface, and chapters which are split in sections.
-   Optionally, add appendixes, a glossary, and an index. In some cases,
-   parts can be created at the outline level above chapters.
+   For books, use a document structure that includes the following
+   elements, in that order:
+  </para>
+  <orderedlist>
+   <listitem>
+    <para>
+     a preface
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     chapters, split into sections
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <emphasis>(optional)</emphasis> a glossary
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <emphasis>(optional)</emphasis> appendixes
+    </para>
+   </listitem>
+  </orderedlist>
+  <para>
+   For books with many chapters, create parts at the outline level above
+   chapters.
   </para>
   <variablelist>
    <varlistentry>
@@ -34,7 +58,7 @@
        <formalpara>
         <title>Title</title>
         <para>
-         Work with the marketing department to define the correct book
+         Work with the product manager to define the book
          title. The book title should not contain the product name and
          version.
         </para>
@@ -44,7 +68,7 @@
        <formalpara>
         <title>Product Name and Product Version</title>
         <para>
-         Work with the marketing department to find the correct product name
+         Work with the product manager to find the correct product name
          and version number. Mark this information up with
          <tag class="emptytag">productname</tag>
          and
@@ -56,25 +80,13 @@
        <formalpara>
         <title>Documentation Version or Revision Information</title>
         <para>
-         Use the
+         Optionally, use the
          <tag class="emptytag">releaseinfo</tag>
          element to mark up version or revision numbers of the documentation
-         itself. For more information on enabling SVN revision
-         information in your document, see
-         <link xlink:href="http://svnbook.red-bean.com/en/1.7/svn.advanced.props.special.keywords.html"/>.
+         itself.
         </para>
        </formalpara>
       </listitem>
-<!-- sknorr, 2013-01-17: Not yet implemented. -->
-<!-- <listitem>
-                <formalpara>
-                  <title>Cover Image</title>
-                  <para>Work with the marketing department to find a cover
-                    image. Use the <sgmltag class="emptytag">cover</sgmltag>
-                    element to include the image.
-                  </para>
-                </formalpara>
-              </listitem> -->
       <listitem>
        <formalpara>
         <title>Authorship Information</title>
@@ -226,10 +238,10 @@
       </listitem>
       <listitem>
        <formalpara>
-        <title>Introductions</title>
+        <title>Introduction</title>
         <para>
-         Any introductory information follows directly after the highlights
-         section and should not be placed in a separate section.
+         Introductory information follows directly after the highlights
+         section and is not be placed in a separate section.
         </para>
        </formalpara>
       </listitem>
@@ -240,8 +252,8 @@
          Structure the detailed information, so readers can skim the text.
          Create sections for every major task, such as installing,
          configuring, monitoring, and administering. If helpful, split
-         sections into subsections, but avoid going above three levels of
-         sections.
+         sections into subsections.
+         Avoid nesting deeper than three levels of sections.
         </para>
        </formalpara>
        <para>
@@ -290,7 +302,7 @@
     <listitem>
      <para>
       The optional glossary contains important terms in alphabetical order
-      and provides a brief explanation.
+      and provides a brief explanation for each.
      </para>
     </listitem>
    </varlistentry>
@@ -300,10 +312,30 @@
  <sect2 xml:id="sec-article">
   <title>Articles</title>
   <para>
-   For articles, use a structure similar to that of books. However, note
-   that there is no equivalent of parts in articles. Additionally, in
-   articles, the function of chapters is filled by first-level sections
-   (<tag class="emptytag">sect1</tag>).
+   For articles, use a document structure that includes the following
+   elements, in that order:
   </para>
+  <orderedlist>
+   <listitem>
+    <para>
+     introduction
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     sections, split into subsections
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <emphasis>(optional)</emphasis> a glossary
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <emphasis>(optional)</emphasis> appendixes
+    </para>
+   </listitem>
+  </orderedlist>
  </sect2>
 </sect1>
