@@ -12,6 +12,53 @@
   This section lists the changes between versions of this Style Guide.
  </para>
 <!-- Add new versions to the beginning of the list. -->
+ <sect1 xml:id="sec-change-2020-08">
+  <title>Changes 2020-08</title>
+  <itemizedlist>
+   <listitem>
+    <para>
+     Removed outdated and overly specific recommendation to use Shutter
+     application from section Screenshots.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Clarified section Outline.
+     Included better guidance for article outlines.
+     Clarified when to contact product managers.
+     Removed outdated reference to SVN metadata.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Updated URLs of DocBook Definitive Guide.
+     Updated URLs to HTTPS.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Moved advice to include at least introductory content in each section from
+     Language/Headings section to Structure/Outlining section.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Clarified that admonition titles should use title style.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Removed listing of document authors.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Made language fixes, clarifications, and added explanations.
+    </para>
+   </listitem>
+  </itemizedlist>
+ </sect1>
+
  <sect1 xml:id="sec-change-2019-11">
   <title>Changes 2019-11</title>
   <para>
