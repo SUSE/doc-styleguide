@@ -383,7 +383,7 @@
   </para>
   <para>
    Use second person (<quote>you</quote>) to refer to the reader. Normally,
-   the reader is the user or administrator that does the actions described.
+   the reader is the user or administrator who performs the actions described.
    Do not overuse <quote>you.</quote> It is often understood, especially in
    directions.
   </para>
@@ -422,7 +422,7 @@
    <listitem>
     <para>
      Only use the &reg;, &tm;, or &sm; marks for
-     <phrase role="companyname">Micro Focus</phrase> products.
+     <phrase role="companyname">SUSE</phrase> products.
     </para>
    </listitem>
    <listitem>
@@ -459,9 +459,10 @@
  <sect2 xml:id="sec-quotation">
   <title>Quotations</title>
   <para>
-   Use quotations to quote from sources, such as books. In most other cases,
-   you should not use quotation marks. For example, avoid ironic usage of
-   words entirely. In the case of computer input and output or user
+   Use quotations to quote from sources, such as books.
+   In other cases, avoid using quotation marks.
+   Do not use irony and do not use quotation marks to mark irony.
+   In the case of computer input, computer output, and user
    interface elements, use more appropriate markup. See also
    <xref linkend="sec-command-line"/> and
    <xref linkend="sec-ui-item-markup"/>.

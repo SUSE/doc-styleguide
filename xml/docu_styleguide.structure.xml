@@ -189,17 +189,21 @@
   <para>
    When referring to an application, add a
    <tag class="emptytag">phrase role="productname"</tag>
-   element around it. This will not result in a visual change but disables
-   hyphenation:
+   element around it:
   </para>
 <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
+  <para>
+   This will not result in a visual change but disables hyphenation in browsers.
+   This markup sidesteps hyphenation issues of CamelCased names.
+  </para>
  </sect2>
 
  <sect2 xml:id="sec-callout">
   <title>Callouts</title>
   <para>
-   Add the
-   <tag class="emptytag">co</tag>
+   Callouts allow annotating examples, such as configuration files or commands
+   with many options.
+   Add <tag class="emptytag">co</tag>
    elements directly after the part of a screen that you want to annotate.
    Do not try to align them above the part of a screen to annotate. Do not
    use more than ten callouts per example.
@@ -293,14 +297,14 @@ default 0 <co xml:id="co-default"/></screen>
  </sect2>
 
  <sect2 xml:id="sec-command-line">
-  <title>Command Line Input and Output</title>
+  <title>Command Line Input and Command Line Output</title>
   <para>
    When dealing with user input and system output shorter than 30
    characters, format it with an inline element, such as
    <tag class="emptytag">command</tag>
    or
    <tag class="emptytag">filename</tag>. In all other cases, close the current
-   paragraph and enclose it in a
+   paragraph and enclose the user input and/or system output in a
    <tag class="emptytag">screen</tag>
    element. See also <xref linkend="sec-example"/>.
   </para>
@@ -433,8 +437,8 @@ default 0 <co xml:id="co-default"/></screen>
    <para>
     Use markup for commands even inside
     <tag class="emptytag">screen</tag>
-    environments. To avoid spelling or capitalization errors, where
-    possible, run commands before adding them to the documentation.
+    environments. To avoid spelling or capitalization errors, whenever
+    possible, try commands before adding them to the documentation.
    </para>
    <para>
     See also <xref linkend="sec-prompt"/>.
@@ -482,8 +486,9 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
    </para>
 <screen>&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ls&lt;/command&gt;</screen>
    <para>
-    To avoid making prompts longer than necessary, never include a host name
-    or a path. The first restricted user should always be named
+    To avoid making prompts longer than necessary, do not include a host name
+    or a path in them, unless this is vital to understanding.
+    The first restricted user should always be named
     <emphasis>tux</emphasis>. For more information on names of restricted users,
     see <xref linkend="sec-name"/>.
    </para>
@@ -540,7 +545,7 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
     <listitem>
      <para>
       Do not add empty lines at the beginning or end of screens. They can
-      be cut away by the <literal>suse2013</literal> stylesheets, however, most
+      be cut away by the SUSE stylesheets, however, most other
       stylesheets do not have such functionality.
      </para>
     </listitem>
@@ -632,7 +637,6 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
 
  <sect2 xml:id="sec-cross-reference">
   <title>Cross References</title>
-  <remark>toms, Dec 2013: How do we use the attribute xrefstyle?</remark>
   <para>
    Use the
    <tag class="emptytag">xref</tag>
@@ -640,17 +644,18 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
    chapter, example, figure, part, preface, section, table, or question and
    answer set. The element referenced needs to have an
    <tag class="attribute">xml:id</tag>
-   attribute. Do not insert text labels such as <quote>appendix,</quote>
+   attribute. Do not prefix or suffix cross references with text labels such
+   as <quote>appendix,</quote>
    <quote>chapter,</quote> <quote>table,</quote> or <quote>figure.</quote>
-   These labels are generated automatically.
+   Such labels are generated automatically.
   </para>
   <para>
-   To be able reference an otherwise untitled element, add the attribute
-   <tag class="attribute">xreflabel</tag>
-   to the element with a useful title as its value. Never create references
-   to single paragraphs (
-   <tag class="emptytag">para</tag>
-   ).
+   Do not create references to paragraphs (<tag class="emptytag">para</tag>) or
+   other elements that have no title.
+   An exception to this rule is the element <tag class="emptytag">step</tag>
+   to which you may create references.
+   If a reference to an element without a title is vital to the document, use
+   the attribute <tag class="attribute">xreflabel</tag> to assign a title.
   </para>
   <para>
    Other types of references to resources are described in
