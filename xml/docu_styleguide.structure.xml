@@ -2096,25 +2096,26 @@ xml:id="tab-install-source"</screen>
  </sect2>
 
  <sect2 xml:id="sec-outline-level">
-  <title>Outline Levels</title>
+  <title>Outline Levels and Sectioning</title>
   <para>
    Create sections using the
-   <tag class="emptytag">sect1</tag>
-   through
-   <tag class="emptytag">sect5</tag>
-   elements. Avoid outlines that require
-   <tag class="emptytag">sect4</tag>
-   and
-   <tag class="emptytag">sect5</tag>
-   elements. Instead, create a flatter structure in which more elements are
+   <tag class="emptytag">sect1</tag>, <tag class="emptytag">sect2</tag>, and
+   <tag class="emptytag">sect3</tag> elements.
+   Avoid outlines that require <tag class="emptytag">sect4</tag>
+   and <tag class="emptytag">sect5</tag> elements.
+   Instead, create a flatter structure in which more elements are
    visible at a glance.
+  </para>
+  <para>
+   Provide at least one paragraph of introductory information directly within
+   each section.
   </para>
   <para>
    Do not create lone subsections. A lone subsection is a section that is
    the only subsection of its parent section.
   </para>
   <para>
-   For more information on creating headline titles, see
+   For more information on writing headlines, see
    <xref linkend="sec-heading"/>.
   </para>
  </sect2>
