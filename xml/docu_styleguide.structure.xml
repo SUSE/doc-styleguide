@@ -36,49 +36,49 @@
      <entry>
       <tag class="emptytag">appendix</tag>
      </entry>
-     <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/appendix.html"/>
+     <entry><link xlink:href="&tdg;/appendix.html"/>
      </entry>
     </row>
     <row>
      <entry>
       <tag class="emptytag">book</tag>
      </entry>
-     <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/book.html"/>
+     <entry><link xlink:href="&tdg;/book.html"/>
      </entry>
     </row>
     <row>
      <entry>
       <tag class="emptytag">chapter</tag>
      </entry>
-     <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/chapter.html"/>
+     <entry><link xlink:href="&tdg;/chapter.html"/>
      </entry>
     </row>
     <row>
      <entry>
       <tag class="emptytag">glossary</tag>
      </entry>
-     <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/glossary.html"/>
+     <entry><link xlink:href="&tdg;/glossary.html"/>
      </entry>
     </row>
     <row>
      <entry>
       <tag class="emptytag">part</tag>
      </entry>
-     <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/part.html"/>
+     <entry><link xlink:href="&tdg;/part.html"/>
      </entry>
     </row>
     <row>
      <entry>
       <tag class="emptytag">preface</tag>
      </entry>
-     <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/preface.html"/>
+     <entry><link xlink:href="&tdg;/preface.html"/>
      </entry>
     </row>
     <row>
      <entry>
       <tag class="emptytag">sect1</tag>
      </entry>
-     <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/sect1.html"/>
+     <entry><link xlink:href="&tdg;/sect1.html"/>
      </entry>
     </row>
    </tbody>
@@ -258,7 +258,7 @@ default 0 <co xml:id="co-default"/></screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/co.html"/>
+      <entry><link xlink:href="&tdg;/co.html"/>
       </entry>
      </row>
      <row>
@@ -271,7 +271,7 @@ default 0 <co xml:id="co-default"/></screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/calloutlist.html"/>
+      <entry><link xlink:href="&tdg;/calloutlist.html"/>
       </entry>
      </row>
      <row>
@@ -284,7 +284,7 @@ default 0 <co xml:id="co-default"/></screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/callout.html"/>
+      <entry><link xlink:href="&tdg;/callout.html"/>
       </entry>
      </row>
     </tbody>
@@ -333,7 +333,7 @@ default 0 <co xml:id="co-default"/></screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/screen.html"/>
+      <entry><link xlink:href="&tdg;/screen.html"/>
       </entry>
      </row>
      <row>
@@ -347,7 +347,7 @@ default 0 <co xml:id="co-default"/></screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/command.html"/>
+      <entry><link xlink:href="&tdg;/command.html"/>
       </entry>
      </row>
      <row>
@@ -362,7 +362,7 @@ default 0 <co xml:id="co-default"/></screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/option.html"/>
+      <entry><link xlink:href="&tdg;/option.html"/>
       </entry>
      </row>
      <row>
@@ -375,7 +375,7 @@ default 0 <co xml:id="co-default"/></screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/replaceable.html"/>
+      <entry><link xlink:href="&tdg;/replaceable.html"/>
       </entry>
      </row>
      <row>
@@ -390,7 +390,7 @@ default 0 <co xml:id="co-default"/></screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/filename.html"/>
+      <entry><link xlink:href="&tdg;/filename.html"/>
       </entry>
      </row>
      <row>
@@ -404,7 +404,7 @@ default 0 <co xml:id="co-default"/></screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/varname.html"/>
+      <entry><link xlink:href="&tdg;/varname.html"/>
       </entry>
      </row>
     </tbody>
@@ -749,7 +749,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/example.html"/>
+      <entry><link xlink:href="&tdg;/example.html"/>
       </entry>
      </row>
      <row>
@@ -762,7 +762,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/screen.html"/>
+      <entry><link xlink:href="&tdg;/screen.html"/>
       </entry>
      </row>
     </tbody>
@@ -776,8 +776,8 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    Use the
    <tag class="emptytag">link</tag>
    element to mark up URLs that can be opened with a Web browser, such as
-   <link xlink:href="http://www.example.org/"/>. Always add the correct
-   protocol prefix (for example, <literal>http://</literal>), otherwise
+   <link xlink:href="https://www.example.org/"/>. Always add the correct
+   protocol prefix (for example, <literal>https://</literal>), otherwise
    links will not work. Never use
    <tag>filename</tag>
    for a link, as that would both disable the link checker and make the link
@@ -785,7 +785,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    <tag class="emptytag">link</tag>
    start and end tags. Instead, use a self-closing tag:
   </para>
-<screen>&lt;link xlink:href="http://www.example.org/"/&gt;</screen>
+<screen>&lt;link xlink:href="https://www.example.org/"/&gt;</screen>
   <para>
    Make URLs as short as possible before adding them to documentation. Many
    long URLs can be shortened by leaving away non-essential pieces. This is
@@ -890,7 +890,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/figure.html"/>
+      <entry><link xlink:href="&tdg;/figure.html"/>
       </entry>
      </row>
      <row>
@@ -903,7 +903,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/informalfigure.html"/>
+      <entry><link xlink:href="&tdg;/informalfigure.html"/>
       </entry>
      </row>
      <row>
@@ -919,7 +919,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/mediaobject.html"/>
+      <entry><link xlink:href="&tdg;/mediaobject.html"/>
       </entry>
      </row>
      <row>
@@ -933,7 +933,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/imageobject.html"/>
+      <entry><link xlink:href="&tdg;/imageobject.html"/>
       </entry>
      </row>
      <row>
@@ -945,7 +945,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/glossary.html"/>
+      <entry><link xlink:href="&tdg;/glossary.html"/>
       </entry>
      </row>
      <row>
@@ -958,7 +958,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/textobject.html"/>
+      <entry><link xlink:href="&tdg;/textobject.html"/>
       </entry>
      </row>
     </tbody>
@@ -1607,7 +1607,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/itemizedlist.html"/>
+      <entry><link xlink:href="&tdg;/itemizedlist.html"/>
       </entry>
      </row>
      <row>
@@ -1621,7 +1621,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/orderedlist.html"/>
+      <entry><link xlink:href="&tdg;/orderedlist.html"/>
       </entry>
      </row>
      <row>
@@ -1635,7 +1635,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/variablelist.html"/>
+      <entry><link xlink:href="&tdg;/variablelist.html"/>
       </entry>
      </row>
      <row>
@@ -1652,7 +1652,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/varlistentry.html"/>
+      <entry><link xlink:href="&tdg;/varlistentry.html"/>
       </entry>
      </row>
      <row>
@@ -1665,7 +1665,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/term.html"/>
+      <entry><link xlink:href="&tdg;/term.html"/>
       </entry>
      </row>
      <row>
@@ -1679,7 +1679,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/listitem.html"/>
+      <entry><link xlink:href="&tdg;/listitem.html"/>
       </entry>
      </row>
     </tbody>
@@ -1902,7 +1902,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/keycombo.html"/>
+      <entry><link xlink:href="&tdg;/keycombo.html"/>
       </entry>
      </row>
      <row>
@@ -2027,7 +2027,7 @@ xml:id="tab-install-source"</screen>
         </listitem>
        </itemizedlist>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/keycap.html"/>
+      <entry><link xlink:href="&tdg;/keycap.html"/>
       </entry>
      </row>
     </tbody>
@@ -2237,7 +2237,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/procedure.html"/>
+      <entry><link xlink:href="&tdg;/procedure.html"/>
       </entry>
      </row>
      <row>
@@ -2253,7 +2253,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/step.html"/>
+      <entry><link xlink:href="&tdg;/step.html"/>
       </entry>
      </row>
      <row>
@@ -2267,7 +2267,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/substeps.html"/>
+      <entry><link xlink:href="&tdg;/substeps.html"/>
       </entry>
      </row>
     </tbody>
@@ -2392,7 +2392,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/qandaset.html"/>
+      <entry><link xlink:href="&tdg;/qandaset.html"/>
       </entry>
      </row>
      <row>
@@ -2410,7 +2410,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/qandadiv.html"/>
+      <entry><link xlink:href="&tdg;/qandadiv.html"/>
       </entry>
      </row>
      <row>
@@ -2425,7 +2425,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/qandaentry.html"/>
+      <entry><link xlink:href="&tdg;/qandaentry.html"/>
       </entry>
      </row>
      <row>
@@ -2439,7 +2439,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/question.html"/>
+      <entry><link xlink:href="&tdg;/question.html"/>
       </entry>
      </row>
      <row>
@@ -2453,7 +2453,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/answer.html"/>
+      <entry><link xlink:href="&tdg;/answer.html"/>
       </entry>
      </row>
     </tbody>
@@ -2547,7 +2547,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/table.html"/>
+      <entry><link xlink:href="&tdg;/table.html"/>
       </entry>
      </row>
      <row>
@@ -2561,7 +2561,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/informaltable.html"/>
+      <entry><link xlink:href="&tdg;/informaltable.html"/>
       </entry>
      </row>
      <row>
@@ -2577,7 +2577,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/tgroup.html"/>
+      <entry><link xlink:href="&tdg;/tgroup.html"/>
       </entry>
      </row>
      <row>
@@ -2589,7 +2589,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/colspec.html"/>
+      <entry><link xlink:href="&tdg;/colspec.html"/>
       </entry>
      </row>
      <row>
@@ -2603,7 +2603,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/thead.html"/>
+      <entry><link xlink:href="&tdg;/thead.html"/>
       </entry>
      </row>
      <row>
@@ -2617,7 +2617,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/tbody.html"/>
+      <entry><link xlink:href="&tdg;/tbody.html"/>
       </entry>
      </row>
      <row>
@@ -2631,7 +2631,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/row.html"/>
+      <entry><link xlink:href="&tdg;/row.html"/>
       </entry>
      </row>
      <row>
@@ -2643,7 +2643,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/entry.html"/>
+      <entry><link xlink:href="&tdg;/entry.html"/>
       </entry>
      </row>
     </tbody>
@@ -2701,7 +2701,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/menuchoice.html"/>
+      <entry><link xlink:href="&tdg;/menuchoice.html"/>
       </entry>
      </row>
      <row>
@@ -2713,7 +2713,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="http://www.docbook.org/tdg51/en/html/guimenu.html"/>
+      <entry><link xlink:href="&tdg;/guimenu.html"/>
       </entry>
      </row>
     </tbody>

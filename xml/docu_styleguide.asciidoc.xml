@@ -20,7 +20,7 @@
     Only use formatting that is supported by the AsciiDoctor tool.
     Ignore features that are only documented for the outdated
     <command>asciidoc</command> (Python) tool. In particular, ignore the
-    documentation at <literal>http://powerman.name</literal>.
+    documentation at <literal>https://powerman.name</literal>.
     <!-- Intentionally not linked. -->
    </para>
   </listitem>
