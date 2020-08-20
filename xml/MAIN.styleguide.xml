@@ -18,7 +18,6 @@
   <date>
    <?dbtimestamp?>
   </date>
-  <xi:include href="authors.xml"/>
   <xi:include href="legal_suse+gfdl.xml"/>
   <dm:docmanager>
    <dm:bugtracker>
