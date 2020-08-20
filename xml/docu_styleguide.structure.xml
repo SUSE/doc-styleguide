@@ -1070,11 +1070,10 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     </listitem>
     <listitem>
      <para>
-      Avoid editing screenshots. If you need to edit a screenshot, use the
-      <phrase role="programname">Shutter</phrase> application. To anonymize
-      portions of a screenshot, use the <guimenu>Pixelize</guimenu> tool. To
-      highlight parts of a screenshot, use the <guimenu>Rectangle</guimenu>
-      tool or the <guimenu>Arrow</guimenu> tool. Never add callouts, text or
+      Avoid editing screenshots.
+      To anonymize portions of a screenshot, pixelize it.
+      To highlight parts of a screenshot, use rectangles or arrows.
+      Never add callouts, text or
       freely drawn objects. Always select colors that provide a good
       contrast with their background.
      </para>
