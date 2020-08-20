@@ -164,7 +164,7 @@
   <example xml:id="ex-warning-source">
    <title>An Example of a Warning (Source)</title>
 <screen>&lt;warning&gt;
-  &lt;title&gt;Do not interrupt creation of file systems&lt;/title&gt;
+  &lt;title&gt;Do Not Interrupt Creation of File Systems&lt;/title&gt;
   &lt;para&gt;Creating a file system can take multiple hours. Interrupting this
     process will result in a corrupt file system and an unusable installation.
   &lt;/para&gt;
@@ -172,7 +172,7 @@
 &lt;/warning&gt;</screen>
   </example>
   <warning xml:id="ex-warning-output">
-   <title>Do not interrupt creation of file systems</title>
+   <title>Do Not Interrupt Creation of File Systems</title>
    <para>
     Creating a file system can take multiple hours. Interrupting this
     process will result in a corrupt file system and an unusable
