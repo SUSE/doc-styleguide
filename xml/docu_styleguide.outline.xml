@@ -153,7 +153,7 @@
      <example xml:id="ex-abstract">
       <title>An Abstract</title>
       <para>
-       SUSE Linux Enterprise ships with several file systems,
+       &suse; Linux Enterprise ships with several file systems,
        including Btrfs, Ext3, Ext4. Each file system has advantages and
        disadvantages that make it more or less suitable for a scenario.
        Professional high-performance setups can require a different choice
@@ -219,7 +219,7 @@
          <listitem>
           <para>
            Give you an overview over the file systems available in
-           <phrase role="productname">SUSE Linux Enterprise</phrase>, such
+           <phrase role="productname">&suse; Linux Enterprise</phrase>, such
            as Ext3, Ext4, and Btrfs.
           </para>
          </listitem>

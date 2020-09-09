@@ -16,7 +16,7 @@
  </para>
 
  <para>
-  SUSE uses the GeekoDoc Relax NG schema which is compatible with DocBook 5.1.
+  &suse; uses the GeekoDoc Relax NG schema which is compatible with DocBook 5.1.
   Thus, for more detailed descriptions of the elements of a book, see the
   <citetitle>DocBook 5.1: The Definitive Guide</citetitle> sections listed in
   <xref linkend="tab-book"/>.
@@ -545,7 +545,7 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
     <listitem>
      <para>
       Do not add empty lines at the beginning or end of screens. They can
-      be cut away by the SUSE stylesheets, however, most other
+      be cut away by the &suse; stylesheets. However, most other
       stylesheets do not have such functionality.
      </para>
     </listitem>
@@ -823,7 +823,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   <para>
    Do not use
    <tag class="emptytag">link</tag>
-   to link to SUSE documentation outside of the current document set.
+   to link to &suse; documentation outside of the current document set.
    Instead, use the appropriate entity for the book title. Always reference
    the book itself, as chapter names can change.
   </para>
@@ -1083,7 +1083,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     </listitem>
     <listitem>
      <para>
-      Use grayscale font antialiasing (default on SUSE operating systems).
+      Use grayscale font antialiasing (default on &suse; operating systems).
       Subpixel font antialiasing (default on Windows and macOS operating
       systems) creates colored letter edges when zoomed or printed.
      </para>
@@ -1522,7 +1522,7 @@ xml:id="tab-install-source"</screen>
  <sect2 xml:id="sec-list">
   <title>Lists</title>
   <para>
-   SUSE documentation uses the following types of lists (the respective XML
+   &suse; documentation uses the following types of lists (the respective XML
    elements are given in parentheses):
   </para>
   <itemizedlist>
@@ -2096,7 +2096,7 @@ xml:id="tab-install-source"</screen>
 <screen>To learn more about subcommands, see the man page of
 &lt;command&gt;command&lt;/command&gt;.</screen>
   <para>
-   Insert references to external (non-SUSE) physical books in the format
+   Insert references to external (non-&suse;) physical books in the format
    <quote>Title by Author (ISBN #00000000).</quote> Inclusion of the ISBN is
    optional. Place the title in a
    <tag class="emptytag">citetitle</tag>
@@ -2109,7 +2109,8 @@ xml:id="tab-install-source"</screen>
    translators in XML comments (see also <xref linkend="sec-xml-comment"/>).
    As a translator, look for corresponding language-specific resources where
    none have been provided. For URLs, provide only the language-specific
-   version of a site. Use the English as a fall-back. For books, provide the
+   version of a site. Use the English version as a fallback.
+   For books, provide the
    title of the translated version along with the original title if such a
    translation exists.
   </para>

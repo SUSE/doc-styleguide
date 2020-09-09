@@ -19,8 +19,8 @@
 
  <para>
   If a product you are documenting is not listed in the terminology table,
-  refer to the SUSE home page, <link xlink:href="https://www.suse.com"/>. If
-  the product is not mentioned on the SUSE home page, refer to the Marketing
+  refer to the &suse; home page, <link xlink:href="https://www.suse.com"/>. If
+  the product is not mentioned on the &suse; home page, refer to the Marketing
   department.
  </para>
 
@@ -421,15 +421,14 @@
    </listitem>
    <listitem>
     <para>
-     Only use the &reg;, &tm;, or &sm; marks for
-     <phrase role="companyname">SUSE</phrase> products.
+     Only use the &reg;, &tm;, or &sm; marks for &suse; products.
     </para>
    </listitem>
    <listitem>
     <para>
      Use an * (asterisk) for all service marks or trademarks of third-party
      companies. This acknowledges the service mark or trademark of the other
-     company. It also protects SUSE if the protection of the brand changes
+     company. It also protects &suse; if the protection of the brand changes
      in any way.
     </para>
    </listitem>

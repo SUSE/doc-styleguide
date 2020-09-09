@@ -8,7 +8,7 @@
  <title>Managing Documents</title>
 
  <para>
-  This section provides an overview over some features of XML you can use to
+  This section provides an overview over features of XML you can use to
   manage documents.
  </para>
 
@@ -97,19 +97,19 @@
   <itemizedlist>
    <listitem>
     <para>
-     Representation of special characters that cannot easily be displayed,
-     entered or memorized.
+     To represent special characters that cannot easily be displayed,
+     entered, or memorized.
     </para>
    </listitem>
    <listitem>
     <para>
-     Integration of external files by entities representing references to
+     To integrate external files using entities representing references to
      their file names.
     </para>
    </listitem>
    <listitem>
     <para>
-     Text expansion for repeating content.
+     To repeat content easily.
     </para>
    </listitem>
   </itemizedlist>
@@ -150,7 +150,7 @@
     </listitem>
    </itemizedlist>
    <para>
-    Each header of a SUSE XML file includes the entity declaration file (by
+    Each header of a &suse; XML file includes the entity declaration file (by
     means of an entity):
    </para>
 <screen>&lt;!ENTITY % entities SYSTEM "entity-decl.ent"&gt;
@@ -199,29 +199,17 @@
   <sect3 xml:id="sec-type-entity">
    <title>Common Types of Entities</title>
    <para>
-    The following provides some background on the most important entities
-    used in creating documentation for SUSE products. To be able to adjust
-    product names of platform branding even past any deadlines, a set of
-    entities must represent the frequently-changing product names. The same
-    applies to book titles. An <filename>entity-decl.ent</filename> file
-    contains several categories of entities. These are:
+    An <filename>entity-decl.ent</filename> file contains several categories of
+    entities:
    </para>
    <variablelist>
     <varlistentry>
-     <term>General Entities</term>
+     <term>Products</term>
      <listitem>
       <para>
-       These feature mostly network IP addresses, host names, and user
-       names.
-      </para>
-     </listitem>
-    </varlistentry>
-    <varlistentry>
-     <term>Books</term>
-     <listitem>
-      <para>
-       Title entities should be defined for all SUSE books in case sudden
-       name changes are necessary.
+       All &suse; product names and other products and applications.
+       This helps in case sudden name changes are necessary and avoids
+       misspellings.
       </para>
      </listitem>
     </varlistentry>
@@ -229,26 +217,32 @@
      <term>Platforms</term>
      <listitem>
       <para>
-       To avoid changing the documentation itself if a vendor rebrands
-       products, use entities for all hardware architectures referenced in
-       the books.
+       Use entities for all hardware architectures referenced.
+       This helps in case sudden name changes are necessary.
       </para>
      </listitem>
     </varlistentry>
     <varlistentry>
-     <term>Products</term>
+     <term>Books</term>
      <listitem>
       <para>
-       We maintain a list of entities of all SUSE-based product names and
-       some other products and applications for which we write
-       documentation.
+       Title entities for all &suse; books.
+       This helps in case sudden name changes are necessary.
+      </para>
+     </listitem>
+    </varlistentry>
+    <varlistentry>
+     <term>General Entities</term>
+     <listitem>
+      <para>
+       Network IP addresses, host names, and user names.
       </para>
      </listitem>
     </varlistentry>
    </variablelist>
    <para>
     There are several guidelines to consider when working with product
-    entities for SUSE documentation:
+    entities for &suse; documentation:
    </para>
    <variablelist>
     <varlistentry>
@@ -258,16 +252,16 @@
        Use the entity name
        <tag class="genentity">product</tag>
        to identify the product for which the documentation is built. Set the
-       value of this entity once per release and let it expand to the name
-       of the current product.
+       value of this entity once per release and have it expand to the name
+       of the current product:
       </para>
-<screen>&lt;phrase role="productname"&gt;&amp;product;&lt;/phrase&gt; includes openLDAP.</screen>
+<screen>&lt;phrase role="productname"&gt;&amp;product;&lt;/phrase&gt; includes 389-ds.</screen>
       <para>
-       If you need to reference a particular product, use a more specific
-       entity.
+       If you need to reference a specific subproduct or a different product,
+       use a more specific entity:
       </para>
 <screen>The Ext4 file system has been included in the &lt;literal&gt;&amp;suse;&lt;/literal&gt;
-Kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
+Kernel since &lt;literal&gt;&amp;sle;&lt;/literal&gt; XYZ.</screen>
      </listitem>
     </varlistentry>
     <varlistentry>
@@ -287,7 +281,8 @@ Kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
      <term>Trademarks</term>
      <listitem>
       <para>
-       Follow the rules under <xref linkend="sec-product"/>.
+       Follow the rules under <xref linkend="sec-trademark"/> and
+       <xref linkend="sec-product"/>.
       </para>
      </listitem>
     </varlistentry>
