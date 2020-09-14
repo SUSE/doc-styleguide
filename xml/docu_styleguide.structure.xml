@@ -1500,12 +1500,6 @@ xml:id="tab-install-source"</screen>
   <itemizedlist>
    <listitem>
     <para>
-     List environments should be used with caution. Their markup is quite
-     distinct and overusing them might disrupt the text flow.
-    </para>
-   </listitem>
-   <listitem>
-    <para>
      Always introduce a list in the text. If needed for reference or better
      coordination with the related text, add a title and an
      <tag class="attribute">xml:id</tag>
@@ -1514,33 +1508,45 @@ xml:id="tab-install-source"</screen>
    </listitem>
    <listitem>
     <para>
-     A list must contain at least two items. If items are short and simple
+     A list must contain at least two items. If items are few, short, and simple
      in structure, consider incorporating them in the flowing text instead
-     of creating a list environment.
+     of creating a list.
     </para>
    </listitem>
    <listitem>
     <para>
-     Use sentence-style capitalization for list items. Use title-style
-     capitalization for terms in descriptive lists.
+     If all list items are nouns only, do not capitalize their first letter.
+     Use sentence-style capitalization for list items that are full sentences.
+     Use title-style capitalization for terms in descriptive lists.
     </para>
    </listitem>
    <listitem>
     <para>
-     When using multiple sentences as a list item, end all items in that
-     list with a period.
+     If each item in a list consists of a single sentence only, do not use a
+     period at the end of items.
+    </para>
+    <para>
+     If at least one list item consists of two full sentences, end all items
+     in that list with a period.
     </para>
    </listitem>
    <listitem>
     <para>
-     Make sure that the items are grammatically parallel constructions
-     providing a pattern that makes it easier to follow the text.
+     Wherever possible, use parallel phrasing and grammatical construction
+     between list items.
+     This provides a pattern that makes it easier to follow the text.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Lists are visually distinct and can break up text flow.
+     Do not overuse them.
     </para>
    </listitem>
   </itemizedlist>
   <para>
-   Never nest more than three lists within each other. In such cases,
-   restructure the information using a combination of lists and running
+   Never nest more than three lists within each other.
+   Instead, restructure the information using a combination of lists and running
    texts.
   </para>
   <para>
