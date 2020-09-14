@@ -164,11 +164,15 @@
   <example xml:id="ex-warning-source">
    <title>An Example of a Warning (Source)</title>
 <screen>&lt;warning&gt;
-  &lt;title&gt;Do Not Interrupt Creation of File Systems&lt;/title&gt;
-  &lt;para&gt;Creating a file system can take multiple hours. Interrupting this
-    process will result in a corrupt file system and an unusable installation.
-  &lt;/para&gt;
-  &lt;para&gt;Always wait until formatting has finished.&lt;/para&gt;
+ &lt;title&gt;Do Not Interrupt Creation of File Systems&lt;/title&gt;
+ &lt;para&gt;
+  Creating a file system can take multiple hours.
+  Interrupting this process will result in a corrupt file system and an
+  unusable installation.
+ &lt;/para&gt;
+ &lt;para&gt;
+  Always wait until formatting has finished.
+ &lt;/para&gt;
 &lt;/warning&gt;</screen>
   </example>
   <warning xml:id="ex-warning-output">
@@ -216,12 +220,16 @@
 <screen>&lt;screen&gt;color white/blue black/light-gray &lt;co xml:id="co-color"/&gt;
 default 0 &lt;co xml:id="co-default"/&gt;&lt;/screen&gt;
 &lt;calloutlist&gt;
-  &lt;callout arearefs="co-color"&gt;
-    &lt;para&gt;Colors of the boot loader menu.&lt;/para&gt;
-  &lt;/callout&gt;
-  &lt;callout arearefs="co-default"&gt;
-    &lt;para&gt;Defines the preselected option.&lt;/para&gt;
-  &lt;/callout&gt;
+ &lt;callout arearefs="co-color"&gt;
+  &lt;para&gt;
+   Colors of the boot loader menu.
+  &lt;/para&gt;
+ &lt;/callout&gt;
+ &lt;callout arearefs="co-default"&gt;
+  &lt;para&gt;
+   Defines the preselected option.
+  &lt;/para&gt;
+ &lt;/callout&gt;
 &lt;/calloutlist&gt;</screen>
   </example>
   <example xml:id="ex-callout-source">
@@ -530,7 +538,7 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
      </para>
     </listitem>
    </itemizedlist>
-<screen>&lt;screen&gt;&lt;prompt&gt;tux &gt; &lt;/prompt&gt;&lt;command&gt;ls /&lt;/command&gt;
+<screen>&lt;screen&gt;&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ls /&lt;/command&gt;
 bin   dev   lib         mnt     proc  sbin     suse  usr
 boot  etc   lib64       mounts  root  selinux  sys   var
 data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
@@ -666,10 +674,14 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
   <example xml:id="ex-cross-reference-source">
    <title>Example of a Cross Reference (Source)</title>
 <screen>&lt;sect2 xml:id="sec-cross-reference"&gt;
-  &lt;title&gt;Cross References&lt;/title&gt;
-  &lt;para&gt;Use the &lt;sgmltag class="emptytag"&gt;xref&lt;/sgmltag&gt; element ...&lt;/para&gt;
+ &lt;title&gt;Cross References&lt;/title&gt;
+ &lt;para&gt;
+  Use the &lt;sgmltag class="emptytag"&gt;xref&lt;/sgmltag&gt; element ...
+ &lt;/para&gt;
 ...
-  <emphasis role="bold">&lt;para&gt;See &lt;xref linkend="sec-cross-reference"/&gt;.&lt;/para&gt;</emphasis>
+ <emphasis role="bold">&lt;para&gt;
+  See &lt;xref linkend="sec-cross-reference"/&gt;.
+ &lt;/para&gt;</emphasis>
 &lt;/sect2&gt;</screen>
   </example>
   <example xml:id="ex-cross-reference-output">
@@ -723,12 +735,13 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   <example xml:id="ex-example">
    <title>Example of an Example</title>
 <screen>&lt;example xml:id="ex-example"&gt;
-  &lt;title&gt;Example of an Example&lt;/title&gt;
-  &lt;screen&gt;&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ps -xa&lt;/command&gt;
+ &lt;title&gt;Example of an Example&lt;/title&gt;
+ &lt;screen&gt;&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ps -xa&lt;/command&gt;
 
 5170 ?        S      0:00 kdeinit: khotkeys
 5172 ?        S      0:02 kdeinit: kdesktop
-5174 ?        S      0:04 kdeinit: kicker&lt;/screen&gt;</screen>
+5174 ?        S      0:04 kdeinit: kicker&lt;/screen&gt;
+&lt;/example&gt;</screen>
   </example>
   <table xml:id="tab-example">
    <title>Elements Related to
@@ -878,18 +891,18 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   <example xml:id="ex-figure">
    <title>Example of a Figure</title>
 <screen>&lt;figure xml:id="fig-picture"&gt;
-  &lt;title&gt;An Interesting Picture&lt;/title&gt;
-  &lt;mediaobject&gt;
-    &lt;imageobject role="fo"&gt;
-      &lt;imagedata fileref="picture.eps" width="80%" format="EPS"/&gt;
-    &lt;/imageobject&gt;
-    &lt;imageobject role="html"&gt;
-      &lt;imagedata fileref="picture.png" width="80%" format="PNG"/&gt;
-    &lt;/imageobject&gt;
-    &lt;textobject role="description"&gt;
-      &lt;phrase&gt;Cat chasing Geeko&lt;/phrase&gt;
-    &lt;/textobject&gt;
-  &lt;/mediaobject&gt;
+ &lt;title&gt;An Interesting Picture&lt;/title&gt;
+ &lt;mediaobject&gt;
+  &lt;imageobject role="fo"&gt;
+   &lt;imagedata fileref="picture.eps" width="80%" format="EPS"/&gt;
+  &lt;/imageobject&gt;
+  &lt;imageobject role="html"&gt;
+   &lt;imagedata fileref="picture.png" width="80%" format="PNG"/&gt;
+  &lt;/imageobject&gt;
+  &lt;textobject role="description"&gt;
+   &lt;phrase&gt;Cat chasing Geeko&lt;/phrase&gt;
+  &lt;/textobject&gt;
+ &lt;/mediaobject&gt;
 &lt;/figure&gt;</screen>
   </example>
   <table xml:id="tab-figure">
@@ -1137,20 +1150,23 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    <title>A Typical Example of a Glossary</title>
 <screen>&lt;glossary&gt;
 &lt;title&gt;Glossary&lt;/title&gt;
-  &lt;glossentry&gt;
-    &lt;glossterm xml:id="gt-extensible"&gt;Extensible Markup Language&lt;/glossterm&gt;
-    &lt;glossdef&gt;
-      &lt;para&gt;A markup language that defines a set of rules for encoding
-        documents in a format that is both human-readable and machine-readable.
-      &lt;/para&gt;
-    &lt;/glossdef&gt;
-  &lt;/glossentry&gt;
-  &lt;glossentry&gt;
-    &lt;glossterm&gt;XML&lt;/glossterm&gt;
-    &lt;glossdef&gt;
-      &lt;para&gt;See also &lt;xref linkend="gt-extensible"/&gt;.&lt;/para&gt;
-    &lt;/glossdef&gt;
-  &lt;/glossentry&gt;
+ &lt;glossentry&gt;
+  &lt;glossterm xml:id="gt-extensible"&gt;Extensible Markup Language&lt;/glossterm&gt;
+  &lt;glossdef&gt;
+   &lt;para&gt;
+    A markup language that defines a set of rules for encoding documents in a
+    format that is both human-readable and machine-readable.
+   &lt;/para&gt;
+  &lt;/glossdef&gt;
+ &lt;/glossentry&gt;
+ &lt;glossentry&gt;
+  &lt;glossterm&gt;XML&lt;/glossterm&gt;
+  &lt;glossdef&gt;
+   &lt;para&gt;
+    See also &lt;xref linkend="gt-extensible"/&gt;.
+   &lt;/para&gt;
+  &lt;/glossdef&gt;
+ &lt;/glossentry&gt;
 &lt;/glossary&gt;</screen>
   </example>
  </sect2>
@@ -1718,14 +1734,20 @@ xml:id="tab-install-source"</screen>
    </para>
    <example xml:id="ex-unordered-source">
     <title>Example of an Unordered List (Source)</title>
-<screen>&lt;para&gt;The following operating systems are supported:&lt;/para&gt;
+<screen>&lt;para&gt;
+ The following operating systems are supported:
+&lt;/para&gt;
 &lt;itemizedlist&gt;
-  &lt;listitem&gt;
-    &lt;para&gt;Linux, Kernel 2.4 and newer&lt;/para&gt;
-  &lt;/listitem&gt;
-  &lt;listitem&gt;
-    &lt;para&gt;FreeBSD 7 and newer&lt;/para&gt;
-  &lt;/listitem&gt;
+ &lt;listitem&gt;
+  &lt;para&gt;
+   Linux, Kernel 2.4 and newer
+  &lt;/para&gt;
+ &lt;/listitem&gt;
+ &lt;listitem&gt;
+  &lt;para&gt;
+   FreeBSD 7 and newer
+  &lt;/para&gt;
+ &lt;/listitem&gt;
 &lt;/itemizedlist&gt;</screen>
    </example>
    <example xml:id="ex-unordered-output">
@@ -1759,18 +1781,21 @@ xml:id="tab-install-source"</screen>
    </para>
    <example xml:id="ex-numbered-source">
     <title>Example of a Numbered List (Source)</title>
-<screen>&lt;para&gt;Before installing, make sure of the following:&lt;/para&gt;
+<screen>&lt;para&gt;
+ Before installing, make sure of the following:
+&lt;/para&gt;
 &lt;orderedlist&gt;
-  &lt;listitem&gt;
-    &lt;para&gt;The network connection of the computer is configured
-      properly.
-    &lt;/para&gt;
-  &lt;/listitem&gt;
-  &lt;listitem&gt;
-    &lt;para&gt;The latest security updates are installed. If you are in
-      doubt, run an online update.
-    &lt;/para&gt;
-  &lt;/listitem&gt;
+ &lt;listitem&gt;
+  &lt;para&gt;
+   The network connection of the computer is configured properly.
+  &lt;/para&gt;
+ &lt;/listitem&gt;
+ &lt;listitem&gt;
+  &lt;para&gt;
+   The latest security updates are installed.
+   If you are in doubt, run an online update.
+  &lt;/para&gt;
+ &lt;/listitem&gt;
 &lt;/orderedlist&gt;</screen>
    </example>
    <example xml:id="ex-numbered-output">
@@ -1815,22 +1840,26 @@ xml:id="tab-install-source"</screen>
    </para>
    <example xml:id="ex-descriptive-source">
     <title>Example of a Descriptive List (Source)</title>
-<screen>&lt;para&gt;This book consists of several parts:&lt;/para&gt;
+<screen>&lt;para&gt;
+ This book consists of several parts:
+&lt;/para&gt;
 &lt;variablelist&gt;
-  &lt;varlistentry&gt;
-    &lt;term&gt;Installation&lt;/term&gt;
-    &lt;listitem&gt;
-      &lt;para&gt;Learn about the installation and initial configuration
-        of a Linux system.
-      &lt;/para&gt;
-    &lt;/listitem&gt;
-  &lt;/varlistentry&gt;
-  &lt;varlistentry&gt;
-    &lt;term&gt;System&lt;/term&gt;
-    &lt;listitem&gt;
-      &lt;para&gt;Get a basic understanding of the system components.&lt;/para&gt;
-    &lt;/listitem&gt;
-  &lt;/varlistentry&gt;
+ &lt;varlistentry&gt;
+  &lt;term&gt;Installation&lt;/term&gt;
+  &lt;listitem&gt;
+   &lt;para&gt;
+    Learn about the installation and initial configuration of a Linux system.
+   &lt;/para&gt;
+  &lt;/listitem&gt;
+ &lt;/varlistentry&gt;
+ &lt;varlistentry&gt;
+  &lt;term&gt;System&lt;/term&gt;
+  &lt;listitem&gt;
+   &lt;para&gt;
+    Get a basic understanding of the system components.
+   &lt;/para&gt;
+  &lt;/listitem&gt;
+ &lt;/varlistentry&gt;
 &lt;/variablelist&gt;</screen>
    </example>
    <example xml:id="ex-descriptive">
@@ -1899,10 +1928,7 @@ xml:id="tab-install-source"</screen>
   <example xml:id="ex-keyboard">
    <title>Example of a Keyboard Combination</title>
 <screen>To save a file, press
-&lt;keycombo&gt;
-  &lt;keycap function="control"/&gt;
-  &lt;keycap&gt;S&lt;/keycap&gt;
-&lt;/keycombo&gt;.</screen>
+&lt;keycombo&gt;&lt;keycap function="control"/&gt;&lt;keycap&gt;S&lt;/keycap&gt;&lt;/keycombo&gt;.</screen>
   </example>
   <table xml:id="tab-keycap">
    <title>Elements Related to
@@ -2197,23 +2223,27 @@ xml:id="tab-install-source"</screen>
   <example xml:id="ex-procedure-source">
    <title>Example of a Procedure (Source)</title>
 <screen>&lt;procedure xml:id="pro-procedure"&gt;
-  &lt;title&gt;Example of a Procedure&lt;/title&gt;
-    &lt;para&gt;To add a new user to the system, perform the following steps:
-    &lt;/para&gt;
-    &lt;step&gt;
-      &lt;para&gt;In the &lt;phrase role="productname"&gt;YaST&lt;/phrase&gt; window,
-        click &lt;guimenu&gt;User and Group Management&lt;/guimenu&gt;.
-      &lt;/para&gt;
-    &lt;/step&gt;
-    &lt;step&gt;
-      &lt;para&gt;To open the &lt;guimenu&gt;Add a New User&lt;/guimenu&gt; dialog, click
-        &lt;guimenu&gt;Add&lt;/guimenu&gt;.
-      &lt;/para&gt;
-    &lt;/step&gt;
-    &lt;step&gt;
-      &lt;para&gt;Type in the user name and click &lt;guimenu&gt;Create&lt;/guimenu&gt;.
-      &lt;/para&gt;
-    &lt;/step&gt;
+ &lt;title&gt;Example of a Procedure&lt;/title&gt;
+ &lt;para&gt;
+  To add a new user to the system, perform the following steps:
+ &lt;/para&gt;
+ &lt;step&gt;
+  &lt;para&gt;
+   In the &lt;phrase role="productname"&gt;YaST&lt;/phrase&gt; window,
+   click &lt;guimenu&gt;User and Group Management&lt;/guimenu&gt;.
+  &lt;/para&gt;
+ &lt;/step&gt;
+ &lt;step&gt;
+  &lt;para&gt;
+   To open the &lt;guimenu&gt;Add a New User&lt;/guimenu&gt; dialog, click
+   &lt;guimenu&gt;Add&lt;/guimenu&gt;.
+  &lt;/para&gt;
+ &lt;/step&gt;
+ &lt;step&gt;
+  &lt;para&gt;
+   Type in the user name and click &lt;guimenu&gt;Create&lt;/guimenu&gt;.
+  &lt;/para&gt;
+ &lt;/step&gt;
 &lt;/procedure&gt;</screen>
   </example>
   <procedure xml:id="pro-procedure-output">
@@ -2337,30 +2367,33 @@ xml:id="tab-install-source"</screen>
   <example xml:id="ex-question">
    <title>Example of a Questions-and-Answers Section (Source)</title>
 <screen>&lt;qandaset&gt;
-  &lt;title&gt;Example of a Questions-and-Answers Section&lt;/title&gt;
-  &lt;qandaentry&gt;
-    &lt;question&gt;
-      &lt;para&gt;How can I check if the product was correctly installed?&lt;/para&gt;
-    &lt;/question&gt;
-    &lt;answer&gt;
-      &lt;para&gt;Open the log file. Look for entries starting with
-        &lt;literal&gt;Failed&lt;/literal&gt;.
-      &lt;/para&gt;
-    &lt;/answer&gt;
-  &lt;/qandaentry&gt;
-  &lt;qandaentry&gt;
-    &lt;question&gt;
-      &lt;para&gt;Why does the error
-        &lt;literal&gt;Not enough disk space&lt;/literal&gt; occur
-        during installation?
-      &lt;/para&gt;
-    &lt;/question&gt;
-    &lt;answer&gt;
-      &lt;para&gt;There is less than 4 GB of space available on the selected
-        partition.
-      &lt;/para&gt;
-    &lt;/answer&gt;
-  &lt;/qandaentry&gt;
+ &lt;title&gt;Example of a Questions-and-Answers Section&lt;/title&gt;
+ &lt;qandaentry&gt;
+  &lt;question&gt;
+   &lt;para&gt;
+    How can I check if the product was correctly installed?
+   &lt;/para&gt;
+  &lt;/question&gt;
+  &lt;answer&gt;
+   &lt;para&gt;
+    Open the log file.
+    Look for entries starting with &lt;literal&gt;Failed&lt;/literal&gt;.
+   &lt;/para&gt;
+  &lt;/answer&gt;
+ &lt;/qandaentry&gt;
+ &lt;qandaentry&gt;
+  &lt;question&gt;
+   &lt;para&gt;
+    Why does the error &lt;literal&gt;Not enough disk space&lt;/literal&gt; occur
+    during installation?
+   &lt;/para&gt;
+  &lt;/question&gt;
+  &lt;answer&gt;
+   &lt;para&gt;
+    There are less than 4 GB of space available on the selected partition.
+   &lt;/para&gt;
+  &lt;/answer&gt;
+ &lt;/qandaentry&gt;
 &lt;/qandaset&gt;</screen>
   </example>
   <qandaset>
@@ -2387,7 +2420,7 @@ xml:id="tab-install-source"</screen>
     </question>
     <answer>
      <para>
-      There is less than 4 GB of space available on the selected partition.
+      There are less than 4 GB of space available on the selected partition.
      </para>
     </answer>
    </qandaentry>
@@ -2506,24 +2539,24 @@ xml:id="tab-install-source"</screen>
   <example xml:id="ex-table-source">
    <title>Example of a Table (Source)</title>
 <screen>&lt;informaltable&gt;
-  &lt;tgroup cols="2"&gt;
-    &lt;thead&gt;
-      &lt;row&gt;
-        &lt;entry&gt;File System&lt;/entry&gt;
-        &lt;entry&gt;Maximum File Size&lt;/entry&gt;
-      &lt;/row&gt;
-    &lt;/thead&gt;
-    &lt;tbody&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Ext2 (1 kB block size)&lt;/entry&gt;
-        &lt;entry&gt;16 GB&lt;/entry&gt;
-      &lt;/row&gt;
-      &lt;row&gt;
-        &lt;entry&gt;Ext2 (2 kB block size)&lt;/entry&gt;
-        &lt;entry&gt;256 GB&lt;/entry&gt;
-      &lt;/row&gt;
-    &lt;/tbody&gt;
-  &lt;/tgroup&gt;
+ &lt;tgroup cols="2"&gt;
+  &lt;thead&gt;
+   &lt;row&gt;
+    &lt;entry&gt;File System&lt;/entry&gt;
+    &lt;entry&gt;Maximum File Size&lt;/entry&gt;
+   &lt;/row&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+   &lt;row&gt;
+    &lt;entry&gt;Ext2 (1 kB block size)&lt;/entry&gt;
+    &lt;entry&gt;16 GB&lt;/entry&gt;
+   &lt;/row&gt;
+   &lt;row&gt;
+    &lt;entry&gt;Ext2 (2 kB block size)&lt;/entry&gt;
+    &lt;entry&gt;256 GB&lt;/entry&gt;
+   &lt;/row&gt;
+  &lt;/tbody&gt;
+ &lt;/tgroup&gt;
 &lt;/informaltable&gt;</screen>
   </example>
   <example xml:id="ex-table-output">
@@ -2700,10 +2733,7 @@ xml:id="tab-install-source"</screen>
   <example xml:id="ex-nested-ui-item">
    <title>Example of Nested User Interface Items</title>
 <screen>To save a file, use
-  &lt;menuchoice&gt;
-    &lt;guimenu&gt;File&lt;/guimenu&gt;
-    &lt;guimenu&gt;Save&lt;/guimenu&gt;
-  &lt;/menuchoice&gt;.</screen>
+&lt;menuchoice&gt;&lt;guimenu&gt;File&lt;/guimenu&gt;&lt;guimenu&gt;Save&lt;/guimenu&gt;&lt;/menuchoice&gt;.</screen>
   </example>
   <table xml:id="tab-guimenu">
    <title>Elements Related to
