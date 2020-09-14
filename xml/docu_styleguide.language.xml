@@ -178,8 +178,8 @@
   <para>
    Under Linux, objects like directories, printers, or flash disks are all
    considered files. Therefore, the naming and markup conventions are the
-   same for <quote>drives</quote> (for example, hard disks, CD-ROM drives,
-   or flash disks), directories, or files.
+   same for <quote>drives</quote> (for example, hard disks, CD-ROM drives),
+   directories, or files.
   </para>
   <para>
    The layout for file names and directory names is the same. See the
