@@ -114,84 +114,87 @@
    </listitem>
   </itemizedlist>
   <para>
-   When an entity is defined, it can be used in many places. Entities reduce
-   the risk of translation errors and increase consistency because they are
-   translated once and automatically expanded elsewhere.
+   When an entity is defined, it can be used in many places.
+   Entities increase consistency, as they only need to be defined once and will
+   automatically be expanded everywhere within the document.
   </para>
   <sect3 xml:id="sec-use-entity">
    <title>Using Entity Files</title>
    <para>
-    SUSE uses a small set of custom entities. This set is localized for each
-    supported language. Find the SUSE set of entities in the file
-    <filename>entity-decl.ent</filename> under each documentation project
-    and each language. When the set has been modified for a new product
-    release, this file must be updated in the supported languages as well.
-   </para>
-   <para>
-    Each header of a SUSE XML file includes the entity declaration file (by
-    means of an entity):
-   </para>
-<screen>&lt;!ENTITY % entities SYSTEM "../entity-decl.ent"&gt;
-%entities;</screen>
-   <example xml:id="ex-entity">
-    <title>Excerpt from a SUSE entity-decl.ent</title>
-<screen>&lt;!ENTITY<co xml:id="co-decl"/> exampleserver<co xml:id="co-def"/>   "sun<co xml:id="co-val"/>"&gt;
-&lt;!ENTITY exampleserverip    "&amp;exampledomainip;.20"&gt;
-&lt;!ENTITY exampleserverfq    "&amp;exampleserver;.&amp;exampledomain;"<co xml:id="co-ent"/>&gt;</screen>
-    <calloutlist>
-     <callout arearefs="co-decl">
-      <para>
-       The kind of declaration to be made.
-      </para>
-     </callout>
-     <callout arearefs="co-def">
-      <para>
-       Defines the entity name.
-      </para>
-     </callout>
-     <callout arearefs="co-val">
-      <para>
-       Sets the value to which the processed entity should be expanded.
-      </para>
-     </callout>
-     <callout arearefs="co-ent">
-      <para>
-       Nests an entity in the value.
-      </para>
-     </callout>
-    </calloutlist>
-   </example>
-   <para>
-    A few hints for working with entities in SUSE documentation projects:
+    &suse; uses a set of custom entities.
+    Find these entities in the file
+    <filename>xml/entity-decl.ent</filename> in each documentation repository.
    </para>
    <itemizedlist>
     <listitem>
      <para>
-      If there should be any need for defining special entities (for
-      example, for localization purposes), add the new definitions to the
-      appropriate <filename>entity-decl.ent</filename> file. Never include
-      these definitions in the file header.
+      Entity files are only used for original, English-language documents.
+      Translated documents will contain only the resolved form of entities,
+      that is, plain-text directly in the document.
      </para>
     </listitem>
     <listitem>
      <para>
-      When translating entities, translate the value, but never change the
-      entity name. See also <xref linkend="ex-entity"/>.
+      If you need to define new custom entities, add their new definitions
+      to the <filename>xml/entity-decl.ent</filename> file.
+      Do not include custom entity definitions directly in the file header,
+      unless the custom definitions are needed to override externally
+      embedded entities.
      </para>
     </listitem>
     <listitem>
      <para>
-      Always use the exact notation of the entities when translating files
-      to avoid processing errors.
-     </para>
-    </listitem>
-    <listitem>
-     <para>
-      Make sure that you use proper UTF-8 encoding when editing and saving
-      the entity declaration file or any of the SUSE XML files.
+      Use the UTF-8 encoding when editing and saving
+      the entity declaration file or any of the &suse; XML files.
      </para>
     </listitem>
    </itemizedlist>
+   <para>
+    Each header of a SUSE XML file includes the entity declaration file (by
+    means of an entity):
+   </para>
+<screen>&lt;!ENTITY % entities SYSTEM "entity-decl.ent"&gt;
+%entities;</screen>
+   <example xml:id="ex-entity">
+    <title>Excerpt from an <filename>entity-decl.ent</filename></title>
+<screen>&lt;!ENTITY<co xml:id="co-declaration"/> server<co xml:id="co-definition"/> "sun<co xml:id="co-value"/>"&gt;
+&lt;!ENTITY domain  "example.org"&gt;
+&lt;!ENTITY host    "&amp;server;.&amp;domain;<co xml:id="co-entity"/>"&gt;
+&lt;!ENTITY hosttag "&lt;uri xmlns='http://docbook.org/ns/docbook'&gt;&amp;host;&lt;/uri&gt;<co xml:id="co-tag"/>"&gt;</screen>
+    <calloutlist>
+     <callout arearefs="co-declaration">
+      <para>
+       Making an entity declaration.
+      </para>
+     </callout>
+     <callout arearefs="co-definition">
+      <para>
+       Defining the entity name.
+      </para>
+     </callout>
+     <callout arearefs="co-value">
+      <para>
+       Setting the value which the processed entity should expand to.
+      </para>
+     </callout>
+     <callout arearefs="co-entity">
+      <para>
+       Using another entity within the entity value.
+       This entity reference is only valid if the other entity is defined
+       somewhere within the scope of the XML document that is built.
+       However, it does not matter whether the entity is defined before or
+       after the current entity definition.
+      </para>
+     </callout>
+     <callout arearefs="co-tag">
+      <para>
+       Using a DocBook/GeekoDoc element within the entity value.
+       The attribute <tag class="attribute">xmlns</tag> must be included to
+       define the correct XML namespace.
+      </para>
+     </callout>
+    </calloutlist>
+   </example>
   </sect3>
   <sect3 xml:id="sec-type-entity">
    <title>Common Types of Entities</title>
