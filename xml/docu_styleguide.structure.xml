@@ -1169,7 +1169,8 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    </listitem>
    <listitem>
     <para>
-     In identifiers, only use alphanumeric characters and <literal>-</literal>.
+     In identifiers, only use lower-case basic Latin alphabetic and numeric
+     characters and <literal>-</literal> (hyphen).
      Do not use <literal>_</literal> and <literal>.</literal> characters, as
      they may hurt search engine optimization.
     </para>
@@ -1177,7 +1178,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    <listitem>
     <para>
      Identifiers can consist of multiple parts. Join these parts with a
-     <literal>-</literal>.
+     <literal>-</literal> (hyphen).
     </para>
     <orderedlist>
      <listitem>
@@ -1196,8 +1197,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
         Shortened version of the title of the parent chapter or parent
         chapter-level element (preface, appendix, etc.). Do not add a
         chapter title label to chapters and chapter-level elements
-        themselves. Do not add chapter title identifiers within articles. Do
-        not use <literal>.</literal> within the chapter title label.
+        themselves. Do not add chapter title identifiers within articles.
        </para>
       </formalpara>
      </listitem>
@@ -1205,8 +1205,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
       <formalpara>
        <title>Element Title Label</title>
        <para>
-        Shortened version of name of the title of the element itself. Do not
-        use <literal>.</literal> within the element title label.
+        Shortened version of name of the title of the element itself.
        </para>
       </formalpara>
      </listitem>
