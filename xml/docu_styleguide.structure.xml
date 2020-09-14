@@ -852,7 +852,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    to present many links, group them by topic and create a separate list
    environment for each group. Provide a comprehensive title for each of the
    groups or an introductory sentence. For more information on creating lists,
-   see <xref linkend="sec-unordered"/>.
+   see <xref linkend="sec-itemized-list"/>.
   </para>
   <para>
    Where possible, provide translators with localized versions of links in
@@ -1470,31 +1470,27 @@ xml:id="tab-install-source"</screen>
   <itemizedlist>
    <listitem>
     <para>
-     Unordered lists (
-     <tag class="emptytag">itemizedlist</tag>
-     ). Also known as bullet lists.
+     Itemized lists (<tag class="emptytag">itemizedlist</tag>).
+     Also known as bullet lists or unordered lists.
     </para>
    </listitem>
    <listitem>
     <para>
-     Numbered lists (
-     <tag class="emptytag">orderedlist</tag>
-     ).
+     Ordered lists (<tag class="emptytag">orderedlist</tag>).
+     Also known as numbered lists.
     </para>
    </listitem>
    <listitem>
     <para>
-     Descriptive lists (
-     <tag class="emptytag">variablelist</tag>
-     ). Also known as definition lists or variable lists.
+     Variable lists (<tag class="emptytag">variablelist</tag>).
+     Also known as definition lists or description lists.
     </para>
    </listitem>
    <listitem>
     <para>
-     Procedures (
-     <tag class="emptytag">procedure</tag>
-     ). Also known as step-by-step instruction lists. Described in
-     <xref linkend="sec-procedure"/>.
+     Procedures (<tag class="emptytag">procedure</tag>).
+     Also known as step-by-step instructions or step lists.
+     Described in <xref linkend="sec-procedure"/>.
     </para>
    </listitem>
   </itemizedlist>
@@ -1651,15 +1647,15 @@ xml:id="tab-install-source"</screen>
     </tbody>
    </tgroup>
   </table>
-  <sect3 xml:id="sec-unordered">
-   <title>Unordered Lists</title>
+  <sect3 xml:id="sec-itemized-list">
+   <title>Itemized Lists</title>
    <para>
-    Unordered lists are often used to provide an overview of information or
-    to introduce or summarize information. They should be used when the
-    order of list items is irrelevant.
+    Use itemized lists whenever the order of list items is irrelevant.
+    They are often used to provide an overview of information or
+    to introduce or summarize information.
    </para>
-   <example xml:id="ex-unordered-source">
-    <title>Example of an Unordered List (Source)</title>
+   <example xml:id="ex-itemized-list-source">
+    <title>Example of an Itemized List (Source)</title>
 <screen>&lt;para&gt;
  The following operating systems are supported:
 &lt;/para&gt;
@@ -1676,8 +1672,8 @@ xml:id="tab-install-source"</screen>
  &lt;/listitem&gt;
 &lt;/itemizedlist&gt;</screen>
    </example>
-   <example xml:id="ex-unordered-output">
-    <title>Example of an Unordered List (Output)</title>
+   <example xml:id="ex-itemized-list-output">
+    <title>Example of an Itemized List (Output)</title>
     <para>
      The following operating systems are supported:
     </para>
@@ -1695,18 +1691,18 @@ xml:id="tab-install-source"</screen>
     </itemizedlist>
    </example>
   </sect3>
-  <sect3 xml:id="sec-numbered">
-   <title>Numbered Lists</title>
+  <sect3 xml:id="sec-ordered-list">
+   <title>Ordered Lists</title>
    <para>
-    Use numbered lists when items have a strict order, hierarchy, or
-    importance. If order is not relevant, use an unordered list or a
-    descriptive list. Do not use numbered lists to describe procedures.
-    Complex sequential actions are better described by means of the
-    procedure environment. For more information, see
+    Use ordered lists when items have a strict order, hierarchy, or importance.
+    Do not use ordered lists to describe sequential user actions (step-by-step
+    instructions).
+    For sequential user actions, use a procedure, as described in
     <xref linkend="sec-procedure"/>.
+    If order is not relevant, use an itemized list or a variable list.
    </para>
-   <example xml:id="ex-numbered-source">
-    <title>Example of a Numbered List (Source)</title>
+   <example xml:id="ex-ordered-list-source">
+    <title>Example of an Ordered List (Source)</title>
 <screen>&lt;para&gt;
  Before installing, make sure of the following:
 &lt;/para&gt;
@@ -1724,8 +1720,8 @@ xml:id="tab-install-source"</screen>
  &lt;/listitem&gt;
 &lt;/orderedlist&gt;</screen>
    </example>
-   <example xml:id="ex-numbered-output">
-    <title>Example of a Numbered List (Output)</title>
+   <example xml:id="ex-ordered-list-output">
+    <title>Example of an Ordered List (Output)</title>
     <para>
      Before installing, make sure of the following:
     </para>
@@ -1744,11 +1740,11 @@ xml:id="tab-install-source"</screen>
     </orderedlist>
    </example>
   </sect3>
-  <sect3 xml:id="sec-descriptive">
-   <title>Descriptive Lists</title>
+  <sect3 xml:id="sec-variable-list">
+   <title>Variable Lists</title>
    <para>
-    Use descriptive lists when defining terms or describing options. Each
-    item of a descriptive list contains a short term that is then further
+    Use variable lists when defining terms or describing options.
+    Each item of a variable list contains a short term that is then further
     explained by means of an explanatory paragraph.
    </para>
    <para>
@@ -1764,8 +1760,8 @@ xml:id="tab-install-source"</screen>
     <tag class="attribute">xml:id</tag>
     and referenced by the term.
    </para>
-   <example xml:id="ex-descriptive-source">
-    <title>Example of a Descriptive List (Source)</title>
+   <example xml:id="ex-variable-list-source">
+    <title>Example of a Variable List (Source)</title>
 <screen>&lt;para&gt;
  This book consists of several parts:
 &lt;/para&gt;
@@ -1788,8 +1784,8 @@ xml:id="tab-install-source"</screen>
  &lt;/varlistentry&gt;
 &lt;/variablelist&gt;</screen>
    </example>
-   <example xml:id="ex-descriptive">
-    <title>Example of a Descriptive List (Output)</title>
+   <example xml:id="ex-variable-list">
+    <title>Example of a Variable List (Output)</title>
     <para>
      This book consists of several parts:
     </para>
