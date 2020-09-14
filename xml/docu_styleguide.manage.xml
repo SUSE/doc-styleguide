@@ -300,7 +300,7 @@ Kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
   <para>
    XInclude elements are used to create modular source files that are easier
    to work with and can be re-used. When editing a book, create a new source
-   file for every chapter. Later, create a new Novdoc file that can serve as
+   file for every chapter. Later, create a new GeekoDoc file that can serve as
    the central point. In this file, use XInclude elements to reference all
    chapters in the correct order:
   </para>
@@ -313,12 +313,20 @@ Kernel since &lt;literal&gt;&amp;suselinux;&lt;/literal&gt; XYZ.</screen>
    control system as they reduce the chance of merge conflicts.
   </para>
   <para>
-   Files referenced via XIncludes must be well-formed XML files but do not
-   need to be valid DocBook files. This means that they must have a single
-   top-level element. Files that are supposed to be referenced multiple
-   times from within the same set, book or article must not contain any
-   <tag class="attribute">xml:id</tag>
+   By default, files referenced via XIncludes must be well-formed XML files that
+   valid GeekoDoc fragments.
+   This means that they must have a single top-level element and must not
+   contain elements that are not allowed in GeekoDoc.
+   Files that are supposed to be referenced multiple times from within the same
+   set, book, or article must not contain any <tag class="attribute">xml:id</tag>
    attributes.
+  </para>
+  <para>
+   XIncludes also allow embedding plaintext files, for example, as the
+   content in <tag class="emptytag">screen</tag> elements.
+   To embed a plaintext file, add the attribute
+   <tag class="attribute">parse="text"</tag> to the
+   <tag class="emptytag">xi:include</tag> element.
   </para>
  </sect2>
 </sect1>
