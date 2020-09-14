@@ -81,7 +81,7 @@
    or to mark up changes made for layout reasons. XML comments are never
    visible in a publication.
   </para>
-<screen>&lt;-- This is an XML comment. --!&gt;</screen>
+<screen>&lt;!-- This is an XML comment. --&gt;</screen>
   <para>
    For information about formatting XML comments, see
    <xref linkend="sec-format-xml"/>.
