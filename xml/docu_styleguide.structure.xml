@@ -793,13 +793,33 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
 <screen>&lt;link xlink:href="https://www.example.org/"/&gt;</screen>
   <para>
    Make URLs as short as possible before adding them to documentation. Many
-   long URLs can be shortened by leaving away non-essential pieces. This is
-   especially often the case with search URLs or URLs of Internet news
-   media. If a Web site provides a built-in URL shortener, use that. Do not
-   use external URL shorteners. External URL shorteners hide the destination
-   a link points to. They also introduce an extra element of uncertainty, as
-   the shortening service may disappear or become unreliable in the future.
+   long URLs can be shortened by leaving away non-essential pieces,
+   such as the <literal>_utm</literal> parameters used for marketing purposes.
+   If a Web site provides a built-in URL shortener, use it.
   </para>
+  <para>
+   Do not use third-party URL shorteners, such as bit.ly.
+   Third-party URL shorteners have the following disadvantages:
+  </para>
+  <itemizedlist>
+   <listitem>
+    <para>
+     They obscure the destination a link points to.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     They introduce an extra element of uncertainty, as the shortening
+     service may disappear or become unreliable in the future.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     The providers of these services usually run Web analytics that may
+     introduce privacy issues.
+    </para>
+   </listitem>
+  </itemizedlist>
   <para>
    Do not use
    <tag class="emptytag">link</tag>
