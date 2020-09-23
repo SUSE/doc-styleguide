@@ -42,19 +42,19 @@
    <para>
     However, do not use headlines to introduce an acronym. Headlines or captions
     must not contain both an acronym and its
-    expansion. When dealing with a term that is commonly written as an
+    expansion. If a term is commonly written as an
     acronym, use the acronym in the title. When mentioning the term for the
     first time in the following text, use its expanded form. All following
     occurrences of the term in this chapter should then use the acronym.
    </para>
    <para>
-    Create plural forms of acronyms by adding a lowercase <quote>s,</quote>
-    for example, use <quote>CDs</quote> and <quote>BIOSs.</quote> Never add
-    an apostrophe before the <quote>s.</quote>
+    Create plural forms of acronyms by adding a lowercase <quote>s,</quote>.
+    For example, use <quote>CDs</quote> and <quote>BIOSes.</quote> Never add
+    an apostrophe before the <quote>s</quote> or <quote>es.</quote>
    </para>
    <para>
-    Avoid using possessive forms of acronyms (a negative example would be
-    <quote>XMLʼs specification</quote>) for reasons of clarity.
+    For clarity, avoid using possessive forms of acronyms. For example, do not
+    use <quote>XMLʼs specification</quote>.
    </para>
   </sect3>
   <sect3 xml:id="sec-latin">
