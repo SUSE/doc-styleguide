@@ -91,7 +91,7 @@
        <formalpara>
         <title>Authorship information</title>
         <para>
-         Create a separate file <filename>authors.xml</filename> and add an
+         If authors should be listed for a book, create a separate file <filename>authors.xml</filename> and add an
          <tag class="emptytag">authorgroup</tag>
          listing all authors and contributors inside it. Include this file
          with an XInclude.
