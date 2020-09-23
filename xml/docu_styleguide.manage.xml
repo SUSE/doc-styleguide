@@ -309,7 +309,7 @@ Kernel since &lt;literal&gt;&amp;sle;&lt;/literal&gt; XYZ.</screen>
   </para>
   <para>
    By default, files referenced via XIncludes must be well-formed XML files that
-   valid GeekoDoc fragments.
+   are also valid GeekoDoc fragments.
    This means that they must have a single top-level element and must not
    contain elements that are not allowed in GeekoDoc.
    Files that are supposed to be referenced multiple times from within the same
