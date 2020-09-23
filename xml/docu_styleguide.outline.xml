@@ -175,9 +175,9 @@
     <term>Preface</term>
     <listitem>
      <para>
-      The preface of a book contains a brief overview of the content of a
-      manual, related manuals, and typographical conventions. It may also
-      contain information about its target audience.
+      Include a brief overview of the content of a
+      manual, related manuals, and typographical conventions.
+      The preface can also contain information about its target audience.
      </para>
     </listitem>
    </varlistentry>
@@ -188,7 +188,7 @@
       If you are writing a book with many chapters, create parts at the
       outline level above chapters. Parts should contain at least three
       chapters. Keep part titles clear and concise. Often a single noun is
-      enough. Typical part titles include <emphasis>Installation</emphasis>
+      enough. Typical part titles are <emphasis>Installation</emphasis>
       or <emphasis>Network</emphasis>.
      </para>
     </listitem>
@@ -240,8 +240,8 @@
        <formalpara>
         <title>Introduction</title>
         <para>
-         Introductory information follows directly after the highlights
-         section and is not be placed in a separate section.
+         Provide introductory information directly after the highlights.
+         Do not place it in a separate section.
         </para>
        </formalpara>
       </listitem>
@@ -257,10 +257,11 @@
         </para>
        </formalpara>
        <para>
-        Sections start with an introductory paragraph outlining the focus of
-        the section. If the section describes a sequential task, follow the
-        introduction with a procedure description, as discussed in
-        <xref linkend="sec-procedure"/>. Steps of a procedure can contain a
+        Start sections with an introductory paragraph outlining the focus of
+        the section.
+        If the section describes a sequential task, add a procedure description,
+        as discussed in <xref linkend="sec-procedure"/>.
+        Steps of a procedure can contain a
         cross reference to subsections where topical background is provided
         and an action is explained in detail. See also
         <xref linkend="sec-cross-reference"/>.
