@@ -34,16 +34,18 @@
   <sect3 xml:id="sec-acronym">
    <title>Acronyms</title>
    <para>
-    Headlines or captions must not contain both an acronym and its
+    Introduce acronyms by providing the expansion in parentheses after the
+    acronym.
+    Sometimes chapters and parts are used across multiple documents.
+    Therefore, provide the expansion of an acronym at least once per chapter.
+   </para>
+   <para>
+    However, do not use headlines to introduce an acronym. Headlines or captions
+    must not contain both an acronym and its
     expansion. When dealing with a term that is commonly written as an
     acronym, use the acronym in the title. When mentioning the term for the
     first time in the following text, use its expanded form. All following
     occurrences of the term in this chapter should then use the acronym.
-   </para>
-   <para>
-    Sometimes chapters and parts are used across multiple documents,
-    therefore provide the expansion of an acronym at least once per chapter.
-    Provide the expansion by adding it in parentheses after the acronym.
    </para>
    <para>
     Create plural forms of acronyms by adding a lowercase <quote>s,</quote>
