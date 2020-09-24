@@ -23,7 +23,6 @@
    <dm:bugtracker>
     <dm:url>https://github.com/SUSE/doc-styleguide/issues/new</dm:url>
     <dm:labels>via-report-link</dm:labels>
-    <dm:assignee>sknorr</dm:assignee>
    </dm:bugtracker>
   </dm:docmanager>
   <abstract>
