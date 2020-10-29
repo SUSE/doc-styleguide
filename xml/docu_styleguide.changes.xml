@@ -12,6 +12,62 @@
   This section lists the changes between versions of this Style Guide.
  </para>
 <!-- Add new versions to the beginning of the list. -->
+ <sect1 xml:id="sec-change-2020-10">
+  <title>Changes 2020-10</title>
+  <itemizedlist>
+   <listitem>
+    <para>
+     Explained issues with URL shorteners.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Clarified section on creating IDs by removing confusing left-overs from
+     description of former <literal>.</literal>-based ID scheme.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Clarified and updated section about entities.
+     Entities are not used during translation.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Updated XInclude section.
+     XIncluded documents can also be plain-text.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Updated formatting of XML examples across the document to 1-space indent,
+     as is encouraged in the XML formatting section of this document.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Removed Indexes section.
+     There has not been a practical use of this section in several years.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Updated advice on lists.
+     Deduplicated the sections about lists in the <citetitle>Structure and
+     Markup</citetitle> section versus the section in the
+     <citetitle>Language</citetitle> section.
+     Aligned list terminology with DocBook terminology.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Improved phrasing and fixed minor language and technical errors across the
+     document.
+    </para>
+   </listitem>
+  </itemizedlist>
+ </sect1>
+
  <sect1 xml:id="sec-change-2020-08">
   <title>Changes 2020-08</title>
   <itemizedlist>
