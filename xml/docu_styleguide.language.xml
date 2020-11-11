@@ -241,6 +241,12 @@
  <sect2 xml:id="sec-heading">
   <title>Headings</title>
   <para>
+   When writing a descriptive section, use a noun-based heading title,
+   for example, <quote>Concepts of Software</quote>.
+   When writing a task-orientated section, use a verb in gerund, for example,
+   <quote>Installing Software</quote>.
+  </para>
+  <para>
    Keep headings short and simple. Do not use both an acronym and the
    expanded form in a heading. Make sure that headlines in a chapter
    follow the same pattern.
