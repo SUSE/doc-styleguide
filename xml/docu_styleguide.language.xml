@@ -77,16 +77,23 @@
  </sect2>
 
  <sect2 xml:id="sec-capitalization">
-  <title>Capitalization and Title Style</title>
+  <title>Capitalization of headings and titles</title>
   <para>
-   In all running text, use sentence-style capitalization. That is, only
-   capitalize the first word of a sentence and proper names.
+   Sentence-style capitalization is the most common capitalization used in
+   &suse; documentation.
+   When using sentence-style capitalization, only proper names and the first
+   letter of the first word of a phrase are capitalized.
+   Apply sentence-style capitalization to all running text and all types of
+   headings and titles that are part of the document content.
+   An example for sentence-style capitalization is
+   <quote>Ceph core components</quote>.
   </para>
   <para>
-   Use title-style capitalization for all types of headings and titles,
-   including admonition, figure, and table titles. This style is explained in
-   <citetitle>The Chicago Manual of Style</citetitle> 8.167. A simplified
-   version of these rules is below:
+   For document titles, such as book, article, and set titles, use
+   title-style capitalization.
+   This capitalization style is explained in <citetitle>The Chicago Manual of
+   Style</citetitle>, 8.167.
+   A simplified version of these rules is below:
   </para>
   <orderedlist>
    <listitem>
@@ -128,10 +135,9 @@
    </listitem>
   </orderedlist>
   <para>
-   In variable lists, capitalize the term in title style unless it is a
-   complete sentence. In all list items, use sentence-style capitalization
-   (capitalize the first letter and proper nouns only). Use title style for
-   row and column labels in tables.
+   Examples for title-style capitalization are
+   <quote>Deployment Guide</quote> (book title) or <quote>Kernel Module
+   Packages for SUSE-Based Distributions</quote> (article title).
   </para>
  </sect2>
 
