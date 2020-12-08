@@ -5,7 +5,7 @@
     %entities;
 ]>
 <sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-outline">
- <title>Outline of a Manual</title>
+ <title>Outline of a manual</title>
 
  <para>
   Maintain a consistent structure within your documents. The structure can
@@ -47,7 +47,7 @@
   </para>
   <variablelist>
    <varlistentry>
-    <term>Title Page and Imprint</term>
+    <term>Title page and imprint</term>
     <listitem>
      <para>
       Both title page and imprint are created automatically, but depend on
@@ -66,7 +66,7 @@
       </listitem>
       <listitem>
        <formalpara>
-        <title>Product Name and Product Version</title>
+        <title>Product name and product version</title>
         <para>
          Work with the product manager to find the correct product name
          and version number. Mark this information up with
@@ -78,7 +78,7 @@
       </listitem>
       <listitem>
        <formalpara>
-        <title>Documentation Version or Revision Information</title>
+        <title>Documentation version or revision information</title>
         <para>
          Optionally, use the
          <tag class="emptytag">releaseinfo</tag>
@@ -89,7 +89,7 @@
       </listitem>
       <listitem>
        <formalpara>
-        <title>Authorship Information</title>
+        <title>Authorship information</title>
         <para>
          Create a separate file <filename>authors.xml</filename> and add an
          <tag class="emptytag">authorgroup</tag>
@@ -100,14 +100,14 @@
       </listitem>
       <listitem>
        <formalpara>
-        <title>Copyright Notice</title>
+        <title>Copyright notice</title>
         <para>
          Use the standard copyright notice reproduced below. Change the
          starting year of the copyright protection to the current year.
         </para>
        </formalpara>
        <example>
-        <title>Standard Copyright Notice</title>
+        <title>Standard copyright notice</title>
 <screen>&lt;legalnotice&gt;
  &lt;para&gt;
   Copyright &amp;copy; <replaceable>[starting year]</replaceable>&amp;ndash;&lt;?dbtimestamp format="Y"?&gt;
@@ -151,7 +151,7 @@
       instead of summarizing the outline.
      </para>
      <example xml:id="ex-abstract">
-      <title>An Abstract</title>
+      <title>An abstract</title>
       <para>
        &suse; Linux Enterprise ships with several file systems,
        including Btrfs, Ext3, Ext4. Each file system has advantages and
@@ -211,7 +211,7 @@
         </para>
        </formalpara>
        <example xml:id="ex-highlight">
-        <title>A Highlights Section</title>
+        <title>A highlights section</title>
         <para>
          This chapter will:
         </para>
@@ -286,7 +286,7 @@
       </listitem>
       <listitem>
        <formalpara>
-        <title>For More Information</title>
+        <title>For more information</title>
         <para>
          In this section, collect Web links to all sources of information
          that might prove helpful in a given context. Follow the general

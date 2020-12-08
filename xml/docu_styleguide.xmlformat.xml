@@ -14,7 +14,7 @@
  <itemizedlist>
   <listitem>
    <formalpara>
-    <title>Line Ends:</title>
+    <title>Line ends:</title>
     <para>
      Lines should end with a Unix line end character (also called line feed,
      LF, newline, or <literal>\n</literal>).
@@ -23,7 +23,7 @@
   </listitem>
   <listitem>
    <formalpara>
-    <title>Line Length:</title>
+    <title>Line length:</title>
     <para>
      Lines should be at most 80 characters long, unless one of the following
      exceptions applies:
@@ -65,7 +65,7 @@
   </listitem>
   <listitem>
    <formalpara>
-    <title>Trailing Whitespace:</title>
+    <title>Trailing whitespace:</title>
     <para>
      Avoid introducing trailing whitespace characters such as spaces,
      protected spaces, or tabs. Many editors have an option to view such
@@ -76,7 +76,7 @@
   </listitem>
   <listitem>
    <formalpara>
-    <title>Formatting of Block Elements:</title>
+    <title>Formatting of block elements:</title>
     <para>
      Block elements are all DocBook elements that create a rectangular visual
      block in the layout, such as <tag class="emptytag">para</tag>,
@@ -97,7 +97,7 @@
   </listitem>
   <listitem>
    <formalpara>
-    <title>Formatting of Inline Elements:</title>
+    <title>Formatting of inline elements:</title>
     <para>
      Block elements are all DocBook elements that can be reflowed freely
      within a block element, such as
@@ -114,7 +114,7 @@
   </listitem>
   <listitem>
    <formalpara>
-    <title>Formatting of Title Elements:</title>
+    <title>Formatting of title elements:</title>
     <para>
      The title elements <tag class="emptytag">title</tag> and
      <tag class="emptytag">term</tag> are block elements. However, they
@@ -131,7 +131,7 @@
   </listitem>
   <listitem>
    <formalpara>
-    <title>Formatting of Computer Output/Computer Input Blocks:</title>
+    <title>Formatting of computer output/computer input blocks:</title>
     <para>
      The Computer Output/Computer Input Block Element
      <tag class="emptytag">screen</tag> should be treated like a block
@@ -144,7 +144,7 @@
   </listitem>
   <listitem>
    <formalpara>
-    <title>XML Comments</title>
+    <title>XML comments</title>
     <para>
      XML comments should follow the indentation of the document. Where
      feasible, put XML comments on new lines to make reading diffs and later
@@ -169,7 +169,7 @@
   </listitem>
   <listitem>
    <formalpara>
-    <title>Reflowing Entire Files:</title>
+    <title>Reflowing entire files:</title>
     <para>
      Before reflowing entire files to a different XML formatting style, weigh
      the cost of keeping the document in its current state against the cost

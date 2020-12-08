@@ -5,7 +5,7 @@
     %entities;
 ]>
 <sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-structure">
- <title>Structure and Markup</title>
+ <title>Structure and markup</title>
 
  <para>
   Structure your documentation by tasks relevant to the user instead of
@@ -23,7 +23,7 @@
  </para>
 
  <table xml:id="tab-book">
-  <title>Important Elements</title>
+  <title>Important elements</title>
   <tgroup cols="2">
    <thead>
     <row>
@@ -86,7 +86,7 @@
  </table>
 
  <sect2 xml:id="sec-admonition">
-  <title>Admonitory and Advisory Paragraphs</title>
+  <title>Admonitory and advisory paragraphs</title>
   <para>
    To make readers aware of potential problems and recent changes, or to
    give them tips, use an admonition element. Avoid using more than one
@@ -162,9 +162,9 @@
    </listitem>
   </itemizedlist>
   <example xml:id="ex-warning-source">
-   <title>An Example of a Warning (Source)</title>
+   <title>An example of a warning (source)</title>
 <screen>&lt;warning&gt;
- &lt;title&gt;Do Not Interrupt Creation of File Systems&lt;/title&gt;
+ &lt;title&gt;Do not interrupt creation of file systems&lt;/title&gt;
  &lt;para&gt;
   Creating a file system can take multiple hours.
   Interrupting this process will result in a corrupt file system and an
@@ -176,7 +176,7 @@
 &lt;/warning&gt;</screen>
   </example>
   <warning xml:id="ex-warning-output">
-   <title>Do Not Interrupt Creation of File Systems</title>
+   <title>Do not interrupt creation of file systems</title>
    <para>
     Creating a file system can take multiple hours. Interrupting this
     process will result in a corrupt file system and an unusable
@@ -189,7 +189,7 @@
  </sect2>
 
  <sect2 xml:id="sec-application">
-  <title>Application Names</title>
+  <title>Application names</title>
   <para>
    When referring to an application, add a
    <tag class="emptytag">phrase role="productname"</tag>
@@ -216,7 +216,7 @@
    See also <xref linkend="sec-example"/>.
   </para>
   <example xml:id="ex-callout-output">
-   <title>Example of Callouts (Source)</title>
+   <title>Example of callouts (source)</title>
 <screen>&lt;screen&gt;color white/blue black/light-gray &lt;co xml:id="co-color"/&gt;
 default 0 &lt;co xml:id="co-default"/&gt;&lt;/screen&gt;
 &lt;calloutlist&gt;
@@ -233,7 +233,7 @@ default 0 &lt;co xml:id="co-default"/&gt;&lt;/screen&gt;
 &lt;/calloutlist&gt;</screen>
   </example>
   <example xml:id="ex-callout-source">
-   <title>Example of Callouts (Output)</title>
+   <title>Example of callouts (output)</title>
 <screen>color white/blue black/light-gray <co xml:id="co-color"/>
 default 0 <co xml:id="co-default"/></screen>
    <calloutlist>
@@ -250,7 +250,7 @@ default 0 <co xml:id="co-default"/></screen>
    </calloutlist>
   </example>
   <table xml:id="tab-callout">
-   <title>Elements Related to
+   <title>Elements related to
     <tag class="emptytag">callout</tag></title>
    <tgroup cols="2">
     <thead>
@@ -305,7 +305,7 @@ default 0 <co xml:id="co-default"/></screen>
  </sect2>
 
  <sect2 xml:id="sec-command-line">
-  <title>Command Line Input and Command Line Output</title>
+  <title>Command line input and command line output</title>
   <para>
    When dealing with user input and system output shorter than 30
    characters, format it with an inline element, such as
@@ -324,7 +324,7 @@ default 0 <co xml:id="co-default"/></screen>
    <xref linkend="sec-prompt"/>.
   </para>
   <table xml:id="tab-command-line">
-   <title>Elements Related to Command Line Input and Output</title>
+   <title>Elements related to command line input and output</title>
    <tgroup cols="2">
     <thead>
      <row>
@@ -453,7 +453,7 @@ default 0 <co xml:id="co-default"/></screen>
    </para>
   </sect3>
   <sect3 xml:id="sec-file-markup">
-   <title>File Names</title>
+   <title>File names</title>
    <para>
     A file name is the name of a file on a local or network disk. Can
     contain a simple name or could include a path or other elements specific
@@ -632,7 +632,7 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
    </para>
   </sect3>
   <sect3 xml:id="sec-variable">
-   <title>Variable Names</title>
+   <title>Variable names</title>
    <para>
     To reference to names of variables, use the
     <tag class="emptytag">varname</tag>
@@ -644,7 +644,7 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
  </sect2>
 
  <sect2 xml:id="sec-cross-reference">
-  <title>Cross References</title>
+  <title>Cross references</title>
   <para>
    Use the
    <tag class="emptytag">xref</tag>
@@ -672,9 +672,9 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
    under <xref linkend="sec-id"/>.
   </para>
   <example xml:id="ex-cross-reference-source">
-   <title>Example of a Cross Reference (Source)</title>
+   <title>Example of a cross reference (source)</title>
 <screen>&lt;sect2 xml:id="sec-cross-reference"&gt;
- &lt;title&gt;Cross References&lt;/title&gt;
+ &lt;title&gt;Cross references&lt;/title&gt;
  &lt;para&gt;
   Use the &lt;sgmltag class="emptytag"&gt;xref&lt;/sgmltag&gt; element ...
  &lt;/para&gt;
@@ -685,7 +685,7 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
 &lt;/sect2&gt;</screen>
   </example>
   <example xml:id="ex-cross-reference-output">
-   <title>Example of a Cross Reference (Output)</title>
+   <title>Example of a cross reference (output)</title>
    <para>
     See <xref linkend="sec-cross-reference"/>.
     <remark>sknorr, 2014-01-21: does this work for the average
@@ -733,9 +733,9 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    Callouts are described in <xref linkend="sec-callout"/>.
   </para>
   <example xml:id="ex-example">
-   <title>Example of an Example</title>
+   <title>Example of an example</title>
 <screen>&lt;example xml:id="ex-example"&gt;
- &lt;title&gt;Example of an Example&lt;/title&gt;
+ &lt;title&gt;Example of an example&lt;/title&gt;
  &lt;screen&gt;&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ps -xa&lt;/command&gt;
 
 5170 ?        S      0:00 kdeinit: khotkeys
@@ -744,7 +744,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
 &lt;/example&gt;</screen>
   </example>
   <table xml:id="tab-example">
-   <title>Elements Related to
+   <title>Elements related to
     <tag class="emptytag">example</tag></title>
    <tgroup cols="2">
     <thead>
@@ -789,7 +789,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
  </sect2>
 
  <sect2 xml:id="sec-link">
-  <title>External Links</title>
+  <title>External links</title>
   <para>
    Use the
    <tag class="emptytag">link</tag>
@@ -889,9 +889,9 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    HTML output.
   </para>
   <example xml:id="ex-figure">
-   <title>Example of a Figure</title>
+   <title>Example of a figure</title>
 <screen>&lt;figure xml:id="fig-picture"&gt;
- &lt;title&gt;An Interesting Picture&lt;/title&gt;
+ &lt;title&gt;An interesting picture&lt;/title&gt;
  &lt;mediaobject&gt;
   &lt;imageobject role="fo"&gt;
    &lt;imagedata fileref="picture.eps" width="80%" format="EPS"/&gt;
@@ -906,7 +906,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
 &lt;/figure&gt;</screen>
   </example>
   <table xml:id="tab-figure">
-   <title>Elements Related to
+   <title>Elements related to
     <tag class="emptytag">figure</tag></title>
    <tgroup cols="2">
     <thead>
@@ -1147,7 +1147,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    <xref linkend="ex-glossary"/>.
   </para>
   <example xml:id="ex-glossary">
-   <title>A Typical Example of a Glossary</title>
+   <title>A typical example of a glossary</title>
 <screen>&lt;glossary&gt;
 &lt;title&gt;Glossary&lt;/title&gt;
  &lt;glossentry&gt;
@@ -1208,7 +1208,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
      </listitem>
      <listitem>
       <formalpara>
-       <title>Chapter Title Label</title>
+       <title>Chapter title label</title>
        <para>
         Shortened version of the title of the parent chapter or parent
         chapter-level element (preface, appendix, etc.). Do not add a
@@ -1219,7 +1219,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
      </listitem>
      <listitem>
       <formalpara>
-       <title>Element Title Label</title>
+       <title>Element title label</title>
        <para>
         Shortened version of name of the title of the element itself.
        </para>
@@ -1227,7 +1227,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
      </listitem>
     </orderedlist>
     <example>
-     <title>Examples of Identifiers</title>
+     <title>Examples of identifiers</title>
 <screen>xml:id="cha-install"
 xml:id="sec-install-yast"
 xml:id="tab-install-source"</screen>
@@ -1257,9 +1257,9 @@ xml:id="tab-install-source"</screen>
    rules to newly created documentation only.
   </para>
   <table xml:id="tab-id-prefix">
-   <title>Abbreviations for Different Elements in an
+   <title>Abbreviations for different elements in an
     <tag class="attribute">xml:id</tag>
-    Attribute</title>
+    attribute</title>
    <tgroup cols="2">
     <thead>
      <row>
@@ -1552,7 +1552,7 @@ xml:id="tab-install-source"</screen>
    attribute. For more information, see <xref linkend="sec-cross-reference"/>.
   </para>
   <table xml:id="tab-list">
-   <title>Elements Related to Lists</title>
+   <title>Elements related to lists</title>
    <tgroup cols="2">
     <thead>
      <row>
@@ -1651,14 +1651,14 @@ xml:id="tab-install-source"</screen>
    </tgroup>
   </table>
   <sect3 xml:id="sec-itemized-list">
-   <title>Itemized Lists</title>
+   <title>Itemized lists</title>
    <para>
     Use itemized lists whenever the order of list items is irrelevant.
     They are often used to provide an overview of information or
     to introduce or summarize information.
    </para>
    <example xml:id="ex-itemized-list-source">
-    <title>Example of an Itemized List (Source)</title>
+    <title>Example of an itemized list (source)</title>
 <screen>&lt;para&gt;
  The following operating systems are supported:
 &lt;/para&gt;
@@ -1676,7 +1676,7 @@ xml:id="tab-install-source"</screen>
 &lt;/itemizedlist&gt;</screen>
    </example>
    <example xml:id="ex-itemized-list-output">
-    <title>Example of an Itemized List (Output)</title>
+    <title>Example of an itemized list (output)</title>
     <para>
      The following operating systems are supported:
     </para>
@@ -1695,7 +1695,7 @@ xml:id="tab-install-source"</screen>
    </example>
   </sect3>
   <sect3 xml:id="sec-ordered-list">
-   <title>Ordered Lists</title>
+   <title>Ordered lists</title>
    <para>
     Use ordered lists when items have a strict order, hierarchy, or importance.
     Do not use ordered lists to describe sequential user actions (step-by-step
@@ -1705,7 +1705,7 @@ xml:id="tab-install-source"</screen>
     If order is not relevant, use an itemized list or a variable list.
    </para>
    <example xml:id="ex-ordered-list-source">
-    <title>Example of an Ordered List (Source)</title>
+    <title>Example of an ordered list (source)</title>
 <screen>&lt;para&gt;
  Before installing, make sure of the following:
 &lt;/para&gt;
@@ -1724,7 +1724,7 @@ xml:id="tab-install-source"</screen>
 &lt;/orderedlist&gt;</screen>
    </example>
    <example xml:id="ex-ordered-list-output">
-    <title>Example of an Ordered List (Output)</title>
+    <title>Example of an ordered list (output)</title>
     <para>
      Before installing, make sure of the following:
     </para>
@@ -1744,7 +1744,7 @@ xml:id="tab-install-source"</screen>
    </example>
   </sect3>
   <sect3 xml:id="sec-variable-list">
-   <title>Variable Lists</title>
+   <title>Variable lists</title>
    <para>
     Use variable lists when defining terms or describing options.
     Each item of a variable list contains a short term that is then further
@@ -1763,7 +1763,7 @@ xml:id="tab-install-source"</screen>
     and referenced by the term.
    </para>
    <example xml:id="ex-variable-list-source">
-    <title>Example of a Variable List (Source)</title>
+    <title>Example of a variable list (source)</title>
 <screen>&lt;para&gt;
  This book consists of several parts:
 &lt;/para&gt;
@@ -1787,7 +1787,7 @@ xml:id="tab-install-source"</screen>
 &lt;/variablelist&gt;</screen>
    </example>
    <example xml:id="ex-variable-list">
-    <title>Example of a Variable List (Output)</title>
+    <title>Example of a variable list (output)</title>
     <para>
      This book consists of several parts:
     </para>
@@ -1815,7 +1815,7 @@ xml:id="tab-install-source"</screen>
  </sect2>
 
  <sect2 xml:id="sec-keyboard">
-  <title>Keys and Key Combinations</title>
+  <title>Keys and key combinations</title>
   <para>
    Capitalize all keys as printed on a standard keyboard. Capitalize all letter
    keys. To refer to a capitalized character,
@@ -1846,16 +1846,16 @@ xml:id="tab-install-source"</screen>
    <xref linkend="sec-cross-reference"/>.
   </para>
   <example xml:id="ex-key">
-   <title>Example of a Key</title>
+   <title>Example of a key</title>
 <screen>To create a screenshot, press &lt;keycap&gt;Print Screen&lt;/keycap&gt;.</screen>
   </example>
   <example xml:id="ex-keyboard">
-   <title>Example of a Keyboard Combination</title>
+   <title>Example of a keyboard combination</title>
 <screen>To save a file, press
 &lt;keycombo&gt;&lt;keycap function="control"/&gt;&lt;keycap&gt;S&lt;/keycap&gt;&lt;/keycombo&gt;.</screen>
   </example>
   <table xml:id="tab-keycap">
-   <title>Elements Related to
+   <title>Elements related to
     <tag class="emptytag">keycap</tag></title>
    <tgroup cols="2">
     <thead>
@@ -2010,7 +2010,7 @@ xml:id="tab-install-source"</screen>
  </sect2>
 
  <sect2 xml:id="sec-other-external">
-  <title>References to Other External Resources</title>
+  <title>References to other external resources</title>
   <remark>sknorr, 2014-01-22: This section could probably use a better
         structure instead of this mishmash.
       </remark>
@@ -2071,7 +2071,7 @@ xml:id="tab-install-source"</screen>
  </sect2>
 
  <sect2 xml:id="sec-outline-level">
-  <title>Outline Levels and Sectioning</title>
+  <title>Outline levels and sectioning</title>
   <para>
    Create sections using the
    <tag class="emptytag">sect1</tag>, <tag class="emptytag">sect2</tag>, and
@@ -2145,9 +2145,9 @@ xml:id="tab-install-source"</screen>
    details on the step.
   </para>
   <example xml:id="ex-procedure-source">
-   <title>Example of a Procedure (Source)</title>
+   <title>Example of a procedure (source)</title>
 <screen>&lt;procedure xml:id="pro-procedure"&gt;
- &lt;title&gt;Example of a Procedure&lt;/title&gt;
+ &lt;title&gt;Example of a procedure&lt;/title&gt;
  &lt;para&gt;
   To add a new user to the system, perform the following steps:
  &lt;/para&gt;
@@ -2171,7 +2171,7 @@ xml:id="tab-install-source"</screen>
 &lt;/procedure&gt;</screen>
   </example>
   <procedure xml:id="pro-procedure-output">
-   <title>Example of a Procedure (Output)</title>
+   <title>Example of a procedure (output)</title>
    <para>
     To add a new user to the system, perform the following steps:
    </para>
@@ -2194,7 +2194,7 @@ xml:id="tab-install-source"</screen>
    </step>
   </procedure>
   <table xml:id="tab-procedure">
-   <title>Elements Related to
+   <title>Elements related to
     <tag class="emptytag">procedure</tag></title>
    <tgroup cols="2">
     <thead>
@@ -2268,7 +2268,7 @@ xml:id="tab-install-source"</screen>
  </sect2>
 
  <sect2 xml:id="sec-question">
-  <title>Questions and Answers</title>
+  <title>Questions and answers</title>
   <para>
    Use questions-and-answers sections to present information about
    troubleshooting or commonly asked questions about a product. Never use
@@ -2289,9 +2289,9 @@ xml:id="tab-install-source"</screen>
    elements to further structure the section.
   </para>
   <example xml:id="ex-question">
-   <title>Example of a Questions-and-Answers Section (Source)</title>
+   <title>Example of a questions-and-answers section (source)</title>
 <screen>&lt;qandaset&gt;
- &lt;title&gt;Example of a Questions-and-Answers Section&lt;/title&gt;
+ &lt;title&gt;Example of a questions-and-answers section&lt;/title&gt;
  &lt;qandaentry&gt;
   &lt;question&gt;
    &lt;para&gt;
@@ -2321,7 +2321,7 @@ xml:id="tab-install-source"</screen>
 &lt;/qandaset&gt;</screen>
   </example>
   <qandaset>
-   <title>Example of a Questions-and-Answers Section (Output)</title>
+   <title>Example of a questions-and-answers section (output)</title>
    <qandaentry>
     <question>
      <para>
@@ -2350,7 +2350,7 @@ xml:id="tab-install-source"</screen>
    </qandaentry>
   </qandaset>
   <table xml:id="tab-qandaset">
-   <title>Elements Related to
+   <title>Elements related to
     <tag class="emptytag">qandaset</tag></title>
    <tgroup cols="2">
     <thead>
@@ -2461,7 +2461,7 @@ xml:id="tab-install-source"</screen>
    list.
   </para>
   <example xml:id="ex-table-source">
-   <title>Example of a Table (Source)</title>
+   <title>Example of a table (source)</title>
 <screen>&lt;informaltable&gt;
  &lt;tgroup cols="2"&gt;
   &lt;thead&gt;
@@ -2484,7 +2484,7 @@ xml:id="tab-install-source"</screen>
 &lt;/informaltable&gt;</screen>
   </example>
   <example xml:id="ex-table-output">
-   <title>Example of a Table (Output)</title>
+   <title>Example of a table (output)</title>
    <informaltable>
     <tgroup cols="2">
      <thead>
@@ -2507,7 +2507,7 @@ xml:id="tab-install-source"</screen>
    </informaltable>
   </example>
   <table xml:id="tab-table">
-   <title>Elements Related to
+   <title>Elements related to
     <tag class="emptytag">table</tag></title>
    <tgroup cols="2">
     <thead>
@@ -2635,7 +2635,7 @@ xml:id="tab-install-source"</screen>
  </sect2>
 
  <sect2 xml:id="sec-ui-item-markup">
-  <title>User Interface Items</title>
+  <title>User interface items</title>
   <para>
    To mark up single user interface items, use
    <tag class="emptytag">guimenu</tag>. To mark up nested menu structures, use
@@ -2651,16 +2651,16 @@ xml:id="tab-install-source"</screen>
    <xref linkend="sec-ui-item-language"/>.
   </para>
   <example xml:id="ex-single-ui-item">
-   <title>Example of a Single User Interface Item</title>
+   <title>Example of a single user interface item</title>
 <screen>To open a file, click &lt;guimenu&gt;Open&lt;/guimenu&gt;.</screen>
   </example>
   <example xml:id="ex-nested-ui-item">
-   <title>Example of Nested User Interface Items</title>
+   <title>Example of nested user interface items</title>
 <screen>To save a file, use
 &lt;menuchoice&gt;&lt;guimenu&gt;File&lt;/guimenu&gt;&lt;guimenu&gt;Save&lt;/guimenu&gt;&lt;/menuchoice&gt;.</screen>
   </example>
   <table xml:id="tab-guimenu">
-   <title>Elements Related to
+   <title>Elements related to
     <tag class="emptytag">guimenu</tag></title>
    <tgroup cols="2">
     <thead>

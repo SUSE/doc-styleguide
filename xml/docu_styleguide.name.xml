@@ -5,7 +5,7 @@
     %entities;
 ]>
 <sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-name">
- <title>Names of Example Items</title>
+ <title>Names of example items</title>
 
  <para>
   This section summarizes conventions for creating generic names for objects
@@ -23,7 +23,7 @@
  </sect2>
 
  <sect2 xml:id="sec-host">
-  <title>Host Names</title>
+  <title>Host names</title>
   <para>
    Use objects of the solar system: For the most important system, use
    <systemitem>sun</systemitem>. For other systems, use the names of
@@ -33,7 +33,7 @@
  </sect2>
 
  <sect2 xml:id="sec-ipv4">
-  <title>IPv4 Addresses</title>
+  <title>IPv4 addresses</title>
   <para>
    Use addresses from the class C subnet <literal>192.168.255.0</literal>
    for examples. That is, replace the final <literal>0</literal> by any
@@ -45,7 +45,7 @@
  </sect2>
 
  <sect2 xml:id="sec-ipv6">
-  <title>IPv6 Addresses</title>
+  <title>IPv6 addresses</title>
   <para>
    Use addresses from the subnet <literal>2001:0db8::/32</literal> for
    examples. That is, after the <literal>2001:0db8:</literal> prefix, add

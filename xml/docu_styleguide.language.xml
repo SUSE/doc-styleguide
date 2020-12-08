@@ -58,7 +58,7 @@
    </para>
   </sect3>
   <sect3 xml:id="sec-latin">
-   <title>Latin Abbreviations</title>
+   <title>Latin abbreviations</title>
    <para>
     Do not use Latin abbreviations. Use the full English form: for example,
     use <quote>that is</quote> instead of <quote>i.e.</quote>. As an
@@ -67,7 +67,7 @@
    </para>
   </sect3>
   <sect3 xml:id="sec-measurement">
-   <title>Units of Measurement</title>
+   <title>Units of measurement</title>
    <para>
     You may use abbreviations of common units of measurement.
     For more information on units of measurement, see
@@ -174,7 +174,7 @@
  </sect2>
 
  <sect2 xml:id="sec-end-sentence">
-  <title>End of Sentence Punctuation</title>
+  <title>End of sentence punctuation</title>
   <para>
    End sentences in a period. Avoid using exclamation marks. Restrict
    question marks to question and answer sections.
@@ -182,7 +182,7 @@
  </sect2>
 
  <sect2 xml:id="sec-file-language">
-  <title>File and Directory Names</title>
+  <title>File and directory names</title>
   <para>
    Under Linux, objects like directories, printers, or flash disks are all
    considered files. Therefore, the naming and markup conventions are the
@@ -231,7 +231,7 @@
  </sect2>
 
  <sect2 xml:id="sec-bias">
-  <title>Gender Bias</title>
+  <title>Gender bias</title>
   <para>
    Avoid indicating gender in your documentation. If possible, use plural to
    allow use of <quote>they</quote> as the pronoun. Otherwise, use <quote>he
@@ -271,7 +271,7 @@
  </sect2>
 
  <sect2 xml:id="sec-number">
-  <title>Numbers and Measurements</title>
+  <title>Numbers and measurements</title>
   <para>
    Write the integers zero through nine as words. Use numerals for all other
    numbers.
@@ -335,7 +335,7 @@
  </sect2>
 
  <sect2 xml:id="sec-structure-sentence">
-  <title>Sentence Structure</title>
+  <title>Sentence structure</title>
   <para>
    Form clear and direct sentences with 20 words or less. Avoid complicated
    clauses. Make sure that the relationship between subject, verb, and
@@ -371,7 +371,7 @@
  </sect2>
 
  <sect2 xml:id="sec-tone">
-  <title>Tone and Voice</title>
+  <title>Tone and voice</title>
   <para>
    Maintain a professional tone. Do not use contractions, except in casual
    documents. Do not use humor. Be honest and avoid absolutes and
@@ -435,7 +435,7 @@
  </sect2>
 
  <sect2 xml:id="sec-ui-item-language">
-  <title>User Interface Items</title>
+  <title>User interface items</title>
   <para>
    When referring to labels of user interface items, do not include ending
    punctuation such as <literal>…</literal> or <literal>:</literal>.
