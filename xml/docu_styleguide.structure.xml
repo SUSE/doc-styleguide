@@ -1347,9 +1347,6 @@ xml:id="tab-install-source"</screen>
        <tag class="emptytag">listitem</tag>
       </entry>
       <entry>
-<!-- This used to be "it," which occurred zero times in
-                     existing documentation. "li" occurred eight times
-                     already. -->
        <tag class="attvalue">li</tag>
       </entry>
      </row>
