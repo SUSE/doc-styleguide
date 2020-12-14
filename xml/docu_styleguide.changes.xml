@@ -12,6 +12,24 @@
   This section lists the changes between versions of this Style Guide.
  </para>
 <!-- Add new versions to the beginning of the list. -->
+
+ <sect1 xml:id="sec-change-2020-12">
+  <title>Changes 2020-12</title>
+  <itemizedlist>
+   <listitem>
+    <para>
+      Updated the Style Guide to recommend the use of sentence case for titles.
+      Book, article, and set titles are to remain in title case.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Added guideline when to use noun-based and when to use verb-based headings.
+    </para>
+   </listitem>
+  </itemizedlist>
+ </sect1>
+
  <sect1 xml:id="sec-change-2020-10">
   <title>Changes 2020-10</title>
   <itemizedlist>
