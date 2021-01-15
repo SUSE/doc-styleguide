@@ -90,12 +90,14 @@
       <listitem>
        <formalpara>
         <title>Authorship information</title>
-        <para>
-         Create a separate file <filename>authors.xml</filename> and add an
-         <tag class="emptytag">authorgroup</tag>
-         listing all authors and contributors inside it. Include this file
-         with an XInclude.
-        </para>
+         <para>
+          Writing the manuals is mostly a collaborative effort. To credit also
+          external contributors, add an appendix to the guides, based on the
+          <guimenu>Contributors</guimenu> page for the respective GitHub
+          repository. Include a link to the <guimenu>Contributors</guimenu> page
+          on GitHub for the most up-to-date version. For &suse; Best Practices
+          and other one-off articles, credit the  authors on the title page.
+         </para>
        </formalpara>
       </listitem>
       <listitem>
