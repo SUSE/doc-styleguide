@@ -89,19 +89,6 @@
       </listitem>
       <listitem>
        <formalpara>
-        <title>Authorship information</title>
-         <para>
-          Writing the manuals is mostly a collaborative effort. To credit also
-          external contributors, add an appendix to the guides, based on the
-          <guimenu>Contributors</guimenu> page for the respective GitHub
-          repository. Include a link to the <guimenu>Contributors</guimenu> page
-          on GitHub for the most up-to-date version. For &suse; Best Practices
-          and other one-off articles, credit the  authors on the title page.
-         </para>
-       </formalpara>
-      </listitem>
-      <listitem>
-       <formalpara>
         <title>Copyright notice</title>
         <para>
          Use the standard copyright notice reproduced below. Change the
@@ -294,6 +281,19 @@
          that might prove helpful in a given context. Follow the general
          referencing guidelines in <xref linkend="sec-cross-reference"/>
          when creating such sections.
+        </para>
+       </formalpara>
+      </listitem>
+      <listitem>
+       <formalpara>
+        <title>Contributors</title>
+        <para>
+         Writing the manuals is mostly a collaborative effort. To credit also
+         external contributors, add an appendix to the guides, based on the
+         <guimenu>Contributors</guimenu> page for the respective GitHub
+         repository. Include a link to the <guimenu>Contributors</guimenu> page
+         on GitHub for the most up-to-date version. For &suse; Best Practices
+         and other one-off articles, credit the  authors on the title page.
         </para>
        </formalpara>
       </listitem>
