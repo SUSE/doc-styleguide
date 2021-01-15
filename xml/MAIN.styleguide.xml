@@ -47,5 +47,6 @@
  <xi:include href="docu_styleguide.asciidoc.xml"/>
  <xi:include href="docu_styleguide.terminology.xml"/>
  <xi:include href="docu_styleguide.changes.xml" condition="changes"/>
+ <xi:include href="docu_styleguide.contributors.xml"/>
  <xi:include href="gfdl.xml"/>
 </article>

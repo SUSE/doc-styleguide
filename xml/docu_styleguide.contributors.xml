@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE appendix
+[
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+    %entities;
+]>
+<appendix xmlns="http://docbook.org/ns/docbook"
+          xmlns:xi="http://www.w3.org/2001/XInclude"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          version="5.0" xml:id="sec-contributor">
+ <title>Contributors</title>
+
+ <para>
+  For a list of people who contributed to this document, visit
+  <link xlink:href="https://github.com/SUSE/doc-styleguide/graphs/contributors">the
+  <guimenu>Contributors</guimenu> page of our Git repository</link>.
+ </para>
+</appendix>

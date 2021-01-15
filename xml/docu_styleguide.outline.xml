@@ -89,17 +89,6 @@
       </listitem>
       <listitem>
        <formalpara>
-        <title>Authorship information</title>
-        <para>
-         Create a separate file <filename>authors.xml</filename> and add an
-         <tag class="emptytag">authorgroup</tag>
-         listing all authors and contributors inside it. Include this file
-         with an XInclude.
-        </para>
-       </formalpara>
-      </listitem>
-      <listitem>
-       <formalpara>
         <title>Copyright notice</title>
         <para>
          Use the standard copyright notice reproduced below. Change the
@@ -305,6 +294,23 @@
      <para>
       The optional glossary contains important terms in alphabetical order
       and provides a brief explanation for each.
+     </para>
+    </listitem>
+   </varlistentry>
+   <varlistentry>
+    <term>Contributors</term>
+    <listitem>
+     <para>
+      Writing documentation is a collaborative effort. To also give credit to
+      external contributors, add an appendix to the guides, which points to the
+      <guimenu>Contributors</guimenu> page for the respective GitHub
+      repository. For an example, see <xref linkend="sec-contributor"/>.
+     </para>
+     <para>
+      For articles and small documents (such as &suse; Best Practices) whose
+      content is created and maintained by five or fewer contributors, all of
+      whom are from outside the documentation team, credit the contributors
+      on the title page.
      </para>
     </listitem>
    </varlistentry>
