@@ -2154,12 +2154,12 @@ xml:id="tab-install-source"</screen>
  &lt;step&gt;
   &lt;para&gt;
    In the &lt;phrase role="productname"&gt;YaST&lt;/phrase&gt; window,
-   click &lt;guimenu&gt;User and Group Management&lt;/guimenu&gt;.
+   click &lt;guimenu&gt;User and group management&lt;/guimenu&gt;.
   &lt;/para&gt;
  &lt;/step&gt;
  &lt;step&gt;
   &lt;para&gt;
-   To open the &lt;guimenu&gt;Add a New User&lt;/guimenu&gt; dialog, click
+   To open the &lt;guimenu&gt;Add a new user&lt;/guimenu&gt; dialog, click
    &lt;guimenu&gt;Add&lt;/guimenu&gt;.
   &lt;/para&gt;
  &lt;/step&gt;
@@ -2178,12 +2178,12 @@ xml:id="tab-install-source"</screen>
    <step>
     <para>
      In the <phrase role="productname">YaST</phrase> window, click
-     <guimenu>User and Group Management</guimenu>.
+     <guimenu>User and group management</guimenu>.
     </para>
    </step>
    <step>
     <para>
-     To open the <guimenu>Add a New User</guimenu> dialog, click
+     To open the <guimenu>Add a new user</guimenu> dialog, click
      <guimenu>Add</guimenu>.
     </para>
    </step>
