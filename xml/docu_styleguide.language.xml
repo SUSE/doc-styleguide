@@ -78,67 +78,73 @@
 
  <sect2 xml:id="sec-capitalization">
   <title>Capitalization of headings and titles</title>
-  <para>
-   Sentence-style capitalization is the most common capitalization used in
-   &suse; documentation.
-   When using sentence-style capitalization, only proper names and the first
-   letter of the first word of a phrase are capitalized.
-   Apply sentence-style capitalization to all running text and all types of
-   headings and titles that are part of the document content.
-   An example for sentence-style capitalization is
-   <quote>Ceph core components</quote>.
-  </para>
-  <para>
-   For document titles, such as book, article, and set titles, use
-   title-style capitalization.
-   This capitalization style is explained in <citetitle>The Chicago Manual of
-   Style</citetitle>, 8.167.
-   A simplified version of these rules is below:
-  </para>
-  <orderedlist>
-   <listitem>
-    <para>
-     Capitalize the first and the last word.
-    </para>
-   </listitem>
-   <listitem>
-    <para>
-     Write articles in lowercase. Articles are: <emphasis>the</emphasis>,
-     <emphasis>a</emphasis>, and <emphasis>an</emphasis>.
-    </para>
-   </listitem>
-   <listitem>
-    <para>
-     Write prepositions in lowercase unless they are used with a verb
-     (<quote>Logging In</quote>) or in a noun (<quote>The On
-     Button</quote>). Prepositions are for example: <emphasis>up</emphasis>,
-     <emphasis>in</emphasis>, <emphasis>of</emphasis>,
-     <emphasis>through</emphasis>, and <emphasis>between</emphasis>.
-    </para>
-   </listitem>
-   <listitem>
-    <para>
-     Write certain conjunctions in lowercase: <emphasis>and</emphasis>,
-     <emphasis>but</emphasis>, <emphasis>for</emphasis>,
-     <emphasis>nor</emphasis>, and <emphasis>or</emphasis>.
-    </para>
-   </listitem>
-   <listitem>
-    <para>
-     Write <emphasis>as</emphasis> and <emphasis>to</emphasis> in lowercase.
-    </para>
-   </listitem>
-   <listitem>
-    <para>
-     Capitalize everything that is not mentioned above.
-    </para>
-   </listitem>
-  </orderedlist>
-  <para>
-   Examples for title-style capitalization are
-   <quote>Deployment Guide</quote> (book title) or <quote>Kernel Module
-   Packages for SUSE-Based Distributions</quote> (article title).
-  </para>
+  <sect3 xml:id="sec-capitalization-sentence">
+   <title>Most titles: sentence-style capitalization</title>
+   <para>
+    Sentence-style capitalization is the most common capitalization used in
+    &suse; documentation.
+    When using sentence-style capitalization, only proper nouns and the first
+    letter of the first word of a phrase are capitalized.
+    Apply sentence-style capitalization to all running text and all types of
+    headings and titles that are part of the document content.
+    An example for sentence-style capitalization is
+    <quote>Ceph core components</quote>.
+   </para>
+  </sect3>
+  <sect3 xml:id="sec-capitalization-title">
+   <title>Document titles: title-style capitalization</title>
+   <para>
+    For document titles, such as book, article, and set titles, use
+    title-style capitalization.
+    This capitalization style is explained in <citetitle>The Chicago Manual of
+    Style</citetitle>, 8.167.
+    A simplified version of these rules is below:
+   </para>
+   <orderedlist>
+    <listitem>
+     <para>
+      Capitalize the first and the last word.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Write articles in lowercase. Articles are: <emphasis>the</emphasis>,
+      <emphasis>a</emphasis>, and <emphasis>an</emphasis>.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Write prepositions in lowercase unless they are used with a verb
+      (<quote>Logging In</quote>) or in a noun (<quote>The On
+      Button</quote>). Prepositions are for example: <emphasis>up</emphasis>,
+      <emphasis>in</emphasis>, <emphasis>of</emphasis>,
+      <emphasis>through</emphasis>, and <emphasis>between</emphasis>.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Write certain conjunctions in lowercase: <emphasis>and</emphasis>,
+      <emphasis>but</emphasis>, <emphasis>for</emphasis>,
+      <emphasis>nor</emphasis>, and <emphasis>or</emphasis>.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Write <emphasis>as</emphasis> and <emphasis>to</emphasis> in lowercase.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Capitalize everything that is not mentioned above.
+     </para>
+    </listitem>
+   </orderedlist>
+   <para>
+    Examples for title-style capitalization are
+    <quote>Deployment Guide</quote> (book title) or <quote>Kernel Module
+    Packages for SUSE-Based Distributions</quote> (article title).
+   </para>
+  </sect3>
  </sect2>
 
  <sect2 xml:id="sec-comma">
