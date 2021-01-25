@@ -76,6 +76,32 @@
   </sect3>
  </sect2>
 
+ <sect2 xml:id="sec-bias">
+  <title>Biases and Inclusivity</title>
+  <para>
+   Do not artificially limit your audience by excluding or offending members of
+   it.
+  </para>
+  <para>
+   Avoid indicating gender in your documentation.
+   If possible, use plural to allow use of <quote>they</quote> as the pronoun.
+   Otherwise, use <quote>he or she.</quote>
+  </para>
+  <para>
+   &suse; supports the Inclusive Naming Initiative which aims to help avoid
+   harmful language.
+   When making language choices for documentation, review the Initiative's
+   <link xlink:href="https://inclusivenaming.org/language/word-list/">Word List</link>
+   and the
+   <link xlink:href="https://inclusivenaming.org/language/evaluation-framework/">Evaluation Framework</link>.
+  </para>
+  <para>
+   For more information about avoiding gender bias, refer to <citetitle>The
+   Chicago Manual of Style</citetitle>, 5.43.
+   For information about names of example items, see <xref linkend="sec-name"/>.
+  </para>
+ </sect2>
+
  <sect2 xml:id="sec-capitalization">
   <title>Capitalization of headings and titles</title>
   <sect3 xml:id="sec-capitalization-sentence">
@@ -233,20 +259,6 @@
   <para>
    When it is necessary to refer to file extensions, such as in compound
    words like <quote>PDF file</quote>, always capitalize the extension.
-  </para>
- </sect2>
-
- <sect2 xml:id="sec-bias">
-  <title>Gender bias</title>
-  <para>
-   Avoid indicating gender in your documentation. If possible, use plural to
-   allow use of <quote>they</quote> as the pronoun. Otherwise, use <quote>he
-   or she.</quote>
-  </para>
-  <para>
-   For naming of example items, refer to <xref linkend="sec-name"/>. For
-   more information on how to avoid gender bias, refer to <citetitle>The
-   Chicago Manual of Style</citetitle>, 5.43.
   </para>
  </sect2>
 
