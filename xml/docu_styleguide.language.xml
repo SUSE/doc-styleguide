@@ -452,7 +452,16 @@
    require more specific wording.
   </para>
   <para>
-   For instructions concerning markup, refer to
+   When referring to UI labels, capitalize them exactly as in the UI itself.
+   Software created at &suse; (such as YaST or Uyuni) should use
+   sentence-style capitalization.
+   If it does not, you can make aware the developers of that software.
+   For more information about sentence-style capitalization, see
+   <xref linkend="sec-capitalization-sentence"/> and the
+   <link xlink:href="https://productbrand.suse.com/writing/conventions-and-rules">&suse; Product Brand guide</link>.
+  </para>
+  <para>
+   For more information about markup for UI labels, see
    <xref linkend="sec-ui-item-markup"/>.
   </para>
  </sect2>
