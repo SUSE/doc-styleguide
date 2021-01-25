@@ -791,6 +791,43 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
  <sect2 xml:id="sec-link">
   <title>External links</title>
   <para>
+   Information that is relevant within &suse; documentation is often
+   available from other Web sites already.
+   In such cases, choose between linking to these sites or including their
+   content in edited form.
+   Adhere to the following guidelines when selecting sites to link to:
+  </para>
+  <itemizedlist>
+   <listitem>
+    <para>
+     Link to credible sources, such as suse.com, upstream projects, or
+     developer sites.
+     Where possible, avoid linking to direct competitors of &suse;.
+     Do not link to obvious clickbait sites.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Prefer larger, well-kept sites over blogs that may vanish overnight.
+     If you need to link to smaller blogs, save an archive version of the
+     site at <link xlink:href="https://web.archive.org/"/>.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Where possible, avoid linking to sites that feature controversial or
+     political content.
+     Make sure to also check the site with your ad-blocker disabled, to see
+     if there are inappropriate ads.
+    </para>
+   </listitem>
+  </itemizedlist>
+  <para>
+   In some cases, product managers will request avoiding all or selected
+   external links to avoid issues for customers impacted by restrictive
+   firewalls.
+  </para>
+  <para>
    Use the
    <tag class="emptytag">link</tag>
    element to mark up URLs that can be opened with a Web browser, such as
