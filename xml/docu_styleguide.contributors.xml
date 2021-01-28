@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE appendix
+[
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+    %entities;
+]>
+<appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-contributors">
+ <title>Contributors</title>
+
+ <para>
+  The following persons have contributed to this guide:
+ </para>
+ <itemizedlist>
+  <listitem>
+   <para>
+    Stefan Knorr
+   </para>
+  </listitem>
+  <listitem>
+   <para>
+    Dmitri Popov
+   </para>
+  </listitem>
+  <listitem>
+   <para>
+    Tanja Roth
+   </para>
+  </listitem>
+  <listitem>
+   <para>
+    Thomas Schraitle
+   </para>
+  </listitem>
+  <listitem>
+   <para>
+    Sven Seeberg
+   </para>
+  </listitem>
+  <listitem>
+   <para>
+    Alexandra Settle
+   </para>
+  </listitem>
+  <listitem>
+   <para>
+    Frank Sundermeyer
+   </para>
+  </listitem>
+  <listitem>
+   <para>
+    Christoph Wickert
+   </para>
+  </listitem>
+ </itemizedlist>
+ <para>
+  For the most up-to-date list of contributors, visit
+  <link
+   xlink:href="https://github.com/SUSE/doc-styleguide/graphs/contributors">the
+  repository's <guimenu>Contributors</guimenu> page</link>.
+ </para>
+</appendix>
