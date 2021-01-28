@@ -27,9 +27,9 @@
  <sect2 xml:id="sec-abbreviation">
   <title>Abbreviations</title>
   <para>
-   Where possible, avoid using abbreviations. Especially avoid unusual
-   abbreviations. You may create plurals of acronyms. In all other cases,
-   avoid creating plurals of abbreviations.
+   Avoid using abbreviations, especially unusual
+   ones. Avoid creating plurals of abbreviations, unless the
+   abbreviation is an acronym or initialism.
   </para>
   <sect3 xml:id="sec-acronym">
    <title>Acronyms</title>
