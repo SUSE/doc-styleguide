@@ -802,7 +802,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     <para>
      Link to credible sources, such as suse.com, upstream projects, or
      developer sites.
-     Where possible, avoid linking to direct competitors of &suse;.
+     Avoid linking to direct competitors of &suse;.
      Do not link to obvious clickbait sites.
     </para>
    </listitem>
@@ -815,10 +815,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    </listitem>
    <listitem>
     <para>
-     Where possible, avoid linking to sites that feature controversial or
-     political content.
-     Make sure to also check the site with your ad-blocker disabled, to see
-     if there are inappropriate ads.
+     Avoid linking to sites that feature controversial or political content.
     </para>
    </listitem>
   </itemizedlist>
