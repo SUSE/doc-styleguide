@@ -28,8 +28,8 @@
   <listitem>
    <para>
     Documentation for unsupported features should be an exception.
-    When documenting unsupported features (usually <emphasis>technology
-    previews</emphasis>), explain the support status before going into detail
+    When documenting an unsupported feature (usually a <emphasis>technology
+    preview</emphasis>), explain the support status before going into detail
     about the feature.
    </para>
   </listitem>
