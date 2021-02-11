@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1
+[
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+    %entities;
+]>
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-content">
+ <title>Documentation content</title>
+
+ <para>
+  When selecting what to document, keep to the following guidelines:
+ </para>
+
+ <itemizedlist>
+  <listitem>
+   <para>
+    Do not promise future features.
+    Only document features that exist already or that will be finished before
+    the document is first published.
+   </para>
+  </listitem>
+  <listitem>
+   <para>
+    In some cases, it is appropriate to warn of scheduled future changes,
+    such as feature removals.
+   </para>
+  </listitem>
+  <listitem>
+   <para>
+    Documentation concerning unsupported features should be an exception.
+    When documenting an unsupported feature (usually a <emphasis>technology
+    preview</emphasis>), explain the support status before going into detail
+    about the feature.
+   </para>
+  </listitem>
+ </itemizedlist>
+
+</sect1>
