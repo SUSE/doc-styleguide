@@ -27,7 +27,7 @@
   </listitem>
   <listitem>
    <para>
-    Documentation for unsupported features should be an exception.
+    Documentation concerning unsupported features should be an exception.
     When documenting an unsupported feature (usually a <emphasis>technology
     preview</emphasis>), explain the support status before going into detail
     about the feature.
