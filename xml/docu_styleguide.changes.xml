@@ -5,13 +5,49 @@
     %entities;
 ]>
 <appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="app-change">
-<!-- Add new versions to the beginning of the list. -->
  <title>List of changes to the Style Guide</title>
  <info/>
  <para>
   This section lists the changes between versions of this Style Guide.
  </para>
 <!-- Add new versions to the beginning of the list. -->
+
+ <sect1 xml:id="sec-change-2021-02">
+  <title>Changes 2021-02</title>
+  <itemizedlist>
+   <listitem>
+    <para>
+     Mentioned that we support the Inclusive Naming Initiative.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Added section about rules for linking to external sites.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Added a section about avoiding promises of future features.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Mentioned that UI labels should always be capitalized as they are
+     capitalized in the UI.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Clarified section about abbreviations.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Improved structure of capitalization section.
+    </para>
+   </listitem>
+  </itemizedlist>
+ </sect1>
 
  <sect1 xml:id="sec-change-2020-12">
   <title>Changes 2020-12</title>
