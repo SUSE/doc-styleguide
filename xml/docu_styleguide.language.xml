@@ -248,7 +248,7 @@
      <filename>/etc/YaST2/</filename>) and files (for example,
      <filename>/etc/YaST2/control.xml</filename>).
      If the distinction is important in the current context, in
-     addition, comment on it in the accompanying or surrounding running text.
+     addition, comment on it in the running text.
     </para>
    </listitem>
   </itemizedlist>
