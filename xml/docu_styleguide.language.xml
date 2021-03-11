@@ -244,9 +244,11 @@
    </listitem>
    <listitem>
     <para>
-     Use a trailing slash to distinguish between a file and a
-     directory. If the distinction is important in the current context, in
-     addition comment on it in the accompanying or surrounding running text.
+     Use a trailing slash to distinguish between directories (for example,
+     <filename>/etc/YaST2/</filename>) and files (for example,
+     <filename>/etc/YaST2/control.xml</filename>).
+     If the distinction is important in the current context, in
+     addition, comment on it in the accompanying or surrounding running text.
     </para>
    </listitem>
   </itemizedlist>
