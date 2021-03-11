@@ -296,9 +296,9 @@
   </para>
   <para>
    When the unit of a measurement is abbreviated, always use numerals for
-   the number. In measurements, add a non-breaking space (
-   <tag class="genentity">nbsp</tag>
-   ) between the numeral and its corresponding unit abbreviation.
+   the number. In measurements, add a non-breaking space
+   (<tag class="genentity">nbsp</tag>)
+   between the numeral and its corresponding unit abbreviation.
   </para>
   <para>
    For more information, see <citetitle>The Chicago Manual of
