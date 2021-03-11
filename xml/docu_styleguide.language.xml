@@ -8,11 +8,20 @@
  <title>Language</title>
 
  <para>
+  We write documentation in American English.
+  This mostly affects the spelling of terms.
+  If spelling differences exist between American and British English, use the
+  American English variant.
+  For verbs ending in either <emphasis>-ise</emphasis> or <emphasis>-ize</emphasis>
+  (like <emphasis>localise</emphasis>/<emphasis>localize</emphasis>), use the
+  <emphasis>-ize</emphasis> variant.
+ </para>
+ <para>
   The following rules are intentionally kept concise. When in doubt about a
   style rule, see <citetitle>The Chicago Manual of Style</citetitle>,
   15th Edition. When in doubt about the spelling or usage of a word, first
   see <xref linkend="app-terminology"/>. When the usage of a word is
-  not regulated there, use American English spellings as defined on
+  not regulated there, use the spellings as defined on
   <link xlink:href="https://www.merriam-webster.com/"/>
   (<link xlink:href="https://www.m-w.com/"/> for short).
  </para>
