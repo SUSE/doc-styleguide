@@ -17,7 +17,7 @@
 
  <para>
   &suse; uses the GeekoDoc Relax NG schema which is compatible with DocBook 5.1.
-  Thus, for more detailed descriptions of the elements of a book, see the
+  For more information about the XML elements described here, see the
   <citetitle>DocBook 5.1: The Definitive Guide</citetitle> sections listed in
   <xref linkend="tab-book"/>.
  </para>
@@ -497,8 +497,8 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
     To avoid making prompts longer than necessary, do not include a host name
     or a path in them, unless this is vital to understanding.
     The first restricted user should always be named
-    <emphasis>tux</emphasis>. For more information on names of restricted users,
-    see <xref linkend="sec-name"/>.
+    <emphasis>tux</emphasis>. For more information about names of restricted
+    users, see <xref linkend="sec-name"/>.
    </para>
    <para>
     Avoid using root prompts in your documentation by using the
@@ -726,9 +726,9 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    Always give examples a title and an identifier.
   </para>
   <para>
-   For more information on screen environments, see
+   For more information about screen environments, see
    <xref linkend="sec-screen"/>.
-   For more information on displaying computer input and output, see
+   For more information about displaying computer input and output, see
    <xref linkend="sec-command-line"/>. To annotate examples, use callouts.
    Callouts are described in <xref linkend="sec-callout"/>.
   </para>
@@ -885,7 +885,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    around them. Do not use a list environment for a single link. If you need
    to present many links, group them by topic and create a separate list
    environment for each group. Provide a comprehensive title for each of the
-   groups or an introductory sentence. For more information on creating lists,
+   groups or an introductory sentence. For more information about creating lists,
    see <xref linkend="sec-itemized-list"/>.
   </para>
   <para>
@@ -1876,7 +1876,7 @@ xml:id="tab-install-source"</screen>
    the work of translators.
   </para>
   <para>
-   For more information on creating cross references, see
+   For more information about creating cross references, see
    <xref linkend="sec-cross-reference"/>.
   </para>
   <example xml:id="ex-key">
@@ -2124,7 +2124,7 @@ xml:id="tab-install-source"</screen>
    the only subsection of its parent section.
   </para>
   <para>
-   For more information on writing headlines, see
+   For more information about writing headlines, see
    <xref linkend="sec-heading"/>.
   </para>
  </sect2>
@@ -2681,7 +2681,7 @@ xml:id="tab-install-source"</screen>
    elements are then created automatically.
   </para>
   <para>
-   For more information on language aspects, see
+   For more information about language aspects, see
    <xref linkend="sec-ui-item-language"/>.
   </para>
   <example xml:id="ex-single-ui-item">

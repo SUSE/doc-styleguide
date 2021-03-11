@@ -70,7 +70,7 @@
    <title>Units of measurement</title>
    <para>
     You may use abbreviations of common units of measurement.
-    For more information on units of measurement, see
+    For more information about units of measurement, see
     <xref linkend="sec-number"/>.
    </para>
   </sect3>
@@ -96,7 +96,7 @@
    <link xlink:href="https://inclusivenaming.org/language/evaluation-framework/">Evaluation Framework</link>.
   </para>
   <para>
-   For more information about avoiding gender bias, refer to <citetitle>The
+   For more information about avoiding gender bias, see <citetitle>The
    Chicago Manual of Style</citetitle>, 5.43.
    For information about names of example items, see <xref linkend="sec-name"/>.
   </para>
@@ -252,7 +252,7 @@
   </itemizedlist>
   <para>
    Most Linux file systems are case-sensitive. Use capitals exactly as they
-   appear in the file system. For more information on markup aspects, see
+   appear in the file system. For more information about markup aspects, see
    <xref linkend="sec-other-external"/> and
    <xref linkend="sec-file-markup"/>.
   </para>
@@ -301,7 +301,7 @@
    ) between the numeral and its corresponding unit abbreviation.
   </para>
   <para>
-   For more information, refer to <citetitle>The Chicago Manual of
+   For more information, see <citetitle>The Chicago Manual of
    Style</citetitle> 9.6 and 9.16.
   </para>
  </sect2>
@@ -448,7 +448,7 @@
    </listitem>
   </itemizedlist>
   <para>
-   For more information on markup aspects, see <xref linkend="sec-product"/>.
+   For more information about markup aspects, see <xref linkend="sec-product"/>.
   </para>
  </sect2>
 
