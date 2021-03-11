@@ -286,9 +286,10 @@
       </listitem>
       <listitem>
        <formalpara>
-        <title>For more information</title>
+        <title>More information</title>
         <para>
-         In this section, collect Web links to all sources of information
+         In a section named <citetitle>More information</citetitle>,
+         collect Web links to all sources of information
          that might prove helpful in a given context. Follow the general
          referencing guidelines in <xref linkend="sec-cross-reference"/>
          when creating such sections.
