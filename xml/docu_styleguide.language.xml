@@ -9,28 +9,31 @@
 
  <para>
   We write documentation in American English.
-  This mostly affects the spelling of terms.
-  If spelling differences exist between American and British English, use the
+  Where spelling differences exist between American and British English, use the
   American English variant.
   For verbs ending in either <emphasis>-ise</emphasis> or <emphasis>-ize</emphasis>
   (like <emphasis>localise</emphasis>/<emphasis>localize</emphasis>), use the
   <emphasis>-ize</emphasis> variant.
  </para>
  <para>
-  The following rules are intentionally kept concise. When in doubt about a
-  style rule, see <citetitle>The Chicago Manual of Style</citetitle>,
-  15th Edition. When in doubt about the spelling or usage of a word, first
-  see <xref linkend="app-terminology"/>. When the usage of a word is
-  not regulated there, use the spellings as defined on
+  When in doubt about the spelling or usage of a word, first see
+  <xref linkend="app-terminology"/>.
+  If the usage of a word is not regulated there, use the preferred spelling from
   <link xlink:href="https://www.merriam-webster.com/"/>
   (<link xlink:href="https://www.m-w.com/"/> for short).
  </para>
 
  <para>
-  If a product you are documenting is not listed in the terminology table,
-  refer to the &suse; home page, <link xlink:href="https://www.suse.com"/>. If
-  the product is not mentioned on the &suse; home page, refer to the Marketing
-  department.
+  If the name of a &suse; product you are documenting is not listed in the
+  terminology table, refer to the &suse; home page,
+  <link xlink:href="https://www.suse.com"/>.
+  If the product is not mentioned on the &suse; home page, refer to the
+  Marketing department.
+ </para>
+
+ <para>
+  When in doubt about a style rule, see
+  <citetitle>The Chicago Manual of Style</citetitle>, 15th Edition.
  </para>
 
  <sect2 xml:id="sec-abbreviation">
