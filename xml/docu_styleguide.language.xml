@@ -24,10 +24,13 @@
  </para>
 
  <para>
-  If the name of a &suse; product you are documenting is not listed in the
-  terminology table, refer to the &suse; home page,
-  <link xlink:href="https://www.suse.com"/>.
-  If the product is not mentioned on the &suse; home page, refer to the
+  The correct spelling of &suse; product names should be listed in the
+  terminology table (<xref linkend="app-terminology"/>)
+  <emphasis>and</emphasis> in the entities file of the
+  Doc Kit repository at
+  <link xlink:href="https://github.com/openSUSE/doc-kit/blob/main/docbook5-book/xml/generic-entities.ent"/>.
+  If a product name is not listed in either spot, refer to the &suse; home page,
+  <link xlink:href="https://www.suse.com"/> and the
   Marketing department.
  </para>
 
