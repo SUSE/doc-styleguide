@@ -11,52 +11,7 @@
  <title>Contributors</title>
 
  <para>
-  The following persons have contributed to this guide:
- </para>
- <itemizedlist>
-  <listitem>
-   <para>
-    Stefan Knorr
-   </para>
-  </listitem>
-  <listitem>
-   <para>
-    Dmitri Popov
-   </para>
-  </listitem>
-  <listitem>
-   <para>
-    Tanja Roth
-   </para>
-  </listitem>
-  <listitem>
-   <para>
-    Thomas Schraitle
-   </para>
-  </listitem>
-  <listitem>
-   <para>
-    Sven Seeberg
-   </para>
-  </listitem>
-  <listitem>
-   <para>
-    Alexandra Settle
-   </para>
-  </listitem>
-  <listitem>
-   <para>
-    Frank Sundermeyer
-   </para>
-  </listitem>
-  <listitem>
-   <para>
-    Christoph Wickert
-   </para>
-  </listitem>
- </itemizedlist>
- <para>
-  For the most up-to-date list of contributors, visit
+  For a list of persons who contributed to this documentation, visit
   <link
    xlink:href="https://github.com/SUSE/doc-styleguide/graphs/contributors">the
   repository's <guimenu>Contributors</guimenu> page</link>.
