@@ -301,12 +301,9 @@
      <listitem>
       <para>
        Writing documentation is a collaborative effort. To also give credit to
-       external contributors, add an appendix to the guides, based on the
+       external contributors, add an appendix to the guides, which points to the
        <guimenu>Contributors</guimenu> page for the respective GitHub
-       repository. List the contributors in alphabetical order. Include a
-       link to the <guimenu>Contributors</guimenu> page on GitHub for the
-       most up-to-date version. For an example, see <xref
-        linkend="sec-contributors"/>.
+       repository. For an example, see <xref linkend="sec-contributors"/>.
       </para>
       <para>
        For &suse; Best Practices and other one-off articles, credit the
