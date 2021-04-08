@@ -394,14 +394,10 @@
   <title>Tense</title>
   <para>
    Use the simple present tense. Apply the simple present tense even to
-   sentences with <quote>if</quote> or <quote>when</quote> clauses:
-   <quote>If this happens, go there.</quote>
-  </para>
-  <para>
-   Prerequisites of an action should be expressed in the present tense as
-   well: <quote>Glibc is installed.</quote> In some cases, no verb is
-   necessary before the prerequisite of an action: <quote>a 1&nbsp;GHz
-   processor or better.</quote>
+   sentences with <quote>if</quote> or <quote>when</quote> clauses and to
+   prerequisites of an action. For example,
+   <quote>If this happens, go there.</quote> or
+   <quote>Glibc is installed.</quote>
   </para>
  </sect2>
 
