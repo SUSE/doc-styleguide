@@ -306,8 +306,9 @@
        repository. For an example, see <xref linkend="sec-contributors"/>.
       </para>
       <para>
-       For &suse; Best Practices and other one-off articles, credit the
-       authors on the title page.
+       For &suse; Best Practices and other articles and small documents whose
+       content is created and maintained by a single or very few individuals
+       outside the documentation team, credit the authors on the title page.
       </para>
      </listitem>
     </varlistentry>
