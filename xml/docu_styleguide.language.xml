@@ -499,13 +499,25 @@
   <title>Quotations</title>
   <para>
    Use quotations to quote from sources, such as books.
-   In other cases, avoid using quotation marks.
-   Do not use irony and do not use quotation marks to mark irony.
-   In the case of computer input, computer output, and user
-   interface elements, use more appropriate markup. See also
-   <xref linkend="sec-command-line"/> and
-   <xref linkend="sec-ui-item-markup"/>.
+   In all other cases, do not use quotation marks:
   </para>
+  <itemizedlist>
+   <listitem>
+    <para>
+     For computer input, computer output, and user
+     interface elements, use different markup.
+     See also <xref linkend="sec-command-line"/> and
+     <xref linkend="sec-ui-item-markup"/>.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Do not use quotation marks to indicate irony.
+     Avoid irony in technical writing.
+     See also <xref linkend="sec-tone"/>.
+    </para>
+   </listitem>
+  </itemizedlist>
   <para>
    To create quotations, use the
    <tag class="emptytag">quote</tag>
