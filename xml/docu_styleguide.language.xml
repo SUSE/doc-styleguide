@@ -259,8 +259,9 @@
    </listitem>
    <listitem>
     <para>
-     For directories, add a trailing slash to distinguish between a directory
-     (for example, <filename>/etc/YaST2/</filename>) and a file (for example,
+     When referencing a directory name, add a trailing slash.
+     This helps distinguish between directory names (for example,
+     <filename>/etc/YaST2/</filename>) and file names (for example,
      <filename>/etc/YaST2/control.xml</filename>). For less experienced Linux
      users, it might be helpful to specify in the running text if it is a file,
      device, or directory. For example: <quote>In the
