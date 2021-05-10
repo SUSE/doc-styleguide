@@ -1,11 +1,9 @@
-# Doc Config File for SUSE
-# Documentation Style Guide
+# Documentation Style Guide without change log appendix
 
-# basics
 MAIN="MAIN.styleguide.xml"
 ROOTID=art-styleguide
 DOCBOOK5_RNG_URI="http://www.docbook.org/xml/5.0/rng/docbookxi.rnc"
 
-# stylesheet location
-STYLEROOT="/usr/share/xml/docbook/stylesheet/suse2013-ns"
+STYLEROOT="/usr/share/xml/docbook/stylesheet/suse2021-ns"
 PROFCONDITION="guide"
+OUTPUTNAME="style-guide"
