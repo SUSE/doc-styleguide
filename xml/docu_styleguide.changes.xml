@@ -10,7 +10,38 @@
  <para>
   This section lists the changes between versions of this Style Guide.
  </para>
+
 <!-- Add new versions to the beginning of the list. -->
+
+
+ <sect1 xml:id="sec-change-2021-04">
+  <title>Changes 2021-04</title>
+  <itemizedlist>
+   <listitem>
+    <para>
+     Updated the standard title for sections comprising of references to other
+     documents from <emphasis>For more information</emphasis> to
+     <emphasis>More information</emphasis>.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Mentioned Doc Kit default entity file.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Added examples for hyphenation and file names/directory names.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Clarified/shortened/reformatted various language advice.
+     Improved wording consistency of references to other sections of the guide.
+    </para>
+   </listitem>
+  </itemizedlist>
+ </sect1>
 
  <sect1 xml:id="sec-change-2021-02">
   <title>Changes 2021-02</title>
