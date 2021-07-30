@@ -13,5 +13,5 @@ https://doc.suse.com/style/current/[doc.suse.com/style].
 Contributing
 -------------
 
-To contribute, send pull requests. Use the `master` branch as the basis for
+To contribute, send pull requests. Use the `main` branch as the basis for
 feature branches.
