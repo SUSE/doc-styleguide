@@ -588,17 +588,37 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
       into lines can also be helpful for aligning callouts with the right option.
      </para>
     </listitem>
-    <!-- Comment this for the moment... - sknorr, 2017-03-06 -->
-    <!-- <listitem>
+    <listitem>
      <para>
-      When showing multiple commands together with their output in a
-      <tag class="emptytag">screen</tag>, you can use
-      <tag class="emptytag">command</tag> elements mark up commands. This
-      effectively separates commands from their output. However, applying
-      such markup is not a must and there are currently no firm rules at what
-      point to use this construct.
+      You can combine multiple commands within a <tag
+      class="emptytag">screen</tag> element, if:
      </para>
-    </listitem>-->
+     <itemizedlist>
+      <listitem>
+       <para>
+        all commands are explained unambiguously before the <tag
+        class="emptytag">screen</tag> element and
+       </para>
+      </listitem>
+      <listitem>
+       <para>
+        all commands are strictly consecutive and none is optional.
+       </para>
+      </listitem>
+     </itemizedlist>
+     <para>
+      In all other cases, do not combine multiple commands within one
+      <tag class="emptytag">screen</tag> element. Instead, use multiple
+      <tag class="emptytag">screen</tag> elements instead. For example,
+      as part of a multi-step procedure.
+     </para>
+     <para>
+      If you show multiple commands within a single
+      <tag class="emptytag">screen</tag>, use prompts before each command and
+      <tag class="emptytag">command</tag> elements around commands. This
+      effectively separates commands from each other and their output.
+     </para>
+    </listitem>
     <listitem>
      <para>
       To work with long output, especially tabular output, use either of the
