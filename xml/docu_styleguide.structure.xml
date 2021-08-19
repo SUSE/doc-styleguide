@@ -472,6 +472,8 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
     <tag class="emptytag">replaceable</tag>
     element. Capitalize placeholder text in all contexts where this is not
     detrimental to content intelligibility.
+    Do not use spaces within placeholders, instead use underscores
+    (<literal>_</literal>).
    </para>
 <screen>To list the contents of a directory, execute
 &lt;command&gt;ls &lt;replaceable&gt;DIRECTORY&lt;/replaceable&gt;&lt;/command&gt;.</screen>
