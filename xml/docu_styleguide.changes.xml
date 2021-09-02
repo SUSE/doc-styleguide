@@ -14,6 +14,29 @@
 <!-- Add new versions to the beginning of the list. -->
 
 
+ <sect1 xml:id="sec-change-2021-08">
+  <title>Changes 2021-08</title>
+  <itemizedlist>
+   <listitem>
+    <para>
+     Updated the spelling of <emphasis>lifecycle</emphasis> (former spelling,
+     <emphasis>life cycle</emphasis>).
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Updated recommendations on how to list contributors.
+     Change <citetitle>Contributors</citetitle> appendix accordingly.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Mentioned that placeholders must not contain spaces.
+    </para>
+   </listitem>
+  </itemizedlist>
+ </sect1>
+
  <sect1 xml:id="sec-change-2021-04">
   <title>Changes 2021-04</title>
   <itemizedlist>
