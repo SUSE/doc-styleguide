@@ -301,8 +301,8 @@
     <term>Contributors</term>
     <listitem>
      <para>
-      Writing documentation is a collaborative effort. To also give credit to
-      external contributors, add an appendix to the guides, which points to the
+      Writing documentation is a collaborative effort. To give credit to
+      all contributors, add an appendix to the guides which points to the
       <guimenu>Contributors</guimenu> page for the respective GitHub
       repository. For an example, see <xref linkend="sec-contributor"/>.
      </para>
