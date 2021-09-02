@@ -312,6 +312,11 @@
       whom are from outside the documentation team, credit the contributors
       on the title page.
      </para>
+     <para>
+      The above are a minimum.
+      In addition, make sure that the contributors appendix is compliant with
+      the document license.
+     </para>
     </listitem>
    </varlistentry>
   </variablelist>
