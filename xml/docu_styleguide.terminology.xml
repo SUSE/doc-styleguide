@@ -677,17 +677,19 @@
       <entry>installation medium</entry>
       <entry>installation data medium</entry>
       <entry>noun; often in plural, <quote>installation media</quote>;
-              where possible, use the more generic term
-              <emphasis>installation source</emphasis>;
-              flash disk-based or disc-based source of installation data for
-              operating systems;
-            </entry>
+       only for <emphasis>physical</emphasis> sources of installation data for
+       products;
+       when physicality of the installation source is unclear or unimportant,
+       use the more versatile term <emphasis>installation source</emphasis>;
+      </entry>
      </row>
      <row>
       <entry>installation source</entry>
       <entry>installation data source</entry>
-      <entry>noun; source of installation data for operating systems
-            </entry>
+      <entry>
+       noun; source of installation data for products, can be a physical medium
+       or online repository
+      </entry>
      </row>
      <row>
       <entry>Internet</entry>
