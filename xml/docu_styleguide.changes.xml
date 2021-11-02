@@ -19,7 +19,7 @@
    <listitem>
     <para>
      Updated recommended prompt style: Where possible, use short prompts
-     such as <prompt>&gt; </prompt> or <prompt role="root"># </prompt>.
+     such as <prompt>&gt;&nbsp;</prompt> or <prompt role="root">#&nbsp;</prompt>.
     </para>
    </listitem>
    <listitem>

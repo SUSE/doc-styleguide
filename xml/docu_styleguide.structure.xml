@@ -494,7 +494,7 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
     <tag class="emptytag">screen</tag>
     element, always prefix them with a prompt marked up this way:
    </para>
-<screen>&lt;prompt&gt;&amp;gt; &lt;/prompt&gt;&lt;command&gt;ls&lt;/command&gt;</screen>
+<screen>&lt;prompt&gt;&amp;gt;&amp;nbsp;&lt;/prompt&gt;&lt;command&gt;ls&lt;/command&gt;</screen>
    <para>
     To avoid making prompts longer than necessary, do not include paths, user,
     or host names, unless this is vital to understanding.
@@ -507,7 +507,7 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
     <command>sudo</command> command where applicable. If you do need a root
     prompt, always mark it up as following:
    </para>
-<screen>&lt;prompt&gt;# &lt;/prompt&gt;&lt;command&gt;yast&lt;/command&gt;</screen>
+<screen>&lt;prompt role="root"&gt;#&amp;nbsp;&lt;/prompt&gt;&lt;command&gt;yast&lt;/command&gt;</screen>
    <para>
     When documenting prompts other than the one of Bash, use a custom prompt
     that is as generic as possible.
