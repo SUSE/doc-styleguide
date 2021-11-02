@@ -13,6 +13,31 @@
 
 <!-- Add new versions to the beginning of the list. -->
 
+ <sect1 xml:id="sec-change-2021-10">
+  <title>Changes 2021-10</title>
+  <itemizedlist>
+   <listitem>
+    <para>
+     Updated recommended prompt style: Where possible, use short prompts
+     such as <prompt>&gt; </prompt> or <prompt role="root"># </prompt>.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Updated the definitions of <emphasis>installation medium</emphasis> and
+     <emphasis>installation source</emphasis> to clarify that
+     <emphasis>installation medium</emphasis> should only be used where a
+     physical medium is concerned.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Added rules for when multiple commands can be combined within a single
+     <tag class="emptytag">screen</tag> element.
+    </para>
+   </listitem>
+  </itemizedlist>
+ </sect1>
 
  <sect1 xml:id="sec-change-2021-08">
   <title>Changes 2021-08</title>
