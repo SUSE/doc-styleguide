@@ -208,44 +208,9 @@
       </listitem>
       <listitem>
        <formalpara>
-        <title>Highlights</title>
-        <para>
-         Use a highlights section to summarize the information provided in a
-         chapter in four or fewer bullet points. Summarize the topic instead
-         of summarizing the outline.
-        </para>
-       </formalpara>
-       <example xml:id="ex-highlight">
-        <title>A highlights section</title>
-        <para>
-         This chapter will:
-        </para>
-        <itemizedlist>
-         <listitem>
-          <para>
-           Give you an overview over the file systems available in
-           <phrase role="productname">&suse; Linux Enterprise</phrase>, such
-           as Ext3, Ext4, and Btrfs.
-          </para>
-         </listitem>
-         <listitem>
-          <para>
-           Inform you about their distinctive advantages and disadvantages.
-          </para>
-         </listitem>
-         <listitem>
-          <para>
-           Help you choose the right one for your purpose.
-          </para>
-         </listitem>
-        </itemizedlist>
-       </example>
-      </listitem>
-      <listitem>
-       <formalpara>
         <title>Introduction</title>
         <para>
-         Provide introductory information directly after the highlights.
+         Provide introductory information directly after the abstract.
          Do not place it in a separate section.
         </para>
        </formalpara>
