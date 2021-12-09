@@ -136,7 +136,7 @@
     <listitem>
      <para>
       Use an abstract to summarize the information provided in a book,
-      article, chapter, or set in five or fewer sentences. Do not use lists,
+      article, chapter, or set in 70&ndash;150 characters. Do not use lists,
       images or examples in an abstract. Summarize the topic instead of
       summarizing the outline.
      </para>
@@ -196,9 +196,13 @@
         <title>Abstract</title>
         <para>
          Use an abstract to summarize the information provided in a book,
-         article, chapter, or set in five or fewer sentences. Summarize the
+         article, chapter, or set in 70&ndash;150 characters. Summarize the
          topic instead of summarizing the outline. See also <xref
-          linkend="vle-abstract"/>.
+         linkend="vle-abstract"/>.
+         <remark>cwickert 2021-12-09: The 70&ndash;155 chars range is taken from
+          <link xlink:href="https://www.contentkingapp.com/academy/meta-description/"/>,
+          we try to play it safe, thus reducing maximum character count by 5 to just 150.
+         </remark>
         </para>
        </formalpara>
       </listitem>
