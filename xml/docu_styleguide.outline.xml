@@ -131,13 +131,14 @@
      </itemizedlist>
     </listitem>
    </varlistentry>
-   <varlistentry>
+   <varlistentry xml:id="vle-abstract">
     <term>Abstract</term>
     <listitem>
      <para>
       Use an abstract to summarize the information provided in a book,
-      article, or set in five or fewer sentences. Summarize the topic
-      instead of summarizing the outline.
+      article, chapter, or set in five or fewer sentences. Do not use lists,
+      images or examples in an abstract. Summarize the topic instead of
+      summarizing the outline.
      </para>
      <example xml:id="ex-abstract">
       <title>An abstract</title>
@@ -152,7 +153,7 @@
      </example>
     </listitem>
    </varlistentry>
-   <varlistentry>
+   <varlistentry xml:id="vle-toc">
     <term>Table of contents</term>
     <listitem>
      <para>
@@ -160,7 +161,7 @@
      </para>
     </listitem>
    </varlistentry>
-   <varlistentry>
+   <varlistentry xml:id="vle-preface">
     <term>Preface</term>
     <listitem>
      <para>
@@ -170,7 +171,7 @@
      </para>
     </listitem>
    </varlistentry>
-   <varlistentry>
+   <varlistentry xml:id="vle-part">
     <term>Parts</term>
     <listitem>
      <para>
@@ -182,7 +183,7 @@
      </para>
     </listitem>
    </varlistentry>
-   <varlistentry>
+   <varlistentry xml:id="vle-chapter">
     <term>Chapters</term>
     <listitem>
      <para>
@@ -190,6 +191,17 @@
       should be regarded an exception):
      </para>
      <itemizedlist>
+      <listitem>
+       <formalpara>
+        <title>Abstract</title>
+        <para>
+         Use an abstract to summarize the information provided in a book,
+         article, chapter, or set in five or fewer sentences. Summarize the
+         topic instead of summarizing the outline. See also <xref
+          linkend="vle-abstract"/>.
+        </para>
+       </formalpara>
+      </listitem>
       <listitem>
        <formalpara>
         <title>Highlights</title>
