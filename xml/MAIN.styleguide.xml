@@ -15,6 +15,9 @@
   xmlns:dm="urn:x-suse:ns:docmanager">
  <title>SUSE Documentation Style Guide<phrase condition="changes"> (with change log)</phrase></title>
  <info>
+  <!-- The suse2021 stylesheets need a productname for the productnumber to be picked up -->
+  <productname/>
+  <productnumber>&styleguideversion;</productnumber>
   <date>
    <?dbtimestamp?>
   </date>

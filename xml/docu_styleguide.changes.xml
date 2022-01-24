@@ -13,6 +13,16 @@
 
 <!-- Add new versions to the beginning of the list. -->
 
+ <sect1 xml:id="sec-change-2021-12">
+  <title>Changes 2021-12</title>
+  <para>
+   Updated recommendations for <tag class="emptytag">abstracts</tag> and
+   <tag class="emptytag">highlights</tag>:
+   Always add an abstract to chapters, with a length of 70 and 150 characters.
+   Do not use <tag class="emptytag">highlights</tag>.
+  </para>
+ </sect1>
+
  <sect1 xml:id="sec-change-2021-10">
   <title>Changes 2021-10</title>
   <itemizedlist>
