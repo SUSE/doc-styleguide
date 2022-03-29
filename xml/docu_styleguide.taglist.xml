@@ -913,7 +913,7 @@
       <entry>
        The text printed on a key on a keyboard
        For function keys always use with function, for example: 
-       &alt;keycap function="control">&alt;/keycap>
+       &lt;keycap function="control">&lt;/keycap>
       </entry>
       <entry></entry>
       <entry></entry>
@@ -1042,12 +1042,12 @@
       <entry>
        The formal name of a product
        When referring to an application, add a 
-       &alt;phrase role="productname"/> element around it, as shown in the
+       &lt;phrase role="productname"/> element around it, as shown in the
        example.
        </entry>
       <entry></entry>
       <entry>
-       &alt;phrase role="productname">LibreOffice&alt;/phrase> is an office
+       &lt;phrase role="productname">LibreOffice&lt;/phrase> is an office
        suite.
       </entry>
       <entry>No</entry>
@@ -1245,10 +1245,10 @@
  </para>
  <para>
   For example:
-  You have used the tag &alt;guimenu> which is usually translated
+  You have used the tag &lt;guimenu> which is usually translated
   but in this particular case it should not be translated. To mark the tag
   correctly, use the ITS tag as shown here:
-  Click &alt;guimenu its:translate="no">Save&alt;/guimenu>.
+  Click &lt;guimenu its:translate="no">Save&lt;/guimenu>.
   </para>
 </sect2>
 </sect1>
