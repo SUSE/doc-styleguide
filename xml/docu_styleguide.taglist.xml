@@ -10,11 +10,13 @@
  xmlns:xlink="http://www.w3.org/1999/xlink"
  >
  
- <title>Tags for &sle;, &sle; Micro and &sesa;</title>
+ <title>DocBook tags</title>
 
  <para>
-  The &suse; and openSUSE user documentation is written with DocBook but uses a
-  Relax NG schema that defines a restricted set of tags.
+  The &suse; and openSUSE user documentation is written with DocBook and uses a
+  Relax NG schema that defines a restricted set of DocBook tags.
+ </para>
+ <para>
   The following tables list and describe all DocBook tags used for writing
   the &suse; user documentation for the products of &sle;, &sle; Micro and
   &sesa;. It also shows, which tags are translated and which tags will be
@@ -24,14 +26,16 @@
  </para>
  <para>
   With Geekodoc 2 it is also possible to use the Internazionalization Tag Set
-  (ITS) to explicit indicate if a tag should be translated or not. For more
-  information, see <xref linkend="sec-taglist-ITS"/>.
+  (ITS) to explicit indicate if a tag should be translated or not.
+  For more information on ITS tags, see <xref linkend="sec-taglist-ITS"/>.
+ </para>
+ <para>
+  For more information on GeekoDoc, see
+  <link xlink:href="https://opensuse.github.io/geekodoc/">
+   https://opensuse.github.io/geekodoc/</link>.
  </para>
 <para>
- For more information on GeekoDoc, see
- <link xlink:href="https://opensuse.github.io/geekodoc/">
-  https://opensuse.github.io/geekodoc/</link>.
- For more information on all tags available in DocBook, see 
+  For more information on all tags available in DocBook, see 
  <link xlink:href="https://tdg.docbook.org/tdg/5.2/index.html">
   https://tdg.docbook.org/tdg/5.2/index.html</link>.
 </para>
@@ -50,13 +54,11 @@
    index terms.
   </para>
  <informaltable>
-  <tgroup cols="6">
+  <tgroup cols="4">
    <thead>
     <row>
      <entry>Element name</entry>
      <entry>Description</entry>
-     <entry>Formatting</entry>
-     <entry>Example</entry>
      <entry>Translation</entry>
      <entry>Remark</entry>
     </row>
@@ -70,8 +72,6 @@
      Use an abstract to summarize the information provided in a book, article,
      or set in five or fewer sentences.
     </entry>
-    <entry></entry>
-    <entry></entry>
     <entry>
      Yes
     </entry>
@@ -89,8 +89,6 @@
     <entry>
      Name of an individual author
     </entry>
-    <entry></entry>
-    <entry></entry>
     <entry>No</entry>
     <entry></entry>
    </row>
@@ -108,8 +106,6 @@
      Wrapper for author information when a document has multiple authors
      or collaborators
     </entry>
-    <entry></entry>
-    <entry></entry>
     <entry>
      No
     </entry>
@@ -124,8 +120,6 @@
     <entry>
      Date of publication or revision of a document
     </entry>
-    <entry></entry>
-    <entry></entry>
     <entry>
      No
     </entry>
@@ -154,8 +148,6 @@
      <parameter>dm:PLACEHOLDER</parameter>: SUSE specific info needed by the
      doc-manager tool and daps to process and build SUSE user documentation.
      </entry>
-    <entry></entry>
-    <entry></entry>
     <entry>
      No
     </entry>
@@ -175,8 +167,6 @@
      </parameter>
     </entry>
     <entry>to create an index</entry>
-    <entry></entry>
-    <entry></entry>
     <entry>No
      except for the child elements <parameter>title</parameter>,
      <parameter>indexterm</parameter>, <parameter>primary</parameter>, and
@@ -198,8 +188,6 @@
     <entry>
      A set of keywords describing the content of a document
     </entry>
-    <entry></entry>
-    <entry></entry>
     <entry>No</entry>
     <entry></entry>
    </row>
@@ -207,8 +195,6 @@
     <entry>
      <parameter>legalnotice</parameter>
     </entry>
-    <entry></entry>
-    <entry></entry>
     <entry></entry>
     <entry>Yes</entry>
     <entry></entry>
@@ -220,8 +206,6 @@
     <entry>
      The formal name of a product
     </entry>
-    <entry></entry>
-    <entry></entry>
     <entry>No</entry>
     <entry></entry>
    </row>
@@ -232,8 +216,6 @@
     <entry>
      A number assigned to a product
     </entry>
-    <entry></entry>
-    <entry></entry>
     <entry>No</entry>
     <entry></entry>
    </row>
@@ -244,8 +226,6 @@
     <entry>
      A remark (or comment) intended for presentation in a draft manuscript
     </entry>
-    <entry></entry>
-    <entry></entry>
     <entry>No</entry>
     <entry></entry>
    </row>
@@ -256,8 +236,6 @@
     <entry>
      The subtitle of a document. Often used for &suse; Best practices guides
     </entry>
-    <entry></entry>
-    <entry></entry>
     <entry>Yes</entry>
     <entry></entry>
    </row>
@@ -273,8 +251,6 @@
      running text and all types of headings and titles that are part of the
      document content.
     </entry>
-    <entry></entry>
-    <entry></entry>
     <entry>Yes</entry>
     <entry></entry>
    </row>
@@ -284,8 +260,6 @@
     </entry>
     <entry>The abbreviation of a title. Can for example be used to show shorter
      title in table of contents</entry>
-    <entry></entry>
-    <entry></entry>
     <entry>Yes</entry>
     <entry></entry>
    </row>
@@ -305,13 +279,11 @@
    </para>
   </note>
   <informaltable>
-   <tgroup cols="6">
+   <tgroup cols="4">
     <thead>
      <row>
       <entry>Element name</entry>
       <entry>Description</entry>
-      <entry>Formatting</entry>
-      <entry>Example</entry>
       <entry>Translation</entry>
       <entry>Remark</entry>
      </row>
@@ -322,8 +294,6 @@
        <parameter>article</parameter>
       </entry>
       <entry>An article</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -332,8 +302,6 @@
        <parameter>appendix</parameter>
       </entry>
       <entry>An appendix in a book or article</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -342,8 +310,6 @@
        <parameter>bridgehead</parameter>
       </entry>
       <entry>A free-floating heading</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -352,8 +318,6 @@
        <parameter>book</parameter>
       </entry>
       <entry>A  book</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -362,8 +326,6 @@
        <parameter>chapter</parameter>
       </entry>
       <entry>A chapter, as of a book</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -372,8 +334,6 @@
        <parameter>formalpara</parameter>
       </entry>
       <entry>A paragraph with title</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -382,8 +342,6 @@
        <parameter>section</parameter>
       </entry>
       <entry>A recursive section, unnumbered.</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -396,8 +354,6 @@
            ...</parameter>
       </entry>
       <entry>Numbered sections that must be properly nested.</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -406,8 +362,6 @@
        <parameter>set</parameter>
       </entry>
       <entry>A collection of books</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -416,8 +370,6 @@
        <parameter>para</parameter>
       </entry>
       <entry>A paragraph</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -426,8 +378,6 @@
        <parameter>part</parameter>
       </entry>
       <entry>A division in a book</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -436,8 +386,6 @@
        <parameter>preface</parameter>
       </entry>
       <entry>Introductory matter preceding the first chapter of a book</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -451,8 +399,6 @@
           </parameter>
       </entry>
       <entry>Used for FAQs</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -471,13 +417,11 @@
    examples, and a dozen or more miscellaneous elements.
   </para>
   <informaltable>
-   <tgroup cols="6">
+   <tgroup cols="4">
     <thead>
      <row>
       <entry>Element name</entry>
       <entry>Description</entry>
-      <entry>Formatting</entry>
-      <entry>Example</entry>
       <entry>Translation</entry>
       <entry>Remark</entry>
      </row>
@@ -495,8 +439,6 @@
        List of callouts and their descriptions.
        A called out description of a marked area.
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No, but child <parameter>para</parameter> yes</entry>
       <entry></entry>
      </row>
@@ -505,8 +447,6 @@
        <parameter>example</parameter>
       </entry>
       <entry>An example</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -521,8 +461,6 @@
             </parameter>
       </entry>
       <entry>Figure with title</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No, except for <parameter>title</parameter></entry>
       <entry></entry>
      </row>
@@ -537,8 +475,6 @@
        </parameter>
       </entry>
       <entry>A glossary</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -552,8 +488,6 @@
       <entry>
        Use this elements to give vital information.
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -562,8 +496,6 @@
        <parameter>informalfigure</parameter>
       </entry>
       <entry>Figure without a title</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -574,8 +506,6 @@
       <entry>
        Table without a title
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -589,8 +519,6 @@
       <entry>
        Unordered, bulleted list
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -606,8 +534,6 @@
        A message set off from the text.
        Use this element to highlight software version differences.
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>
        Yes
       </entry>
@@ -623,8 +549,6 @@
       <entry>
        Numbered list with attributes to control the type of enumeration
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -642,8 +566,6 @@
        in a well-defined sequence
        <parameter>step</parameter>: A unit of action in a procedure
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -659,8 +581,6 @@
       <entry>
        List of questions and answers, used for FAQs
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -671,8 +591,6 @@
       <entry>
        Text that a user sees on a computer screen
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -686,8 +604,6 @@
       <entry>
        Undecorated list of single words or short phrases
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -709,8 +625,6 @@
       <entry>
        Formal table with title
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>
        No, except child elements <parameter>title</parameter> and
       <parameter>entry</parameter>
@@ -723,8 +637,6 @@
       </entry>
       <entry>Explanatory text for images, to aid blind users and to show when
        the image cannot be loaded because of an error.</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -737,8 +649,6 @@
        </parameter>
       </entry>
       <entry>To introduce guidelines or give tips</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -751,8 +661,6 @@
        </parameter>
       </entry>
       <entry>List of terms and definitions or descriptions</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -767,8 +675,6 @@
       <entry>To warn of security issues, potential loss of data, damage
        to hardware, or physical hazards. Warnings must always precede the
        action to which they apply.</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -785,13 +691,11 @@
    do not cause line or paragraph breaks.
   </para>
   <informaltable>
-   <tgroup cols="6">
+   <tgroup cols="4">
     <thead>
      <row>
       <entry>Element name</entry>
       <entry>Description</entry>
-      <entry>Formatting</entry>
-      <entry>Example</entry>
       <entry>Translation</entry>
       <entry>Remark</entry>
      </row>
@@ -804,8 +708,6 @@
       <entry>
        To reference names of (printed) books or names of other documents.
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -816,8 +718,6 @@
       <entry>
        Part of calloutlist. The location of a callout embedded in text.
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -826,8 +726,6 @@
        <parameter>code</parameter>
       </entry>
       <entry>An inline code fragment</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -836,8 +734,6 @@
        <parameter>command</parameter>
       </entry>
       <entry>A software command</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -846,8 +742,6 @@
        <parameter>constant</parameter>
       </entry>
       <entry>A programming or system constant</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -856,8 +750,6 @@
        <parameter>email</parameter>
       </entry>
       <entry>An email address</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -866,8 +758,6 @@
        <parameter>emphasis</parameter>
       </entry>
       <entry>Emphasized text</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -876,8 +766,6 @@
        <parameter>envar</parameter>
       </entry>
       <entry>A software environment variable</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -889,8 +777,6 @@
        Name of a file or path as well as directories, printers, or
        flash disks
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -901,8 +787,6 @@
       <entry>
        Name of a function or subroutine, as in a programming language
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -913,8 +797,6 @@
       <entry>
        The name of a menu in a GUI
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry>
        Depends on whether UI is translated or not. If not, use ITS tag.
@@ -929,8 +811,6 @@
        </parameter>
       </entry>
       <entry>Index marker</entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry>
        legacy element, do not use for new documentation
@@ -943,8 +823,6 @@
       <entry>
        An inline media object (video, audio, image...)
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -957,8 +835,6 @@
        For function keys always use with function, for example: 
        &lt;keycap function="control">&lt;/keycap>
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -972,8 +848,6 @@
       <entry>
        A combination of input actions on a keyboard
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -986,8 +860,6 @@
       <entry>
        A hypertext link
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -1000,8 +872,6 @@
       <entry>
        To mark up data taken literally from a computer system
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -1014,8 +884,6 @@
       <entry>
        A selection or series of selections from a menu
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -1028,8 +896,6 @@
       <entry>
        An option for a software command
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -1042,8 +908,6 @@
       <entry>
        Name of a software or application package
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -1056,8 +920,6 @@
       <entry>
        A value or a symbolic reference to a value
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -1070,8 +932,6 @@
       <entry>
        A span of text
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -1082,16 +942,12 @@
        </parameter>
       </entry>
       <entry>
-       The formal name of a product
+       <para>The formal name of a product
        When referring to an application, add a 
-       &lt;phrase role="productname"/> element around it, as shown in the
-       example.
+       &lt;phrase role="productname"/> element around it, for example:</para>
+       <para>&lt;phrase role="productname">LibreOffice&lt;/phrase> is an office
+       suite.</para>
        </entry>
-      <entry></entry>
-      <entry>
-       &lt;phrase role="productname">LibreOffice&lt;/phrase> is an office
-       suite.
-      </entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -1105,8 +961,6 @@
        A character or string indicating the start of an input field in a
        computer display
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -1120,8 +974,6 @@
        To quote from sources, such as books. In all other cases, do not use
        quotation marks.
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -1134,8 +986,6 @@
       <entry>
        Content that may or must be replaced by the user
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -1148,8 +998,6 @@
       <entry>
        A system-related item or term
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -1160,11 +1008,8 @@
        </parameter>
       </entry>
       <entry>
-       A subscript
-      </entry>
-      <entry></entry>
-      <entry>
-       H<subscript>2</subscript>O
+       <para>A subscript. For example:</para>
+       <para>H<subscript>2</subscript>O</para>
       </entry>
       <entry>Yes</entry>
       <entry></entry>
@@ -1176,10 +1021,9 @@
        </parameter>
       </entry>
       <entry>
-       A superscript
+       <para>A superscript. For example:</para>
+       <para>X<superscript>2</superscript></para>
       </entry>
-      <entry></entry>
-      <entry>X<superscript>2</superscript></entry>
       <entry>Yes</entry>
       <entry></entry>
      </row>
@@ -1192,8 +1036,6 @@
       <entry>
        A component of XML (or SGML) markup
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -1206,8 +1048,6 @@
       <entry>
        To mark a trademark with <trademark>TM</trademark>
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -1220,8 +1060,6 @@
       <entry>
        For links that should not be clickable
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -1234,8 +1072,6 @@
       <entry>
        The name of a variable
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -1248,8 +1084,6 @@
       <entry>
        To construct documents from different files
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
@@ -1262,8 +1096,6 @@
       <entry>
        A cross-reference to another part of the document
       </entry>
-      <entry></entry>
-      <entry></entry>
       <entry>No</entry>
       <entry></entry>
      </row>
