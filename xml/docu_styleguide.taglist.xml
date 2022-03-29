@@ -1,0 +1,1251 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1
+[
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+    %entities;
+]>
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-taglist">
+ <title>Doocbook tags allowlist</title>
+
+ <para>
+  The &suse; user documentation uses the following DocBook tags as listed and
+  described below.
+ </para>
+
+<sect2>
+ <title>Docbook tags for &sle;, &sle; Micro and &ses;</title>
+ 
+ <sect3>
+  <title>Meta elements</title>
+ <informaltable>
+  <tgroup cols="6">
+   <thead>
+    <row>
+     <entry>Element name</entry>
+     <entry>Description</entry>
+     <entry>Formatting</entry>
+     <entry>Example</entry>
+     <entry>Translation</entry>
+     <entry>Remark</entry>
+    </row>
+   </thead>
+  <tbody>
+   <row>
+    <entry>
+     <parameter>abstract</parameter>
+    </entry>
+    <entry>
+     Use an abstract to summarize the information provided in a book, article,
+     or set in five or fewer sentences.
+    </entry>
+    <entry></entry>
+    <entry></entry>
+    <entry>
+     Yes
+    </entry>
+    <entry></entry>
+   </row>
+   <row>
+    <entry>
+     <parameter>
+      author
+       personame
+        firstname
+         surname
+     </parameter>
+    </entry>
+    <entry>
+     Name of an individual author
+    </entry>
+    <entry></entry>
+    <entry></entry>
+    <entry>No</entry>
+    <entry></entry>
+   </row>
+   <row>
+    <entry>
+     <parameter>
+      authorgroup
+       author
+        personame
+         firstname
+          surname
+     </parameter>
+    </entry>
+    <entry>
+     Wrapper for author information when a document has multiple authors
+     or collaborators
+    </entry>
+    <entry></entry>
+    <entry></entry>
+    <entry>
+     No
+    </entry>
+    <entry></entry>
+   </row>
+   <row>
+    <entry>
+     <parameter>
+      date
+     </parameter>
+    </entry>
+    <entry>
+     Date of publication or revision of a document
+    </entry>
+    <entry></entry>
+    <entry></entry>
+    <entry>
+     No
+    </entry>
+    <entry></entry>
+   </row>
+   <row>
+    <entry>
+     <parameter>
+      info
+       dm:docmanager
+        dm:bugtracker
+        dm:url
+        dm:component
+        dm:product
+        dm:assignee
+        dm:version
+        dm:translation
+        dm:editurl
+        dm:product
+       dm:docmanager
+     </parameter>
+    </entry>
+    <entry>
+     <parameter>info</parameter>: Wrapper to contain bibliographic information
+     about the content and other meta info.
+     <parameter>dm:PLACEHOLDER</parameter>: SUSE specific info needed by the
+     doc-manager tool and daps to process and build SUSE user documentation.
+     </entry>
+    <entry></entry>
+    <entry></entry>
+    <entry>
+     No
+    </entry>
+    <entry></entry>
+   </row>
+   <row>
+    <entry>
+     <parameter>
+     index
+      title
+       indexdiv
+        indexentry
+        title
+         indexterm
+          primary
+           secondary
+     </parameter>
+    </entry>
+    <entry>to create an index</entry>
+    <entry></entry>
+    <entry></entry>
+    <entry>No
+     except for the child elements <parameter>title</parameter>,
+     <parameter>indexterm</parameter>, <parameter>primary</parameter>, and
+     <parameter>secondary</parameter>
+    </entry>
+    <entry>
+     legacy element, do not use for new documentation
+    </entry>
+   </row>
+   <row>
+    <entry>
+     <remark>2022-03-28: jufa: check if still in use or needed for SEO
+      purposes</remark>
+     <parameter>
+      keywordset
+       keyword
+     </parameter>
+    </entry>
+    <entry>
+     A set of keywords describing the content of a document
+    </entry>
+    <entry></entry>
+    <entry></entry>
+    <entry>No</entry>
+    <entry></entry>
+   </row>
+   <row>
+    <entry>
+     <parameter>legalnotice</parameter>
+    </entry>
+    <entry></entry>
+    <entry></entry>
+    <entry></entry>
+    <entry>Yes</entry>
+    <entry></entry>
+   </row>
+   <row>
+    <entry>
+     <parameter>productname</parameter>
+    </entry>
+    <entry>
+     The formal name of a product
+    </entry>
+    <entry></entry>
+    <entry></entry>
+    <entry>No</entry>
+    <entry></entry>
+   </row>
+   <row>
+    <entry>
+     <parameter>productnumber</parameter>
+    </entry>
+    <entry>
+     A number assigned to a product
+    </entry>
+    <entry></entry>
+    <entry></entry>
+    <entry>No</entry>
+    <entry></entry>
+   </row>
+   <row>
+    <entry>
+     <parameter>remark</parameter>
+    </entry>
+    <entry>
+     A remark (or comment) intended for presentation in a draft manuscript
+    </entry>
+    <entry></entry>
+    <entry></entry>
+    <entry>No</entry>
+    <entry></entry>
+   </row>
+   <row>
+    <entry>
+     <parameter>subtitle</parameter>
+    </entry>
+    <entry>
+     The subtitle of a document. Often used for &suse; Best practices guides
+    </entry>
+    <entry></entry>
+    <entry></entry>
+    <entry>Yes</entry>
+    <entry></entry>
+   </row>
+   <row>
+    <entry>
+     <parameter>title</parameter>
+    </entry>
+    <entry>
+     The text of the title of a section of a document or of a formal
+     block-level element
+     For document titles, such as book, article, and set titles, use
+     title-style capitalization. Apply sentence-style capitalization to all
+     running text and all types of headings and titles that are part of the
+     document content.
+    </entry>
+    <entry></entry>
+    <entry></entry>
+    <entry>Yes</entry>
+    <entry></entry>
+   </row>
+   <row>
+    <entry>
+     <parameter>titleabbrev</parameter>
+    </entry>
+    <entry>The abbreviation of a title. Can for example be used to show shorter
+     title in table of contents</entry>
+    <entry></entry>
+    <entry></entry>
+    <entry>Yes</entry>
+    <entry></entry>
+   </row>
+   </tbody>
+   </tgroup>
+ </informaltable>
+ </sect3>
+ 
+ <sect3>
+  <title>Structure elements</title>
+  <note>
+   <para>
+   Most structure elements do not need translations, the child elements can.
+   </para>
+  </note>
+  <informaltable>
+   <tgroup cols="6">
+    <thead>
+     <row>
+      <entry>Element name</entry>
+      <entry>Description</entry>
+      <entry>Formatting</entry>
+      <entry>Example</entry>
+      <entry>Translation</entry>
+      <entry>Remark</entry>
+     </row>
+    </thead>
+    <tbody>
+     <row>
+      <entry>
+       <parameter>article</parameter>
+      </entry>
+      <entry>An article</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>appendix</parameter>
+      </entry>
+      <entry>An appendix in a book or article</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>bridgehead</parameter>
+      </entry>
+      <entry>A free-floating heading</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>book</parameter>
+      </entry>
+      <entry>A  book</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>chapter</parameter>
+      </entry>
+      <entry>A chapter, as of a book</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>formalpara</parameter>
+      </entry>
+      <entry>A paragraph with title</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>section</parameter>
+      </entry>
+      <entry>A recursive section, unnumbered.</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        sect1
+         sect2
+          sect3
+           ...</parameter>
+      </entry>
+      <entry>Numbered sections that must be properly nested.</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>set</parameter>
+      </entry>
+      <entry>A collection of books</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>para</parameter>
+      </entry>
+      <entry>A paragraph</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>part</parameter>
+      </entry>
+      <entry>A division in a book</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>preface</parameter>
+      </entry>
+      <entry>Introductory matter preceding the first chapter of a book</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        qandaset
+         qandaentry
+          question
+          answer
+          </parameter>
+      </entry>
+      <entry>Used for FAQs</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+    </tbody>
+   </tgroup>
+   </informaltable>
+ </sect3>
+ 
+ <sect3>
+  <title>Block elements</title>
+  <informaltable>
+   <tgroup cols="6">
+    <thead>
+     <row>
+      <entry>Element name</entry>
+      <entry>Description</entry>
+      <entry>Formatting</entry>
+      <entry>Example</entry>
+      <entry>Translation</entry>
+      <entry>Remark</entry>
+     </row>
+    </thead>
+    <tbody>
+     <row>
+      <entry>
+       <parameter>
+       calloutlist
+        callout
+         para
+      </parameter>
+      </entry>
+      <entry>
+       List of callouts and their descriptions.
+       A called out description of a marked area.
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No, but child <parameter>para</parameter> yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>example</parameter>
+      </entry>
+      <entry>An example</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        figure
+         title
+          mediaobject
+           imageobject
+            imagedata
+            </parameter>
+      </entry>
+      <entry>Figure with title</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No, except for <parameter>title</parameter></entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        glossary
+         glossdef
+          glossdiv
+           glossentry
+            glossterm
+       </parameter>
+      </entry>
+      <entry>A glossary</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        important
+         tittle
+       </parameter>
+      </entry>
+      <entry>
+       Use this elements to give vital information.
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>informalfigure</parameter>
+      </entry>
+      <entry>Figure without a title</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>informaltable</parameter>
+      </entry>
+      <entry>
+       Table without a title
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        itemizedlist
+         listitem
+       </parameter>
+      </entry>
+      <entry>
+       Unordered, bulleted list
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        note>
+         title
+          para
+       </parameter>
+      </entry>
+      <entry>
+       A message set off from the text.
+       Use this element to highlight software version differences.
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>
+       Yes
+      </entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        orderedlist
+         listitem
+       </parameter>
+      </entry>
+      <entry>
+       Numbered list with attributes to control the type of enumeration
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        procedure
+         step
+          substeps
+           stepalternatives
+       </parameter>
+      </entry>
+      <entry>
+       <parameter>procedure</parameter>: A list of operations to be performed
+       in a well-defined sequence
+       <parameter>step</parameter>: A unit of action in a procedure
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        qandset
+          qandaentry
+           question
+           answer
+       </parameter>
+      </entry>
+      <entry>
+       List of questions and answers, used for FAQs
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>screen</parameter>
+      </entry>
+      <entry>
+       Text that a user sees on a computer screen
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        simplelist
+         member
+       </parameter>
+      </entry>
+      <entry>
+       Undecorated list of single words or short phrases
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        table
+         title
+          tgroup
+           colspec
+            thead
+             row
+              entry
+               tbody
+                row
+                 entry
+       </parameter>
+      </entry>
+      <entry>
+       Formal table with title
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>
+       No, except child elements <parameter>title</parameter> and
+      <parameter>entry</parameter>
+      </entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>textobject</parameter>
+      </entry>
+      <entry>Explanatory text for images, to aid blind users and to show when
+       the image cannot be loaded because of an error.</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+         tip
+          title
+           para
+       </parameter>
+      </entry>
+      <entry>To introduce guidelines or give tips</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        variablelist
+         varlistentry
+          term
+       </parameter>
+      </entry>
+      <entry>List of terms and definitions or descriptions</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        warning
+         title
+          para
+       </parameter>
+      </entry>
+      <entry>To warn of security issues, potential loss of data, damage
+       to hardware, or physical hazards. Warnings must always precede the
+       action to which they apply.</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </informaltable>
+ </sect3>
+ 
+ <sect3>
+  <title>Inline elements</title>
+  <informaltable>
+   <tgroup cols="6">
+    <thead>
+     <row>
+      <entry>Element name</entry>
+      <entry>Description</entry>
+      <entry>Formatting</entry>
+      <entry>Example</entry>
+      <entry>Translation</entry>
+      <entry>Remark</entry>
+     </row>
+    </thead>
+    <tbody>
+     <row>
+      <entry>
+       <parameter>citetitle</parameter>
+      </entry>
+      <entry>
+       To reference names of (printed) books or names of other documents.
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>co</parameter>
+      </entry>
+      <entry>
+       Part of calloutlist. The location of a callout embedded in text.
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>code</parameter>
+      </entry>
+      <entry>An inline code fragment</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>command</parameter>
+      </entry>
+      <entry>A software command</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>constant</parameter>
+      </entry>
+      <entry>A programming or system constant</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>email</parameter>
+      </entry>
+      <entry>An email address</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>emphasis</parameter>
+      </entry>
+      <entry>Emphasized text</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>envar</parameter>
+      </entry>
+      <entry>A software environment variable</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>filename</parameter>
+      </entry>
+      <entry>
+       Name of a file or path as well as directories, printers, or
+       flash disks
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>function</parameter>
+      </entry>
+      <entry>
+       Name of a function or subroutine, as in a programming language
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>guimenu</parameter>
+      </entry>
+      <entry>
+       The name of a menu in a GUI
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry>
+       Depends on whether UI is translated or not. If not, use ITS tag.
+      </entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        indexterm
+         primary
+         secondary
+       </parameter>
+      </entry>
+      <entry>Index marker</entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry>
+       legacy element, do not use for new documentation
+      </entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>inlinemediaobject</parameter>
+      </entry>
+      <entry>
+       An inline media object (video, audio, image...)
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>keycap</parameter>
+      </entry>
+      <entry>
+       The text printed on a key on a keyboard
+       For function keys always use with function, for example: 
+       &alt;keycap function="control">&alt;/keycap>
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        keycombo
+         keycap
+       </parameter>
+      </entry>
+      <entry>
+       A combination of input actions on a keyboard
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        link
+       </parameter>
+      </entry>
+      <entry>
+       A hypertext link
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        literal
+       </parameter>
+      </entry>
+      <entry>
+       To mark up data taken literally from a computer system
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        menuchoice
+       </parameter>
+      </entry>
+      <entry>
+       A selection or series of selections from a menu
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        option
+       </parameter>
+      </entry>
+      <entry>
+       An option for a software command
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        package
+       </parameter>
+      </entry>
+      <entry>
+       Name of a software or application package
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        parameter
+       </parameter>
+      </entry>
+      <entry>
+       A value or a symbolic reference to a value
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        phrase
+       </parameter>
+      </entry>
+      <entry>
+       A span of text
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        productname
+       </parameter>
+      </entry>
+      <entry>
+       The formal name of a product
+       When referring to an application, add a 
+       &alt;phrase role="productname"/> element around it, as shown in the
+       example.
+       </entry>
+      <entry></entry>
+      <entry>
+       &alt;phrase role="productname">LibreOffice&alt;/phrase> is an office
+       suite.
+      </entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        prompt
+       </parameter>
+      </entry>
+      <entry>
+       A character or string indicating the start of an input field in a
+       computer display
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        quote
+       </parameter>
+      </entry>
+      <entry>
+       To quote from sources, such as books. In all other cases, do not use
+       quotation marks.
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        replaceable
+       </parameter>
+      </entry>
+      <entry>
+       Content that may or must be replaced by the user
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        systemitem
+       </parameter>
+      </entry>
+      <entry>
+       A system-related item or term
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        subscript
+       </parameter>
+      </entry>
+      <entry>
+       A subscript
+      </entry>
+      <entry></entry>
+      <entry>
+       H<subscript>2</subscript>O
+      </entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        superscript
+       </parameter>
+      </entry>
+      <entry>
+       A superscript
+      </entry>
+      <entry></entry>
+      <entry>X<superscript>2</superscript></entry>
+      <entry>Yes</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        tag
+       </parameter>
+      </entry>
+      <entry>
+       A component of XML (or SGML) markup
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        trademark
+       </parameter>
+      </entry>
+      <entry>
+       To mark a trademark with <trademark>TM</trademark>
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        uri
+       </parameter>
+      </entry>
+      <entry>
+       For links that should not be clickable
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        varname
+       </parameter>
+      </entry>
+      <entry>
+       The name of a variable
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        xi:include
+       </parameter>
+      </entry>
+      <entry>
+       To construct documents from different files
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+     <row>
+      <entry>
+       <parameter>
+        xref
+       </parameter>
+      </entry>
+      <entry>
+       A cross-reference to another part of the document
+      </entry>
+      <entry></entry>
+      <entry></entry>
+      <entry>No</entry>
+      <entry></entry>
+     </row>
+    </tbody>
+   </tgroup>
+  </informaltable>
+ </sect3>
+ 
+</sect2>
+
+<sect2>
+ <title>Using ITS tags</title>
+ <para>
+  With Geekodoc 2 it is possible to use the Internationalization Tag Set (ITS)
+  tags to explicit indicate that a tag should be translated or not.
+ </para>
+ <para>
+  For this you need to have the its namespace enabled in the XML file. Make
+  sure the following line is added to the root element (added by default to
+  the doc-modular templates):
+  <code>xmlns:its="http://www.w3.org/2005/11/its"</code>
+ </para>
+ <para>
+  For example:
+  You have used the tag &alt;guimenu> which is usually translated
+  but in this particular case it should not be translated. To mark the tag
+  correctly, use the ITS tag as shown here:
+  Click &alt;guimenu its:translate="no">Save&alt;/guimenu>.
+  </para>
+</sect2>
+
+</sect1>
