@@ -4,7 +4,12 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-taglist">
+<sect1 version="5.0" xml:id="sec-taglist"
+ xmlns="http://docbook.org/ns/docbook" 
+ xmlns:xi="http://www.w3.org/2001/XInclude" 
+ xmlns:xlink="http://www.w3.org/1999/xlink"
+ >
+ 
  <title>Doocbook tags allowlist</title>
 
  <para>
@@ -13,7 +18,7 @@
  </para>
 
 <sect2>
- <title>Docbook tags for &sle;, &sle; Micro and &ses;</title>
+ <title>Docbook tags for &sle;, &sle; Micro and &sesa;</title>
  
  <sect3>
   <title>Meta elements</title>
@@ -1224,9 +1229,8 @@
    </tgroup>
   </informaltable>
  </sect3>
- 
 </sect2>
-
+ 
 <sect2>
  <title>Using ITS tags</title>
  <para>
@@ -1247,5 +1251,4 @@
   Click &alt;guimenu its:translate="no">Save&alt;/guimenu>.
   </para>
 </sect2>
-
 </sect1>
