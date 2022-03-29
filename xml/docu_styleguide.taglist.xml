@@ -10,18 +10,45 @@
  xmlns:xlink="http://www.w3.org/1999/xlink"
  >
  
- <title>Doocbook tags allowlist</title>
+ <title>Tags for &sle;, &sle; Micro and &sesa;</title>
 
  <para>
-  The &suse; user documentation uses the following DocBook tags as listed and
-  described below.
+  The &suse; and openSUSE user documentation is written with DocBook but uses a
+  Relax NG schema that defines a restricted set of tags.
+  The following tables list and describe all DocBook tags used for writing
+  the &suse; user documentation for the products of &sle;, &sle; Micro and
+  &sesa;. It also shows, which tags are translated and which tags will be
+  blocked for translation, means that those tags stay in English.
+  The tables are divided into four categories, listing the elements of each of
+  the respective category.
  </para>
+ <para>
+  With Geekodoc 2 it is also possible to use the Internazionalization Tag Set
+  (ITS) to explicit indicate if a tag should be translated or not. For more
+  information, see <xref linkend="sec-taglist-ITS"/>.
+ </para>
+<para>
+ For more information on GeekoDoc, see
+ <link xlink:href="https://opensuse.github.io/geekodoc/">
+  https://opensuse.github.io/geekodoc/</link>.
+ For more information on all tags available in DocBook, see 
+ <link xlink:href="https://tdg.docbook.org/tdg/5.2/index.html">
+  https://tdg.docbook.org/tdg/5.2/index.html</link>.
+</para>
 
-<sect2>
- <title>Docbook tags for &sle;, &sle; Micro and &sesa;</title>
+ <sect2 xml:id="sec-taglis-docbook">
+ <title>DocBook tags</title>
  
  <sect3>
   <title>Meta elements</title>
+  <para>
+   All of the elements at the section level and above, and many other elements,
+   include a wrapper for meta-information about the content.
+   The meta-information wrapper is designed to contain bibliographic
+   information about the content (author, title, publisher, and so on) as well
+   as other meta-information such as revision histories, keyword sets, and
+   index terms.
+  </para>
  <informaltable>
   <tgroup cols="6">
    <thead>
@@ -271,7 +298,10 @@
   <title>Structure elements</title>
   <note>
    <para>
-   Most structure elements do not need translations, the child elements can.
+    Structure elements are needed to sectioning and structure your Document,
+    such as defining the chapters, appendix, etc.
+   Most structure elements do not need translations. The child elements, like
+   &lt;title> are translated.
    </para>
   </note>
   <informaltable>
@@ -433,6 +463,13 @@
  
  <sect3>
   <title>Block elements</title>
+  <para>
+   The block elements occur immediately below the component and sectioning
+   elements. These are the (roughly) paragraph-level elements in DocBook.
+   They can be divided into a number of categories: lists, admonitions,
+   line-specific environments, synopses of several sorts, tables, figures,
+   examples, and a dozen or more miscellaneous elements.
+  </para>
   <informaltable>
    <tgroup cols="6">
     <thead>
@@ -742,6 +779,11 @@
  
  <sect3>
   <title>Inline elements</title>
+  <para>
+   Inline elements are used to mark up running text. In published documents,
+   inline elements often cause a font change or other small change, but they
+   do not cause line or paragraph breaks.
+  </para>
   <informaltable>
    <tgroup cols="6">
     <thead>
@@ -1231,7 +1273,7 @@
  </sect3>
 </sect2>
  
-<sect2>
+<sect2 xml:id="sec-taglist-ITS">
  <title>Using ITS tags</title>
  <para>
   With Geekodoc 2 it is possible to use the Internationalization Tag Set (ITS)
