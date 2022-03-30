@@ -996,11 +996,13 @@ productname
       <entry>
        <para>
        The formal name of a product
-       When referring to an application, add a 
+       When referring to an application, add a
        &lt;phrase role="productname"/> element around it, for example:
        </para>
        <screen>
-&lt;phrase role="productname">LibreOffice&lt;/phrase> is an office suite.
+&lt;phrase role="productname">
+LibreOffice&lt;/phrase> is an
+office suite.
        </screen>
        </entry>
       <entry>No</entry>
