@@ -10,7 +10,7 @@
  xmlns:xlink="http://www.w3.org/1999/xlink"
  >
  
- <title>Using DocBook tags</title>
+ <title>DocBook tags</title>
 
  <para>
   The &suse; and openSUSE user documentation is written with DocBook and uses a
@@ -41,7 +41,7 @@
 </para>
 
  <sect2 xml:id="sec-taglis-docbook">
- <title>DocBook tags</title>
+ <title>Using DocBook tags</title>
  
  <sect3>
   <title>Meta elements</title>
