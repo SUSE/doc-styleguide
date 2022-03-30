@@ -1157,16 +1157,19 @@ xref
  </para>
  <para>
   For this you need to have the its namespace enabled in the XML file. Make
-  sure the following line is added to the root element (added by default to
-  the doc-modular templates):
+  sure the following line is added to the root element:
   <code>xmlns:its="http://www.w3.org/2005/11/its"</code>
  </para>
  <para>
   For example:
   You have used the tag <tag class="starttag">guimenu</tag> which is usually
-  translated but in this particular case it should not be translated. To mark
-  the tag correctly, use the ITS tag as shown here:
-  Click &lt;guimenu its:translate="no">Save&lt;/guimenu>.
+  translated but in this particular case it should not be translated.
   </para>
+  <para>
+  To mark the tag correctly, use the ITS tag as shown here:
+  </para>
+  <screen>
+Click &lt;guimenu its:translate="no">Save&lt;/guimenu>.
+  </screen>
 </sect2>
 </sect1>
