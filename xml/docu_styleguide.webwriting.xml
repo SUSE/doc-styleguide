@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1
+[
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+    %entities;
+]>
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-webwriting">
+ <title>Writing for the Web</title>
+
+ <para>
+  Create engaging and informative content that helps your audience and is
+  optimized for the web.
+ </para>
+
+ <sect2 xml:id="sec-topical">
+  <title>Topical structure</title>
+  <para>
+   The most important thing to do with your web copy is to help users get
+   answers to their questions as soon as possible. To achieve this, we
+   recommend the modular approach of topic-based authoring where documentation
+   is created and maintained in chunks (topics).
+  </para>
+  <para>
+   Topics have the sole purpose of supporting users in their tasks. Each topic
+   focuses on one specific subject and has one distinct purpose. We write
+   topics in a way that they can stand alone as well as in context with other
+   topics. They should also be reusable in different contexts.
+  </para>
+  <para>
+   Recommendations:
+  </para>
+  <itemizedlist>
+   <listitem>
+    <para>
+     Put your most important information first. Users typically decide if they
+     are going to stay on your page within 3&ndash;5 seconds. Make sure your
+     copy helps users understand the big picture right away.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Write for scanners. Help readers find the answer to their question. Create
+     headlines that are clear and to the point. Break long headlines into a
+     heading and sub-head. Ask yourself: Is it easy to see the benefit of the
+     page with a quick glance?
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     Organize content logically. Layer and break up your content into sections
+     to help users find answers at a glance.
+    </para>
+   </listitem>
+  </itemizedlist>
+ </sect2>
+
+ <sect2 xml:id="sec-seo">
+  <title>Writing SEO-friendly content</title>
+  <para>
+   SEO, or Search Engine Optimization, is the strategy to attract organic
+   (unpaid) traffic that originates from online search and refers to visitors
+   landing on the website. When it comes to SEO, content is key. Here are some
+   insights to help you create and design the content that will rank high in
+   search engines.
+  </para>
+  <variablelist>
+   <varlistentry>
+    <term>Brainstorm and research keywords</term>
+    <listitem>
+     <para>
+      To learn what type of content search engines deem best for a specific
+      keyword, search the phrases you want to rank for. Bear in mind the
+      approved SUSE documentation terminology.
+     </para>
+     <para>
+      At the same time, do not stuff your content with keywords. The keyword
+      ratio for an article should be 2&ndash;4%, that is, 8&ndash;10 keywords
+      per 500 words.
+     </para>
+    </listitem>
+   </varlistentry>
+   <varlistentry>
+    <term>Structure your content in a way that is easy for users to scan</term>
+    <listitem>
+     <para>
+      Structuring your headings in a hierarchy can make a larger content piece
+      easily scannable while helping search engines understand the context of
+      your content. For example:
+     </para>
+<screen>&lt;H1&gt; Dealing with Boot and Installation Problems
+&lt;H2&gt; Problems Booting
+	&lt;H3&gt; Solution 1
+	&lt;H3&gt; Solution 2
+&lt;H2&gt; Problems Installing
+	&lt;H3&gt; Solution 1
+	&lt;H3&gt; Solution 2
+  </screen>
+    </listitem>
+   </varlistentry>
+   <varlistentry>
+    <term>Create concise and meaningful title tags and meta descriptions</term>
+    <listitem>
+     <para>
+      Search engines pull the title tag, or meta title, from H1, and the meta
+      description from the abstract. The number of characters is limited, and
+      the recommended length is 55&ndash;65 characters for meta titles, and
+      145&ndash;155 characters for meta descriptions. Be sure to optimize your
+      headings wherever appropriate by integrating keywords, such as product
+      names, into them.
+     </para>
+     <para>
+      Product names are known for their extra length, so effective page titles
+      and meta descriptions may require the use of abbreviations. From the
+      search engine perspective, it can be helpful to mention the abbreviation
+      within the content by adding the abbreviation in parenthesis after the
+      first use of the term.
+     </para>
+    </listitem>
+   </varlistentry>
+   <varlistentry>
+    <term>Link from (and to) your content</term>
+    <listitem>
+     <para>
+      Links are critical to establishing the authority and relevance of your
+      content. The two most important types of links are:
+     </para>
+     <orderedlist>
+      <listitem>
+       <para>
+        Internal links lead to and from other pages within the same domain and
+        help establish the relationship between two pieces of content. Internal
+        linking helps search engines discover new pages on the website and
+        index them.
+       </para>
+      </listitem>
+      <listitem>
+       <para>
+        Inbound links lead to your content piece from a different domain (for
+        example, SAP.com to SUSE.com).
+       </para>
+      </listitem>
+     </orderedlist>
+     <para>
+      External links to high-quality, creditable websites help increase the
+      validity of your own website. The better the links, the higher the page
+      will rank in search results.
+     </para>
+    </listitem>
+   </varlistentry>
+   <varlistentry>
+    <term>Optimize images by adding alt text</term>
+    <listitem>
+     <para>
+      Be sure to add alternative text whenever you use images. This practice
+      allows search engines to understand the context of your images and index
+      them more accurately. It also improves the accessibility of the website.
+     </para>
+    </listitem>
+   </varlistentry>
+  </variablelist>
+ </sect2>
+</sect1>
