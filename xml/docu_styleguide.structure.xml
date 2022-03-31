@@ -2332,7 +2332,7 @@ xml:id="tab-install-source"</screen>
    troubleshooting or commonly asked questions about a product. Never use
    questions-and-answers sections to explain trivia, such as how a product
    got its name. Keep your audience in mind. See also
-   <xref linkend="sec-audience"/>.
+   <xref linkend="sec-techwriting"/>.
   </para>
   <para>
    Questions must always end in a <literal>?</literal>. Where explanations

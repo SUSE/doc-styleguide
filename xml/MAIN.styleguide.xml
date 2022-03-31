@@ -39,7 +39,7 @@
    </para>
   </abstract>
  </info>
- <xi:include href="docu_styleguide.audience.xml"/>
+ <xi:include href="docu_styleguide.techwriting.xml"/>
  <xi:include href="docu_styleguide.content.xml"/>
  <xi:include href="docu_styleguide.name.xml"/>
  <xi:include href="docu_styleguide.outline.xml"/>
