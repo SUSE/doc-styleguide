@@ -18,9 +18,9 @@
  </para>
  <para>
   The following tables list and describe all DocBook tags used for writing
-  the &suse; user documentation for the products of &sle;, &sle; Micro and
-  &sesa;. It also shows, which tags are translated and which tags will be
-  blocked for translation, means that those tags stay in English.
+  most of the &suse; user documentation. It also shows, which tags are
+  translated and which tags will be blocked for translation, means that those
+  tags stay in English.
   The tables are divided into four categories, listing the elements of each of
   the respective category.
  </para>
@@ -153,14 +153,9 @@ info
    <row>
     <entry>
      <screen>
-index
- title
-  indexdiv
-  indexentry
-  title
-   indexterm
-    primary
-     secondary
+indexterm
+ primary
+  secondary
      </screen>
     </entry>
     <entry>
@@ -330,7 +325,10 @@ appendix
 bridgehead
        </screen>
       </entry>
-      <entry>A free-floating heading</entry>
+      <entry>
+       <para>A free-floating heading.</para>
+      <para>Try to avoid usage and work with sections instead.</para>
+      </entry>
       <entry>Yes</entry>
      </row>
      <row>
