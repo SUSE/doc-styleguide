@@ -163,12 +163,7 @@ indexterm
     </entry>
     <entry>
      <para>
-      No
-     </para>
-     <para>
-      Except for the child elements <tag class="starttag">title</tag>,
-     <tag class="starttag">indexterm</tag>, <tag class="starttag">primary</tag>,
-      and <tag class="starttag">secondary</tag>
+      Yes
      </para>
      <para>
       Legacy element, do not use for new documentation
@@ -994,6 +989,8 @@ productname
       <entry>
        <para>
        The formal name of a product
+       </para>
+       <para>
        When referring to an application, add a
        &lt;phrase role="productname"/> element around it, for example:
        </para>
