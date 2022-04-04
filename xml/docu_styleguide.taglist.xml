@@ -55,6 +55,9 @@
   </para>
  <informaltable>
   <tgroup cols="3">
+   <colspec colnum="1" colname="c1" colwidth="1.25*" />
+   <colspec colnum="2" colname="c2" colwidth="3.0*" />
+   <colspec colnum="3" colname="c3" colwidth="1*" />
    <thead>
     <row>
      <entry>Element name</entry>
@@ -288,6 +291,9 @@ titleabbrev
   </note>
   <informaltable>
    <tgroup cols="3">
+    <colspec colnum="1" colname="c1" colwidth="1.25*" />
+    <colspec colnum="2" colname="c2" colwidth="3.0*" />
+    <colspec colnum="3" colname="c3" colwidth="1*" />
     <thead>
      <row>
       <entry>Element name</entry>
@@ -322,7 +328,7 @@ bridgehead
       </entry>
       <entry>
        <para>A free-floating heading.</para>
-      <para>Try to avoid usage and work with sections instead.</para>
+      <para>Use sparingly and work with sections instead.</para>
       </entry>
       <entry>Yes</entry>
      </row>
@@ -437,6 +443,9 @@ qandaset
   </para>
   <informaltable>
    <tgroup cols="3">
+    <colspec colnum="1" colname="c1" colwidth="1.25*" />
+    <colspec colnum="2" colname="c2" colwidth="3.0*" />
+    <colspec colnum="3" colname="c3" colwidth="1*" />
     <thead>
      <row>
       <entry>Element name</entry>
@@ -726,6 +735,9 @@ warning
   </para>
   <informaltable>
    <tgroup cols="3">
+    <colspec colnum="1" colname="c1" colwidth="1.25*" />
+    <colspec colnum="2" colname="c2" colwidth="3.0*" />
+    <colspec colnum="3" colname="c3" colwidth="1*" />
     <thead>
      <row>
       <entry>Element name</entry>
