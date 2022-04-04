@@ -1000,9 +1000,7 @@ productname
        &lt;phrase role="productname"/> element around it, for example:
        </para>
        <screen>
-&lt;phrase role="productname">
-LibreOffice&lt;/phrase> is an
-office suite.
+&lt;phrase role="productname">LibreOffice&lt;/phrase> is an office suite.
        </screen>
        </entry>
       <entry>No</entry>
