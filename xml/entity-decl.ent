@@ -4,6 +4,9 @@
 <!ENTITY tm "™">
 <!ENTITY sm "℠">
 <!ENTITY thrdmrk "*">
+<!ENTITY sle "&suse; Linux Enterprise">
+<!ENTITY ses "&suse; Linux Enterprise">
+<!ENTITY sesa "SES">
 
 <!ENTITY tdg "https://tdg.docbook.org/tdg/5.1">
 

@@ -45,6 +45,7 @@
  <xi:include href="docu_styleguide.outline.xml"/>
  <xi:include href="docu_styleguide.language.xml"/>
  <xi:include href="docu_styleguide.structure.xml"/>
+ <xi:include href="docu_styleguide.taglist.xml"/>
  <xi:include href="docu_styleguide.manage.xml"/>
  <xi:include href="docu_styleguide.xmlformat.xml"/>
  <xi:include href="docu_styleguide.asciidoc.xml"/>
