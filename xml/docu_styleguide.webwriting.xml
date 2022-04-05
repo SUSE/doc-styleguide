@@ -18,7 +18,7 @@
    The most important thing to do with your web copy is to help users get
    answers to their questions as soon as possible. To achieve this, we
    recommend the modular approach of topic-based authoring where documentation
-   is created and maintained in chunks (topics).
+   is created and maintained in chunks, subsequently referred to as topics.
   </para>
   <para>
    Topics have the sole purpose of supporting users in their tasks. Each topic
