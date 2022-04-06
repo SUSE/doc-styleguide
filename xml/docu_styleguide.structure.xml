@@ -941,7 +941,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    All referenced image files must have a lowercase alphanumeric file name.
    Provide an appropriate image width using the
    <tag class="attvalue">width</tag>
-   attribute. Always add a
+   attribute. For both figure types, formal and informal, always add a
    <tag class="emptytag">textobject role="description"</tag>
    as in <xref linkend="ex-figure"/> to provide an alternative text for the
    HTML output.
