@@ -137,18 +137,14 @@
      <para>
       Use an abstract to summarize the information provided in a book,
       article, chapter, or set in 70&ndash;150 characters. Do not use lists,
-      images or examples in an abstract. Summarize the topic instead of
-      summarizing the outline.
+      images or examples in an abstract.
      </para>
      <example xml:id="ex-abstract">
       <title>An abstract</title>
       <para>
-       &suse; Linux Enterprise ships with several file systems,
-       including Btrfs, Ext3, Ext4. Each file system has advantages and
-       disadvantages that make it more or less suitable for a scenario.
-       Professional high-performance setups can require a different choice
-       of file system than a home user setup. This guide will help you
-       choose the right one.
+       Perform an upgrade of a &sle; system to a new 
+       major version in environments which do not allow for standard 
+       booting of the installation.
       </para>
      </example>
     </listitem>
@@ -195,9 +191,8 @@
        <formalpara>
         <title>Abstract</title>
         <para>
-         Use an abstract to summarize the information provided in a book,
-         article, chapter, or set in 70&ndash;150 characters. Summarize the
-         topic instead of summarizing the outline. See also <xref
+         In an abstract, summarize the topic instead of summarizing the outline. 
+         See also <xref
          linkend="vle-abstract"/>.
          <remark>cwickert 2021-12-09: The 70&ndash;155 chars range is taken from
           <link xlink:href="https://www.contentkingapp.com/academy/meta-description/"/>,
