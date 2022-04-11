@@ -36,7 +36,7 @@
   <title>IPv4 addresses</title>
   <para>
    Use addresses from the class C subnet <literal>192.168.255.0</literal>
-   for examples. That is, replace the final <literal>0</literal> by any
+   for examples. That is, replace the final <literal>0</literal> with any
    integer between <literal>0</literal> and <literal>255</literal>. To
    create examples using a larger setup, use addresses from the private
    network ranges. For more information, see

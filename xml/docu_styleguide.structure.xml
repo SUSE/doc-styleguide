@@ -628,7 +628,7 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
       <listitem>
        <para>
         Remove or replace items that are irrelevant to your goal.
-        For example, replace long file names by shorter ones or remove a table
+        For example, replace long file names with shorter ones or remove a table
         column and replace it with <literal>[...]</literal>.
        </para>
       </listitem>
@@ -639,7 +639,7 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
        </para>
        <screen>&lt;?dbsuse-fo font-size="<replaceable>SIZE</replaceable>em"?&gt;</screen>
        <para>
-        Replace <replaceable>SIZE</replaceable> by a suitable value, such
+        Replace <replaceable>SIZE</replaceable> with a suitable value, such
         <literal>0.7</literal>. Choose a value between <literal>0.55</literal>
         and <literal>1</literal>. Values outside that range will lead to either
         unreadably small or unsuitably large text.
@@ -941,7 +941,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    All referenced image files must have a lowercase alphanumeric file name.
    Provide an appropriate image width using the
    <tag class="attvalue">width</tag>
-   attribute. Always add a
+   attribute. For both figure types, formal and informal, always add a
    <tag class="emptytag">textobject role="description"</tag>
    as in <xref linkend="ex-figure"/> to provide an alternative text for the
    HTML output.
@@ -1041,7 +1041,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="&tdg;/glossary.html"/>
+      <entry><link xlink:href="&tdg;/imagedata.html"/>
       </entry>
      </row>
      <row>

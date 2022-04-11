@@ -464,7 +464,7 @@
       <entry/>
       <entry>verb; only when a value needs to be specified and
               <keycap function="enter"/> should be pressed afterward; where
-              possible, replace by <emphasis>specify</emphasis> or
+              possible, replace with <emphasis>specify</emphasis> or
               <emphasis>provide</emphasis>
       </entry>
      </row>
@@ -1835,7 +1835,7 @@
       <entry>WLAN</entry>
       <entry>Wlan</entry>
       <entry>noun; avoid; use only when referring to wireless LANs that are
-              not IEEE 802.11-based; use <emphasis>Wi-Fi</emphasis>in all other
+              not IEEE 802.11-based; use <emphasis>Wi-Fi</emphasis> in all other
               cases.
             </entry>
      </row>
@@ -1915,7 +1915,7 @@
    <para>
     In addition to the words documented here, make sure to also review the
     Inclusive Naming Initiative's
-    <link xlink:href="https://inclusivenaming.org/language/word-list/">Word List</link>.
+    <link xlink:href="https://inclusivenaming.org/language/overview/">Word List</link>.
    </para>
    <para>
     For more information about word choices, see <xref linkend="sec-bias"/>.
