@@ -758,14 +758,6 @@
     <itemizedlist>
      <listitem>
       <para>
-       Promoted <xref linkend="sec-audience"/> to a
-       <tag class="emptytag">sect1</tag>.
-       Added new paragraph about how to mark the target audience in
-       documentation.
-      </para>
-     </listitem>
-     <listitem>
-      <para>
        Removed <emphasis>Creating a Consistent Structure: Lessons for
        Lizards</emphasis> section.
       </para>

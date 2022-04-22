@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sect1
+[
+  <!ENTITY % entities SYSTEM "entity-decl.ent">
+    %entities;
+]>
+<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-techwriting">
+ <title>Writing technical documentation</title>
+
+ <para>
+  Technical writing has certain characteristics that make it different from
+  other types of writing. Its objective is to provide readers with complex
+  information and comprehensive answers they are searching for. The content
+  should be well-structured, clear, and concise. Effective technical
+  documentation is straightforward, detailed and focused on problem-solving,
+  and there is a specific workflow for its creation:
+ </para>
+
+ <variablelist>
+  <varlistentry>
+   <term>Defining the target audience</term>
+   <listitem>
+    <para>
+     Adjust tone, style, and technicality of the text based on the intended
+     audience. Keep in mind that not all facts that seem obvious to you will be
+     obvious to your readers.
+    </para>
+   </listitem>
+  </varlistentry>
+  <varlistentry>
+   <term>Researching a topic</term>
+   <listitem>
+    <para>
+     Start with research on the information that is relevant to the target
+     audience. Receive essential input from issue tracking systems like GitHub,
+     and project management tools.
+    </para>
+   </listitem>
+  </varlistentry>
+  <varlistentry>
+   <term>Writing about a topic</term>
+   <listitem>
+    <para>
+     Start writing at an early stage, even if you have not finished your
+     research yet. Prepare a draft document and discuss it with subject-matter
+     experts.
+    </para>
+   </listitem>
+  </varlistentry>
+  <varlistentry>
+   <term>Getting reviews</term>
+   <listitem>
+    <para>
+     In a first review of your text, identify and fix the most obvious issues
+     like typos, unfinished sentences, etc. After self-review, ask for a
+     technical review by dedicated specialists. A technical review uncovers
+     technical or factual errors like missing or misspelled package names,
+     wrong commands, or forgotten options.
+    </para>
+    <para>
+     Request a peer review which can improve your text and detect any
+     structural problems or logical traps. You can then do a spell check, link
+     check, and style check with the DAPS tool.
+    </para>
+    <para>
+     Finally, ask for a linguistic review that tackles language issues, typos,
+     inconsistencies, and style guide compliance.
+    </para>
+   </listitem>
+  </varlistentry>
+ </variablelist>
+ <para>
+  <!--  For more information on how to produce meaningful content that will rank high
+  on the Web, see Section ???, “Writing for the Web”, and Section ???,
+  “Writing SEO-friendly content”.-->
+ </para>
+ </sect1>
