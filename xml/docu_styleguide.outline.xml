@@ -8,16 +8,16 @@
  <title>Outline of a manual</title>
 
  <para>
-  Maintain a consistent structure within your documents. The structure can
-  vary between different books, articles or projects, but the most common
-  parts of the document structure are documented here.
+  Maintain a consistent structure within your documents. The structure can vary
+  between different books, articles or projects, but the most common parts of
+  the document structure are documented here.
  </para>
 
  <sect2 xml:id="sec-book">
   <title>Books</title>
   <para>
-   For books, use a document structure that includes the following
-   elements, in that order:
+   For books, use a document structure that includes the following elements, in
+   that order:
   </para>
   <orderedlist>
    <listitem>
@@ -58,9 +58,8 @@
        <formalpara>
         <title>Title</title>
         <para>
-         Work with the product manager to define the book
-         title. The book title should not contain the product name and
-         version.
+         Work with the product manager to define the book title. The book title
+         should not contain the product name and version.
         </para>
        </formalpara>
       </listitem>
@@ -68,10 +67,9 @@
        <formalpara>
         <title>Product name and product version</title>
         <para>
-         Work with the product manager to find the correct product name
-         and version number. Mark this information up with
-         <tag class="emptytag">productname</tag>
-         and
+         Work with the product manager to find the correct product name and
+         version number. Mark this information up with
+         <tag class="emptytag">productname</tag> and
          <tag class="emptytag">productnumber</tag>, respectively.
         </para>
        </formalpara>
@@ -80,10 +78,8 @@
        <formalpara>
         <title>Documentation version or revision information</title>
         <para>
-         Optionally, use the
-         <tag class="emptytag">releaseinfo</tag>
-         element to mark up version or revision numbers of the documentation
-         itself.
+         Optionally, use the <tag class="emptytag">releaseinfo</tag> element to
+         mark up version or revision numbers of the documentation itself.
         </para>
        </formalpara>
       </listitem>
@@ -135,20 +131,16 @@
     <term>Abstract</term>
     <listitem>
      <para>
-      Use an abstract to summarize the information provided in a book,
-      article, chapter, or set in 70&ndash;150 characters. Do not use lists,
-      images or examples in an abstract. Summarize the topic instead of
-      summarizing the outline.
+      Use an abstract to summarize the information provided in a book, article,
+      chapter, or set in 70&ndash;150 characters. Do not use lists, images or
+      examples in an abstract.
      </para>
      <example xml:id="ex-abstract">
       <title>An abstract</title>
       <para>
-       &suse; Linux Enterprise ships with several file systems,
-       including Btrfs, Ext3, Ext4. Each file system has advantages and
-       disadvantages that make it more or less suitable for a scenario.
-       Professional high-performance setups can require a different choice
-       of file system than a home user setup. This guide will help you
-       choose the right one.
+       Perform an upgrade of a &sle; system to a new major version in
+       environments which do not allow for standard booting of the
+       installation.
       </para>
      </example>
     </listitem>
@@ -165,9 +157,9 @@
     <term>Preface</term>
     <listitem>
      <para>
-      Include a brief overview of the content of a
-      manual, related manuals, and typographical conventions.
-      The preface can also contain information about its target audience.
+      Include a brief overview of the content of a manual, related manuals, and
+      typographical conventions. The preface can also contain information about
+      its target audience.
      </para>
     </listitem>
    </varlistentry>
@@ -175,11 +167,11 @@
     <term>Parts</term>
     <listitem>
      <para>
-      If you are writing a book with many chapters, create parts at the
-      outline level above chapters. Parts should contain at least three
-      chapters. Keep part titles clear and concise. Often a single noun is
-      enough. Typical part titles are <emphasis>Installation</emphasis>
-      or <emphasis>Network</emphasis>.
+      If you are writing a book with many chapters, create parts at the outline
+      level above chapters. Parts should contain at least three chapters. Keep
+      part titles clear and concise. Often a single noun is enough. Typical
+      part titles are <emphasis>Installation</emphasis> or
+      <emphasis>Network</emphasis>.
      </para>
     </listitem>
    </varlistentry>
@@ -187,17 +179,16 @@
     <term>Chapters</term>
     <listitem>
      <para>
-      Chapters typically consist of the following elements (appendixes
-      should be regarded an exception):
+      Chapters typically consist of the following elements (appendixes should
+      be regarded an exception):
      </para>
      <itemizedlist>
       <listitem>
        <formalpara>
         <title>Abstract</title>
         <para>
-         Use an abstract to summarize the information provided in a book,
-         article, chapter, or set in 70&ndash;150 characters. Summarize the
-         topic instead of summarizing the outline. See also <xref
+         In an abstract, summarize the topic instead of summarizing the
+         outline. See also <xref
          linkend="vle-abstract"/>.
          <remark>cwickert 2021-12-09: The 70&ndash;155 chars range is taken from
           <link xlink:href="https://www.contentkingapp.com/academy/meta-description/"/>,
@@ -210,8 +201,8 @@
        <formalpara>
         <title>Introduction</title>
         <para>
-         Provide introductory information directly after the abstract.
-         Do not place it in a separate section.
+         Provide introductory information directly after the abstract. Do not
+         place it in a separate section.
         </para>
        </formalpara>
       </listitem>
@@ -220,21 +211,18 @@
         <title>Sections</title>
         <para>
          Structure the detailed information, so readers can skim the text.
-         Create sections for every major task, such as installing,
-         configuring, monitoring, and administering. If helpful, split
-         sections into subsections.
-         Avoid nesting deeper than three levels of sections.
+         Create sections for every major task, such as installing, configuring,
+         monitoring, and administering. If helpful, split sections into
+         subsections. Avoid nesting deeper than three levels of sections.
         </para>
        </formalpara>
        <para>
         Start sections with an introductory paragraph outlining the focus of
-        the section.
-        If the section describes a sequential task, add a procedure description,
-        as discussed in <xref linkend="sec-procedure"/>.
-        Steps of a procedure can contain a
-        cross reference to subsections where topical background is provided
-        and an action is explained in detail. See also
-        <xref linkend="sec-cross-reference"/>.
+        the section. If the section describes a sequential task, add a
+        procedure description, as discussed in <xref linkend="sec-procedure"/>.
+        Steps of a procedure can contain a cross reference to subsections where
+        topical background is provided and an action is explained in detail.
+        See also <xref linkend="sec-cross-reference"/>.
        </para>
       </listitem>
       <listitem>
@@ -242,15 +230,13 @@
         <title>Troubleshooting</title>
         <para>
          In this section, collect common mistakes and problems. The section
-         should always be named <emphasis>Troubleshooting</emphasis>. Use
-         the DocBook element
-         <tag class="emptytag">qandaset</tag>
-         (a Question and Answer section) to mark up
-         <emphasis>Troubleshooting</emphasis> problems. In case you want to
-         describe solutions to more than ten problems, add topical
-         subsections (
-         <tag class="emptytag">qandadiv</tag>
-         elements) below the <emphasis>Troubleshooting</emphasis> section.
+         should always be named <emphasis>Troubleshooting</emphasis>. Use the
+         DocBook element <tag class="emptytag">qandaset</tag> (a Question and
+         Answer section) to mark up <emphasis>Troubleshooting</emphasis>
+         problems. In case you want to describe solutions to more than ten
+         problems, add topical subsections (
+         <tag class="emptytag">qandadiv</tag> elements) below the
+         <emphasis>Troubleshooting</emphasis> section.
         </para>
        </formalpara>
       </listitem>
@@ -258,11 +244,10 @@
        <formalpara>
         <title>More information</title>
         <para>
-         In a section named <citetitle>More information</citetitle>,
-         collect Web links to all sources of information
-         that might prove helpful in a given context. Follow the general
-         referencing guidelines in <xref linkend="sec-cross-reference"/>
-         when creating such sections.
+         In a section named <citetitle>More information</citetitle>, collect
+         Web links to all sources of information that might prove helpful in a
+         given context. Follow the general referencing guidelines in
+         <xref linkend="sec-cross-reference"/> when creating such sections.
         </para>
        </formalpara>
       </listitem>
@@ -273,8 +258,8 @@
     <term>Glossary</term>
     <listitem>
      <para>
-      The optional glossary contains important terms in alphabetical order
-      and provides a brief explanation for each.
+      The optional glossary contains important terms in alphabetical order and
+      provides a brief explanation for each.
      </para>
     </listitem>
    </varlistentry>
@@ -282,21 +267,20 @@
     <term>Contributors</term>
     <listitem>
      <para>
-      Writing documentation is a collaborative effort. To give credit to
-      all contributors, add an appendix to the guides which points to the
+      Writing documentation is a collaborative effort. To give credit to all
+      contributors, add an appendix to the guides which points to the
       <guimenu>Contributors</guimenu> page for the respective GitHub
       repository. For an example, see <xref linkend="sec-contributor"/>.
      </para>
      <para>
       For articles and small documents (such as &suse; Best Practices) whose
       content is created and maintained by five or fewer contributors, all of
-      whom are from outside the documentation team, credit the contributors
-      on the title page.
+      whom are from outside the documentation team, credit the contributors on
+      the title page.
      </para>
      <para>
-      The above are a minimum.
-      In addition, make sure that the contributors appendix is compliant with
-      the document license.
+      The above are a minimum. In addition, make sure that the contributors
+      appendix is compliant with the document license.
      </para>
     </listitem>
    </varlistentry>
@@ -306,8 +290,8 @@
  <sect2 xml:id="sec-article">
   <title>Articles</title>
   <para>
-   For articles, use a document structure that includes the following
-   elements, in that order:
+   For articles, use a document structure that includes the following elements,
+   in that order:
   </para>
   <orderedlist>
    <listitem>
