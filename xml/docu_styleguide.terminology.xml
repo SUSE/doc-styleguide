@@ -294,6 +294,25 @@
             </entry>
      </row>
      <row>
+      <entry>(to) coldplug sth. (into sth.)</entry>
+      <entry>(to) cold plug sth. (into sth.), (to) cold-plug sth. (into
+              sth.), (to) coldadd sth., (to) coldswap sth.
+            </entry>
+      <entry>verb; adding a component or device to a system while the
+              system is off.
+            </entry>
+     </row>
+     <row>
+      <entry>coldplugging</entry>
+      <entry>cold plugging, cold-plugging, coldadding, coldswapping</entry>
+      <entry>noun</entry>
+     </row>
+     <row>
+      <entry>coldpluggable</entry>
+      <entry>cold pluggable, cold-pluggable, coldaddable, coldswappable</entry>
+      <entry>adjective</entry>
+     </row>
+     <row>
       <entry>Common Unix Printing System</entry>
       <entry>Common UNIX Printing System, common Unix printing system
             </entry>
@@ -610,7 +629,7 @@
       <entry>(to) hot plug sth. (into sth.), (to) hot-plug sth. (into
               sth.), (to) hotadd sth., (to) hotswap sth.
             </entry>
-      <entry>verb; adding a component or device from a system while the
+      <entry>verb; adding a component or device to a system while the
               system is running; use <emphasis>remove at runtime</emphasis>
               where the specific action of removing a component or device is
               concerned
