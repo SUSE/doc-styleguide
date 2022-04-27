@@ -70,8 +70,7 @@
   </varlistentry>
  </variablelist>
  <para>
-  <!--  For more information on how to produce meaningful content that will rank high
-  on the Web, see Section ???, “Writing for the Web”, and Section ???,
-  “Writing SEO-friendly content”.-->
+  For more information on how to produce meaningful content that will rank high
+  on the Web, see <xref linkend="sec-webwriting"/>, and <xref linkend="sec-seo"/>.
  </para>
  </sect1>
