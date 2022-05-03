@@ -870,12 +870,12 @@ indexterm
        </screen>
       </entry>
       <entry>
-      <para>Index marker</para>
-      <para>
-       legacy element, do not use for new documentation
-      </para>
+      Index marker
       </entry>
-      <entry>Yes</entry>
+      <entry>
+      <para>
+      Yes
+      </para>
       <para>
       Legacy element, do not use for new documentation
      </para>
