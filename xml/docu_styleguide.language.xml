@@ -318,6 +318,7 @@
    the number. In measurements, add a non-breaking space
    (<tag class="genentity">nbsp</tag>)
    between the numeral and its corresponding unit abbreviation.
+   Use the % sign when paired with a number, with no space.
   </para>
   <para>
    For more information, see <citetitle>The Chicago Manual of

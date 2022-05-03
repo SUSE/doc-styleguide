@@ -555,8 +555,8 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
     <listitem>
      <para>
       Do not add empty lines at the beginning or end of screens. They can
-      be cut away by the &suse; stylesheets. However, most other
-      stylesheets do not have such functionality.
+      be cut away by the &suse; style sheets. However, most other
+      style sheets do not have such functionality.
      </para>
     </listitem>
     <listitem>
@@ -1127,20 +1127,20 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
      <itemizedlist>
       <listitem>
        <para>
-        Screenshots of the whole desktop should be scaled to 90&ndash;99 %
+        Screenshots of the whole desktop should be scaled to 90&ndash;99%
         page width.
        </para>
       </listitem>
       <listitem>
        <para>
         Screenshots of individual application windows should be scaled to
-        75&ndash;99 % page width.
+        75&ndash;99% page width.
        </para>
       </listitem>
       <listitem>
        <para>
         Small windows such as message boxes should be scaled to
-        50&ndash;60 % page width.
+        50&ndash;60% page width.
        </para>
       </listitem>
      </itemizedlist>
