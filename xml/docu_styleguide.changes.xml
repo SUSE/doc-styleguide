@@ -13,6 +13,47 @@
 
 <!-- Add new versions to the beginning of the list. -->
 
+<sect1 xml:id="sec-change-2022-04">
+  <title>Changes 2022-04</title>
+  <itemizedlist>
+  <listitem>
+  <para>
+  Updated the Abstract instances in Style guide
+  </para>
+  </listitem>
+  <listitem>
+  <para> 
+  Updated the chapter abstract wording and the example of an abstract to match the char limit.
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+  Added a section on Web writing and SEO-friendly content
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+  Added a section on Tech writing to replace the Audience section 
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+  Added a section about DocBook tags allowlist
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+  Added terms: 'changelog', 'real time', 'coldplug' 
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+  Minor bug fixes of the style guide
+  </para>
+  </listitem>
+  </itemizedlist>
+  </sect1>
+
  <sect1 xml:id="sec-change-2021-12">
   <title>Changes 2021-12</title>
   <para>
