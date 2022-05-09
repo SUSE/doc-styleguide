@@ -923,6 +923,128 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   </para>
  </sect2>
 
+ <sect2 xml:id="sec-link-to-susecom">
+  <title>External links to &suse; documentation</title>
+  <para>
+   In some cases, it makes sense to provide a link which is independent
+   from any Service Pack (SP) number:
+  </para>
+  <itemizedlist>
+   <listitem>
+    <para>
+     Your linked information is independent from any SP
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     You cannot or do not need to pick a specific SP
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     You want to link to the most recent SP without checking which one it is
+    </para>
+   </listitem>
+   <listitem>
+   <para>
+     You want to support SEO where the most prominent SP is more important 
+     than previous, older SPs
+    </para>
+   </listitem>
+  </itemizedlist>
+  <para>
+   Make sure to follow this syntax:
+  </para>
+  <screen>&lt;documentation.suse.com/<replaceable>&lt;PRODUCT></replaceable>[/<replaceable>&lt;MAJOR_RELEASE></replaceable>]/<replaceable>&lt;DEEP_LINK>&gt;</replaceable></screen>
+  <para>
+   The placeholders mean the following:
+  </para>
+  <itemizedlist>
+    <listitem>
+    <para>
+     <replaceable>PRODUCT</replaceable>: the abbreviation of the product, like <quote>sle</quote> for &sle;,
+     <quote>sle-ha</quote> for &sle; Server High Availability Extension, etc.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <replaceable>MAJOR_RELEASE</replaceable>: an optional major release like 12 or 15
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <replaceable>DEEP_LINK</replaceable>: the link that points to a specific chapter or section within a book
+    </para>
+   </listitem>
+  </itemizedlist>
+  <para>
+   Make sure you use <quote>html</quote> and not <quote>single-html</quote>. This 
+   is needed for SEO reasons.
+  </para>
+  <para>
+   For example, the link
+   <link xlink:href="https://documentation.suse.com/sle-ha/15-SP3/html/SLE-HA-all/article-installation.html#sec-ha-inst-quick-req/"/>
+   points to the <quote>System requirements</quote> for &sle; Server High Availability Extension. To turn this link into an 
+   SP-independent link, you need to identify the different components first:
+  </para>
+  <itemizedlist>
+   <listitem>
+    <para>
+     PRODUCT is <quote>sle-ha</quote>
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     MAJOR_RELEASE is 15 (no SP mentioned)
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     DEEP_LINK is <filename>/html/SLE-HA-all/article-installation.html#sec-ha-inst-quick-req</filename>
+    </para>
+   </listitem>
+  </itemizedlist>
+  <para>
+   To assemble the link, we can use the following syntax:
+  </para>
+   <itemizedlist>
+   <listitem>
+    <para>
+     <uri>https://documentation.suse.com/sle-ha-15/html/SLE-HA-all/article-installation.html#sec-ha-inst-quick-req</uri>
+    </para>
+    <para>Redirects to the most recent SP for the major release 15</para>
+   </listitem>
+   <listitem>
+    <para>
+     <uri>https://documentation.suse.com/sle-ha/html/SLE-HA-all/article-installation.html#sec-ha-inst-quick-req</uri>
+    </para>
+    <para>Redirects to the most recent major release, latest SP available</para>
+   </listitem>
+   </itemizedlist>
+  <para>
+   The redirection rules on documentation.suse.com will point to the most recent version.
+  </para>
+   <note>
+   <para>
+    If IDs have been changed between releases or SPs, this is what happens:
+   </para>
+   <itemizedlist>
+   <listitem>
+    <para>
+    If the hash part (everything after #) is not found, the browser will jump 
+    to the beginning of the file.
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+     If the file cannot be found (in our example, article-installation.html), 
+     the server will respond with a 404 error (file not found).
+   </para>
+   </listitem>
+   </itemizedlist>
+   </note>
+   </sect2>
+
  <sect2 xml:id="sec-figure">
   <title>Figures</title>
   <para>
