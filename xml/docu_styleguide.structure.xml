@@ -926,8 +926,13 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
  <sect2 xml:id="sec-link-to-susecom">
   <title>External links to &suse; documentation</title>
   <para>
-   In some cases, it makes sense to provide a link which is independent
-   from any Service Pack (SP) number:
+   Most links in our documentation that goes to <uri>documentation.suse.com</uri>
+   refer to a specific product and release. However, sometimes it makes sense to
+   <emphasise>not</emphasise> include the SP or even the major release.
+   These are so called <emphasis>SP-independent links</emphasis>.
+   </para>
+   <para>
+    The following reasons give you an idea when to use them:
   </para>
   <itemizedlist>
    <listitem>
