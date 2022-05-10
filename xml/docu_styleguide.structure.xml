@@ -1011,7 +1011,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    </listitem>
   </itemizedlist>
   <para>
-   With the above parts, the redirection rules on our server expressing
+   With the above parts, the redirection rules on our server allow expressing
    SP-independent links in several ways:
   </para>
    <itemizedlist>
