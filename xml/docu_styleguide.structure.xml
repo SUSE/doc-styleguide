@@ -929,7 +929,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    Most links in our documentation that goes to <uri>documentation.suse.com</uri>
    refer to a specific product and release. However, sometimes it makes sense to
    <emphasise>not</emphasise> include the SP or even the major release.
-   These are so called <emphasis>SP-independent links</emphasis>.
+   These are so-called <emphasis>SP-independent links</emphasis>.
    </para>
    <para>
     The following reasons give you an idea when to use them:
