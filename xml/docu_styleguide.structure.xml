@@ -978,7 +978,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    </listitem>
   </itemizedlist>
   <para>
-   Make sure you use <quote>html</quote> and not <quote>single-html</quote>. This 
+   Make sure you use <literal>html</literal> and not <literal>single-html</literal>. This 
    is needed for SEO reasons.
   </para>
   <para>
