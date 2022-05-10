@@ -960,7 +960,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   <para>
    Make sure to follow this syntax:
   </para>
-  <screen>documentation.suse.com/<replaceable>&lt;PRODUCT></replaceable>[/<replaceable>&lt;MAJOR_RELEASE></replaceable>]/<replaceable>&lt;DEEP_LINK>&gt;</replaceable></screen>
+  <screen>documentation.suse.com/<replaceable>&lt;PRODUCT></replaceable>[/<replaceable>&lt;MAJOR_RELEASE></replaceable>]/<replaceable>&lt;DEEP_LINK></replaceable></screen>
   <para>
    The placeholders mean the following:
   </para>
