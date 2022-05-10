@@ -973,7 +973,8 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    </listitem>
    <listitem>
     <para>
-     <replaceable>MAJOR_RELEASE</replaceable>: an optional major release like 12 or 15
+     <replaceable>MAJOR_RELEASE</replaceable>: an optional major release like 12 or 15. If you omit it,
+     your link will be redirected to use the most recent release.
     </para>
    </listitem>
    <listitem>
