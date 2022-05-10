@@ -990,7 +990,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   <itemizedlist>
    <listitem>
     <para>
-     PRODUCT is <quote>sle-ha</quote>
+     PRODUCT is <literal>sle-ha</literal>
     </para>
    </listitem>
    <listitem>
