@@ -1005,7 +1005,8 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    </listitem>
   </itemizedlist>
   <para>
-   To assemble the link, we can use the following syntax:
+   With the above parts, the redirection rules on our server allows several ways to
+   express SP-independent links:
   </para>
    <itemizedlist>
    <listitem>
