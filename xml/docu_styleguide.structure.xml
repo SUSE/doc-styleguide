@@ -1022,9 +1022,6 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     <para>Redirects to the most recent major release, latest SP available</para>
    </listitem>
    </itemizedlist>
-  <para>
-   The redirection rules on documentation.suse.com will point to the most recent version.
-  </para>
    <note>
    <para>
     If IDs have been changed between releases or SPs, this is what happens:
