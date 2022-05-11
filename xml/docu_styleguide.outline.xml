@@ -179,8 +179,9 @@
     <term>Chapters</term>
     <listitem>
      <para>
-      Chapters typically consist of the following elements (appendixes should
-      be regarded an exception):
+     Chapter titles should not contain product version numbers which affect 
+     the output of data analytics. Chapters typically consist of the 
+     following elements (appendixes should be regarded an exception):
      </para>
      <itemizedlist>
       <listitem>
