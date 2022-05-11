@@ -2067,67 +2067,6 @@ xml:id="tab-install-source"</screen>
   </table>
  </sect2>
 
- <sect2 xml:id="sec-other-external">
-  <title>References to other external resources</title>
-  <remark>sknorr, 2014-01-22: This section could probably use a better
-        structure instead of this mishmash.
-      </remark>
-  <para>
-   To reference file names, use the
-   <tag class="emptytag">filename</tag>
-   element. To reference e-mail addresses, use the
-   <tag class="emptytag">email</tag>
-   element. In either case, do not include a protocol prefix, that is
-   <literal>file://</literal> or <literal>mailto:</literal>, respectively.
-   See also <xref linkend="sec-file-markup"/>.
-  </para>
-  <para>
-   Reference man pages and info pages in this format:
-  </para>
-  <itemizedlist>
-   <listitem>
-    <para>
-     <quote>the man page of <command>command</command></quote>
-    </para>
-   </listitem>
-   <listitem>
-    <para>
-     <quote>the info page of <command>command</command></quote>
-    </para>
-   </listitem>
-  </itemizedlist>
-  <para>
-   In a situation where the category of the page is needed, append the
-   category in parentheses. Use, for example <quote>(<command>man 9
-   command</command>)</quote>.
-  </para>
-<screen>To learn more about subcommands, see the man page of
-&lt;command&gt;command&lt;/command&gt;.</screen>
-  <para>
-   Insert references to external (non-&suse;) physical books in the format
-   <quote>Title by Author (ISBN #00000000).</quote> Inclusion of the ISBN is
-   optional. Place the title in a
-   <tag class="emptytag">citetitle</tag>
-   element. For example:
-  </para>
-<screen>&lt;citetitle&gt;Lorem Ipsum&lt;/citetitle&gt; by Dolores S. Amet
-(ISBN 0-246-52044-7) is a useful guide.</screen>
-  <para>
-   As an author, where possible, provide language-specific references to
-   translators in XML comments (see also <xref linkend="sec-xml-comment"/>).
-   As a translator, look for corresponding language-specific resources where
-   none have been provided. For URLs, provide only the language-specific
-   version of a site. Use the English version as a fallback.
-   For books, provide the
-   title of the translated version along with the original title if such a
-   translation exists.
-  </para>
-  <para>
-   Other types of references to resources are described in
-   <xref linkend="sec-cross-reference"/> and <xref linkend="sec-link"/>.
-  </para>
- </sect2>
-
  <sect2 xml:id="sec-outline-level">
   <title>Outline levels and sectioning</title>
   <para>
@@ -2500,6 +2439,67 @@ xml:id="tab-install-source"</screen>
     </tbody>
    </tgroup>
   </table>
+ </sect2>
+
+<sect2 xml:id="sec-other-external">
+  <title>References to other external resources</title>
+  <remark>sknorr, 2014-01-22: This section could probably use a better
+        structure instead of this mishmash.
+      </remark>
+  <para>
+   To reference file names, use the
+   <tag class="emptytag">filename</tag>
+   element. To reference e-mail addresses, use the
+   <tag class="emptytag">email</tag>
+   element. In either case, do not include a protocol prefix, that is
+   <literal>file://</literal> or <literal>mailto:</literal>, respectively.
+   See also <xref linkend="sec-file-markup"/>.
+  </para>
+  <para>
+   Reference man pages and info pages in this format:
+  </para>
+  <itemizedlist>
+   <listitem>
+    <para>
+     <quote>the man page of <command>command</command></quote>
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+     <quote>the info page of <command>command</command></quote>
+    </para>
+   </listitem>
+  </itemizedlist>
+  <para>
+   In a situation where the category of the page is needed, append the
+   category in parentheses. Use, for example <quote>(<command>man 9
+   command</command>)</quote>.
+  </para>
+<screen>To learn more about subcommands, see the man page of
+&lt;command&gt;command&lt;/command&gt;.</screen>
+  <para>
+   Insert references to external (non-&suse;) physical books in the format
+   <quote>Title by Author (ISBN #00000000).</quote> Inclusion of the ISBN is
+   optional. Place the title in a
+   <tag class="emptytag">citetitle</tag>
+   element. For example:
+  </para>
+<screen>&lt;citetitle&gt;Lorem Ipsum&lt;/citetitle&gt; by Dolores S. Amet
+(ISBN 0-246-52044-7) is a useful guide.</screen>
+  <para>
+   As an author, where possible, provide language-specific references to
+   translators in XML comments (see also <xref linkend="sec-xml-comment"/>).
+   As a translator, look for corresponding language-specific resources where
+   none have been provided. For URLs, provide only the language-specific
+   version of a site. Use the English version as a fallback.
+   For books, provide the
+   title of the translated version along with the original title if such a
+   translation exists.
+  </para>
+  <para>
+   Other types of references to resources are described in
+   <xref linkend="sec-cross-reference"/> and <xref linkend="sec-link"/>.
+  </para>
  </sect2>
 
  <sect2 xml:id="sec-table">
