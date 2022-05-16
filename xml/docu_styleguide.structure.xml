@@ -2498,7 +2498,7 @@ xml:id="tab-install-source"</screen>
   </para>
   <para>
    Other types of references to resources are described in
-   <xref linkend="sec-cross-reference"/>, <xref linkend="sec-link-to-susecom"/>, and <xref linkend="sec-link"/>.
+   <xref linkend="sec-cross-reference"/> and <xref linkend="sec-link"/>.
   </para>
  </sect2>
 
