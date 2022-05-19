@@ -1260,8 +1260,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
        <title>Prefix</title>
        <para>
         Signifies the type of XML element.
-        Prefixes are meant as an aid to writers to allow creating
-        logically-named, but distinct identifiers even for closely related
+        Prefixes aid writers in creating logically named identifiers for
         elements.
         Use identifiers in accordance with <xref linkend="tab-id-prefix"/>.
        </para>
