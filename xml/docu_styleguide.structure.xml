@@ -1385,10 +1385,17 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
       <formalpara>
        <title>Prefix</title>
        <para>
-        Signifies the type of XML element. Use in accordance with
-        <xref linkend="tab-id-prefix"/>.
+        Signifies the type of XML element.
+        Prefixes aid writers in creating logically named identifiers for
+        elements.
+        Use identifiers in accordance with <xref linkend="tab-id-prefix"/>.
        </para>
       </formalpara>
+      <para>
+       Do not add prefixes to identifiers for XML elements that are used to
+       determine the name of HTML pages (such as section and chapter elements).
+       Such exposure of identifiers can hurt SEO.
+      </para>
      </listitem>
      <listitem>
       <formalpara>
@@ -1412,8 +1419,8 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     </orderedlist>
     <example>
      <title>Examples of identifiers</title>
-<screen>xml:id="cha-install"
-xml:id="sec-install-yast"
+<screen>xml:id="install"
+xml:id="install-yast"
 xml:id="tab-install-source"</screen>
     </example>
    </listitem>
@@ -1423,8 +1430,11 @@ xml:id="tab-install-source"</screen>
      longer terms over non-obvious abbreviations. Always use the singular of
      nouns and the infinitive of verbs. For example, a section about
      installing with <phrase role="productname">YaST</phrase> could be
-     called
-     <tag class="attvalue">sec-install-yast</tag>.
+     called <tag class="attvalue">install-yast</tag>.
+    </para>
+    <para>
+     A figure in that section showing language selection could use the
+     identifier <tag class="attvalue">fig-install-yast-language</tag>.
     </para>
    </listitem>
    <listitem>
@@ -1457,7 +1467,7 @@ xml:id="tab-install-source"</screen>
        <tag class="emptytag">appendix</tag>
       </entry>
       <entry>
-       <tag class="attvalue">app</tag>
+       <emphasis>No prefix</emphasis>
       </entry>
      </row>
      <row>
@@ -1465,7 +1475,7 @@ xml:id="tab-install-source"</screen>
        <tag class="emptytag">book</tag>
       </entry>
       <entry>
-       <tag class="attvalue">book</tag>
+       <emphasis>No prefix</emphasis>
       </entry>
      </row>
      <row>
@@ -1481,7 +1491,7 @@ xml:id="tab-install-source"</screen>
        <tag class="emptytag">chapter</tag>
       </entry>
       <entry>
-       <tag class="attvalue">cha</tag>
+       <emphasis>No prefix</emphasis>
       </entry>
      </row>
      <row>
@@ -1502,8 +1512,15 @@ xml:id="tab-install-source"</screen>
      </row>
      <row>
       <entry>
-       <tag class="emptytag">glossary</tag>,
-                <tag class="emptytag">glossterm</tag>
+       <tag class="emptytag">glossary</tag>
+      </entry>
+      <entry>
+       <emphasis>No prefix</emphasis>
+      </entry>
+     </row>
+     <row>
+      <entry>
+       <tag class="emptytag">glossterm</tag>
       </entry>
       <entry>
        <tag class="attvalue">gl</tag>
@@ -1560,7 +1577,7 @@ xml:id="tab-install-source"</screen>
        <tag class="emptytag">part</tag>
       </entry>
       <entry>
-       <tag class="attvalue">part</tag>
+       <emphasis>No prefix</emphasis>
       </entry>
      </row>
      <row>
@@ -1568,7 +1585,7 @@ xml:id="tab-install-source"</screen>
        <tag class="emptytag">preface</tag>
       </entry>
       <entry>
-       <tag class="attvalue">pre</tag>
+       <emphasis>No prefix</emphasis>
       </entry>
      </row>
      <row>
@@ -1592,9 +1609,11 @@ xml:id="tab-install-source"</screen>
      <row>
       <entry>
        <tag class="emptytag">sect1</tag>,
-              <tag class="emptytag">sect2</tag>, etc.</entry>
+       <tag class="emptytag">sect2</tag>, etc.,
+       <tag class="emptytag">section</tag>
+      </entry>
       <entry>
-       <tag class="attvalue">sec</tag>
+       <emphasis>No prefix</emphasis>
       </entry>
      </row>
      <row>
@@ -1602,7 +1621,7 @@ xml:id="tab-install-source"</screen>
        <tag class="emptytag">set</tag>
       </entry>
       <entry>
-       <tag class="attvalue">set</tag>
+       <emphasis>No prefix</emphasis>
       </entry>
      </row>
      <row>
@@ -1619,6 +1638,14 @@ xml:id="tab-install-source"</screen>
       </entry>
       <entry>
        <tag class="attvalue">tab</tag>
+      </entry>
+     </row>
+     <row>
+      <entry>
+       <tag class="emptytag">topic</tag>
+      </entry>
+      <entry>
+       <emphasis>No prefix</emphasis>
       </entry>
      </row>
      <row>
