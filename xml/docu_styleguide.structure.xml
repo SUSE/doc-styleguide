@@ -1577,12 +1577,12 @@ xml:id="tab-install-source"</screen>
    </listitem>
    <listitem>
     <para>
-     If each item in a list consists of a single sentence only, do not use a
-     period at the end of items.
+     Use a period after every list item that is a sentence. Do not use a period 
+     after the items that are not complete sentences.
     </para>
-    <para>
-     If at least one list item consists of two full sentences, end all items
-     in that list with a period.
+    <para>Do not use commas and semicolons to end punctuation. Do not use a full stop 
+     with the last item. Use either all full sentences in your bullet lists 
+     or all fragments. Avoid a mix.
     </para>
    </listitem>
    <listitem>
@@ -1590,7 +1590,7 @@ xml:id="tab-install-source"</screen>
      Wherever possible, use parallel phrasing and grammatical construction
      between list items.
      This provides a pattern that makes it easier to follow the text.
-    </para>
+   </para>
    </listitem>
    <listitem>
     <para>
