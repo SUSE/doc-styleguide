@@ -419,12 +419,9 @@
       <entry>dialog box, dialog window, dialogue [British], mask [Germanism],
         screen
       </entry>
-      <entry>noun; a page or window that asks you to make one or more decisions
-        before proceeding
-        <remark>sknorr, 2013-09-17: Novell use dialog box, apparently, but
-          that sounds rather colloquial. And then, a dialog doesn't
-          have to be in a box/window, as with Web applications
-        </remark>
+      <entry>noun; a secondary window that gives users progress feedback, 
+             prompts users to perform a command, enter information or select 
+             an option
       </entry>
      </row>
      <row>
@@ -551,6 +548,12 @@
               USB stick
             </entry>
       <entry>noun</entry>
+     </row>
+     <row>
+      <entry>form</entry>
+      <entry/>
+      <entry>noun; a structured window, box, or screen that contains numerous 
+             fields or spaces to enter data</entry>
      </row>
      <row>
       <entry>framebuffer</entry>
