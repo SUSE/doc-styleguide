@@ -318,6 +318,7 @@
    the number. In measurements, add a non-breaking space
    (<tag class="genentity">nbsp</tag>)
    between the numeral and its corresponding unit abbreviation.
+   Use the % sign when paired with a number, with no space.
   </para>
   <para>
    For more information, see <citetitle>The Chicago Manual of
@@ -411,22 +412,21 @@
    exaggerations, but focus on positive aspects.
   </para>
   <para>
-   Use second person (<quote>you</quote>) to refer to the reader. Normally,
+   Use the second person (<quote>you</quote>) to refer to the reader. Normally,
    the reader is the user or administrator who performs the actions described.
-   Do not overuse <quote>you.</quote> It is often understood, especially in
-   directions.
+   For example, <quote>To install all officially released patches that apply to
+   your system, run <command>zypper patch</command></quote>. Do not overuse 
+   <quote>you</quote> and <quote>your</quote>. It is often implied who you are 
+   addressing in the instructions. For example, instead of <quote>Install 
+   <emphasis>package</emphasis> on your system</quote>, just say <quote>Install
+   <emphasis>package</emphasis> on the system</quote>. 
   </para>
   <para>
-   Where possible, use active voice. In active voice, the subject of the
-   sentence performs the verb. For example, <quote>The root user performs
-   administrative tasks</quote> is active voice. <quote>Administrative tasks
-   are performed by the root user</quote> is passive voice.
-  </para>
-  <para>
-   Use passive voice if there is no emphasis on the object of the verb or if
-   the performer of the action is unknown. <quote>A Samba server must be
-   configured in the network</quote> is an example of proper use of passive
-   voice. The emphasis is on the server, not on the person configuring it.
+   Where possible, use active voice. If there is no emphasis on the object of
+   the verb or if the performer of the action is unknown, use passive voice. 
+   <quote>A Samba server must be configured in the network</quote> is an example 
+   of the proper use of passive voice. The emphasis is on the server, not on the 
+   person configuring it.
   </para>
  </sect2>
 

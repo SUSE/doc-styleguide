@@ -18,15 +18,15 @@
  </para>
  <para>
   The following tables list and describe all DocBook tags used for writing
-  most of the &suse; user documentation. It also shows, which tags are
-  translated and which tags will be blocked for translation, means that those
-  tags stay in English.
-  The tables are divided into four categories, listing the elements of each of
-  the respective category.
+  most of the &suse; user documentation. They also show which tags are
+  translated and which tags will be blocked for translation, which means that
+  those tags stay in English.
+  The tables are divided into four categories, listing the elements of each
+  respective category.
  </para>
  <para>
-  With Geekodoc 2 it is also possible to use the Internazionalization Tag Set
-  (ITS) to explicit indicate if a tag should be translated or not.
+  With Geekodoc 2, it is also possible to use the Internazionalization Tag Set
+  (ITS) to explicitly indicate whether a tag should be translated or not.
   For more information on ITS tags, see <xref linkend="sec-taglist-ITS"/>.
  </para>
  <para>
@@ -46,11 +46,11 @@
  <sect3>
   <title>Meta elements</title>
   <para>
-   All of the elements at the section level and above, and many other elements,
-   include a wrapper for meta-information about the content.
-   The meta-information wrapper is designed to contain bibliographic
-   information about the content (author, title, publisher, and so on) as well
-   as other meta-information such as revision histories, keyword sets, and
+   All the elements at the section level and above, and many other elements,
+   include a wrapper for meta information about the content.
+   The meta information wrapper is designed to contain bibliographic
+   information about the content (author, title, publisher, etc.) as well
+   as other meta information such as revision histories, keyword sets, and
    index terms.
   </para>
  <informaltable>
@@ -145,7 +145,7 @@ info
     <entry>
      <tag class="starttag">info</tag>: Wrapper to contain bibliographic
      information about the content and other meta info.
-     <tag class="starttag">dm:PLACEHOLDER</tag>: SUSE specific info needed by
+     <tag class="starttag">dm:PLACEHOLDER</tag>: SUSE-specific info needed by
      the doc-manager tool and Daps to process and build &suse; user
      documentation.
      </entry>
@@ -236,7 +236,7 @@ subtitle
      </screen>
     </entry>
     <entry>
-     The subtitle of a document. Often used for &suse; Best practices guides
+     The subtitle of a document. Often used for &suse; Best Practices guides
     </entry>
     <entry>Yes</entry>
    </row>
@@ -248,8 +248,8 @@ title
     </entry>
     <entry>
      <para>
-      The text of the title of a section of a document or of a formal
-     block-level element.
+      The text of the title for a section of a document or for a formal
+     block-level element
      </para>
     <para>
      For document titles, such as book, article, and set titles, use
@@ -267,8 +267,8 @@ titleabbrev
      </screen>
     </entry>
     <entry>
-     The abbreviation of a title. Can for example be used to show shorter
-     title in table of contents
+     The abbreviation of a title. For example, it can be used to show shorter
+     titles in the table of contents.
     </entry>
     <entry>Yes</entry>
    </row>
@@ -281,11 +281,11 @@ titleabbrev
   <title>Structure elements</title>
   <note>
    <para>
-    Structure elements are needed to sectioning and structure your Document,
-    such as defining the chapters, appendix, etc.
+    Structure elements are needed for sectioning and structuring your document,
+    such as defining chapters, appendix, etc.
    </para>
    <para>
-    Most structure elements do not need translations. The child elements, like
+    Most structure elements do not need translations. The child elements like
    <tag class="starttag">title</tag> are translated.
    </para>
   </note>
@@ -365,7 +365,7 @@ formalpara
 section
        </screen>
       </entry>
-      <entry>A recursive section, unnumbered.</entry>
+      <entry>A recursive section, unnumbered</entry>
       <entry>No</entry>
      </row>
      <row>
@@ -376,7 +376,7 @@ sect1
  sect3
  ...</screen>
       </entry>
-      <entry>Numbered sections that must be properly nested.</entry>
+      <entry>Numbered sections that must be properly nested</entry>
       <entry>No</entry>
      </row>
      <row>
@@ -469,7 +469,7 @@ calloutlist
       <entry>
        <para>No</para>
        <para>
-        Child lement <tag class="starttag">para</tag> is translated.
+        Child element <tag class="starttag">para</tag> is translated.
        </para>
       </entry>
      </row>
@@ -680,8 +680,8 @@ table
 textobject
        </screen>
       </entry>
-      <entry>Explanatory text for images, to aid blind users and to show when
-       the image cannot be loaded because of an error.</entry>
+      <entry>Explanatory text for images to aid visually impaired users and show
+       when the image cannot be loaded because of an error</entry>
       <entry>Yes</entry>
      </row>
      <row>
@@ -870,12 +870,16 @@ indexterm
        </screen>
       </entry>
       <entry>
-      <para>Index marker</para>
-      <para>
-       legacy element, do not use for new documentation
-      </para>
+      Index marker
       </entry>
-      <entry>Yes</entry>
+      <entry>
+      <para>
+      Yes
+      </para>
+      <para>
+      Legacy element, do not use for new documentation
+     </para>
+    </entry>
      </row>
      <row>
       <entry>
@@ -897,7 +901,7 @@ keycap
       <entry>
        <para>The text printed on a key on a keyboard</para>
        <para>
-        For function keys always use with function, for example: 
+        For function keys, always use with function, for example: 
        &lt;keycap function="control">&lt;/keycap>
        </para>
        </entry>
@@ -1157,13 +1161,13 @@ xref
 <sect2 xml:id="sec-taglist-ITS">
  <title>Using ITS tags</title>
  <para>
-  With Geekodoc 2 it is possible to use the Internationalization Tag Set (ITS)
-  tags to explicit indicate that a tag should be translated or not.
+  With Geekodoc 2, it is possible to use the Internationalization Tag Set (ITS)
+  tags to explicitly indicate that a tag should be translated or not.
  </para>
  <para>
-  For this you need to have the its namespace enabled in the XML file. Make
+  For this, you need to have the ITS namespace enabled in the XML file. Make
   sure the following line is added to the root element:
-  <code>xmlns:its="http://www.w3.org/2005/11/its"</code>
+  <code>xmlns:its="http://www.w3.org/2005/11/its"</code>.
  </para>
  <para>
   For example:

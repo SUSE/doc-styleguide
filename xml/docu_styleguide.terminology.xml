@@ -294,6 +294,13 @@
             </entry>
      </row>
      <row>
+      <entry>codestream</entry>
+      <entry>code stream
+            </entry>
+      <entry>noun; stream of code
+            </entry>
+     </row>
+     <row>
       <entry>(to) coldplug sth. (into sth.)</entry>
       <entry>(to) cold plug sth. (into sth.), (to) cold-plug sth. (into
               sth.), (to) coldadd sth., (to) coldswap sth.
@@ -355,6 +362,13 @@
       </entry>
      </row>
      <row>
+      <entry>crash dump</entry>
+      <entry>crashdump
+            </entry>
+      <entry>noun>
+      </entry>
+     </row>
+     <row>
       <entry>(to) create a hard link (to sth.)</entry>
       <entry>(to) hard link (sth.), (to) hardlink (sth.)</entry>
       <entry>verb; see also <emphasis>hard link</emphasis>
@@ -405,12 +419,9 @@
       <entry>dialog box, dialog window, dialogue [British], mask [Germanism],
         screen
       </entry>
-      <entry>noun; a page or window that asks you to make one or more decisions
-        before proceeding
-        <remark>sknorr, 2013-09-17: Novell use dialog box, apparently, but
-          that sounds rather colloquial. And then, a dialog doesn't
-          have to be in a box/window, as with Web applications
-        </remark>
+      <entry>noun; a secondary window that gives users progress feedback, 
+             prompts users to perform a command, enter information or select 
+             an option
       </entry>
      </row>
      <row>
@@ -436,7 +447,7 @@
       <entry>combination box, combo box, combobox, dropdown, drop-down,
               drop-down menu, drop-down list box, popover, pull-down menu
             </entry>
-      <entry>noun; GUI element with a list that can opened by
+      <entry>noun; GUI element with a list that can be opened by
               clicking on it, whether combined with a text box or not; if list
               entries start actions, use <emphasis>menu</emphasis> instead
             </entry>
@@ -537,6 +548,12 @@
               USB stick
             </entry>
       <entry>noun</entry>
+     </row>
+     <row>
+      <entry>form</entry>
+      <entry/>
+      <entry>noun; a structured window, box, or screen that contains numerous 
+             fields or spaces to enter data</entry>
      </row>
      <row>
       <entry>framebuffer</entry>
