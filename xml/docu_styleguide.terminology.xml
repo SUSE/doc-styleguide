@@ -124,6 +124,11 @@
       <entry>noun; plural of appendix</entry>
      </row>
      <row>
+      <entry>application</entry>
+      <entry/>
+      <entry>noun; a computer program designed for a specific task or use</entry>
+     </row>
+     <row>
       <entry>audio CD</entry>
       <entry>Audio CD, Audio-CD, CD-Audio, CD Audio, CD audio
             </entry>
@@ -326,6 +331,11 @@
       <entry>noun; spelling as per project standard; acronym is
               <emphasis>CUPS</emphasis>
       </entry>
+     </row>
+     <row>
+      <entry>command</entry>
+      <entry/>
+      <entry>noun; a signal that initiates an operation defined by an instruction</entry>
      </row>
      <row>
       <entry>command line</entry>
@@ -1214,6 +1224,20 @@
         mouse buttons; also see <emphasis>click</emphasis>
       </entry>
      </row>
+      <row>
+      <entry>program</entry>
+      <entry/>
+      <entry>noun; a set of coded instructions that enables a machine, 
+             especially a computer, to perform a desired sequence of 
+             operations</entry>
+     </row>
+     <row>
+      <entry>PXE</entry>
+      <entry>P.X.E., Pixie, pixie, PXE Environment, Pxe, pxe</entry>
+      <entry>noun; acronym for
+              <quote>Preboot Execution Environment</quote>
+      </entry>
+     </row>
      <row>
       <entry>proxy</entry>
       <entry/>
@@ -1397,6 +1421,13 @@
       <entry>screen saver</entry>
       <entry>screen-saver, screensaver</entry>
       <entry>noun</entry>
+     </row>
+     <row>
+      <entry>script</entry>
+      <entry/>
+      <entry>noun; a prewritten list of commands, and perhaps other control 
+             information, to be executed (interpreted) by a shell or other 
+             command interpreter</entry>
      </row>
      <row>
       <entry>scrollbar</entry>
@@ -1692,6 +1723,12 @@
       <entry>titlebar</entry>
       <entry>title bar, title-bar</entry>
       <entry>noun</entry>
+     </row>
+     <row>
+      <entry>tool</entry>
+      <entry/>
+      <entry>noun; a utility or feature used to develop software or 
+             hardware, or to perform particular tasks</entry>
      </row>
      <row>
       <entry>toolbar</entry>
