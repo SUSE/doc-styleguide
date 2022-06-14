@@ -63,7 +63,7 @@
     occurrences of the term in this chapter should then use the acronym.
    </para>
    <para>
-    Create plural forms of acronyms by adding a lowercase <quote>s,</quote>.
+    Create plural forms of acronyms by adding a lowercase <quote>s</quote>.
     For example, use <quote>CDs</quote> and <quote>BIOSes.</quote> Never add
     an apostrophe before the <quote>s</quote> or <quote>es.</quote>
    </para>
@@ -427,6 +427,9 @@
    <quote>A Samba server must be configured in the network</quote> is an example 
    of the proper use of passive voice. The emphasis is on the server, not on the 
    person configuring it.
+  </para>
+  <para>When giving a recommendation, start with <quote>We recommend</quote>. 
+  Do not use passive phrasings like <quote>It is recommended</quote>.
   </para>
  </sect2>
 
