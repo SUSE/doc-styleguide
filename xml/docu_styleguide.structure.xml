@@ -2668,7 +2668,7 @@ xml:id="tab-install-source"</screen>
    attribute.
   </para>
 
-  <para>Typical usecases of tables include:</para>
+  <para>Typical use cases of tables include:</para>
   
   <variablelist>
    <varlistentry><term>Lookup tables for specific information</term>
@@ -2681,7 +2681,7 @@ xml:id="tab-install-source"</screen>
    <varlistentry><term>Matrix tables</term>
     <listitem>
      <para>Whenever users need to quickly check whether a specific combination
-      of options work or not. For example, use a matrix table to visualize supported 
+      of options works or not. For example, use a matrix table to visualize supported 
       combinations or update options.</para>
     </listitem>
    </varlistentry>
@@ -2702,33 +2702,35 @@ xml:id="tab-install-source"</screen>
    </listitem>
   </itemizedlist>
 
-  <para>Some styling/style tips for tables:</para>
+  <para>Some style tips for tables:</para>
   
   <variablelist>
-   <varlistentry><term>Structure your table to have more rows than columns</term>
+   <varlistentry><term>Structure the table to have more rows than columns</term>
     <listitem>
      <para>Humans prefer to skim for information that is aligned vertically. When designing 
-      tables, consider swapping rows and columns to allow for a better user experience.</para>
+      tables, consider swapping rows and columns to provide a consistent
+      user experience.</para>
     </listitem>
    </varlistentry>
-   <varlistentry><term>Narrow down your columns</term>
+   <varlistentry><term>Narrow down columns</term>
     <listitem>
-     <para>Compress the data in your table as much as you possibly can. The less crowded 
-      the table cells are the better their content can be parsed by readers. Consider using icons,
-      add repeating words into the column title or using shorter number formats.</para>
+     <para>Compress the data in your table as much as you possibly can. Table
+      cells with less content are more easily parsed by readers. Consider using
+      icons, adding repeating words into column titles, or using shorter number 
+      formats.</para>
     </listitem>
    </varlistentry>
    <varlistentry><term>Use colors to lead the reader's eyes</term>
     <listitem>
-     <para>Use colors to make information stand out. If you just want to highlight small bits, 
-      use bright colors. If you need to color entire cells, use pastels. This option should only be
-      used with matrix type tables.</para>
+     <para>Use colors to make the information stand out. If you just want to
+      highlight small bits, use bright colors. If you need to color entire cells, 
+      use pastels. This option should only be used with matrix type tables.</para>
      <!-- add list of supported colors as soon as toms' PR is merged -->
     </listitem>
    </varlistentry>
    <varlistentry><term>Use striped rows</term>
     <listitem>
-     <para>Color every second row in a light grey to make sure readers do not 
+     <para>Color every second row in light gray to make sure readers do not 
       accidentally slip between lines. This should be the default for long 
       tables. Do not use striped rows in matrix type tables. You may also consider disabling 
       these stripes for short tables to not confuse readers.</para>
