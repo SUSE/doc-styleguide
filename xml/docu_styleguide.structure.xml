@@ -2707,7 +2707,7 @@ xml:id="tab-install-source"</screen>
   <variablelist>
    <varlistentry><term>Structure the table to have more rows than columns</term>
     <listitem>
-     <para>Humans prefer to skim for information that is aligned vertically. When designing 
+     <para>Readers prefer to skim for information that is aligned vertically. When designing 
       tables, consider swapping rows and columns to provide a consistent
       user experience.</para>
     </listitem>
