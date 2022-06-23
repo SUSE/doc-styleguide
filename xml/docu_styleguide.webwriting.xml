@@ -159,4 +159,89 @@
    </varlistentry>
   </variablelist>
  </sect2>
+
+ <sect2 xml:id="sec-writing-global">
+  <title>Writing for a global audience</title>
+  <para>
+   Remember that every document is a potential candidate for localization (translation). 
+   Make sure the document’s original English content is correct and clear. Simplicity, 
+   clarity and direct prose are essential.
+   </para>
+   <para>
+   Recommendations:
+   </para>
+   <itemizedlist>
+   <listitem>
+   <para>
+   Keep sentences short. Shorter sentences help translators and target audience to 
+   better understand the content.
+   </para>
+   </listitem>
+   <listitem>
+   <para>
+   Be consistent. Stick to the terminology and use the same sentence structure for 
+   similar content. Use the same sentences for repetitive texts. This helps to improve
+   the translation memory leverage.
+   </para>
+   </listitem>
+   <listitem>
+   <para>
+   Use proofreading and review options. Have your content reviewed to detect 
+   misunderstandings in advance.
+   </para>
+   </listitem>
+   <listitem>
+    <para>
+    Keep it clear. Make clear statements and avoid "should", "could", and similar 
+    unprecise words.
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+     Mark non-translatable text. Use tags as defined in <xref linkend="sec-taglist"/>
+     or use the ITS tag feature to mark all content that should not be translated 
+     (for more information, see <xref linkend="sec-taglist-ITS"/>).
+     Use entities for product names, example names, etc. Always mark code 
+     as such so that it will not be translated.
+    </para>
+   </listitem>
+   <listitem>
+   <para>
+   Write for the world (if possible). Do not use country-specific words and examples.
+   Use common international examples instead.
+   </para>
+   </listitem>
+   <listitem>
+   <para>
+   Use only as many graphics as needed. As each graphic or screenshot needs
+   to be localized as well, keep it to the minimun.
+   </para>
+   </listitem>
+   <listitem>
+   <para>
+   Do not break sentences. Do not use hard breaks within a sentence.
+   </para>
+   </listitem>
+   <listitem>
+   <para>
+   Do not break your sentence with lists. For example, do not structure the 
+   phrase like this:
+   </para>
+   <screen>You can use the following commands:
+   -a
+   -z
+   -b
+   to start the system update.
+   </screen>
+   <para>
+   Keep the sentence together instead:</para>
+   <screen>
+   To start the system update, you can use the following commands:
+   -a
+   -z
+   -b
+   </screen>
+   </listitem>
+   </itemizedlist>
+ </sect2>
 </sect1>
