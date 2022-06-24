@@ -13,6 +13,52 @@
 
 <!-- Add new versions to the beginning of the list. -->
 
+<sect1 xml:id="sec-change-2022-06">
+  <title>Changes 2022-06</title>
+  <itemizedlist>
+  <listitem>
+  <para>
+  Added a section on localization-friendly writing in the 'Web writing' chapter
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+  Added definitions of program, application, script, command, tool, form, dialog
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+  Updated the 'DocBook tags' section of the style guide (fixed typos and layout)
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+  Added specification on the use of the % sign 
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+  Added admonition about version numbers in chapter titles
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+  Rearranged sections in "Structure and markup chapter" in alphabetical order
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+  Added terms 'codestream', 'crash dump'
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+  Updated guidance on punctuation to use at the end of list items
+  </para>
+  </listitem>
+  </itemizedlist>
+  </sect1>
+
 <sect1 xml:id="sec-change-2022-04">
   <title>Changes 2022-04</title>
   <itemizedlist>
