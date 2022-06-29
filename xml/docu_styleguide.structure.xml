@@ -2732,8 +2732,8 @@ xml:id="tab-install-source"</screen>
     <listitem>
      <para>Color every second row in light gray to make sure readers do not 
       accidentally slip between lines. This should be the default for long 
-      tables. Do not use striped rows in matrix type tables. You may also consider disabling 
-      these stripes for short tables to not confuse readers.</para>
+      tables. Do not use striped rows in matrix type tables with additional cell background coloring. 
+      You may also consider disabling striped rows for short tables to not confuse readers.</para>
      <!-- find out whether there is an easy way to do this instead of coloring each and every cell -->
     </listitem>
    </varlistentry>
