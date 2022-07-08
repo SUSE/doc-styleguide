@@ -300,6 +300,64 @@
   </para>
  </sect2>
 
+ <sect2 xml:id="sec-hyphens">
+  <title>Hyphens</title>
+  <para>
+    Generally, hyphens are used as joiners for two or more words that
+    form a single concept and function together as a compound modifier
+    before the noun. If the noun comes first, the hyphen is not added. 
+    For example, <quote>the list in the upper-left corner</quote> but
+    <quote>place the list in the corner in the upper left.</quote>
+  </para>
+  <para>There are technical guidelines to help you choose whether 
+   to use or not to use a hyphen.</para>
+  <para>
+    Add the hyphen when:
+  </para>
+  <itemizedlist>
+    <listitem>
+     <para>
+      The last letter of the prefix and the first letter of the word 
+      are the same (<quote>shell-like</quote>). However, double-e
+      combinations usually do not get a hyphen: <quote>preempted,</quote>
+      <quote>reelected.</quote>
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      The words begin with the prefixes <emphasis>self-</emphasis>,
+      <emphasis>ex-</emphasis> (that is, <quote>former</quote>), 
+      and <emphasis>all-</emphasis>: <quote>self-assigned,</quote>
+      <quote>ex-service,</quote> <quote>all-data.</quote>
+     </para>
+    </listitem>
+   </itemizedlist>
+   <para>
+    Do not use the hyphen when:
+  </para>
+  <itemizedlist>
+    <listitem>
+     <para>
+      The prefix and the following word start with a consonant
+      (<quote>subpackage</quote>).
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      The two-word phrase includes the adverb <emphasis>very</emphasis>
+      and all adverbs ending in <emphasis>-ly</emphasis>: 
+      <quote>a very good time,</quote> <quote>an easily remembered rule.</quote>
+     </para>
+    </listitem>
+   </itemizedlist>
+   <para>
+    Many combinations that are hyphenated before a noun are not
+    hyphenated when they occur after a noun. For example: <quote>This
+    is the up-to-date version</quote> and <quote>The calendar is up 
+    to date.</quote>
+   </para>
+ </sect2>
+
  <sect2 xml:id="sec-language-list">
   <title>Lists</title>
   <para>
@@ -337,23 +395,14 @@
  <sect2 xml:id="sec-prefix">
   <title>Prefixes</title>
   <para>
-   Add a hyphen after the prefix to prefixed words only if:
-  </para>
-  <itemizedlist>
-   <listitem>
-    <para>
-     The last letter of the prefix and the first letter of the word are the
-     same (such as in <quote>semi-industrious</quote>).
-    </para>
-   </listitem>
-   <listitem>
-    <para>
-     You foresee misunderstandings. For example, there is a difference in
-     meaning between <quote>recreate</quote> and <quote>re-create</quote>.
-    </para>
-   </listitem>
-  </itemizedlist>
- </sect2>
+   Add a hyphen after the prefix to prefixed words only if you
+   foresee misunderstandings. For example, there is a difference in
+   meaning between <quote>recreate</quote> and <quote>re-create.</quote>
+   </para>
+   <para>
+   For more information on using hyphens, see <xref linkend="sec-hyphens"/>.
+   </para>
+   </sect2>
 
  <sect2 xml:id="sec-semicolon">
   <title>Semicolons</title>
