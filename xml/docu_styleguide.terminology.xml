@@ -453,7 +453,7 @@
       <entry>verb</entry>
      </row>
      <row>
-      <entry>drop-down box</entry>
+      <entry>drop-down list</entry>
       <entry>combination box, combo box, combobox, dropdown, drop-down,
               drop-down menu, drop-down list box, popover, pull-down menu
             </entry>
@@ -886,7 +886,9 @@
       <entry>list box</entry>
       <entry>list, list field</entry>
       <entry>noun; GUI element that is a list showing multiple elements even
-              before interacting with it
+              before interacting with it. To help the user interact with UI,
+              refer to a list box by its label and the word
+              <emphasis>list</emphasis>, not <emphasis>list box</emphasis>.
             </entry>
      </row>
      <row>
