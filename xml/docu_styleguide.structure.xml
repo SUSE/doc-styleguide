@@ -155,7 +155,7 @@
      <tag class="emptytag">important</tag>:</emphasis>
      In the second paragraph, explain how to avoid the danger.
      If there are multiple ways to avoid a danger, use an unordered list. If
-     fewer than five consecutive steps need to be taken to avoid a danger,
+     fewer than five consecutive steps must be taken to avoid a danger,
      use an ordered list. If more than five consecutive steps need to be
      taken, use a cross reference to another part of the documentation.
     </para>
@@ -317,7 +317,7 @@ default 0 <co xml:id="co-default"/></screen>
    element. See also <xref linkend="sec-example"/>.
   </para>
   <para>
-   When using <tag class="emptytag">command</tag> elements standalone, that
+   When using stand-alone <tag class="emptytag">command</tag> elements, that
    is outside of a <tag class="emptytag">screen</tag>, do not use
    <tag class="emptytag">prompt</tag> elements before or within them. For
    more information about <tag class="emptytag">prompt</tag>, see
@@ -456,7 +456,7 @@ default 0 <co xml:id="co-default"/></screen>
    <title>File names</title>
    <para>
     A file name is the name of a file on a local or network disk. Can
-    contain a simple name or could include a path or other elements specific
+    contain a simple name or include a path or other elements specific
     to the operating system. See also <xref linkend="sec-file-language"/>.
    </para>
 <screen>Find the log file &lt;filename&gt;configuration.xml&lt;/filename&gt;
@@ -561,13 +561,13 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
     </listitem>
     <listitem>
      <para>
-      Text in screens should not follow the indentation level of the XML around
+      Text in screens must not follow the indentation level of the XML around
       them: All indentation will be reproduced verbatim.
      </para>
     </listitem>
     <listitem>
      <para>
-      Lines in a screen should be at most 80 characters long. If you are working
+      Lines in a screen must be at most 80 characters long. If you are working
       in a structure with less available space, such as within a list or within
       a table, work with appropriate shorter line lengths.
      </para>
@@ -844,7 +844,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   <para>
    In some cases, product managers will request avoiding all or selected
    external links to avoid issues for customers impacted by restrictive
-   firewalls.
+   firewall rules.
   </para>
   <para>
    Use the
@@ -926,6 +926,15 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
  <sect2 xml:id="sec-link-to-susecom">
   <title>External links to &suse; documentation</title>
   <para>
+    The &suse; documentation is hosted under <uri>documentation.suse.com</uri>.
+    This is the URL that must be provided in all documents. The abbreviated URLs such
+    as <uri>doc.suse.com</uri> and <uri>docs.suse.com</uri> also work but must
+    be avoided for SEO reasons. 
+  </para>
+  <para>
+    Make sure to use complete URLs instead of entities for an easy copy and paste.
+   </para>
+   <para>
    Most links in our documentation that goes to <uri>documentation.suse.com</uri>
    refer to a specific product and release. However, sometimes it makes sense to
    <emphasis>not</emphasis> include the SP or even the major release.
@@ -1369,7 +1378,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    </listitem>
    <listitem>
     <para>
-     In identifiers, only use lower-case basic Latin alphabetic and numeric
+     In identifiers, only use lowercase basic Latin alphabetic and numeric
      characters and <literal>-</literal> (hyphen).
      Do not use <literal>_</literal> and <literal>.</literal> characters, as
      they may hurt search engine optimization.
