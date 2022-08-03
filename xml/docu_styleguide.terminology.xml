@@ -1420,6 +1420,14 @@
       <entry>noun</entry>
      </row>
      <row>
+      <entry>screen</entry>
+      <entry/>
+      <entry>noun; the surface on which the image appears in an 
+             electronic display (as in a computer terminal); also
+             the information displayed on a computer screen at one time
+      </entry>
+     </row>
+     <row>
       <entry>screenshot</entry>
       <entry>screen shot, screen-shot</entry>
       <entry>noun</entry>
@@ -1841,6 +1849,13 @@
       <entry>video DVD</entry>
       <entry>Video DVD, Video-DVD, DVD video</entry>
       <entry>noun</entry>
+     </row>
+     <row>
+       <entry>view</entry>
+       <entry/>
+       <entry>noun; a reusable set of user interface widgets (text fields, 
+             date time pickers, buttons) that serve as an interface for 
+             user interaction with an object or service</entry>
      </row>
      <row>
       <entry>virtualization</entry>
