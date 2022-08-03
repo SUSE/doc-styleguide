@@ -1802,8 +1802,9 @@
      </row>
      <row>
       <entry>usage</entry>
-      <entry>utilisation [British], utilization</entry>
-      <entry>noun</entry>
+      <entry/>
+      <entry>noun; the way in which something is used, or the amount of
+        it that is used; see also <emphasis>utilization</emphasis></entry>
      </row>
      <row>
       <entry>use case</entry>
@@ -1827,6 +1828,15 @@
               <emphasis>kernel space</emphasis>
       </entry>
      </row>
+     <row>
+        <entry>utilization</entry>
+        <entry>utilisation [British]</entry>
+        <entry>noun; an act or instance of making practical or 
+                profitable use of something, especially in 
+                <emphasis>CPU utilization</emphasis>, 
+                <emphasis>memory utilization</emphasis>     
+        </entry>
+       </row>
      <row>
       <entry>video DVD</entry>
       <entry>Video DVD, Video-DVD, DVD video</entry>
