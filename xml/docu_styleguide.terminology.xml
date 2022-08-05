@@ -152,8 +152,8 @@
      <row>
       <entry>bare metal</entry>
       <entry>bare-metal, baremetal</entry>
-      <entry>noun; a computer system without a base operating system 
-             or installed applications</entry>
+      <entry>noun; a computer without an operating system; <emphasis>also</emphasis> a physical computer (in 
+       contrast to a virtualized system)</entry>
      </row>
      <row>
       <entry>bare-metal</entry>
@@ -897,9 +897,7 @@
       <entry>list box</entry>
       <entry>list, list field</entry>
       <entry>noun; GUI element that is a list showing multiple elements even
-              before interacting with it. To help the user interact with UI,
-              refer to a list box by its label and the word
-              <emphasis>list</emphasis>, not <emphasis>list box</emphasis>.
+              before interacting with it
             </entry>
      </row>
      <row>
@@ -1073,7 +1071,7 @@
      </row>
      <row>
       <entry>multi-version</entry>
-      <entry>multiversion</entry>
+      <entry>multi version, multiversion</entry>
       <entry>adjective</entry>
       </row>
      <row>
@@ -1434,8 +1432,8 @@
       <entry>screen</entry>
       <entry/>
       <entry>noun; the surface on which the image appears in an 
-             electronic display (as in a computer terminal); also
-             the information displayed on a computer screen at one time
+       electronic display (as in a computer terminal); also
+       the information displayed on a computer screen at one time
       </entry>
      </row>
      <row>
@@ -1823,7 +1821,7 @@
       <entry>usage</entry>
       <entry/>
       <entry>noun; the way in which something is used, or the amount of
-        it that is used; see also <emphasis>utilization</emphasis></entry>
+       it that is used; see also <emphasis>utilization</emphasis></entry>
      </row>
      <row>
       <entry>use case</entry>
@@ -1864,9 +1862,8 @@
      <row>
        <entry>view</entry>
        <entry/>
-       <entry>noun; a reusable set of user interface widgets (text fields, 
-             date time pickers, buttons) that serve as an interface for 
-             user interaction with an object or service</entry>
+      <entry>noun; a reusable set of user interface widgets that serve as an
+       interface for user interaction</entry>
      </row>
      <row>
       <entry>virtualization</entry>
