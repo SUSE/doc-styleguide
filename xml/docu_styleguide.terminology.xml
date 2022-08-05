@@ -150,6 +150,17 @@
       <entry>noun</entry>
      </row>
      <row>
+      <entry>bare metal</entry>
+      <entry>bare-metal, baremetal</entry>
+      <entry>noun; a computer without an operating system; <emphasis>also</emphasis> a physical computer (in 
+       contrast to a virtualized system)</entry>
+     </row>
+     <row>
+      <entry>bare-metal</entry>
+      <entry>bare metal, baremetal</entry>
+      <entry>adjective</entry>
+     </row>
+     <row>
       <entry>Bash</entry>
       <entry>BASH, bash</entry>
       <entry>noun; spelling as per the GNU Bash manual</entry>
@@ -453,7 +464,7 @@
       <entry>verb</entry>
      </row>
      <row>
-      <entry>drop-down box</entry>
+      <entry>drop-down list</entry>
       <entry>combination box, combo box, combobox, dropdown, drop-down,
               drop-down menu, drop-down list box, popover, pull-down menu
             </entry>
@@ -1016,7 +1027,7 @@
       <entry>menu</entry>
       <entry>drop-down menu</entry>
       <entry>noun; GUI element that is a list whose entries each start an
-              action; see also <emphasis>drop-down box</emphasis>
+              action; see also <emphasis>drop-down list</emphasis>
       </entry>
      </row>
      <row>
@@ -1058,6 +1069,11 @@
       <entry>multi user, multi-user</entry>
       <entry>noun</entry>
      </row>
+     <row>
+      <entry>multi-version</entry>
+      <entry>multi version, multiversion</entry>
+      <entry>adjective</entry>
+      </row>
      <row>
       <entry>name server</entry>
       <entry>name-server, nameserver</entry>
@@ -1413,6 +1429,14 @@
       <entry>noun</entry>
      </row>
      <row>
+      <entry>screen</entry>
+      <entry/>
+      <entry>noun; the surface on which the image appears in an 
+       electronic display (as in a computer terminal); also
+       the information displayed on a computer screen at one time
+      </entry>
+     </row>
+     <row>
       <entry>screenshot</entry>
       <entry>screen shot, screen-shot</entry>
       <entry>noun</entry>
@@ -1434,7 +1458,7 @@
       <entry>scroll-bar, scroll bar, scrollbox,
               scroller, slidebar
             </entry>
-      <entry>noun; GUI element that is used change which portion of a
+      <entry>noun; GUI element that is used to change which portion of a
               screen area is visible
             </entry>
      </row>
@@ -1795,8 +1819,9 @@
      </row>
      <row>
       <entry>usage</entry>
-      <entry>utilisation [British], utilization</entry>
-      <entry>noun</entry>
+      <entry/>
+      <entry>noun; the way in which something is used, or the amount of
+       it that is used; see also <emphasis>utilization</emphasis></entry>
      </row>
      <row>
       <entry>use case</entry>
@@ -1821,9 +1846,24 @@
       </entry>
      </row>
      <row>
+        <entry>utilization</entry>
+        <entry>utilisation [British]</entry>
+        <entry>noun; an act or instance of making practical or 
+                profitable use of something, especially in 
+                <emphasis>CPU utilization</emphasis>, 
+                <emphasis>memory utilization</emphasis>     
+        </entry>
+       </row>
+     <row>
       <entry>video DVD</entry>
       <entry>Video DVD, Video-DVD, DVD video</entry>
       <entry>noun</entry>
+     </row>
+     <row>
+       <entry>view</entry>
+       <entry/>
+      <entry>noun; a reusable set of user interface widgets that serve as an
+       interface for user interaction</entry>
      </row>
      <row>
       <entry>virtualization</entry>
