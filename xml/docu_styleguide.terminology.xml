@@ -897,9 +897,7 @@
       <entry>list box</entry>
       <entry>list, list field</entry>
       <entry>noun; GUI element that is a list showing multiple elements even
-              before interacting with it. To help the user interact with UI,
-              refer to a list box by its label and the word
-              <emphasis>list</emphasis>, not <emphasis>list box</emphasis>.
+              before interacting with it
             </entry>
      </row>
      <row>
