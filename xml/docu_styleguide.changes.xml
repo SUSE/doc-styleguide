@@ -13,6 +13,35 @@
 
 <!-- Add new versions to the beginning of the list. -->
 
+<sect1 xml:id="sec-change-2022-08">
+  <title>Changes 2022-08</title>
+  <itemizedlist>
+  <listitem>
+  <para>
+  Added new content on the correct use of doc.suse.com URL in the 
+  ‘External links to SUSE documentation’ subsection
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+  Added general instructions on how to create and style tables 
+  in the section ‘Structure and markup’
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+  Added a subsection about hyphens to the ‘Language’ section
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+  Added and updated terms and definitions: ‘bare metal’, ‘drop-down list’, 
+  ‘list box’, ‘screen’, ‘usage’, ‘utilization’, ‘view’, ‘multi-version’ (adjective)
+  </para>
+  </listitem>
+  </itemizedlist>
+  </sect1>
+
 <sect1 xml:id="sec-change-2022-06">
   <title>Changes 2022-06</title>
   <itemizedlist>
