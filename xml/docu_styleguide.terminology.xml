@@ -1864,9 +1864,8 @@
      <row>
        <entry>view</entry>
        <entry/>
-       <entry>noun; a reusable set of user interface widgets (text fields, 
-             date time pickers, buttons) that serve as an interface for 
-             user interaction with an object or service</entry>
+      <entry>noun; a reusable set of user interface widgets that serve as an
+       interface for user interaction</entry>
      </row>
      <row>
       <entry>virtualization</entry>
