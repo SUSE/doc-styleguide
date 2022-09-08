@@ -1786,6 +1786,26 @@
             </entry>
      </row>
      <row>
+      <entry>unit</entry>
+      <entry>unit file</entry>
+      <entry>noun;
+       <emphasis>concept</emphasis> of <phrase role="productname">systemd</phrase>;
+       generic term for <link
+       xlink:href="https://www.freedesktop.org/software/systemd/man/systemd.unit.html">services,
+       timers, etc.</link>; use when starting, stopping, enabling or disabling a
+       unit
+      </entry>
+     </row>
+     <row>
+      <entry>unit file</entry>
+      <entry>unit</entry>
+      <entry>noun; <emphasis>configuration file</emphasis> of a <phrase
+       role="productname">systemd</phrase> unit; has a suffix
+       (<filename>.service</filename>, <filename>.timer</filename>, etc.); only
+       use when referring to the actual file (e.g. when editing it) and not the
+       unit</entry>
+     </row>
+     <row>
       <entry>Unix</entry>
       <entry>UNIX [brand name registered by Open Group],
               unix
