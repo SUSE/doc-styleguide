@@ -700,8 +700,9 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
     <itemizedlist>
       <listitem>
        <para>
-        Do not insert cross references (<xref linkend="..."/>) into a <title> element. 
-        The title should not be clickable, and a cross reference in a title can create
+        Do not insert cross references (<tag class="starttag">xref linkend="..."</tag>)
+        into a <tag class="emptytag">title</tag> element. 
+        The title must not be clickable, and a cross reference in a title can create
         issues when linking to such a title in a different paragraph.</para>
       </listitem>
       <listitem>
