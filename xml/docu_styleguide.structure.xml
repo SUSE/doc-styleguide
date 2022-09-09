@@ -647,6 +647,24 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
       </listitem>
      </itemizedlist>
     </listitem>
+    <listitem>
+      <para>To enable automatic syntax highlighting, add a language 
+        attribute for the respective language format. Valid language formats:
+        <tag class="attvalue">apache</tag>, <tag class="attvalue">bash</tag>,
+        <tag class="attvalue">c++</tag>, <tag class="attvalue">css</tag>, 
+        <tag class="attvalue">diff</tag>, <tag class="attvalue">html</tag>,
+        <tag class="attvalue">xml</tag>, <tag class="attvalue">http</tag>,
+        <tag class="attvalue">ini</tag>, <tag class="attvalue">json</tag>,
+        <tag class="attvalue">java</tag>, <tag class="attvalue">javascript</tag>,
+        <tag class="attvalue">makefile</tag>, <tag class="attvalue">nginx</tag>,
+        <tag class="attvalue">php</tag>, <tag class="attvalue">perl</tag>,
+        <tag class="attvalue">python</tag>, <tag class="attvalue">ruby</tag>,
+        <tag class="attvalue">sql</tag>, <tag class="attvalue">crmsh</tag>,
+        <tag class="attvalue">dockerfile</tag>, <tag class="attvalue">lisp</tag>,
+        and <tag class="attvalue">yaml</tag>.</para>
+        <para>Note that syntax highlighting may not be supported in all 
+        target formats.</para>
+    </listitem>
    </itemizedlist>
    <para>
     See also <xref linkend="sec-example"/>, <xref linkend="sec-command"/>,
