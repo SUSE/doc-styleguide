@@ -373,6 +373,13 @@
       <entry>verb</entry>
      </row>
      <row>
+        <entry>console</entry>
+        <entry/>
+        <entry>noun; a physical terminal, used to describe TTYs and PTYs 
+               and when talking about consoles (e.g. KVM's console); 
+               see also <emphasis>terminal, shell</emphasis></entry>
+       </row>
+     <row>
       <entry>control center</entry>
       <entry>Control Center, Control center, Control-Center,
               Control-center, control-center, Controlcenter, controlcenter
@@ -1488,6 +1495,14 @@
       <entry>adjective|noun</entry>
      </row>
      <row>
+        <entry>shell</entry>
+        <entry/>
+        <entry>noun; a command line interpreter, used to describe 
+               programs that expose the input/output to the user 
+               (bash, sh, zsh) and to refer to the command prompt; 
+               see also <emphasis>console, terminal</emphasis></entry>
+       </row>
+     <row>
       <entry>(to) shut sth. down</entry>
       <entry>(to) shut-down sth., (to) shutdown sth.</entry>
       <entry>verb</entry>
@@ -1723,6 +1738,14 @@
               more lines
             </entry>
      </row>
+     <row>
+        <entry>terminal</entry>
+        <entry/>
+        <entry>noun; text input/output environment where users interact
+               with Linux and Linux applications; the default term to 
+               describe a text-only user interface
+              </entry>
+       </row>
      <row>
       <entry>(to) terminate sth.</entry>
       <entry>(to) abort sth., (to) close sth., (to) exit sth.,
