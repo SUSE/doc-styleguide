@@ -648,7 +648,7 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
      </itemizedlist>
     </listitem>
     <listitem>
-      <para>To enable automatic syntax highlighting, add a language 
+      <para>To enable automatic syntax highlighting for programming languages or formats, add a language 
         attribute for the respective language format. Valid language formats:
         <tag class="attvalue">apache</tag>, <tag class="attvalue">bash</tag>,
         <tag class="attvalue">c++</tag>, <tag class="attvalue">css</tag>, 
