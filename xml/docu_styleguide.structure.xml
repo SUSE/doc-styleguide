@@ -498,7 +498,7 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
    <para>
     To avoid making prompts longer than necessary, do not include paths, user,
     or host names, unless this is vital to understanding.
-    The first restricted user should always be named
+    The first restricted user must always be named
     <emphasis>tux</emphasis>. For more information about names of restricted
     users, see <xref linkend="sec-name"/>.
    </para>
@@ -668,54 +668,57 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
  <sect2 xml:id="sec-cross-reference">
   <title>Cross references</title>
   <para>
-   Use the
-   <tag class="emptytag">xref</tag>
+   Use the <tag class="emptytag">xref</tag>
    element (read: <quote>cross ref</quote>) when referring to an appendix,
    chapter, example, figure, part, preface, section, table, or question and
    answer set. The element referenced needs to have an
-   <tag class="attribute">xml:id</tag>
-   attribute. Do not prefix or suffix cross references with text labels such
-   as <quote>appendix,</quote>
-   <quote>chapter,</quote> <quote>table,</quote> or <quote>figure.</quote>
-   Such labels are generated automatically.
-  </para>
-  <para>
-   Do not create references to paragraphs (<tag class="emptytag">para</tag>) or
-   other elements that have no title.
-   An exception to this rule is the element <tag class="emptytag">step</tag>
-   to which you may create references.
-   If a reference to an element without a title is vital to the document, use
-   the attribute <tag class="attribute">xreflabel</tag> to assign a title.
-  </para>
-  <para>
-   Other types of references to resources are described in
-   <xref linkend="sec-other-external"/> and <xref linkend="sec-link"/>.
-   Create identifiers to reference from cross references using the rules
-   under <xref linkend="sec-id"/>.
-  </para>
-  <example xml:id="ex-cross-reference-source">
-   <title>Example of a cross reference (source)</title>
-<screen>&lt;sect2 xml:id="sec-cross-reference"&gt;
- &lt;title&gt;Cross references&lt;/title&gt;
- &lt;para&gt;
-  Use the &lt;sgmltag class="emptytag"&gt;xref&lt;/sgmltag&gt; element ...
- &lt;/para&gt;
-...
- <emphasis role="bold">&lt;para&gt;
-  See &lt;xref linkend="sec-cross-reference"/&gt;.
- &lt;/para&gt;</emphasis>
-&lt;/sect2&gt;</screen>
-  </example>
-  <example xml:id="ex-cross-reference-output">
-   <title>Example of a cross reference (output)</title>
-   <para>
-    See <xref linkend="sec-cross-reference"/>.
-    <remark>sknorr, 2014-01-21: does this work for the average
-            reader?
-          </remark>
-   </para>
-  </example>
- </sect2>
+   <tag class="attribute">xml:id</tag> attribute, an identifier. Create
+   identifiers to reference from cross references using the rules
+   under <xref linkend="sec-id"/>. Other types of references to resources 
+   are described in <xref linkend="sec-other-external"/> and
+   <xref linkend="sec-link"/>.</para>
+ <example xml:id="ex-cross-reference-source">
+    <title>Example of a cross reference (source)</title>
+ <screen>&lt;sect2 xml:id="sec-cross-reference"&gt;
+  &lt;title&gt;Cross references&lt;/title&gt;
+  &lt;para&gt;
+   Use the &lt;sgmltag class="emptytag"&gt;xref&lt;/sgmltag&gt; element ...
+  &lt;/para&gt;
+ ...
+  <emphasis role="bold">&lt;para&gt;
+   See &lt;xref linkend="sec-cross-reference"/&gt;.
+  &lt;/para&gt;</emphasis>
+ &lt;/sect2&gt;</screen>
+   </example>
+   <example xml:id="ex-cross-reference-output">
+    <title>Example of a cross reference (output)</title>
+    <para>
+     See <xref linkend="sec-cross-reference"/>.</para>
+   </example>
+   <para>Keep in mind the following cases where listing cross references
+    is discouraged and must be avoided:</para>
+    <itemizedlist>
+      <listitem>
+       <para>
+        Do not insert cross references (<tag class="starttag">xref linkend="..."</tag>)
+        into a <tag class="emptytag">title</tag> element. 
+        The title must not be clickable, and a cross reference in a title can create
+        issues when linking to such a title in a different paragraph.</para>
+      </listitem>
+      <listitem>
+        <para>
+        Do not create references to paragraphs (<tag class="emptytag">para</tag>) or
+        other elements that have no title. An exception to this rule is the
+        element <tag class="emptytag">step</tag> to which you may create 
+        references. If a reference to an element without a title is vital 
+        to the document, use the attribute <tag class="attribute">xreflabel</tag>
+        to assign a title.</para>
+       </listitem>
+    </itemizedlist>
+    <para>Do not prefix or suffix cross references with text labels such
+    as <quote>appendix,</quote> <quote>chapter,</quote> <quote>table,</quote>
+    or <quote>figure.</quote> Such labels are generated automatically.</para>
+  </sect2>
 
  <sect2 xml:id="sec-emphasis">
   <title>Emphasis</title>
