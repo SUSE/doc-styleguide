@@ -191,9 +191,11 @@
  <sect2 xml:id="sec-comma">
   <title>Commas</title>
   <para>
-   Use commas between all items in a series of three or more elements. For
-   example, write <quote>a, b, and c.</quote> Use commas around phrases like
-   <emphasis>for example</emphasis> and <emphasis>that is</emphasis>.
+   Use commas to separate elements in a series of three or more elements,
+   but do not put a comma before the conjunction in most simple series.
+   For example, <quote>Find basic information about how to register your
+   system, modules and extensions.</quote> Use commas around phrases 
+   like <emphasis>for example</emphasis> and <emphasis>that is</emphasis>.
    Introductory phrases at the beginning of a sentence are normally followed
    by a comma. For example, <quote>Before using YaST Online Update,
    configure a network connection.</quote>
