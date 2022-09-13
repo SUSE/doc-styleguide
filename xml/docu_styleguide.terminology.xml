@@ -1394,7 +1394,7 @@
       <entry>(to) save sth.</entry>
       <entry>(to) store sth., (to) write sth. out</entry>
       <entry>verb; when saving or overwriting a file from a GUI program or
-              via a parameter of a command line program; see also
+              via a parameter of a command-line program; see also
               <emphasis>write</emphasis>
       </entry>
      </row>
@@ -1497,7 +1497,7 @@
      <row>
         <entry>shell</entry>
         <entry/>
-        <entry>noun; a command line interpreter, used to describe 
+        <entry>noun; a command-line interpreter used to describe 
                programs that expose the input/output to the user 
                (bash, sh, zsh) and to refer to the command prompt; 
                see also <emphasis>console, terminal</emphasis></entry>
@@ -2009,7 +2009,7 @@
       <entry>(to) write sth.</entry>
       <entry>(to) pipe sth. [Unix jargon],
               (to) write sth. out</entry>
-      <entry>verb; when saving the command line output of a program as a
+      <entry>verb; when saving the command-line output of a program as a
               file using <literal>&gt;</literal> or <literal>&gt;&gt;</literal>;
               see also <emphasis>save</emphasis>
       </entry>
