@@ -729,7 +729,9 @@
       <entry>init script</entry>
       <entry>init-script, initscript, initialization script [incorrect,
               when referring to script run by <command>init</command>]</entry>
-      <entry>noun; a script run by <command>init</command>
+      <entry>noun; a script run by <command>init</command>; for <phrase
+              role="productname">systemd</phrase> use <emphasis>unit</emphasis>
+              or <emphasis>unit file</emphasis>
       </entry>
      </row>
      <row>
