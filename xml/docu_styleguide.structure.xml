@@ -315,7 +315,7 @@ default 0 <co xml:id="co-default"/></screen>
     <listitem>
      <para>
       On another line, use the <tag class="emptytag">xref</tag> element
-      to point to the first line.
+      to point to the ID from the previous step.
      </para>
     </listitem>
    </orderedlist>
