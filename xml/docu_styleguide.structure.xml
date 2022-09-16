@@ -330,7 +330,7 @@ default 0 <co xml:id="co-default"/></screen>
     &lt;callout arearefs="co_dict"&gt;
       &lt;para&gt;A dictionary.&lt;/para&gt;
     &lt;/callout&gt;
-    &lt;callout arearefs="co.list"&gt;
+    &lt;callout arearefs="co_list"&gt;
       &lt;para&gt;A list.&lt;/para&gt;
     &lt;/callout&gt;
   &lt;/calloutlist&gt;</screen>
