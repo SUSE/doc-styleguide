@@ -337,8 +337,8 @@ default 0 <co xml:id="co-default"/></screen>
    </example>
    <example xml:id="ex-callout-group-output">
     <title>Example of a callout group (output)</title>
-    <screen language="python">d1 = dict() <co xml:id="co.dict"/>
-      d2 = {} <xref linkend="co.dict"/>
+    <screen language="python">d1 = dict() <co xml:id="co_dict"/>
+      d2 = {} <xref linkend="co_dict"/>
       l1 = list() <co xml:id="co.list"/>
       l2 = [] <xref linkend="co.list"/></screen>
         <calloutlist>
