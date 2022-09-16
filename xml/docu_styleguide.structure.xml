@@ -323,7 +323,7 @@ default 0 <co xml:id="co-default"/></screen>
   <example xml:id="ex-callout-group-source">
     <title>Example of a callout group (source)</title>
   <screen language="python">d1 = dict() &lt;co xml:id="co_dict"/&gt;
-  d2 = {} &lt;xref linkend="co.dict"/&gt;
+  d2 = {} &lt;xref linkend="co_dict"/&gt;
   l1 = list() &lt;co xml:id="co.list"/&gt;
   l2 = [] &lt;xref xml:id="co.list"/&gt;
     &lt;calloutlist&gt;
