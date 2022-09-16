@@ -339,8 +339,8 @@ default 0 <co xml:id="co-default"/></screen>
     <title>Example of a callout group (output)</title>
     <screen language="python">d1 = dict() <co xml:id="co_dict"/>
       d2 = {} <xref linkend="co_dict"/>
-      l1 = list() <co xml:id="co.list"/>
-      l2 = [] <xref linkend="co.list"/></screen>
+      l1 = list() <co xml:id="co_list"/>
+      l2 = [] <xref linkend="co_list"/></screen>
         <calloutlist>
         <callout arearefs="co_dict">
           <para>A dictionary.</para>
