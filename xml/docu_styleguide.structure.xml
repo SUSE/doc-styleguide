@@ -327,7 +327,7 @@ default 0 <co xml:id="co-default"/></screen>
   l1 = list() &lt;co xml:id="co.list"/&gt;
   l2 = [] &lt;xref xml:id="co.list"/&gt;
     &lt;calloutlist&gt;
-    &lt;callout arearefs="co.dict"&gt;
+    &lt;callout arearefs="co_dict"&gt;
       &lt;para&gt;A dictionary.&lt;/para&gt;
     &lt;/callout&gt;
     &lt;callout arearefs="co.list"&gt;
