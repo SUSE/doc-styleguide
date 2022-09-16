@@ -345,7 +345,7 @@ default 0 <co xml:id="co-default"/></screen>
         <callout arearefs="co_dict">
           <para>A dictionary.</para>
         </callout>
-        <callout arearefs="co.list">
+        <callout arearefs="co_list">
           <para>A list.</para>
         </callout>
       </calloutlist>
