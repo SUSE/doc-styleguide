@@ -325,7 +325,7 @@ default 0 <co xml:id="co-default"/></screen>
   <screen language="python">d1 = dict() &lt;co xml:id="co.dict"/&gt;
   d2 = {} &lt;xref linkend="co.dict"/&gt;
   l1 = list() &lt;co xml:id="co.list"/&gt;
-  l2 = [] &lt;xref xml:id="co.list"/&gt;</screen>
+  l2 = [] &lt;xref xml:id="co.list"/&gt;
     &lt;calloutlist&gt;
     &lt;callout arearefs="co.dict"&gt;
       &lt;para&gt;A dictionary.&lt;/para&gt;
@@ -333,14 +333,14 @@ default 0 <co xml:id="co-default"/></screen>
     &lt;callout arearefs="co.list"&gt;
       &lt;para&gt;A list.&lt;/para&gt;
     &lt;/callout&gt;
-  &lt;/calloutlist&gt;
+  &lt;/calloutlist&gt;</screen>
    </example>
    <example xml:id="ex-callout-group-output">
     <title>Example of a callout group (output)</title>
     <screen language="python">d1 = dict() <co xml:id="co.dict"/>
       d2 = {} <xref linkend="co.dict"/>
       l1 = list() <co xml:id="co.list"/>
-      l2 = [] <xref xml:id="co.list"/></screen>
+      l2 = [] <xref linkend="co.list"/></screen>
         <calloutlist>
         <callout arearefs="co.dict">
           <para>A dictionary.</para>
