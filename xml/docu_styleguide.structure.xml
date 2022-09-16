@@ -303,8 +303,9 @@ default 0 <co xml:id="co-default"/></screen>
    </tgroup>
   </table>
 
-  <para>You can group different callouts to point to the same annotation
-  so that it is not repeated. To do this, complete the following steps:</para> 
+  <para>You can group different callouts to point to the same annotation.
+   This helps to avoid repeating the same annotation.
+   To do this, complete the following steps:</para> 
   <orderedlist>
     <listitem>
      <para>
