@@ -98,7 +98,7 @@
    <listitem>
     <para>
      To represent special characters that cannot easily be displayed,
-     entered, or memorized.
+     entered or memorized.
     </para>
    </listitem>
    <listitem>
@@ -235,7 +235,7 @@
      <term>General Entities</term>
      <listitem>
       <para>
-       Network IP addresses, host names, and user names.
+       Network IP addresses, host names and user names.
       </para>
      </listitem>
     </varlistentry>
@@ -273,7 +273,7 @@ Kernel since &lt;literal&gt;&amp;sle;&lt;/literal&gt; XYZ.</screen>
        version of a longer product name, append an <literal>a</literal> to
        the end of the entity name. For example, use
        <tag class="genentity">slesa</tag>
-       the acronym <quote>SLES</quote>.
+       the acronym <quote>SLES.</quote>
       </para>
      </listitem>
     </varlistentry>
@@ -313,7 +313,7 @@ Kernel since &lt;literal&gt;&amp;sle;&lt;/literal&gt; XYZ.</screen>
    This means that they must have a single top-level element and must not
    contain elements that are not allowed in GeekoDoc.
    Files that are supposed to be referenced multiple times from within the same
-   set, book, or article must not contain any <tag class="attribute">xml:id</tag>
+   set, book or article must not contain any <tag class="attribute">xml:id</tag>
    attributes.
   </para>
   <para>

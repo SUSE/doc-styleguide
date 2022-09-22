@@ -63,20 +63,20 @@
     occurrences of the term in this chapter should then use the acronym.
    </para>
    <para>
-    Create plural forms of acronyms by adding a lowercase <quote>s</quote>.
+    Create plural forms of acronyms by adding a lowercase <quote>s.</quote>
     For example, use <quote>CDs</quote> and <quote>BIOSes.</quote> Never add
     an apostrophe before the <quote>s</quote> or <quote>es.</quote>
    </para>
    <para>
     For clarity, avoid using possessive forms of acronyms. For example, do not
-    use <quote>XMLʼs specification</quote>.
+    use <quote>XMLʼs specification.</quote>
    </para>
   </sect3>
   <sect3 xml:id="sec-latin">
    <title>Latin abbreviations</title>
    <para>
     Do not use Latin abbreviations. Use the full English form: for example,
-    use <quote>that is</quote> instead of <quote>i.e.</quote>. As an
+    instead of <quote>i.e.,</quote> use <quote>that is</quote>. As an
     exception to this rule, the abbreviation <emphasis>etc.</emphasis> is
     allowed.
    </para>
@@ -129,7 +129,7 @@
     Apply sentence-style capitalization to all running text and all types of
     headings and titles that are part of the document content.
     An example for sentence-style capitalization is
-    <quote>Ceph core components</quote>.
+    <quote>Ceph core components.</quote>
    </para>
   </sect3>
   <sect3 xml:id="sec-capitalization-title">
@@ -279,7 +279,7 @@
   </para>
   <para>
    When it is necessary to refer to file extensions, such as in compound
-   words like <quote>PDF file</quote>, always capitalize the extension.
+   words like <quote>PDF file,</quote> always capitalize the extension.
   </para>
  </sect2>
 
@@ -287,9 +287,9 @@
   <title>Headings</title>
   <para>
    When writing a descriptive section, use a noun-based heading title,
-   for example, <quote>Concepts of Software</quote>.
+   for example, <quote>Concepts of Software.</quote>
    When writing a task-orientated section, use a verb in gerund, for example,
-   <quote>Installing Software</quote>.
+   <quote>Installing Software.</quote>
   </para>
   <para>
    Keep headings short and simple. Do not use both an acronym and the
@@ -439,9 +439,7 @@
    Always let the reader know the objective of an action before describing
    the action itself. As an example, write: <quote>To restore world peace,
    click <guimenu>Shake hands</guimenu>.</quote>
-   <remark>sknorr 2014-01-07: it's hard to take this quote seriously.
-        Find something better.</remark>
-  </para>
+   </para>
  </sect2>
 
  <sect2 xml:id="sec-tense">
@@ -466,11 +464,11 @@
    Use the second person (<quote>you</quote>) to refer to the reader. Normally,
    the reader is the user or administrator who performs the actions described.
    For example, <quote>To install all officially released patches that apply to
-   your system, run <command>zypper patch</command></quote>. Do not overuse 
-   <quote>you</quote> and <quote>your</quote>. It is often implied who you are 
+   your system, run <command>zypper patch</command>.</quote> Do not overuse 
+   <quote>you</quote> and <quote>your.</quote> It is often implied who you are 
    addressing in the instructions. For example, instead of <quote>Install 
-   <emphasis>package</emphasis> on your system</quote>, just say <quote>Install
-   <emphasis>package</emphasis> on the system</quote>. 
+   <emphasis>package</emphasis> on your system,</quote> just say <quote>Install
+   <emphasis>package</emphasis> on the system.</quote> 
   </para>
   <para>
    Where possible, use active voice. If there is no emphasis on the object of
@@ -479,8 +477,8 @@
    of the proper use of passive voice. The emphasis is on the server, not on the 
    person configuring it.
   </para>
-  <para>When giving a recommendation, start with <quote>We recommend</quote>. 
-  Do not use passive phrasings like <quote>It is recommended</quote>.
+  <para>When giving a recommendation, start with <quote>We recommend.</quote> 
+  Do not use passive phrasings like <quote>It is recommended.</quote>
   </para>
  </sect2>
 
@@ -577,8 +575,11 @@
    always provides typographic quotes.
   </para>
   <para>
-   Punctuation directly following the quoted text should be included within
-   the quotation marks, as illustrated in <xref linkend="ex-quote"/>.
+   The period and the comma always go within the quotation marks,
+   as illustrated in <xref linkend="ex-quote"/>. The dash, the semicolon,
+   the colon, the question mark and the exclamation mark go within the
+   quotation marks when they apply to the quoted matter only. They go
+   outside when they apply to the whole sentence.
   </para>
   <example xml:id="ex-quote">
    <title>Quote</title>
