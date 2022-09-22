@@ -511,9 +511,11 @@ default 0 <co xml:id="co-default"/></screen>
    </para>
 <screen>Find the log file &lt;filename&gt;configuration.xml&lt;/filename&gt;
 in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
-   <remark>sknorr, 2014-01-21: this is bad practice, I guess, since one
-          could simply append the file name to the path...
-        </remark>
+   <para>
+   To assign standard names to files and images in DocBook and AsciiDoc,
+   follow the naming conventions at
+   <link xlink:href="https://github.com/SUSE/doc-modular/tree/jjaeger_template-overhaul#readme"/>.
+  </para>
   </sect3>
   <sect3 xml:id="sec-placeholder">
    <title>Placeholders</title>
@@ -2545,7 +2547,7 @@ xml:id="tab-install-source"</screen>
   &lt;/question&gt;
   &lt;answer&gt;
    &lt;para&gt;
-    There are less than 4 GB of space available on the selected partition.
+    There are less than 4 GB of space available on the selected partition.
    &lt;/para&gt;
   &lt;/answer&gt;
  &lt;/qandaentry&gt;
@@ -2707,7 +2709,7 @@ xml:id="tab-install-source"</screen>
   <para>
    In a situation where the category of the page is needed, append the
    category in parentheses. Use, for example <quote>(<command>man 9
-   command</command>)</quote>.
+   command</command>).</quote>
   </para>
 <screen>To learn more about subcommands, see the man page of
 &lt;command&gt;command&lt;/command&gt;.</screen>
