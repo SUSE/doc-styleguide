@@ -659,7 +659,7 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
      <para>
       In all other cases, do not combine multiple commands within one
       <tag class="emptytag">screen</tag> element. Instead, use multiple
-      <tag class="emptytag">screen</tag> elements instead. For example,
+      <tag class="emptytag">screen</tag> elements. For example,
       as part of a multi-step procedure.
      </para>
      <para>
