@@ -393,7 +393,7 @@
       <entry>crash dump</entry>
       <entry>crashdump
             </entry>
-      <entry>noun>
+      <entry>noun
       </entry>
      </row>
      <row>
@@ -1196,7 +1196,7 @@
      <row>
       <entry>on port</entry>
       <entry>at port</entry>
-      <entry>preposition noun</entry>
+      <entry>noun with preposition</entry>
      </row>
      <row>
       <entry>PostScript</entry>
@@ -1253,13 +1253,6 @@
       <entry>noun; a set of coded instructions that enables a machine, 
              especially a computer, to perform a desired sequence of 
              operations</entry>
-     </row>
-     <row>
-      <entry>PXE</entry>
-      <entry>P.X.E., Pixie, pixie, PXE Environment, Pxe, pxe</entry>
-      <entry>noun; acronym for
-              <quote>Preboot Execution Environment</quote>
-      </entry>
      </row>
      <row>
       <entry>proxy</entry>
@@ -1401,27 +1394,27 @@
      <row>
       <entry>(to) save sth. as sth.</entry>
       <entry/>
-      <entry>verb; when either saving a file with a specific name
+      <entry>verb; when saving a file with a specific name
             </entry>
      </row>
      <row>
       <entry>(to) save sth. in sth.</entry>
       <entry/>
-      <entry>verb; when either saving a file on a specific device or file
+      <entry>verb; when saving a file either on a specific device or file
               system
             </entry>
      </row>
      <row>
       <entry>(to) save sth. on sth.</entry>
       <entry/>
-      <entry>verb; when either saving a file on a specific device or file
+      <entry>verb; when saving a file either on a specific device or file
               system
             </entry>
      </row>
      <row>
       <entry>(to) save sth. to sth.</entry>
       <entry/>
-      <entry>verb; when either saving a file to a specific folder
+      <entry>verb; when saving a file to a specific folder
             </entry>
      </row>
      <row>
@@ -2317,9 +2310,9 @@
       </entry>
      </row>
      <row>
-      <entry>with regard to</entry>
-      <entry>as regards, in regard to, with regards to</entry>
-      <entry>conjunction noun preposition</entry>
+      <entry>regarding</entry>
+      <entry>as regards, in regard to, with regard to, with regards to</entry>
+      <entry>preposition</entry>
      </row>
     </tbody>
    </tgroup>
