@@ -33,7 +33,7 @@
     This guide provides answers to writing, style, and layout questions
     commonly arising when editing SUSE documentation. The
     <phrase role="productname">GeekoDoc</phrase> and <phrase role="productname">DocBook</phrase>
-    markup reference at the end of this guide will help you choose the right
+    markup reference in this guide will help you choose the right
     XML element for your purpose. Following this guide will make your
     documentation more understandable and easier to translate.
    </para>
