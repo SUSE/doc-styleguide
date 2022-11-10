@@ -50,7 +50,7 @@
    include a wrapper for meta information about the content.
    The meta information wrapper is designed to contain bibliographic
    information about the content (author, title, publisher, etc.) as well
-   as other meta information such as revision histories, keyword sets, and
+   as other meta information such as revision histories, keyword sets and
    index terms.
   </para>
  <informaltable>
@@ -252,7 +252,7 @@ title
      block-level element
      </para>
     <para>
-     For document titles, such as book, article, and set titles, use
+     For document titles, such as book, article and set titles, use
      title-style capitalization. Apply sentence-style capitalization to all
      running text and all types of headings and titles that are part of the
      document content.
@@ -829,7 +829,7 @@ filename
        </screen>
       </entry>
       <entry>
-       Name of a file or path as well as directories, printers, or
+       Name of a file or path as well as directories, printers or
        flash disks
       </entry>
       <entry>No</entry>

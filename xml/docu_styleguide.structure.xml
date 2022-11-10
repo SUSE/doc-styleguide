@@ -894,7 +894,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   <itemizedlist>
    <listitem>
     <para>
-     Link to credible sources, such as suse.com, upstream projects, or
+     Link to credible sources, such as suse.com, upstream projects or
      developer sites.
      Avoid linking to direct competitors of &suse;.
      Do not link to obvious clickbait sites.
@@ -1797,7 +1797,7 @@ xml:id="tab-install-source"</screen>
    </listitem>
    <listitem>
     <para>
-     A list must contain at least two items. If items are few, short, and simple
+     A list must contain at least two items. If items are few, short and simple
      in structure, consider incorporating them in the flowing text instead
      of creating a list.
     </para>
@@ -1989,7 +1989,7 @@ xml:id="tab-install-source"</screen>
   <sect3 xml:id="sec-ordered-list">
    <title>Ordered lists</title>
    <para>
-    Use ordered lists when items have a strict order, hierarchy, or importance.
+    Use ordered lists when items have a strict order, hierarchy or importance.
     Do not use ordered lists to describe sequential user actions (step-by-step
     instructions).
     For sequential user actions, use a procedure, as described in
@@ -2246,7 +2246,7 @@ xml:id="tab-install-source"</screen>
         <listitem>
          <para>
           <tag class="attvalue">meta</tag>
-          (also known as <keycap>Win</keycap>, <keycap>Windows</keycap>, or
+          (also known as <keycap>Win</keycap>, <keycap>Windows</keycap> or
           <keycap>Super</keycap>)
          </para>
         </listitem>
@@ -2305,7 +2305,7 @@ xml:id="tab-install-source"</screen>
   <title>Outline levels and sectioning</title>
   <para>
    Create sections using the
-   <tag class="emptytag">sect1</tag>, <tag class="emptytag">sect2</tag>, and
+   <tag class="emptytag">sect1</tag>, <tag class="emptytag">sect2</tag> and
    <tag class="emptytag">sect3</tag> elements.
    Avoid outlines that require <tag class="emptytag">sect4</tag>
    and <tag class="emptytag">sect5</tag> elements.
@@ -2706,8 +2706,8 @@ xml:id="tab-install-source"</screen>
   </itemizedlist>
   <para>
    In a situation where the category of the page is needed, append the
-   category in parentheses. Use, for example <quote>(<command>man 9
-   command</command>)</quote>.
+   category in parentheses. For example, use <quote>(<command>man 9
+   command</command>).</quote>
   </para>
 <screen>To learn more about subcommands, see the man page of
 &lt;command&gt;command&lt;/command&gt;.</screen>

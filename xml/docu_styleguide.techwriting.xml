@@ -11,7 +11,7 @@
   Technical writing has certain characteristics that make it different from
   other types of writing. Its objective is to provide readers with complex
   information and comprehensive answers they are searching for. The content
-  should be well-structured, clear, and concise. Effective technical
+  should be well-structured, clear and concise. Effective technical
   documentation is straightforward, detailed and focused on problem-solving,
   and there is a specific workflow for its creation:
  </para>
@@ -21,7 +21,7 @@
    <term>Defining the target audience</term>
    <listitem>
     <para>
-     Adjust tone, style, and technicality of the text based on the intended
+     Adjust tone, style and technicality of the text based on the intended
      audience. Keep in mind that not all facts that seem obvious to you will be
      obvious to your readers.
     </para>
@@ -55,12 +55,12 @@
      like typos, unfinished sentences, etc. After self-review, ask for a
      technical review by dedicated specialists. A technical review uncovers
      technical or factual errors like missing or misspelled package names,
-     wrong commands, or forgotten options.
+     wrong commands or forgotten options.
     </para>
     <para>
      Request a peer review which can improve your text and detect any
      structural problems or logical traps. You can then do a spell check, link
-     check, and style check with the DAPS tool.
+     check and style check with the DAPS tool.
     </para>
     <para>
      Finally, ask for a linguistic review that tackles language issues, typos,
@@ -71,6 +71,6 @@
  </variablelist>
  <para>
   For more information on how to produce meaningful content that will rank high
-  on the Web, see <xref linkend="sec-webwriting"/>, and <xref linkend="sec-seo"/>.
+  on the Web, see <xref linkend="sec-webwriting"/> and <xref linkend="sec-seo"/>.
  </para>
  </sect1>

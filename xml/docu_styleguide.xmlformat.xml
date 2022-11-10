@@ -32,7 +32,7 @@
    <itemizedlist>
     <listitem>
      <para>
-      Some computer output, computer input, or URIs may run longer and cannot
+      Some computer output, computer input or URIs may run longer and cannot
       be broken.
      </para>
     </listitem>
@@ -68,7 +68,7 @@
     <title>Trailing whitespace:</title>
     <para>
      Avoid introducing trailing whitespace characters such as spaces,
-     protected spaces, or tabs. Many editors have an option to view such
+     protected spaces or tabs. Many editors have an option to view such
      characters. <command>git diff</command> will show newly introduced
      trailing whitespace characters in red.
     </para>
@@ -80,7 +80,7 @@
     <para>
      Block elements are all DocBook elements that create a rectangular visual
      block in the layout, such as <tag class="emptytag">para</tag>,
-     <tag class="emptytag">table</tag>, or <tag class="emptytag">figure</tag>.
+     <tag class="emptytag">table</tag> or <tag class="emptytag">figure</tag>.
      Format block elements with new lines before and after each tag and make
      sure they follow the indentation of the document:
     </para>
