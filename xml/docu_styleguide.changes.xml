@@ -13,6 +13,46 @@
 
 <!-- Add new versions to the beginning of the list. -->
 
+<sect1 xml:id="sec-change-2022-11">
+  <title>Changes 2022-11</title>
+  <itemizedlist>
+  <listitem>
+  <para>
+  Added new content, updated and restructured the content of the <quote>Cross References</quote> section
+  (a warning not to include <xref/> elements into titles).
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+  Updated the <quote>Screens</quote> subsection with the info on automatic syntax highlighting.
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+  Expanded the rule of using the comma - no use of comma in simple series like x, y and z.  
+  </para>  
+  </listitem>
+  <listitem>
+    <para>
+  Described how you can group different callouts to point to the same annotation in the text
+  (helps avoid repeating the same annotation).
+    </para>
+  </listitem>
+  <listitem>
+    <para>
+  Updated chapter <quote>Language</quote> with punctuation rules for quotation marks - commas
+  and periods go inside them per AE punctuation rules.
+    </para>
+  </listitem>
+<listitem>
+  <para>
+  Added terms: <quote>unit,</quote> <quote>unit file,</quote> <quote>console,</quote> 
+  <quote>shell,</quote> <quote>terminal,</quote> <quote>init script,</quote> and <quote>whitespace.</quote>
+</para>
+</listitem>
+</itemizedlist>
+</sect1>
+
 <sect1 xml:id="sec-change-2022-08">
   <title>Changes 2022-08</title>
   <itemizedlist>
