@@ -430,8 +430,8 @@
   </itemizedlist>
   <para>
   To create quotations, use the <tag class="emptytag">quote</tag>
-  element, as it is easier to localize than hardcoded quotation marks and
-  always provides typographic quotes.
+  element. This element makes it easier to localize than hardcoded quotation marks.
+  During processing, localized quotation marks are added automatically.
   </para>
   <para>
   The period and the comma always go within the quotation marks,
