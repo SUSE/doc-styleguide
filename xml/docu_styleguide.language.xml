@@ -405,20 +405,54 @@
    </para>
    </sect2>
 
+ <sect2 xml:id="sec-quotation">
+  <title>Quotations</title>
+  <para>
+  Use quotations to quote from sources, such as books.
+  In all other cases, do not use quotation marks:
+  </para>
+  <itemizedlist>
+  <listitem>
+  <para>
+  For computer input, computer output, and user
+  interface elements, use different markup.
+  See also <xref linkend="sec-command-line"/> and
+  <xref linkend="sec-ui-item-markup"/>.
+  </para>
+  </listitem>
+  <listitem>
+  <para>
+  Do not use quotation marks to indicate irony.
+  Avoid irony in technical writing.
+  See also <xref linkend="sec-tone"/>.
+  </para>
+  </listitem>
+  </itemizedlist>
+  <para>
+  To create quotations, use the <tag class="emptytag">quote</tag>
+  element, as it is easier to localize than hardcoded quotation marks and
+  always provides typographic quotes.
+  </para>
+  <para>
+  The period and the comma always go within the quotation marks,
+  as illustrated in <xref linkend="ex-quote"/>. The dash, the semicolon,
+  the colon, the question mark and the exclamation mark go within the
+  quotation marks when they apply to the quoted matter only. They go
+  outside when they apply to the whole sentence.
+  </para>
+  <example xml:id="ex-quote">
+  <title>Quote</title>
+  <para>
+  <quote>Suds may froth,</quote> the sign reads.
+  </para>
+  </example>
+</sect2>
+
  <sect2 xml:id="sec-semicolon">
   <title>Semicolons</title>
   <para>
    Avoid using semicolons to join sentences. You may use semicolons in place
    of commas in very complicated series.
-  </para>
- </sect2>
-
- <sect2 xml:id="sec-slash">
-  <title>Slashes</title>
-  <para>
-   Do not use slashes except when they are part of a standard technical
-   term, such as <emphasis>TCP/IP</emphasis> or
-   <emphasis>client/server</emphasis>.
   </para>
  </sect2>
 
@@ -439,6 +473,15 @@
    the action itself. As an example, write: <quote>To save the settings,
    click <guimenu>OK</guimenu>.</quote>
    </para>
+ </sect2>
+
+ <sect2 xml:id="sec-slash">
+  <title>Slashes</title>
+  <para>
+   Do not use slashes except when they are part of a standard technical
+   term, such as <emphasis>TCP/IP</emphasis> or
+   <emphasis>client/server</emphasis>.
+  </para>
  </sect2>
 
  <sect2 xml:id="sec-tense">
@@ -542,49 +585,5 @@
    For more information about markup for UI labels, see
    <xref linkend="sec-ui-item-markup"/>.
   </para>
- </sect2>
-
- <sect2 xml:id="sec-quotation">
-  <title>Quotations</title>
-  <para>
-   Use quotations to quote from sources, such as books.
-   In all other cases, do not use quotation marks:
-  </para>
-  <itemizedlist>
-   <listitem>
-    <para>
-     For computer input, computer output, and user
-     interface elements, use different markup.
-     See also <xref linkend="sec-command-line"/> and
-     <xref linkend="sec-ui-item-markup"/>.
-    </para>
-   </listitem>
-   <listitem>
-    <para>
-     Do not use quotation marks to indicate irony.
-     Avoid irony in technical writing.
-     See also <xref linkend="sec-tone"/>.
-    </para>
-   </listitem>
-  </itemizedlist>
-  <para>
-   To create quotations, use the
-   <tag class="emptytag">quote</tag>
-   element, as it is easier to localize than hardcoded quotation marks and
-   always provides typographic quotes.
-  </para>
-  <para>
-   The period and the comma always go within the quotation marks,
-   as illustrated in <xref linkend="ex-quote"/>. The dash, the semicolon,
-   the colon, the question mark and the exclamation mark go within the
-   quotation marks when they apply to the quoted matter only. They go
-   outside when they apply to the whole sentence.
-  </para>
-  <example xml:id="ex-quote">
-   <title>Quote</title>
-   <para>
-    <quote>Suds may froth,</quote> the sign reads.
-   </para>
-  </example>
  </sect2>
 </sect1>
