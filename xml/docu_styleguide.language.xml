@@ -416,8 +416,8 @@
   <para>
   For computer input, computer output, and user
   interface elements, use different markup.
-  See also <xref linkend="sec-command-line"/> and
-  <xref linkend="sec-ui-item-markup"/>.
+  See also <xref linkend="sec-command-line"/>, <xref linkend="sec-ui-item-markup"/>,
+  and <xref linkend="sec-taglis-docbook"/>.
   </para>
   </listitem>
   <listitem>
