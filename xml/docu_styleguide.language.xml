@@ -414,7 +414,7 @@
   <itemizedlist>
   <listitem>
   <para>
-  For computer input, computer output, and user
+  For computer input, computer output and user
   interface elements, use different markup.
   See also <xref linkend="sec-command-line"/>, <xref linkend="sec-ui-item-markup"/>,
   and <xref linkend="sec-taglis-docbook"/>.
