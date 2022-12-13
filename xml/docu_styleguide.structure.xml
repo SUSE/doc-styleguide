@@ -16,9 +16,9 @@
  </para>
 
  <para>
-  &suse; uses the GeekoDoc Relax NG schema which is compatible with DocBook 5.1.
+  &suse; uses the GeekoDoc Relax NG schema which is compatible with DocBook 5.2.
   For more information about the XML elements described here, see the
-  <citetitle>DocBook 5.1: The Definitive Guide</citetitle> sections listed in
+  <citetitle>DocBook 5.2: The Definitive Guide</citetitle> sections listed in
   <xref linkend="tab-book"/>.
  </para>
 
@@ -1817,8 +1817,7 @@ xml:id="tab-install-source"</screen>
      after the items that are not complete sentences. Use either all 
      full sentences in your bullet lists or all fragments. Avoid a mix.
     </para>
-    <para>Do not use commas and semicolons to end punctuation. Do not use a period 
-     with the last item.
+    <para>Do not use commas and semicolons to end punctuation.
     </para>
    </listitem>
    <listitem>
