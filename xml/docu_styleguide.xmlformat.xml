@@ -58,7 +58,7 @@
     <title>Indentation:</title>
     <para>
      Indent using a single space character per indentation level. Make sure
-     your editor does not replace some spaces with tabs. Documents should not
+     your editor does not replace spaces with tabs. Documents should not
      contain any tab characters.
     </para>
    </formalpara>
@@ -175,8 +175,7 @@
      the cost of keeping the document in its current state against the cost
      of reflowing. Reflowing often makes it easier to work with the document.
      However, if the document has a rich editing history already, reflowing
-     makes it harder to use properly use tools like
-     <command>git blame</command>.
+     makes it harder to properly use tools like <command>git blame</command>.
     </para>
    </formalpara>
   </listitem>

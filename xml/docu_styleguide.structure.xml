@@ -969,6 +969,11 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    the book itself, as chapter names can change.
   </para>
   <para>
+   For consistency, do not use the article in front of the name of the
+   referenced book. For example, <quote>The general concept of Podman is
+   described in <emphasis>Containers and Podman</emphasis>.</quote>
+  </para>
+  <para>
    Where possible, collect links in a <quote>More information</quote> section
    at the end of the chapter.
    This helps readers focus on your
