@@ -970,7 +970,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   </para>
   <para>
    For consistency, do not use the article in front of the name of the
-   referenced book. For example, <quote>The general concept of Podman is
+   referenced book or chapter. For example, <quote>The general concept of Podman is
    described in <emphasis>Containers and Podman</emphasis>.</quote>
   </para>
   <para>

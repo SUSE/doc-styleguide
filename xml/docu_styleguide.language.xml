@@ -156,7 +156,7 @@
      <para>
       Write prepositions in lowercase unless they are used with a verb
       (<quote>Logging In</quote>) or in a noun (<quote>The On
-      Button</quote>). Prepositions are for example: <emphasis>up</emphasis>,
+      Button</quote>). Prepositions are, for example: <emphasis>up</emphasis>,
       <emphasis>in</emphasis>, <emphasis>of</emphasis>,
       <emphasis>through</emphasis>, and <emphasis>between</emphasis>.
      </para>
@@ -422,16 +422,26 @@
   </listitem>
   <listitem>
   <para>
+  Use <tag class="emptytag">emphasis</tag> to call attention to new words or phrases, 
+  for example, <quote>using so-called <emphasis>target units</emphasis>,</quote>
+  to use words in a non-standard way, for example, <quote>packages can get in an
+  <emphasis>orphaned</emphasis> state,</quote> and to refer to a word or term itself,
+  for example, <quote>The word <emphasis>processor</emphasis> came into use around 1910.</quote>
+  </para>
+  </listitem>
+  <listitem>
+  <para>
   Do not use quotation marks to indicate irony.
   Avoid irony in technical writing.
   See also <xref linkend="sec-tone"/>.
   </para>
-  </listitem>
+  </listitem>  
   </itemizedlist>
   <para>
   To create quotations, use the <tag class="emptytag">quote</tag>
   element. This element is easier to localize than hardcoded quotation marks.
   During processing, localized quotation marks are added automatically.
+  Avoid using single quotation marks.
   </para>
   <para>
   The period and the comma always go within the quotation marks,
@@ -439,7 +449,7 @@
   the colon, the question mark and the exclamation mark go within the
   quotation marks when they apply to the quoted matter only. They go
   outside when they apply to the whole sentence.
-  </para>
+  </>
   <example xml:id="ex-quote">
   <title>Quote</title>
   <para>
