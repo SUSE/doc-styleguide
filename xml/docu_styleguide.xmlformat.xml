@@ -25,7 +25,7 @@
    <formalpara>
     <title>Line length:</title>
     <para>
-     Lines should be at most 80 characters long, unless one of the following
+     Lines should be at most 100 characters long, unless one of the following
      exceptions applies:
     </para>
    </formalpara>
@@ -57,7 +57,7 @@
    <formalpara>
     <title>Indentation:</title>
     <para>
-     Indent using a single space character per indentation level. Make sure
+     Indent using two space characters per indentation level. Make sure
      your editor does not replace spaces with tabs. Documents should not
      contain any tab characters.
     </para>
