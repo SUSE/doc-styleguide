@@ -25,7 +25,7 @@
   respective category.
  </para>
  <para>
-  With Geekodoc 2, it is also possible to use the Internazionalization Tag Set
+  With GeekoDoc 2, it is also possible to use the Internazionalization Tag Set
   (ITS) to explicitly indicate whether a tag should be translated or not.
   For more information on ITS tags, see <xref linkend="sec-taglist-ITS"/>.
  </para>
@@ -146,7 +146,7 @@ info
      <tag class="starttag">info</tag>: Wrapper to contain bibliographic
      information about the content and other meta info.
      <tag class="starttag">dm:PLACEHOLDER</tag>: SUSE-specific info needed by
-     the doc-manager tool and Daps to process and build &suse; user
+     the doc-manager tool and DAPS to process and build &suse; user
      documentation.
      </entry>
     <entry>
@@ -1047,7 +1047,9 @@ replaceable
        </screen>
       </entry>
       <entry>
-       Content that may or must be replaced by the user
+       Content that may or must be replaced by the user. Capitalize placeholder
+       text in all contexts where this is not detrimental to content intelligibility.
+       Do not use spaces within placeholders, use underscores instead.
       </entry>
       <entry>No</entry>
      </row>
@@ -1161,7 +1163,7 @@ xref
 <sect2 xml:id="sec-taglist-ITS">
  <title>Using ITS tags</title>
  <para>
-  With Geekodoc 2, it is possible to use the Internationalization Tag Set (ITS)
+  With GeekoDoc 2, it is possible to use the Internationalization Tag Set (ITS)
   tags to explicitly indicate that a tag should be translated or not.
  </para>
  <para>
