@@ -661,7 +661,7 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
      <para>
       In all other cases, do not combine multiple commands within one
       <tag class="emptytag">screen</tag> element. Instead, use multiple
-      <tag class="emptytag">screen</tag> elements instead. For example,
+      <tag class="emptytag">screen</tag> elements. For example,
       as part of a multi-step procedure.
      </para>
      <para>
@@ -896,7 +896,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   <itemizedlist>
    <listitem>
     <para>
-     Link to credible sources, such as suse.com, upstream projects, or
+     Link to credible sources, such as suse.com, upstream projects or
      developer sites.
      Avoid linking to direct competitors of &suse;.
      Do not link to obvious clickbait sites.
@@ -969,6 +969,11 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    to link to &suse; documentation outside of the current document set.
    Instead, use the appropriate entity for the book title. Always reference
    the book itself, as chapter names can change.
+  </para>
+  <para>
+   For consistency, do not use the article in front of the name of the
+   referenced book or chapter. For example, <quote>The general concept of Podman is
+   described in <emphasis>Containers and Podman</emphasis>.</quote>
   </para>
   <para>
    Where possible, collect links in a <quote>More information</quote> section
@@ -1799,7 +1804,7 @@ xml:id="tab-install-source"</screen>
    </listitem>
    <listitem>
     <para>
-     A list must contain at least two items. If items are few, short, and simple
+     A list must contain at least two items. If items are few, short and simple
      in structure, consider incorporating them in the flowing text instead
      of creating a list.
     </para>
@@ -1990,7 +1995,7 @@ xml:id="tab-install-source"</screen>
   <sect3 xml:id="sec-ordered-list">
    <title>Ordered lists</title>
    <para>
-    Use ordered lists when items have a strict order, hierarchy, or importance.
+    Use ordered lists when items have a strict order, hierarchy or importance.
     Do not use ordered lists to describe sequential user actions (step-by-step
     instructions).
     For sequential user actions, use a procedure, as described in
@@ -2247,7 +2252,7 @@ xml:id="tab-install-source"</screen>
         <listitem>
          <para>
           <tag class="attvalue">meta</tag>
-          (also known as <keycap>Win</keycap>, <keycap>Windows</keycap>, or
+          (also known as <keycap>Win</keycap>, <keycap>Windows</keycap> or
           <keycap>Super</keycap>)
          </para>
         </listitem>
@@ -2306,7 +2311,7 @@ xml:id="tab-install-source"</screen>
   <title>Outline levels and sectioning</title>
   <para>
    Create sections using the
-   <tag class="emptytag">sect1</tag>, <tag class="emptytag">sect2</tag>, and
+   <tag class="emptytag">sect1</tag>, <tag class="emptytag">sect2</tag> and
    <tag class="emptytag">sect3</tag> elements.
    Avoid outlines that require <tag class="emptytag">sect4</tag>
    and <tag class="emptytag">sect5</tag> elements.
@@ -2707,7 +2712,7 @@ xml:id="tab-install-source"</screen>
   </itemizedlist>
   <para>
    In a situation where the category of the page is needed, append the
-   category in parentheses. Use, for example <quote>(<command>man 9
+   category in parentheses. For example, use <quote>(<command>man 9
    command</command>).</quote>
   </para>
 <screen>To learn more about subcommands, see the man page of

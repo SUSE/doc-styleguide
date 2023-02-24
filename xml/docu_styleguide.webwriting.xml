@@ -103,7 +103,7 @@
      <para>
       Search engines pull the title tag, or meta title, from H1, and the meta
       description from the abstract. The number of characters is limited, and
-      the recommended length is 55&ndash;65 characters for meta titles, and
+      the recommended length is 55&ndash;65 characters for meta titles and
       145&ndash;155 characters for meta descriptions. Be sure to optimize your
       headings wherever appropriate by integrating keywords, such as product
       names, into them.
@@ -192,8 +192,8 @@
    </listitem>
    <listitem>
     <para>
-    Keep it clear. Make clear statements and avoid "should", "could", and similar 
-    unprecise words.
+    Keep it clear. Make clear statements and avoid <quote>should,</quote>
+    <quote>could</quote> and similar unprecise words.
     </para>
     </listitem>
     <listitem>

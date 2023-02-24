@@ -25,14 +25,14 @@
    <formalpara>
     <title>Line length:</title>
     <para>
-     Lines should be at most 80 characters long, unless one of the following
+     Lines should be at most 100 characters long, unless one of the following
      exceptions applies:
     </para>
    </formalpara>
    <itemizedlist>
     <listitem>
      <para>
-      Some computer output, computer input, or URIs may run longer and cannot
+      Some computer output, computer input or URIs may run longer and cannot
       be broken.
      </para>
     </listitem>
@@ -57,8 +57,8 @@
    <formalpara>
     <title>Indentation:</title>
     <para>
-     Indent using a single space character per indentation level. Make sure
-     your editor does not replace some spaces with tabs. Documents should not
+     Indent using two space characters per indentation level. Make sure
+     your editor does not replace spaces with tabs. Documents should not
      contain any tab characters.
     </para>
    </formalpara>
@@ -68,7 +68,7 @@
     <title>Trailing whitespace:</title>
     <para>
      Avoid introducing trailing whitespace characters such as spaces,
-     protected spaces, or tabs. Many editors have an option to view such
+     protected spaces or tabs. Many editors have an option to view such
      characters. <command>git diff</command> will show newly introduced
      trailing whitespace characters in red.
     </para>
@@ -80,7 +80,7 @@
     <para>
      Block elements are all DocBook elements that create a rectangular visual
      block in the layout, such as <tag class="emptytag">para</tag>,
-     <tag class="emptytag">table</tag>, or <tag class="emptytag">figure</tag>.
+     <tag class="emptytag">table</tag> or <tag class="emptytag">figure</tag>.
      Format block elements with new lines before and after each tag and make
      sure they follow the indentation of the document:
     </para>
@@ -175,8 +175,7 @@
      the cost of keeping the document in its current state against the cost
      of reflowing. Reflowing often makes it easier to work with the document.
      However, if the document has a rich editing history already, reflowing
-     makes it harder to use properly use tools like
-     <command>git blame</command>.
+     makes it harder to properly use tools like <command>git blame</command>.
     </para>
    </formalpara>
   </listitem>

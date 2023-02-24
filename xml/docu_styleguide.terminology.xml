@@ -260,7 +260,7 @@
      <row>
       <entry>changelog</entry>
       <entry>change log, change-log, ChangeLog</entry>
-      <entry>noun; log of changes to a software</entry>
+      <entry>noun; log of changes to software</entry>
      </row>
      <row>
       <entry>check box</entry>
@@ -306,7 +306,7 @@
               <emphasis>quit</emphasis> when
               ending an application normally; always use
               <emphasis>terminate</emphasis> when
-              ending an application forcefully.
+              ending an application forcefully
             </entry>
      </row>
      <row>
@@ -322,7 +322,7 @@
               sth.), (to) coldadd sth., (to) coldswap sth.
             </entry>
       <entry>verb; adding a component or device to a system while the
-              system is off.
+              system is off
             </entry>
      </row>
      <row>
@@ -353,6 +353,11 @@
       <entry>command-line, commandline</entry>
       <entry>noun</entry>
      </row>
+     <row>
+        <entry>command-line</entry>
+        <entry>command line, commandline</entry>
+        <entry>adjective</entry>
+       </row>
      <row>
       <entry>configuration</entry>
       <entry>config</entry>
@@ -393,7 +398,7 @@
       <entry>crash dump</entry>
       <entry>crashdump
             </entry>
-      <entry>noun>
+      <entry>noun
       </entry>
      </row>
      <row>
@@ -506,7 +511,7 @@
      <row>
       <entry>EPUB</entry>
       <entry>E-PUB, e-PUB, e-Pub, EPub, Epub, ePUB, ePub</entry>
-      <entry>noun; project logo uses the capitalization <quote>ePub</quote>,
+      <entry>noun; project logo uses the capitalization <quote>ePub,</quote>
                 but the vendor standard is <quote>EPUB</quote>
       </entry>
      </row>
@@ -535,7 +540,7 @@
       <entry>Ethernet card</entry>
       <entry>wired card [sounds as if wires attached to the card are meant]
             </entry>
-      <entry>noun; card that connects to networks via Ethernet.
+      <entry>noun; card that connects to networks via Ethernet
             </entry>
      </row>
      <row>
@@ -580,7 +585,7 @@
      <row>
       <entry>form</entry>
       <entry/>
-      <entry>noun; a structured window, box, or screen that contains numerous 
+      <entry>noun; a structured window, box or screen that contains numerous 
              fields or spaces to enter data</entry>
      </row>
      <row>
@@ -612,7 +617,7 @@
       <entry>G.N.O.M.E., GNU Networked Object Model Environment,
               Gnome
             </entry>
-      <entry>noun; spelling as per project standard; not an acronym.
+      <entry>noun; spelling as per project standard; not an acronym
             </entry>
      </row>
      <row>
@@ -729,7 +734,9 @@
       <entry>init script</entry>
       <entry>init-script, initscript, initialization script [incorrect,
               when referring to script run by <command>init</command>]</entry>
-      <entry>noun; a script run by <command>init</command>
+      <entry>noun; a script run by <command>init</command>; for <phrase
+              role="productname">systemd</phrase>, use <emphasis>unit</emphasis>
+              or <emphasis>unit file</emphasis>
       </entry>
      </row>
      <row>
@@ -749,7 +756,7 @@
        only for <emphasis>physical</emphasis> sources of installation data for
        products;
        when physicality of the installation source is unclear or unimportant,
-       use the more versatile term <emphasis>installation source</emphasis>;
+       use the more versatile term <emphasis>installation source</emphasis>
       </entry>
      </row>
      <row>
@@ -847,8 +854,7 @@
      <row>
       <entry>key combination</entry>
       <entry>hot key, key accelerator, keyboard accelerator, key combo,
-              keyboard combo, keyboard combination, keyboard shortcut,
-              key shortcut
+              keyboard combo, keyboard combination, key shortcut
             </entry>
       <entry>noun</entry>
      </row>
@@ -963,7 +969,7 @@
      <row>
       <entry>(to) log in to sth.</entry>
       <entry>(to) log in at sth., (to) log into sth.</entry>
-      <entry>verb; for logging in to a software</entry>
+      <entry>verb; for logging in to a device, application, etc.</entry>
      </row>
      <row>
       <entry>(to) log in on sth.</entry>
@@ -1022,7 +1028,7 @@
      </row>
      <row>
       <entry>man page</entry>
-      <entry>Man page, Man-page, man page, man-page, manpage</entry>
+      <entry>manual page, Man page, Man-page, man page, man-page, manpage</entry>
       <entry>two words</entry>
      </row>
      <row>
@@ -1100,14 +1106,14 @@
      <row>
       <entry>NFS</entry>
       <entry>N.F.S., NFS file system, Nfs</entry>
-      <entry>noun; often: <quote>NFS client</quote>,
+      <entry>noun; often: <quote>NFS client,</quote>
               <quote>NFS server</quote>
       </entry>
      </row>
      <row>
       <entry>NIS</entry>
       <entry>N.I.S., NIS information service, Nis</entry>
-      <entry>noun; often: <quote>NIS client</quote>,
+      <entry>noun; often: <quote>NIS client,</quote>
               <quote>NIS server</quote>
       </entry>
      </row>
@@ -1196,7 +1202,7 @@
      <row>
       <entry>on port</entry>
       <entry>at port</entry>
-      <entry>preposition noun</entry>
+      <entry>noun with preposition</entry>
      </row>
      <row>
       <entry>PostScript</entry>
@@ -1253,13 +1259,6 @@
       <entry>noun; a set of coded instructions that enables a machine, 
              especially a computer, to perform a desired sequence of 
              operations</entry>
-     </row>
-     <row>
-      <entry>PXE</entry>
-      <entry>P.X.E., Pixie, pixie, PXE Environment, Pxe, pxe</entry>
-      <entry>noun; acronym for
-              <quote>Preboot Execution Environment</quote>
-      </entry>
      </row>
      <row>
       <entry>proxy</entry>
@@ -1352,6 +1351,18 @@
       <entry>verb; register for a service</entry>
      </row>
      <row>
+        <entry>(to) register to sth.</entry>
+        <entry/>
+        <entry>verb; use when writing about registering to a server:
+        <emphasis>register to the RMT server</emphasis></entry>
+       </row>
+       <row>
+        <entry>(to) register with sth.</entry>
+        <entry/>
+        <entry>verb; use when writing about the tool used for registration:
+        <emphasis>register the domain with libvirt</emphasis></entry>
+       </row>
+     <row>
       <entry>(to) remove sth. at runtime (from sth.)</entry>
       <entry>(to) hotremove sth.</entry>
       <entry>verb; removing a component or device to a system while it is
@@ -1401,27 +1412,27 @@
      <row>
       <entry>(to) save sth. as sth.</entry>
       <entry/>
-      <entry>verb; when either saving a file with a specific name
+      <entry>verb; when saving a file with a specific name
             </entry>
      </row>
      <row>
       <entry>(to) save sth. in sth.</entry>
       <entry/>
-      <entry>verb; when either saving a file on a specific device or file
+      <entry>verb; when saving a file either on a specific device or file
               system
             </entry>
      </row>
      <row>
       <entry>(to) save sth. on sth.</entry>
       <entry/>
-      <entry>verb; when either saving a file on a specific device or file
+      <entry>verb; when saving a file either on a specific device or file
               system
             </entry>
      </row>
      <row>
       <entry>(to) save sth. to sth.</entry>
       <entry/>
-      <entry>verb; when either saving a file to a specific folder
+      <entry>verb; when saving a file to a specific folder
             </entry>
      </row>
      <row>
@@ -1915,7 +1926,7 @@
       <entry>noun; referring to software (usually an operating system)
               running on a virtual computer created by software running on a
               physical computer <emphasis>or</emphasis>
-              virtual computer created with a software running on a physical
+              virtual computer created with software running on a physical
               computer</entry>
      </row>
      <row>
@@ -1924,7 +1935,7 @@
       <entry>verb; running software (usually an operating system) on a
               virtual computer created by software running on a physical computer
               <emphasis>or</emphasis>
-              creating a virtual computer with a software running on a physical
+              creating a virtual computer with software running on a physical
               computer
             </entry>
      </row>
@@ -1972,24 +1983,29 @@
       <entry>noun</entry>
      </row>
      <row>
+        <entry>whitespace</entry>
+        <entry>white-space, white space</entry>
+        <entry>noun</entry>
+       </row>
+     <row>
       <entry>Wi-Fi</entry>
       <entry>Wi fi, Wi-fi, Wifi, wireless fidelity, WLAN</entry>
       <entry>noun; use the <emphasis>Wi-Fi</emphasis> brand name
               whenever referring to IEEE 802.11-based networks or access points;
               use <emphasis>WLAN</emphasis> when referring to
-              non-IEEE 802.11-based wireless LANs.
+              non-IEEE 802.11-based wireless LANs
             </entry>
      </row>
      <row>
       <entry>Wi-Fi card</entry>
       <entry>wireless card [card has wires attached to it]</entry>
-      <entry>noun; card that connects to Wi-Fi networks.
+      <entry>noun; card that connects to Wi-Fi networks
             </entry>
      </row>
      <row>
       <entry>Wi-Fi/Bluetooth card</entry>
       <entry>wireless card [card has wires attached to it]</entry>
-      <entry>noun; card that combines a Wi-Fi and a Bluetooth card.
+      <entry>noun; card that combines a Wi-Fi and a Bluetooth card
             </entry>
      </row>
      <row>
@@ -2002,7 +2018,7 @@
       <entry>Wlan</entry>
       <entry>noun; avoid; use only when referring to wireless LANs that are
               not IEEE 802.11-based; use <emphasis>Wi-Fi</emphasis> in all other
-              cases.
+              cases
             </entry>
      </row>
      <row>
@@ -2079,11 +2095,10 @@
   <note>
    <title>Review the word list of the Inclusive Naming Initiative</title>
    <para>
-    In addition to the words documented here, make sure to also review the
-    Inclusive Naming Initiative's
-    <link xlink:href="https://inclusivenaming.org/language/overview/">Word List</link>.
-   </para>
-   <para>
+    In addition to the words documented here, make sure to also review the 
+    Word lists of the Inclusive Naming Initiative's
+    <link xlink:href="https://inclusivenaming.org/language/evaluation-framework/">Evaluation Framework</link>.</para>
+    <para>
     For more information about word choices, see <xref linkend="sec-bias"/>.
    </para>
   </note>
@@ -2164,7 +2179,7 @@
       <entry>may</entry>
       <entry>verb; use <emphasis>can</emphasis> to express an ability,
               only use <emphasis>may</emphasis> to express permissions
-              sought/given.
+              sought/given
             </entry>
      </row>
      <row>
@@ -2172,13 +2187,13 @@
       <entry>may</entry>
       <entry>verb; use <emphasis>could</emphasis> to express a
               possibility, only use <emphasis>may</emphasis> to express
-              permissions sought/given.
+              permissions sought/given
             </entry>
      </row>
      <row>
       <entry/>
       <entry>easy [filler], easily</entry>
-      <entry>adjective, adverb; avoid.
+      <entry>adjective, adverb; avoid
             </entry>
      </row>
      <row>
@@ -2186,7 +2201,7 @@
       <entry/>
       <entry>abbreviation; avoid; do not use together with
               <quote>for example</quote> and <quote>such as</quote>; always
-                precede with a comma.
+                precede with a comma
             </entry>
      </row>
      <row>
@@ -2318,9 +2333,9 @@
       </entry>
      </row>
      <row>
-      <entry>with regard to</entry>
-      <entry>as regards, in regard to, with regards to</entry>
-      <entry>conjunction noun preposition</entry>
+      <entry>regarding</entry>
+      <entry>as regards, in regard to, with regard to, with regards to</entry>
+      <entry>preposition</entry>
      </row>
     </tbody>
    </tgroup>
