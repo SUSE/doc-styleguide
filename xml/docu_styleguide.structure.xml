@@ -514,7 +514,7 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
    <para>
    To assign standard names to files and images in DocBook and AsciiDoc,
    follow the naming conventions at
-   <link xlink:href="https://github.com/SUSE/doc-modular/tree/jjaeger_template-overhaul#readme"/>.
+   <link xlink:href="https://github.com/SUSE/doc-modular/tree/main/templates"/>.
   </para>
   </sect3>
   <sect3 xml:id="sec-placeholder">
