@@ -16,9 +16,9 @@
  </para>
 
  <para>
-  &suse; uses the GeekoDoc Relax NG schema which is compatible with DocBook 5.1.
+  &suse; uses the GeekoDoc Relax NG schema which is compatible with DocBook 5.2.
   For more information about the XML elements described here, see the
-  <citetitle>DocBook 5.1: The Definitive Guide</citetitle> sections listed in
+  <citetitle>DocBook 5.2: The Definitive Guide</citetitle> sections listed in
   <xref linkend="tab-book"/>.
  </para>
 
@@ -511,9 +511,11 @@ default 0 <co xml:id="co-default"/></screen>
    </para>
 <screen>Find the log file &lt;filename&gt;configuration.xml&lt;/filename&gt;
 in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
-   <remark>sknorr, 2014-01-21: this is bad practice, I guess, since one
-          could simply append the file name to the path...
-        </remark>
+   <para>
+   To assign standard names to files and images in DocBook and AsciiDoc,
+   follow the naming conventions at
+   <link xlink:href="https://github.com/SUSE/doc-modular/tree/main/templates"/>.
+  </para>
   </sect3>
   <sect3 xml:id="sec-placeholder">
    <title>Placeholders</title>
@@ -1820,8 +1822,7 @@ xml:id="tab-install-source"</screen>
      after the items that are not complete sentences. Use either all 
      full sentences in your bullet lists or all fragments. Avoid a mix.
     </para>
-    <para>Do not use commas and semicolons to end punctuation. Do not use a full stop 
-     with the last item.
+    <para>Do not use commas and semicolons to end punctuation.
     </para>
    </listitem>
    <listitem>
@@ -2550,7 +2551,7 @@ xml:id="tab-install-source"</screen>
   &lt;/question&gt;
   &lt;answer&gt;
    &lt;para&gt;
-    There are less than 4 GB of space available on the selected partition.
+    There are less than 4 GB of space available on the selected partition.
    &lt;/para&gt;
   &lt;/answer&gt;
  &lt;/qandaentry&gt;
