@@ -354,6 +354,11 @@
       <entry>noun</entry>
      </row>
      <row>
+        <entry>command-line</entry>
+        <entry>command line, commandline</entry>
+        <entry>adjective</entry>
+       </row>
+     <row>
       <entry>configuration</entry>
       <entry>config</entry>
       <entry>noun; unless when referring to file extension</entry>
@@ -849,8 +854,7 @@
      <row>
       <entry>key combination</entry>
       <entry>hot key, key accelerator, keyboard accelerator, key combo,
-              keyboard combo, keyboard combination, keyboard shortcut,
-              key shortcut
+              keyboard combo, keyboard combination, key shortcut
             </entry>
       <entry>noun</entry>
      </row>
@@ -1346,6 +1350,18 @@
       <entry/>
       <entry>verb; register for a service</entry>
      </row>
+     <row>
+        <entry>(to) register to sth.</entry>
+        <entry/>
+        <entry>verb; use when writing about registering to a server:
+        <emphasis>register to the RMT server</emphasis></entry>
+       </row>
+       <row>
+        <entry>(to) register with sth.</entry>
+        <entry/>
+        <entry>verb; use when writing about the tool used for registration:
+        <emphasis>register the domain with libvirt</emphasis></entry>
+       </row>
      <row>
       <entry>(to) remove sth. at runtime (from sth.)</entry>
       <entry>(to) hotremove sth.</entry>
