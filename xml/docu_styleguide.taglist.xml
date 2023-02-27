@@ -25,7 +25,7 @@
   respective category.
  </para>
  <para>
-  With GeekoDoc 2, it is also possible to use the Internazionalization Tag Set
+  With GeekoDoc 2, it is also possible to use the Internationalization Tag Set
   (ITS) to explicitly indicate whether a tag should be translated or not.
   For more information on ITS tags, see <xref linkend="sec-taglist-ITS"/>.
  </para>
