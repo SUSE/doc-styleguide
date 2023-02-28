@@ -13,6 +13,47 @@
 
 <!-- Add new versions to the beginning of the list. -->
 
+  <sect1 xml:id="sec-change-2023-02">
+    <title>Changes 2023-02</title>
+    <itemizedlist>
+    <listitem>
+    <para>
+      Finalized the file and image naming conventions and provided a reference to
+      the doc-modular repository in the <quote>Structure and Markup</quote> chapter.
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+      Added rules for quotation marks in chapter <quote>Language</quote>&nbsp;only use them in
+      quotes; in other cases, use the <emphasis>emphasis</emphasis> element to make words or
+      phrases more conspicuous.
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+      Added the guidance to avoid using single quotation marks.  
+    </para>  
+    </listitem>
+    <listitem>
+      <para>
+      Updated the <quote>Structure and Markup</quote> chapter with the instruction to not use
+      articles before book and chapter titles when referencing them.
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+      Updated rules for the line length (100 char now) and indentation (2-space characters now)
+      in section <quote>Formatting XML.</quote>
+      </para>
+    </listitem>
+  <listitem>
+    <para>
+      Clarified the usage of the term <quote>register to/with</quote> in <quote>Terminology.</quote>
+  </para>
+  </listitem>
+  </itemizedlist>
+</sect1>
+
 <sect1 xml:id="sec-change-2022-11">
   <title>Changes 2022-11</title>
   <itemizedlist>
