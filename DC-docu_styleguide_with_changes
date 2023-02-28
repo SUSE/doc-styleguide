@@ -4,6 +4,6 @@ MAIN="MAIN.styleguide.xml"
 ROOTID=art-styleguide
 DOCBOOK5_RNG_URI="http://www.docbook.org/xml/5.0/rng/docbookxi.rnc"
 
-STYLEROOT="/usr/share/xml/docbook/stylesheet/suse2021-ns"
+STYLEROOT="/usr/share/xml/docbook/stylesheet/suse2022-ns"
 PROFCONDITION="guide;changes"
 OUTPUTNAME="style-guide-with-change-log"
