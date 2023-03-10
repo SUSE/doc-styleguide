@@ -970,7 +970,8 @@ package
        </screen>
       </entry>
       <entry>
-       Name of a software or application package
+       Name of a software or application package. Replaces
+       <tag class="starttag">systemitem class="resource"</tag>.
       </entry>
       <entry>No</entry>
      </row>
