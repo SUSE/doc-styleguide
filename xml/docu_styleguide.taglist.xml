@@ -926,7 +926,7 @@ link
        </screen>
       </entry>
       <entry>
-       A hypertext link. Always use the secure protocol prefix (<literal>https://</literal>).
+       A hypertext link. Use the secure protocol prefix (<literal>https://</literal>), if possible.
       </entry>
       <entry>No</entry>
      </row>
