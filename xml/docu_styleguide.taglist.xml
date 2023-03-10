@@ -373,8 +373,8 @@ section
        <screen>
 sect1
  sect2
- sect3
- ...</screen>
+  sect3
+   ...</screen>
       </entry>
       <entry>Numbered sections that must be properly nested</entry>
       <entry>No</entry>
@@ -422,7 +422,7 @@ qandaset
  qandaentry
   question
   answer
-          </screen>
+       </screen>
       </entry>
       <entry>Used for FAQs</entry>
       <entry>Yes</entry>
@@ -490,7 +490,7 @@ figure
   mediaobject
    imageobject
     imagedata
-            </screen>
+       </screen>
       </entry>
       <entry>Figure with title</entry>
       <entry>
