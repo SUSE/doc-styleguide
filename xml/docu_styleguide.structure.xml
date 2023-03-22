@@ -926,8 +926,11 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    element to mark up URLs that can be opened with a Web browser, such as
    <link xlink:href="https://www.example.org/"/>. Always add the correct
    protocol prefix (for example, <literal>https://</literal>), otherwise
-   links will not work. Never use
-   <tag>filename</tag>
+   links will not work. If possible, use the secure protocol prefix
+   (<literal>https://</literal>).
+  </para>
+  <para>
+   Never use <tag>filename</tag>
    for a link, as that would both disable the link checker and make the link
    unclickable. Avoid entering a text label between
    <tag class="emptytag">link</tag>

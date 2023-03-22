@@ -926,7 +926,7 @@ link
        </screen>
       </entry>
       <entry>
-       A hypertext link
+       A hypertext link. Use the secure protocol prefix (<literal>https://</literal>), if possible.
       </entry>
       <entry>No</entry>
      </row>
@@ -970,7 +970,8 @@ package
        </screen>
       </entry>
       <entry>
-       Name of a software or application package
+       Name of a software or application package. Replaces
+       <tag class="starttag">systemitem class="resource"</tag>.
       </entry>
       <entry>No</entry>
      </row>
@@ -1006,13 +1007,6 @@ productname
        <para>
        The formal name of a product
        </para>
-       <para>
-       When referring to an application, add a
-       &lt;phrase role="productname"/> element around it, for example:
-       </para>
-       <screen>
-&lt;phrase role="productname">LibreOffice&lt;/phrase> is an office suite.
-       </screen>
        </entry>
       <entry>No</entry>
      </row>
