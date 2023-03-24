@@ -878,6 +878,11 @@
       <entry>verb</entry>
      </row>
      <row>
+        <entry>left click</entry>
+        <entry/>
+        <entry>noun</entry>
+       </row>
+     <row>
       <entry>LibreOffice</entry>
       <entry>Libre Office, Libreoffice, LibO, LO, libreoffice</entry>
       <entry>noun; spelling according to project standard; do not create
@@ -1055,6 +1060,11 @@
             </entry>
       <entry>verb</entry>
      </row>
+     <row>
+        <entry>middle click</entry>
+        <entry/>
+        <entry>noun</entry>
+       </row>
      <row>
       <entry>mount point</entry>
       <entry>mount-point, mountpoint</entry>
@@ -1376,6 +1386,11 @@
               (to) right-click onto sth., (to) rightclick sth.
             </entry>
       <entry>verb</entry>
+      <row>
+        <entry>right click</entry>
+        <entry/>
+        <entry>noun</entry>
+       </row>
      </row>
      <row>
       <entry>RPM</entry>
