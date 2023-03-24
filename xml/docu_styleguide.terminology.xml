@@ -480,8 +480,8 @@
       <entry>combination box, combo box, combobox, dropdown, drop-down,
               drop-down menu, drop-down list box, popover, pull-down menu
             </entry>
-      <entry>noun; GUI element with a list that can be opened by
-              clicking on it, whether combined with a text box or not; if list
+      <entry>noun; GUI element; the list that is opened when clicking on it,
+              showing a list of menu items the user can choose from; if list
               entries start actions, use <emphasis>menu</emphasis> instead
             </entry>
      </row>
@@ -907,10 +907,9 @@
       <entry>noun; spelling according to project standard</entry>
      </row>
      <row>
-      <entry>list box</entry>
-      <entry>list, list field</entry>
-      <entry>noun; GUI element that is a list showing multiple elements even
-              before interacting with it
+      <entry>list</entry>
+      <entry>list box, list field</entry>
+      <entry>noun; GUI element showing a list of menu items the user can choose from
             </entry>
      </row>
      <row>
