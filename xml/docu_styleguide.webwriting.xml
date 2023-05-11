@@ -9,13 +9,13 @@
 
  <para>
   Create engaging and informative content that helps your audience and is
-  optimized for the web.
+  optimized for the Web.
  </para>
 
  <sect2 xml:id="sec-topical">
   <title>Topical structure</title>
   <para>
-   The most important thing to do with your web copy is to help users get
+   The most important thing to do with your Web copy is to help users get
    answers to their questions as soon as possible. To achieve this, we
    recommend the modular approach of topic-based authoring where documentation
    is created and maintained in chunks, subsequently referred to as topics.
@@ -59,7 +59,7 @@
   <para>
    SEO, or Search Engine Optimization, is the strategy to attract organic
    (unpaid) traffic that originates from online search and refers to visitors
-   landing on the website. When it comes to SEO, content is key. Here are some
+   landing on the Web site. When it comes to SEO, content is key. Here are some
    insights to help you create and design the content that will rank high in
    search engines.
   </para>
@@ -129,7 +129,7 @@
        <para>
         Internal links lead to and from other pages within the same domain and
         help establish the relationship between two pieces of content. Internal
-        linking helps search engines discover new pages on the website and
+        linking helps search engines discover new pages on the Web site and
         index them.
        </para>
       </listitem>
@@ -141,9 +141,9 @@
       </listitem>
      </orderedlist>
      <para>
-      External links to high-quality, creditable websites help increase the
-      validity of your own website. The better the links, the higher the page
-      will rank in search results.
+      External links to high-quality, creditable Web sites help increase the
+      validity of your own Web site. The better the links, the higher the page
+      ranks in search results.
      </para>
     </listitem>
    </varlistentry>
@@ -153,7 +153,7 @@
      <para>
       Be sure to add alternative text whenever you use images. This practice
       allows search engines to understand the context of your images and index
-      them more accurately. It also improves the accessibility of the website.
+      them more accurately. It also improves the accessibility of the Web site.
      </para>
     </listitem>
    </varlistentry>
@@ -202,7 +202,7 @@
      or use the ITS tag feature to mark all content that should not be translated 
      (for more information, see <xref linkend="sec-taglist-ITS"/>).
      Use entities for product names, example names, etc. Always mark code 
-     as such so that it will not be translated.
+     as such so that it is not translated.
     </para>
    </listitem>
    <listitem>
