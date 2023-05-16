@@ -356,7 +356,21 @@ chapter
 formalpara
        </screen>
       </entry>
-      <entry>A paragraph with title</entry>
+      <entry><para>A paragraph with the title rendered as a run-in head. 
+      Use to create more compact lists, for example:</para>
+      <formalpara>
+     <title><command>who</command></title>
+     <para>
+      Lists currently logged in users.
+     </para>
+    </formalpara>
+    <formalpara>
+     <title><command>w</command></title>
+     <para>
+      Shows who is logged in and what they are doing.
+     </para>
+    </formalpara>
+      </entry>
       <entry>Yes</entry>
      </row>
      <row>
