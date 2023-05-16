@@ -355,7 +355,7 @@ default 0 <co xml:id="co-default"/></screen>
  </sect2>
 
  <sect2 xml:id="sec-command-line">
-  <title>Command line input and command line output</title>
+  <title>Command-line input and command-line output</title>
   <para>
    When dealing with user input and system output shorter than 30
    characters, format it with an inline element, such as
@@ -374,7 +374,7 @@ default 0 <co xml:id="co-default"/></screen>
    <xref linkend="sec-prompt"/>.
   </para>
   <table xml:id="tab-command-line">
-   <title>Elements related to command line input and output</title>
+   <title>Elements related to command-line input and output</title>
    <tgroup cols="2">
     <thead>
      <row>
@@ -548,7 +548,7 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
    </para>
 <screen>&lt;prompt&gt;&amp;gt;&amp;nbsp;&lt;/prompt&gt;&lt;command&gt;ls&lt;/command&gt;</screen>
    <para>
-    To avoid making prompts longer than necessary, do not include paths, user,
+    To avoid making prompts longer than necessary, do not include paths, user
     or host names, unless this is vital to understanding.
     The first restricted user must always be named
     <emphasis>tux</emphasis>. For more information about names of restricted
@@ -741,7 +741,7 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
   <para>
    Use the <tag class="emptytag">xref</tag>
    element (read: <quote>cross ref</quote>) when referring to an appendix,
-   chapter, example, figure, part, preface, section, table, or question and
+   chapter, example, figure, part, preface, section, table or question and
    answer set. The element referenced needs to have an
    <tag class="attribute">xml:id</tag> attribute, an identifier. Create
    identifiers to reference from cross references using the rules
