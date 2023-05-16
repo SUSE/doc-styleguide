@@ -9,53 +9,72 @@
  <title>Working with Smart Docs</title>
 
  <para>
-  This section collects resources on how to work with Smart Docs.
+  Smart Docs represent the modular approach to documentation whose goal is producing sets of 
+  adaptable, solution-based, easy-to-find and reusable documents.  
  </para>
 
  <para>
-  The following things are important when working with Smart Docs:
+  Smart Documentation consists of smaller information units with the following characteristics:
  </para>
- <itemizedlist>
+<itemizedlist>
   <listitem>
-   <para>
-    Only use formatting that is supported by the AsciiDoctor tool.
-    Ignore features that are only documented for the outdated
-    <command>asciidoc</command> (Python) tool. In particular, ignore the
-    documentation at <literal>https://powerman.name</literal>.
-    <!-- Intentionally not linked. -->
-   </para>
+   <formalpara>
+    <title>Self-contained</title>
+    <para>
+     Each information unit stands for itself, including requirements, context, instructions and FAQs. 
+    </para>
+   </formalpara>
   </listitem>
   <listitem>
-   <para>
-    Adhere to
-    <link xlink:href="https://asciidoctor.org/docs/asciidoc-recommended-practices"/>.
-   </para>
-  </listitem>
-  <listitem>
-   <para>
-    Most recommendations from
-    <link xlink:href="https://github.com/SUSE/doc-susemanager/wiki/markup-syntax"/>
-    are applicable generally. Some recommendations, however, are specific to
-    &suse; Manager documentation, in particular:
-   </para>
-   <itemizedlist>
+   <formalpara>
+    <title>Cover one distinct topic</title>
+    <para>
+     Rather than covering a complete technology or a set of problems, each information unit 
+     serves one distinct purpose. Five different types of information units are provided:
+    </para>
+    </formalpara>
+    <itemizedlist>
     <listitem>
      <para>
-      The section <citetitle>Images</citetitle>&mdash;images need to be added
-      the same way they are added in other DAPS-based documentation, under the
-      <filename>images/src/<replaceable>FORMAT</replaceable></filename>
-      directory of the repo.
+      Assembly (builds the actual article from the components listed below)
      </para>
     </listitem>
     <listitem>
      <para>
-      The section <citetitle>Working with Drafts</citetitle>&mdash;there is
-      currently no equivalent standard functionality.
+      Task topics instruct the user how to perform certain tasks.
      </para>
     </listitem>
+    <listitem>
+     <para>
+      Concept topics explain underlying concepts to the users.
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Reference topics inform the user about basic facts (settings, options, parameters, etc.)
+     </para>
+    </listitem>
+    <listitem>
+     <para>
+      Glue topics help navigate complex topics and provide links to related information 
+      (combine texts or structures that do not fit into any other category). Typical 
+      glue topics include <quote>For more information</quote> and <quote>What's next</quote> sections. 
+      Use glue topics to also add an additional layer of navigation to your article.
+     </para>
+     </listitem>
    </itemizedlist>
+   </listitem>
+   <listitem>
+   <formalpara>
+    <title>Reused in different contexts</title>
+    <para>
+     Task, concept and reference information units can be reused in different context. Content units 
+     (articles) are built by bundling these into dedicated assembly files.
+    </para>
+   </formalpara>
   </listitem>
  </itemizedlist>
-
+  <para>To create a Smart Docs project, use the templates for the assembly and its topical components 
+  that are provided in the Doc Modular repository at <link xlink:href="https://github.com/SUSE/doc-modular/tree/main/templates"/></para>
 
 </sect1>
