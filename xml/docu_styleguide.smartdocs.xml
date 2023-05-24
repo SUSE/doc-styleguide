@@ -8,8 +8,8 @@
  <title>Working with Smart Docs</title>
 
  <para>
-  Smart Docs represent the modular approach to documentation whose goal is producing sets of 
-  adaptable, solution-based, easy-to-find and reusable documents.  
+  Smart Docs represent the modular approach to documentation whose goal is producing sets of
+  adaptable, solution-based, easy-to-find and reusable documents.
  </para>
 
  <para>
@@ -20,7 +20,7 @@
    <formalpara>
     <title>Self-contained</title>
     <para>
-     Each information unit stands for itself, including requirements, context, instructions and FAQs. 
+     Each information unit stands for itself, including requirements, context, instructions and FAQs.
     </para>
    </formalpara>
   </listitem>
@@ -28,7 +28,7 @@
    <formalpara>
     <title>Cover one distinct topic</title>
     <para>
-     Rather than covering a complete technology or a set of problems, each information unit 
+     Rather than covering a complete technology or a set of problems, each information unit
      serves one distinct purpose. Five different types of information units are provided:
     </para>
     </formalpara>
@@ -55,9 +55,9 @@
     </listitem>
     <listitem>
      <para>
-      Glue topics help navigate complex topics and provide links to related information 
-      (combine texts or structures that do not fit into any other category). Typical 
-      glue topics include <quote>For more information</quote> and <quote>What's next</quote> sections. 
+      Glue topics help navigate complex topics and provide links to related information
+      (combine texts or structures that do not fit into any other category). Typical
+      glue topics include <quote>For more information</quote> and <quote>What's next</quote> sections.
       Use glue topics to also add an additional layer of navigation to your article.
      </para>
      </listitem>
@@ -67,19 +67,19 @@
    <formalpara>
     <title>Reused in different contexts</title>
     <para>
-     Task, concept and reference information units can be reused in different context. Content units 
+     Task, concept and reference information units can be reused in different context. Content units
      (articles) are built by bundling these into dedicated assembly files.
     </para>
    </formalpara>
   </listitem>
  </itemizedlist>
-  <para>To create a Smart Docs project, use the templates for the assembly and its topical components 
+  <para>To create a Smart Docs project, use the templates for the assembly and its topical components
   that are provided in the Doc Modular repository at <link xlink:href="https://github.com/SUSE/doc-modular/tree/main/templates"/>.</para>
 
 <sect2 xml:id="sec-taglist-smartdocs">
   <title>Using ITS tags with assemblies</title>
-  <para>Assembly files use ITS tags and attributes which flag whether the content of 
-  the tag should be translated or not. In the following example, the ITS attribute indicates that the 
+  <para>Assembly files use ITS tags and attributes which flag whether the content of
+  the tag should be translated or not. In the following example, the ITS attribute indicates that the
   content of the tag should not be translated. If the attribute is set to <quote>yes,</quote> translation is needed.
   </para>
 <para><tag class="starttag"><meta name="maintainer" content="Smart Doc author" its:translate="no"/></tag></para>
@@ -99,7 +99,7 @@
    <row>
     <entry>
      <screen>
-<meta name="bugtracker" its:translate="no">
+&lt;meta name="bugtracker" its:translate="no">
      </screen>
     </entry>
     <entry>
@@ -112,7 +112,7 @@
    <row>
     <entry>
      <screen>
-<phrase role="url">https://bugzilla.suse.com/enter_bug.cgi</phrase>
+&lt;phrase role="url">https://bugzilla.suse.com/enter_bug.cgi&lt;/phrase>
      </screen>
     </entry>
     <entry>
@@ -123,7 +123,7 @@
    <row>
     <entry>
      <screen>
-<phrase role="component">Non-product-specific documentation</phrase>
+&lt;phrase role="component">Non-product-specific documentation&lt;/phrase>
      </screen>
     </entry>
     <entry>
@@ -136,7 +136,7 @@
    <row>
     <entry>
      <screen>
-<phrase role="product">Smart Docs</phrase>
+&lt;phrase role="product">Smart Docs&lt;/phrase>
      </screen>
     </entry>
     <entry>
@@ -149,7 +149,7 @@
    <row>
     <entry>
      <screen>
-<phrase role="assignee">assignee@suse.com</phrase>
+&lt;phrase role="assignee">assignee@suse.com&lt;/phrase>
      </screen>
     </entry>
     <entry>
@@ -162,7 +162,7 @@
    <row>
     <entry>
      <screen>
-<meta name="translation" its:translate="no"></meta>
+&lt;meta name="translation" its:translate="no"/>
      </screen>
     </entry>
     <entry>
@@ -177,7 +177,7 @@
    <row>
     <entry>
     <screen>
-<phrase role="trans">yes</phrase>
+&lt;phrase role="trans">yes&lt;/phrase>
      </screen>
     </entry>
     <entry>
@@ -188,7 +188,7 @@
    <row>
     <entry>
      <screen>
-<phrase role="language">de-de,cs-cz</phrase>
+&lt;phrase role="language">de-de,cs-cz&lt;/phrase>
      </screen>
     </entry>
     <entry>&suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
@@ -198,7 +198,7 @@
    <row>
     <entry>
      <screen>
-<meta name="architecture" content="x86;power" its:translate="no"/>
+&lt;meta name="architecture" content="x86;power" its:translate="no"/>
      </screen>
     </entry>
     <entry>
@@ -209,7 +209,7 @@
    <row>
     <entry>
      <screen>
-<meta name="productname" its:translate="no"></meta>
+&lt;meta name="productname" its:translate="no"/>
      </screen>
     </entry>
     <entry>
@@ -220,7 +220,7 @@
    <row>
     <entry>
      <screen>
-<productname version="15-SP5">&sles;</productname>
+&lt;productname version="15-SP5">&sles;&lt;/productname>
      </screen>
     </entry>
     <entry>
@@ -231,7 +231,7 @@
    <row>
     <entry>
      <screen>
-<meta name="title" its:translate="yes">short title for SEO and social media, max. 55 chars</meta>
+&lt;meta name="title" its:translate="yes">short title for SEO and social media, max. 55 chars&lt;/meta>
      </screen>
     </entry>
     <entry>
@@ -242,7 +242,7 @@
    <row>
     <entry>
      <screen>
-<meta name="description" its:translate="yes">short description, max. 150 chars</meta>
+&lt;meta name="description" its:translate="yes">short description, max. 150 chars&lt;/meta>
      </screen>
     </entry>
     <entry>
@@ -253,7 +253,7 @@
     <row>
     <entry>
      <screen>
-<meta name="social-descr" its:translate="yes">ultrashort description for social media, max. 55 chars</meta>
+&lt;meta name="social-descr" its:translate="yes">ultrashort description for social media, max. 55 chars&lt;/meta>
      </screen>
     </entry>
     <entry>
@@ -265,16 +265,16 @@
     <entry>
     <para><emphasis role="bold">Doc Manager tags:</emphasis></para>
      <screen>
-<dm:docmanager xmlns:dm="urn:x-suse:ns:docmanager">
-<dm:bugtracker> 
-<dm:url>https://bugzilla.suse.com/enter_bug.cgi</dm:url> 
-<dm:component>Smart Docs</dm:component> 
-<dm:product>Documentation</dm:product> 
-<dm:assignee>maintainer@suse.com</dm:assignee> 
-</dm:bugtracker> 
-<dm:editurl>https://github.com/SUSE/doc-modular/tree/main/articles/</dm:editurl> 
-<dm:translation>no</dm:translation> 
-</dm:docmanager>
+&lt;dm:docmanager xmlns:dm="urn:x-suse:ns:docmanager">
+&lt;dm:bugtracker>
+&lt;dm:url>https://bugzilla.suse.com/enter_bug.cgi&lt;/dm:url>
+&lt;dm:component>Smart Docs&lt;/dm:component>
+&lt;dm:product>Documentation&lt;/dm:product>
+&lt;dm:assignee>maintainer@suse.com&lt;/dm:assignee>
+&lt;/dm:bugtracker>
+&lt;dm:editurl>https://github.com/SUSE/doc-modular/tree/main/articles/&lt;/dm:editurl>
+&lt;dm:translation>no&lt;/dm:translation>
+&lt;/dm:docmanager>
      </screen>
     </entry>
     <entry>
@@ -290,9 +290,9 @@
     <entry>
     <para><emphasis role="bold">Resources:</emphasis></para>
      <screen>
-     <resource xml:id="_glue-example" href="../glues/glue.xml"> 
-     <description>Glue example</description> 
-     </resource> 
+     &lt;resource xml:id="_glue-example" href="../glues/glue.xml">
+     &lt;description>Glue example&lt;/description>
+     &lt;/resource>
     </screen>
     </entry>
     <entry>
@@ -307,30 +307,30 @@
     <entry>
     <para><emphasis role="bold">Merge:</emphasis></para>
      <screen>
-<merge> 
-<title>Your title, limit to 55 characters, if possible</title> 
-<subtitle>Subtitle if necessary</subtitle> 
-<revhistory> 
-<title>Changelog</title> 
-<revision><revnumber>2</revnumber><date>2024-11-11</date> 
-<revdescription> 
-<para> 
-Describe the purpose of this revision 
-</para> 
-</revdescription> 
-</revision> 
-<revision><revnumber>1</revnumber><date>2024-10-10</date> 
-<revdescription> 
-<para> 
-Describe the purpose of this revision 
-</para> 
-</revdescription> 
-</revision> 
-</revhistory> 
-<module resourceref="_concept-example" renderas="section"> 
-</module>
-</merge>
-<title>You are a very special concept now!</title> 
+&lt;merge>
+&lt;title>Your title, limit to 55 characters, if possible&lt;/title>
+&lt;subtitle>Subtitle if necessary&lt;/subtitle>
+&lt;revhistory>
+&lt;title>Changelog&lt;/title>
+&lt;revision>&lt;revnumber>2&lt;/revnumber>&lt;date>2024-11-11&lt;/date>
+&lt;revdescription>
+&lt;para>
+Describe the purpose of this revision
+&lt;/para>
+&lt;/revdescription>
+&lt;/revision>
+&lt;revision>&lt;revnumber>1&lt;/revnumber>&lt;date>2024-10-10&lt;/date>
+&lt;revdescription>
+&lt;para>
+Describe the purpose of this revision
+&lt;/para>
+&lt;/revdescription>
+&lt;/revision>
+&lt;/revhistory>
+&lt;module resourceref="_concept-example" renderas="section">
+&lt;/module>
+&lt;/merge>
+&lt;title>You are a very special concept now!&lt;/title>
 </screen>
 </entry>
 <entry></entry>
@@ -342,6 +342,6 @@ Describe the purpose of this revision
    </tbody>
    </tgroup>
  </informaltable>
- 
+
 </sect2>
 </sect1>
