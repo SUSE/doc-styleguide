@@ -76,4 +76,272 @@
   <para>To create a Smart Docs project, use the templates for the assembly and its topical components 
   that are provided in the Doc Modular repository at <link xlink:href="https://github.com/SUSE/doc-modular/tree/main/templates"/>.</para>
 
+<sect2 xml:id="sec-taglist-smartdocs">
+  <title>Using ITS tags with assemblies</title>
+  <para>Assembly files use ITS tags and attributes which flag whether the content of 
+  the tag should be translated or not. In the following example, the ITS attribute indicates that the 
+  content of the tag should not be translated. If the attribute is set to <quote>yes,</quote> translation is needed.
+  </para>
+<para><tag class="starttag"><meta name="maintainer" content="Smart Doc author" its:translate="no"/></tag></para>
+<informaltable>
+  <tgroup cols="3">
+   <colspec colnum="1" colname="c1" colwidth="1.25*" />
+   <colspec colnum="2" colname="c2" colwidth="3.0*" />
+   <colspec colnum="3" colname="c3" colwidth="1*" />
+   <thead>
+    <row>
+     <entry>Element name</entry>
+     <entry>Description</entry>
+     <entry>Translation</entry>
+    </row>
+   </thead>
+  <tbody>
+   <row>
+    <entry>
+     <screen>
+<meta name="bugtracker" its:translate="no">
+     </screen>
+    </entry>
+    <entry>
+     &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
+    </entry>
+    <entry>
+     No
+    </entry>
+   </row>
+   <row>
+    <entry>
+     <screen>
+<phrase role="url">https://bugzilla.suse.com/enter_bug.cgi</phrase>
+     </screen>
+    </entry>
+    <entry>
+     &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
+    </entry>
+    <entry>No</entry>
+   </row>
+   <row>
+    <entry>
+     <screen>
+<phrase role="component">Non-product-specific documentation</phrase>
+     </screen>
+    </entry>
+    <entry>
+     &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
+    </entry>
+    <entry>
+     No
+    </entry>
+   </row>
+   <row>
+    <entry>
+     <screen>
+<phrase role="product">Smart Docs</phrase>
+     </screen>
+    </entry>
+    <entry>
+     &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
+    </entry>
+    <entry>
+     No
+    </entry>
+   </row>
+   <row>
+    <entry>
+     <screen>
+<phrase role="assignee">assignee@suse.com</phrase>
+     </screen>
+    </entry>
+    <entry>
+     &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
+     </entry>
+    <entry>
+     No
+    </entry>
+   </row>
+   <row>
+    <entry>
+     <screen>
+<meta name="translation" its:translate="no"></meta>
+     </screen>
+    </entry>
+    <entry>
+     &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
+    </entry>
+    <entry>
+     <para>
+      No
+     </para>
+     </entry>
+   </row>
+   <row>
+    <entry>
+    <screen>
+<phrase role="trans">yes</phrase>
+     </screen>
+    </entry>
+    <entry>
+     &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
+    </entry>
+    <entry>No</entry>
+   </row>
+   <row>
+    <entry>
+     <screen>
+<phrase role="language">de-de,cs-cz</phrase>
+     </screen>
+    </entry>
+    <entry>&suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
+    </entry>
+    <entry>No</entry>
+   </row>
+   <row>
+    <entry>
+     <screen>
+<meta name="architecture" content="x86;power" its:translate="no"/>
+     </screen>
+    </entry>
+    <entry>
+     &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
+    </entry>
+    <entry>No</entry>
+   </row>
+   <row>
+    <entry>
+     <screen>
+<meta name="productname" its:translate="no"></meta>
+     </screen>
+    </entry>
+    <entry>
+     The formal name of a product
+    </entry>
+    <entry>No</entry>
+   </row>
+   <row>
+    <entry>
+     <screen>
+<productname version="15-SP5">&sles;</productname>
+     </screen>
+    </entry>
+    <entry>
+     A number assigned to a product
+    </entry>
+    <entry>No</entry>
+   </row>
+   <row>
+    <entry>
+     <screen>
+<meta name="title" its:translate="yes">short title for SEO and social media, max. 55 chars</meta>
+     </screen>
+    </entry>
+    <entry>
+     SEO-specific info. Adhere to the length limitations.
+    </entry>
+    <entry><para>Yes</para><para>Stick to the length limitations, min. 29 chars and max. 55 chars</para></entry>
+   </row>
+   <row>
+    <entry>
+     <screen>
+<meta name="description" its:translate="yes">short description, max. 150 chars</meta>
+     </screen>
+    </entry>
+    <entry>
+    SEO-specific info. Adhere to the length limitations.
+    </entry>
+    <entry><para>Yes</para><para>Stick to the length limitations, max. 150 chars</para></entry>
+    </row>
+    <row>
+    <entry>
+     <screen>
+<meta name="social-descr" its:translate="yes">ultrashort description for social media, max. 55 chars</meta>
+     </screen>
+    </entry>
+    <entry>
+     SEO-specific info. Adhere to the length limitations.
+    </entry>
+    <entry><para>Yes</para><para>Stick to the length limitations, max. 55 chars</para></entry>
+   </row>
+   <row>
+    <entry>
+    <para><emphasis role="bold">Doc Manager tags:</emphasis></para>
+     <screen>
+<dm:docmanager xmlns:dm="urn:x-suse:ns:docmanager">
+<dm:bugtracker> 
+<dm:url>https://bugzilla.suse.com/enter_bug.cgi</dm:url> 
+<dm:component>Smart Docs</dm:component> 
+<dm:product>Documentation</dm:product> 
+<dm:assignee>maintainer@suse.com</dm:assignee> 
+</dm:bugtracker> 
+<dm:editurl>https://github.com/SUSE/doc-modular/tree/main/articles/</dm:editurl> 
+<dm:translation>no</dm:translation> 
+</dm:docmanager>
+     </screen>
+    </entry>
+    <entry>
+    <tag class="starttag">info</tag>: Wrapper to contain bibliographic
+     information about the content and other meta info.
+    <tag class="starttag">dm:PLACEHOLDER</tag>: &suse;-specific info needed by
+     the doc-manager tool and DAPS to process and build &suse; user
+     documentation.
+    </entry>
+    <entry>No</entry>
+   </row>
+    <row>
+    <entry>
+    <para><emphasis role="bold">Resources:</emphasis></para>
+     <screen>
+     <resource xml:id="_glue-example" href="../glues/glue.xml"> 
+     <description>Glue example</description> 
+     </resource> 
+    </screen>
+    </entry>
+    <entry>
+    &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
+    </entry>
+    <entry>
+    <para><tag class="starttag">resource</tag>No</para>
+    <para><tag class="starttag">description</tag>Yes</para>
+    </entry>
+    </row>
+ <row>
+    <entry>
+    <para><emphasis role="bold">Merge:</emphasis></para>
+     <screen>
+<merge> 
+<title>Your title, limit to 55 characters, if possible</title> 
+<subtitle>Subtitle if necessary</subtitle> 
+<revhistory> 
+<title>Changelog</title> 
+<revision><revnumber>2</revnumber><date>2024-11-11</date> 
+<revdescription> 
+<para> 
+Describe the purpose of this revision 
+</para> 
+</revdescription> 
+</revision> 
+<revision><revnumber>1</revnumber><date>2024-10-10</date> 
+<revdescription> 
+<para> 
+Describe the purpose of this revision 
+</para> 
+</revdescription> 
+</revision> 
+</revhistory> 
+<module resourceref="_concept-example" renderas="section"> 
+</module>
+</merge>
+<title>You are a very special concept now!</title> 
+</screen>
+</entry>
+<entry></entry>
+  <entry><para><tag class="starttag">title</tag>and <tag class="starttag">subtitle</tag>Yes, with length limitations (see above)</para></entry>
+  <para><tag class="starttag">revhistory</tag>No</para>
+  <para><tag class="starttag">module</tag>No</para>
+  <para><tag class="starttag">title</tag>Yes</para>
+  </row>
+   </tbody>
+   </tgroup>
+ </informaltable>
+ 
+</sect2>
 </sect1>
