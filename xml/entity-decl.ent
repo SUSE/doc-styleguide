@@ -7,6 +7,7 @@
 <!ENTITY sle "&suse; Linux Enterprise">
 <!ENTITY ses "&suse; Linux Enterprise">
 <!ENTITY sesa "SES">
+<!ENTITY sles "SLES">
 
 <!ENTITY tdg "https://tdg.docbook.org/tdg/5.2">
 

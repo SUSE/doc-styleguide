@@ -273,7 +273,7 @@ Kernel since &lt;literal&gt;&amp;sle;&lt;/literal&gt; XYZ.</screen>
        version of a longer product name, append an <literal>a</literal> to
        the end of the entity name. For example, use
        <tag class="genentity">slesa</tag>
-       the acronym <quote>SLES.</quote>
+       for the acronym <quote>SLES.</quote>
       </para>
      </listitem>
     </varlistentry>

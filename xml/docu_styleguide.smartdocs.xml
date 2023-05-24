@@ -4,14 +4,16 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:its="http://www.w3.org/2005/11/its" version="5.0" xml:id="sec-smartdocs">
- <title>Working with Smart Docs</title>
+<sect1 xmlns="http://docbook.org/ns/docbook" 
+       xmlns:xi="http://www.w3.org/2001/XInclude" 
+       xmlns:xlink="http://www.w3.org/1999/xlink" 
+       xmlns:its="http://www.w3.org/2005/11/its" version="5.0" xml:id="sec-smartdocs">
 
+ <title>Working with Smart Docs</title>
  <para>
   Smart Docs represent the modular approach to documentation whose goal is producing sets of
   adaptable, solution-based, easy-to-find and reusable documents.
  </para>
-
  <para>
   Smart Documentation consists of smaller information units with the following characteristics:
  </para>
