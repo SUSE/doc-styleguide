@@ -84,7 +84,7 @@
   the tag should be translated or not. In the following example, the ITS attribute indicates that the
   content of the tag should not be translated. If the attribute is set to <quote>yes,</quote> translation is needed.
   </para>
-<para><tag class="starttag">&lt;meta name="maintainer" content="Smart Doc author" its:translate="no"/></tag></para>
+<para><tag class="starttag">meta name="maintainer" content="Smart Doc author" its:translate="no"/</tag></para>
 <informaltable>
   <tgroup cols="3">
    <colspec colnum="1" colname="c1" colwidth="1.25*" />
@@ -296,9 +296,9 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
     <entry>
     <para><emphasis role="bold">Resources:</emphasis></para>
      <screen>
-     &lt;resource xml:id="_glue-example" href="../glues/glue.xml">
-     &lt;description>Glue example&lt;/description>
-     &lt;/resource>
+&lt;resource xml:id="_glue-example" href="../glues/glue.xml">
+&lt;description>Glue example&lt;/description>
+&lt;/resource>
     </screen>
     </entry>
     <entry>
