@@ -100,21 +100,9 @@
   <tbody>
    <row>
     <entry>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
      <screen>
 &lt;meta name="bugtracker" its:translate="no">
      </screen>
-=======
-     <para>
-<tag class="starttag"><meta name="bugtracker" its:translate="no"></meta></tag>
-     </para>
->>>>>>> Stashed changes
-=======
-     <para>
-<tag class="starttag"><meta name="bugtracker" its:translate="no"></meta></tag>
-     </para>
->>>>>>> Stashed changes
     </entry>
     <entry>
      &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
@@ -125,21 +113,9 @@
    </row>
    <row>
     <entry>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-     <screen>
+    <screen>
 &lt;phrase role="url">https://bugzilla.suse.com/enter_bug.cgi&lt;/phrase>
      </screen>
-=======
-     <para>
-<tag class="starttag"><phrase role="url">https://bugzilla.suse.com/enter_bug.cgi</phrase></tag>
-     </para>
->>>>>>> Stashed changes
-=======
-     <para>
-<tag class="starttag"><phrase role="url">https://bugzilla.suse.com/enter_bug.cgi</phrase></tag>
-     </para>
->>>>>>> Stashed changes
     </entry>
     <entry>
      &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
@@ -148,21 +124,9 @@
    </row>
    <row>
     <entry>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
      <screen>
 &lt;phrase role="component">Non-product-specific documentation&lt;/phrase>
      </screen>
-=======
-     <para>
-<tag class="starttag"><phrase role="component">Non-product-specific documentation</phrase></tag>
-     </para>
->>>>>>> Stashed changes
-=======
-     <para>
-<tag class="starttag"><phrase role="component">Non-product-specific documentation</phrase></tag>
-     </para>
->>>>>>> Stashed changes
     </entry>
     <entry>
      &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
@@ -173,21 +137,9 @@
    </row>
    <row>
     <entry>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-     <screen>
+    <screen>
 &lt;phrase role="product">Smart Docs&lt;/phrase>
      </screen>
-=======
-     <para>
-<tag class="starttag"><phrase role="product">Smart Docs</phrase></tag>
-     </para>
->>>>>>> Stashed changes
-=======
-     <para>
-<tag class="starttag"><phrase role="product">Smart Docs</phrase></tag>
-     </para>
->>>>>>> Stashed changes
     </entry>
     <entry>
      &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
@@ -198,21 +150,9 @@
    </row>
    <row>
     <entry>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
      <screen>
 &lt;phrase role="assignee">assignee@suse.com&lt;/phrase>
      </screen>
-=======
-     <para>
-<tag class="starttag"><phrase role="assignee">assignee@suse.com</phrase></tag>
-     </para>
->>>>>>> Stashed changes
-=======
-     <para>
-<tag class="starttag"><phrase role="assignee">assignee@suse.com</phrase></tag>
-     </para>
->>>>>>> Stashed changes
     </entry>
     <entry>
      &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
@@ -223,21 +163,9 @@
    </row>
    <row>
     <entry>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
      <screen>
 &lt;meta name="translation" its:translate="no"/>
      </screen>
-=======
-     <para>
-<tag class="starttag"><meta name="translation" its:translate="no"></meta></tag>
-     </para>
->>>>>>> Stashed changes
-=======
-     <para>
-<tag class="starttag"><meta name="translation" its:translate="no"></meta></tag>
-     </para>
->>>>>>> Stashed changes
     </entry>
     <entry>
      &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
@@ -250,21 +178,9 @@
    </row>
    <row>
     <entry>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
     <screen>
 &lt;phrase role="trans">yes&lt;/phrase>
      </screen>
-=======
-    <para>
-<tag class="starttag"><phrase role="trans">yes</phrase></tag>
-     </para>
->>>>>>> Stashed changes
-=======
-    <para>
-<tag class="starttag"><phrase role="trans">yes</phrase></tag>
-     </para>
->>>>>>> Stashed changes
     </entry>
     <entry>
      &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
@@ -273,21 +189,9 @@
    </row>
    <row>
     <entry>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
      <screen>
 &lt;phrase role="language">de-de,cs-cz&lt;/phrase>
      </screen>
-=======
-     <para>
-<tag class="starttag"><phrase role="language">de-de,cs-cz</phrase></tag>
-     </para>
->>>>>>> Stashed changes
-=======
-     <para>
-<tag class="starttag"><phrase role="language">de-de,cs-cz</phrase></tag>
-     </para>
->>>>>>> Stashed changes
     </entry>
     <entry>&suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
     </entry>
@@ -295,21 +199,9 @@
    </row>
    <row>
     <entry>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
      <screen>
 &lt;meta name="architecture" content="x86;power" its:translate="no"/>
      </screen>
-=======
-     <para>
-<tag class="starttag"><meta name="architecture" content="x86;power" its:translate="no"/></tag>
-     </para>
->>>>>>> Stashed changes
-=======
-     <para>
-<tag class="starttag"><meta name="architecture" content="x86;power" its:translate="no"/></tag>
-     </para>
->>>>>>> Stashed changes
     </entry>
     <entry>
      &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
@@ -318,21 +210,9 @@
    </row>
    <row>
     <entry>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
      <screen>
 &lt;meta name="productname" its:translate="no"/>
      </screen>
-=======
-     <para>
-<tag class="starttag"><meta name="productname" its:translate="no"></meta></tag>
-     </para>
->>>>>>> Stashed changes
-=======
-     <para>
-<tag class="starttag"><meta name="productname" its:translate="no"></meta></tag>
-     </para>
->>>>>>> Stashed changes
     </entry>
     <entry>
      The formal name of a product
@@ -341,21 +221,9 @@
    </row>
    <row>
     <entry>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
      <screen>
 &lt;productname version="15-SP5">&sles;&lt;/productname>
      </screen>
-=======
-     <para>
-<tag class="starttag"><productname version="15-SP5">&sles;</productname></tag>
-     </para>
->>>>>>> Stashed changes
-=======
-     <para>
-<tag class="starttag"><productname version="15-SP5">&sles;</productname></tag>
-     </para>
->>>>>>> Stashed changes
     </entry>
     <entry>
      A number assigned to a product
@@ -364,21 +232,9 @@
    </row>
    <row>
     <entry>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
      <screen>
 &lt;meta name="title" its:translate="yes">short title for SEO and social media, max. 55 chars&lt;/meta>
      </screen>
-=======
-     <para>
-<tag class="starttag"><meta name="title" its:translate="yes">short title for SEO and social media, max. 55 chars</meta></tag>
-     </para>
->>>>>>> Stashed changes
-=======
-     <para>
-<tag class="starttag"><meta name="title" its:translate="yes">short title for SEO and social media, max. 55 chars</meta></tag>
-     </para>
->>>>>>> Stashed changes
     </entry>
     <entry>
      SEO-specific info. Adhere to the length limitations.
@@ -387,21 +243,9 @@
    </row>
    <row>
     <entry>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
      <screen>
 &lt;meta name="description" its:translate="yes">short description, max. 150 chars&lt;/meta>
      </screen>
-=======
-     <para>
-<tag class="starttag"><meta name="description" its:translate="yes">short description, max. 150 chars</meta></tag>
-     </para>
->>>>>>> Stashed changes
-=======
-     <para>
-<tag class="starttag"><meta name="description" its:translate="yes">short description, max. 150 chars</meta></tag>
-     </para>
->>>>>>> Stashed changes
     </entry>
     <entry>
     SEO-specific info. Adhere to the length limitations.
@@ -410,21 +254,9 @@
     </row>
     <row>
     <entry>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
      <screen>
 &lt;meta name="social-descr" its:translate="yes">ultrashort description for social media, max. 55 chars&lt;/meta>
      </screen>
-=======
-     <para>
-<tag class="starttag"><meta name="social-descr" its:translate="yes">ultrashort description for social media, max. 55 chars</meta></tag>
-     </para>
->>>>>>> Stashed changes
-=======
-     <para>
-<tag class="starttag"><meta name="social-descr" its:translate="yes">ultrashort description for social media, max. 55 chars</meta></tag>
-     </para>
->>>>>>> Stashed changes
     </entry>
     <entry>
      SEO-specific info. Adhere to the length limitations.
@@ -476,8 +308,6 @@
  <row>
     <entry>
     <para><emphasis role="bold">Merge:</emphasis></para>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
      <screen>
 &lt;merge>
 &lt;title>Your title, limit to 55 characters, if possible&lt;/title>
@@ -504,37 +334,6 @@ Describe the purpose of this revision
 &lt;/merge>
 &lt;title>You are a very special concept now!&lt;/title>
 </screen>
-=======
-=======
->>>>>>> Stashed changes
-     <para>
-<tag class="starttag">merge</tag></para>
-<screen><title>Your title, limit to 55 characters, if possible</title> 
-<subtitle>Subtitle if necessary</subtitle> 
-<revhistory> 
-<title>Changelog</title> 
-<revision><revnumber>2</revnumber><date>2024-11-11</date> 
-<revdescription> 
-<para> 
-Describe the purpose of this revision 
-</para> 
-</revdescription> 
-</revision> 
-<revision><revnumber>1</revnumber><date>2024-10-10</date> 
-<revdescription> 
-<para> 
-Describe the purpose of this revision 
-</para> 
-</revdescription> 
-</revision> 
-</revhistory></screen> 
-<tag class="starttag">module resourceref="_concept-example" renderas="section"/module</tag>
-<tag class="starttag">/merge</tag>
-<para><title>You are a very special concept now!</title></para>
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-=======
->>>>>>> Stashed changes
 </entry>
 <entry></entry>
   <entry><para><tag class="starttag">title</tag>and <tag class="starttag">subtitle</tag>Yes, with length limitations (see above)</para></entry>
@@ -545,14 +344,5 @@ Describe the purpose of this revision
    </tbody>
    </tgroup>
  </informaltable>
-<<<<<<< Updated upstream
-<<<<<<< Updated upstream
-
 </sect2>
-=======
- </sect2>
->>>>>>> Stashed changes
-=======
- </sect2>
->>>>>>> Stashed changes
 </sect1>
