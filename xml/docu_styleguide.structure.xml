@@ -92,67 +92,99 @@
    give them tips, use an admonition element. Avoid using more than one
    admonition per page of PDF output.
   </para>
-  <itemizedlist>
-   <listitem>
-    <formalpara>
-     <title><tag class="emptytag">warning</tag></title>
-     <para>
-      Use these elements to warn of security issues, potential loss of data,
-      damage to hardware, or physical hazards. Warnings must always precede
-      the action to which they apply.
-     </para>
-    </formalpara>
-   </listitem>
-   <listitem>
-    <formalpara>
-     <title><tag class="emptytag">important</tag></title>
-     <para>
-      Use these elements to give vital information.
-     </para>
-    </formalpara>
-   </listitem>
-   <listitem>
-    <formalpara>
-     <title><tag class="emptytag">tip</tag></title>
-     <para>
-      Use these elements to introduce guidelines or give tips.
-     </para>
-    </formalpara>
-   </listitem>
-   <listitem>
-    <formalpara>
-     <title><tag class="emptytag">note</tag></title>
-     <para>
-      Use these elements to highlight software version differences.
-     </para>
-    </formalpara>
-   </listitem>
-  </itemizedlist>
+  <table xml:id="tab-admonition">
+    <title>Admonition elements</title>
+    <tgroup cols="3">
+      <colspec colnum="1" colname="col1" colwidth="19*"/>
+      <colspec colnum="2" colname="col2" colwidth="18*"/>
+      <colspec colnum="3" colname="col3" colwidth="63*"/>
+      <thead>
+        <row>
+          <entry>Docbook</entry>
+          <entry>Asciidoc</entry>
+          <entry>Usage</entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry>
+            <tag class="emptytag">warning</tag>
+          </entry>
+          <entry>
+            <literal>[WARNING]</literal>
+          </entry>
+          <entry>
+            <para>
+              Use these elements to warn of security issues, potential loss of data, damage to
+              hardware, or physical hazards. Warnings must always precede the action to which they
+              apply.
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <tag class="emptytag">important</tag>
+          </entry>
+          <entry>
+            <literal>[IMPORTANT]</literal>
+          </entry>
+          <entry>
+            <para>
+              Use these elements to give vital information.
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <tag class="emptytag">tip</tag>
+          </entry>
+          <entry>
+            <literal>[TIP]</literal>
+          </entry>
+          <entry>
+            <para>
+              Use these elements to introduce guidelines or give tips.
+            </para>
+          </entry>
+        </row>
+        <row>
+          <entry>
+            <tag class="emptytag">note</tag>
+          </entry>
+          <entry>
+            <literal>[NOTE]</literal>
+          </entry>
+          <entry>
+            <para>
+              Use these elements to highlight software version differences.
+            </para>
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
+
   <para>
    Follow these rules when writing admonitions:
   </para>
   <itemizedlist>
    <listitem>
     <para>
-     Add a
-     <tag class="emptytag">title</tag>
+     Add a title
      to admonitions. In the title, state the subject of the admonition and,
-     in the case of a
-     <tag class="emptytag">warning</tag>, also the source of danger.
+     in the case of a warning, also the source of danger.
     </para>
    </listitem>
    <listitem>
     <para>
-     <emphasis><tag class="emptytag">warning</tag> or
-     <tag class="emptytag">important</tag>:</emphasis>
+     <emphasis>Admonitions warning or important:</emphasis>
      In the first paragraph, clearly state possible
      consequences of ignoring the danger.
     </para>
    </listitem>
    <listitem>
     <para>
-     <emphasis><tag class="emptytag">warning</tag> or
-     <tag class="emptytag">important</tag>:</emphasis>
+     <emphasis>Admonitions warning or important:</emphasis>
      In the second paragraph, explain how to avoid the danger.
      If there are multiple ways to avoid a danger, use an unordered list. If
      fewer than five consecutive steps must be taken to avoid a danger,
@@ -161,31 +193,66 @@
     </para>
    </listitem>
   </itemizedlist>
-  <example xml:id="ex-warning-source">
-   <title>An example of a warning (source)</title>
-<screen>&lt;warning&gt;
- &lt;title&gt;Do not interrupt creation of file systems&lt;/title&gt;
- &lt;para&gt;
-  Creating a file system can take multiple hours.
-  Interrupting this process will result in a corrupt file system and an
+
+  <table xml:id="ex-warning-source">
+    <title>An example of a warning</title>
+    <tgroup cols="2">
+      <colspec colnum="1" colname="col1" colwidth="50*"/>
+      <colspec colnum="2" colname="col2" colwidth="50*"/>
+      <thead>
+        <row>
+          <entry>Docbook</entry>
+          <entry>Asciidoc</entry>
+        </row>
+      </thead>
+      <tbody>
+        <row>
+          <entry valign="top">
+            <screen><![CDATA[<warning>
+ <title>Do not interrupt creation of file systems</title>
+ <para>
+  Creating a file system can take multiple
+  hours. Interrupting this process will
+  result in a corrupt file system and an
   unusable installation.
- &lt;/para&gt;
- &lt;para&gt;
-  Always wait until formatting has finished.
- &lt;/para&gt;
-&lt;/warning&gt;</screen>
-  </example>
-  <warning xml:id="ex-warning-output">
-   <title>Do not interrupt creation of file systems</title>
-   <para>
-    Creating a file system can take multiple hours. Interrupting this
-    process will result in a corrupt file system and an unusable
-    installation.
-   </para>
-   <para>
-    Always wait until formatting has finished.
-   </para>
-  </warning>
+ </para>
+ <para>
+  Always wait until formatting
+  has finished.
+ </para>
+</warning>]]></screen>
+          </entry>
+          <entry valign="top">
+            <screen>[warning]
+.Do not interrupt creation of file systems&lt;/title&gt;
+====
+Creating a file system can take multiple
+hours. Interrupting this process will
+result in a corrupt file system and an
+unusable installation.
+
+Always wait until formatting has finished.
+====</screen>
+          </entry>
+        </row>
+        <row>
+          <entry namest="col1" nameend="col2" align="center">
+            <warning xml:id="ex-warning-output">
+              <title>Do not interrupt creation of file systems</title>
+              <para>
+                Creating a file system can take multiple hours. Interrupting this
+                process will result in a corrupt file system and an unusable
+                installation.
+              </para>
+              <para>
+                Always wait until formatting has finished.
+              </para>
+            </warning>
+          </entry>
+        </row>
+      </tbody>
+    </tgroup>
+  </table>
  </sect2>
 
  <sect2 xml:id="sec-application">
@@ -305,7 +372,7 @@ default 0 <co xml:id="co-default"/></screen>
 
   <para>You can group different callouts to point to the same annotation.
    This helps to avoid repeating the same annotation.
-   To do this, complete the following steps:</para> 
+   To do this, complete the following steps:</para>
   <procedure xml:id="group-procedure">
     <step>
      <para>
@@ -701,10 +768,10 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
     </listitem>
     <listitem>
       <para>To enable automatic syntax highlighting for programming languages or
-      formats, add a <tag class="attribute">language</tag> 
+      formats, add a <tag class="attribute">language</tag>
         attribute for the respective language format. Valid language formats:
         <tag class="attvalue">apache</tag>, <tag class="attvalue">bash</tag>,
-        <tag class="attvalue">c++</tag>, <tag class="attvalue">css</tag>, 
+        <tag class="attvalue">c++</tag>, <tag class="attvalue">css</tag>,
         <tag class="attvalue">diff</tag>, <tag class="attvalue">html</tag>,
         <tag class="attvalue">xml</tag>, <tag class="attvalue">http</tag>,
         <tag class="attvalue">ini</tag>, <tag class="attvalue">json</tag>,
@@ -715,7 +782,7 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
         <tag class="attvalue">sql</tag>, <tag class="attvalue">crmsh</tag>,
         <tag class="attvalue">dockerfile</tag>, <tag class="attvalue">lisp</tag>,
         and <tag class="attvalue">yaml</tag>.</para>
-        <para>Note that syntax highlighting may not be supported in all 
+        <para>Note that syntax highlighting may not be supported in all
         target formats.</para>
     </listitem>
    </itemizedlist>
@@ -745,7 +812,7 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
    answer set. The element referenced needs to have an
    <tag class="attribute">xml:id</tag> attribute, an identifier. Create
    identifiers to reference from cross references using the rules
-   under <xref linkend="sec-id"/>. Other types of references to resources 
+   under <xref linkend="sec-id"/>. Other types of references to resources
    are described in <xref linkend="sec-other-external"/> and
    <xref linkend="sec-link"/>.</para>
  <example xml:id="ex-cross-reference-source">
@@ -772,7 +839,7 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
       <listitem>
        <para>
         Do not insert cross references (<tag class="starttag">xref linkend="..."</tag>)
-        into a <tag class="emptytag">title</tag> element. 
+        into a <tag class="emptytag">title</tag> element.
         The title must not be clickable, and a cross reference in a title can create
         issues when linking to such a title in a different paragraph.</para>
       </listitem>
@@ -780,8 +847,8 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
         <para>
         Do not create references to paragraphs (<tag class="emptytag">para</tag>) or
         other elements that have no title. An exception to this rule is the
-        element <tag class="emptytag">step</tag> to which you may create 
-        references. If a reference to an element without a title is vital 
+        element <tag class="emptytag">step</tag> to which you may create
+        references. If a reference to an element without a title is vital
         to the document, use the attribute <tag class="attribute">xreflabel</tag>
         to assign a title.</para>
        </listitem>
@@ -1011,7 +1078,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     The &suse; documentation is hosted under <uri>documentation.suse.com</uri>.
     This is the URL that must be provided in all documents. The abbreviated URLs such
     as <uri>doc.suse.com</uri> and <uri>docs.suse.com</uri> also work but must
-    be avoided for SEO reasons. 
+    be avoided for SEO reasons.
   </para>
   <para>
     Make sure to use complete URLs instead of entities for an easy copy and paste.
@@ -1043,7 +1110,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    </listitem>
    <listitem>
    <para>
-     You want to support SEO where the most prominent SP is more important 
+     You want to support SEO where the most prominent SP is more important
      than previous, older SPs
     </para>
    </listitem>
@@ -1075,13 +1142,13 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    </listitem>
   </itemizedlist>
   <para>
-   Make sure you use <literal>html</literal> and not <literal>single-html</literal>. This 
+   Make sure you use <literal>html</literal> and not <literal>single-html</literal>. This
    is needed for SEO reasons.
   </para>
   <para>
    For example, the link
    <link xlink:href="https://documentation.suse.com/sle-ha/15-SP3/html/SLE-HA-all/article-installation.html#sec-ha-inst-quick-req/"/>
-   points to the <quote>System requirements</quote> for &sle; Server High Availability Extension. To turn this link into an 
+   points to the <quote>System requirements</quote> for &sle; Server High Availability Extension. To turn this link into an
    SP-independent link, you need to identify the different components first:
   </para>
   <itemizedlist>
@@ -1126,13 +1193,13 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    <itemizedlist>
    <listitem>
     <para>
-    If the hash part (everything after #) is not found, the browser will jump 
+    If the hash part (everything after #) is not found, the browser will jump
     to the beginning of the file.
     </para>
     </listitem>
     <listitem>
     <para>
-     If the file cannot be found (in our example, article-installation.html), 
+     If the file cannot be found (in our example, article-installation.html),
      the server will respond with a 404 error (file not found).
    </para>
    </listitem>
@@ -1821,8 +1888,8 @@ xml:id="tab-install-source"</screen>
    </listitem>
    <listitem>
     <para>
-     Use a period after every list item that is a sentence. Do not use a period 
-     after the items that are not complete sentences. Use either all 
+     Use a period after every list item that is a sentence. Do not use a period
+     after the items that are not complete sentences. Use either all
      full sentences in your bullet lists or all fragments. Avoid a mix.
     </para>
     <para>Do not use commas and semicolons to end punctuation.
@@ -2759,11 +2826,11 @@ xml:id="tab-install-source"</screen>
   </para>
 
   <para>Typical use cases of tables include:</para>
-  
+
   <variablelist>
    <varlistentry><term>Lookup tables for specific information</term>
     <listitem>
-     <para>Whenever users need to check for data that applies to them, 
+     <para>Whenever users need to check for data that applies to them,
       create lookup tables. For example, use a table to sum up system requirements.
       </para>
     </listitem>
@@ -2771,15 +2838,15 @@ xml:id="tab-install-source"</screen>
    <varlistentry><term>Matrix tables</term>
     <listitem>
      <para>Whenever users need to quickly check whether a specific combination
-      of options works or not. For example, use a matrix table to visualize supported 
+      of options works or not. For example, use a matrix table to visualize supported
       combinations or update options.</para>
     </listitem>
    </varlistentry>
   </variablelist>
 
-  <para>As there are use cases for tables, there are cases when <emphasis>not</emphasis> 
+  <para>As there are use cases for tables, there are cases when <emphasis>not</emphasis>
    to use tables:</para>
-  
+
   <itemizedlist>
    <listitem>
     <para>Value and description pairs are better handled by means of a descriptive list.</para>
@@ -2793,11 +2860,11 @@ xml:id="tab-install-source"</screen>
   </itemizedlist>
 
   <para>Some general style tips for tables:</para>
-  
+
   <variablelist>
    <varlistentry><term>Structure the table to have more rows than columns</term>
     <listitem>
-     <para>Readers prefer to skim for information that is aligned vertically. When designing 
+     <para>Readers prefer to skim for information that is aligned vertically. When designing
       tables, consider swapping rows and columns to provide a consistent
       user experience.</para>
     </listitem>
@@ -2806,23 +2873,23 @@ xml:id="tab-install-source"</screen>
     <listitem>
      <para>Compress the data in your table as much as you possibly can. Table
       cells with less content are more easily parsed by readers. Consider using
-      icons, adding repeating words into column titles, or using shorter number 
+      icons, adding repeating words into column titles, or using shorter number
       formats.</para>
     </listitem>
    </varlistentry>
    <varlistentry><term>Use colors to lead the reader's eyes</term>
     <listitem>
      <para>Use colors to make the information stand out. If you just want to
-      highlight small bits, use bright colors. If you need to color entire cells, 
+      highlight small bits, use bright colors. If you need to color entire cells,
       use pastels. This option should only be used with matrix type tables.</para>
      <!-- add list of supported colors as soon as toms' PR is merged -->
     </listitem>
    </varlistentry>
    <varlistentry><term>Use striped rows</term>
     <listitem>
-     <para>Color every second row in light gray to make sure readers do not 
-      accidentally slip between lines. This should be the default for long 
-      tables. Do not use striped rows in matrix type tables with additional cell background coloring. 
+     <para>Color every second row in light gray to make sure readers do not
+      accidentally slip between lines. This should be the default for long
+      tables. Do not use striped rows in matrix type tables with additional cell background coloring.
       You may also consider disabling striped rows for short tables to not confuse readers.</para>
      <!-- find out whether there is an easy way to do this instead of coloring each and every cell -->
     </listitem>
@@ -2876,9 +2943,9 @@ xml:id="tab-install-source"</screen>
     </tgroup>
    </informaltable>
   </example>
-  
-  
-  
+
+
+
   <table xml:id="tab-table">
    <title>Elements related to
     <tag class="emptytag">table</tag></title>
