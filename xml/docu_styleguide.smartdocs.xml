@@ -82,7 +82,7 @@
   <title>Using ITS tags with assemblies</title>
   <para>Assembly files use ITS tags and attributes which flag whether the content of
   the tag should be translated or not. In the following example, the ITS attribute indicates that the
-  content of the tag should not be translated. If the attribute is set to <quote>yes,</quote> translation is needed.
+  content of the tag should not be translated:
   </para>
 <screen>&lt;meta name="maintainer" content="Smart Doc author" its:translate="no"/></screen>
 <para>
