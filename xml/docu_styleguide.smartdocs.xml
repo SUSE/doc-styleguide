@@ -138,7 +138,7 @@ If the <tag class="attribute">its:translate</tag> attribute is set to <tag class
    <row>
     <entry>
     <screen>
-&lt;phrase role="product">Smart Docs&lt;/phrase>
+&lt;phrase role="product">&sd;&lt;/phrase>
      </screen>
     </entry>
     <entry>
