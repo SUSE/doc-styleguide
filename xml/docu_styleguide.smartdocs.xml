@@ -297,7 +297,7 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
     <para><emphasis role="bold">Resources:</emphasis></para>
      <screen>
 &lt;resource xml:id="_glue-example" href="../glues/glue.xml">
-&lt;description>Glue example&lt;/description>
+  &lt;description>Glue example&lt;/description>
 &lt;/resource>
     </screen>
     </entry>
