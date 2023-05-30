@@ -83,7 +83,7 @@
   </para>
 <screen>&lt;meta name="maintainer" content="Smart Doc author" its:translate="no"/></screen>
 <para>
-If the <tag class="attribute">its:translate</tag> attribute is set to <tag class="attvalue">yes</tag> translation is needed.
+If the <tag class="attribute">its:translate</tag> attribute is set to <tag class="attvalue">yes</tag>, translation is needed.
 </para>
 <informaltable>
   <tgroup cols="3">
