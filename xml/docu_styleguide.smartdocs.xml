@@ -272,14 +272,14 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
     <para><emphasis role="bold">Doc Manager tags:</emphasis></para>
      <screen>
 &lt;dm:docmanager xmlns:dm="urn:x-suse:ns:docmanager">
-&lt;dm:bugtracker>
-&lt;dm:url>https://bugzilla.suse.com/enter_bug.cgi&lt;/dm:url>
-&lt;dm:component>Smart Docs&lt;/dm:component>
-&lt;dm:product>Documentation&lt;/dm:product>
-&lt;dm:assignee>maintainer@suse.com&lt;/dm:assignee>
-&lt;/dm:bugtracker>
-&lt;dm:editurl>https://github.com/SUSE/doc-modular/tree/&lt;/dm:editurl>
-&lt;dm:translation>no&lt;/dm:translation>
+  &lt;dm:bugtracker>
+    &lt;dm:url>https://bugzilla.suse.com/enter_bug.cgi&lt;/dm:url>
+    &lt;dm:component>Smart Docs&lt;/dm:component>
+    &lt;dm:product>Documentation&lt;/dm:product>
+    &lt;dm:assignee>maintainer@suse.com&lt;/dm:assignee>
+  &lt;/dm:bugtracker>
+  &lt;dm:editurl>https://github.com/SUSE/doc-modular/tree/&lt;/dm:editurl>
+  &lt;dm:translation>no&lt;/dm:translation>
 &lt;/dm:docmanager>
      </screen>
     </entry>
