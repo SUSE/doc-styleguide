@@ -73,7 +73,7 @@
   <para>The assembly file is an organizational unit to group the above components and put them in 
   order to create a coherent and meaningful document.</para>
   <para>To create a &sd; project, use the templates for the assembly and its topical components
-  that are provided in the Doc Modular repository at <link xlink:href="https://github.com/SUSE/doc-modular/tree/main/templates"/>.</para>
+  that are provided in the <link xlink:href="https://github.com/SUSE/doc-modular/tree/main/templates">doc-modular repository</link>.</para>
 
 <sect2 xml:id="sec-taglist-smartdocs">
   <title>Using ITS tags with assemblies</title>
