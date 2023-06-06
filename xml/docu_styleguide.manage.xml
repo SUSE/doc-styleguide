@@ -129,7 +129,7 @@
     <listitem>
      <para>
       Entity files are only used for original, English-language documents.
-      Translated documents will contain only the resolved form of entities,
+      Translated documents contain only the resolved form of entities,
       that is, plain-text directly in the document.
      </para>
     </listitem>
@@ -195,6 +195,15 @@
      </callout>
     </calloutlist>
    </example>
+   <para>If an entity is placed at the beginning of a phrase or title, its resolved 
+   form is usually lowercase (unless specified in uppercase, for example, for product names).
+   To have it capitalized, use the <tag class="emptytag">phrase role="style:sentencecase"</tag> element. 
+   For example:</para>
+  <screen>&lt;phrase role="style:sentencecase"&gt;<tag class="genentity">ulp</tag>&lt;/phrase&gt;</screen>
+  <para>The entity <tag class="genentity">ulp</tag> expands into <quote>User space live patching</quote>.</para>
+  <para>Never add this tag to the content within <tag class="emptytag">command</tag> and <tag class="emptytag">systemitem</tag> elements.
+  Capitalizing anything inside these elements makes the content ambiguous.
+  </para>
   </sect3>
   <sect3 xml:id="sec-type-entity">
    <title>Common types of entities</title>
