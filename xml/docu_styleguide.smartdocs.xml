@@ -15,65 +15,49 @@
   adaptable, solution-based, easy-to-find and reusable documents.
  </para>
  <para>
-  &sd; consist of smaller information units with the following characteristics:
+  Rather than covering a complete technology or a set of problems, each &sd; article serves one
+  distinct purpose. Each article stands for itself, including requirements, context, instructions,
+  troubleshooting and FAQs.
  </para>
-<itemizedlist>
+ <para>
+  &sd; consist of topics&mdash;smaller information units that can be reused in different contexts.
+  Four different topic types are provided:
+ </para>
+ <itemizedlist>
   <listitem>
-   <formalpara>
-    <title>Self-contained</title>
-    <para>
-     Each information unit stands for itself, including requirements, context, instructions, troubleshooting and FAQs.
-    </para>
-   </formalpara>
+   <para>
+    Task topics instruct the user how to perform certain tasks.
+   </para>
   </listitem>
   <listitem>
-   <formalpara>
-    <title>Cover one distinct topic</title>
-    <para>
-     Rather than covering a complete technology or a set of problems, each information unit
-     serves one distinct purpose. Four different types of information units are provided:
-    </para>
-    </formalpara>
-    <itemizedlist>
-    <listitem>
-     <para>
-      Task topics instruct the user how to perform certain tasks.
-     </para>
-    </listitem>
-    <listitem>
-     <para>
-      Concept topics explain underlying concepts to the users.
-     </para>
-    </listitem>
-    <listitem>
-     <para>
-      Reference topics inform the user about basic facts (settings, options, parameters, etc.).
-     </para>
-    </listitem>
-    <listitem>
-     <para>
-      Glue topics help navigate complex topics and provide links to related information
-      (combine texts or structures that do not fit into any other category). Typical
-      glue topics include <quote>For more information</quote> and <quote>What's next</quote> sections.
-      Use glue topics to also add an additional layer of navigation to your article.
-     </para>
-     </listitem>
-   </itemizedlist>
-   </listitem>
-   <listitem>
-   <formalpara>
-    <title>Reused in different contexts</title>
-    <para>
-     Task, concept and reference information units can be reused in different context. Content units
-     (articles) are built by bundling these into dedicated assembly files.
-    </para>
-   </formalpara>
+   <para>
+    Concept topics explain underlying concepts to the users.
+   </para>
+  </listitem>
+  <listitem>
+   <para>
+    Reference topics inform the user about basic facts (settings, options, parameters, etc.).
+   </para>
+  </listitem>
+  <listitem>
+   <para>
+    Glue topics help navigate complex topics and provide links to related information
+    (combine texts or structures that do not fit into any other category). Typical
+    glue topics include <quote>For more information</quote> and <quote>What's next</quote> sections.
+    Use glue topics to also add an additional layer of navigation to your article.
+   </para>
   </listitem>
  </itemizedlist>
-  <para>The assembly file is an organizational unit to group the above components and put them in 
-  order to create a coherent and meaningful document.</para>
-  <para>To create a &sd; project, use the templates for the assembly and its topical components
-  that are provided in the <link xlink:href="https://github.com/SUSE/doc-modular/tree/main/templates">doc-modular repository</link>.</para>
+  <para>
+   Articles are built by bundling these topics into assembly files&mdash;organizational units to
+   structure the topics to create a coherent and meaningful document.
+  </para>
+  <para>
+   To create a &sd; project, use the templates for the assembly and its topical components
+   that are provided in the <link
+    xlink:href="https://github.com/SUSE/doc-modular/tree/main/templates">doc-modular
+    repository</link>.
+  </para>
 
 <sect2 xml:id="sec-taglist-smartdocs">
   <title>Using ITS tags with assemblies</title>
