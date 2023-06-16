@@ -30,7 +30,7 @@
   </dm:docmanager>
   <abstract>
    <para>
-    This guide provides answers to writing, style, and layout questions
+    This guide provides answers to writing, style and layout questions
     commonly arising when editing SUSE documentation. The
     <phrase role="productname">GeekoDoc</phrase> and <phrase role="productname">DocBook</phrase>
     markup reference in this guide will help you choose the right
@@ -50,6 +50,7 @@
  <xi:include href="docu_styleguide.manage.xml"/>
  <xi:include href="docu_styleguide.xmlformat.xml"/>
  <xi:include href="docu_styleguide.asciidoc.xml"/>
+ <xi:include href="docu_styleguide.smartdocs.xml"/>
  <xi:include href="docu_styleguide.terminology.xml"/>
  <xi:include href="docu_styleguide.changes.xml" condition="changes"/>
  <xi:include href="docu_styleguide.contributors.xml"/>
