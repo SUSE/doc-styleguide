@@ -13,6 +13,46 @@
 
 <!-- Add new versions to the beginning of the list. -->
 
+  <sect1 xml:id="sec-change-2023-06">
+    <title>Changes 2023-06</title>
+    <itemizedlist>
+    <listitem>
+    <para>
+      Added a new chapter on Smart Docs, describing the principle, the structure and its building blocks.
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+      Updated the recommended title length with 29 characters for SEO purposes.
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+      Updated the <quote>Inline elements</quote> table in the <quote>DocBook Tags</quote> chapter:
+      added the guidance to use the secure protocol prefix https:// and to use the package tag
+      to replace systemitem class="resource".
+    </para>  
+    </listitem>
+    <listitem>
+      <para>
+      Added information on the use of the formalpara tag.
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+      Added information about the element phrase role="style:sentencecase" for the style sheets
+      to expand the relevant entities as uppercase, when needed.
+      </para>
+    </listitem>
+  <listitem>
+    <para>
+      Updated the Terminology table with <quote>drop-down list</quote>, 
+      <quote>list box</quote> and <quote>right-, left-, middle click.</quote>
+  </para>
+  </listitem>
+  </itemizedlist>
+</sect1>
+
   <sect1 xml:id="sec-change-2023-02">
     <title>Changes 2023-02</title>
     <itemizedlist>
