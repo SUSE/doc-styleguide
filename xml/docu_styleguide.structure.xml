@@ -323,15 +323,15 @@ default 0 <co xml:id="co-default"/></screen>
 
   <example xml:id="ex-callout-group-source">
     <title>Example of a callout group (source)</title>
-  <screen language="python">d1 = dict() &lt;co xml:id="co_dict"/&gt;
-  d2 = {} &lt;xref linkend="co_dict"/&gt;
-  l1 = list() &lt;co xml:id="co_list"/&gt;
-  l2 = [] &lt;xref xml:id="co_list"/&gt;
+  <screen language="python">d1 = dict() &lt;co xml:id="co-dict"/&gt;
+  d2 = {} &lt;xref linkend="co-dict"/&gt;
+  l1 = list() &lt;co xml:id="co-list"/&gt;
+  l2 = [] &lt;xref xml:id="co-list"/&gt;
     &lt;calloutlist&gt;
-    &lt;callout arearefs="co_dict"&gt;
+    &lt;callout arearefs="co-dict"&gt;
       &lt;para&gt;A dictionary.&lt;/para&gt;
     &lt;/callout&gt;
-    &lt;callout arearefs="co_list"&gt;
+    &lt;callout arearefs="co-list"&gt;
       &lt;para&gt;A list.&lt;/para&gt;
     &lt;/callout&gt;
   &lt;/calloutlist&gt;</screen>
@@ -524,7 +524,7 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
     <tag class="emptytag">replaceable</tag>
     element. Capitalize placeholder text in all contexts where this is not
     detrimental to content intelligibility.
-    Do not use spaces within placeholders, instead use underscores
+    Do not use spaces within placeholders. Instead, use underscores
     (<literal>_</literal>).
    </para>
 <screen>To list the contents of a directory, execute
