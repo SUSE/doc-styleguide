@@ -138,8 +138,6 @@ info
  dm:version
  dm:translation
  dm:editurl
- dm:product
- dm:docmanager
      </screen>
     </entry>
     <entry>
@@ -185,7 +183,7 @@ keywordset
     <entry>
      A set of keywords describing the content of a document
     </entry>
-    <entry>No</entry>
+    <entry>Yes</entry>
    </row>
    <row>
     <entry>
@@ -318,7 +316,7 @@ appendix
        </screen>
       </entry>
       <entry>An appendix in a book or article</entry>
-      <entry>No</entry>
+      <entry>Yes</entry>
      </row>
      <row>
       <entry>
@@ -339,7 +337,7 @@ book
        </screen>
       </entry>
       <entry>A book</entry>
-      <entry>No</entry>
+      <entry>Yes</entry>
      </row>
      <row>
       <entry>
@@ -348,7 +346,7 @@ chapter
        </screen>
       </entry>
       <entry>A chapter, as of a book</entry>
-      <entry>No</entry>
+      <entry>Yes</entry>
      </row>
      <row>
       <entry>
@@ -380,7 +378,7 @@ section
        </screen>
       </entry>
       <entry>A recursive section, unnumbered</entry>
-      <entry>No</entry>
+      <entry>Yes</entry>
      </row>
      <row>
       <entry>
@@ -391,7 +389,7 @@ sect1
    ...</screen>
       </entry>
       <entry>Numbered sections that must be properly nested</entry>
-      <entry>No</entry>
+      <entry>Yes</entry>
      </row>
      <row>
       <entry>
@@ -418,7 +416,7 @@ part
        </screen>
       </entry>
       <entry>A division in a book</entry>
-      <entry>No</entry>
+      <entry>Yes</entry>
      </row>
      <row>
       <entry>
@@ -427,7 +425,7 @@ preface
        </screen>
       </entry>
       <entry>Introductory matter preceding the first chapter of a book</entry>
-      <entry>No</entry>
+      <entry>Yes</entry>
      </row>
      <row>
       <entry>
@@ -481,7 +479,7 @@ calloutlist
        A called out description of a marked area.
       </entry>
       <entry>
-       <para>No</para>
+       <para>Yes</para>
        <para>
         Child element <tag class="starttag">para</tag> is translated.
        </para>
@@ -508,7 +506,7 @@ figure
       </entry>
       <entry>Figure with title</entry>
       <entry>
-       <para>No</para>
+       <para>Yes</para>
        <para>
         Child element <tag class="starttag">title</tag> is translated.
        </para>
@@ -680,7 +678,7 @@ table
       </entry>
       <entry>
        <para>
-        No
+        Yes
        </para>
        <para>
        Except for child elements <tag class="starttag">title</tag> and
