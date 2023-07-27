@@ -25,15 +25,14 @@
   </para>
 
   <para>
-    The correct spelling of &suse; product names should be listed in the
+    The correct spelling of &suse; product names is listed in the
     terminology table (<xref linkend="app-terminology"/>)
     <emphasis>and</emphasis> in the entities file of the Doc Kit repository at
     <link xlink:href="https://github.com/openSUSE/doc-kit/blob/main/docbook5-book/xml/generic-entities.ent"/>.
-    If a product name is not listed in either spot, refer to the &suse; home
-    page, <link xlink:href="https://www.suse.com"/> and the Marketing
-    department.
+    If a product name is not listed in either spot, refer to the official &suse; 
+    <link xlink:href="https://www.suse.com/products/">Products</link> page and the 
+    Marketing department. Make sure to not use articles in front of product names. 
   </para>
-
   <para>
     When in doubt about a style rule, see <citetitle>The Chicago Manual of
     Style</citetitle>, 15th Edition.
