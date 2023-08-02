@@ -1787,6 +1787,11 @@
       <entry>noun</entry>
      </row>
      <row>
+        <entry>timeout</entry>
+        <entry>time-out</entry>
+        <entry>noun</entry>
+       </row>
+     <row>
       <entry>time stamp</entry>
       <entry>time-stamp, timestamp</entry>
       <entry>noun</entry>
@@ -2168,8 +2173,8 @@
      </row>
      <row>
       <entry>because of</entry>
-      <entry>due to, owing to</entry>
-      <entry>preposition</entry>
+      <entry>since, due to, owing to</entry>
+      <entry>preposition; only use <emphasis>since</emphasis> in temporal phrases</entry>
      </row>
      <row>
       <entry>business case</entry>
@@ -2204,6 +2209,12 @@
               permissions sought/given
             </entry>
      </row>
+     <row>
+        <entry>data is</entry>
+        <entry>data are</entry>
+        <entry>noun with verb; use all other verbs in the singular
+              </entry>
+       </row>
      <row>
       <entry/>
       <entry>easy [filler], easily</entry>
@@ -2299,6 +2310,11 @@
       <entry/>
       <entry>simple [filler], simply</entry>
       <entry>adjective, adverb; avoid</entry>
+     </row>
+     <row>
+      <entry>(to) simplify sth.</entry>
+      <entry>(to) ease sth., (to) facilitate sth.</entry>
+      <entry>verb; avoid</entry>
      </row>
      <row>
       <entry>(to) simplify sth.</entry>
