@@ -7,10 +7,11 @@
 <sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-asciidoc">
  <title>Working With AsciiDoc</title>
 
- <para>
-  This section collects resources on how to use AsciiDoc.
+ <para>To create documentation in the AsciiDoc format, 
+ adhere to the comprehensive guide at <link xlink:href="https://asciidoctor.org/docs/asciidoc-recommended-practices"/>.
  </para>
-
+ <para>We also recommend the guidance on AsciiDoc provided in the
+ <link xlink:href="https://documentation.suse.com/trd/contributors/single-html/suse-trd_contrib-guide/#id-asciidoc/">SUSE Technical Reference Documentation Contributors Guide</link>.</para>
  <para>
   The following things are important when working with AsciiDoc:
  </para>
@@ -22,12 +23,6 @@
     <command>asciidoc</command> (Python) tool. In particular, ignore the
     documentation at <literal>https://powerman.name</literal>.
     <!-- Intentionally not linked. -->
-   </para>
-  </listitem>
-  <listitem>
-   <para>
-    Adhere to
-    <link xlink:href="https://asciidoctor.org/docs/asciidoc-recommended-practices"/>.
    </para>
   </listitem>
   <listitem>
