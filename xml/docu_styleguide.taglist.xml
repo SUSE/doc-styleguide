@@ -706,7 +706,7 @@ table
        <para>
               No
        </para>
-       <para>For TM parser settings set to 'Yes'</para>
+       <para>For TM parser settings, set to <emphasis>Yes</emphasis>.</para>
        <para>
        Except for child elements <tag class="starttag">title</tag> and
       <tag class="starttag">entry</tag>
