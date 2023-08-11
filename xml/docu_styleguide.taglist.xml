@@ -448,7 +448,7 @@ preface
       <entry>Introductory matter preceding the first chapter of a book</entry>
       <entry>
        <para>No</para>
-       <para>For TM parser settings set to 'Yes'</para>
+       <para>For TM parser settings, set to <emphasis>Yes</emphasis>.</para>
       </entry>
      </row>
      <row>
