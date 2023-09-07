@@ -13,7 +13,33 @@
 
 <!-- Add new versions to the beginning of the list. -->
 
-  <sect1 xml:id="sec-change-2023-06">
+ <sect1 xml:id="sec-change-2023-09">
+    <title>Changes 2023-09</title>
+    <itemizedlist>
+    <listitem>
+    <para>
+      Updated the chapter on AsciiDoc: sorted the recommendations and added the link to
+      the guidance on AsciiDoc in Technical Reference Documentation.
+    </para>
+    </listitem>
+    <listitem>
+    <para>
+      Updated the Language chapter with info on product names. If a product name is not in
+      the style guide's Terminology table or in the entities Doc Kit file, refer to
+      the official SUSE Products page and the Marketing department. Do not use articles in front of product names.
+    </para>
+    </listitem>
+    <listitem>
+      <para>
+      New items in the Terminology table: <quote>since</quote> rejected in the meaning of <quote>because</quote>;
+      <quote>timeout</quote> and <quote>system-wide</quote> added as approved terms. <quote>Data</quote> 
+      only requires singular, so <quote>data is</quote> is approved and <quote>data are</quote> is rejected.
+      </para>
+    </listitem>
+    </itemizedlist>
+</sect1>
+
+<sect1 xml:id="sec-change-2023-06">
     <title>Changes 2023-06</title>
     <itemizedlist>
     <listitem>
