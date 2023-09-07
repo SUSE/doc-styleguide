@@ -5,7 +5,7 @@
     %entities;
 ]>
 <sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-asciidoc">
- <title>Working With AsciiDoc</title>
+ <title>Working with AsciiDoc</title>
 
  <para>To create documentation in the AsciiDoc format, 
  adhere to the comprehensive guide at <link xlink:href="https://asciidoctor.org/docs/asciidoc-recommended-practices"/>.
