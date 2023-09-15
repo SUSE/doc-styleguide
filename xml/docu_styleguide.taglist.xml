@@ -792,7 +792,8 @@ citetitle
        </screen>
       </entry>
       <entry>
-       To reference names of (printed) books or names of other documents.
+       To reference names of printed books. To refer to any of our guides, use
+       <tag class="emptytag">xref</tag> or <tag class="emptytag">link</tag>.
       </entry>
       <entry>No</entry>
      </row>

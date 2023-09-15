@@ -745,9 +745,12 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
    answer set. The element referenced needs to have an
    <tag class="attribute">xml:id</tag> attribute, an identifier. Create
    identifiers to reference from cross references using the rules
-   under <xref linkend="sec-id"/>. Other types of references to resources 
-   are described in <xref linkend="sec-other-external"/> and
-   <xref linkend="sec-link"/>.</para>
+   under <xref linkend="sec-id"/>. Note that the <tag class="emptytag">xref</tag>
+   element only works when it links to documentation within the same set,
+   for example, the same book or set of books.</para>
+   <para> 
+   Other types of references to resources are described in
+   <xref linkend="sec-other-external"/> and <xref linkend="sec-link"/>.</para>
  <example xml:id="ex-cross-reference-source">
     <title>Example of a cross reference (source)</title>
  <screen>&lt;sect2 xml:id="sec-cross-reference"&gt;
@@ -2729,7 +2732,8 @@ xml:id="tab-install-source"</screen>
   </para>
 <screen>&lt;citetitle&gt;Lorem Ipsum&lt;/citetitle&gt; by Dolores S. Amet
 (ISBN 0-246-52044-7) is a useful guide.</screen>
-  <para>
+<para>Note that <tag class="emptytag">citetitle</tag> is not translated.</para>  
+<para>
    As an author, where possible, provide language-specific references to
    translators in XML comments (see also <xref linkend="sec-xml-comment"/>).
    As a translator, look for corresponding language-specific resources where
