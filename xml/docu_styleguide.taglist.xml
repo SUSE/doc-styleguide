@@ -31,13 +31,11 @@
  </para>
  <para>
   For more information on GeekoDoc, see
-  <link xlink:href="https://opensuse.github.io/geekodoc/">
-   https://opensuse.github.io/geekodoc/</link>.
+  <link xlink:href="https://opensuse.github.io/geekodoc/"/>
  </para>
 <para>
   For more information on all tags available in DocBook, see 
- <link xlink:href="https://tdg.docbook.org/tdg/5.2/index.html">
-  https://tdg.docbook.org/tdg/5.2/index.html</link>.
+  <link xlink:href="https://tdg.docbook.org/tdg/5.2/"/>
 </para>
 
  <sect2 xml:id="sec-taglis-docbook">

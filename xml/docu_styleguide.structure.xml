@@ -2907,7 +2907,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="&tdg;/table.html"/>
+      <entry><link xlink:href="&tdg;/cals.table.html"/>
       </entry>
      </row>
      <row>
@@ -2921,7 +2921,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="&tdg;/informaltable.html"/>
+      <entry><link xlink:href="&tdg;/cals.informaltable.html"/>
       </entry>
      </row>
      <row>
@@ -2963,7 +2963,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="&tdg;/thead.html"/>
+      <entry><link xlink:href="&tdg;/cals.thead.html"/>
       </entry>
      </row>
      <row>
@@ -2977,7 +2977,7 @@ xml:id="tab-install-source"</screen>
         </para>
        </formalpara>
       </entry>
-      <entry><link xlink:href="&tdg;/tbody.html"/>
+      <entry><link xlink:href="&tdg;/cals.tbody.html"/>
       </entry>
      </row>
      <row>
