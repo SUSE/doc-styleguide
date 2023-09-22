@@ -41,7 +41,7 @@
   style and layout questions for creating effective and consistent documentation for
   SUSE products.
   </meta>
-  <meta name="social-descr" its:translate="yes">Writing, style and layout</meta>
+  <meta name="social-descr" its:translate="yes">Writing, style and layout for SUSE docs</meta>
   <productnumber>&styleguideversion;</productnumber>
   <date>
    <?dbtimestamp?>
