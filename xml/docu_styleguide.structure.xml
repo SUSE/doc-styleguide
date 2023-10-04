@@ -367,8 +367,8 @@ default 0 <co xml:id="co-default"/></screen>
    element. See also <xref linkend="sec-example"/>.
   </para>
   <para>
-   When using stand-alone <tag class="emptytag">command</tag> elements, that
-   is outside of a <tag class="emptytag">screen</tag>, do not use
+   When using stand-alone <tag class="emptytag">command</tag> elements that
+   are outside of a <tag class="emptytag">screen</tag>, do not use
    <tag class="emptytag">prompt</tag> elements before or within them. For
    more information about <tag class="emptytag">prompt</tag>, see
    <xref linkend="sec-prompt"/>.
