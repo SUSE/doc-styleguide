@@ -53,6 +53,7 @@
     <dm:labels>via-report-link</dm:labels>
    </dm:bugtracker>
   </dm:docmanager>
+  <xi:include href="docu_styleguide.changes.xml" />
   <abstract>
    <para>
     This guide provides answers to writing, style and layout questions
@@ -77,7 +78,6 @@
  <xi:include href="docu_styleguide.asciidoc.xml"/>
  <xi:include href="docu_styleguide.smartdocs.xml"/>
  <xi:include href="docu_styleguide.terminology.xml"/>
- <xi:include href="docu_styleguide.changes.xml" condition="changes"/>
  <xi:include href="docu_styleguide.contributors.xml"/>
  <xi:include href="gfdl.xml"/>
 </article>
