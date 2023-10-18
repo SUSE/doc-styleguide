@@ -1412,12 +1412,14 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    unfamiliar terms and special jargon.
   </para>
   <para>
-   Define infinitive forms of verbs and singular nouns. Use lowercase for
-   the term unless it is a proper noun.
+   Define infinitive forms of verbs and singular nouns. Do not start the definition with the term itself.
+   Use lowercase for the term unless it is a proper noun.
   </para>
+  <para>Where applicable, group your terms with the <tag class="emptytag">glossdiv</tag>
+   tag for higher ordering.</para>
   <para>
    Use cross-references to link acronyms with their written out forms.
-   Define the written out form. Use a <emphasis>See</emphasis> reference for
+   Define the written out form. Use a <emphasis>See also</emphasis> reference for
    the acronym form to link it to the defined written out form.
   </para>
   <para>
