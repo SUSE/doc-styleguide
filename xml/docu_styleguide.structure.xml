@@ -1420,10 +1420,19 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   <para>To support automatic alphabetical ordering in localized versions, use
     <tag>glosslist</tag> so that glossary items are sorted in alphabetical order by default.</para>
   <para>
-   Use cross-references to provide two types of links. The <tag class="emptytag">glosssee</tag> element
-   links acronyms with their defined written out forms. The <tag class="emptytag">glossseealso</tag>
-   element directs the reader to another <tag class="emptytag">glossentry</tag> for additional
-   information.</para>
+   Use cross-references in the following cases:
+   </para>
+  <itemizedlist>
+    <listitem>
+      <para>To <emphasize>replace</emphasize> the existing glossary to make the reader aware of reading another glossary entry, use <tag>glosssee</tag>.
+      </para>
+    </listitem>
+    <listitem>
+      <para>To give the reader <emphasize>additional information</emphasize> to related glossary entries,
+       use <tag>glosssee</tag>.
+       </para>
+    </listitem>
+  </itemizedlist>
   <para>
    The markup for a glossary entry is shown in
    <xref linkend="ex-glossary"/>.
