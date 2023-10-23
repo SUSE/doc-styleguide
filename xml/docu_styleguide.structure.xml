@@ -1417,9 +1417,8 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   </para>
   <para>Where applicable, group your terms with the <tag class="emptytag">glossdiv</tag>
    tag for higher ordering.</para>
-  <para>To support automatic alphabetical ordering in localized versions,
-   use <tag>glosslist</tag> and set the style sheet parameter
-   <literal>glossary.sort</literal> to 1. This sorts glossary lists in alphabetical order.</para>
+  <para>To support automatic alphabetical ordering in localized versions, use
+    <tag>glosslist</tag> so that glossary items are sorted in alphabetical order by default.</para>
   <para>
    Use cross-references to link acronyms with their written out forms.
    Define the written out form. Use a <emphasis>See also</emphasis> reference for
