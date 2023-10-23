@@ -1426,26 +1426,37 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   </para>
   <example xml:id="ex-glossary">
    <title>A typical example of a glossary</title>
-<screen>&lt;glossary&gt;
-&lt;title&gt;Glossary&lt;/title&gt;
- &lt;glossentry&gt;
-  &lt;glossterm xml:id="gt-extensible"&gt;Extensible Markup Language&lt;/glossterm&gt;
-  &lt;glossdef&gt;
-   &lt;para&gt;
-    A markup language that defines a set of rules for encoding documents in a
-    format that is both human-readable and machine-readable.
-   &lt;/para&gt;
-  &lt;/glossdef&gt;
- &lt;/glossentry&gt;
- &lt;glossentry&gt;
-  &lt;glossterm&gt;XML&lt;/glossterm&gt;
-  &lt;glossdef&gt;
-   &lt;para&gt;
-    See also &lt;xref linkend="gt-extensible"/&gt;.
-   &lt;/para&gt;
-  &lt;/glossdef&gt;
- &lt;/glossentry&gt;
+<screen>&lt;glossary xmlns="http://docbook.org/ns/docbook" version="5.2"&gt;
+  &lt;title&gt;Glossary&lt;/title&gt;
+
+  &lt;glossentry xml:id="gt-docbook"&gt;
+      &lt;glossterm&gt;DocBook&lt;/glossterm&gt;
+      &lt;glossdef&gt;&lt;para&gt;...&lt;/para&gt;&lt;/glossdef&gt;
+  &lt;/glossentry&gt;
+
+  &lt;glossentry xml:id="gt-svg"&gt;
+      &lt;glossterm&gt;SVG&lt;/glossterm&gt;
+      &lt;glossdef&gt;&lt;para&gt;...&lt;/para&gt;&lt;/glossdef&gt;
+  &lt;/glossentry&gt;
+
+  &lt;glossentry xml:id="gt-extensible-markup-language"&gt;
+      &lt;glossterm&gt;Extensible Markup Language&lt;/glossterm&gt;
+      &lt;glossdef&gt;
+          &lt;para&gt; A markup language that defines a set of rules for encoding
+              documents in a format that is both human-readable and
+              machine-readable. &lt;/para&gt;
+          &lt;glossseealso linkend="gt-docbook"/&gt;
+          &lt;glossseealso linkend="gt-svg"&gt;SVG (Scalable Vector Graphics)&lt;/glossseealso&gt;
+      &lt;/glossdef&gt;
+  &lt;/glossentry&gt;
+
+  &lt;glossentry xml:id="gt-xml"&gt;
+      &lt;glossterm&gt;XML&lt;/glossterm&gt;
+      &lt;glosssee linkend="gt-extensible-markup-language" /&gt;
+  &lt;/glossentry&gt;
+
 &lt;/glossary&gt;</screen>
+
   </example>
  </sect2>
 
