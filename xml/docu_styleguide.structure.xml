@@ -1420,10 +1420,19 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   <para>To support automatic alphabetical ordering in localized versions, use
     <tag>glosslist</tag> so that glossary items are sorted in alphabetical order by default.</para>
   <para>
-   Use cross-references to link acronyms with their written out forms.
-   Define the written out form. Use a <emphasis>See also</emphasis> reference for
-   the acronym form to link it to the defined written out form.
-  </para>
+   Use cross-references in the following cases:
+   </para>
+  <itemizedlist>
+    <listitem>
+      <para>To direct the reader to another glossary entry, use the <tag>glosssee</tag> tag. This is helpful, for example, when linking acronyms with their written out forms.
+      </para>
+    </listitem>
+    <listitem>
+      <para>To provide the reader with additional information about related glossary entries,
+       use <tag>glossseealso</tag>.
+       </para>
+    </listitem>
+  </itemizedlist>
   <para>
    The markup for a glossary entry is shown in
    <xref linkend="ex-glossary"/>.
@@ -1471,7 +1480,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     <para>
      Always use an
      <tag class="attribute">xml:id</tag>
-     attribute in parts, chapters, appendixes, sections, figures, and
+     attribute in parts, chapters, appendixes, sections, figures, glossaries and
      examples. Identifiers can be used in other elements as well, such as
      tables and procedures.
     </para>
