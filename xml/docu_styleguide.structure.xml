@@ -1428,8 +1428,8 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
       </para>
     </listitem>
     <listitem>
-      <para>To give the reader <emphasize>additional information</emphasize> to related glossary entries,
-       use <tag>glosssee</tag>.
+      <para>To provide the reader with additional information about related glossary entries,
+       use <tag>glossseealso</tag>.
        </para>
     </listitem>
   </itemizedlist>
