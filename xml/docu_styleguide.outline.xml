@@ -260,7 +260,8 @@
     <listitem>
      <para>
       The optional glossary contains important terms in alphabetical order and
-      provides a brief explanation for each.
+      provides a brief explanation for each. For more information on creating lists
+      of terms, see <xref linkend="sec-glossary"/>.
      </para>
     </listitem>
    </varlistentry>
