@@ -1418,18 +1418,19 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   <para>Where applicable, group your terms with the <tag class="emptytag">glossdiv</tag>
    tag for higher ordering.</para>
   <para>To support automatic alphabetical ordering in localized versions, use
-    <tag>glosslist</tag> so that glossary items are sorted in alphabetical order by default.</para>
+    <tag class="emptytag">glosslist</tag> so that glossary items are sorted in alphabetical order by default.</para>
   <para>
    Use cross-references in the following cases:
    </para>
   <itemizedlist>
     <listitem>
-      <para>To direct the reader to another glossary entry, use the <tag>glosssee</tag> tag. This is helpful, for example, when linking acronyms with their written out forms.
+      <para>To direct the reader to another glossary entry, use the <tag class="emptytag">glosssee</tag>
+      tag. This is helpful, for example, when linking acronyms with their written out forms.
       </para>
     </listitem>
     <listitem>
       <para>To provide the reader with additional information about related glossary entries,
-       use <tag>glossseealso</tag>.
+       use <tag class="emptytag">glossseealso</tag>.
        </para>
     </listitem>
   </itemizedlist>
