@@ -1424,7 +1424,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    </para>
   <itemizedlist>
     <listitem>
-      <para>To <emphasize>replace</emphasize> the existing glossary to make the reader aware of reading another glossary entry, use <tag>glosssee</tag>.
+      <para>To direct the reader to another glossary entry, use the <tag>glosssee</tag> tag. This can be used, for example, to link acronyms with their written out forms.
       </para>
     </listitem>
     <listitem>
