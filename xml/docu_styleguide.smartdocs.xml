@@ -337,4 +337,72 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
    </tgroup>
  </informaltable>
 </sect2>
+
+<sect2 xml:id="sec-revhistory">
+  <title>Revision history</title>
+  <para>Update revision history regularly, mentioning most important changes to
+  your document when you amend or rework it. The <quote>Revision History</quote> 
+  changelog is available as a link before the abstract and opens up in its individual
+  page. Keep in mind the following rules:</para>
+  <itemizedlist>
+    <listitem>
+     <para>Describe only significant changes that you performed.</para>
+    </listitem>
+    <listitem>
+     <para>If you have several changes of the same type (addition, change, removal),
+      group them under a dedicated <tag class="emptytag">variablelist</tag>.</para>
+      </listitem>
+      <listitem>
+        <para>Do not add links of any kind.</para>
+      </listitem>
+      </itemizedlist>
+      <example xml:id="ex-revhistory-source">
+        <title>Revision history example (source)</title>
+<screen>
+&lt;revision&gt;&lt;date&gt;2024-11-13&lt;/date&gt;
+  &lt;revdescription&gt;
+    &lt;variablelist&gt;  
+     &lt;varlistentry&gt;     
+      &lt;term&gt;Added sections to resolve issue 12345:&lt;/term&gt;
+        &lt;listitem&gt;
+          &lt;para&gt;New section on foo&lt;/para&gt;
+            &lt;/listitem&gt;
+        &lt;listitem&gt; 
+          &lt;para&gt;New section on foo bar&lt;/para&gt;
+            &lt;/listitem&gt;
+     &lt;/varlistentry&gt;
+     &lt;varlistentry&gt;
+      &lt;term&gt;Removed sections to resolve issue 54321:&lt;/term&gt;
+        &lt;listitem&gt;
+          &lt;para&gt;Removed section on <quote>foo foo</quote>&para;
+        &lt;/listitem&gt;
+     &lt;/varlistentry&gt;
+    &lt;/variablelsit&gt;
+  &lt;/revdescription&gt;
+&lt;/revision&gt;</screen>
+   </example>
+  <example xml:id="ex-revhistory-output">
+      <title>Revision history example (output)</title>
+        <para>2024-11-13</para>
+             <variablelist>
+              <varlistentry>
+                <term>Added sections to resolve issue 12345:</term>
+                <listitem> 
+                  <para>New section on foo</para>
+                </listitem>
+                <listitem> 
+                  <para>New section on foo bar</para>
+                </listitem>
+                </varlistentry>
+                <varlistentry>
+                <term>Removed sections to resolve issue 54321:</term>
+                <listitem>
+                  <para>Removed section on <quote>foo foo</quote></para>
+                </listitem>
+              </varlistentry>
+             </variablelist>
+          </example>
+      <para>Find more detailed recommendations for adding information to your
+      revision history in the assembly template, under the <tag class="emptytag">revhistory</tag> tag.</para>
+  </sect2>
 </sect1>
