@@ -346,8 +346,9 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
    changes were made over time.
   </para>
   <para>Update revision history regularly, mentioning most important changes to
-  your document when you amend or rework it. The <quote>Revision History</quote> 
-  changelog is available as a link before the abstract and opens up in its individual
+  your document when you amend or rework it. The data you enter as revision history
+  is used as meta data. 
+  The <quote>Revision History</quote> text is available as a link before the abstract and opens up in its individual
   page. Keep in mind the following rules:</para>
   <itemizedlist>
     <listitem>
