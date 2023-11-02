@@ -367,10 +367,11 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
       <example xml:id="ex-revhistory-source">
         <title>Revision history example (source)</title>
 <screen>
+&lt;revhistory xml:id="rh-USE-ROOT-ID"&gt;
 &lt;revision&gt;&lt;date&gt;2024-11-13&lt;/date&gt;
   &lt;revdescription&gt;
     &lt;itemizedlist&gt;  
-     &lt;listitem&gt;&lt;para&gt;Added sections to resolve issue &lt;uri>bsc#12345&lt;/uri>:&lt;/para&gt;&lt;/listitem&gt;
+     &lt;listitem&gt;&lt;para&gt;Added sections to resolve issue &lt;uri&gt;bsc#12345&lt;/uri&gt;:&lt;/para&gt;&lt;/listitem&gt;
         &lt;listitem&gt;
           &lt;itemizedlist&gt;
            &lt;listitem&gt;&lt;para&gt;New section on foo&lt;/para&gt;&lt;/listitem&gt;
