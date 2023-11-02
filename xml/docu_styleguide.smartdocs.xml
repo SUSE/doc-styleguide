@@ -387,14 +387,14 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
       <title>Revision history example (output)</title>
         <para>2024-11-13</para>
              <itemizedlist>
-               <listitem><para>Added sections to resolve issue 12345:</para></listitem>
+               <listitem><para>Added sections to resolve issue <uri>bsc#12345</uri>:</para></listitem>
                 <listitem>
                   <itemizedlist>
                     <listitem><para>New section on foo</para></listitem>
                     <listitem><para>New section on foo bar</para></listitem>
                   </itemizedlist>
                 </listitem>
-                <listitem><para>Removed sections to resolve issue 54321:</para></listitem>
+                <listitem><para>Removed section on <quote>foo foo</quote></para></listitem>
             </itemizedlist>
           </example>
       <para>Find more detailed recommendations for adding information to your
