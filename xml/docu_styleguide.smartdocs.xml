@@ -340,6 +340,11 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
 
 <sect2 xml:id="sec-revhistory">
   <title>Revision history</title>
+  <para>
+   A <emphasize>revision history</emphasize> lists all the high level changes
+   about the document itself. I gives the reader an overview what important
+   changes were made over time.
+  </para>
   <para>Update revision history regularly, mentioning most important changes to
   your document when you amend or rework it. The <quote>Revision History</quote> 
   changelog is available as a link before the abstract and opens up in its individual
