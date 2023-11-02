@@ -385,6 +385,7 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
    </example>
   <example xml:id="ex-revhistory-output">
       <title>Revision history example (output)</title>
+        <revhistory xml:id="rh-USE-ROOT-ID">
         <para>2024-11-13</para>
              <itemizedlist>
                <listitem><para>Added sections to resolve issue <uri>bsc#12345</uri>:</para></listitem>
