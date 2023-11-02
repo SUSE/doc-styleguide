@@ -367,7 +367,6 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
       <example xml:id="ex-revhistory-source">
         <title>Revision history example (source)</title>
 <screen>
-&lt;revhistory xml:id="rh-USE-ROOT-ID"&gt;
 &lt;revision&gt;&lt;date&gt;2024-11-13&lt;/date&gt;
   &lt;revdescription&gt;
     &lt;itemizedlist&gt;  
@@ -385,8 +384,7 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
    </example>
   <example xml:id="ex-revhistory-output">
       <title>Revision history example (output)</title>
-        <revhistory xml:id="rh-USE-ROOT-ID">
-        <para>2024-11-13</para>
+         <para>2024-11-13</para>
              <itemizedlist>
                <listitem><para>Added sections to resolve issue <uri>bsc#12345</uri>:</para></listitem>
                 <listitem>
@@ -397,7 +395,7 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
                 </listitem>
                 <listitem><para>Removed section on <quote>foo foo</quote></para></listitem>
             </itemizedlist>
-          </example>
+      </example>
       <para>Find more detailed recommendations for adding information to your
       revision history in the assembly template, under the <tag class="emptytag">revhistory</tag> tag.</para>
   </sect2>
