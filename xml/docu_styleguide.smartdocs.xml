@@ -370,14 +370,13 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
 &lt;revision&gt;&lt;date&gt;2024-11-13&lt;/date&gt;
   &lt;revdescription&gt;
     &lt;itemizedlist&gt;  
-     &lt;listitem&gt;&lt;para&gt;Added sections to resolve issue &lt;uri&gt;bsc#12345&lt;/uri&gt;:&lt;/para&gt;&lt;/listitem&gt;
-        &lt;listitem&gt;
-          &lt;itemizedlist&gt;
+     &lt;listitem&gt;&lt;para&gt;Added sections to resolve issue &lt;uri&gt;bsc#12345&lt;/uri&gt;:&lt;/para&gt;
+         &lt;itemizedlist&gt;
            &lt;listitem&gt;&lt;para&gt;New section on foo&lt;/para&gt;&lt;/listitem&gt;
            &lt;listitem&gt;&lt;para&gt;New section on foo bar&lt;/para&gt;&lt;/listitem&gt;
-          &lt;/itemizedlist&gt;  
+         &lt;/itemizedlist&gt;  
      &lt;/listitem&gt;
-        &lt;listitem&gt;&lt;para&gt;Removed section on &lt;quote&gt;foo foo&lt;/quote&gt;&lt;/para&gt;&lt;/listitem&gt;
+     &lt;listitem&gt;&lt;para&gt;Removed section on &lt;quote&gt;foo foo&lt;/quote&gt;&lt;/para&gt;&lt;/listitem&gt;
    &lt;/itemizedlist&gt;
   &lt;/revdescription&gt;
 &lt;/revision&gt;</screen>
@@ -386,9 +385,8 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
       <title>Revision history example (output)</title>
          <para>2024-11-13</para>
              <itemizedlist>
-               <listitem><para>Added sections to resolve issue <uri>bsc#12345</uri>:</para></listitem>
-                <listitem>
-                  <itemizedlist>
+               <listitem><para>Added sections to resolve issue <uri>bsc#12345</uri>:</para>
+                <itemizedlist>
                     <listitem><para>New section on foo</para></listitem>
                     <listitem><para>New section on foo bar</para></listitem>
                   </itemizedlist>
