@@ -358,7 +358,9 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
       group them under a dedicated <tag class="emptytag">itemizedlist</tag>.</para>
       </listitem>
       <listitem>
-        <para>Do not add links of any kind.</para>
+        <para>Do not add links or references with <tag>xref</tag> of any kind.
+        If you want to mention a specific issue, use the abbreviations from <link xlink:href="https://en.opensuse.org/openSUSE:Packaging_Patches_guidelines#Current_set_of_abbreviations"/> and wrap it inside the tag <tag>uri</tag>.
+        </para>
       </listitem>
       </itemizedlist>
       <example xml:id="ex-revhistory-source">
