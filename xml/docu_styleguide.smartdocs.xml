@@ -337,4 +337,64 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
    </tgroup>
  </informaltable>
 </sect2>
+
+<sect2 xml:id="sec-revhistory">
+  <title>Revision history</title>
+  <para>
+   A <emphasis>revision history</emphasis> lists all the high-level changes
+   about the document itself. It gives the reader an overview of important
+   changes made over time.
+  </para>
+  <para>Update revision history regularly, mentioning most important changes to
+  your document when you amend or rework it. The data you enter as revision history
+  is used as meta data. 
+  The <quote>Revision History</quote> text is available as a link before the abstract and opens up in its individual
+  page. Keep in mind the following rules:</para>
+  <itemizedlist>
+    <listitem>
+     <para>Describe only significant changes that you performed.</para>
+    </listitem>
+    <listitem>
+     <para>If you have several changes of the same type (addition, change, removal),
+      group them under a dedicated <tag class="emptytag">itemizedlist</tag>.</para>
+      </listitem>
+      <listitem>
+        <para>Do not add links or references with <tag>xref</tag> of any kind.
+        If you want to mention a specific issue, use the abbreviations from <link xlink:href="https://en.opensuse.org/openSUSE:Packaging_Patches_guidelines#Current_set_of_abbreviations"/> and wrap it inside the tag <tag>uri</tag>.
+        </para>
+      </listitem>
+      </itemizedlist>
+      <example xml:id="ex-revhistory-source">
+        <title>Revision history example (source)</title>
+<screen>
+&lt;revision&gt;&lt;date&gt;2024-11-13&lt;/date&gt;
+  &lt;revdescription&gt;
+    &lt;itemizedlist&gt;  
+     &lt;listitem&gt;&lt;para&gt;Added sections to resolve issue &lt;uri&gt;bsc#12345&lt;/uri&gt;:&lt;/para&gt;
+         &lt;itemizedlist&gt;
+           &lt;listitem&gt;&lt;para&gt;New section on foo&lt;/para&gt;&lt;/listitem&gt;
+           &lt;listitem&gt;&lt;para&gt;New section on foo bar&lt;/para&gt;&lt;/listitem&gt;
+         &lt;/itemizedlist&gt;  
+     &lt;/listitem&gt;
+     &lt;listitem&gt;&lt;para&gt;Removed section on &lt;quote&gt;foo foo&lt;/quote&gt;&lt;/para&gt;&lt;/listitem&gt;
+   &lt;/itemizedlist&gt;
+  &lt;/revdescription&gt;
+&lt;/revision&gt;</screen>
+   </example>
+  <example xml:id="ex-revhistory-output">
+      <title>Revision history example (output)</title>
+         <para>2024-11-13</para>
+             <itemizedlist>
+               <listitem><para>Added sections to resolve issue <uri>bsc#12345</uri>:</para>
+                <itemizedlist>
+                    <listitem><para>New section on foo</para></listitem>
+                    <listitem><para>New section on foo bar</para></listitem>
+                  </itemizedlist>
+                </listitem>
+                <listitem><para>Removed section on <quote>foo foo</quote></para></listitem>
+            </itemizedlist>
+      </example>
+      <para>Find more detailed recommendations for adding information to your
+      revision history in the assembly template, under the <tag class="emptytag">revhistory</tag> tag.</para>
+  </sect2>
 </sect1>
