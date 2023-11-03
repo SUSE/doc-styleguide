@@ -648,6 +648,21 @@ procedure
      <row>
       <entry>
        <screen>
+programlisting
+      </screen>
+      </entry>
+      <entry>
+       <para>
+        A literal listing of a program or a part of a program. Use for 
+        program source or source fragment listings. Formatted as a displayed 
+        block. Similar to <tag class="starttag">screen</tag>.
+       </para>
+      </entry>
+      <entry>No</entry>
+     </row>
+     <row>
+      <entry>
+       <screen>              
 qandset
  qandaentry
   question
