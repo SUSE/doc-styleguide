@@ -300,7 +300,7 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
 &lt;merge>
   &lt;title>Your title, limit to 55 characters, if possible&lt;/title>
   &lt;subtitle>Subtitle if necessary&lt;/subtitle>
-  &lt;revhistory xml:id="rh-MY_ROOTID">
+  &lt;revhistory xml:id="rh-USE_ROOTID">
     &lt;revision>
       &lt;date>2024-11-11&lt;/date>
       &lt;revdescription>
