@@ -364,7 +364,8 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
       <example xml:id="ex-revhistory-source">
         <title>Revision history example (source)</title>
 <screen>
-&lt;revision&gt;&lt;date&gt;2024-11-13&lt;/date&gt;
+&lt;revhistory xml:id="rh-USE_ROOTID"&gt;
+ &lt;revision&gt;&lt;date&gt;2024-11-13&lt;/date&gt;
   &lt;revdescription&gt;
     &lt;itemizedlist&gt;  
      &lt;listitem&gt;&lt;para&gt;Added sections to resolve issue &lt;uri&gt;bsc#12345&lt;/uri&gt;:&lt;/para&gt;
@@ -380,8 +381,10 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
    </example>
   <example xml:id="ex-revhistory-output">
       <title>Revision history example (output)</title>
-         <para>2024-11-13</para>
-             <itemizedlist>
+       <revhistory xml:id="rh-USE_ROOTID">  
+        <revision><date>2024-11-13</date>
+         <revdescription>  
+              <itemizedlist>
                <listitem><para>Added sections to resolve issue <uri>bsc#12345</uri>:</para>
                 <itemizedlist>
                     <listitem><para>New section on foo</para></listitem>
@@ -390,8 +393,13 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
                 </listitem>
                 <listitem><para>Removed section on <quote>foo foo</quote></para></listitem>
             </itemizedlist>
+          </revdescription>
+        </revision>
+      </revhistory>
       </example>
       <para>Find more detailed recommendations for adding information to your
-      revision history in the assembly template, under the <tag class="emptytag">revhistory</tag> tag.</para>
+      revision history in the assembly template of the <link
+      xlink:href="https://github.com/SUSE/doc-modular/tree/main/templates">doc-modular
+      repository</link>.</para>
   </sect2>
 </sect1>
