@@ -381,7 +381,7 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
    </example>
   <example xml:id="ex-revhistory-output">
       <title>Revision history example (output)</title>
-       <revhistory xml:id="rh-USE_ROOTID">  
+       <revhistory xml:id="rh-USEROOTID">  
         <revision><date>2024-11-13</date>
          <revdescription>  
               <itemizedlist>
