@@ -13,6 +13,33 @@
  </para>-->
 
  <!-- Add new versions to the beginning of the list. -->
+ <revision xml:id="sec-change-2023-11">
+  <date>2023-11</date>
+  <revdescription>
+   <itemizedlist>
+    <listitem>
+     <para>Created a new <quote>Revision history</quote> that opens as a 
+      separate file and is linked from the main doc. Added info about 
+      this in the <quote>Smart Docs</quote> chapter: Use the 
+      <tag class="emptytag">revhistory</tag> tag in the 
+      <tag class="emptytag">info</tag> part of XML file.</para>
+    </listitem>
+    <listitem>
+     <para>Updated the rules for creating glossaries in section <quote>Glossaries,</quote> 
+      which also contains an example of the specific structure that must 
+      be used. A style sheet update now supports the automatic alphabetical 
+      ordering of items.</para>
+    </listitem>
+    <listitem>
+     <para>Updated the <quote>Structure and markup</quote> chapter: Use the
+      <tag class="emptytag">href</tag> element to provide cross references 
+      only within the same doc set; the tag <tag class="emptytag">citetitle</tag>
+      is not translated and must only reference names of printed books (section 
+      <quote>DocBook tags, Inline elements</quote>).</para>
+    </listitem>
+   </itemizedlist>
+  </revdescription>
+ </revision>
 
  <revision xml:id="sec-change-2023-09">
   <date>2023-09</date>
