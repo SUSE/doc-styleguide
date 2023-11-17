@@ -364,34 +364,57 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
       <example xml:id="ex-revhistory-source">
         <title>Revision history example (source)</title>
 <screen>
-&lt;revhistory xml:id="rh-USE_ROOTID"&gt;
- &lt;revision&gt;&lt;date&gt;2024-11-13&lt;/date&gt;
-  &lt;revdescription&gt;
-    &lt;itemizedlist&gt;  
-     &lt;listitem&gt;&lt;para&gt;Added sections to resolve issue &lt;uri&gt;bsc#12345&lt;/uri&gt;:&lt;/para&gt;
-         &lt;itemizedlist&gt;
-           &lt;listitem&gt;&lt;para&gt;New section on foo&lt;/para&gt;&lt;/listitem&gt;
-           &lt;listitem&gt;&lt;para&gt;New section on foo bar&lt;/para&gt;&lt;/listitem&gt;
-         &lt;/itemizedlist&gt;  
-     &lt;/listitem&gt;
-     &lt;listitem&gt;&lt;para&gt;Removed section on &lt;quote&gt;foo foo&lt;/quote&gt;&lt;/para&gt;&lt;/listitem&gt;
-   &lt;/itemizedlist&gt;
-  &lt;/revdescription&gt;
-&lt;/revision&gt;</screen>
+&lt;revhistory xml:id="rh-USE-ROOTID"&gt;  
+  &lt;revision&gt;&lt;date&gt;2024-11-13&lt;/date&gt;
+    &lt;revdescription&gt;  
+      &lt;itemizedlist&gt;
+        &lt;listitem&gt;&lt;para&gt;Added sections:&lt;/para&gt;
+          &lt;itemizedlist&gt;
+            &lt;listitem&gt;&lt;para&gt;New section on &lt;quote&gt;foo&lt;/quote&gt; to resolve issue &lt;uri&gt;bsc#12345&lt;/uri&gt;&lt;/para&gt;&lt;/listitem&gt;
+            &lt;listitem&gt;&lt;para&gt;New section on &lt;quote&gt;foo bar&lt;/quote&gt;&lt;/para&gt;&lt;/listitem&gt;
+          &lt;/itemizedlist&gt;
+        &lt;/listitem&gt;
+        &lt;listitem&gt;&lt;para&gt;Removed sections:&lt;/para&gt;
+          &lt;itemizedlist&gt;
+            &lt;listitem&gt;&lt;para&gt;Removed section on &lt;quote&gt;foo1&lt;/quote&gt; to resolve issue &lt;uri&gt;bsc#12346&lt;/uri&gt;&lt;/para&gt;&lt;/listitem&gt;
+            &lt;listitem&gt;&lt;para&gt;Removed section on &lt;quote&gt;foo1 bar&lt;/quote&gt;&lt;/para&gt;&lt;/listitem&gt;
+          &lt;/itemizedlist&gt;
+        &lt;/listitem&gt;
+        &lt;listitem&gt;&lt;para&gt;Changed sections:&lt;/para&gt;
+          &lt;itemizedlist&gt;
+            &lt;listitem&gt;&lt;para&gt;Changed section on &lt;quote&gt;foo2&lt;/quote&gt;  to resolve issue &lt;uri&gt;bsc#12347&lt;/uri&gt;&lt;/para&gt;&lt;/listitem&gt;
+            &lt;listitem&gt;&lt;para&gt;Changed section on &lt;quote&gt;foo2 bar&lt;/quote&gt;&lt;/para&gt;&lt;/listitem&gt;
+          &lt;/itemizedlist&gt;
+        &lt;/listitem&gt;
+      &lt;/itemizedlist&gt;
+    &lt;/revdescription&gt;
+  &lt;/revision&gt;
+&lt;/revhistory&gt;</screen>
    </example>
   <example xml:id="ex-revhistory-output">
       <title>Revision history example (output)</title>
-       <revhistory xml:id="rh-USEROOTID">  
+       <revhistory xml:id="rh-USE-ROOTID">  
         <revision><date>2024-11-13</date>
          <revdescription>  
               <itemizedlist>
-               <listitem><para>Added sections to resolve issue <uri>bsc#12345</uri>:</para>
+               <listitem><para>Added sections:</para>
                 <itemizedlist>
-                    <listitem><para>New section on foo</para></listitem>
-                    <listitem><para>New section on foo bar</para></listitem>
-                  </itemizedlist>
-                </listitem>
-                <listitem><para>Removed section on <quote>foo foo</quote></para></listitem>
+                    <listitem><para>New section on <quote>foo</quote> to resolve issue <uri>bsc#12345</uri></para></listitem>
+                    <listitem><para>New section on <quote>foo bar</quote></para></listitem>
+                </itemizedlist>
+              </listitem>
+              <listitem><para>Removed sections:</para>
+                <itemizedlist>
+                    <listitem><para>Removed section on <quote>foo1</quote> to resolve issue <uri>bsc#12346</uri></para></listitem>
+                    <listitem><para>Removed section on <quote>foo1 bar</quote></para></listitem>
+                </itemizedlist>
+              </listitem>
+              <listitem><para>Changed sections:</para>
+                <itemizedlist>
+                    <listitem><para>Changed section on <quote>foo2</quote>  to resolve issue <uri>bsc#12347</uri></para></listitem>
+                    <listitem><para>Changed section on <quote>foo2 bar</quote></para></listitem>
+                </itemizedlist>
+              </listitem>
             </itemizedlist>
           </revdescription>
         </revision>
