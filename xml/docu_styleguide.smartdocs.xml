@@ -420,9 +420,5 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
         </revision>
       </revhistory>
       </example>
-      <para>Find more detailed recommendations for adding information to your
-      revision history in the assembly template of the <link
-      xlink:href="https://github.com/SUSE/doc-modular/tree/main/templates">doc-modular
-      repository</link>.</para>
   </sect2>
 </sect1>
