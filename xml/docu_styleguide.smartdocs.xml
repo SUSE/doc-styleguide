@@ -382,7 +382,7 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
         &lt;/listitem&gt;
         &lt;listitem&gt;&lt;para&gt;Changed sections:&lt;/para&gt;
           &lt;itemizedlist&gt;
-            &lt;listitem&gt;&lt;para&gt;Changed section on &lt;quote&gt;foo2&lt;/quote&gt;  to resolve issue &lt;uri&gt;bsc#12347&lt;/uri&gt;&lt;/para&gt;&lt;/listitem&gt;
+            &lt;listitem&gt;&lt;para&gt;Changed section on &lt;quote&gt;foo2&lt;/quote&gt; to resolve issue &lt;uri&gt;bsc#12347&lt;/uri&gt;&lt;/para&gt;&lt;/listitem&gt;
             &lt;listitem&gt;&lt;para&gt;Changed section on &lt;quote&gt;foo2 bar&lt;/quote&gt;&lt;/para&gt;&lt;/listitem&gt;
           &lt;/itemizedlist&gt;
         &lt;/listitem&gt;
@@ -411,7 +411,7 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
               </listitem>
               <listitem><para>Changed sections:</para>
                 <itemizedlist>
-                    <listitem><para>Changed section on <quote>foo2</quote>  to resolve issue <uri>bsc#12347</uri></para></listitem>
+                    <listitem><para>Changed section on <quote>foo2</quote> to resolve issue <uri>bsc#12347</uri></para></listitem>
                     <listitem><para>Changed section on <quote>foo2 bar</quote></para></listitem>
                 </itemizedlist>
               </listitem>
