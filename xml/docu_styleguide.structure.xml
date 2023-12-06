@@ -514,7 +514,7 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
    <para>
    To assign standard names to files and images in DocBook and AsciiDoc,
    follow the naming conventions at
-   <link xlink:href="https://github.com/SUSE/doc-modular/tree/main/templates"/>.
+   <link xlink:href="https://github.com/SUSE/doc-modular/blob/main/templates/README.md"/>.
   </para>
   </sect3>
   <sect3 xml:id="sec-placeholder">
@@ -1159,8 +1159,11 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   </para>
   <para>
    All referenced image files must have a lowercase alphanumeric file name.
-   Provide an appropriate image width using the
-   <tag class="attvalue">width</tag>
+   When specifying figure names, follow the naming conventions at
+   <link xlink:href="https://github.com/SUSE/doc-modular/blob/main/templates/README.md"/>.
+  </para>
+   <para>
+   Provide an appropriate image width using the <tag class="attvalue">width</tag>
    attribute. For both figure types, formal and informal, always add a
    <tag class="emptytag">textobject role="description"</tag>
    as in <xref linkend="ex-figure"/> to provide an alternative text for the
