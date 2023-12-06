@@ -9,8 +9,10 @@
 
  <para>
   This section summarizes conventions for creating generic names for objects
-  in documentation. At least some of the following names should be provided
-  through entities. See also <xref linkend="sec-entity"/>.
+  in documentation. Most of the following names are covered through entities. 
+  To check their spelling, refer to the Doc Kit repository at
+  <link xlink:href="https://github.com/openSUSE/doc-kit/tree/main/entities"/>. 
+  See also <xref linkend="sec-entity"/>.
  </para>
 
  <sect2 xml:id="sec-domain">
