@@ -8,13 +8,15 @@
  <title>Structure and markup</title>
 
  <para>
-  Structure your documentation by tasks relevant to the user instead of
-  providing reference documentation by describing each part of the user
-  interface individually. Often, it is unnecessary to describe every minor
-  functionality of a product. Describe what a product can do rather than its
-  limitations.
+  This chapter contains instructions on using the correct DocBook markup
+  to create consistent and legible documents, and structuring the content in 
+  the way that it effectively helps readers find answers to their queries.
  </para>
 
+ <para>In the Doc Kit repository, you can see examples of how
+  <link xlink:href="https://github.com/openSUSE/doc-kit/blob/main/docbook5-book/book-example_en.pdf/">books</link> 
+  and <link xlink:href="https://github.com/openSUSE/doc-kit/blob/main/smart-doc/article-example_en.pdf/">articles</link> 
+  are rendered in our documentation.</para>
  <para>
   &suse; uses the GeekoDoc Relax NG schema which is compatible with DocBook 5.2.
   For more information about the XML elements described here, see the
