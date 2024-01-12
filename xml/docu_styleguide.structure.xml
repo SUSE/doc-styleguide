@@ -2541,7 +2541,7 @@ xml:id="tab-install-source"</screen>
    Profiling is convenient for the creation of consistent documentation 
    across different products or product lines. This is especially beneficial 
    when similar products share a considerable amount of features, with only 
-   few differences. Instead of maintaining separate documentation for
+   a few differences. Instead of maintaining separate documentation for
    each product, you can share most of the XML source code and only vary text 
    snippets where necessary. In DocBook XML files, you can mark some elements
    as conditional by using profiling attributes. When processing the files to 
