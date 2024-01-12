@@ -2600,8 +2600,7 @@ ROOTID=book-administration
     
 ## Profiling
 PROFOS="sles"
-PROFARCH="x86_64;zseries;power;aarch64"
-PROFCONDITION="suse-product"</screen>
+...</screen>
 </example>
  </sect2>
 
