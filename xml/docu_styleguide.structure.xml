@@ -2593,7 +2593,7 @@ available after registering your SUSE Linux Enterprise Server installation.&lt;/
  </example>
 
  <example xml:id="ex-profiling-dc">
-  <title>DC file with profiling</title>
+  <title>DC file with profiling for SLES</title>
  <screen>
 MAIN="MAIN.SLEDS.xml"
 ROOTID=book-administration
