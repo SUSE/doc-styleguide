@@ -2566,7 +2566,7 @@ xml:id="tab-install-source"</screen>
     <para>
       Select one or more profiling attributes and add them to the text snippets that 
       are conditional. The tagged snippets will only be included in the output if 
-      the required condition is fulfilled. In most cases, the attribute to use is 
+      all required conditions are fulfilled. In most cases, the attribute to use is 
       <literal>os</literal>. For different processor architectures, use 
       <literal>arch</literal>. The general-purpose attribute is <literal>condition</literal>.</para>
    </listitem>
