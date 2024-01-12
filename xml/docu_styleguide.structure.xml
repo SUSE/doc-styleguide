@@ -2544,8 +2544,8 @@ xml:id="tab-install-source"</screen>
    a few differences. Instead of maintaining separate documentation for
    each product, you can share most of the XML source code and only vary text 
    snippets where necessary. In DocBook XML files, you can mark some elements
-   as conditional by using profiling attributes. When processing the files to 
-   generate output, specify which conditions apply to the output. The style sheets
+   as conditional by using profiling attributes. Specify which conditions
+   apply to the output when processing the files to generate output. The style sheets
    will then include or exclude the marked text, according to the conditions.</para>
    <para>Profiling allows you to keep both common and product-specific content in 
    one XML file and select at production time which information to include in 
