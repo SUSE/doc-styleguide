@@ -2582,9 +2582,17 @@ xml:id="tab-install-source"</screen>
       Create a different DC file for each variant. Add the respective profiling 
       variable and its value to the DC file.</para>
    </listitem>
+   <listitem>
+    <para>
+      DocBook allows you to use multiple profiling attributes to handle more 
+      complex scenarios. For example, if you have conditions for architecture 
+      (<literal>arch</literal>) and operating system (<literal>os</literal>), 
+      you can create different versions of a document for different combinations 
+      of these conditions, as shown in <xref linkend="ex-multiple-profiling"/>.</para>
+   </listitem>
   </itemizedlist>
   <example xml:id="ex-profiling-xml">
-    <title>A phrase with one profiling attribute</title>
+    <title>A phrase with one profiling attribute (single profiling)</title>
  <screen>
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 [...]
@@ -2602,6 +2610,17 @@ ROOTID=book-administration
 PROFOS="sles"
 ...</screen>
 </example>
+
+<example xml:id="ex-multiple-profiling">
+  <title>Multiple profiling with numerous attributes</title>
+  <screen>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+[...]
+Entire hard disks are listed as devices without numbers, such as
+&lt;filename&gt;/dev/sda&lt;/filename&gt;&lt;phrase arch="zseries;aarch64" os="sles;sled;slemicro"&gt;&lt;/phrase&gt;.
+</screen>
+</example>
+
  </sect2>
 
  <sect2 xml:id="sec-question">
