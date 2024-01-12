@@ -2559,7 +2559,7 @@ xml:id="tab-install-source"</screen>
      These identifiers act as <quote>aliases</quote> for longer products or 
      deliverables.
      If you want to apply more than one identifier to an element, separate them
-     with semicolon.
+     with a semicolon.
     </para>
    </listitem>
    <listitem>
