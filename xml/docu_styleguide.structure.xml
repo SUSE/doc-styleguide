@@ -2584,7 +2584,7 @@ xml:id="tab-install-source"</screen>
    </listitem>
   </itemizedlist>
   <example xml:id="ex-profiling-xml">
-    <title>A phrase in the XML file with profiling attributes</title>
+    <title>A phrase with one profiling attribute</title>
  <screen>
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 [...]
