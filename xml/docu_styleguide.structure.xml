@@ -2558,6 +2558,8 @@ xml:id="tab-install-source"</screen>
      and assign clear and short identifiers to them, sticking to lowercase.
      These identifiers act as <quote>aliases</quote> for longer products or 
      deliverables.
+     If you want to apply more than one identifier to an element, separate them
+     with semicolon.
     </para>
    </listitem>
    <listitem>
