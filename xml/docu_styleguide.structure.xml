@@ -767,12 +767,24 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
  &lt;/sect2&gt;</screen>
    </example>
    <example xml:id="ex-cross-reference-output">
-    <title>Example of a cross reference (output)</title>
+    <title>Example of a cross-reference (output)</title>
     <para>
-     See <xref linkend="sec-cross-reference"/>.</para>
+     See <xref linkend="sec-cross-reference"/>.
+    </para>
    </example>
-   <para>Keep in mind the following cases where listing cross references
-    is discouraged and must be avoided:</para>
+   <para>
+     This example shows the default display of a cross-reference. To change it, use the
+     <tag class="attribute">xrefstyle</tag> attribute, either with
+     <tag class="attvalue">select:</tag> or <tag class="attvalue">template:</tag>. Do not use custom
+     <quote>named</quote> <tag class="attribute">xrefstyle</tag> attributes that require support
+     from the style sheets. For more info, refer to <link
+       xlink:href="http://www.sagehill.net/docbookxsl/CustomXrefs.html">DocBook XSL: The Complete
+       Guide: Customizing cross-references</link>.
+   </para>
+   <para>
+     Keep in mind the following cases where listing cross-references is discouraged and must be
+     avoided:
+   </para>
     <itemizedlist>
       <listitem>
        <para>
