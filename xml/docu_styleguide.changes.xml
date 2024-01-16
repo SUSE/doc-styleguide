@@ -32,7 +32,7 @@
     </listitem>
     <listitem>
      <para>Updated the <quote>Structure and markup</quote> chapter: Use the
-      <tag class="emptytag">href</tag> element to provide cross references 
+      <tag class="emptytag">href</tag> element to provide cross-references 
       only within the same doc set; the tag <tag class="emptytag">citetitle</tag>
       is not translated and must only reference names of printed books (section 
       <quote>DocBook tags, Inline elements</quote>).</para>
@@ -146,7 +146,7 @@
    <itemizedlist>
     <listitem>
      <para> Added new content, updated and restructured the content of the
-       <quote>Cross References</quote> section (a warning not to include xref
+       <quote>Cross-references</quote> section (a warning not to include xref
       elements into titles). </para>
     </listitem>
     <listitem>

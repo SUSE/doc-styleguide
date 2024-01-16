@@ -159,7 +159,7 @@
      If there are multiple ways to avoid a danger, use an unordered list. If
      fewer than five consecutive steps must be taken to avoid a danger,
      use an ordered list. If more than five consecutive steps need to be
-     taken, use a cross reference to another part of the documentation.
+     taken, use a cross-reference to another part of the documentation.
     </para>
    </listitem>
   </itemizedlist>
@@ -739,14 +739,14 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
  </sect2>
 
  <sect2 xml:id="sec-cross-reference">
-  <title>Cross references</title>
+  <title>Cross-references</title>
   <para>
    Use the <tag class="emptytag">xref</tag>
    element (read: <quote>cross ref</quote>) when referring to an appendix,
    chapter, example, figure, part, preface, section, table or question and
    answer set. The element referenced needs to have an
    <tag class="attribute">xml:id</tag> attribute, an identifier. Create
-   identifiers to reference from cross references using the rules
+   identifiers to reference from cross-references using the rules
    under <xref linkend="sec-id"/>. Note that the <tag class="emptytag">xref</tag>
    element only works when it links to documentation within the same set,
    for example, the same book or set of books.</para>
@@ -754,9 +754,9 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
    Other types of references to resources are described in
    <xref linkend="sec-other-external"/> and <xref linkend="sec-link"/>.</para>
  <example xml:id="ex-cross-reference-source">
-    <title>Example of a cross reference (source)</title>
+    <title>Example of a cross-reference (source)</title>
  <screen>&lt;sect2 xml:id="sec-cross-reference"&gt;
-  &lt;title&gt;Cross references&lt;/title&gt;
+  &lt;title&gt;Cross-references&lt;/title&gt;
   &lt;para&gt;
    Use the &lt;sgmltag class="emptytag"&gt;xref&lt;/sgmltag&gt; element ...
   &lt;/para&gt;
@@ -788,9 +788,9 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
     <itemizedlist>
       <listitem>
        <para>
-        Do not insert cross references (<tag class="starttag">xref linkend="..."</tag>)
+        Do not insert cross-references (<tag class="starttag">xref linkend="..."</tag>)
         into a <tag class="emptytag">title</tag> element. 
-        The title must not be clickable, and a cross reference in a title can create
+        The title must not be clickable, and a cross-reference in a title can create
         issues when linking to such a title in a different paragraph.</para>
       </listitem>
       <listitem>
@@ -803,7 +803,7 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
         to assign a title.</para>
        </listitem>
     </itemizedlist>
-    <para>Do not prefix or suffix cross references with text labels such
+    <para>Do not prefix or suffix cross-references with text labels such
     as <quote>appendix,</quote> <quote>chapter,</quote> <quote>table,</quote>
     or <quote>figure.</quote> Such labels are generated automatically.</para>
   </sect2>
@@ -1168,7 +1168,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    <tag class="attribute">xml:id</tag>
    attribute to
    <tag class="emptytag">figure</tag>
-   elements. Reference figures from the text by means of a cross reference.
+   elements. Reference figures from the text by means of a cross-reference.
    For more information, see <xref linkend="sec-cross-reference"/>.
   </para>
   <para>
@@ -2188,7 +2188,7 @@ xml:id="tab-install-source"</screen>
    the work of translators.
   </para>
   <para>
-   For more information about creating cross references, see
+   For more information about creating cross-references, see
    <xref linkend="sec-cross-reference"/>.
   </para>
   <example xml:id="ex-key">
@@ -2563,8 +2563,8 @@ xml:id="tab-install-source"</screen>
   </para>
   <para>
    Questions must always end in a <literal>?</literal>. Where explanations
-   longer than three paragraphs are necessary for an answer, add a cross
-   reference to an explanation outside of the questions-and-answers section.
+   longer than three paragraphs are necessary for an answer, add a cross-reference 
+   to an explanation outside of the questions-and-answers section.
    See also <xref linkend="sec-cross-reference"/>.
   </para>
   <para>
