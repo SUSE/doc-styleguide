@@ -2592,7 +2592,7 @@ xml:id="tab-install-source"</screen>
    </listitem>
   </itemizedlist>
   <example xml:id="ex-profiling-xml">
-    <title>A phrase with one profiling attribute (single profiling)</title>
+    <title>A phrase with the profiling attribute <tag class="attribute">os</tag> (single profiling)</title>
  <screen>
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 [...]
@@ -2612,7 +2612,7 @@ PROFOS="sles"
 </example>
 
 <example xml:id="ex-multiple-profiling">
-  <title>Multiple profiling with numerous attributes</title>
+  <title>Multiple profiling with attributes <tag class="attribute">os</tag> and <tag class="attribute">arch</tag></title>
   <screen>
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
 [...]
