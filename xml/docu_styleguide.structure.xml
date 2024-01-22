@@ -519,19 +519,6 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
    <link xlink:href="https://github.com/SUSE/doc-modular/blob/main/templates/README.md"/>.
   </para>
   </sect3>
-  <sect3 xml:id="sec-placeholder">
-   <title>Placeholders</title>
-   <para>
-    To mark up text that readers need to replace, use the
-    <tag class="emptytag">replaceable</tag>
-    element. Capitalize placeholder text in all contexts where this is not
-    detrimental to content intelligibility.
-    Do not use spaces within placeholders. Instead, use underscores
-    (<literal>_</literal>).
-   </para>
-<screen>To list the contents of a directory, execute
-&lt;command&gt;ls &lt;replaceable&gt;DIRECTORY&lt;/replaceable&gt;&lt;/command&gt;.</screen>
-  </sect3>
   <sect3 xml:id="sec-literal">
    <title>Literals</title>
    <para>
@@ -541,6 +528,19 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
    </para>
 <screen>To create a comment, insert &lt;literal&gt;#&lt;/literal&gt; characters.</screen>
   </sect3>
+  <sect3 xml:id="sec-placeholder">
+    <title>Placeholders</title>
+    <para>
+     To mark up text that readers need to replace, use the
+     <tag class="emptytag">replaceable</tag>
+     element. Capitalize placeholder text in all contexts where this is not
+     detrimental to content intelligibility.
+     Do not use spaces within placeholders. Instead, use underscores
+     (<literal>_</literal>).
+    </para>
+ <screen>To list the contents of a directory, execute
+ &lt;command&gt;ls &lt;replaceable&gt;DIRECTORY&lt;/replaceable&gt;&lt;/command&gt;.</screen>
+   </sect3>
   <sect3 xml:id="sec-prompt">
    <title>Prompts</title>
    <para>
@@ -2550,6 +2550,94 @@ xml:id="tab-install-source"</screen>
    hyphenation:
   </para>
 <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
+ </sect2>
+
+ <sect2 xml:id="sec-profiling">
+  <title>Profiling</title>
+  <para>
+   Profiling is convenient for the creation of consistent documentation 
+   across different products or product lines. This is especially beneficial 
+   when similar products share a considerable amount of features, with only 
+   a few differences. Instead of maintaining separate documentation for
+   each product, you can share most of the XML source code and only vary text 
+   snippets where necessary. In DocBook XML files, you can mark some elements
+   as conditional by using profiling attributes. Specify which conditions
+   apply to the output when processing the files to generate output. The style sheets
+   will then include or exclude the marked text, according to the conditions.</para>
+   <para>Profiling allows you to keep both common and product-specific content in 
+   one XML file and select at production time which information to include in 
+   the output.</para>
+  <para>If you need to use profiling in your writing, adhere to the following guidelines:</para>
+  <itemizedlist>
+   <listitem>
+    <para>
+     Identify different variants that you want to apply to the general piece of text
+     and assign clear and short identifiers to them, sticking to lowercase.
+     These identifiers act as <quote>aliases</quote> for longer products or 
+     deliverables.
+     If you want to apply more than one identifier to an element, separate them
+     with a semicolon.
+    </para>
+   </listitem>
+   <listitem>
+    <para>
+      Select one or more profiling attributes and add them to the text snippets that 
+      are conditional. The tagged snippets will only be included in the output if 
+      all required conditions are fulfilled. In most cases, the attribute to use is 
+      <literal>os</literal>. For different processor architectures, use 
+      <literal>arch</literal>. The general-purpose attribute is <literal>condition</literal>.</para>
+   </listitem>
+   <listitem>
+    <para>
+      Mark the variants in your text with the relevant identifiers. Any content that 
+      is valid for all conditions does not need any profiling attributes. The 
+      respective content will always be included in the output formats generated 
+      from the XML sources. </para>
+   </listitem>
+   <listitem>
+    <para>
+      Create a different DC file for each variant. Add the respective profiling 
+      variable and its value to the DC file.</para>
+   </listitem>
+   <listitem>
+    <para>
+      DocBook allows you to use multiple profiling attributes to handle more 
+      complex scenarios. For example, if you have conditions for architecture 
+      (<literal>arch</literal>) and operating system (<literal>os</literal>), 
+      you can create different versions of a document for different combinations 
+      of these conditions, as shown in <xref linkend="ex-multiple-profiling"/>.</para>
+   </listitem>
+  </itemizedlist>
+  <example xml:id="ex-profiling-xml">
+    <title>Single profiling with the attribute <tag class="attribute">os</tag></title>
+ <screen>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+[...]
+&lt;phrase os="sles;sled"&gt;Note that the official update repository is only
+available after registering your SUSE Linux Enterprise Server installation.&lt;/phrase&gt;</screen>
+ </example>
+
+ <example xml:id="ex-profiling-dc">
+  <title>DC file with profiling for SLES</title>
+ <screen>
+MAIN="MAIN.SLEDS.xml"
+ROOTID=book-administration
+    
+## Profiling
+PROFOS="sles"
+...</screen>
+</example>
+
+<example xml:id="ex-multiple-profiling">
+  <title>Multiple profiling with attributes <tag class="attribute">os</tag> and <tag class="attribute">arch</tag></title>
+  <screen>
+&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+[...]
+Entire hard disks are listed as devices without numbers, such as
+&lt;filename&gt;/dev/sda&lt;/filename&gt;&lt;phrase arch="zseries;aarch64" os="sles;sled;slemicro"&gt;&lt;/phrase&gt;.
+</screen>
+</example>
+
  </sect2>
 
  <sect2 xml:id="sec-question">
