@@ -13,6 +13,36 @@
  </para>-->
 
  <!-- Add new versions to the beginning of the list. -->
+ <revision xml:id="sec-change-2024-02">
+  <date>2024-02</date>
+  <revdescription>
+   <itemizedlist>
+    <listitem>
+      <para>Added a new section on Profiling to the <quote>Structure 
+        and markup</quote> chapter.</para>
+    </listitem>
+    <listitem>
+     <para>Updated the introduction to <quote>Structure and markup</quote> 
+      with links to doc-kit that now hosts examples of rendered books 
+      and articles.</para>
+    </listitem>
+    <listitem>
+     <para>More in <quote>Structure and markup</quote>: links to 
+      READMEs in doc-modular to find naming conventions for file 
+      and figure names, and guidelines for using the 
+      <tag class="emptytag">xrefstyle</tag> attribute&mdash;only use the tags 
+      <tag class="emptytag">select:</tag> and <tag class="emptytag">template:</tag>
+      with it to customize cross-links.</para>
+    </listitem>
+    <listitem>
+      <para>Added clarified reference on using entities to create generic names 
+      in the <quote>Names of example items</quote> chapter, with the link to 
+      doc-kit.</para>
+     </listitem>
+   </itemizedlist>
+  </revdescription>
+ </revision>
+
  <revision xml:id="sec-change-2023-11">
   <date>2023-11</date>
   <revdescription>
