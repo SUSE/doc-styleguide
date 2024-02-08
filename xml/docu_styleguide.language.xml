@@ -555,13 +555,7 @@
       </listitem>
       <listitem>
         <para>
-          Only use the marked version on the first occurrence of the product
-          name in a chapter.
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Only use the &reg;, &tm;, or &sm; marks for &suse; products.
+          Only use the &reg;, &tm; or &sm; marks for &suse; products.
         </para>
       </listitem>
       <listitem>
