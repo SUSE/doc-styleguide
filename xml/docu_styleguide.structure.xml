@@ -1499,16 +1499,17 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
      Always use an
      <tag class="attribute">xml:id</tag>
      attribute in parts, chapters, appendixes, sections, figures, glossaries and
-     examples. Identifiers can be used in other elements as well, such as
-     tables and procedures.
+     examples. Identifiers can be used in other elements as well, for example,
+     block elements, such as tables and procedures.
     </para>
    </listitem>
    <listitem>
     <para>
      In identifiers, only use lowercase basic Latin alphabetic and numeric
-     characters and <literal>-</literal> (hyphen).
-     Do not use <literal>_</literal> and <literal>.</literal> characters, as
-     they may hurt search engine optimization.
+     characters and <literal>-</literal> (hyphen). Follow the regex pattern 
+     <literal>[\-0-9a-zA-Z]+</literal>. Do not use <literal>_</literal> 
+     and <literal>.</literal> characters, as they may hurt search engine 
+     optimization.
     </para>
    </listitem>
    <listitem>
@@ -1555,7 +1556,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     </orderedlist>
     <example>
      <title>Examples of identifiers</title>
-<screen>xml:id="install"
+<screen>xml:id="pro-install-sles"
 xml:id="install-yast"
 xml:id="tab-install-source"</screen>
     </example>
