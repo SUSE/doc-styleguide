@@ -349,6 +349,9 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
   page. Keep in mind the following rules:</para>
   <itemizedlist>
     <listitem>
+     <para>List revision entries in descending order by date. The latest entry must always come first.</para>
+    </listitem>
+    <listitem>
      <para>Describe only significant changes that you performed.</para>
     </listitem>
     <listitem>
