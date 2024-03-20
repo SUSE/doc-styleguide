@@ -118,12 +118,107 @@
    Entities increase consistency, as they only need to be defined once and will
    automatically be expanded everywhere within the document.
   </para>
+
+<sect3 xml:id="sec-type-entity">
+    <title>Common types of entities</title>
+    <para>
+     An <filename>entity-decl.ent</filename> file contains several categories of
+     entities:
+    </para>
+    <variablelist>
+     <varlistentry>
+      <term>Products</term>
+      <listitem>
+       <para>
+        All &suse; product names and other products and applications.
+        This helps in case sudden name changes are necessary and avoids
+        misspellings.
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term>Platforms</term>
+      <listitem>
+       <para>
+        Use entities for all hardware architectures referenced.
+        This helps in case sudden name changes are necessary.
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term>Books</term>
+      <listitem>
+       <para>
+        Title entities for all &suse; books.
+        This helps in case sudden name changes are necessary.
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term>General Entities</term>
+      <listitem>
+       <para>
+        Network IP addresses, host names and user names.
+       </para>
+      </listitem>
+     </varlistentry>
+    </variablelist>
+    <para>
+     There are several guidelines to consider when working with product
+     entities for &suse; documentation:
+    </para>
+    <variablelist>
+     <varlistentry>
+      <term>Entity selection</term>
+      <listitem>
+       <para>
+        Use the entity name
+        <tag class="genentity">product</tag>
+        to identify the product for which the documentation is built. Set the
+        value of this entity once per release and have it expand to the name
+        of the current product:
+       </para>
+ <screen>&lt;phrase role="productname"&gt;&amp;product;&lt;/phrase&gt; includes 389-ds.</screen>
+       <para>
+        If you need to reference a specific subproduct or a different product,
+        use a more specific entity:
+       </para>
+ <screen>The Ext4 file system has been included in the &lt;literal&gt;&amp;suse;&lt;/literal&gt;
+ Kernel since &lt;literal&gt;&amp;sle;&lt;/literal&gt; XYZ.</screen>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term>Acronyms</term>
+      <listitem>
+       <para>
+        Avoid using acronyms of product names where they are not the
+        preferred form of the name. If you do define an additional acronym
+        version of a longer product name, append an <literal>a</literal> to
+        the end of the entity name. For example, use
+        <tag class="genentity">slsa</tag>
+        for the acronym <quote>SLES.</quote>
+       </para>
+      </listitem>
+     </varlistentry>
+     <varlistentry>
+      <term>Trademarks</term>
+      <listitem>
+       <para>
+        Follow the rules under <xref linkend="sec-trademark"/> and
+        <xref linkend="sec-product"/>.
+       </para>
+      </listitem>
+     </varlistentry>
+    </variablelist>
+  </sect3>
+
   <sect3 xml:id="sec-use-entity">
    <title>Using entity files</title>
    <para>
     &suse; uses a set of custom entities.
     Find these entities in the file
-    <filename>xml/entity-decl.ent</filename> in each documentation repository.
+    <filename>entity-decl.ent</filename> or <filename>generic-entities.ent</filename> 
+    in each documentation repository.
    </para>
    <itemizedlist>
     <listitem>
@@ -136,7 +231,7 @@
     <listitem>
      <para>
       If you need to define new custom entities, add their new definitions
-      to the <filename>xml/entity-decl.ent</filename> file.
+      to the <filename>entity-decl.ent</filename> or <filename>generic-entities.ent</filename> file.
       Do not include custom entity definitions directly in the file header,
       unless the custom definitions are needed to override externally
       embedded entities.
@@ -156,7 +251,7 @@
 <screen>&lt;!ENTITY % entities SYSTEM "entity-decl.ent"&gt;
 %entities;</screen>
    <example xml:id="ex-entity">
-    <title>Excerpt from an <filename>entity-decl.ent</filename></title>
+    <title>Excerpt from <filename>entity-decl.ent</filename></title>
 <screen>&lt;!ENTITY<co xml:id="co-declaration"/> server<co xml:id="co-definition"/> "sun<co xml:id="co-value"/>"&gt;
 &lt;!ENTITY domain  "example.org"&gt;
 &lt;!ENTITY host    "&amp;server;.&amp;domain;<co xml:id="co-entity"/>"&gt;
@@ -204,98 +299,6 @@
   <para>Never add this tag to the content within <tag class="emptytag">command</tag> and <tag class="emptytag">systemitem</tag> elements.
   Capitalizing anything inside these elements makes the content ambiguous.
   </para>
-  </sect3>
-  <sect3 xml:id="sec-type-entity">
-   <title>Common types of entities</title>
-   <para>
-    An <filename>entity-decl.ent</filename> file contains several categories of
-    entities:
-   </para>
-   <variablelist>
-    <varlistentry>
-     <term>Products</term>
-     <listitem>
-      <para>
-       All &suse; product names and other products and applications.
-       This helps in case sudden name changes are necessary and avoids
-       misspellings.
-      </para>
-     </listitem>
-    </varlistentry>
-    <varlistentry>
-     <term>Platforms</term>
-     <listitem>
-      <para>
-       Use entities for all hardware architectures referenced.
-       This helps in case sudden name changes are necessary.
-      </para>
-     </listitem>
-    </varlistentry>
-    <varlistentry>
-     <term>Books</term>
-     <listitem>
-      <para>
-       Title entities for all &suse; books.
-       This helps in case sudden name changes are necessary.
-      </para>
-     </listitem>
-    </varlistentry>
-    <varlistentry>
-     <term>General Entities</term>
-     <listitem>
-      <para>
-       Network IP addresses, host names and user names.
-      </para>
-     </listitem>
-    </varlistentry>
-   </variablelist>
-   <para>
-    There are several guidelines to consider when working with product
-    entities for &suse; documentation:
-   </para>
-   <variablelist>
-    <varlistentry>
-     <term>Entity selection</term>
-     <listitem>
-      <para>
-       Use the entity name
-       <tag class="genentity">product</tag>
-       to identify the product for which the documentation is built. Set the
-       value of this entity once per release and have it expand to the name
-       of the current product:
-      </para>
-<screen>&lt;phrase role="productname"&gt;&amp;product;&lt;/phrase&gt; includes 389-ds.</screen>
-      <para>
-       If you need to reference a specific subproduct or a different product,
-       use a more specific entity:
-      </para>
-<screen>The Ext4 file system has been included in the &lt;literal&gt;&amp;suse;&lt;/literal&gt;
-Kernel since &lt;literal&gt;&amp;sle;&lt;/literal&gt; XYZ.</screen>
-     </listitem>
-    </varlistentry>
-    <varlistentry>
-     <term>Acronyms</term>
-     <listitem>
-      <para>
-       Avoid using acronyms of product names where they are not the
-       preferred form of the name. If you do define an additional acronym
-       version of a longer product name, append an <literal>a</literal> to
-       the end of the entity name. For example, use
-       <tag class="genentity">slsa</tag>
-       for the acronym <quote>SLES.</quote>
-      </para>
-     </listitem>
-    </varlistentry>
-    <varlistentry>
-     <term>Trademarks</term>
-     <listitem>
-      <para>
-       Follow the rules under <xref linkend="sec-trademark"/> and
-       <xref linkend="sec-product"/>.
-      </para>
-     </listitem>
-    </varlistentry>
-   </variablelist>
   </sect3>
  </sect2>
 
