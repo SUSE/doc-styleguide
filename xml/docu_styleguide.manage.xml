@@ -121,8 +121,15 @@
 
 <sect3 xml:id="sec-type-entity">
     <title>Common types of entities</title>
+    <para>Official generic entities are maintained in the Doc Kit repository.
+      They include &suse; product names and other terms that are valid for every 
+      repository. The file <filename>generic-entities.ent</filename> must not 
+      be changed. If there is a need to change an entity, this can be done
+      in the <filename>product-entities.ent</filename> or 
+      <filename>entity-decl.ent</filename> file in the respective repository.</para>
     <para>
-     An <filename>entity-decl.ent</filename> file contains several categories of
+     A <filename>generic-entities.ent</filename> or 
+     <filename>entity-decl.ent</filename> file contains several categories of
      entities:
     </para>
     <variablelist>
@@ -131,7 +138,7 @@
       <listitem>
        <para>
         All &suse; product names and other products and applications.
-        This helps in case sudden name changes are necessary and avoids
+        This helps when sudden name changes are necessary and avoids
         misspellings.
        </para>
       </listitem>
@@ -141,7 +148,7 @@
       <listitem>
        <para>
         Use entities for all hardware architectures referenced.
-        This helps in case sudden name changes are necessary.
+        This helps when sudden name changes are necessary.
        </para>
       </listitem>
      </varlistentry>
@@ -150,7 +157,7 @@
       <listitem>
        <para>
         Title entities for all &suse; books.
-        This helps in case sudden name changes are necessary.
+        This helps when sudden name changes are necessary.
        </para>
       </listitem>
      </varlistentry>
@@ -192,7 +199,7 @@
       <listitem>
        <para>
         Avoid using acronyms of product names where they are not the
-        preferred form of the name. If you do define an additional acronym
+        preferred form of the name. If you define an additional acronym
         version of a longer product name, append an <literal>a</literal> to
         the end of the entity name. For example, use
         <tag class="genentity">slsa</tag>
@@ -210,16 +217,22 @@
       </listitem>
      </varlistentry>
     </variablelist>
+    <para>If an entity is placed at the beginning of a phrase or title, its resolved 
+      form is usually lowercase (unless specified in uppercase, for example, for product names).
+      To have it capitalized, use the <tag class="emptytag">phrase role="style:sentencecase"</tag> element. 
+      For example:</para>
+     <screen>&lt;phrase role="style:sentencecase"&gt;<tag class="genentity">ulp</tag>&lt;/phrase&gt;</screen>
+     <para>The entity <tag class="genentity">ulp</tag> expands into <quote>User space live patching</quote>.</para>
+     <para>Never add this tag to the content within <tag class="emptytag">command</tag> and <tag class="emptytag">systemitem</tag> elements.
+     Capitalizing anything inside these elements makes the content ambiguous.
+     </para>
   </sect3>
 
   <sect3 xml:id="sec-use-entity">
    <title>Using entity files</title>
-   <para>
-    &suse; uses a set of custom entities.
-    Find these entities in the file
-    <filename>entity-decl.ent</filename> or <filename>generic-entities.ent</filename> 
-    in each documentation repository.
-   </para>
+   <para>&suse; uses a set of custom entities.
+   Find these entities in the file <filename>generic-entities.ent</filename>
+   or <filename>entity-decl.ent</filename> in each documentation repository.</para>
    <itemizedlist>
     <listitem>
      <para>
@@ -231,8 +244,8 @@
     <listitem>
      <para>
       If you need to define new custom entities, add their new definitions
-      to the <filename>entity-decl.ent</filename> or <filename>generic-entities.ent</filename> file.
-      Do not include custom entity definitions directly in the file header,
+      to the <filename>generic-entities.ent</filename> or <filename>entity-decl.ent</filename>
+      file. Do not include custom entity definitions directly in the file header,
       unless the custom definitions are needed to override externally
       embedded entities.
      </para>
@@ -290,15 +303,7 @@
      </callout>
     </calloutlist>
    </example>
-   <para>If an entity is placed at the beginning of a phrase or title, its resolved 
-   form is usually lowercase (unless specified in uppercase, for example, for product names).
-   To have it capitalized, use the <tag class="emptytag">phrase role="style:sentencecase"</tag> element. 
-   For example:</para>
-  <screen>&lt;phrase role="style:sentencecase"&gt;<tag class="genentity">ulp</tag>&lt;/phrase&gt;</screen>
-  <para>The entity <tag class="genentity">ulp</tag> expands into <quote>User space live patching</quote>.</para>
-  <para>Never add this tag to the content within <tag class="emptytag">command</tag> and <tag class="emptytag">systemitem</tag> elements.
-  Capitalizing anything inside these elements makes the content ambiguous.
-  </para>
+  
   </sect3>
  </sect2>
 
