@@ -557,9 +557,11 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
     users, see <xref linkend="sec-name"/>.
    </para>
    <para>
+    Whenever you provide commands in a <tag class="emptytag">screen</tag>, 
+    make it clear if the user needs regular or elevated privileges.
     Avoid using root prompts in your documentation by using the
     <command>sudo</command> command where applicable. If you do need a root
-    prompt, always mark it up as following:
+    prompt, always mark it up as follows:
    </para>
 <screen>&lt;prompt role="root"&gt;#&amp;nbsp;&lt;/prompt&gt;&lt;command&gt;yast&lt;/command&gt;</screen>
    <para>
@@ -568,8 +570,9 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
    </para>
    <para>
     For consistency, it is helpful to create entities for the prompts used
-    in your documentation. For more information, see
-    <xref linkend="sec-entity"/>.
+    in your documentation. Doc Kit repository contains entities for
+    <emphasis>user</emphasis>, <emphasis>root</emphasis> and <emphasis>sudo</emphasis> prompts.
+    For more information, see <xref linkend="sec-entity"/>.
    </para>
   </sect3>
   <sect3 xml:id="sec-screen">
