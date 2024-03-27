@@ -122,12 +122,16 @@
 <sect3 xml:id="sec-type-entity">
     <title>Common types of entities</title>
     <para>Official generic entities are maintained in the
-        <link xlink:href="https://github.com/openSUSE/doc-kit">Doc Kit repository</link>.
+      <link xlink:href="https://github.com/openSUSE/doc-kit">Doc Kit repository</link>.
       They include &suse; product names and other terms that are valid for every 
-      repository. In repositories configured with Doc Kit, the file <filename>generic-entities.ent</filename> therefore must not 
-      be changed (any changes will be overwritten by the next Doc Kit run). If there is a need to declare a specific entity that applies to the current repository only, this can be done
+      repository. In repositories configured with Doc Kit, the file 
+      <filename>generic-entities.ent</filename> therefore must not 
+      be changed (any changes will be overwritten by the next Doc Kit 
+      run). If there is a need to declare a specific entity that applies 
+      to the current repository only, this can be done
       in the <filename>product-entities.ent</filename> or 
-      <filename>entity-decl.ent</filename> file in the respective repository.</para>
+      <filename>entity-decl.ent</filename> file in the respective 
+      repository.</para>
     <para>
      A <filename>generic-entities.ent</filename> or 
      <filename>entity-decl.ent</filename> file contains several categories of
@@ -198,13 +202,16 @@
       <term>Acronyms</term>
       <listitem>
        <para>
-        Avoid using acronyms of product names where they are not the
-        preferred form of the name. If you define an additional acronym
-        version of a longer product name, append an <literal>a</literal> to
-        the end of the entity name. For example, use
-        <tag class="genentity">slsa</tag>
-        for the acronym <quote>SLES.</quote>
-       </para>
+        In some cases (for example, limited space in table cells or in titles), 
+        it is acceptable to use an entity for a product name acronym. Find the 
+        approved entities for product name acronyms in the entity declaration 
+        files, such as <filename>product-entities.ent</filename> or 
+        <filename>generic-entities.ent</filename>. For a product name acronym, 
+        you can use the generic entity <tag class="genentity">productnameshort</tag>. 
+        If you need acronym entities for specific products, they usually have an 
+        appended <literal>a</literal> at the end, for example, 
+        <tag class="genentity">slsa</tag> for the acronym <quote>SLES.</quote>
+        </para>
       </listitem>
      </varlistentry>
      <varlistentry>
@@ -245,9 +252,9 @@
      <para>
       If you need to define new custom entities, add their new definitions
       to the <filename>generic-entities.ent</filename> or <filename>entity-decl.ent</filename>
-      file. Do not include custom entity definitions directly in the file header,
-      unless the custom definitions are needed to override externally
-      embedded entities.
+      file in the respective repository. Do not include custom entity 
+      definitions directly in the file header, unless the custom definitions 
+      are needed to override externally embedded entities.
      </para>
     </listitem>
     <listitem>
@@ -261,14 +268,14 @@
     Each header of a &suse; XML file includes the entity declaration file (by
     means of an entity):
    </para>
-<screen>&lt;!ENTITY % entities SYSTEM "entity-decl.ent"&gt;
+<screen>&lt;!ENTITY % entities SYSTEM "generic-entities.ent"&gt;
 %entities;</screen>
    <example xml:id="ex-entity">
-    <title>Excerpt from <filename>entity-decl.ent</filename></title>
-<screen>&lt;!ENTITY<co xml:id="co-declaration"/> server<co xml:id="co-definition"/> "sun<co xml:id="co-value"/>"&gt;
-&lt;!ENTITY domain  "example.org"&gt;
-&lt;!ENTITY host    "&amp;server;.&amp;domain;<co xml:id="co-entity"/>"&gt;
-&lt;!ENTITY hosttag "&lt;uri xmlns='http://docbook.org/ns/docbook'&gt;&amp;host;&lt;/uri&gt;<co xml:id="co-tag"/>"&gt;</screen>
+    <title>Excerpt from <filename>product-entities.ent</filename></title>
+<screen>&lt;!ENTITY<co xml:id="co-declaration"/>product-sp<co xml:id="co-definition"/> "Code stream<co xml:id="co-value"/>"&gt;
+&lt;!ENTITY product-ga  "15"&gt;
+&lt;!ENTITY productnumber-regurl    "&amp;product-ga;.&amp;product-sp;<co xml:id="co-entity"/>"&gt;
+&lt;!ENTITY productnumber "&lt;phrase xmlns='http://docbook.org/ns/docbook' role='productnumber'&gt;&lt;/phrase"&gt;<co xml:id="co-tag"/>"&gt;</screen>
     <calloutlist>
      <callout arearefs="co-declaration">
       <para>
