@@ -121,10 +121,11 @@
 
 <sect3 xml:id="sec-type-entity">
     <title>Common types of entities</title>
-    <para>Official generic entities are maintained in the Doc Kit repository.
+    <para>Official generic entities are maintained in the
+        <link xlink:href="https://github.com/openSUSE/doc-kit">Doc Kit repository</link>.
       They include &suse; product names and other terms that are valid for every 
-      repository. The file <filename>generic-entities.ent</filename> must not 
-      be changed. If there is a need to change an entity, this can be done
+      repository. In repositories configured with Doc Kit, the file <filename>generic-entities.ent</filename> therefore must not 
+      be changed (any changes will be overwritten by the next Doc Kit run). If there is a need to declare a specific entity that applies to the current repository only, this can be done
       in the <filename>product-entities.ent</filename> or 
       <filename>entity-decl.ent</filename> file in the respective repository.</para>
     <para>
@@ -180,18 +181,17 @@
       <listitem>
        <para>
         Use the entity name
-        <tag class="genentity">product</tag>
+        <tag class="genentity">productname</tag>
         to identify the product for which the documentation is built. Set the
         value of this entity once per release and have it expand to the name
         of the current product:
        </para>
- <screen>&lt;phrase role="productname"&gt;&amp;product;&lt;/phrase&gt; includes 389-ds.</screen>
+ <screen>&amp;productname; includes 389-ds.</screen>
        <para>
         If you need to reference a specific subproduct or a different product,
         use a more specific entity:
        </para>
- <screen>The Ext4 file system has been included in the &lt;literal&gt;&amp;suse;&lt;/literal&gt;
- Kernel since &lt;literal&gt;&amp;sle;&lt;/literal&gt; XYZ.</screen>
+ <screen>Tuning &amp;sle; for SAP</screen>
       </listitem>
      </varlistentry>
      <varlistentry>
