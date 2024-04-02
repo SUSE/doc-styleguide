@@ -238,8 +238,8 @@
   <sect3 xml:id="sec-use-entity">
    <title>Using entity files</title>
    <para>&suse; uses a set of custom entities.
-   Find these entities in the file <filename>generic-entities.ent</filename>
-   or <filename>entity-decl.ent</filename> in each documentation repository.</para>
+   Find these entities in the <filename>*.ent</filename>
+   files in each documentation repository. One entity file can include other entity files.</para>
    <itemizedlist>
     <listitem>
      <para>
@@ -250,11 +250,9 @@
     </listitem>
     <listitem>
      <para>
-      If you need to define new custom entities, add their new definitions
-      to the <filename>generic-entities.ent</filename> or <filename>entity-decl.ent</filename>
-      file in the respective repository. Do not include custom entity 
-      definitions directly in the file header, unless the custom definitions 
-      are needed to override externally embedded entities.
+      If you need a new entity to be used generically across all repositories, open a pull request against <filename>generic-entities.ent</fielname> in the Doc Kit repository. After the change has been approved by the Doc Kit maintainers, the entity update for <filename>generic-entities.ent</filename> will be rolled out to all Doc Kit-based repositories with the next Doc Kit run.
+     If you need a custom entity that only applies to a specific repository, define it in <filename>product-entities.ent<filename> or in <filename>entities-decl.ent</filename> in this specific repository.</para>
+      <para>Do not include custom entity definitions directly in the file header, unless the custom definitions  are needed to override externally embedded entities.
      </para>
     </listitem>
     <listitem>
@@ -272,10 +270,10 @@
 %entities;</screen>
    <example xml:id="ex-entity">
     <title>Excerpt from <filename>product-entities.ent</filename></title>
-<screen>&lt;!ENTITY<co xml:id="co-declaration"/>product-sp<co xml:id="co-definition"/> "Code stream<co xml:id="co-value"/>"&gt;
+<screen>&lt;!ENTITY<co xml:id="co-declaration"/>product-sp<co xml:id="co-definition"/> "1<co xml:id="co-value"/>"&gt;
 &lt;!ENTITY product-ga  "15"&gt;
 &lt;!ENTITY productnumber-regurl    "&amp;product-ga;.&amp;product-sp;<co xml:id="co-entity"/>"&gt;
-&lt;!ENTITY productnumber "&lt;phrase xmlns='http://docbook.org/ns/docbook' role='productnumber'&gt;&lt;/phrase"&gt;<co xml:id="co-tag"/>"&gt;</screen>
+&lt;!ENTITY productnumber "&lt;phrase xmlns='http://docbook.org/ns/docbook' role='productnumber'&gt;15&lt;/phrase"&gt;<co xml:id="co-tag"/>"&gt;</screen>
     <calloutlist>
      <callout arearefs="co-declaration">
       <para>
