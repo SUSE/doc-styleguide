@@ -252,7 +252,7 @@
      <para>
       If you need a new entity to be used generically across all repositories, open a pull request against <filename>generic-entities.ent</filename> in the Doc Kit repository. After the change is approved by the Doc Kit maintainers, the entity update for <filename>generic-entities.ent</filename> will be rolled out to all Doc Kit-based repositories with the next Doc Kit run.
      If you need a custom entity that only applies to a specific repository, define it in <filename>product-entities.ent<filename> or in <filename>entities-decl.ent</filename> in this specific repository.</para>
-      <para>Do not include custom entity definitions directly in the file header, unless the custom definitions  are needed to override externally embedded entities.
+      <para>Do not include custom entity definitions directly in the file header, unless the custom definitions are needed to override externally embedded entities.
      </para>
     </listitem>
     <listitem>
