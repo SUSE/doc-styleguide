@@ -233,9 +233,9 @@
      <para>Never add this tag to the content within <tag class="emptytag">command</tag> and <tag class="emptytag">systemitem</tag> elements.
      Capitalizing anything inside these elements makes the content ambiguous.
      </para>
-  </sect3>
+</sect3>
 
-  <sect3 xml:id="sec-use-entity">
+<sect3 xml:id="sec-use-entity">
    <title>Using entity files</title>
    <para>&suse; uses a set of custom entities.
    Find these entities in the <filename>*.ent</filename>
@@ -250,9 +250,16 @@
     </listitem>
     <listitem>
      <para>
-      If you need a new entity to be used generically across all repositories, open a pull request against <filename>generic-entities.ent</filename> in the Doc Kit repository. After the change is approved by the Doc Kit maintainers, the entity update for <filename>generic-entities.ent</filename> will be rolled out to all Doc Kit-based repositories with the next Doc Kit run.
-     If you need a custom entity that only applies to a specific repository, define it in <filename>product-entities.ent<filename> or in <filename>entities-decl.ent</filename> in this specific repository.</para>
-      <para>Do not include custom entity definitions directly in the file header, unless the custom definitions are needed to override externally embedded entities.
+      If you need a new entity to be used generically across all repositories, open a 
+      pull request against <filename>generic-entities.ent</filename> in the Doc Kit 
+      repository. After the change is approved by the Doc Kit maintainers, the entity 
+      update for <filename>generic-entities.ent</filename> will be rolled out to all 
+      Doc Kit-based repositories with the next Doc Kit run.
+      If you need a custom entity that only applies to a specific repository, define 
+      it in <filename>product-entities.ent</filename> or in <filename>entities-decl.ent</filename> 
+      in this specific repository.</para>
+     <para>Do not include custom entity definitions directly in the file header, 
+      unless the custom definitions are needed to override externally embedded entities.
      </para>
     </listitem>
     <listitem>
@@ -308,9 +315,8 @@
      </callout>
     </calloutlist>
    </example>
-  
-  </sect3>
- </sect2>
+</sect3>
+</sect2>
 
  <sect2 xml:id="sec-xinclude">
   <title>XInclude elements</title>
