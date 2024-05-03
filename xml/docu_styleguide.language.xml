@@ -231,7 +231,7 @@
   <sect2 xml:id="sec-file-language">
     <title>File and directory names</title>
     <para>
-      Under Linux, objects like directories, printers, or flash disks are all
+      Under Linux, objects like directories, printers, or flash drives are all
       considered files. Therefore, the naming and markup conventions are the
       same for <quote>drives</quote> (for example, hard disks, CD-ROM drives),
       directories, or files.
