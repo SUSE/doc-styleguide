@@ -11,10 +11,16 @@
   The following two tables define technical terms and general vocabulary for
   use in SUSE documentation. See also <xref linkend="sec-language"/>.
  </para>
- <sect1 xml:id="sec-terminology">
+ <para>
+  If unable to find a term below, check &suse;'s official terminology database, 
+  <link xlink:href="https://suse.termweb.eu/">TermWeb</link>. It contains 
+  company-specific terminology in English and all our supported languages. TermWeb
+  can be accessed only by &suse; employees and external partners with a SUSE account 
+  (get one at <link xlink:href="https://www.suse.com/account/create"/>).
+ </para>
+<sect1 xml:id="sec-terminology">
   <title>Terminology</title>
-
-  <para>
+ <para>
    The following table defines the correct spellings and denominations for
    technical terms in SUSE documentation. Always use the entry listed under
    <quote>Accepted</quote> in the table below. All terms are reproduced in
