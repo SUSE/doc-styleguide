@@ -107,8 +107,13 @@
       the initiative's
       <link xlink:href="https://inclusivenaming.org/language/evaluation-framework/">Evaluation
       Framework</link> and its <quote>Word lists.</quote>
-    </para>
-    <para>
+      </para>
+      <para>
+        The &suse; official terminology database, 
+        <link xlink:href="https://suse.termweb.eu/">TermWeb</link>, also contains 
+        inclusive naming recommendations.
+      </para>
+      <para>
       For more information about avoiding gender bias, see <citetitle>The
       Chicago Manual of Style</citetitle>, 5.43. For information about names of
       example items, see <xref linkend="sec-name"/>.
