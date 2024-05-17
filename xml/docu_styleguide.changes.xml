@@ -13,6 +13,36 @@
  </para>-->
 
  <!-- Add new versions to the beginning of the list. -->
+ <revision xml:id="sec-change-2024-05">
+  <date>2024-05</date>
+  <revdescription>
+   <itemizedlist>
+    <listitem>
+      <para>Updated the <quote>Entities</quote> subsection in 
+        <quote>Managing documents</quote>: common types of entities and their 
+        use cases, the Doc Kit repository that maintains official generic entities,
+        creating custom entities, and entity files.</para>
+    </listitem>
+    <listitem>
+     <para>Updated the <quote>Prompts</quote> subsection in <quote>Structure 
+      and markup</quote> with clearer info on using prompts and prompt entities 
+      (always specify regular or elevated privileges).</para>
+    </listitem>
+    <listitem>
+     <para>Terminology update: flash disk → flash drive, in sync with TermWeb.</para>
+    </listitem>
+    <listitem>
+      <para><quote>Language</quote> and <quote>Terminology</quote> updated with 
+      info about TermWeb that is now fully launched and available to all SUSE employees.</para>
+     </listitem>
+     <listitem>
+     <para>The style guide changed its structure to the three-column layout with clearly 
+     featured subsections.</para>
+    </listitem>
+    </itemizedlist>
+  </revdescription>
+ </revision>
+
  <revision xml:id="sec-change-2024-02">
   <date>2024-02</date>
   <revdescription>
