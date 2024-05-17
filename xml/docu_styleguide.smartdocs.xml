@@ -4,7 +4,7 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" 
+<chapter xmlns="http://docbook.org/ns/docbook" 
        xmlns:xi="http://www.w3.org/2001/XInclude" 
        xmlns:xlink="http://www.w3.org/1999/xlink" 
        xmlns:its="http://www.w3.org/2005/11/its" version="5.0" xml:id="sec-smartdocs">
@@ -59,7 +59,7 @@
     repository</link>.
   </para>
 
-<sect2 xml:id="sec-taglist-smartdocs">
+<section xml:id="sec-taglist-smartdocs">
   <title>Using ITS tags with assemblies</title>
   <para>Assembly files use ITS tags and attributes which flag whether the content of
   the tag should be translated or not. In the following example, the ITS attribute indicates that the
@@ -333,9 +333,9 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
    </tbody>
    </tgroup>
  </informaltable>
-</sect2>
+</section>
 
-<sect2 xml:id="sec-revhistory">
+<section xml:id="sec-revhistory">
   <title>Revision history</title>
   <para>
    A <emphasis>revision history</emphasis> lists all the high-level changes
@@ -423,5 +423,5 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
         </revision>
       </revhistory>
       </example>
-  </sect2>
-</sect1>
+  </section>
+</chapter>

@@ -4,7 +4,7 @@
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-outline">
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-outline">
  <title>Outline of a manual</title>
 
  <para>
@@ -13,7 +13,7 @@
   the document structure are documented here.
  </para>
 
- <sect2 xml:id="sec-book">
+ <section xml:id="sec-book">
   <title>Books</title>
   <para>
    For books, use a document structure that includes the following elements, in
@@ -287,9 +287,9 @@
     </listitem>
    </varlistentry>
   </variablelist>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-article">
+ <section xml:id="sec-article">
   <title>Articles</title>
   <para>
    For articles, use a document structure that includes the following elements,
@@ -317,5 +317,5 @@
     </para>
    </listitem>
   </orderedlist>
- </sect2>
-</sect1>
+ </section>
+</chapter>
