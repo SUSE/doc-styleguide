@@ -3148,7 +3148,7 @@ Entire hard disks are listed as devices without numbers, such as
  <sect2 xml:id="sec-task-element">
   <title>Task elements</title>
   <para>
-    The task element encapsulates a procedure, providing an explicit 
+    The <tag>task</tag> element encapsulates a procedure, providing an explicit 
     location for summary information, identifying prerequisites for 
     the task, examples and pointers to related information. Use it to 
     present instructions or steps required to perform a specific task.</para>
