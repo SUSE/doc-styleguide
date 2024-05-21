@@ -3145,6 +3145,66 @@ Entire hard disks are listed as devices without numbers, such as
   </table>
  </sect2>
 
+ <sect2 xml:id="sec-task-element">
+  <title>Task elements</title>
+  <para>
+    The <tag>task</tag> element encapsulates a procedure, providing an explicit 
+    location for summary information, identifying prerequisites for 
+    the task, examples and pointers to related information. Use it to 
+    present instructions or steps required to perform a specific task.</para>
+    <example xml:id="ex-task-source">
+      <title>Example of a task element (source)</title>
+   <screen>
+&lt;task xml:id="task.example"&gt;
+  &lt;title&gt;An example task&lt;/title&gt;
+  &lt;tasksummary&gt;
+   &lt;para&gt;This is the summary of this task.&lt;/para&gt;
+  &lt;/tasksummary&gt;
+  &lt;taskprerequisites&gt;
+   &lt;para&gt;This contains the requirements.&lt;/para&gt;
+  &lt;/taskprerequisites&gt;
+  &lt;procedure&gt;
+   &lt;title&gt;Description of useful steps&lt;/title&gt;
+   &lt;step&gt;
+    &lt;para&gt;The first step&lt;/para&gt;
+   &lt;/step&gt;
+   &lt;step&gt;
+    &lt;para&gt;The second step&lt;/para&gt;
+   &lt;/step&gt;
+   &lt;/procedure&gt;
+   &lt;taskrelated&gt;
+    &lt;para&gt;Add task-related information.&lt;/para&gt;
+   &lt;/taskrelated&gt;
+&lt;/task&gt;
+</screen>
+</example>
+
+<example xml:id="ex-task-output">
+  <title>Example of a task element (output)</title>
+<task xml:id="ex-TASK-TITLE">
+  <title>An example task</title>
+  <tasksummary>
+   <para>This is the summary of this task.</para>
+  </tasksummary>
+  <taskprerequisites>
+   <para>This contains the requirements.</para>
+  </taskprerequisites>
+  <procedure>
+   <title>Description of useful steps</title>
+   <step>
+    <para>The first step</para>
+   </step>
+   <step>
+    <para>The second step</para>
+   </step>
+  </procedure>
+  <taskrelated>
+   <para>Add task-related information.</para>
+  </taskrelated>
+</task>
+</example>
+ </sect2>
+
  <sect2 xml:id="sec-ui-item-markup">
   <title>User interface items</title>
   <para>
