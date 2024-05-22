@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sect1
+<!DOCTYPE chapter
 [
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-content">
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-content">
  <title>Documentation content</title>
 
  <para>
@@ -35,4 +35,4 @@
   </listitem>
  </itemizedlist>
 
-</sect1>
+</chapter>

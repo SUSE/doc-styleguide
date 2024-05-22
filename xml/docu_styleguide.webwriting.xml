@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sect1
+<!DOCTYPE chapter
 [
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-webwriting">
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-webwriting">
  <title>Writing for the Web</title>
 
  <para>
@@ -12,7 +12,7 @@
   optimized for the Web.
  </para>
 
- <sect2 xml:id="sec-topical">
+ <section xml:id="sec-topical">
   <title>Topical structure</title>
   <para>
    The most important thing to do with your Web copy is to help users get
@@ -52,9 +52,9 @@
     </para>
    </listitem>
   </itemizedlist>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-seo">
+ <section xml:id="sec-seo">
   <title>Writing SEO-friendly content</title>
   <para>
    SEO, or Search Engine Optimization, is the strategy to attract organic
@@ -158,9 +158,9 @@
     </listitem>
    </varlistentry>
   </variablelist>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-writing-global">
+ <section xml:id="sec-writing-global">
   <title>Writing for a global audience</title>
   <para>
    Remember that every document is a potential candidate for localization (translation). 
@@ -243,5 +243,5 @@
    </screen>
    </listitem>
    </itemizedlist>
- </sect2>
-</sect1>
+ </section>
+</chapter>

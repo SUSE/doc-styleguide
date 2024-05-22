@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sect1
+<!DOCTYPE chapter
 [
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-language">
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-language">
   <title>Language</title>
 
   <para>
@@ -38,14 +38,14 @@
     Style</citetitle>, 15th Edition.
   </para>
 
-  <sect2 xml:id="sec-abbreviation">
+  <section xml:id="sec-abbreviation">
     <title>Abbreviations</title>
     <para>
       Avoid using abbreviations, especially unusual ones. Avoid creating
       plurals of abbreviations, unless the abbreviation is an acronym or
       initialism.
     </para>
-    <sect3 xml:id="sec-acronym">
+    <section xml:id="sec-acronym">
       <title>Acronyms</title>
       <para>
         Introduce acronyms by providing the expansion in parentheses after the
@@ -70,8 +70,8 @@
         For clarity, avoid using possessive forms of acronyms. For example, do
         not use <quote>XMLʼs specification.</quote>
       </para>
-    </sect3>
-    <sect3 xml:id="sec-latin">
+    </section>
+    <section xml:id="sec-latin">
       <title>Latin abbreviations</title>
       <para>
         Do not use Latin abbreviations. Use the full English form: for example,
@@ -79,18 +79,18 @@
         exception to this rule, the abbreviation <emphasis>etc.</emphasis> is
         allowed.
       </para>
-    </sect3>
-    <sect3 xml:id="sec-measurement">
+    </section>
+    <section xml:id="sec-measurement">
       <title>Units of measurement</title>
       <para>
         You may use abbreviations of common units of measurement. For more
         information about units of measurement, see
         <xref linkend="sec-number"/>.
       </para>
-    </sect3>
-  </sect2>
+    </section>
+  </section>
 
-  <sect2 xml:id="sec-bias">
+  <section xml:id="sec-bias">
     <title>Biases and inclusiveness</title>
     <para>
       Do not artificially limit your audience by excluding or offending members
@@ -118,11 +118,11 @@
       Chicago Manual of Style</citetitle>, 5.43. For information about names of
       example items, see <xref linkend="sec-name"/>.
     </para>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-capitalization">
+  <section xml:id="sec-capitalization">
     <title>Capitalization of headings and titles</title>
-    <sect3 xml:id="sec-capitalization-sentence">
+    <section xml:id="sec-capitalization-sentence">
       <title>Most titles: sentence-style capitalization</title>
       <para>
         Sentence-style capitalization is the most common capitalization used in
@@ -133,8 +133,8 @@
         content. An example for sentence-style capitalization is <quote>Ceph
         core components.</quote>
       </para>
-    </sect3>
-    <sect3 xml:id="sec-capitalization-title">
+    </section>
+    <section xml:id="sec-capitalization-title">
       <title>Document titles: title-style capitalization</title>
       <para>
         For document titles, such as book, article, and set titles, use
@@ -189,10 +189,10 @@
         Guide</quote> (book title) or <quote>Kernel Module Packages for
         SUSE-Based Distributions</quote> (article title).
       </para>
-    </sect3>
-  </sect2>
+    </section>
+  </section>
 
-  <sect2 xml:id="sec-comma">
+  <section xml:id="sec-comma">
     <title>Commas</title>
     <para>
       Use commas to separate elements in a series of three or more elements,
@@ -204,17 +204,17 @@
       by a comma. For example, <quote>Before using YaST Online Update,
       configure a network connection.</quote>
     </para>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-contraction">
+  <section xml:id="sec-contraction">
     <title>Contractions</title>
     <para>
       Do not use contractions (such as <quote>don't</quote>), unless you are
       purposefully writing a casual document.
     </para>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-dash">
+  <section xml:id="sec-dash">
     <title>Dashes</title>
     <para>
       Use en dashes (&ndash;) between numbers in a range in tables and figures.
@@ -223,17 +223,17 @@
       For punctuation, use em dashes (&mdash;). Do not surround em dashes with
       spaces. Use em dashes sparingly.
     </para>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-end-sentence">
+  <section xml:id="sec-end-sentence">
     <title>End of sentence punctuation</title>
     <para>
       End sentences in a period. Avoid using exclamation marks. Restrict
       question marks to question and answer sections.
     </para>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-file-language">
+  <section xml:id="sec-file-language">
     <title>File and directory names</title>
     <para>
       Under Linux, objects like directories, printers, or flash drives are all
@@ -284,9 +284,9 @@
       When it is necessary to refer to file extensions, such as in compound
       words like <quote>PDF file,</quote> always capitalize the extension.
     </para>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-heading">
+  <section xml:id="sec-heading">
     <title>Headings</title>
     <para>
       When writing a descriptive section, use a noun-based heading title, for
@@ -303,9 +303,9 @@
       For advice on how to nest sections, refer to
       <xref linkend="sec-outline-level"/>.
     </para>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-hyphens">
+  <section xml:id="sec-hyphens">
     <title>Hyphens</title>
     <para>
       Generally, hyphens are used as joiners for two or more words that form a
@@ -362,16 +362,16 @@
       when they occur after a noun. For example: <quote>This is the up-to-date
       version</quote> and <quote>The calendar is up to date.</quote>
     </para>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-language-list">
+  <section xml:id="sec-language-list">
     <title>Lists</title>
     <para>
       For information about creating lists, see <xref linkend="sec-list"/>.
     </para>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-number">
+  <section xml:id="sec-number">
     <title>Numbers and measurements</title>
     <para>
       Write the integers zero through nine as words. Use numerals for all other
@@ -388,17 +388,17 @@
       For more information, see <citetitle>The Chicago Manual of
       Style</citetitle> 9.6 and 9.16.
     </para>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-possessive">
+  <section xml:id="sec-possessive">
     <title>Possessives</title>
     <para>
       Do not use possessives of acronyms and trademarked terms. Avoid
       possessives of inanimate objects.
     </para>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-prefix">
+  <section xml:id="sec-prefix">
     <title>Prefixes</title>
     <para>
       Add a hyphen after the prefix to prefixed words only if you foresee
@@ -409,9 +409,9 @@
       For more information about using hyphens, see
       <xref linkend="sec-hyphens"/>.
     </para>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-quotation">
+  <section xml:id="sec-quotation">
     <title>Quotations</title>
     <para>
       Use quotations to quote from sources, such as books. In all other cases,
@@ -463,17 +463,17 @@
         <quote>Suds may froth,</quote> the sign reads.
       </para>
     </example>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-semicolon">
+  <section xml:id="sec-semicolon">
     <title>Semicolons</title>
     <para>
       Avoid using semicolons to join sentences. You may use semicolons in place
       of commas in very complicated series.
     </para>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-structure-sentence">
+  <section xml:id="sec-structure-sentence">
     <title>Sentence structure</title>
     <para>
       Form clear and direct sentences with 20 words or less. Avoid complicated
@@ -490,18 +490,18 @@
       the action itself. As an example, write: <quote>To save the settings,
       click <guimenu>OK</guimenu>.</quote>
     </para>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-slash">
+  <section xml:id="sec-slash">
     <title>Slashes</title>
     <para>
       Do not use slashes except when they are part of a standard technical
       term, such as <emphasis>TCP/IP</emphasis> or
       <emphasis>client/server</emphasis>.
     </para>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-tense">
+  <section xml:id="sec-tense">
     <title>Tense</title>
     <para>
       Use the simple present tense. Apply the simple present tense even to
@@ -509,9 +509,9 @@
       prerequisites of an action. For example, <quote>If this happens, go
       there.</quote> or <quote>Glibc is installed.</quote>
     </para>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-tone">
+  <section xml:id="sec-tone">
     <title>Tone and voice</title>
     <para>
       Maintain a professional tone. Do not use contractions, except in casual
@@ -544,9 +544,9 @@
       To refer to other parts of the document, start with <quote>For more
       information (about), see.</quote>
     </para>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-trademark">
+  <section xml:id="sec-trademark">
     <title>Trademarks</title>
     <para>
       Most products referenced in the documentation are trademarked. Follow
@@ -576,9 +576,9 @@
       For more information about markup aspects, see
       <xref linkend="sec-product"/>.
     </para>
-  </sect2>
+  </section>
 
-  <sect2 xml:id="sec-ui-item-language">
+  <section xml:id="sec-ui-item-language">
     <title>User interface items</title>
     <para>
       When referring to labels of user interface items, do not include ending
@@ -602,5 +602,5 @@
       For more information about markup for UI labels, see
       <xref linkend="sec-ui-item-markup"/>.
     </para>
-  </sect2>
-</sect1>
+  </section>
+</chapter>

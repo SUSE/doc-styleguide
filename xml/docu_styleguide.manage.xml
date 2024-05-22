@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sect1
+<!DOCTYPE chapter
 [
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-manage">
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-manage">
  <title>Managing documents</title>
 
  <para>
@@ -12,7 +12,7 @@
   manage documents.
  </para>
 
- <sect2 xml:id="sec-remark">
+ <section xml:id="sec-remark">
   <title>Remarks</title>
   <para>
    Use remarks for editorial comments. Remarks can be placed within, before,
@@ -71,9 +71,9 @@
     </formalpara>
    </listitem>
   </itemizedlist>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-xml-comment">
+ <section xml:id="sec-xml-comment">
   <title>XML comments</title>
   <para>
    XML comments can be used for temporarily disabling portions of text.
@@ -86,9 +86,9 @@
    For information about formatting XML comments, see
    <xref linkend="sec-format-xml"/>.
   </para>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-entity">
+ <section xml:id="sec-entity">
   <title>Entities</title>
   <para>
    Entities are used to expand text. There are several situations in which
@@ -119,7 +119,7 @@
    automatically be expanded everywhere within the document.
   </para>
 
-<sect3 xml:id="sec-type-entity">
+<section xml:id="sec-type-entity">
     <title>Common types of entities</title>
     <para>Official generic entities are maintained in the
       <link xlink:href="https://github.com/openSUSE/doc-kit">Doc Kit repository</link>.
@@ -233,9 +233,9 @@
      <para>Never add this tag to the content within <tag class="emptytag">command</tag> and <tag class="emptytag">systemitem</tag> elements.
      Capitalizing anything inside these elements makes the content ambiguous.
      </para>
-</sect3>
+</section>
 
-<sect3 xml:id="sec-use-entity">
+<section xml:id="sec-use-entity">
    <title>Using entity files</title>
    <para>&suse; uses a set of custom entities.
    Find these entities in the <filename>*.ent</filename>
@@ -315,10 +315,10 @@
      </callout>
     </calloutlist>
    </example>
-</sect3>
-</sect2>
+</section>
+</section>
 
- <sect2 xml:id="sec-xinclude">
+ <section xml:id="sec-xinclude">
   <title>XInclude elements</title>
   <para>
    XInclude elements are used to create modular source files that are easier
@@ -351,5 +351,5 @@
    <tag class="attribute">parse="text"</tag> to the
    <tag class="emptytag">xi:include</tag> element.
   </para>
- </sect2>
-</sect1>
+ </section>
+</chapter>

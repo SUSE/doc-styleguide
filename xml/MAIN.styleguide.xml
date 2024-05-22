@@ -2,18 +2,18 @@
 <?xml-stylesheet href="urn:x-suse:xslt:profiling:docbook50-profile.xsl"
  type="text/xml" 
   title="Profiling step"?>
-<!DOCTYPE article
+<!DOCTYPE book
 [
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<article version="5.2" xml:lang="en" xml:id="art-styleguide"
+<book version="5.2" xml:lang="en" xml:id="art-styleguide"
   xmlns="http://docbook.org/ns/docbook"
   xmlns:xi="http://www.w3.org/2001/XInclude"
   xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:its="http://www.w3.org/2005/11/its"
   xmlns:dm="urn:x-suse:ns:docmanager">
- <title>SUSE Documentation Style Guide<phrase condition="changes"> (with changelog)</phrase></title>
+ <title>SUSE Documentation Style Guide</title>
  <info>  
   <!-- TODO: provide a listing of possible and validatable meta entry values. Maybe in our geekodoc repo? -->
   <!-- add author's e-mail -->
@@ -80,4 +80,4 @@
  <xi:include href="docu_styleguide.terminology.xml"/>
  <xi:include href="docu_styleguide.contributors.xml"/>
  <xi:include href="gfdl.xml"/>
-</article>
+</book>

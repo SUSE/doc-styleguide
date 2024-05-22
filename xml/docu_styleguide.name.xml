@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sect1
+<!DOCTYPE chapter
 [
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-name">
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-name">
  <title>Names of example items</title>
 
  <para>
@@ -15,16 +15,16 @@
   See also <xref linkend="sec-entity"/>.
  </para>
 
- <sect2 xml:id="sec-domain">
+ <section xml:id="sec-domain">
   <title>Domains</title>
   <para>
    Use <link xlink:href="http://www.example.com"/> and
    <link xlink:href="http://www.example.org"/> as example domains. Both
    domains were registered for use in documentation.
   </para>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-host">
+ <section xml:id="sec-host">
   <title>Host names</title>
   <para>
    Use objects of the solar system: For the most important system, use
@@ -32,9 +32,9 @@
    planets such as <systemitem>earth</systemitem> or
    <systemitem>mars</systemitem>.
   </para>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-ipv4">
+ <section xml:id="sec-ipv4">
   <title>IPv4 addresses</title>
   <para>
    Use addresses from the class C subnet <literal>192.168.255.0</literal>
@@ -44,9 +44,9 @@
    network ranges. For more information, see
    <link xlink:href="http://en.wikipedia.org/wiki/Private_network"/>.
   </para>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-ipv6">
+ <section xml:id="sec-ipv6">
   <title>IPv6 addresses</title>
   <para>
    Use addresses from the subnet <literal>2001:0db8::/32</literal> for
@@ -58,14 +58,14 @@
    For more information, see
    <link xlink:href="http://en.wikipedia.org/wiki/IPv6_subnetting_reference"/>.
   </para>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-user">
+ <section xml:id="sec-user">
   <title>Users</title>
   <para>
    For example users, use free-software mascots, such as Tux (Linux Kernel),
    Wilber (The GIMP), Geeko (&suse;), Foxkeh (Firefox), Konqi (KDE), or Duke
    (Java).
   </para>
- </sect2>
-</sect1>
+ </section>
+</chapter>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sect1
+<!DOCTYPE chapter
 [
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-structure">
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-structure">
  <title>Structure and markup</title>
 
  <para>
@@ -87,7 +87,7 @@
   </tgroup>
  </table>
 
- <sect2 xml:id="sec-admonition">
+ <section xml:id="sec-admonition">
   <title>Admonitory and advisory paragraphs</title>
   <para>
    To make readers aware of potential problems and recent changes, or to
@@ -188,9 +188,9 @@
     Always wait until formatting has finished.
    </para>
   </warning>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-application">
+ <section xml:id="sec-application">
   <title>Application names</title>
   <para>
    When referring to an application, add a
@@ -202,9 +202,9 @@
    This will not result in a visual change but disables hyphenation in browsers.
    This markup sidesteps hyphenation issues of CamelCased names.
   </para>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-callout">
+ <section xml:id="sec-callout">
   <title>Callouts</title>
   <para>
    Callouts allow annotating examples, such as configuration files or commands
@@ -354,9 +354,9 @@ default 0 <co xml:id="co-default"/></screen>
       </calloutlist>
    </example>
 
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-command-line">
+ <section xml:id="sec-command-line">
   <title>Command-line input and command-line output</title>
   <para>
    When dealing with user input and system output shorter than 30
@@ -474,7 +474,7 @@ default 0 <co xml:id="co-default"/></screen>
     </tbody>
    </tgroup>
   </table>
-  <sect3 xml:id="sec-command">
+  <section xml:id="sec-command">
    <title>Commands</title>
    <para>
     Commands can be embedded in running text or presented as part of a
@@ -503,8 +503,8 @@ default 0 <co xml:id="co-default"/></screen>
    <para>
     See also <xref linkend="sec-prompt"/>.
    </para>
-  </sect3>
-  <sect3 xml:id="sec-file-markup">
+  </section>
+  <section xml:id="sec-file-markup">
    <title>File names</title>
    <para>
     A file name is the name of a file on a local or network disk. Can
@@ -518,8 +518,8 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
    follow the naming conventions at
    <link xlink:href="https://github.com/SUSE/doc-modular/blob/main/templates/README.md"/>.
   </para>
-  </sect3>
-  <sect3 xml:id="sec-literal">
+  </section>
+  <section xml:id="sec-literal">
    <title>Literals</title>
    <para>
     Use
@@ -527,8 +527,8 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
     to mark up data taken literally from a computer system.
    </para>
 <screen>To create a comment, insert &lt;literal&gt;#&lt;/literal&gt; characters.</screen>
-  </sect3>
-  <sect3 xml:id="sec-placeholder">
+  </section>
+  <section xml:id="sec-placeholder">
     <title>Placeholders</title>
     <para>
      To mark up text that readers need to replace, use the
@@ -540,8 +540,8 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
     </para>
  <screen>To list the contents of a directory, execute
  &lt;command&gt;ls &lt;replaceable&gt;DIRECTORY&lt;/replaceable&gt;&lt;/command&gt;.</screen>
-   </sect3>
-  <sect3 xml:id="sec-prompt">
+   </section>
+  <section xml:id="sec-prompt">
    <title>Prompts</title>
    <para>
     When documenting commands entered into Bash with a
@@ -574,8 +574,8 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
     <emphasis>user</emphasis>, <emphasis>root</emphasis> and <emphasis>sudo</emphasis> prompts.
     For more information, see <xref linkend="sec-entity"/>.
    </para>
-  </sect3>
-  <sect3 xml:id="sec-screen">
+  </section>
+  <section xml:id="sec-screen">
    <title>Screens</title>
    <para>
     Screens are used to present:
@@ -728,8 +728,8 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
     See also <xref linkend="sec-example"/>, <xref linkend="sec-command"/>,
     <xref linkend="sec-prompt"/>, and <xref linkend="sec-callout"/>.
    </para>
-  </sect3>
-  <sect3 xml:id="sec-variable">
+  </section>
+  <section xml:id="sec-variable">
    <title>Variable names</title>
    <para>
     To reference to names of variables, use the
@@ -738,10 +738,10 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
    </para>
 <screen>To select another display manager, start the YaST system configuration editor
 and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
-  </sect3>
- </sect2>
+  </section>
+ </section>
 
- <sect2 xml:id="sec-cross-reference">
+ <section xml:id="sec-cross-reference">
   <title>Cross-references</title>
   <para>
    Use the <tag class="emptytag">xref</tag>
@@ -809,9 +809,9 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
     <para>Do not prefix or suffix cross-references with text labels such
     as <quote>appendix,</quote> <quote>chapter,</quote> <quote>table,</quote>
     or <quote>figure.</quote> Such labels are generated automatically.</para>
-  </sect2>
+  </section>
 
- <sect2 xml:id="sec-emphasis">
+ <section xml:id="sec-emphasis">
   <title>Emphasis</title>
   <para>
    Where possible, indicate stress with language only. If that is not
@@ -826,9 +826,9 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
   </para>
 <screen>This will be displayed in &lt;emphasis&gt;italics&lt;/emphasis&gt;. This
 will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-example">
+ <section xml:id="sec-example">
   <title>Examples</title>
   <para>
    Use examples to illustrate complex processes. The rules established in
@@ -902,9 +902,9 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     </tbody>
    </tgroup>
   </table>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-link">
+ <section xml:id="sec-link">
   <title>External links</title>
   <para>
    Information that is relevant within &suse; documentation is often
@@ -1023,9 +1023,9 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    <xref linkend="sec-cross-reference"/> and
    <xref linkend="sec-other-external"/>.
   </para>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-link-to-susecom">
+ <section xml:id="sec-link-to-susecom">
   <title>External links to &suse; documentation</title>
   <para>
     The &suse; documentation is hosted under <uri>documentation.suse.com</uri>.
@@ -1158,9 +1158,9 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
    </listitem>
    </itemizedlist>
    </note>
-   </sect2>
+   </section>
 
- <sect2 xml:id="sec-figure">
+ <section xml:id="sec-figure">
   <title>Figures</title>
   <para>
    For figures within lists or procedures, use the
@@ -1300,15 +1300,15 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
     </tbody>
    </tgroup>
   </table>
-  <sect3 xml:id="sec-graphic">
+  <section xml:id="sec-graphic">
    <title>Graphics</title>
    <para>
     Keep graphics as simple as possible. Use as little text as possible. To
     allow for translation, reserve twice as much space for runs of text as
     the English version of it consumes.
    </para>
-  </sect3>
-  <sect3 xml:id="sec-screenshot">
+  </section>
+  <section xml:id="sec-screenshot">
    <title>Screenshots</title>
    <para>
     Use screenshots to illustrate complex situations in which the user
@@ -1421,10 +1421,10 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
      </para>
     </listitem>
    </itemizedlist>
-  </sect3>
- </sect2>
+  </section>
+ </section>
 
- <sect2 xml:id="sec-glossary">
+ <section xml:id="sec-glossary">
   <title>Glossaries</title>
   <para>
    An optional glossary contains terms and their definitions. Make sure that
@@ -1492,9 +1492,9 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
 &lt;/glossary&gt;</screen>
 
   </example>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-id">
+ <section xml:id="sec-id">
   <title>Identifiers</title>
   <itemizedlist>
    <listitem>
@@ -1807,9 +1807,9 @@ xml:id="tab-install-source"</screen>
     </tbody>
    </tgroup>
   </table>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-list">
+ <section xml:id="sec-list">
   <title>Lists</title>
   <para>
    &suse; documentation uses the following types of lists (the respective XML
@@ -2000,7 +2000,7 @@ xml:id="tab-install-source"</screen>
     </tbody>
    </tgroup>
   </table>
-  <sect3 xml:id="sec-itemized-list">
+  <section xml:id="sec-itemized-list">
    <title>Itemized lists</title>
    <para>
     Use itemized lists whenever the order of list items is irrelevant.
@@ -2043,8 +2043,8 @@ xml:id="tab-install-source"</screen>
      </listitem>
     </itemizedlist>
    </example>
-  </sect3>
-  <sect3 xml:id="sec-ordered-list">
+  </section>
+  <section xml:id="sec-ordered-list">
    <title>Ordered lists</title>
    <para>
     Use ordered lists when items have a strict order, hierarchy or importance.
@@ -2092,8 +2092,8 @@ xml:id="tab-install-source"</screen>
      </listitem>
     </orderedlist>
    </example>
-  </sect3>
-  <sect3 xml:id="sec-variable-list">
+  </section>
+  <section xml:id="sec-variable-list">
    <title>Variable lists</title>
    <para>
     Use variable lists when defining terms or describing options.
@@ -2161,10 +2161,10 @@ xml:id="tab-install-source"</screen>
      </varlistentry>
     </variablelist>
    </example>
-  </sect3>
- </sect2>
+  </section>
+ </section>
 
- <sect2 xml:id="sec-keyboard">
+ <section xml:id="sec-keyboard">
   <title>Keys and key combinations</title>
   <para>
    Capitalize all keys as printed on a standard keyboard. Capitalize all letter
@@ -2357,9 +2357,9 @@ xml:id="tab-install-source"</screen>
     </tbody>
    </tgroup>
   </table>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-outline-level">
+ <section xml:id="sec-outline-level">
   <title>Outline levels and sectioning</title>
   <para>
    Create sections using the
@@ -2382,9 +2382,9 @@ xml:id="tab-install-source"</screen>
    For more information about writing headlines, see
    <xref linkend="sec-heading"/>.
   </para>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-procedure">
+ <section xml:id="sec-procedure">
   <title>Procedures</title>
   <para>
    Use procedures to describe sequential tasks. A procedure consists of the
@@ -2542,9 +2542,9 @@ xml:id="tab-install-source"</screen>
     </tbody>
    </tgroup>
   </table>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-product">
+ <section xml:id="sec-product">
   <title>Products</title>
   <para>
    Always use the preferred product name instead of, for example, an
@@ -2554,9 +2554,9 @@ xml:id="tab-install-source"</screen>
    hyphenation:
   </para>
 <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-profiling">
+ <section xml:id="sec-profiling">
   <title>Profiling</title>
   <para>
    Profiling is convenient for the creation of consistent documentation 
@@ -2642,9 +2642,9 @@ Entire hard disks are listed as devices without numbers, such as
 </screen>
 </example>
 
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-question">
+ <section xml:id="sec-question">
   <title>Questions and answers</title>
   <para>
    Use questions-and-answers sections to present information about
@@ -2819,9 +2819,9 @@ Entire hard disks are listed as devices without numbers, such as
     </tbody>
    </tgroup>
   </table>
- </sect2>
+ </section>
 
-<sect2 xml:id="sec-other-external">
+<section xml:id="sec-other-external">
   <title>References to other external resources</title>
   <remark>sknorr, 2014-01-22: This section could probably use a better
         structure instead of this mishmash.
@@ -2881,9 +2881,9 @@ Entire hard disks are listed as devices without numbers, such as
    Other types of references to resources are described in
    <xref linkend="sec-cross-reference"/> and <xref linkend="sec-link"/>.
   </para>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-table">
+ <section xml:id="sec-table">
   <title>Tables</title>
   <para>
    Use tables to present many similar facts. Tables are easy to
@@ -3143,9 +3143,9 @@ Entire hard disks are listed as devices without numbers, such as
     </tbody>
    </tgroup>
   </table>
- </sect2>
+ </section>
 
- <sect2 xml:id="sec-ui-item-markup">
+ <section xml:id="sec-ui-item-markup">
   <title>User interface items</title>
   <para>
    To mark up single user interface items, use
@@ -3210,5 +3210,5 @@ Entire hard disks are listed as devices without numbers, such as
     </tbody>
    </tgroup>
   </table>
- </sect2>
-</sect1>
+ </section>
+</chapter>

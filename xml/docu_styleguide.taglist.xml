@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE sect1
+<!DOCTYPE chapter
 [
   <!ENTITY % entities SYSTEM "entity-decl.ent">
     %entities;
 ]>
-<sect1 version="5.0" xml:id="sec-taglist"
+<chapter version="5.0" xml:id="sec-taglist"
  xmlns="http://docbook.org/ns/docbook" 
  xmlns:xi="http://www.w3.org/2001/XInclude" 
  xmlns:xlink="http://www.w3.org/1999/xlink"
@@ -38,10 +38,10 @@
   <link xlink:href="https://tdg.docbook.org/tdg/5.2/"/>
 </para>
 
- <sect2 xml:id="sec-taglis-docbook">
+ <section xml:id="sec-taglis-docbook">
  <title>Using DocBook tags</title>
  
- <sect3>
+ <section>
   <title>Meta elements</title>
   <para>
    All the elements at the section level and above, and many other elements,
@@ -274,9 +274,9 @@ titleabbrev
    </tbody>
    </tgroup>
  </informaltable>
- </sect3>
+ </section>
  
- <sect3>
+ <section>
   <title>Structure elements</title>
   <note>
    <para>
@@ -464,9 +464,9 @@ qandaset
     </tbody>
    </tgroup>
    </informaltable>
- </sect3>
+ </section>
  
- <sect3>
+ <section>
   <title>Block elements</title>
   <para>
    The block elements occur immediately below the component and sectioning
@@ -776,9 +776,9 @@ warning
     </tbody>
    </tgroup>
   </informaltable>
- </sect3>
+ </section>
  
- <sect3>
+ <section>
   <title>Inline elements</title>
   <para>
    Inline elements are used to mark up running text. In published documents,
@@ -1205,10 +1205,10 @@ xref
     </tbody>
    </tgroup>
   </informaltable>
- </sect3>
-</sect2>
+ </section>
+</section>
  
-<sect2 xml:id="sec-taglist-ITS">
+<section xml:id="sec-taglist-ITS">
  <title>Using ITS tags</title>
  <para>
   With GeekoDoc 2, it is possible to use the Internationalization Tag Set (ITS)
@@ -1230,5 +1230,5 @@ xref
   <screen>
 Click &lt;guimenu its:translate="no">Save&lt;/guimenu>.
   </screen>
-</sect2>
-</sect1>
+</section>
+</chapter>
