@@ -905,7 +905,7 @@ guimenu
        </screen>
       </entry>
       <entry>
-       The name of a menu in a GUI
+        To mark up all GUI elements like button, label and menu
       </entry>
       <entry>
        <para>Yes</para>
