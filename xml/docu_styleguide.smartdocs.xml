@@ -8,253 +8,281 @@
        xmlns:xi="http://www.w3.org/2001/XInclude" 
        xmlns:xlink="http://www.w3.org/1999/xlink" 
        xmlns:its="http://www.w3.org/2005/11/its" version="5.0" xml:id="sec-smartdocs">
-
- <title>Working with &sd;</title>
- <para>
-  &sd; represent a modular approach to documentation whose goal is producing sets of
-  adaptable, solution-based, easy-to-find and reusable documents.
- </para>
- <para>
-  Rather than covering a complete technology or a set of problems, each &sd; article serves one
-  distinct purpose. Each article stands for itself, including requirements, context, instructions,
-  troubleshooting and FAQs.
- </para>
- <para>
-  &sd; consist of topics&mdash;smaller information units that can be reused in different contexts.
-  Four different topic types are provided:
- </para>
- <itemizedlist>
-  <listitem>
-   <para>
-    Task topics instruct the user how to perform certain tasks.
-   </para>
-  </listitem>
-  <listitem>
-   <para>
-    Concept topics explain underlying concepts to the users.
-   </para>
-  </listitem>
-  <listitem>
-   <para>
-    Reference topics inform the user about basic facts (settings, options, parameters, etc.).
-   </para>
-  </listitem>
-  <listitem>
-   <para>
-    Glue topics help navigate complex topics and provide links to related information
-    (combine texts or structures that do not fit into any other category). Typical
-    glue topics include <quote>For more information</quote> and <quote>What's next</quote> sections.
-    Use glue topics to provide an additional layer of navigation for your article.
-   </para>
-  </listitem>
- </itemizedlist>
+  <title>Working with &sd;</title>
   <para>
-   Articles are built by bundling these topics into assembly files&mdash;organizational units to
-   structure the topics to create a coherent and meaningful document.
+    &sd; represent a modular approach to documentation whose goal is producing
+    sets of adaptable, solution-based, easy-to-find and reusable documents.
   </para>
   <para>
-   To create a &sd; project, use the templates for the assembly and its topical components
-   that are provided in the <link
+    Rather than covering a complete technology or a set of problems, each &sd;
+    article serves one distinct purpose. Each article stands for itself,
+    including requirements, context, instructions, troubleshooting and FAQs.
+  </para>
+  <para>
+    &sd; consist of topics&mdash;smaller information units that can be reused
+    in different contexts. Four different topic types are provided:
+  </para>
+  <itemizedlist>
+    <listitem>
+      <para>
+        Task topics instruct the user how to perform certain tasks.
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        Concept topics explain underlying concepts to the users.
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        Reference topics inform the user about basic facts (settings, options,
+        parameters, etc.).
+      </para>
+    </listitem>
+    <listitem>
+      <para>
+        Glue topics help navigate complex topics and provide links to related
+        information (combine texts or structures that do not fit into any other
+        category). Typical glue topics include <quote>For more
+        information</quote> and <quote>What's next</quote> sections. Use glue
+        topics to provide an additional layer of navigation for your article.
+      </para>
+    </listitem>
+  </itemizedlist>
+  <para>
+    Articles are built by bundling these topics into assembly
+    files&mdash;organizational units to structure the topics to create a
+    coherent and meaningful document.
+  </para>
+  <para>
+    To create a &sd; project, use the templates for the assembly and its
+    topical components that are provided in the
+    <link
     xlink:href="https://github.com/SUSE/doc-modular/tree/main/templates">doc-modular
     repository</link>.
   </para>
-
-<section xml:id="sec-taglist-smartdocs">
-  <title>Using ITS tags with assemblies</title>
-  <para>Assembly files use ITS tags and attributes which flag whether the content of
-  the tag should be translated or not. In the following example, the ITS attribute indicates that the
-  content of the tag should not be translated:
-  </para>
+  <section xml:id="sec-taglist-smartdocs">
+    <title>Using ITS tags with assemblies</title>
+    <para>
+      Assembly files use ITS tags and attributes which flag whether the content
+      of the tag should be translated or not. In the following example, the ITS
+      attribute indicates that the content of the tag should not be translated:
+    </para>
 <screen>&lt;meta name="maintainer" content="Smart Doc author" its:translate="no"/></screen>
-<para>
-If the <tag class="attribute">its:translate</tag> attribute is set to <tag class="attvalue">yes</tag>, translation is needed.
-</para>
-<informaltable>
-  <tgroup cols="3">
-   <colspec colnum="1" colname="c1" colwidth="1.25*" />
-   <colspec colnum="2" colname="c2" colwidth="3.0*" />
-   <colspec colnum="3" colname="c3" colwidth="1*" />
-   <thead>
-    <row>
-     <entry>Element name</entry>
-     <entry>Description</entry>
-     <entry>Translation</entry>
-    </row>
-   </thead>
-  <tbody>
-   <row>
-    <entry>
-     <screen>
+    <para>
+      If the <tag class="attribute">its:translate</tag> attribute is set to
+      <tag class="attvalue">yes</tag>, translation is needed.
+    </para>
+    <informaltable>
+      <tgroup cols="3">
+        <colspec colnum="1" colname="c1" colwidth="1.25*" />
+        <colspec colnum="2" colname="c2" colwidth="3.0*" />
+        <colspec colnum="3" colname="c3" colwidth="1*" />
+        <thead>
+          <row>
+            <entry>Element name</entry>
+            <entry>Description</entry>
+            <entry>Translation</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>
+<screen>
 &lt;meta name="bugtracker" its:translate="no">
      </screen>
-    </entry>
-    <entry>
+            </entry>
+            <entry>
      &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
     </entry>
-    <entry>
+            <entry>
      No
     </entry>
-   </row>
-   <row>
-    <entry>
-    <screen>
+          </row>
+          <row>
+            <entry>
+<screen>
 &lt;phrase role="url">https://bugzilla.suse.com/enter_bug.cgi&lt;/phrase>
      </screen>
-    </entry>
-    <entry>
+            </entry>
+            <entry>
      &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
     </entry>
-    <entry>No</entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+            <entry>No</entry>
+          </row>
+          <row>
+            <entry>
+<screen>
 &lt;phrase role="component">Non-product-specific documentation&lt;/phrase>
      </screen>
-    </entry>
-    <entry>
+            </entry>
+            <entry>
      &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
     </entry>
-    <entry>
+            <entry>
      No
     </entry>
-   </row>
-   <row>
-    <entry>
-    <screen>
+          </row>
+          <row>
+            <entry>
+<screen>
 &lt;phrase role="product">&sd;&lt;/phrase>
      </screen>
-    </entry>
-    <entry>
+            </entry>
+            <entry>
      &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
     </entry>
-    <entry>
+            <entry>
      No
     </entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+          </row>
+          <row>
+            <entry>
+<screen>
 &lt;phrase role="assignee">assignee@suse.com&lt;/phrase>
      </screen>
-    </entry>
-    <entry>
+            </entry>
+            <entry>
      &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
      </entry>
-    <entry>
+            <entry>
      No
     </entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+          </row>
+          <row>
+            <entry>
+<screen>
 &lt;meta name="translation" its:translate="no"/>
      </screen>
-    </entry>
-    <entry>
+            </entry>
+            <entry>
      &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
     </entry>
-    <entry>
-     <para>
-      No
-     </para>
-     </entry>
-   </row>
-   <row>
-    <entry>
-    <screen>
+            <entry>
+              <para>
+                No
+              </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+<screen>
 &lt;phrase role="trans">yes&lt;/phrase>
      </screen>
-    </entry>
-    <entry>
+            </entry>
+            <entry>
      &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
     </entry>
-    <entry>No</entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+            <entry>No</entry>
+          </row>
+          <row>
+            <entry>
+<screen>
 &lt;phrase role="language">de-de,cs-cz&lt;/phrase>
      </screen>
+            </entry>
+            <entry>&suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
     </entry>
-    <entry>&suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
-    </entry>
-    <entry>No</entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+            <entry>No</entry>
+          </row>
+          <row>
+            <entry>
+<screen>
 &lt;meta name="architecture" content="x86;power"
 its:translate="no"/>
      </screen>
-    </entry>
-    <entry>
+            </entry>
+            <entry>
      &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
     </entry>
-    <entry>No</entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+            <entry>No</entry>
+          </row>
+          <row>
+            <entry>
+<screen>
 &lt;meta name="productname" its:translate="no"/>
      </screen>
-    </entry>
-    <entry>
+            </entry>
+            <entry>
      The formal name of a product
     </entry>
-    <entry>No</entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+            <entry>No</entry>
+          </row>
+          <row>
+            <entry>
+<screen>
 &lt;productname version="15-SP5">&sles;&lt;/productname>
      </screen>
-    </entry>
-    <entry>
+            </entry>
+            <entry>
      A number assigned to a product
     </entry>
-    <entry>No</entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+            <entry>No</entry>
+          </row>
+          <row>
+            <entry>
+<screen>
 &lt;meta name="title" its:translate="yes">
 short title for SEO and social media, max. 55 chars&lt;/meta>
      </screen>
-    </entry>
-    <entry>
+            </entry>
+            <entry>
      SEO-specific info. Adhere to the length limitations.
     </entry>
-    <entry><para>Yes</para><para>Stick to the length limitations, min. 29 chars and max. 55 chars</para></entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+            <entry>
+              <para>
+                Yes
+              </para>
+              <para>
+                Stick to the length limitations, min. 29 chars and max. 55
+                chars
+              </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+<screen>
 &lt;meta name="description" its:translate="yes">
 short description, max. 150 chars&lt;/meta>
      </screen>
-    </entry>
-    <entry>
+            </entry>
+            <entry>
     SEO-specific info. Adhere to the length limitations.
     </entry>
-    <entry><para>Yes</para><para>Stick to the length limitations, max. 150 chars</para></entry>
-    </row>
-    <row>
-    <entry>
-     <screen>
+            <entry>
+              <para>
+                Yes
+              </para>
+              <para>
+                Stick to the length limitations, max. 150 chars
+              </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+<screen>
 &lt;meta name="social-descr" its:translate="yes">
 ultrashort description for social media, max. 55 chars&lt;/meta>
      </screen>
-    </entry>
-    <entry>
+            </entry>
+            <entry>
      SEO-specific info. Adhere to the length limitations.
     </entry>
-    <entry><para>Yes</para><para>Stick to the length limitations, max. 55 chars</para></entry>
-   </row>
-   <row>
-    <entry>
-    <para><emphasis role="bold">Doc Manager tags:</emphasis></para>
-     <screen>
+            <entry>
+              <para>
+                Yes
+              </para>
+              <para>
+                Stick to the length limitations, max. 55 chars
+              </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                <emphasis role="bold">Doc Manager tags:</emphasis>
+              </para>
+<screen>
 &lt;dm:docmanager xmlns:dm="urn:x-suse:ns:docmanager">
   &lt;dm:bugtracker>
     &lt;dm:url>https://bugzilla.suse.com/enter_bug.cgi&lt;/dm:url>
@@ -266,37 +294,44 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
   &lt;dm:translation>no&lt;/dm:translation>
 &lt;/dm:docmanager>
      </screen>
-    </entry>
-    <entry>
-    <tag class="starttag">info</tag>: Wrapper to contain bibliographic
+            </entry>
+            <entry><tag class="starttag">info</tag>: Wrapper to contain bibliographic
      information about the content and other meta info.
     <tag class="starttag">dm:PLACEHOLDER</tag>: &suse;-specific info needed by
      the doc-manager tool and DAPS to process and build &suse; user
      documentation.
     </entry>
-    <entry>No</entry>
-   </row>
-    <row>
-    <entry>
-    <para><emphasis role="bold">Resources:</emphasis></para>
-     <screen>
+            <entry>No</entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                <emphasis role="bold">Resources:</emphasis>
+              </para>
+<screen>
 &lt;resource xml:id="_glue-example" href="../glues/glue.xml">
   &lt;description>Glue example&lt;/description>
 &lt;/resource>
     </screen>
-    </entry>
-    <entry>
+            </entry>
+            <entry>
     &suse;-specific info needed by the doc-manager tool and DAPS to process and build &suse; user documentation.
     </entry>
-    <entry>
-    <para><tag class="starttag">resource</tag>No</para>
-    <para><tag class="starttag">description</tag>Yes</para>
-    </entry>
-    </row>
- <row>
-    <entry>
-    <para><emphasis role="bold">Merge:</emphasis></para>
-     <screen>
+            <entry>
+              <para>
+                <tag class="starttag">resource</tag>No
+              </para>
+              <para>
+                <tag class="starttag">description</tag>Yes
+              </para>
+            </entry>
+          </row>
+          <row>
+            <entry>
+              <para>
+                <emphasis role="bold">Merge:</emphasis>
+              </para>
+<screen>
 &lt;merge>
   &lt;title>Your title, limit to 55 characters, if possible&lt;/title>
   &lt;subtitle>Subtitle if necessary&lt;/subtitle>
@@ -322,50 +357,73 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
 &lt;/merge>
 &lt;title>You are a very special concept now!&lt;/title>
 </screen>
-</entry>
-<entry></entry>
-  <entry><para><tag class="starttag">title</tag>and <tag class="starttag">subtitle</tag>Yes, with length limitations (see above)</para>
-  <para><tag class="starttag">revhistory</tag>No</para>
-  <para><tag class="starttag">module</tag>No</para>
-  <para><tag class="starttag">title</tag>Yes</para>
-  </entry>
-  </row>
-   </tbody>
-   </tgroup>
- </informaltable>
-</section>
-
-<section xml:id="sec-revhistory">
-  <title>Revision history</title>
-  <para>
-   A <emphasis>revision history</emphasis> lists all the high-level changes
-   about the document itself. It gives the reader an overview of important
-   changes made over time.
-  </para>
-  <para>Update revision history regularly, mentioning most important changes to
-  your document when you amend or rework it. The data you enter as revision history
-  is used as meta data. 
-  The <quote>Revision History</quote> text is available as a link before the abstract and opens up in its individual
-  page. Keep in mind the following rules:</para>
-  <itemizedlist>
-    <listitem>
-     <para>List revision entries in descending order by date. The latest entry must always come first.</para>
-    </listitem>
-    <listitem>
-     <para>Describe only significant changes that you performed.</para>
-    </listitem>
-    <listitem>
-     <para>If you have several changes of the same type (addition, change, removal),
-      group them under a dedicated <tag class="emptytag">itemizedlist</tag>.</para>
-      </listitem>
+            </entry>
+            <entry></entry>
+            <entry>
+              <para>
+                <tag class="starttag">title</tag>and
+                <tag class="starttag">subtitle</tag>Yes, with length
+                limitations (see above)
+              </para>
+              <para>
+                <tag class="starttag">revhistory</tag>No
+              </para>
+              <para>
+                <tag class="starttag">module</tag>No
+              </para>
+              <para>
+                <tag class="starttag">title</tag>Yes
+              </para>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </informaltable>
+  </section>
+  <section xml:id="sec-revhistory">
+    <title>Revision history</title>
+    <para>
+      A <emphasis>revision history</emphasis> lists all the high-level changes
+      about the document itself. It gives the reader an overview of important
+      changes made over time.
+    </para>
+    <para>
+      Update revision history regularly, mentioning most important changes to
+      your document when you amend or rework it. The data you enter as revision
+      history is used as meta data. The <quote>Revision History</quote> text is
+      available as a link before the abstract and opens up in its individual
+      page. Keep in mind the following rules:
+    </para>
+    <itemizedlist>
       <listitem>
-        <para>Do not add links or references with <tag>xref</tag> of any kind.
-        If you want to mention a specific issue, use the abbreviations from <link xlink:href="https://en.opensuse.org/openSUSE:Packaging_Patches_guidelines#Current_set_of_abbreviations"/> and wrap it inside the tag <tag>uri</tag>.
+        <para>
+          List revision entries in descending order by date. The latest entry
+          must always come first.
         </para>
       </listitem>
-      </itemizedlist>
-      <example xml:id="ex-revhistory-source">
-        <title>Revision history example (source)</title>
+      <listitem>
+        <para>
+          Describe only significant changes that you performed.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          If you have several changes of the same type (addition, change,
+          removal), group them under a dedicated
+          <tag class="emptytag">itemizedlist</tag>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Do not add links or references with <tag>xref</tag> of any kind. If
+          you want to mention a specific issue, use the abbreviations from
+          <link xlink:href="https://en.opensuse.org/openSUSE:Packaging_Patches_guidelines#Current_set_of_abbreviations"/>
+          and wrap it inside the tag <tag>uri</tag>.
+        </para>
+      </listitem>
+    </itemizedlist>
+    <example xml:id="ex-revhistory-source">
+      <title>Revision history example (source)</title>
 <screen>
 &lt;revhistory xml:id="rh-USE-ROOTID"&gt;  
   &lt;revision&gt;&lt;date&gt;2024-11-13&lt;/date&gt;
@@ -393,35 +451,71 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
     &lt;/revdescription&gt;
   &lt;/revision&gt;
 &lt;/revhistory&gt;</screen>
-   </example>
-  <example xml:id="ex-revhistory-output">
+    </example>
+    <example xml:id="ex-revhistory-output">
       <title>Revision history example (output)</title>
-       <revhistory xml:id="rh-USE-ROOTID">  
+      <revhistory xml:id="rh-USE-ROOTID">
         <revision><date>2024-11-13</date>
-         <revdescription>  
-              <itemizedlist>
-               <listitem><para>Added sections:</para>
+          <revdescription>
+            <itemizedlist>
+              <listitem>
+                <para>
+                  Added sections:
+                </para>
                 <itemizedlist>
-                    <listitem><para>New section on <quote>foo</quote> to resolve issue <uri>bsc#12345</uri></para></listitem>
-                    <listitem><para>New section on <quote>foo bar</quote></para></listitem>
+                  <listitem>
+                    <para>
+                      New section on <quote>foo</quote> to resolve issue
+                      <uri>bsc#12345</uri>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      New section on <quote>foo bar</quote>
+                    </para>
+                  </listitem>
                 </itemizedlist>
               </listitem>
-              <listitem><para>Removed sections:</para>
+              <listitem>
+                <para>
+                  Removed sections:
+                </para>
                 <itemizedlist>
-                    <listitem><para>Removed section on <quote>foo1</quote> to resolve issue <uri>bsc#12346</uri></para></listitem>
-                    <listitem><para>Removed section on <quote>foo1 bar</quote></para></listitem>
+                  <listitem>
+                    <para>
+                      Removed section on <quote>foo1</quote> to resolve issue
+                      <uri>bsc#12346</uri>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      Removed section on <quote>foo1 bar</quote>
+                    </para>
+                  </listitem>
                 </itemizedlist>
               </listitem>
-              <listitem><para>Changed sections:</para>
+              <listitem>
+                <para>
+                  Changed sections:
+                </para>
                 <itemizedlist>
-                    <listitem><para>Changed section on <quote>foo2</quote> to resolve issue <uri>bsc#12347</uri></para></listitem>
-                    <listitem><para>Changed section on <quote>foo2 bar</quote></para></listitem>
+                  <listitem>
+                    <para>
+                      Changed section on <quote>foo2</quote> to resolve issue
+                      <uri>bsc#12347</uri>
+                    </para>
+                  </listitem>
+                  <listitem>
+                    <para>
+                      Changed section on <quote>foo2 bar</quote>
+                    </para>
+                  </listitem>
                 </itemizedlist>
               </listitem>
             </itemizedlist>
           </revdescription>
         </revision>
       </revhistory>
-      </example>
+    </example>
   </section>
 </chapter>

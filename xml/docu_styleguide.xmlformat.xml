@@ -5,186 +5,189 @@
     %entities;
 ]>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-format-xml">
- <title>Formatting XML</title>
-
- <para>
-  This section provides information on formatting XML sources.
- </para>
-
- <itemizedlist>
-  <listitem>
-   <formalpara>
-    <title>Line ends:</title>
-    <para>
-     Lines should end with a Unix line end character (also called line feed,
-     LF, newline, or <literal>\n</literal>).
-    </para>
-   </formalpara>
-  </listitem>
-  <listitem>
-   <formalpara>
-    <title>Line length:</title>
-    <para>
-     Lines should be at most 100 characters long, unless one of the following
-     exceptions applies:
-    </para>
-   </formalpara>
-   <itemizedlist>
+  <title>Formatting XML</title>
+  <para>
+    This section provides information on formatting XML sources.
+  </para>
+  <itemizedlist>
     <listitem>
-     <para>
-      Some computer output, computer input or URIs may run longer and cannot
-      be broken.
-     </para>
+      <formalpara>
+        <title>Line ends:</title>
+        <para>
+          Lines should end with a Unix line end character (also called line
+          feed, LF, newline, or <literal>\n</literal>).
+        </para>
+      </formalpara>
     </listitem>
     <listitem>
-     <para>
-      Some elements become much harder to read if broken. For example, that can
-      be the case for long <tag class="emptytag">menuchoice</tag> elements.
-     </para>
+      <formalpara>
+        <title>Line length:</title>
+        <para>
+          Lines should be at most 100 characters long, unless one of the
+          following exceptions applies:
+        </para>
+      </formalpara>
+      <itemizedlist>
+        <listitem>
+          <para>
+            Some computer output, computer input or URIs may run longer and
+            cannot be broken.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Some elements become much harder to read if broken. For example,
+            that can be the case for long
+            <tag class="emptytag">menuchoice</tag> elements.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Aim to minimize the size of diffs in version control, to make
+            reading diffs more efficient and version control storage more
+            efficient. For example, if a typo fix introduces a line with 82
+            characters, consider keeping the line at that length. Also, avoid
+            reflowing entire paragraphs of text, as that will also lead to
+            hard-to-read diffs.
+          </para>
+        </listitem>
+      </itemizedlist>
     </listitem>
     <listitem>
-     <para>
-      Aim to minimize the size of diffs in version control, to make reading
-      diffs more efficient and version control storage more efficient. For
-      example, if a typo fix introduces a line with 82 characters, consider
-      keeping the line at that length. Also, avoid reflowing entire
-      paragraphs of text, as that will also lead to hard-to-read diffs.
-     </para>
+      <formalpara>
+        <title>Indentation:</title>
+        <para>
+          Indent using two space characters per indentation level. Make sure
+          your editor does not replace spaces with tabs. Documents should not
+          contain any tab characters.
+        </para>
+      </formalpara>
     </listitem>
-   </itemizedlist>
-  </listitem>
-  <listitem>
-   <formalpara>
-    <title>Indentation:</title>
-    <para>
-     Indent using two space characters per indentation level. Make sure
-     your editor does not replace spaces with tabs. Documents should not
-     contain any tab characters.
-    </para>
-   </formalpara>
-  </listitem>
-  <listitem>
-   <formalpara>
-    <title>Trailing whitespace:</title>
-    <para>
-     Avoid introducing trailing whitespace characters such as spaces,
-     protected spaces or tabs. Many editors have an option to view such
-     characters. <command>git diff</command> will show newly introduced
-     trailing whitespace characters in red.
-    </para>
-   </formalpara>
-  </listitem>
-  <listitem>
-   <formalpara>
-    <title>Formatting of block elements:</title>
-    <para>
-     Block elements are all DocBook elements that create a rectangular visual
-     block in the layout, such as <tag class="emptytag">para</tag>,
-     <tag class="emptytag">table</tag> or <tag class="emptytag">figure</tag>.
-     Format block elements with new lines before and after each tag and make
-     sure they follow the indentation of the document:
-    </para>
-   </formalpara>
+    <listitem>
+      <formalpara>
+        <title>Trailing whitespace:</title>
+        <para>
+          Avoid introducing trailing whitespace characters such as spaces,
+          protected spaces or tabs. Many editors have an option to view such
+          characters. <command>git diff</command> will show newly introduced
+          trailing whitespace characters in red.
+        </para>
+      </formalpara>
+    </listitem>
+    <listitem>
+      <formalpara>
+        <title>Formatting of block elements:</title>
+        <para>
+          Block elements are all DocBook elements that create a rectangular
+          visual block in the layout, such as <tag class="emptytag">para</tag>,
+          <tag class="emptytag">table</tag> or
+          <tag class="emptytag">figure</tag>. Format block elements with new
+          lines before and after each tag and make sure they follow the
+          indentation of the document:
+        </para>
+      </formalpara>
 <screen>
 &lt;block&gt;
  Content of block, indented by a space.
 &lt;/block&gt;
 </screen>
-   <para>
-    For information about the usage of <tag class="emptytag">screen</tag>, see
-    <xref linkend="sec-screen"/>.
-   </para>
-  </listitem>
-  <listitem>
-   <formalpara>
-    <title>Formatting of inline elements:</title>
-    <para>
-     Block elements are all DocBook elements that can be reflowed freely
-     within a block element, such as
-     <tag class="emptytag">emphasis</tag>, <tag class="emptytag">keycap</tag>,
-      or <tag class="emptytag">guimenu</tag>. Format inline elements along
-     with other inline content without adding newlines or extra indentation:
-    </para>
-   </formalpara>
+      <para>
+        For information about the usage of <tag class="emptytag">screen</tag>,
+        see <xref linkend="sec-screen"/>.
+      </para>
+    </listitem>
+    <listitem>
+      <formalpara>
+        <title>Formatting of inline elements:</title>
+        <para>
+          Block elements are all DocBook elements that can be reflowed freely
+          within a block element, such as <tag class="emptytag">emphasis</tag>,
+          <tag class="emptytag">keycap</tag>, or
+          <tag class="emptytag">guimenu</tag>. Format inline elements along
+          with other inline content without adding newlines or extra
+          indentation:
+        </para>
+      </formalpara>
 <screen>
 &lt;block&gt;
  Content of block &lt;inline&gt;content of inline&lt;/inline&gt;.
 &lt;block&gt;
 </screen>
-  </listitem>
-  <listitem>
-   <formalpara>
-    <title>Formatting of title elements:</title>
-    <para>
-     The title elements <tag class="emptytag">title</tag> and
-     <tag class="emptytag">term</tag> are block elements. However, they
-     provoke a style sheet quirk and should be treated differently. This
-     avoids superfluous whitespace when used in the context of a
-     cross-reference. Format title elements with new lines before the opening
-     tag and after the closing tag and make sure they follow the indentation
-     of the document:
-    </para>
-   </formalpara>
+    </listitem>
+    <listitem>
+      <formalpara>
+        <title>Formatting of title elements:</title>
+        <para>
+          The title elements <tag class="emptytag">title</tag> and
+          <tag class="emptytag">term</tag> are block elements. However, they
+          provoke a style sheet quirk and should be treated differently. This
+          avoids superfluous whitespace when used in the context of a
+          cross-reference. Format title elements with new lines before the
+          opening tag and after the closing tag and make sure they follow the
+          indentation of the document:
+        </para>
+      </formalpara>
 <screen>
 &lt;title&gt;Content of Title&lt;/block&gt;
 </screen>
-  </listitem>
-  <listitem>
-   <formalpara>
-    <title>Formatting of computer output/computer input blocks:</title>
-    <para>
-     The Computer Output/Computer Input Block Element
-     <tag class="emptytag">screen</tag> should be treated like a block
-     element but multi-line <tag class="emptytag">screen</tag> elements
-     should not be indented to aid source reading flow and avoid the trap of
-     adding extraneous leading space to their content. (Single-line
-     <tag class="emptytag">screen</tag> can be indented).
-    </para>
-   </formalpara>
-  </listitem>
-  <listitem>
-   <formalpara>
-    <title>XML comments</title>
-    <para>
-     XML comments should follow the indentation of the document. Where
-     feasible, put XML comments on new lines to make reading diffs and later
-     removal of the comment easier:
-    </para>
-   </formalpara>
+    </listitem>
+    <listitem>
+      <formalpara>
+        <title>Formatting of computer output/computer input blocks:</title>
+        <para>
+          The Computer Output/Computer Input Block Element
+          <tag class="emptytag">screen</tag> should be treated like a block
+          element but multi-line <tag class="emptytag">screen</tag> elements
+          should not be indented to aid source reading flow and avoid the trap
+          of adding extraneous leading space to their content. (Single-line
+          <tag class="emptytag">screen</tag> can be indented).
+        </para>
+      </formalpara>
+    </listitem>
+    <listitem>
+      <formalpara>
+        <title>XML comments</title>
+        <para>
+          XML comments should follow the indentation of the document. Where
+          feasible, put XML comments on new lines to make reading diffs and
+          later removal of the comment easier:
+        </para>
+      </formalpara>
 <screen>
 &lt;block&gt;
  Block content.
  &lt;!-- An XML comment --&gt;
 &lt;/block&gt;
 </screen>
-   <para>
-    XML comments must not contain the characters <literal>--</literal>. To
-    preserve such character combinations within comments, replace them with
-    <literal>-/-</literal>.
-   </para>
-   <para>
-    For information about the usage of XML comments, see
-    <xref linkend="sec-xml-comment"/>.
-   </para>
-  </listitem>
-  <listitem>
-   <formalpara>
-    <title>Reflowing entire files:</title>
-    <para>
-     Before reflowing entire files to a different XML formatting style, weigh
-     the cost of keeping the document in its current state against the cost
-     of reflowing. Reflowing often makes it easier to work with the document.
-     However, if the document has a rich editing history already, reflowing
-     makes it harder to properly use tools like <command>git blame</command>.
-    </para>
-   </formalpara>
-  </listitem>
- </itemizedlist>
-
- <para>
-  To easily convert documents to this style after importing them, use the
-  commands <command>daps xmlformat</command> (for an entire document) and
-  <command>daps-xmlformat</command> (for a single file). Note that while these
-  tools are very good otherwise, they do not reflow XML comments properly.
- </para>
+      <para>
+        XML comments must not contain the characters <literal>--</literal>. To
+        preserve such character combinations within comments, replace them with
+        <literal>-/-</literal>.
+      </para>
+      <para>
+        For information about the usage of XML comments, see
+        <xref linkend="sec-xml-comment"/>.
+      </para>
+    </listitem>
+    <listitem>
+      <formalpara>
+        <title>Reflowing entire files:</title>
+        <para>
+          Before reflowing entire files to a different XML formatting style,
+          weigh the cost of keeping the document in its current state against
+          the cost of reflowing. Reflowing often makes it easier to work with
+          the document. However, if the document has a rich editing history
+          already, reflowing makes it harder to properly use tools like
+          <command>git blame</command>.
+        </para>
+      </formalpara>
+    </listitem>
+  </itemizedlist>
+  <para>
+    To easily convert documents to this style after importing them, use the
+    commands <command>daps xmlformat</command> (for an entire document) and
+    <command>daps-xmlformat</command> (for a single file). Note that while
+    these tools are very good otherwise, they do not reflow XML comments
+    properly.
+  </para>
 </chapter>

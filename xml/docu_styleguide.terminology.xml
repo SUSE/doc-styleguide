@@ -5,2381 +5,2392 @@
     %entities;
 ]>
 <appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="app-terminology">
- <title>Terminology and general vocabulary</title>
- <info/>
- <para>
-  The following two tables define technical terms and general vocabulary for
-  use in SUSE documentation. See also <xref linkend="sec-language"/>.
- </para>
- <para>
-  If unable to find a term below, check &suse;'s official terminology database, 
-  <link xlink:href="https://suse.termweb.eu/">TermWeb</link>. It contains 
-  company-specific terminology in English and all our supported languages. TermWeb
-  can be accessed only by &suse; employees and external partners with a SUSE account 
-  (get one at <link xlink:href="https://www.suse.com/account/create"/>).
- </para>
-<sect1 xml:id="sec-terminology">
-  <title>Terminology</title>
- <para>
-   The following table defines the correct spellings and denominations for
-   technical terms in SUSE documentation. Always use the entry listed under
-   <quote>Accepted</quote> in the table below. All terms are reproduced in
-   sentence-style capitalization.
+  <title>Terminology and general vocabulary</title>
+  <info/>
+  <para>
+    The following two tables define technical terms and general vocabulary for
+    use in SUSE documentation. See also <xref linkend="sec-language"/>.
   </para>
+  <para>
+    If unable to find a term below, check &suse;'s official terminology
+    database, <link xlink:href="https://suse.termweb.eu/">TermWeb</link>. It
+    contains company-specific terminology in English and all our supported
+    languages. TermWeb can be accessed only by &suse; employees and external
+    partners with a SUSE account (get one at
+    <link xlink:href="https://www.suse.com/account/create"/>).
+  </para>
+  <sect1 xml:id="sec-terminology">
+    <title>Terminology</title>
 
-  <informaltable>
-   <tgroup cols="3">
-    <thead>
-     <row>
-      <entry>Accepted</entry>
-      <entry>Rejected [Reason]</entry>
-      <entry>Part of Speech; Usage Guideline/Definition</entry>
-     </row>
-    </thead>
-<!-- Sorting (pseudo-regex): (?<=((to)|The))\.-–+\/[0-9][A-Za-z] -->
-    <tbody>
-     <row>
-      <entry>32-bit</entry>
-      <entry>32 Bit, 32 bit, 32-Bit, 32Bit, 32bit</entry>
-      <entry>adjective</entry>
-     </row>
-     <row>
-      <entry>3D</entry>
-      <entry>3 D, 3 d, 3.D., 3.d., 3-D, 3-d, 3d, Three-D</entry>
-      <entry>adjective</entry>
-     </row>
-     <row>
-      <entry>64-bit</entry>
-      <entry>64 Bit, 64 bit, 64-Bit, 64Bit, 64bit</entry>
-      <entry>adjective</entry>
-     </row>
-     <row>
-      <entry>AArch64</entry>
-      <entry>ARM64, ARMv8</entry>
-      <entry>noun; processor architecture
+    <para>
+      The following table defines the correct spellings and denominations for
+      technical terms in SUSE documentation. Always use the entry listed under
+      <quote>Accepted</quote> in the table below. All terms are reproduced in
+      sentence-style capitalization.
+    </para>
+
+    <informaltable>
+      <tgroup cols="3">
+        <thead>
+          <row>
+            <entry>Accepted</entry>
+            <entry>Rejected [Reason]</entry>
+            <entry>Part of Speech; Usage Guideline/Definition</entry>
+          </row>
+        </thead>
+        <!-- Sorting (pseudo-regex): (?<=((to)|The))\.-–+\/[0-9][A-Za-z] -->
+        <tbody>
+          <row>
+            <entry>32-bit</entry>
+            <entry>32 Bit, 32 bit, 32-Bit, 32Bit, 32bit</entry>
+            <entry>adjective</entry>
+          </row>
+          <row>
+            <entry>3D</entry>
+            <entry>3 D, 3 d, 3.D., 3.d., 3-D, 3-d, 3d, Three-D</entry>
+            <entry>adjective</entry>
+          </row>
+          <row>
+            <entry>64-bit</entry>
+            <entry>64 Bit, 64 bit, 64-Bit, 64Bit, 64bit</entry>
+            <entry>adjective</entry>
+          </row>
+          <row>
+            <entry>AArch64</entry>
+            <entry>ARM64, ARMv8</entry>
+            <entry>noun; processor architecture
       </entry>
-     </row>
-     <row>
-      <entry>(to) activate sth.</entry>
-      <entry>(to) block sth., (to) check sth., (to) choose sth.,
+          </row>
+          <row>
+            <entry>(to) activate sth.</entry>
+            <entry>(to) block sth., (to) check sth., (to) choose sth.,
               (to) highlight sth., (to) tick sth.
             </entry>
-      <entry>verb; when referring to check boxes</entry>
-     </row>
-     <row>
-      <entry>adapter</entry>
-      <entry>adaptor</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>add-on</entry>
-      <entry>add on, AddOn, addOn, addon</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>address book</entry>
-      <entry>addressbook</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>advice</entry>
-      <entry>advi<emphasis>s</emphasis>e [misspelling]</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>(to) advise sth.</entry>
-      <entry>(to) advi<emphasis>c</emphasis>e sth. [misspelling]</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>AMD64/Intel 64</entry>
-      <entry>x64, x86_64, x86-64, 64-bit AMD/Intel, AMD/Intel64</entry>
-      <entry>noun; processor architecture; see also
+            <entry>verb; when referring to check boxes</entry>
+          </row>
+          <row>
+            <entry>adapter</entry>
+            <entry>adaptor</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>add-on</entry>
+            <entry>add on, AddOn, addOn, addon</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>address book</entry>
+            <entry>addressbook</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>advice</entry>
+            <entry>advi<emphasis>s</emphasis>e [misspelling]</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>(to) advise sth.</entry>
+            <entry>(to) advi<emphasis>c</emphasis>e sth. [misspelling]</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>AMD64/Intel 64</entry>
+            <entry>x64, x86_64, x86-64, 64-bit AMD/Intel, AMD/Intel64</entry>
+            <entry>noun; processor architecture; see also
         <emphasis>x86</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>AOO</entry>
-      <entry>Aoo, aoo, OO, oo</entry>
-      <entry>noun; when referring to versions 3.4 and after; spelling
+            </entry>
+          </row>
+          <row>
+            <entry>AOO</entry>
+            <entry>Aoo, aoo, OO, oo</entry>
+            <entry>noun; when referring to versions 3.4 and after; spelling
               according to project standard; acronym of
               <emphasis>Apache OpenOffice</emphasis>; see also
               <emphasis>OOo</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>Apache OpenOffice</entry>
-      <entry>Apache Open Office, Apache Openoffice, OpenOffice
             </entry>
-      <entry>noun; when referring to versions 3.4 and after; spelling
+          </row>
+          <row>
+            <entry>Apache OpenOffice</entry>
+            <entry>Apache Open Office, Apache Openoffice, OpenOffice
+            </entry>
+            <entry>noun; when referring to versions 3.4 and after; spelling
               according to project standard; acronym is
               <emphasis>AOO</emphasis>; see also
               <emphasis>OpenOffice.org</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>architecture</entry>
-      <entry>arch</entry>
-      <entry>noun; hardware platform, especially concerning processor
+            </entry>
+          </row>
+          <row>
+            <entry>architecture</entry>
+            <entry>arch</entry>
+            <entry>noun; hardware platform, especially concerning processor
               platform
             </entry>
-     </row>
-     <row>
-      <entry>appendixes</entry>
-      <entry>appendices</entry>
-      <entry>noun; plural of appendix</entry>
-     </row>
-     <row>
-      <entry>application</entry>
-      <entry/>
-      <entry>noun; a computer program designed for a specific task or use</entry>
-     </row>
-     <row>
-      <entry>audio CD</entry>
-      <entry>Audio CD, Audio-CD, CD-Audio, CD Audio, CD audio
+          </row>
+          <row>
+            <entry>appendixes</entry>
+            <entry>appendices</entry>
+            <entry>noun; plural of appendix</entry>
+          </row>
+          <row>
+            <entry>application</entry>
+            <entry/>
+            <entry>noun; a computer program designed for a specific task or use</entry>
+          </row>
+          <row>
+            <entry>audio CD</entry>
+            <entry>Audio CD, Audio-CD, CD-Audio, CD Audio, CD audio
             </entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>back-end</entry>
-      <entry>back end, backend</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>(to) back sth. up</entry>
-      <entry>(to) backup sth.</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>backup</entry>
-      <entry>back-up, back up</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>bare metal</entry>
-      <entry>bare-metal, baremetal</entry>
-      <entry>noun; a computer without an operating system; <emphasis>also</emphasis> a physical computer (in 
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>back-end</entry>
+            <entry>back end, backend</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>(to) back sth. up</entry>
+            <entry>(to) backup sth.</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>backup</entry>
+            <entry>back-up, back up</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>bare metal</entry>
+            <entry>bare-metal, baremetal</entry>
+            <entry>noun; a computer without an operating system; <emphasis>also</emphasis> a physical computer (in 
        contrast to a virtualized system)</entry>
-     </row>
-     <row>
-      <entry>bare-metal</entry>
-      <entry>bare metal, baremetal</entry>
-      <entry>adjective</entry>
-     </row>
-     <row>
-      <entry>Bash</entry>
-      <entry>BASH, bash</entry>
-      <entry>noun; spelling as per the GNU Bash manual</entry>
-     </row>
-     <row>
-      <entry>Bluetooth</entry>
-      <entry>Blue tooth, blue tooth, Blue-tooth, blue-tooth, bluetooth
+          </row>
+          <row>
+            <entry>bare-metal</entry>
+            <entry>bare metal, baremetal</entry>
+            <entry>adjective</entry>
+          </row>
+          <row>
+            <entry>Bash</entry>
+            <entry>BASH, bash</entry>
+            <entry>noun; spelling as per the GNU Bash manual</entry>
+          </row>
+          <row>
+            <entry>Bluetooth</entry>
+            <entry>Blue tooth, blue tooth, Blue-tooth, blue-tooth, bluetooth
             </entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>Bluetooth card</entry>
-      <entry>wireless card [card has wires attached to it]</entry>
-      <entry>noun; card that enables Bluetooth connections.
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>Bluetooth card</entry>
+            <entry>wireless card [card has wires attached to it]</entry>
+            <entry>noun; card that enables Bluetooth connections.
             </entry>
-     </row>
-     <row>
-      <entry>boot disk</entry>
-      <entry>boot disc [usually a misspelling], boot-disk, bootdisk</entry>
-      <entry>noun; disk for starting the system</entry>
-     </row>
-     <row>
-      <entry>boot loader</entry>
-      <entry>boot-loader, bootloader</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>(to) boot using PXE <emphasis>or</emphasis> (to) boot via PXE
+          </row>
+          <row>
+            <entry>boot disk</entry>
+            <entry>boot disc [usually a misspelling], boot-disk, bootdisk</entry>
+            <entry>noun; disk for starting the system</entry>
+          </row>
+          <row>
+            <entry>boot loader</entry>
+            <entry>boot-loader, bootloader</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>(to) boot using PXE <emphasis>or</emphasis> (to) boot via PXE
             </entry>
-      <entry>(to) PXE boot</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>Btrfs</entry>
-      <entry>B.T.R.F.S., Better FS, BetterFS, Butter FS, ButterFS,
+            <entry>(to) PXE boot</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>Btrfs</entry>
+            <entry>B.T.R.F.S., Better FS, BetterFS, Butter FS, ButterFS,
               btrfs
             </entry>
-      <entry>noun; not an acronym
+            <entry>noun; not an acronym
               <remark>sknorr, 2013-09-18: Really, though? Origin is
                 "B-tree File System"?
               </remark>
-      </entry>
-     </row>
-     <row>
-      <entry>cursor</entry>
-      <entry>pointer [used for pointing device input]</entry>
-      <entry>noun; on-screen item indicating the position of keyboard input
+            </entry>
+          </row>
+          <row>
+            <entry>cursor</entry>
+            <entry>pointer [used for pointing device input]</entry>
+            <entry>noun; on-screen item indicating the position of keyboard input
         focus; see also <emphasis>pointer</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>CA</entry>
-      <entry>C.A., Ca</entry>
-      <entry>noun; acronym for
+            </entry>
+          </row>
+          <row>
+            <entry>CA</entry>
+            <entry>C.A., Ca</entry>
+            <entry>noun; acronym for
               <emphasis>certificate authority</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>CD</entry>
-      <entry>C.D., Cd</entry>
-      <entry>noun; acronym for <emphasis>compact disc</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>CD-ROM</entry>
-      <entry>CD ROM, CD-Rom, CD Rom</entry>
-      <entry>noun; acronym for
+            </entry>
+          </row>
+          <row>
+            <entry>CD</entry>
+            <entry>C.D., Cd</entry>
+            <entry>noun; acronym for <emphasis>compact disc</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>CD-ROM</entry>
+            <entry>CD ROM, CD-Rom, CD Rom</entry>
+            <entry>noun; acronym for
               <emphasis>compact disc read-only memory</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>CUPS</entry>
-      <entry>C.U.P.S., Cups, cups</entry>
-      <entry>noun; spelling as per project standard; acronym for
+            </entry>
+          </row>
+          <row>
+            <entry>CUPS</entry>
+            <entry>C.U.P.S., Cups, cups</entry>
+            <entry>noun; spelling as per project standard; acronym for
               <emphasis>Common Unix Printing System</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>case-sensitive</entry>
-      <entry>case sensitive, casesensitive</entry>
-      <entry>adjective</entry>
-     </row>
-     <row>
-      <entry>case-insensitive</entry>
-      <entry>case insensitive, caseinsensitive</entry>
-      <entry>adjective</entry>
-     </row>
-     <row>
-      <entry>certificate authority</entry>
-      <entry>certifica<emphasis>tion</emphasis> authority,
+            </entry>
+          </row>
+          <row>
+            <entry>case-sensitive</entry>
+            <entry>case sensitive, casesensitive</entry>
+            <entry>adjective</entry>
+          </row>
+          <row>
+            <entry>case-insensitive</entry>
+            <entry>case insensitive, caseinsensitive</entry>
+            <entry>adjective</entry>
+          </row>
+          <row>
+            <entry>certificate authority</entry>
+            <entry>certifica<emphasis>tion</emphasis> authority,
               certifica<emphasis>ting</emphasis> authority,
               certif<emphasis>ied</emphasis> authority
             </entry>
-      <entry>noun; acronym is <emphasis>CA</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>changelog</entry>
-      <entry>change log, change-log, ChangeLog</entry>
-      <entry>noun; log of changes to software</entry>
-     </row>
-     <row>
-      <entry>check box</entry>
-      <entry>check-box, checkbox, checking option, tick box</entry>
-      <entry>noun; avoid, only mention name of option</entry>
-     </row>
-     <row>
-      <entry>checklist</entry>
-      <entry>check list, check-list, ticklist
+            <entry>noun; acronym is <emphasis>CA</emphasis>
             </entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>check mark</entry>
-      <entry>check, check-mark, checkmark, tick, tick mark</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>chipset</entry>
-      <entry>chip set, chip-set</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>(to) click sth.</entry>
-      <entry>(to) click on sth., (to) click onto sth.</entry>
-      <entry>verb; using a mouse button, usually to manipulate user interface
+          </row>
+          <row>
+            <entry>changelog</entry>
+            <entry>change log, change-log, ChangeLog</entry>
+            <entry>noun; log of changes to software</entry>
+          </row>
+          <row>
+            <entry>check box</entry>
+            <entry>check-box, checkbox, checking option, tick box</entry>
+            <entry>noun; avoid, only mention name of option</entry>
+          </row>
+          <row>
+            <entry>checklist</entry>
+            <entry>check list, check-list, ticklist
+            </entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>check mark</entry>
+            <entry>check, check-mark, checkmark, tick, tick mark</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>chipset</entry>
+            <entry>chip set, chip-set</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>(to) click sth.</entry>
+            <entry>(to) click on sth., (to) click onto sth.</entry>
+            <entry>verb; using a mouse button, usually to manipulate user interface
         element; also see <emphasis>press</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>client/server</entry>
-      <entry>client server, client-server, client&#x2013;server,
+            </entry>
+          </row>
+          <row>
+            <entry>client/server</entry>
+            <entry>client server, client-server, client&#x2013;server,
               client+server
             </entry>
-      <entry>noun/noun</entry>
-     </row>
-     <row>
-      <entry>(to) close sth.</entry>
-      <entry>(to) abort sth. [negative], (to) exit sth., (to) kill sth.,
+            <entry>noun/noun</entry>
+          </row>
+          <row>
+            <entry>(to) close sth.</entry>
+            <entry>(to) abort sth. [negative], (to) exit sth., (to) kill sth.,
               (to) terminate sth.
             </entry>
-      <entry>verb; when referring to closing a window; always use
+            <entry>verb; when referring to closing a window; always use
               <emphasis>quit</emphasis> when
               ending an application normally; always use
               <emphasis>terminate</emphasis> when
               ending an application forcefully
             </entry>
-     </row>
-     <row>
-      <entry>codestream</entry>
-      <entry>code stream
+          </row>
+          <row>
+            <entry>codestream</entry>
+            <entry>code stream
             </entry>
-      <entry>noun; stream of code
+            <entry>noun; stream of code
             </entry>
-     </row>
-     <row>
-      <entry>(to) coldplug sth. (into sth.)</entry>
-      <entry>(to) cold plug sth. (into sth.), (to) cold-plug sth. (into
+          </row>
+          <row>
+            <entry>(to) coldplug sth. (into sth.)</entry>
+            <entry>(to) cold plug sth. (into sth.), (to) cold-plug sth. (into
               sth.), (to) coldadd sth., (to) coldswap sth.
             </entry>
-      <entry>verb; adding a component or device to a system while the
+            <entry>verb; adding a component or device to a system while the
               system is off
             </entry>
-     </row>
-     <row>
-      <entry>coldplugging</entry>
-      <entry>cold plugging, cold-plugging, coldadding, coldswapping</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>coldpluggable</entry>
-      <entry>cold pluggable, cold-pluggable, coldaddable, coldswappable</entry>
-      <entry>adjective</entry>
-     </row>
-     <row>
-      <entry>Common Unix Printing System</entry>
-      <entry>Common UNIX Printing System, common Unix printing system
+          </row>
+          <row>
+            <entry>coldplugging</entry>
+            <entry>cold plugging, cold-plugging, coldadding, coldswapping</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>coldpluggable</entry>
+            <entry>cold pluggable, cold-pluggable, coldaddable, coldswappable</entry>
+            <entry>adjective</entry>
+          </row>
+          <row>
+            <entry>Common Unix Printing System</entry>
+            <entry>Common UNIX Printing System, common Unix printing system
             </entry>
-      <entry>noun; spelling as per project standard; acronym is
+            <entry>noun; spelling as per project standard; acronym is
               <emphasis>CUPS</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>command</entry>
-      <entry/>
-      <entry>noun; a signal that initiates an operation defined by an instruction</entry>
-     </row>
-     <row>
-      <entry>command line</entry>
-      <entry>command-line, commandline</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-        <entry>command-line</entry>
-        <entry>command line, commandline</entry>
-        <entry>adjective</entry>
-       </row>
-     <row>
-      <entry>configuration</entry>
-      <entry>config</entry>
-      <entry>noun; unless when referring to file extension</entry>
-     </row>
-     <row>
-      <entry>(to) configure sth.</entry>
-      <entry>(to) config sth.</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>(to) connect via SSH (to sth.)</entry>
-      <entry>(to) connect by SSH (to sth.), (to) connect over SSH (to sth.),
+            </entry>
+          </row>
+          <row>
+            <entry>command</entry>
+            <entry/>
+            <entry>noun; a signal that initiates an operation defined by an instruction</entry>
+          </row>
+          <row>
+            <entry>command line</entry>
+            <entry>command-line, commandline</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>command-line</entry>
+            <entry>command line, commandline</entry>
+            <entry>adjective</entry>
+          </row>
+          <row>
+            <entry>configuration</entry>
+            <entry>config</entry>
+            <entry>noun; unless when referring to file extension</entry>
+          </row>
+          <row>
+            <entry>(to) configure sth.</entry>
+            <entry>(to) config sth.</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>(to) connect via SSH (to sth.)</entry>
+            <entry>(to) connect by SSH (to sth.), (to) connect over SSH (to sth.),
               (to) connect through SSH (to sth.), (to) connect with SSH (to sth.),
               (to) SSH (to sth.), (to) ssh (to sth.), (to) ssh in (to sth.),
               (to) ssh into sth.
             </entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-        <entry>console</entry>
-        <entry/>
-        <entry>noun; a physical terminal, used to describe TTYs and PTYs 
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>console</entry>
+            <entry/>
+            <entry>noun; a physical terminal, used to describe TTYs and PTYs 
                and when talking about consoles (e.g. KVM's console); 
-               see also <emphasis>terminal, shell</emphasis></entry>
-       </row>
-     <row>
-      <entry>control center</entry>
-      <entry>Control Center, Control center, Control-Center,
+               see also <emphasis>terminal, shell</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>control center</entry>
+            <entry>Control Center, Control center, Control-Center,
               Control-center, control-center, Controlcenter, controlcenter
             </entry>
-      <entry>noun; generic term, as in:
+            <entry>noun; generic term, as in:
               <quote>the YaST control center</quote> or
               <quote>the KDE control center</quote>
-      </entry>
-     </row>
-     <row>
-      <entry>crash dump</entry>
-      <entry>crashdump
             </entry>
-      <entry>noun
+          </row>
+          <row>
+            <entry>crash dump</entry>
+            <entry>crashdump
+            </entry>
+            <entry>noun
       </entry>
-     </row>
-     <row>
-      <entry>(to) create a hard link (to sth.)</entry>
-      <entry>(to) hard link (sth.), (to) hardlink (sth.)</entry>
-      <entry>verb; see also <emphasis>hard link</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>(to) create a symbolic link (to sth.)</entry>
-      <entry>(to) soft link (sth.), (to) softlink (sth.),
+          </row>
+          <row>
+            <entry>(to) create a hard link (to sth.)</entry>
+            <entry>(to) hard link (sth.), (to) hardlink (sth.)</entry>
+            <entry>verb; see also <emphasis>hard link</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>(to) create a symbolic link (to sth.)</entry>
+            <entry>(to) soft link (sth.), (to) softlink (sth.),
               (to) symbolic link (sth.), (to) symlink (sth.)
             </entry>
-      <entry>verb; see also <emphasis>hard link</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>(to) deactivate sth.</entry>
-      <entry>(to) deblock sth., (to) uncheck sth., (to) untick sth.
+            <entry>verb; see also <emphasis>hard link</emphasis>
             </entry>
-      <entry>verb; when referring to check boxes</entry>
-     </row>
-     <row>
-      <entry>delta RPM</entry>
-      <entry>delta-RPM, deltarpm</entry>
-      <entry>noun; RPM package that only includes files that changed between
+          </row>
+          <row>
+            <entry>(to) deactivate sth.</entry>
+            <entry>(to) deblock sth., (to) uncheck sth., (to) untick sth.
+            </entry>
+            <entry>verb; when referring to check boxes</entry>
+          </row>
+          <row>
+            <entry>delta RPM</entry>
+            <entry>delta-RPM, deltarpm</entry>
+            <entry>noun; RPM package that only includes files that changed between
               a previous and the current version of the package
             </entry>
-     </row>
-     <row>
-      <entry>(to) deselect sth.</entry>
-      <entry>(to) de-select sth., (to) remove the selection from sth.,
+          </row>
+          <row>
+            <entry>(to) deselect sth.</entry>
+            <entry>(to) de-select sth., (to) remove the selection from sth.,
               (to) un-select sth., (to) unselect sth.
             </entry>
-      <entry>verb; when referring to list entries or text; for check boxes,
+            <entry>verb; when referring to list entries or text; for check boxes,
               use <emphasis>deactivate</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>DHCP</entry>
-      <entry>D.H.C.P., Dhcp, dhcp</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>dial-up</entry>
-      <entry>dial up, dialup</entry>
-      <entry>only as an adjective</entry>
-     </row>
-     <row>
-      <entry>dialog</entry>
-      <entry>dialog box, dialog window, dialogue [British], mask [Germanism],
+            </entry>
+          </row>
+          <row>
+            <entry>DHCP</entry>
+            <entry>D.H.C.P., Dhcp, dhcp</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>dial-up</entry>
+            <entry>dial up, dialup</entry>
+            <entry>only as an adjective</entry>
+          </row>
+          <row>
+            <entry>dialog</entry>
+            <entry>dialog box, dialog window, dialogue [British], mask [Germanism],
         screen
       </entry>
-      <entry>noun; a secondary window that gives users progress feedback, 
+            <entry>noun; a secondary window that gives users progress feedback, 
              prompts users to perform a command, enter information or select 
              an option
       </entry>
-     </row>
-     <row>
-      <entry>directory</entry>
-      <entry>dir, folder</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>DNS</entry>
-      <entry>D.N.S., DNS name server, Dns, dns</entry>
-      <entry>noun; acronym for <emphasis>dynamic name server</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>(to) double-click sth.</entry>
-      <entry>(to) double click sth., (to) double-click on sth.,
+          </row>
+          <row>
+            <entry>directory</entry>
+            <entry>dir, folder</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>DNS</entry>
+            <entry>D.N.S., DNS name server, Dns, dns</entry>
+            <entry>noun; acronym for <emphasis>dynamic name server</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>(to) double-click sth.</entry>
+            <entry>(to) double click sth., (to) double-click on sth.,
               (to) double-click onto sth., (to) doubleclick sth.
             </entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>drop-down list</entry>
-      <entry>combination box, combo box, combobox, dropdown, drop-down,
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>drop-down list</entry>
+            <entry>combination box, combo box, combobox, dropdown, drop-down,
               drop-down menu, drop-down list box, popover, pull-down menu
             </entry>
-      <entry>noun; GUI element; the list that is opened when clicking on it,
+            <entry>noun; GUI element; the list that is opened when clicking on it,
               showing a list of menu items the user can choose from; if list
               entries start actions, use <emphasis>menu</emphasis> instead
             </entry>
-     </row>
-     <row>
-      <entry>DVD</entry>
-      <entry>D.V.D., Dvd</entry>
-      <entry>noun; acronym for
+          </row>
+          <row>
+            <entry>DVD</entry>
+            <entry>D.V.D., Dvd</entry>
+            <entry>noun; acronym for
               <emphasis>digital versatile disc</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>dynamic name server</entry>
-      <entry>Dynamic Name Server, Dynamic name server</entry>
-      <entry>noun; acronym is <emphasis>DNS</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>e-book</entry>
-      <entry>E-book, E-book, Ebook, eBook, electronic book, ebook</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>e-mail</entry>
-      <entry>E-mail, E-mail, Email, eMail, electronic mail, email</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>EPUB</entry>
-      <entry>E-PUB, e-PUB, e-Pub, EPub, Epub, ePUB, ePub</entry>
-      <entry>noun; project logo uses the capitalization <quote>ePub,</quote>
+            </entry>
+          </row>
+          <row>
+            <entry>dynamic name server</entry>
+            <entry>Dynamic Name Server, Dynamic name server</entry>
+            <entry>noun; acronym is <emphasis>DNS</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>e-book</entry>
+            <entry>E-book, E-book, Ebook, eBook, electronic book, ebook</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>e-mail</entry>
+            <entry>E-mail, E-mail, Email, eMail, electronic mail, email</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>EPUB</entry>
+            <entry>E-PUB, e-PUB, e-Pub, EPub, Epub, ePUB, ePub</entry>
+            <entry>noun; project logo uses the capitalization <quote>ePub,</quote>
                 but the vendor standard is <quote>EPUB</quote>
-      </entry>
-     </row>
-     <row>
-      <entry>end user</entry>
-      <entry>end-user</entry>
-      <entry>noun; avoid; where possible, replace with
+            </entry>
+          </row>
+          <row>
+            <entry>end user</entry>
+            <entry>end-user</entry>
+            <entry>noun; avoid; where possible, replace with
               <emphasis>user</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>(to) enter sth. (into sth.)</entry>
-      <entry/>
-      <entry>verb; only when a value needs to be specified and
+            </entry>
+          </row>
+          <row>
+            <entry>(to) enter sth. (into sth.)</entry>
+            <entry/>
+            <entry>verb; only when a value needs to be specified and
               <keycap function="enter"/> should be pressed afterward; where
               possible, replace with <emphasis>specify</emphasis> or
               <emphasis>provide</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>Ethernet</entry>
-      <entry>ethernet</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>Ethernet card</entry>
-      <entry>wired card [sounds as if wires attached to the card are meant]
             </entry>
-      <entry>noun; card that connects to networks via Ethernet
+          </row>
+          <row>
+            <entry>Ethernet</entry>
+            <entry>ethernet</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>Ethernet card</entry>
+            <entry>wired card [sounds as if wires attached to the card are meant]
             </entry>
-     </row>
-     <row>
-      <entry>Ext3</entry>
-      <entry>EXT3, EXT 3, Ext 3, Ext-3, ext 3, ext-3, ext3</entry>
-      <entry>noun; use this capitalization for all versions of the Ext
+            <entry>noun; card that connects to networks via Ethernet
+            </entry>
+          </row>
+          <row>
+            <entry>Ext3</entry>
+            <entry>EXT3, EXT 3, Ext 3, Ext-3, ext 3, ext-3, ext3</entry>
+            <entry>noun; use this capitalization for all versions of the Ext
               file system standard; intentionally inconsistent with project
               standard to emphasize that this is a proper name</entry>
-     </row>
-     <row>
-      <entry>Ext4</entry>
-      <entry>EXT4, EXT 4, Ext 4, Ext-4, ext 4, ext-4, ext4</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>file name</entry>
-      <entry>file-name, filename</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>file server</entry>
-      <entry>file-server, fileserver</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>file system</entry>
-      <entry>file-system, filesystem</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>flavor</entry>
-      <entry>flavour [British]</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>flash drive</entry>
-      <entry>flash disk, flash disc, USB disk, USB drive,
+          </row>
+          <row>
+            <entry>Ext4</entry>
+            <entry>EXT4, EXT 4, Ext 4, Ext-4, ext 4, ext-4, ext4</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>file name</entry>
+            <entry>file-name, filename</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>file server</entry>
+            <entry>file-server, fileserver</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>file system</entry>
+            <entry>file-system, filesystem</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>flavor</entry>
+            <entry>flavour [British]</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>flash drive</entry>
+            <entry>flash disk, flash disc, USB disk, USB drive,
               USB stick
             </entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>form</entry>
-      <entry/>
-      <entry>noun; a structured window, box or screen that contains numerous 
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>form</entry>
+            <entry/>
+            <entry>noun; a structured window, box or screen that contains numerous 
              fields or spaces to enter data</entry>
-     </row>
-     <row>
-      <entry>framebuffer</entry>
-      <entry>frame buffer, frame-buffer</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>front-end</entry>
-      <entry>front end, frontend</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>FTP</entry>
-      <entry>F.T.P., Ftp, ftp</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>GIMP</entry>
-      <entry>G.I.M.P., Gimp, gimp</entry>
-      <entry>noun; spelling as per project standard; acronym for
+          </row>
+          <row>
+            <entry>framebuffer</entry>
+            <entry>frame buffer, frame-buffer</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>front-end</entry>
+            <entry>front end, frontend</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>FTP</entry>
+            <entry>F.T.P., Ftp, ftp</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>GIMP</entry>
+            <entry>G.I.M.P., Gimp, gimp</entry>
+            <entry>noun; spelling as per project standard; acronym for
               <emphasis>GNU Image Manipulation Program</emphasis>; if
               <quote>the</quote> occurs directly before
               <emphasis>GIMP</emphasis>, capitalize it: <quote>The</quote>
-      </entry>
-     </row>
-     <row>
-      <entry>GNOME</entry>
-      <entry>G.N.O.M.E., GNU Networked Object Model Environment,
+            </entry>
+          </row>
+          <row>
+            <entry>GNOME</entry>
+            <entry>G.N.O.M.E., GNU Networked Object Model Environment,
               Gnome
             </entry>
-      <entry>noun; spelling as per project standard; not an acronym
+            <entry>noun; spelling as per project standard; not an acronym
             </entry>
-     </row>
-     <row>
-      <entry>GRUB</entry>
-      <entry>G.R.U.B., Grub, grub</entry>
-      <entry>noun; acronym for
+          </row>
+          <row>
+            <entry>GRUB</entry>
+            <entry>G.R.U.B., Grub, grub</entry>
+            <entry>noun; acronym for
               <emphasis>GRand Unified Bootloader</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>graphical user interface</entry>
-      <entry>Graphical User Interface</entry>
-      <entry>noun; acronym for
-              <emphasis>graphical user interface</emphasis>
-       <remark>sknorr, 2013-09-16: Not completely sure about graphical UI
-              </remark>
-      </entry>
-     </row>
-     <row>
-      <entry>GUI</entry>
-      <entry>G.U.I., GUI interface, GUI user interface, Gui
             </entry>
-      <entry>noun; acronym for
+          </row>
+          <row>
+            <entry>graphical user interface</entry>
+            <entry>Graphical User Interface</entry>
+            <entry>noun; acronym for
               <emphasis>graphical user interface</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>hard disk</entry>
-      <entry>HDD, HD, hard disc [misspelling], hard disk drive, hard drive,
+              <remark>sknorr, 2013-09-16: Not completely sure about graphical UI
+              </remark>
+            </entry>
+          </row>
+          <row>
+            <entry>GUI</entry>
+            <entry>G.U.I., GUI interface, GUI user interface, Gui
+            </entry>
+            <entry>noun; acronym for
+              <emphasis>graphical user interface</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>hard disk</entry>
+            <entry>HDD, HD, hard disc [misspelling], hard disk drive, hard drive,
               hard-disk, hard-drive, harddisk, harddrive, hdd, hd
             </entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>hard link</entry>
-      <entry>hard-link, hardlink</entry>
-      <entry>only as a noun; as a verb, use
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>hard link</entry>
+            <entry>hard-link, hardlink</entry>
+            <entry>only as a noun; as a verb, use
               <emphasis>create a hardlink link</emphasis>; directory entry
               that contains an alternative name for an existing file, in
               contrast to that, <emphasis>symbolic links</emphasis> are
               themselves files which link to the name of another file
             </entry>
-     </row>
-     <row>
-      <entry>home page</entry>
-      <entry>home-page, homepage</entry>
-      <entry>noun
+          </row>
+          <row>
+            <entry>home page</entry>
+            <entry>home-page, homepage</entry>
+            <entry>noun
               <remark>sknorr, 2013-09-16: I can't accept the accepted spelling.
               </remark>
-      </entry>
-     </row>
-     <row>
-      <entry>host name</entry>
-      <entry>host-name, hostname</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>(to) hotplug sth. (into sth.)</entry>
-      <entry>(to) hot plug sth. (into sth.), (to) hot-plug sth. (into
+            </entry>
+          </row>
+          <row>
+            <entry>host name</entry>
+            <entry>host-name, hostname</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>(to) hotplug sth. (into sth.)</entry>
+            <entry>(to) hot plug sth. (into sth.), (to) hot-plug sth. (into
               sth.), (to) hotadd sth., (to) hotswap sth.
             </entry>
-      <entry>verb; adding a component or device to a system while the
+            <entry>verb; adding a component or device to a system while the
               system is running; use <emphasis>remove at runtime</emphasis>
               where the specific action of removing a component or device is
               concerned
             </entry>
-     </row>
-     <row>
-      <entry>hotplugging</entry>
-      <entry>hot plugging, hot-plugging, hotadding, hotswapping</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>hotpluggable</entry>
-      <entry>hot pluggable, hot-pluggable, hotaddable, hotswappable</entry>
-      <entry>adjective</entry>
-     </row>
-     <row>
-      <entry>HTML page</entry>
-      <entry>HTML document, HTML Web page, HTML web page</entry>
-      <entry>noun; when referring to a local file; see also
+          </row>
+          <row>
+            <entry>hotplugging</entry>
+            <entry>hot plugging, hot-plugging, hotadding, hotswapping</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>hotpluggable</entry>
+            <entry>hot pluggable, hot-pluggable, hotaddable, hotswappable</entry>
+            <entry>adjective</entry>
+          </row>
+          <row>
+            <entry>HTML page</entry>
+            <entry>HTML document, HTML Web page, HTML web page</entry>
+            <entry>noun; when referring to a local file; see also
               <emphasis>Web page</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>HTTP</entry>
-      <entry>H.T.T.P., Http, http</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>HTTPS</entry>
-      <entry>H.T.T.P.S., Https, https</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>hypervisor</entry>
-      <entry>hyper visor, hyper-visor, hypervizor
             </entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>indexes</entry>
-      <entry>indices</entry>
-      <entry>noun; plural of index</entry>
-     </row>
-     <row>
-      <entry>infrared</entry>
-      <entry>infra red, infra-red</entry>
-      <entry>noun or adjective.
+          </row>
+          <row>
+            <entry>HTTP</entry>
+            <entry>H.T.T.P., Http, http</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>HTTPS</entry>
+            <entry>H.T.T.P.S., Https, https</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>hypervisor</entry>
+            <entry>hyper visor, hyper-visor, hypervizor
+            </entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>indexes</entry>
+            <entry>indices</entry>
+            <entry>noun; plural of index</entry>
+          </row>
+          <row>
+            <entry>infrared</entry>
+            <entry>infra red, infra-red</entry>
+            <entry>noun or adjective.
               <remark>sknorr, 2013-09-16: Really a noun?</remark>
-      </entry>
-     </row>
-     <row>
-      <entry>init script</entry>
-      <entry>init-script, initscript, initialization script [incorrect,
+            </entry>
+          </row>
+          <row>
+            <entry>init script</entry>
+            <entry>init-script, initscript, initialization script [incorrect,
               when referring to script run by <command>init</command>]</entry>
-      <entry>noun; a script run by <command>init</command>; for <phrase
+            <entry>noun; a script run by <command>init</command>; for <phrase
               role="productname">systemd</phrase>, use <emphasis>unit</emphasis>
               or <emphasis>unit file</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>initialization</entry>
-      <entry>init, initialisation [British]</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>(to) initialize sth.</entry>
-      <entry>(to) init sth., (to) initialise sth. [British]</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>installation medium</entry>
-      <entry>installation data medium</entry>
-      <entry>noun; often in plural, <quote>installation media</quote>;
+            </entry>
+          </row>
+          <row>
+            <entry>initialization</entry>
+            <entry>init, initialisation [British]</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>(to) initialize sth.</entry>
+            <entry>(to) init sth., (to) initialise sth. [British]</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>installation medium</entry>
+            <entry>installation data medium</entry>
+            <entry>noun; often in plural, <quote>installation media</quote>;
        only for <emphasis>physical</emphasis> sources of installation data for
        products;
        when physicality of the installation source is unclear or unimportant,
        use the more versatile term <emphasis>installation source</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>installation source</entry>
-      <entry>installation data source</entry>
-      <entry>
+            </entry>
+          </row>
+          <row>
+            <entry>installation source</entry>
+            <entry>installation data source</entry>
+            <entry>
        noun; source of installation data for products, can be a physical medium
        or online repository
       </entry>
-     </row>
-     <row>
-      <entry>Internet</entry>
-      <entry>internet</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>intranet</entry>
-      <entry>Intranet</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>I/O port</entry>
-      <entry>I.O. port, I-O port, IO port, Io port</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>IA64</entry>
-      <entry>IA-64, ia64, ipf, Itanium</entry>
-      <entry>noun; processor architecture
+          </row>
+          <row>
+            <entry>Internet</entry>
+            <entry>internet</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>intranet</entry>
+            <entry>Intranet</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>I/O port</entry>
+            <entry>I.O. port, I-O port, IO port, Io port</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>IA64</entry>
+            <entry>IA-64, ia64, ipf, Itanium</entry>
+            <entry>noun; processor architecture
       </entry>
-     </row>
-     <row>
-      <entry>IPsec</entry>
-      <entry>IPSEC, Ipsec</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>IPv4</entry>
-      <entry>IP v4, IPV4, Ipv4</entry>
-      <entry>noun; acronym for <emphasis>Internet protocol version
+          </row>
+          <row>
+            <entry>IPsec</entry>
+            <entry>IPSEC, Ipsec</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>IPv4</entry>
+            <entry>IP v4, IPV4, Ipv4</entry>
+            <entry>noun; acronym for <emphasis>Internet protocol version
               four</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>IPv6</entry>
-      <entry>IP v6, IPV6, Ipv6</entry>
-      <entry>noun; acronym for <emphasis>Internet protocol version
+            </entry>
+          </row>
+          <row>
+            <entry>IPv6</entry>
+            <entry>IP v6, IPV6, Ipv6</entry>
+            <entry>noun; acronym for <emphasis>Internet protocol version
               six</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>journaling</entry>
-      <entry>journalling [British]</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>KIWI</entry>
-      <entry>Kiwi, kiwi</entry>
-      <entry>noun; project spelling; not an acronym; software for creation of
+            </entry>
+          </row>
+          <row>
+            <entry>journaling</entry>
+            <entry>journalling [British]</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>KIWI</entry>
+            <entry>Kiwi, kiwi</entry>
+            <entry>noun; project spelling; not an acronym; software for creation of
         operating system images
       </entry>
-     </row>
-     <row>
-      <entry>K Desktop Environment</entry>
-      <entry>Kool Desktop Environment</entry>
-      <entry>noun; spelling according to project standard; acronym is
+          </row>
+          <row>
+            <entry>K Desktop Environment</entry>
+            <entry>Kool Desktop Environment</entry>
+            <entry>noun; spelling according to project standard; acronym is
               <emphasis>KDE</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>KDE</entry>
-      <entry>KDE Desktop Environment, K.D.E., Kde, kde</entry>
-      <entry>noun; spelling according to project standard; acronym for
-              <emphasis>K Desktop Environment</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>Kdump</entry>
-      <entry>KDUMP, kdump</entry>
-      <entry>noun; only for application</entry>
-     </row>
-     <row>
-      <entry>kdump</entry>
-      <entry>KDUMP, Kdump</entry>
-      <entry>noun; only for command
             </entry>
-     </row>
-     <row>
-      <entry>kernel space</entry>
-      <entry>kernel-space, kernelspace, kernelland</entry>
-      <entry>noun; memory area reserved for the kernel and device drivers;
+          </row>
+          <row>
+            <entry>KDE</entry>
+            <entry>KDE Desktop Environment, K.D.E., Kde, kde</entry>
+            <entry>noun; spelling according to project standard; acronym for
+              <emphasis>K Desktop Environment</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>Kdump</entry>
+            <entry>KDUMP, kdump</entry>
+            <entry>noun; only for application</entry>
+          </row>
+          <row>
+            <entry>kdump</entry>
+            <entry>KDUMP, Kdump</entry>
+            <entry>noun; only for command
+            </entry>
+          </row>
+          <row>
+            <entry>kernel space</entry>
+            <entry>kernel-space, kernelspace, kernelland</entry>
+            <entry>noun; memory area reserved for the kernel and device drivers;
               see also <emphasis>user space</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>key combination</entry>
-      <entry>hot key, key accelerator, keyboard accelerator, key combo,
+            </entry>
+          </row>
+          <row>
+            <entry>key combination</entry>
+            <entry>hot key, key accelerator, keyboard accelerator, key combo,
               keyboard combo, keyboard combination, key shortcut
             </entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>Kprobes</entry>
-      <entry>kprobes</entry>
-      <entry>noun; only for application</entry>
-     </row>
-     <row>
-      <entry>kprobes</entry>
-      <entry>Kprobes</entry>
-      <entry>noun; only for command
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>Kprobes</entry>
+            <entry>kprobes</entry>
+            <entry>noun; only for application</entry>
+          </row>
+          <row>
+            <entry>kprobes</entry>
+            <entry>Kprobes</entry>
+            <entry>noun; only for command
             </entry>
-     </row>
-     <row>
-      <entry>(to) left-click sth.</entry>
-      <entry>(to) click the left mouse, (to) click the left mouse button,
+          </row>
+          <row>
+            <entry>(to) left-click sth.</entry>
+            <entry>(to) click the left mouse, (to) click the left mouse button,
               (to) left click sth., (to) left-click on sth.,
               (to) left-click onto sth., (to) leftclick sth.
             </entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-        <entry>left click</entry>
-        <entry/>
-        <entry>noun</entry>
-       </row>
-     <row>
-      <entry>LibreOffice</entry>
-      <entry>Libre Office, Libreoffice, LibO, LO, libreoffice</entry>
-      <entry>noun; spelling according to project standard; do not create
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>left click</entry>
+            <entry/>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>LibreOffice</entry>
+            <entry>Libre Office, Libreoffice, LibO, LO, libreoffice</entry>
+            <entry>noun; spelling according to project standard; do not create
               acronyms of <emphasis>LibreOffice</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>license</entry>
-      <entry>licen<emphasis>c</emphasis>e [British]</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>(to) license sth.</entry>
-      <entry>(to) licen<emphasis>c</emphasis>e sth. [British]</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>lifecycle</entry>
-      <entry>life cycle, life-cycle</entry>
-      <entry>noun; a series of development and support stages that a product
+            </entry>
+          </row>
+          <row>
+            <entry>license</entry>
+            <entry>licen<emphasis>c</emphasis>e [British]</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>(to) license sth.</entry>
+            <entry>(to) licen<emphasis>c</emphasis>e sth. [British]</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>lifecycle</entry>
+            <entry>life cycle, life-cycle</entry>
+            <entry>noun; a series of development and support stages that a product
         passes through
       </entry>
-     </row>
-     <row>
-      <entry>Linux</entry>
-      <entry>LINUX, linux</entry>
-      <entry>noun; spelling according to project standard</entry>
-     </row>
-     <row>
-      <entry>list</entry>
-      <entry>list field</entry>
-      <entry>noun; GUI element showing a list of menu items the user can choose from
+          </row>
+          <row>
+            <entry>Linux</entry>
+            <entry>LINUX, linux</entry>
+            <entry>noun; spelling according to project standard</entry>
+          </row>
+          <row>
+            <entry>list</entry>
+            <entry>list field</entry>
+            <entry>noun; GUI element showing a list of menu items the user can choose from
             </entry>
-     </row>
-     <row>
-      <entry>live CD</entry>
-      <entry>LiveCD, live-CD</entry>
-      <entry>noun; CD that allows booting an operating system without
+          </row>
+          <row>
+            <entry>live CD</entry>
+            <entry>LiveCD, live-CD</entry>
+            <entry>noun; CD that allows booting an operating system without
         installing
       </entry>
-     </row>
-     <row>
-      <entry>live DVD</entry>
-      <entry>LiveDVD, live-DVD</entry>
-      <entry>noun; DVD that allows booting an operating system without
+          </row>
+          <row>
+            <entry>live DVD</entry>
+            <entry>LiveDVD, live-DVD</entry>
+            <entry>noun; DVD that allows booting an operating system without
         installing
       </entry>
-     </row>
-     <row>
-      <entry>live image</entry>
-      <entry>live disk image, LiveImage, live-image</entry>
-      <entry>noun; disk image that can be copied to a medium and then allows
+          </row>
+          <row>
+            <entry>live image</entry>
+            <entry>live disk image, LiveImage, live-image</entry>
+            <entry>noun; disk image that can be copied to a medium and then allows
         booting an operating system without installing
       </entry>
-     </row>
-     <row>
-      <entry>local host</entry>
-      <entry>local-host, localhost</entry>
-      <entry>noun; when describing the concept of hosting locally</entry>
-     </row>
-     <row>
-      <entry>localhost</entry>
-      <entry>local host, local-host</entry>
-      <entry>noun; when referring to the default name of a local host</entry>
-     </row>
-     <row>
-      <entry>log file</entry>
-      <entry>log-file, logfile</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>login</entry>
-      <entry>log in, log-in</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>logout</entry>
-      <entry>log out, log-out</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>(to) log in [see below for appropriate preposition]</entry>
-      <entry>(to) log-in, (to) login, (to) log on, (to) log-on,
+          </row>
+          <row>
+            <entry>local host</entry>
+            <entry>local-host, localhost</entry>
+            <entry>noun; when describing the concept of hosting locally</entry>
+          </row>
+          <row>
+            <entry>localhost</entry>
+            <entry>local host, local-host</entry>
+            <entry>noun; when referring to the default name of a local host</entry>
+          </row>
+          <row>
+            <entry>log file</entry>
+            <entry>log-file, logfile</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>login</entry>
+            <entry>log in, log-in</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>logout</entry>
+            <entry>log out, log-out</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>(to) log in [see below for appropriate preposition]</entry>
+            <entry>(to) log-in, (to) login, (to) log on, (to) log-on,
               (to) logon, (to) sign in, (to) sign on
             </entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>(to) log in to sth.</entry>
-      <entry>(to) log in at sth., (to) log into sth.</entry>
-      <entry>verb; for logging in to a device, application, etc.</entry>
-     </row>
-     <row>
-      <entry>(to) log in on sth.</entry>
-      <entry>(to) log in at sth., (to) log in from sth.</entry>
-      <entry>verb; for logging in on the console/a host system</entry>
-     </row>
-     <row>
-      <entry>(to) log in (to sth.) via SSH</entry>
-      <entry>(to) log in (to sth.) by SSH, (to) log in (to sth.) over SSH,
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>(to) log in to sth.</entry>
+            <entry>(to) log in at sth., (to) log into sth.</entry>
+            <entry>verb; for logging in to a device, application, etc.</entry>
+          </row>
+          <row>
+            <entry>(to) log in on sth.</entry>
+            <entry>(to) log in at sth., (to) log in from sth.</entry>
+            <entry>verb; for logging in on the console/a host system</entry>
+          </row>
+          <row>
+            <entry>(to) log in (to sth.) via SSH</entry>
+            <entry>(to) log in (to sth.) by SSH, (to) log in (to sth.) over SSH,
               (to) log in (to sth.) through SSH, (to) log in (to sth.) with SSH,
               (to) SSH (to sth.), (to) ssh (to sth.), (to) ssh in (to sth.),
               (to) ssh into sth.,
             </entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>(to) log out [see below for appropriate preposition]</entry>
-      <entry>(to) log off, (to) log-out, (to) logout, (to) sign off,
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>(to) log out [see below for appropriate preposition]</entry>
+            <entry>(to) log off, (to) log-out, (to) logout, (to) sign off,
               (to) sign out
             </entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>(to) log out of sth.</entry>
-      <entry>(to) log out at sth., (to) log out from sth.</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>loopback device</entry>
-      <entry>loop back device, loop-back device</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>lowercase</entry>
-      <entry>lower case, lower-case</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>mail server</entry>
-      <entry>mail-server, mailserver</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>Maildir</entry>
-      <entry>Mail dir, mail dir</entry>
-      <entry>noun; specific format for e-mail storage, not a directory for
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>(to) log out of sth.</entry>
+            <entry>(to) log out at sth., (to) log out from sth.</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>loopback device</entry>
+            <entry>loop back device, loop-back device</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>lowercase</entry>
+            <entry>lower case, lower-case</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>mail server</entry>
+            <entry>mail-server, mailserver</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>Maildir</entry>
+            <entry>Mail dir, mail dir</entry>
+            <entry>noun; specific format for e-mail storage, not a directory for
               e-mails
             </entry>
-     </row>
-     <row>
-      <entry>mainboard</entry>
-      <entry>main board, main-board, mother board, mother-board,
+          </row>
+          <row>
+            <entry>mainboard</entry>
+            <entry>main board, main-board, mother board, mother-board,
               motherboard
             </entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>man page</entry>
-      <entry>manual page, Man page, Man-page, man page, man-page, manpage</entry>
-      <entry>two words</entry>
-     </row>
-     <row>
-      <entry>Mbox</entry>
-      <entry>mbox</entry>
-      <entry>noun; specific format for e-mail storage</entry>
-     </row>
-     <row>
-      <entry>menu</entry>
-      <entry>drop-down menu</entry>
-      <entry>noun; GUI element that is a list whose entries each start an
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>man page</entry>
+            <entry>manual page, Man page, Man-page, man page, man-page, manpage</entry>
+            <entry>two words</entry>
+          </row>
+          <row>
+            <entry>Mbox</entry>
+            <entry>mbox</entry>
+            <entry>noun; specific format for e-mail storage</entry>
+          </row>
+          <row>
+            <entry>menu</entry>
+            <entry>drop-down menu</entry>
+            <entry>noun; GUI element that is a list whose entries each start an
               action; see also <emphasis>drop-down list</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>metadata</entry>
-      <entry>meta data, meta-data, metadatas [misspelling]</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>(to) middle-click sth.</entry>
-      <entry>(to) click the middle mouse, (to) click the middle mouse button,
+            </entry>
+          </row>
+          <row>
+            <entry>metadata</entry>
+            <entry>meta data, meta-data, metadatas [misspelling]</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>(to) middle-click sth.</entry>
+            <entry>(to) click the middle mouse, (to) click the middle mouse button,
               (to) middle click sth., (to) middle-click on sth.,
               (to) middle-click onto sth., (to) middleclick sth.
             </entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-        <entry>middle click</entry>
-        <entry/>
-        <entry>noun</entry>
-       </row>
-     <row>
-      <entry>mount point</entry>
-      <entry>mount-point, mountpoint</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>mouse button</entry>
-      <entry>mouse-button, mousebutton, mouse key, mouse-key, mousekey
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>middle click</entry>
+            <entry/>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>mount point</entry>
+            <entry>mount-point, mountpoint</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>mouse button</entry>
+            <entry>mouse-button, mousebutton, mouse key, mouse-key, mousekey
             </entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>(to) multitask</entry>
-      <entry>(to) multi task, (to) multi-task</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>multitasking</entry>
-      <entry>multi tasking, multi-tasking</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>multiuser</entry>
-      <entry>multi user, multi-user</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>multi-version</entry>
-      <entry>multi version, multiversion</entry>
-      <entry>adjective</entry>
-      </row>
-     <row>
-      <entry>name server</entry>
-      <entry>name-server, nameserver</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>namespace</entry>
-      <entry>name space, name-space</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>need to</entry>
-      <entry>have to</entry>
-      <entry>verb; see also <emphasis>must</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>NFS</entry>
-      <entry>N.F.S., NFS file system, Nfs</entry>
-      <entry>noun; often: <quote>NFS client,</quote>
-              <quote>NFS server</quote>
-      </entry>
-     </row>
-     <row>
-      <entry>NIS</entry>
-      <entry>N.I.S., NIS information service, Nis</entry>
-      <entry>noun; often: <quote>NIS client,</quote>
-              <quote>NIS server</quote>
-      </entry>
-     </row>
-     <row>
-      <entry>OOo</entry>
-      <entry>Oo.o, Ooo, OOoo, OO, oo</entry>
-      <entry>noun; only when referring to versions prior to 3.4; spelling
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>(to) multitask</entry>
+            <entry>(to) multi task, (to) multi-task</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>multitasking</entry>
+            <entry>multi tasking, multi-tasking</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>multiuser</entry>
+            <entry>multi user, multi-user</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>multi-version</entry>
+            <entry>multi version, multiversion</entry>
+            <entry>adjective</entry>
+          </row>
+          <row>
+            <entry>name server</entry>
+            <entry>name-server, nameserver</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>namespace</entry>
+            <entry>name space, name-space</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>need to</entry>
+            <entry>have to</entry>
+            <entry>verb; see also <emphasis>must</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>NFS</entry>
+            <entry>N.F.S., NFS file system, Nfs</entry>
+            <entry>noun; often: <quote>NFS client,</quote><quote>NFS server</quote>
+            </entry>
+          </row>
+          <row>
+            <entry>NIS</entry>
+            <entry>N.I.S., NIS information service, Nis</entry>
+            <entry>noun; often: <quote>NIS client,</quote><quote>NIS server</quote>
+            </entry>
+          </row>
+          <row>
+            <entry>OOo</entry>
+            <entry>Oo.o, Ooo, OOoo, OO, oo</entry>
+            <entry>noun; only when referring to versions prior to 3.4; spelling
               according to former project standard; acronym of
               <emphasis>OpenOffice.org</emphasis>; see also
               <emphasis>AOO</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>(to) open sth.</entry>
-      <entry>(to) open up sth.</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>OpenOffice.org</entry>
-      <entry>Open Office Org, OpenOffice, Openoffice.org,
+            </entry>
+          </row>
+          <row>
+            <entry>(to) open sth.</entry>
+            <entry>(to) open up sth.</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>OpenOffice.org</entry>
+            <entry>Open Office Org, OpenOffice, Openoffice.org,
               openoffice, openoffice.org</entry>
-      <entry>noun; only when referring to versions prior to 3.4; spelling
+            <entry>noun; only when referring to versions prior to 3.4; spelling
               according to former project standard; acronym is
               <emphasis>OOo</emphasis>; see also
               <emphasis>Apache OpenOffice</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>openSUSE</entry>
-      <entry>Open SUSE, Open-SUSE, open SUSE, open-SUSE</entry>
-      <entry>noun; never capitalize first letter</entry>
-     </row>
-     <row>
-      <entry>open source</entry>
-      <entry>Open Source, Open-Source, open-source, opensource</entry>
-      <entry>only as a noun</entry>
-     </row>
-     <row>
-      <entry>operating system</entry>
-      <entry>operation system, operating-system</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>paravirtualized</entry>
-      <entry>para-virtualised, paravirtualised [British],
+            </entry>
+          </row>
+          <row>
+            <entry>openSUSE</entry>
+            <entry>Open SUSE, Open-SUSE, open SUSE, open-SUSE</entry>
+            <entry>noun; never capitalize first letter</entry>
+          </row>
+          <row>
+            <entry>open source</entry>
+            <entry>Open Source, Open-Source, open-source, opensource</entry>
+            <entry>only as a noun</entry>
+          </row>
+          <row>
+            <entry>operating system</entry>
+            <entry>operation system, operating-system</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>paravirtualized</entry>
+            <entry>para-virtualised, paravirtualised [British],
               para-virtualized
             </entry>
-      <entry>adjective</entry>
-     </row>
-     <row>
-      <entry>patch level</entry>
-      <entry>patch-level, patchlevel</entry>
-      <entry>noun
+            <entry>adjective</entry>
+          </row>
+          <row>
+            <entry>patch level</entry>
+            <entry>patch-level, patchlevel</entry>
+            <entry>noun
             </entry>
-     </row>
-     <row>
-      <entry>path name</entry>
-      <entry>path-name, pathname</entry>
-      <entry>noun; avoid, check if <emphasis>path</emphasis> can be used
+          </row>
+          <row>
+            <entry>path name</entry>
+            <entry>path-name, pathname</entry>
+            <entry>noun; avoid, check if <emphasis>path</emphasis> can be used
               instead
             </entry>
-     </row>
-     <row>
-      <entry>(to) plug sth. in</entry>
-      <entry>(to) plug-in sth., (to) plugin sth.</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>plug-in</entry>
-      <entry>plug in, plugin</entry>
-      <entry>noun|adjective</entry>
-     </row>
-     <row>
-      <entry>pointer</entry>
-      <entry>cursor [used for keyboard input], mouse cursor</entry>
-      <entry>noun; on-screen item echoing the movement of a pointing device,
+          </row>
+          <row>
+            <entry>(to) plug sth. in</entry>
+            <entry>(to) plug-in sth., (to) plugin sth.</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>plug-in</entry>
+            <entry>plug in, plugin</entry>
+            <entry>noun|adjective</entry>
+          </row>
+          <row>
+            <entry>pointer</entry>
+            <entry>cursor [used for keyboard input], mouse cursor</entry>
+            <entry>noun; on-screen item echoing the movement of a pointing device,
         such as a mouse; <emphasis>mouse pointer</emphasis> is also acceptable;
         see also <emphasis>cursor</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>pop-up</entry>
+            <entry>pop up, popup</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>on port</entry>
+            <entry>at port</entry>
+            <entry>noun with preposition</entry>
+          </row>
+          <row>
+            <entry>PostScript</entry>
+            <entry>POSTSCRIPT, Postscript, postscript</entry>
+            <entry>noun; spelling as per vendor standard</entry>
+          </row>
+          <row>
+            <entry>POWER</entry>
+            <entry>ppc64le, POWER8, Power</entry>
+            <entry>noun; processor architecture
       </entry>
-     </row>
-     <row>
-      <entry>pop-up</entry>
-      <entry>pop up, popup</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>on port</entry>
-      <entry>at port</entry>
-      <entry>noun with preposition</entry>
-     </row>
-     <row>
-      <entry>PostScript</entry>
-      <entry>POSTSCRIPT, Postscript, postscript</entry>
-      <entry>noun; spelling as per vendor standard</entry>
-     </row>
-     <row>
-      <entry>POWER</entry>
-      <entry>ppc64le, POWER8, Power</entry>
-      <entry>noun; processor architecture
-      </entry>
-     </row>
-     <row>
-      <entry>(to) preconfigure sth.</entry>
-      <entry>(to) pre-configure sth.</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>preconfigured</entry>
-      <entry>pre-configured</entry>
-      <entry>adjective</entry>
-     </row>
-     <row>
-      <entry>(to) print sth.</entry>
-      <entry>(to) print out sth.</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>print queue</entry>
-      <entry>print<emphasis>er</emphasis> queue,
+          </row>
+          <row>
+            <entry>(to) preconfigure sth.</entry>
+            <entry>(to) pre-configure sth.</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>preconfigured</entry>
+            <entry>pre-configured</entry>
+            <entry>adjective</entry>
+          </row>
+          <row>
+            <entry>(to) print sth.</entry>
+            <entry>(to) print out sth.</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>print queue</entry>
+            <entry>print<emphasis>er</emphasis> queue,
               print<emphasis>ing</emphasis> queue
             </entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>print spooler</entry>
-      <entry>print<emphasis>er</emphasis> spooler,
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>print spooler</entry>
+            <entry>print<emphasis>er</emphasis> spooler,
               print<emphasis>ing</emphasis> spooler
             </entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>(to) press sth.</entry>
-      <entry>(to) depress sth. [negative], (to) hit sth. [colloquial],
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>(to) press sth.</entry>
+            <entry>(to) depress sth. [negative], (to) hit sth. [colloquial],
               (to) punch sth. [colloquial], (to) strike sth. [colloquial]
             </entry>
-      <entry>verb; when referring to keyboard keys or device buttons, but not
+            <entry>verb; when referring to keyboard keys or device buttons, but not
         mouse buttons; also see <emphasis>click</emphasis>
-      </entry>
-     </row>
-      <row>
-      <entry>program</entry>
-      <entry/>
-      <entry>noun; a set of coded instructions that enables a machine, 
+            </entry>
+          </row>
+          <row>
+            <entry>program</entry>
+            <entry/>
+            <entry>noun; a set of coded instructions that enables a machine, 
              especially a computer, to perform a desired sequence of 
              operations</entry>
-     </row>
-     <row>
-      <entry>proxy</entry>
-      <entry/>
-      <entry>only as a noun</entry>
-     </row>
-     <row>
-      <entry>PXE</entry>
-      <entry>P.X.E., Pixie, pixie, PXE Environment, Pxe, pxe</entry>
-      <entry>noun; acronym for
+          </row>
+          <row>
+            <entry>proxy</entry>
+            <entry/>
+            <entry>only as a noun</entry>
+          </row>
+          <row>
+            <entry>PXE</entry>
+            <entry>P.X.E., Pixie, pixie, PXE Environment, Pxe, pxe</entry>
+            <entry>noun; acronym for
               <quote>Preboot Execution Environment</quote>
-      </entry>
-     </row>
-     <row>
-      <entry>PXE boot</entry>
-      <entry>PXE Boot</entry>
-      <entry>only as a noun; as a verb, use
+            </entry>
+          </row>
+          <row>
+            <entry>PXE boot</entry>
+            <entry>PXE Boot</entry>
+            <entry>only as a noun; as a verb, use
               <quote>(to) boot using PXE</quote> or
               <quote>(to) boot via PXE</quote> instead
             </entry>
-     </row>
-     <row>
-      <entry>(to) quit sth.</entry>
-      <entry>(to) abort sth., (to) exit sth., (to) kill sth.,
+          </row>
+          <row>
+            <entry>(to) quit sth.</entry>
+            <entry>(to) abort sth., (to) exit sth., (to) kill sth.,
               (to) terminate sth.
             </entry>
-      <entry>noun; quitting an application; always use
+            <entry>noun; quitting an application; always use
               <quote>close</quote> when referring to windows; always use
               <quote>terminate</quote> when ending an application forcefully
             </entry>
-     </row>
-     <row>
-      <entry>RAM</entry>
-      <entry>R.A.M., RAM memory, Ram, ram</entry>
-      <entry>noun; acronym for <emphasis>random access memory</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>RAM disk</entry>
-      <entry>RAM disc [misspelling], RAM drive, RAM-disk, RAM-drive, RAMdisk,
+          </row>
+          <row>
+            <entry>RAM</entry>
+            <entry>R.A.M., RAM memory, Ram, ram</entry>
+            <entry>noun; acronym for <emphasis>random access memory</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>RAM disk</entry>
+            <entry>RAM disc [misspelling], RAM drive, RAM-disk, RAM-drive, RAMdisk,
               RAM-drive, Ramdisk, Ramdrive
             </entry>
-      <entry>noun; either treating RAM as a hard disk or a
+            <entry>noun; either treating RAM as a hard disk or a
               type of solid-state storage
             </entry>
-     </row>
-     <row>
-      <entry>README</entry>
-      <entry>Read-me, Readme, read-me, readme</entry>
-      <entry>noun; use this capitalization for all general references</entry>
-     </row>
-     <row>
-      <entry>read-only</entry>
-      <entry>R.O., RO, read only, readonly, ro</entry>
-      <entry>adjective</entry>
-     </row>
-     <row>
-      <entry>real time</entry>
-      <entry>real-time</entry>
-      <entry>noun; as in <quote>watch in real time</quote></entry>
-     </row>
-     <row>
-      <entry>real-time</entry>
-      <entry>real time</entry>
-      <entry>adjective, compound noun; as in <quote>real-time processing</quote></entry>
-     </row>
-     <row>
-      <entry>(to) reconfigure sth.</entry>
-      <entry>(to) re-configure sth.</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>(to) re-create sth.</entry>
-      <entry>(to) recreate [different meaning]</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>(to) register [see below for appropriate preposition]</entry>
-      <entry>(to) sign up, (to) sign-up, (to) signup</entry>
-      <entry>verb; register as a user</entry>
-     </row>
-     <row>
-      <entry>(to) register at sth.</entry>
-      <entry/>
-      <entry>verb; register at a system</entry>
-     </row>
-     <row>
-      <entry>(to) register for sth.</entry>
-      <entry/>
-      <entry>verb; register for a service</entry>
-     </row>
-     <row>
-        <entry>(to) register to sth.</entry>
-        <entry/>
-        <entry>verb; use when writing about registering to a server:
-        <emphasis>register to the RMT server</emphasis></entry>
-       </row>
-       <row>
-        <entry>(to) register with sth.</entry>
-        <entry/>
-        <entry>verb; use when writing about the tool used for registration:
-        <emphasis>register the domain with libvirt</emphasis></entry>
-       </row>
-     <row>
-      <entry>(to) remove sth. at runtime (from sth.)</entry>
-      <entry>(to) hotremove sth.</entry>
-      <entry>verb; removing a component or device to a system while it is
+          </row>
+          <row>
+            <entry>README</entry>
+            <entry>Read-me, Readme, read-me, readme</entry>
+            <entry>noun; use this capitalization for all general references</entry>
+          </row>
+          <row>
+            <entry>read-only</entry>
+            <entry>R.O., RO, read only, readonly, ro</entry>
+            <entry>adjective</entry>
+          </row>
+          <row>
+            <entry>real time</entry>
+            <entry>real-time</entry>
+            <entry>noun; as in <quote>watch in real time</quote>
+            </entry>
+          </row>
+          <row>
+            <entry>real-time</entry>
+            <entry>real time</entry>
+            <entry>adjective, compound noun; as in <quote>real-time processing</quote>
+            </entry>
+          </row>
+          <row>
+            <entry>(to) reconfigure sth.</entry>
+            <entry>(to) re-configure sth.</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>(to) re-create sth.</entry>
+            <entry>(to) recreate [different meaning]</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>(to) register [see below for appropriate preposition]</entry>
+            <entry>(to) sign up, (to) sign-up, (to) signup</entry>
+            <entry>verb; register as a user</entry>
+          </row>
+          <row>
+            <entry>(to) register at sth.</entry>
+            <entry/>
+            <entry>verb; register at a system</entry>
+          </row>
+          <row>
+            <entry>(to) register for sth.</entry>
+            <entry/>
+            <entry>verb; register for a service</entry>
+          </row>
+          <row>
+            <entry>(to) register to sth.</entry>
+            <entry/>
+            <entry>verb; use when writing about registering to a server:
+        <emphasis>register to the RMT server</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>(to) register with sth.</entry>
+            <entry/>
+            <entry>verb; use when writing about the tool used for registration:
+        <emphasis>register the domain with libvirt</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>(to) remove sth. at runtime (from sth.)</entry>
+            <entry>(to) hotremove sth.</entry>
+            <entry>verb; removing a component or device to a system while it is
               running; where sensible, use the more generic term
               <emphasis>hotplug</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>(to) right-click sth.</entry>
-      <entry>(to) click the right mouse, (to) click the right mouse button,
+            </entry>
+          </row>
+          <row>
+            <entry>(to) right-click sth.</entry>
+            <entry>(to) click the right mouse, (to) click the right mouse button,
               (to) right click sth., (to) right-click on sth.,
               (to) right-click onto sth., (to) rightclick sth.
             </entry>
-      <entry>verb</entry>
-      </row>
-      <row>
-        <entry>right click</entry>
-        <entry/>
-        <entry>noun</entry>
-     </row>
-     <row>
-      <entry>RPM</entry>
-      <entry>R.P.M., Rpm, rpm [different meaning]</entry>
-      <entry>noun; acronym for <emphasis>RPM Package Manager</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>runlevel</entry>
-      <entry>run level, run-level</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>runtime</entry>
-      <entry>run time, run-time</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>Samba</entry>
-      <entry>SAMBA, samba</entry>
-      <entry>noun; project spelling; open-source implementation of the SMB file
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>right click</entry>
+            <entry/>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>RPM</entry>
+            <entry>R.P.M., Rpm, rpm [different meaning]</entry>
+            <entry>noun; acronym for <emphasis>RPM Package Manager</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>runlevel</entry>
+            <entry>run level, run-level</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>runtime</entry>
+            <entry>run time, run-time</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>Samba</entry>
+            <entry>SAMBA, samba</entry>
+            <entry>noun; project spelling; open-source implementation of the SMB file
         and print service protocol
       </entry>
-     </row>
-     <row>
-      <entry>(to) save sth.</entry>
-      <entry>(to) store sth., (to) write sth. out</entry>
-      <entry>verb; when saving or overwriting a file from a GUI program or
+          </row>
+          <row>
+            <entry>(to) save sth.</entry>
+            <entry>(to) store sth., (to) write sth. out</entry>
+            <entry>verb; when saving or overwriting a file from a GUI program or
               via a parameter of a command-line program; see also
               <emphasis>write</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>(to) save sth. as sth.</entry>
-      <entry/>
-      <entry>verb; when saving a file with a specific name
             </entry>
-     </row>
-     <row>
-      <entry>(to) save sth. in sth.</entry>
-      <entry/>
-      <entry>verb; when saving a file either on a specific device or file
+          </row>
+          <row>
+            <entry>(to) save sth. as sth.</entry>
+            <entry/>
+            <entry>verb; when saving a file with a specific name
+            </entry>
+          </row>
+          <row>
+            <entry>(to) save sth. in sth.</entry>
+            <entry/>
+            <entry>verb; when saving a file either on a specific device or file
               system
             </entry>
-     </row>
-     <row>
-      <entry>(to) save sth. on sth.</entry>
-      <entry/>
-      <entry>verb; when saving a file either on a specific device or file
+          </row>
+          <row>
+            <entry>(to) save sth. on sth.</entry>
+            <entry/>
+            <entry>verb; when saving a file either on a specific device or file
               system
             </entry>
-     </row>
-     <row>
-      <entry>(to) save sth. to sth.</entry>
-      <entry/>
-      <entry>verb; when saving a file to a specific folder
+          </row>
+          <row>
+            <entry>(to) save sth. to sth.</entry>
+            <entry/>
+            <entry>verb; when saving a file to a specific folder
             </entry>
-     </row>
-     <row>
-      <entry>saved in sth.</entry>
-      <entry/>
-      <entry>verb; when retrieving a file from a specific place
+          </row>
+          <row>
+            <entry>saved in sth.</entry>
+            <entry/>
+            <entry>verb; when retrieving a file from a specific place
             </entry>
-     </row>
-     <row>
-      <entry>SCSI</entry>
-      <entry>S.C.S.I., Scsi, scsi</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>screen</entry>
-      <entry/>
-      <entry>noun; the surface on which the image appears in an 
+          </row>
+          <row>
+            <entry>SCSI</entry>
+            <entry>S.C.S.I., Scsi, scsi</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>screen</entry>
+            <entry/>
+            <entry>noun; the surface on which the image appears in an 
        electronic display (as in a computer terminal); also
        the information displayed on a computer screen at one time
       </entry>
-     </row>
-     <row>
-      <entry>screenshot</entry>
-      <entry>screen shot, screen-shot</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>screen saver</entry>
-      <entry>screen-saver, screensaver</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>script</entry>
-      <entry/>
-      <entry>noun; a prewritten list of commands, and perhaps other control 
+          </row>
+          <row>
+            <entry>screenshot</entry>
+            <entry>screen shot, screen-shot</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>screen saver</entry>
+            <entry>screen-saver, screensaver</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>script</entry>
+            <entry/>
+            <entry>noun; a prewritten list of commands, and perhaps other control 
              information, to be executed (interpreted) by a shell or other 
              command interpreter</entry>
-     </row>
-     <row>
-      <entry>scrollbar</entry>
-      <entry>scroll-bar, scroll bar, scrollbox,
+          </row>
+          <row>
+            <entry>scrollbar</entry>
+            <entry>scroll-bar, scroll bar, scrollbox,
               scroller, slidebar
             </entry>
-      <entry>noun; GUI element that is used to change which portion of a
+            <entry>noun; GUI element that is used to change which portion of a
               screen area is visible
             </entry>
-     </row>
-     <row>
-      <entry>(to) select sth.</entry>
-      <entry>(to) block sth., (to) choose sth., (to) highlight sth.
+          </row>
+          <row>
+            <entry>(to) select sth.</entry>
+            <entry>(to) block sth., (to) choose sth., (to) highlight sth.
             </entry>
-      <entry>verb; when referring to list entries or text; for check boxes,
+            <entry>verb; when referring to list entries or text; for check boxes,
               use <emphasis>activate</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>selected</entry>
-      <entry>blocked, chosen, highlighted</entry>
-      <entry>adjective; selection state of list entries or text; opposite of
+            </entry>
+          </row>
+          <row>
+            <entry>selected</entry>
+            <entry>blocked, chosen, highlighted</entry>
+            <entry>adjective; selection state of list entries or text; opposite of
               <emphasis>deselected</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>(to) set sth. up</entry>
-      <entry>(to) set-up sth., (to) setup sth.</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>setup</entry>
-      <entry>set up, set-up</entry>
-      <entry>adjective|noun</entry>
-     </row>
-     <row>
-        <entry>shell</entry>
-        <entry/>
-        <entry>noun; a command-line interpreter used to describe 
+            </entry>
+          </row>
+          <row>
+            <entry>(to) set sth. up</entry>
+            <entry>(to) set-up sth., (to) setup sth.</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>setup</entry>
+            <entry>set up, set-up</entry>
+            <entry>adjective|noun</entry>
+          </row>
+          <row>
+            <entry>shell</entry>
+            <entry/>
+            <entry>noun; a command-line interpreter used to describe 
                programs that expose the input/output to the user 
                (bash, sh, zsh) and to refer to the command prompt; 
-               see also <emphasis>console, terminal</emphasis></entry>
-       </row>
-     <row>
-      <entry>(to) shut sth. down</entry>
-      <entry>(to) shut-down sth., (to) shutdown sth.</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>shutdown</entry>
-      <entry>shut down, shut-down</entry>
-      <entry>adjective|noun</entry>
-     </row>
-     <row>
-      <entry>SLE</entry>
-      <entry>S.L.E., SLE Enterprise, SLE Linux, Sle, sle</entry>
-      <entry>noun; avoid; acronym for
+               see also <emphasis>console, terminal</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>(to) shut sth. down</entry>
+            <entry>(to) shut-down sth., (to) shutdown sth.</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>shutdown</entry>
+            <entry>shut down, shut-down</entry>
+            <entry>adjective|noun</entry>
+          </row>
+          <row>
+            <entry>SLE</entry>
+            <entry>S.L.E., SLE Enterprise, SLE Linux, Sle, sle</entry>
+            <entry>noun; avoid; acronym for
               <emphasis>SUSE Linux Enterprise</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>SLED</entry>
-      <entry>S.L.E.D., SLE Desktop, SLE Enterprise Desktop,
+            </entry>
+          </row>
+          <row>
+            <entry>SLED</entry>
+            <entry>S.L.E.D., SLE Desktop, SLE Enterprise Desktop,
               SLE Linux Desktop, Sled, sled
             </entry>
-      <entry>noun; avoid; acronym for
+            <entry>noun; avoid; acronym for
               <emphasis>SUSE Linux Enterprise Desktop</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>SLES</entry>
-      <entry>S.L.E.S.,  SLE Server, SLE Enterprise Server,
+            </entry>
+          </row>
+          <row>
+            <entry>SLES</entry>
+            <entry>S.L.E.S.,  SLE Server, SLE Enterprise Server,
               SLE Linux Server, Sles, sles
             </entry>
-      <entry>noun; avoid; acronym for
+            <entry>noun; avoid; acronym for
               <emphasis>SUSE Linux Enterprise Server</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>SLES for SAP</entry>
-      <entry>SLES for SAP Applications, SLE for SAP</entry>
-      <entry>noun; acronym for <emphasis>SUSE Linux Enterprise Server for
+            </entry>
+          </row>
+          <row>
+            <entry>SLES for SAP</entry>
+            <entry>SLES for SAP Applications, SLE for SAP</entry>
+            <entry>noun; acronym for <emphasis>SUSE Linux Enterprise Server for
         SAP Applications</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>slider</entry>
-      <entry>slide bar, slidebar</entry>
-      <entry>noun; GUI element that is used manipulate values that have
+            </entry>
+          </row>
+          <row>
+            <entry>slider</entry>
+            <entry>slide bar, slidebar</entry>
+            <entry>noun; GUI element that is used manipulate values that have
               an upper and a lower bound
               <remark>sknorr, 2013-09-17: A little complicated</remark>
-      </entry>
-     </row>
-     <row>
-      <entry>solid-state drive</entry>
-      <entry>SD [misleading], solid state disc [misspelling],
+            </entry>
+          </row>
+          <row>
+            <entry>solid-state drive</entry>
+            <entry>SD [misleading], solid state disc [misspelling],
               solid-state disk drive, solid-state disk, solid state drive,
               solidstate drive, sd
             </entry>
-      <entry>noun; acronym is <emphasis>SSD</emphasis>; a type of
+            <entry>noun; acronym is <emphasis>SSD</emphasis>; a type of
               mass storage that does not depend on mechanical parts
               <remark>sknorr, 2014-04-09: This is inconsistent with the
                 use of ... drive in most other cases. For now,
                 intentionally so, as the accepted term gives much more
                 on Google. Review this entry.
               </remark>
-      </entry>
-     </row>
-     <row>
-      <entry>spec file</entry>
-      <entry>Spec file, Spec-file, Specfile, spec-file, specfile
             </entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>SSD</entry>
-      <entry>S.S.D., SD [misleading], SS-D, sd, ss-d</entry>
-      <entry>noun; acronym of <emphasis>solid-state
+          </row>
+          <row>
+            <entry>spec file</entry>
+            <entry>Spec file, Spec-file, Specfile, spec-file, specfile
+            </entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>SSD</entry>
+            <entry>S.S.D., SD [misleading], SS-D, sd, ss-d</entry>
+            <entry>noun; acronym of <emphasis>solid-state
               drive</emphasis>; a type of mass storage that does not
               depend on mechanical parts
             </entry>
-     </row>
-     <row>
-      <entry>stand-alone</entry>
-      <entry>stand alone, standalone</entry>
-      <entry>adjective</entry>
-     </row>
-     <row>
-      <entry>(to) start sth. up</entry>
-      <entry>(to) start-up sth., (to) startup sth.</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>start-up</entry>
-      <entry>start up, startup</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>statusbar</entry>
-      <entry>status bar, status-bar</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>SSH</entry>
-      <entry>S.S.H., SSH Shell, SSH shell, Ssh, ssh</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>SUSE</entry>
-      <entry>S.U.S.E., Software- und System-Entwicklung, SuSE, SuSe,
+          </row>
+          <row>
+            <entry>stand-alone</entry>
+            <entry>stand alone, standalone</entry>
+            <entry>adjective</entry>
+          </row>
+          <row>
+            <entry>(to) start sth. up</entry>
+            <entry>(to) start-up sth., (to) startup sth.</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>start-up</entry>
+            <entry>start up, startup</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>statusbar</entry>
+            <entry>status bar, status-bar</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>SSH</entry>
+            <entry>S.S.H., SSH Shell, SSH shell, Ssh, ssh</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>SUSE</entry>
+            <entry>S.U.S.E., Software- und System-Entwicklung, SuSE, SuSe,
               Suse, suse
             </entry>
-      <entry>noun; not an acronym</entry>
-     </row>
-     <row>
-      <entry>SUSE Enterprise Storage</entry>
-      <entry>SUSE Storage, SUSE Linux Enterprise Storage</entry>
-      <entry>noun; acronym is <emphasis>SES</emphasis></entry>
-     </row>
-     <row>
-      <entry>SUSE Linux Enterprise</entry>
-      <entry>SUSE Linux Entreprise [British], SUSE Linux enterprise,
+            <entry>noun; not an acronym</entry>
+          </row>
+          <row>
+            <entry>SUSE Enterprise Storage</entry>
+            <entry>SUSE Storage, SUSE Linux Enterprise Storage</entry>
+            <entry>noun; acronym is <emphasis>SES</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>SUSE Linux Enterprise</entry>
+            <entry>SUSE Linux Entreprise [British], SUSE Linux enterprise,
               SUSE linux enterprise
             </entry>
-      <entry>noun; acronym is <emphasis>SLE</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>SUSE Linux Enterprise Desktop</entry>
-      <entry>SUSE Desktop, SUSE Linux Enterprise desktop</entry>
-      <entry>noun; acronym is <emphasis>SLED</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>SUSE Linux Enterprise Server</entry>
-      <entry>SUSE Server, SUSE Linux Enterprise server</entry>
-      <entry>noun; acronym is <emphasis>SLES</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>SUSE Linux Enterprise Server for SAP Applications</entry>
-      <entry>SUSE Linux Enterprise for SAP, SUSE Linux Enterprise Server for
+            <entry>noun; acronym is <emphasis>SLE</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>SUSE Linux Enterprise Desktop</entry>
+            <entry>SUSE Desktop, SUSE Linux Enterprise desktop</entry>
+            <entry>noun; acronym is <emphasis>SLED</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>SUSE Linux Enterprise Server</entry>
+            <entry>SUSE Server, SUSE Linux Enterprise server</entry>
+            <entry>noun; acronym is <emphasis>SLES</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>SUSE Linux Enterprise Server for SAP Applications</entry>
+            <entry>SUSE Linux Enterprise for SAP, SUSE Linux Enterprise Server for
         SAP, SUSE Server for SAP
       </entry>
-      <entry>noun; acronym is <emphasis>SLES for SAP Applications</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>SUSE Manager</entry>
-      <entry>SUSE Linux Manager</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>SUSE OpenStack Cloud</entry>
-      <entry>SUSE Cloud, SUSE Linux Cloud</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>SUSE Studio</entry>
-      <entry>SUSE Linux Studio</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>submenu</entry>
-      <entry>sub menu, sub-menu</entry>
-      <entry>noun; <emphasis>menu</emphasis> that is nested inside another
+            <entry>noun; acronym is <emphasis>SLES for SAP Applications</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>SUSE Manager</entry>
+            <entry>SUSE Linux Manager</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>SUSE OpenStack Cloud</entry>
+            <entry>SUSE Cloud, SUSE Linux Cloud</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>SUSE Studio</entry>
+            <entry>SUSE Linux Studio</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>submenu</entry>
+            <entry>sub menu, sub-menu</entry>
+            <entry>noun; <emphasis>menu</emphasis> that is nested inside another
               menu
             </entry>
-     </row>
-     <row>
-      <entry>subsystem</entry>
-      <entry>sub system, sub-system</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>systemd</entry>
-      <entry>System D, Systemd, systemD, system d, System 500</entry>
-      <entry>noun; project spelling; initialization system for Linux
+          </row>
+          <row>
+            <entry>subsystem</entry>
+            <entry>sub system, sub-system</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>systemd</entry>
+            <entry>System D, Systemd, systemD, system d, System 500</entry>
+            <entry>noun; project spelling; initialization system for Linux
       </entry>
-     </row>
-     <row>
-      <entry>System V init</entry>
-      <entry>SysVinit, SysV init, system 5 init, system d</entry>
-      <entry>noun; spoken: <quote>System five init</quote>;
+          </row>
+          <row>
+            <entry>System V init</entry>
+            <entry>SysVinit, SysV init, system 5 init, system d</entry>
+            <entry>noun; spoken: <quote>System five init</quote>;
         initialization system for Unix operating systems
       </entry>
-     </row>
-     <row>
-        <entry>system-wide</entry>
-        <entry>systemwide, system wide</entry>
-        <entry>adjective</entry>
-       </row>
-     <row>
-      <entry>symbolic link</entry>
-      <entry>soft link, softlink, symlink [jargon]</entry>
-      <entry>only as a noun; as a verb, use
+          </row>
+          <row>
+            <entry>system-wide</entry>
+            <entry>systemwide, system wide</entry>
+            <entry>adjective</entry>
+          </row>
+          <row>
+            <entry>symbolic link</entry>
+            <entry>soft link, softlink, symlink [jargon]</entry>
+            <entry>only as a noun; as a verb, use
               <emphasis>create a symbolic link</emphasis>; a file with a
               reference to another file or a directory, in contrast to
               that, a <emphasis>hard link</emphasis> is a directory entry
               that contains an alternative name for an existing file
             </entry>
-     </row>
-     <row>
-      <entry>synchronization</entry>
-      <entry>sync, synch, synchronisation [British]</entry>
-      <entry>noun; two-way or many-way copying process to ensure data is
+          </row>
+          <row>
+            <entry>synchronization</entry>
+            <entry>sync, synch, synchronisation [British]</entry>
+            <entry>noun; two-way or many-way copying process to ensure data is
               consistent across two or more locations
             </entry>
-     </row>
-     <row>
-      <entry>(to) synchronize sth. (with sth.)</entry>
-      <entry>(to) sync sth., (to) synch sth., (to) synchronise sth.
+          </row>
+          <row>
+            <entry>(to) synchronize sth. (with sth.)</entry>
+            <entry>(to) sync sth., (to) synch sth., (to) synchronise sth.
               [British], (to) synchronize sth. (and sth.)</entry>
-      <entry>noun; copy data in two or more ways to ensure it is
+            <entry>noun; copy data in two or more ways to ensure it is
               consistent across two or more locations
             </entry>
-     </row>
-     <row>
-      <entry>TAR archive</entry>
-      <entry>TAR ball [Unix jargon], tar ball, tar-ball, tarball
+          </row>
+          <row>
+            <entry>TAR archive</entry>
+            <entry>TAR ball [Unix jargon], tar ball, tar-ball, tarball
             </entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>taskbar</entry>
-      <entry>task bar, task-bar</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>technology preview</entry>
-      <entry>technical preview, technology-preview</entry>
-      <entry>noun; product features that are shipped without support and marked
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>taskbar</entry>
+            <entry>task bar, task-bar</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>technology preview</entry>
+            <entry>technical preview, technology-preview</entry>
+            <entry>noun; product features that are shipped without support and marked
        as such
       </entry>
-     </row>
-     <row>
-      <entry>text box</entry>
-      <entry>entry area, entry box, entry field, input area, input box,
+          </row>
+          <row>
+            <entry>text box</entry>
+            <entry>entry area, entry box, entry field, input area, input box,
               input field, text area, text field
             </entry>
-      <entry>noun; GUI element that text can be typed into with one or
+            <entry>noun; GUI element that text can be typed into with one or
               more lines
             </entry>
-     </row>
-     <row>
-        <entry>terminal</entry>
-        <entry/>
-        <entry>noun; text input/output environment where users interact
+          </row>
+          <row>
+            <entry>terminal</entry>
+            <entry/>
+            <entry>noun; text input/output environment where users interact
                with Linux and Linux applications; the default term to 
                describe a text-only user interface
               </entry>
-       </row>
-     <row>
-      <entry>(to) terminate sth.</entry>
-      <entry>(to) abort sth., (to) close sth., (to) exit sth.,
+          </row>
+          <row>
+            <entry>(to) terminate sth.</entry>
+            <entry>(to) abort sth., (to) close sth., (to) exit sth.,
               (to) kill sth., (to) quit sth.
             </entry>
-      <entry>noun; ending an application forcefully; always use
+            <entry>noun; ending an application forcefully; always use
               <emphasis>close</emphasis> when referring to windows; always use
               <emphasis>quit</emphasis> when ending an application normally
             </entry>
-     </row>
-     <row>
-      <entry>TFTP</entry>
-      <entry>T.F.T.P., Tftp, tftp</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-        <entry>timeout</entry>
-        <entry>time-out</entry>
-        <entry>noun</entry>
-       </row>
-     <row>
-      <entry>time stamp</entry>
-      <entry>time-stamp, timestamp</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>titlebar</entry>
-      <entry>title bar, title-bar</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>tool</entry>
-      <entry/>
-      <entry>noun; a utility or feature used to develop software or 
+          </row>
+          <row>
+            <entry>TFTP</entry>
+            <entry>T.F.T.P., Tftp, tftp</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>timeout</entry>
+            <entry>time-out</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>time stamp</entry>
+            <entry>time-stamp, timestamp</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>titlebar</entry>
+            <entry>title bar, title-bar</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>tool</entry>
+            <entry/>
+            <entry>noun; a utility or feature used to develop software or 
              hardware, or to perform particular tasks</entry>
-     </row>
-     <row>
-      <entry>toolbar</entry>
-      <entry>tool bar, tool-bar</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>toolchain</entry>
-      <entry>tool chain, tool-chain</entry>
-      <entry>noun; set of tools (such as build tools) that is used in
+          </row>
+          <row>
+            <entry>toolbar</entry>
+            <entry>tool bar, tool-bar</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>toolchain</entry>
+            <entry>tool chain, tool-chain</entry>
+            <entry>noun; set of tools (such as build tools) that is used in
         succession
       </entry>
-     </row>
-     <row>
-      <entry>tooltip</entry>
-      <entry>tool tip, tool-tip</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>UEFI</entry>
-      <entry>Uefi, u-EFI, uEFI</entry>
-      <entry>noun; acronym of <emphasis>Unified Extensible Firmware
+          </row>
+          <row>
+            <entry>tooltip</entry>
+            <entry>tool tip, tool-tip</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>UEFI</entry>
+            <entry>Uefi, u-EFI, uEFI</entry>
+            <entry>noun; acronym of <emphasis>Unified Extensible Firmware
               Interface</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>Unified Extensible Firmware Interface</entry>
-      <entry>unified extensible firmware interface</entry>
-      <entry>noun; acronym is <emphasis>UEFI</emphasis>; software interface
+            </entry>
+          </row>
+          <row>
+            <entry>Unified Extensible Firmware Interface</entry>
+            <entry>unified extensible firmware interface</entry>
+            <entry>noun; acronym is <emphasis>UEFI</emphasis>; software interface
               between firmware and operating system; replaces the BIOS interface
             </entry>
-     </row>
-     <row>
-      <entry>unit</entry>
-      <entry>unit file</entry>
-      <entry>noun;
+          </row>
+          <row>
+            <entry>unit</entry>
+            <entry>unit file</entry>
+            <entry>noun;
        <emphasis>concept</emphasis> of <phrase role="productname">systemd</phrase>;
        generic term for <link
        xlink:href="https://www.freedesktop.org/software/systemd/man/systemd.unit.html">services,
        timers, etc.</link>; use when starting, stopping, enabling or disabling a
        unit
       </entry>
-     </row>
-     <row>
-      <entry>unit file</entry>
-      <entry>unit</entry>
-      <entry>noun; <emphasis>configuration file</emphasis> of a <phrase
+          </row>
+          <row>
+            <entry>unit file</entry>
+            <entry>unit</entry>
+            <entry>noun; <emphasis>configuration file</emphasis> of a <phrase
        role="productname">systemd</phrase> unit; has a suffix
        (<filename>.service</filename>, <filename>.timer</filename>, etc.); only
        use when referring to the actual file (e.g. when editing it) and not the
        unit</entry>
-     </row>
-     <row>
-      <entry>Unix</entry>
-      <entry>UNIX [brand name registered by Open Group],
+          </row>
+          <row>
+            <entry>Unix</entry>
+            <entry>UNIX [brand name registered by Open Group],
               unix
             </entry>
-      <entry>noun; use this capitalization for all general references
+            <entry>noun; use this capitalization for all general references
               that are not related to brand names
             </entry>
-     </row>
-     <row>
-      <entry>(to) uninstall sth.</entry>
-      <entry>(to) deinstall sth., (to) un-install sth.
+          </row>
+          <row>
+            <entry>(to) uninstall sth.</entry>
+            <entry>(to) deinstall sth., (to) un-install sth.
             </entry>
-      <entry>verb
+            <entry>verb
               <remark>sknorr, 2013-09-17: Packages are usually "removed," not
                 uninstalled (say YaST and zypper, but also my intuition). Should
                 this word be restricted to Windows software?
               </remark>
-      </entry>
-     </row>
-     <row>
-      <entry>unselected</entry>
-      <entry>deselected, un-selected</entry>
-      <entry>adjective; selection state of list entries or text; opposite of
+            </entry>
+          </row>
+          <row>
+            <entry>unselected</entry>
+            <entry>deselected, un-selected</entry>
+            <entry>adjective; selection state of list entries or text; opposite of
               <emphasis>selected</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>uppercase</entry>
-      <entry>upper case, upper-case</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>usage</entry>
-      <entry/>
-      <entry>noun; the way in which something is used, or the amount of
-       it that is used; see also <emphasis>utilization</emphasis></entry>
-     </row>
-     <row>
-      <entry>use case</entry>
-      <entry>use-case, usecase</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>(to) use sth.</entry>
-      <entry>(to) utilise sth. [British], (to) utilize sth.</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>user name</entry>
-      <entry>user-name, username</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>user space</entry>
-      <entry>user-space, userspace, userland</entry>
-      <entry>noun; memory area used by applications; see also
+            </entry>
+          </row>
+          <row>
+            <entry>uppercase</entry>
+            <entry>upper case, upper-case</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>usage</entry>
+            <entry/>
+            <entry>noun; the way in which something is used, or the amount of
+       it that is used; see also <emphasis>utilization</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>use case</entry>
+            <entry>use-case, usecase</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>(to) use sth.</entry>
+            <entry>(to) utilise sth. [British], (to) utilize sth.</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>user name</entry>
+            <entry>user-name, username</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>user space</entry>
+            <entry>user-space, userspace, userland</entry>
+            <entry>noun; memory area used by applications; see also
               <emphasis>kernel space</emphasis>
-      </entry>
-     </row>
-     <row>
-        <entry>utilization</entry>
-        <entry>utilisation [British]</entry>
-        <entry>noun; an act or instance of making practical or 
+            </entry>
+          </row>
+          <row>
+            <entry>utilization</entry>
+            <entry>utilisation [British]</entry>
+            <entry>noun; an act or instance of making practical or 
                 profitable use of something, especially in 
                 <emphasis>CPU utilization</emphasis>, 
-                <emphasis>memory utilization</emphasis>     
-        </entry>
-       </row>
-     <row>
-      <entry>video DVD</entry>
-      <entry>Video DVD, Video-DVD, DVD video</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-       <entry>view</entry>
-       <entry/>
-      <entry>noun; a reusable set of user interface widgets that serve as an
-       interface for user interaction</entry>
-     </row>
-     <row>
-      <entry>virtualization</entry>
-      <entry>Virtualization, virtualisation [British]
+                <emphasis>memory utilization</emphasis>
             </entry>
-      <entry>noun; referring to software (usually an operating system)
+          </row>
+          <row>
+            <entry>video DVD</entry>
+            <entry>Video DVD, Video-DVD, DVD video</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>view</entry>
+            <entry/>
+            <entry>noun; a reusable set of user interface widgets that serve as an
+       interface for user interaction</entry>
+          </row>
+          <row>
+            <entry>virtualization</entry>
+            <entry>Virtualization, virtualisation [British]
+            </entry>
+            <entry>noun; referring to software (usually an operating system)
               running on a virtual computer created by software running on a
               physical computer <emphasis>or</emphasis>
               virtual computer created with software running on a physical
               computer</entry>
-     </row>
-     <row>
-      <entry>(to) virtualize sth.</entry>
-      <entry>virtualise [British]</entry>
-      <entry>verb; running software (usually an operating system) on a
+          </row>
+          <row>
+            <entry>(to) virtualize sth.</entry>
+            <entry>virtualise [British]</entry>
+            <entry>verb; running software (usually an operating system) on a
               virtual computer created by software running on a physical computer
               <emphasis>or</emphasis>
               creating a virtual computer with software running on a physical
               computer
             </entry>
-     </row>
-     <row>
-      <entry>VLAN</entry>
-      <entry>V.L.A.N., Vlan, vlan</entry>
-      <entry>noun; acronym for
+          </row>
+          <row>
+            <entry>VLAN</entry>
+            <entry>V.L.A.N., Vlan, vlan</entry>
+            <entry>noun; acronym for
               <emphasis>Virtualized Local Area Network</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>Web</entry>
-      <entry>WEB, World Wide Web, WWW, web, www</entry>
-      <entry>noun; you may use <emphasis>World Wide Web</emphasis> or
+            </entry>
+          </row>
+          <row>
+            <entry>Web</entry>
+            <entry>WEB, World Wide Web, WWW, web, www</entry>
+            <entry>noun; you may use <emphasis>World Wide Web</emphasis> or
               <emphasis>WWW</emphasis> in historical contexts
             </entry>
-     </row>
-     <row>
-      <entry>Web cam</entry>
-      <entry>Webcam, Web camera, webcam</entry>
-      <entry>noun; camera that can be connected to a computer, mainly for
+          </row>
+          <row>
+            <entry>Web cam</entry>
+            <entry>Webcam, Web camera, webcam</entry>
+            <entry>noun; camera that can be connected to a computer, mainly for
         video chats
       </entry>
-     </row>
-     <row>
-      <entry>Web page</entry>
-      <entry>HTML Web page, Web-page, Webpage</entry>
-      <entry>noun; when referring to page on the Internet; see also
+          </row>
+          <row>
+            <entry>Web page</entry>
+            <entry>HTML Web page, Web-page, Webpage</entry>
+            <entry>noun; when referring to page on the Internet; see also
               <emphasis>HTML page</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>Web server</entry>
-      <entry>Web-server, Webserver</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>Web site</entry>
-      <entry>Web-site, Website, web site, web-site, website</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>Webmaster</entry>
-      <entry>Web master, Web-master</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-        <entry>whitespace</entry>
-        <entry>white-space, white space</entry>
-        <entry>noun</entry>
-       </row>
-     <row>
-      <entry>Wi-Fi</entry>
-      <entry>Wi fi, Wi-fi, Wifi, wireless fidelity, WLAN</entry>
-      <entry>noun; use the <emphasis>Wi-Fi</emphasis> brand name
+            </entry>
+          </row>
+          <row>
+            <entry>Web server</entry>
+            <entry>Web-server, Webserver</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>Web site</entry>
+            <entry>Web-site, Website, web site, web-site, website</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>Webmaster</entry>
+            <entry>Web master, Web-master</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>whitespace</entry>
+            <entry>white-space, white space</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>Wi-Fi</entry>
+            <entry>Wi fi, Wi-fi, Wifi, wireless fidelity, WLAN</entry>
+            <entry>noun; use the <emphasis>Wi-Fi</emphasis> brand name
               whenever referring to IEEE 802.11-based networks or access points;
               use <emphasis>WLAN</emphasis> when referring to
               non-IEEE 802.11-based wireless LANs
             </entry>
-     </row>
-     <row>
-      <entry>Wi-Fi card</entry>
-      <entry>wireless card [card has wires attached to it]</entry>
-      <entry>noun; card that connects to Wi-Fi networks
+          </row>
+          <row>
+            <entry>Wi-Fi card</entry>
+            <entry>wireless card [card has wires attached to it]</entry>
+            <entry>noun; card that connects to Wi-Fi networks
             </entry>
-     </row>
-     <row>
-      <entry>Wi-Fi/Bluetooth card</entry>
-      <entry>wireless card [card has wires attached to it]</entry>
-      <entry>noun; card that combines a Wi-Fi and a Bluetooth card
+          </row>
+          <row>
+            <entry>Wi-Fi/Bluetooth card</entry>
+            <entry>wireless card [card has wires attached to it]</entry>
+            <entry>noun; card that combines a Wi-Fi and a Bluetooth card
             </entry>
-     </row>
-     <row>
-      <entry>wild card</entry>
-      <entry>joker [Germanism], wild-card, wildcard</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>WLAN</entry>
-      <entry>Wlan</entry>
-      <entry>noun; avoid; use only when referring to wireless LANs that are
+          </row>
+          <row>
+            <entry>wild card</entry>
+            <entry>joker [Germanism], wild-card, wildcard</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>WLAN</entry>
+            <entry>Wlan</entry>
+            <entry>noun; avoid; use only when referring to wireless LANs that are
               not IEEE 802.11-based; use <emphasis>Wi-Fi</emphasis> in all other
               cases
             </entry>
-     </row>
-     <row>
-      <entry>(to) write sth.</entry>
-      <entry>(to) pipe sth. [Unix jargon],
+          </row>
+          <row>
+            <entry>(to) write sth.</entry>
+            <entry>(to) pipe sth. [Unix jargon],
               (to) write sth. out</entry>
-      <entry>verb; when saving the command-line output of a program as a
+            <entry>verb; when saving the command-line output of a program as a
               file using <literal>&gt;</literal> or <literal>&gt;&gt;</literal>;
               see also <emphasis>save</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>x86</entry>
-      <entry>32-bit AMD/Intel, i686, i386</entry>
-      <entry>noun; processor architecture; see also
+            </entry>
+          </row>
+          <row>
+            <entry>x86</entry>
+            <entry>32-bit AMD/Intel, i686, i386</entry>
+            <entry>noun; processor architecture; see also
         <emphasis>AMD64/Intel 64</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>X Window System</entry>
-      <entry>X Window, X Windows, X window, X window system, X windows, XWS</entry>
-      <entry>noun
+            </entry>
+          </row>
+          <row>
+            <entry>X Window System</entry>
+            <entry>X Window, X Windows, X window, X window system, X windows, XWS</entry>
+            <entry>noun
               <remark>sknorr, 2013-09-17: What about X11, X.org, XFree86?</remark>
-      </entry>
-     </row>
-     <row>
-      <entry>Xen</entry>
-      <entry>XEN, xen</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>Xend</entry>
-      <entry>xend</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>YaST</entry>
-      <entry>YAST, YAST2, Yast, YaST2, yast, yast2</entry>
-      <entry>noun; spelling according to project standard; acronym for
+            </entry>
+          </row>
+          <row>
+            <entry>Xen</entry>
+            <entry>XEN, xen</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>Xend</entry>
+            <entry>xend</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>YaST</entry>
+            <entry>YAST, YAST2, Yast, YaST2, yast, yast2</entry>
+            <entry>noun; spelling according to project standard; acronym for
               <emphasis>Yet another Setup Tool</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>IBM Z</entry>
-      <entry>z Systems, System z, zSeries, z System, zsystems, S390x</entry>
-      <entry>noun; processor architecture; see also
+            </entry>
+          </row>
+          <row>
+            <entry>IBM Z</entry>
+            <entry>z Systems, System z, zSeries, z System, zsystems, S390x</entry>
+            <entry>noun; processor architecture; see also
         <emphasis>AMD64/Intel 64</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>Zypper</entry>
-      <entry>zypper</entry>
-      <entry>noun; only for application</entry>
-     </row>
-     <row>
-      <entry>zypper</entry>
-      <entry>Zypper</entry>
-      <entry>noun; only for command</entry>
-     </row>
-    </tbody>
-   </tgroup>
-  </informaltable>
- </sect1>
- <sect1 xml:id="sec-vocabulary">
-  <title>General vocabulary</title>
+            </entry>
+          </row>
+          <row>
+            <entry>Zypper</entry>
+            <entry>zypper</entry>
+            <entry>noun; only for application</entry>
+          </row>
+          <row>
+            <entry>zypper</entry>
+            <entry>Zypper</entry>
+            <entry>noun; only for command</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </informaltable>
+  </sect1>
+  <sect1 xml:id="sec-vocabulary">
+    <title>General vocabulary</title>
 
-  <para>
-   The following table defines the correct spellings and denominations for
-   general vocabulary in SUSE documentation. Always use the entry listed
-   under <quote>Accepted</quote> in the table below. All entries are
-   reproduced in sentence-style capitalization.
-  </para>
-
-  <note>
-   <title>Review the word list of the Inclusive Naming Initiative</title>
-   <para>
-    In addition to the words documented here, make sure to also review the 
-    Word lists of the Inclusive Naming Initiative's
-    <link xlink:href="https://inclusivenaming.org/language/evaluation-framework/">Evaluation Framework</link>.</para>
     <para>
-    For more information about word choices, see <xref linkend="sec-bias"/>.
-   </para>
-  </note>
+      The following table defines the correct spellings and denominations for
+      general vocabulary in SUSE documentation. Always use the entry listed
+      under <quote>Accepted</quote> in the table below. All entries are
+      reproduced in sentence-style capitalization.
+    </para>
 
-  <informaltable>
-   <tgroup cols="3">
-    <thead>
-     <row>
-      <entry>Accepted</entry>
-      <entry>Rejected [Reason]</entry>
-      <entry>Part of Speech; Usage Guideline/Definition</entry>
-     </row>
-    </thead>
-<!-- Sorting (pseudo-regex): (?<=((to)|The))\.-–+\/[0-9][A-Za-z] -->
-    <tbody>
-     <row>
-      <entry>after</entry>
-      <entry>once</entry>
-      <entry>adverb; only use <emphasis>once</emphasis> in the meaning
+    <note>
+      <title>Review the word list of the Inclusive Naming Initiative</title>
+      <para>
+        In addition to the words documented here, make sure to also review the
+        Word lists of the Inclusive Naming Initiative's
+        <link xlink:href="https://inclusivenaming.org/language/evaluation-framework/">Evaluation
+        Framework</link>.
+      </para>
+      <para>
+        For more information about word choices, see
+        <xref linkend="sec-bias"/>.
+      </para>
+    </note>
+
+    <informaltable>
+      <tgroup cols="3">
+        <thead>
+          <row>
+            <entry>Accepted</entry>
+            <entry>Rejected [Reason]</entry>
+            <entry>Part of Speech; Usage Guideline/Definition</entry>
+          </row>
+        </thead>
+        <!-- Sorting (pseudo-regex): (?<=((to)|The))\.-–+\/[0-9][A-Za-z] -->
+        <tbody>
+          <row>
+            <entry>after</entry>
+            <entry>once</entry>
+            <entry>adverb; only use <emphasis>once</emphasis> in the meaning
               of <quote>one time only</quote>
+            </entry>
+          </row>
+          <row>
+            <entry>afterward</entry>
+            <entry>afterwards [BrE]</entry>
+            <entry>adverb
       </entry>
-     </row>
-     <row>
-      <entry>afterward</entry>
-      <entry>afterwards [BrE]</entry>
-      <entry>adverb
-      </entry>
-     </row>
-     <row>
-      <entry>although</entry>
-      <entry>while</entry>
-      <entry>conjunction; only use <emphasis>while</emphasis> in the
+          </row>
+          <row>
+            <entry>although</entry>
+            <entry>while</entry>
+            <entry>conjunction; only use <emphasis>while</emphasis> in the
               meaning of <quote>during the time that</quote>
-      </entry>
-     </row>
-     <row>
-      <entry>and</entry>
-      <entry>while</entry>
-      <entry>conjunction; only use <emphasis>while</emphasis> in the
+            </entry>
+          </row>
+          <row>
+            <entry>and</entry>
+            <entry>while</entry>
+            <entry>conjunction; only use <emphasis>while</emphasis> in the
               meaning of <quote>during the time that</quote>
+            </entry>
+          </row>
+          <row>
+            <entry>backward</entry>
+            <entry>backwards [BrE]</entry>
+            <entry>adverb
       </entry>
-     </row>
-     <row>
-      <entry>backward</entry>
-      <entry>backwards [BrE]</entry>
-      <entry>adverb
-      </entry>
-     </row>
-     <row>
-      <entry/>
-      <entry>basically [filler]</entry>
-      <entry>adverb</entry>
-     </row>
-     <row>
-      <entry>because of</entry>
-      <entry>since, due to, owing to</entry>
-      <entry>preposition; only use <emphasis>since</emphasis> in temporal phrases</entry>
-     </row>
-     <row>
-      <entry>business case</entry>
-      <entry>business-case, businesscase</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>but</entry>
-      <entry>while</entry>
-      <entry>conjunction; only use <emphasis>while</emphasis> in the
+          </row>
+          <row>
+            <entry/>
+            <entry>basically [filler]</entry>
+            <entry>adverb</entry>
+          </row>
+          <row>
+            <entry>because of</entry>
+            <entry>since, due to, owing to</entry>
+            <entry>preposition; only use <emphasis>since</emphasis> in temporal phrases</entry>
+          </row>
+          <row>
+            <entry>business case</entry>
+            <entry>business-case, businesscase</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>but</entry>
+            <entry>while</entry>
+            <entry>conjunction; only use <emphasis>while</emphasis> in the
               meaning of <quote>during the time that</quote>
-      </entry>
-     </row>
-     <row>
-      <entry>cannot</entry>
-      <entry>can't [contraction], can not</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>can</entry>
-      <entry>may</entry>
-      <entry>verb; use <emphasis>can</emphasis> to express an ability,
+            </entry>
+          </row>
+          <row>
+            <entry>cannot</entry>
+            <entry>can't [contraction], can not</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>can</entry>
+            <entry>may</entry>
+            <entry>verb; use <emphasis>can</emphasis> to express an ability,
               only use <emphasis>may</emphasis> to express permissions
               sought/given
             </entry>
-     </row>
-     <row>
-      <entry>could</entry>
-      <entry>may</entry>
-      <entry>verb; use <emphasis>could</emphasis> to express a
+          </row>
+          <row>
+            <entry>could</entry>
+            <entry>may</entry>
+            <entry>verb; use <emphasis>could</emphasis> to express a
               possibility, only use <emphasis>may</emphasis> to express
               permissions sought/given
             </entry>
-     </row>
-     <row>
-        <entry>data is</entry>
-        <entry>data are</entry>
-        <entry>noun with verb; use all other verbs in the singular
+          </row>
+          <row>
+            <entry>data is</entry>
+            <entry>data are</entry>
+            <entry>noun with verb; use all other verbs in the singular
               </entry>
-       </row>
-     <row>
-      <entry/>
-      <entry>easy [filler], easily</entry>
-      <entry>adjective, adverb; avoid
+          </row>
+          <row>
+            <entry/>
+            <entry>easy [filler], easily</entry>
+            <entry>adjective, adverb; avoid
             </entry>
-     </row>
-     <row>
-      <entry>etc.</entry>
-      <entry/>
-      <entry>abbreviation; avoid; do not use together with
+          </row>
+          <row>
+            <entry>etc.</entry>
+            <entry/>
+            <entry>abbreviation; avoid; do not use together with
               <quote>for example</quote> and <quote>such as</quote>; always
                 precede with a comma
             </entry>
-     </row>
-     <row>
-      <entry>for example</entry>
-      <entry>for instance, for instances [misspelling]</entry>
-      <entry>adverb
+          </row>
+          <row>
+            <entry>for example</entry>
+            <entry>for instance, for instances [misspelling]</entry>
+            <entry>adverb
       </entry>
-     </row>
-     <row>
-      <entry>forward</entry>
-      <entry>forwards [BrE]</entry>
-      <entry>adverb
+          </row>
+          <row>
+            <entry>forward</entry>
+            <entry>forwards [BrE]</entry>
+            <entry>adverb
       </entry>
-     </row>
-     <row>
-      <entry>if</entry>
-      <entry/>
-      <entry>pronoun; use if an event depends on a condition; also see
+          </row>
+          <row>
+            <entry>if</entry>
+            <entry/>
+            <entry>pronoun; use if an event depends on a condition; also see
               <emphasis>when</emphasis> and <emphasis>whether</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>inward</entry>
+            <entry>inwards [BrE]</entry>
+            <entry>adverb
       </entry>
-     </row>
-     <row>
-      <entry>inward</entry>
-      <entry>inwards [BrE]</entry>
-      <entry>adverb
-      </entry>
-     </row>
-     <row>
-      <entry/>
-      <entry>just [filler]</entry>
-      <entry>adjective, adverb; avoid</entry>
-     </row>
-     <row>
-      <entry>might</entry>
-      <entry>may</entry>
-      <entry>verb; use <emphasis>might</emphasis> to express a
+          </row>
+          <row>
+            <entry/>
+            <entry>just [filler]</entry>
+            <entry>adjective, adverb; avoid</entry>
+          </row>
+          <row>
+            <entry>might</entry>
+            <entry>may</entry>
+            <entry>verb; use <emphasis>might</emphasis> to express a
               possibility, only use <emphasis>may</emphasis> to express
               permissions sought/given
             </entry>
-     </row>
-     <row>
-      <entry>must</entry>
-      <entry>have to</entry>
-      <entry>verb; see also <emphasis>need to</emphasis>
+          </row>
+          <row>
+            <entry>must</entry>
+            <entry>have to</entry>
+            <entry>verb; see also <emphasis>need to</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry>need to</entry>
+            <entry>have to</entry>
+            <entry>verb; see also <emphasis>must</emphasis>
+            </entry>
+          </row>
+          <row>
+            <entry/>
+            <entry>obvious [insulting], obviously</entry>
+            <entry>adjective, adverb</entry>
+          </row>
+          <row>
+            <entry>outward</entry>
+            <entry>outwards [BrE]</entry>
+            <entry>adverb
       </entry>
-     </row>
-     <row>
-      <entry>need to</entry>
-      <entry>have to</entry>
-      <entry>verb; see also <emphasis>must</emphasis>
+          </row>
+          <row>
+            <entry/>
+            <entry>please</entry>
+            <entry>adverb; avoid</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry>self-evident [insulting], self-evidently</entry>
+            <entry>adjective, adverb</entry>
+          </row>
+          <row>
+            <entry>sideward</entry>
+            <entry>sidewards [BrE]</entry>
+            <entry>adverb
       </entry>
-     </row>
-     <row>
-      <entry/>
-      <entry>obvious [insulting], obviously</entry>
-      <entry>adjective, adverb</entry>
-     </row>
-     <row>
-      <entry>outward</entry>
-      <entry>outwards [BrE]</entry>
-      <entry>adverb
+          </row>
+          <row>
+            <entry/>
+            <entry>simple [filler], simply</entry>
+            <entry>adjective, adverb; avoid</entry>
+          </row>
+          <row>
+            <entry>(to) simplify sth.</entry>
+            <entry>(to) ease sth., (to) facilitate sth.</entry>
+            <entry>verb; avoid</entry>
+          </row>
+          <row>
+            <entry>(to) simplify sth.</entry>
+            <entry>(to) ease sth., (to) facilitate sth.</entry>
+            <entry>verb; avoid</entry>
+          </row>
+          <row>
+            <entry/>
+            <entry>stuff [colloquial], stuffs</entry>
+            <entry>noun</entry>
+          </row>
+          <row>
+            <entry>toward</entry>
+            <entry>towards [BrE]</entry>
+            <entry>adverb
       </entry>
-     </row>
-     <row>
-      <entry/>
-      <entry>please</entry>
-      <entry>adverb; avoid</entry>
-     </row>
-     <row>
-      <entry/>
-      <entry>self-evident [insulting], self-evidently</entry>
-      <entry>adjective, adverb</entry>
-     </row>
-     <row>
-      <entry>sideward</entry>
-      <entry>sidewards [BrE]</entry>
-      <entry>adverb
-      </entry>
-     </row>
-     <row>
-      <entry/>
-      <entry>simple [filler], simply</entry>
-      <entry>adjective, adverb; avoid</entry>
-     </row>
-     <row>
-      <entry>(to) simplify sth.</entry>
-      <entry>(to) ease sth., (to) facilitate sth.</entry>
-      <entry>verb; avoid</entry>
-     </row>
-     <row>
-      <entry>(to) simplify sth.</entry>
-      <entry>(to) ease sth., (to) facilitate sth.</entry>
-      <entry>verb; avoid</entry>
-     </row>
-     <row>
-      <entry/>
-      <entry>stuff [colloquial], stuffs</entry>
-      <entry>noun</entry>
-     </row>
-     <row>
-      <entry>toward</entry>
-      <entry>towards [BrE]</entry>
-      <entry>adverb
-      </entry>
-     </row>
-     <row>
-      <entry>want sth.</entry>
-      <entry>(to) wish sth., (to) wish for sth., would like sth.</entry>
-      <entry>verb</entry>
-     </row>
-     <row>
-      <entry>when</entry>
-      <entry>once</entry>
-      <entry>adverb; use <emphasis>once</emphasis> only in the meaning
+          </row>
+          <row>
+            <entry>want sth.</entry>
+            <entry>(to) wish sth., (to) wish for sth., would like sth.</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>when</entry>
+            <entry>once</entry>
+            <entry>adverb; use <emphasis>once</emphasis> only in the meaning
               <quote>one time only</quote>
-      </entry>
-     </row>
-     <row>
-      <entry>when</entry>
-      <entry/>
-      <entry>pronoun; use if an event is inevitable; also see
+            </entry>
+          </row>
+          <row>
+            <entry>when</entry>
+            <entry/>
+            <entry>pronoun; use if an event is inevitable; also see
               <emphasis>if</emphasis>
-      </entry>
-     </row>
-     <row>
-      <entry>whether</entry>
-      <entry>whether or not</entry>
-      <entry>pronoun; use to present two alternatives which are not
+            </entry>
+          </row>
+          <row>
+            <entry>whether</entry>
+            <entry>whether or not</entry>
+            <entry>pronoun; use to present two alternatives which are not
               conditions, otherwise use <emphasis>if</emphasis>; see also
               <emphasis>if</emphasis>
-       <remark>sknorr, 2014-02-18: This is helpful:
+              <remark>sknorr, 2014-02-18: This is helpful:
                 https://www.grammar-monster.com/easily_confused/if_and_whether.htm
               </remark>
-      </entry>
-     </row>
-     <row>
-      <entry>regarding</entry>
-      <entry>as regards, in regard to, with regard to, with regards to</entry>
-      <entry>preposition</entry>
-     </row>
-    </tbody>
-   </tgroup>
-  </informaltable>
- </sect1>
+            </entry>
+          </row>
+          <row>
+            <entry>regarding</entry>
+            <entry>as regards, in regard to, with regard to, with regards to</entry>
+            <entry>preposition</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </informaltable>
+  </sect1>
 </appendix>

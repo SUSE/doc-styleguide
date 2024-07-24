@@ -5,94 +5,94 @@
     %entities;
 ]>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-outline">
- <title>Outline of a manual</title>
-
- <para>
-  Maintain a consistent structure within your documents. The structure can vary
-  between different books, articles or projects, but the most common parts of
-  the document structure are documented here.
- </para>
-
- <section xml:id="sec-book">
-  <title>Books</title>
+  <title>Outline of a manual</title>
   <para>
-   For books, use a document structure that includes the following elements, in
-   that order:
+    Maintain a consistent structure within your documents. The structure can
+    vary between different books, articles or projects, but the most common
+    parts of the document structure are documented here.
   </para>
-  <orderedlist>
-   <listitem>
+  <section xml:id="sec-book">
+    <title>Books</title>
     <para>
-     a preface
+      For books, use a document structure that includes the following elements,
+      in that order:
     </para>
-   </listitem>
-   <listitem>
-    <para>
-     chapters, split into sections
-    </para>
-   </listitem>
-   <listitem>
-    <para>
-     <emphasis>(optional)</emphasis> a glossary
-    </para>
-   </listitem>
-   <listitem>
-    <para>
-     <emphasis>(optional)</emphasis> appendixes
-    </para>
-   </listitem>
-  </orderedlist>
-  <para>
-   For books with many chapters, create parts at the outline level above
-   chapters.
-  </para>
-  <variablelist>
-   <varlistentry>
-    <term>Title page and imprint</term>
-    <listitem>
-     <para>
-      Both title page and imprint are created automatically, but depend on
-      information being present in the book.
-     </para>
-     <itemizedlist>
+    <orderedlist>
       <listitem>
-       <formalpara>
-        <title>Title</title>
         <para>
-         Work with the product manager to define the book title. The book title
-         should not contain the product name and version.
+          a preface
         </para>
-       </formalpara>
       </listitem>
       <listitem>
-       <formalpara>
-        <title>Product name and product version</title>
         <para>
-         Work with the product manager to find the correct product name and
-         version number. Mark this information up with
-         <tag class="emptytag">productname</tag> and
-         <tag class="emptytag">productnumber</tag>, respectively.
+          chapters, split into sections
         </para>
-       </formalpara>
       </listitem>
       <listitem>
-       <formalpara>
-        <title>Documentation version or revision information</title>
         <para>
-         Optionally, use the <tag class="emptytag">releaseinfo</tag> element to
-         mark up version or revision numbers of the documentation itself.
+          <emphasis>(optional)</emphasis> a glossary
         </para>
-       </formalpara>
       </listitem>
       <listitem>
-       <formalpara>
-        <title>Copyright notice</title>
         <para>
-         Use the standard copyright notice reproduced below. Change the
-         starting year of the copyright protection to the current year.
+          <emphasis>(optional)</emphasis> appendixes
         </para>
-       </formalpara>
-       <example>
-        <title>Standard copyright notice</title>
+      </listitem>
+    </orderedlist>
+    <para>
+      For books with many chapters, create parts at the outline level above
+      chapters.
+    </para>
+    <variablelist>
+      <varlistentry>
+        <term>Title page and imprint</term>
+        <listitem>
+          <para>
+            Both title page and imprint are created automatically, but depend
+            on information being present in the book.
+          </para>
+          <itemizedlist>
+            <listitem>
+              <formalpara>
+                <title>Title</title>
+                <para>
+                  Work with the product manager to define the book title. The
+                  book title should not contain the product name and version.
+                </para>
+              </formalpara>
+            </listitem>
+            <listitem>
+              <formalpara>
+                <title>Product name and product version</title>
+                <para>
+                  Work with the product manager to find the correct product
+                  name and version number. Mark this information up with
+                  <tag class="emptytag">productname</tag> and
+                  <tag class="emptytag">productnumber</tag>, respectively.
+                </para>
+              </formalpara>
+            </listitem>
+            <listitem>
+              <formalpara>
+                <title>Documentation version or revision information</title>
+                <para>
+                  Optionally, use the <tag class="emptytag">releaseinfo</tag>
+                  element to mark up version or revision numbers of the
+                  documentation itself.
+                </para>
+              </formalpara>
+            </listitem>
+            <listitem>
+              <formalpara>
+                <title>Copyright notice</title>
+                <para>
+                  Use the standard copyright notice reproduced below. Change
+                  the starting year of the copyright protection to the current
+                  year.
+                </para>
+              </formalpara>
+              <example>
+                <title>Standard copyright notice</title>
 <screen>&lt;legalnotice&gt;
  &lt;para&gt;
   Copyright &amp;copy; <replaceable>[starting year]</replaceable>&amp;ndash;&lt;?dbtimestamp format="Y"?&gt;
@@ -122,200 +122,207 @@
   consequences thereof.
  &lt;/para&gt;
 &lt;/legalnotice&gt;</screen>
-       </example>
-      </listitem>
-     </itemizedlist>
-    </listitem>
-   </varlistentry>
-   <varlistentry xml:id="vle-abstract">
-    <term>Abstract</term>
-    <listitem>
-     <para>
-      Use an abstract to summarize the information provided in a book, article,
-      chapter, or set in 70&ndash;150 characters. Do not use lists, images or
-      examples in an abstract.
-     </para>
-     <example xml:id="ex-abstract">
-      <title>An abstract</title>
-      <para>
-       Perform an upgrade of a &sle; system to a new major version in
-       environments which do not allow for standard booting of the
-       installation.
-      </para>
-     </example>
-    </listitem>
-   </varlistentry>
-   <varlistentry xml:id="vle-toc">
-    <term>Table of contents</term>
-    <listitem>
-     <para>
-      The table of contents is generated automatically.
-     </para>
-    </listitem>
-   </varlistentry>
-   <varlistentry xml:id="vle-preface">
-    <term>Preface</term>
-    <listitem>
-     <para>
-      Include a brief overview of the content of a manual, related manuals and
-      typographical conventions. The preface can also contain information about
-      its target audience.
-     </para>
-    </listitem>
-   </varlistentry>
-   <varlistentry xml:id="vle-part">
-    <term>Parts</term>
-    <listitem>
-     <para>
-      If you are writing a book with many chapters, create parts at the outline
-      level above chapters. Parts should contain at least three chapters. Keep
-      part titles clear and concise. Often a single noun is enough. Typical
-      part titles are <emphasis>Installation</emphasis> or
-      <emphasis>Network</emphasis>.
-     </para>
-    </listitem>
-   </varlistentry>
-   <varlistentry xml:id="vle-chapter">
-    <term>Chapters</term>
-    <listitem>
-     <para>
-     Chapter titles should not contain product version numbers which affect 
-     the output of data analytics. Chapters typically consist of the 
-     following elements (appendixes should be regarded an exception):
-     </para>
-     <itemizedlist>
-      <listitem>
-       <formalpara>
-        <title>Abstract</title>
-        <para>
-         In an abstract, summarize the topic instead of summarizing the
-         outline. See also <xref
+              </example>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </varlistentry>
+      <varlistentry xml:id="vle-abstract">
+        <term>Abstract</term>
+        <listitem>
+          <para>
+            Use an abstract to summarize the information provided in a book,
+            article, chapter, or set in 70&ndash;150 characters. Do not use
+            lists, images or examples in an abstract.
+          </para>
+          <example xml:id="ex-abstract">
+            <title>An abstract</title>
+            <para>
+              Perform an upgrade of a &sle; system to a new major version in
+              environments which do not allow for standard booting of the
+              installation.
+            </para>
+          </example>
+        </listitem>
+      </varlistentry>
+      <varlistentry xml:id="vle-toc">
+        <term>Table of contents</term>
+        <listitem>
+          <para>
+            The table of contents is generated automatically.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry xml:id="vle-preface">
+        <term>Preface</term>
+        <listitem>
+          <para>
+            Include a brief overview of the content of a manual, related
+            manuals and typographical conventions. The preface can also contain
+            information about its target audience.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry xml:id="vle-part">
+        <term>Parts</term>
+        <listitem>
+          <para>
+            If you are writing a book with many chapters, create parts at the
+            outline level above chapters. Parts should contain at least three
+            chapters. Keep part titles clear and concise. Often a single noun
+            is enough. Typical part titles are
+            <emphasis>Installation</emphasis> or <emphasis>Network</emphasis>.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry xml:id="vle-chapter">
+        <term>Chapters</term>
+        <listitem>
+          <para>
+            Chapter titles should not contain product version numbers which
+            affect the output of data analytics. Chapters typically consist of
+            the following elements (appendixes should be regarded an
+            exception):
+          </para>
+          <itemizedlist>
+            <listitem>
+              <formalpara>
+                <title>Abstract</title>
+                <para>
+                  In an abstract, summarize the topic instead of summarizing
+                  the outline. See also
+                  <xref
          linkend="vle-abstract"/>.
-         <remark>cwickert 2021-12-09: The 70&ndash;155 chars range is taken from
+                  <remark>cwickert 2021-12-09: The 70&ndash;155 chars range is taken from
           <link xlink:href="https://www.contentkingapp.com/academy/meta-description/"/>,
           we try to play it safe, thus reducing maximum character count by 5 to just 150.
          </remark>
+                </para>
+              </formalpara>
+            </listitem>
+            <listitem>
+              <formalpara>
+                <title>Introduction</title>
+                <para>
+                  Provide introductory information directly after the abstract.
+                  Do not place it in a separate section.
+                </para>
+              </formalpara>
+            </listitem>
+            <listitem>
+              <formalpara>
+                <title>Sections</title>
+                <para>
+                  Structure the detailed information, so readers can skim the
+                  text. Create sections for every major task, such as
+                  installing, configuring, monitoring, and administering. If
+                  helpful, split sections into subsections. Avoid nesting
+                  deeper than three levels of sections.
+                </para>
+              </formalpara>
+              <para>
+                Start sections with an introductory paragraph outlining the
+                focus of the section. If the section describes a sequential
+                task, add a procedure description, as discussed in
+                <xref linkend="sec-procedure"/>. Steps of a procedure can
+                contain a cross-reference to subsections where topical
+                background is provided and an action is explained in detail.
+                See also <xref linkend="sec-cross-reference"/>.
+              </para>
+            </listitem>
+            <listitem>
+              <formalpara>
+                <title>Troubleshooting</title>
+                <para>
+                  In this section, collect common mistakes and problems. The
+                  section should always be named
+                  <emphasis>Troubleshooting</emphasis>. Use the DocBook element
+                  <tag class="emptytag">qandaset</tag> (a Question and Answer
+                  section) to mark up <emphasis>Troubleshooting</emphasis>
+                  problems. In case you want to describe solutions to more than
+                  ten problems, add topical subsections (
+                  <tag class="emptytag">qandadiv</tag> elements) below the
+                  <emphasis>Troubleshooting</emphasis> section.
+                </para>
+              </formalpara>
+            </listitem>
+            <listitem>
+              <formalpara>
+                <title>More information</title>
+                <para>
+                  In a section named <citetitle>More information</citetitle>,
+                  collect Web links to all sources of information that might
+                  prove helpful in a given context. Follow the general
+                  referencing guidelines in
+                  <xref linkend="sec-cross-reference"/> when creating such
+                  sections.
+                </para>
+              </formalpara>
+            </listitem>
+          </itemizedlist>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Glossary</term>
+        <listitem>
+          <para>
+            The optional glossary contains important terms in alphabetical
+            order and provides a brief explanation for each. For more
+            information on creating lists of terms, see
+            <xref linkend="sec-glossary"/>.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Contributors</term>
+        <listitem>
+          <para>
+            Writing documentation is a collaborative effort. To give credit to
+            all contributors, add an appendix to the guides which points to the
+            <guimenu>Contributors</guimenu> page for the respective GitHub
+            repository. For an example, see <xref linkend="sec-contributor"/>.
+          </para>
+          <para>
+            For articles and small documents (such as &suse; Best Practices)
+            whose content is created and maintained by five or fewer
+            contributors, all of whom are from outside the documentation team,
+            credit the contributors on the title page.
+          </para>
+          <para>
+            The above are a minimum. In addition, make sure that the
+            contributors appendix is compliant with the document license.
+          </para>
+        </listitem>
+      </varlistentry>
+    </variablelist>
+  </section>
+  <section xml:id="sec-article">
+    <title>Articles</title>
+    <para>
+      For articles, use a document structure that includes the following
+      elements, in that order:
+    </para>
+    <orderedlist>
+      <listitem>
+        <para>
+          introduction
         </para>
-       </formalpara>
       </listitem>
       <listitem>
-       <formalpara>
-        <title>Introduction</title>
         <para>
-         Provide introductory information directly after the abstract. Do not
-         place it in a separate section.
+          sections, split into subsections
         </para>
-       </formalpara>
       </listitem>
       <listitem>
-       <formalpara>
-        <title>Sections</title>
         <para>
-         Structure the detailed information, so readers can skim the text.
-         Create sections for every major task, such as installing, configuring,
-         monitoring, and administering. If helpful, split sections into
-         subsections. Avoid nesting deeper than three levels of sections.
+          <emphasis>(optional)</emphasis> a glossary
         </para>
-       </formalpara>
-       <para>
-        Start sections with an introductory paragraph outlining the focus of
-        the section. If the section describes a sequential task, add a
-        procedure description, as discussed in <xref linkend="sec-procedure"/>.
-        Steps of a procedure can contain a cross-reference to subsections where
-        topical background is provided and an action is explained in detail.
-        See also <xref linkend="sec-cross-reference"/>.
-       </para>
       </listitem>
       <listitem>
-       <formalpara>
-        <title>Troubleshooting</title>
         <para>
-         In this section, collect common mistakes and problems. The section
-         should always be named <emphasis>Troubleshooting</emphasis>. Use the
-         DocBook element <tag class="emptytag">qandaset</tag> (a Question and
-         Answer section) to mark up <emphasis>Troubleshooting</emphasis>
-         problems. In case you want to describe solutions to more than ten
-         problems, add topical subsections (
-         <tag class="emptytag">qandadiv</tag> elements) below the
-         <emphasis>Troubleshooting</emphasis> section.
+          <emphasis>(optional)</emphasis> appendixes
         </para>
-       </formalpara>
       </listitem>
-      <listitem>
-       <formalpara>
-        <title>More information</title>
-        <para>
-         In a section named <citetitle>More information</citetitle>, collect
-         Web links to all sources of information that might prove helpful in a
-         given context. Follow the general referencing guidelines in
-         <xref linkend="sec-cross-reference"/> when creating such sections.
-        </para>
-       </formalpara>
-      </listitem>
-     </itemizedlist>
-    </listitem>
-   </varlistentry>
-   <varlistentry>
-    <term>Glossary</term>
-    <listitem>
-     <para>
-      The optional glossary contains important terms in alphabetical order and
-      provides a brief explanation for each. For more information on creating lists
-      of terms, see <xref linkend="sec-glossary"/>.
-     </para>
-    </listitem>
-   </varlistentry>
-   <varlistentry>
-    <term>Contributors</term>
-    <listitem>
-     <para>
-      Writing documentation is a collaborative effort. To give credit to all
-      contributors, add an appendix to the guides which points to the
-      <guimenu>Contributors</guimenu> page for the respective GitHub
-      repository. For an example, see <xref linkend="sec-contributor"/>.
-     </para>
-     <para>
-      For articles and small documents (such as &suse; Best Practices) whose
-      content is created and maintained by five or fewer contributors, all of
-      whom are from outside the documentation team, credit the contributors on
-      the title page.
-     </para>
-     <para>
-      The above are a minimum. In addition, make sure that the contributors
-      appendix is compliant with the document license.
-     </para>
-    </listitem>
-   </varlistentry>
-  </variablelist>
- </section>
-
- <section xml:id="sec-article">
-  <title>Articles</title>
-  <para>
-   For articles, use a document structure that includes the following elements,
-   in that order:
-  </para>
-  <orderedlist>
-   <listitem>
-    <para>
-     introduction
-    </para>
-   </listitem>
-   <listitem>
-    <para>
-     sections, split into subsections
-    </para>
-   </listitem>
-   <listitem>
-    <para>
-     <emphasis>(optional)</emphasis> a glossary
-    </para>
-   </listitem>
-   <listitem>
-    <para>
-     <emphasis>(optional)</emphasis> appendixes
-    </para>
-   </listitem>
-  </orderedlist>
- </section>
+    </orderedlist>
+  </section>
 </chapter>

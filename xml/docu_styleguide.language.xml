@@ -6,7 +6,6 @@
 ]>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-language">
   <title>Language</title>
-
   <para>
     We write documentation in American English. Where spelling differences
     exist between American and British English, use the American English
@@ -15,7 +14,6 @@
     <emphasis>localise</emphasis>/<emphasis>localize</emphasis>), use the
     <emphasis>-ize</emphasis> variant.
   </para>
-
   <para>
     When in doubt about the spelling or usage of a word, first see
     <xref linkend="app-terminology"/>. If the usage of a word is not regulated
@@ -23,21 +21,20 @@
     <link xlink:href="https://www.merriam-webster.com/"/>
     (<link xlink:href="https://www.m-w.com/"/> for short).
   </para>
-
   <para>
-    The correct spelling of &suse; product names is listed in the
-    terminology table (<xref linkend="app-terminology"/>)
-    <emphasis>and</emphasis> in the entities file of the Doc Kit repository at
+    The correct spelling of &suse; product names is listed in the terminology
+    table (<xref linkend="app-terminology"/>) <emphasis>and</emphasis> in the
+    entities file of the Doc Kit repository at
     <link xlink:href="https://github.com/openSUSE/doc-kit/blob/main/entities/generic-entities.ent"/>.
-    If a product name is not listed in either spot, refer to the official &suse; 
-    <link xlink:href="https://www.suse.com/products/">Products</link> page and the 
-    Marketing department. Make sure to not use articles in front of product names. 
+    If a product name is not listed in either spot, refer to the official
+    &suse; <link xlink:href="https://www.suse.com/products/">Products</link>
+    page and the Marketing department. Make sure to not use articles in front
+    of product names.
   </para>
   <para>
     When in doubt about a style rule, see <citetitle>The Chicago Manual of
     Style</citetitle>, 15th Edition.
   </para>
-
   <section xml:id="sec-abbreviation">
     <title>Abbreviations</title>
     <para>
@@ -89,7 +86,6 @@
       </para>
     </section>
   </section>
-
   <section xml:id="sec-bias">
     <title>Biases and inclusiveness</title>
     <para>
@@ -107,19 +103,18 @@
       the initiative's
       <link xlink:href="https://inclusivenaming.org/language/evaluation-framework/">Evaluation
       Framework</link> and its <quote>Word lists.</quote>
-      </para>
-      <para>
-        The &suse; official terminology database, 
-        <link xlink:href="https://suse.termweb.eu/">TermWeb</link>, also contains 
-        inclusive naming recommendations.
-      </para>
-      <para>
+    </para>
+    <para>
+      The &suse; official terminology database,
+      <link xlink:href="https://suse.termweb.eu/">TermWeb</link>, also contains
+      inclusive naming recommendations.
+    </para>
+    <para>
       For more information about avoiding gender bias, see <citetitle>The
       Chicago Manual of Style</citetitle>, 5.43. For information about names of
       example items, see <xref linkend="sec-name"/>.
     </para>
   </section>
-
   <section xml:id="sec-capitalization">
     <title>Capitalization of headings and titles</title>
     <section xml:id="sec-capitalization-sentence">
@@ -191,7 +186,6 @@
       </para>
     </section>
   </section>
-
   <section xml:id="sec-comma">
     <title>Commas</title>
     <para>
@@ -205,7 +199,6 @@
       configure a network connection.</quote>
     </para>
   </section>
-
   <section xml:id="sec-contraction">
     <title>Contractions</title>
     <para>
@@ -213,7 +206,6 @@
       purposefully writing a casual document.
     </para>
   </section>
-
   <section xml:id="sec-dash">
     <title>Dashes</title>
     <para>
@@ -224,7 +216,6 @@
       spaces. Use em dashes sparingly.
     </para>
   </section>
-
   <section xml:id="sec-end-sentence">
     <title>End of sentence punctuation</title>
     <para>
@@ -232,7 +223,6 @@
       question marks to question and answer sections.
     </para>
   </section>
-
   <section xml:id="sec-file-language">
     <title>File and directory names</title>
     <para>
@@ -285,7 +275,6 @@
       words like <quote>PDF file,</quote> always capitalize the extension.
     </para>
   </section>
-
   <section xml:id="sec-heading">
     <title>Headings</title>
     <para>
@@ -304,7 +293,6 @@
       <xref linkend="sec-outline-level"/>.
     </para>
   </section>
-
   <section xml:id="sec-hyphens">
     <title>Hyphens</title>
     <para>
@@ -363,14 +351,12 @@
       version</quote> and <quote>The calendar is up to date.</quote>
     </para>
   </section>
-
   <section xml:id="sec-language-list">
     <title>Lists</title>
     <para>
       For information about creating lists, see <xref linkend="sec-list"/>.
     </para>
   </section>
-
   <section xml:id="sec-number">
     <title>Numbers and measurements</title>
     <para>
@@ -389,7 +375,6 @@
       Style</citetitle> 9.6 and 9.16.
     </para>
   </section>
-
   <section xml:id="sec-possessive">
     <title>Possessives</title>
     <para>
@@ -397,7 +382,6 @@
       possessives of inanimate objects.
     </para>
   </section>
-
   <section xml:id="sec-prefix">
     <title>Prefixes</title>
     <para>
@@ -410,7 +394,6 @@
       <xref linkend="sec-hyphens"/>.
     </para>
   </section>
-
   <section xml:id="sec-quotation">
     <title>Quotations</title>
     <para>
@@ -464,7 +447,6 @@
       </para>
     </example>
   </section>
-
   <section xml:id="sec-semicolon">
     <title>Semicolons</title>
     <para>
@@ -472,7 +454,6 @@
       of commas in very complicated series.
     </para>
   </section>
-
   <section xml:id="sec-structure-sentence">
     <title>Sentence structure</title>
     <para>
@@ -491,7 +472,6 @@
       click <guimenu>OK</guimenu>.</quote>
     </para>
   </section>
-
   <section xml:id="sec-slash">
     <title>Slashes</title>
     <para>
@@ -500,7 +480,6 @@
       <emphasis>client/server</emphasis>.
     </para>
   </section>
-
   <section xml:id="sec-tense">
     <title>Tense</title>
     <para>
@@ -510,7 +489,6 @@
       there.</quote> or <quote>Glibc is installed.</quote>
     </para>
   </section>
-
   <section xml:id="sec-tone">
     <title>Tone and voice</title>
     <para>
@@ -545,7 +523,6 @@
       information (about), see.</quote>
     </para>
   </section>
-
   <section xml:id="sec-trademark">
     <title>Trademarks</title>
     <para>
@@ -577,7 +554,6 @@
       <xref linkend="sec-product"/>.
     </para>
   </section>
-
   <section xml:id="sec-ui-item-language">
     <title>User interface items</title>
     <para>

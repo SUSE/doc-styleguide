@@ -9,123 +9,118 @@
  xmlns:xi="http://www.w3.org/2001/XInclude" 
  xmlns:xlink="http://www.w3.org/1999/xlink"
  >
- 
- <title>DocBook tags</title>
-
- <para>
-  The &suse; and openSUSE user documentation is written with DocBook and uses a
-  Relax NG schema that defines a restricted set of DocBook tags.
- </para>
- <para>
-  The following tables list and describe all DocBook tags used for writing
-  most of the &suse; user documentation. They also show which tags are
-  translated and which tags will be blocked for translation, which means that
-  those tags stay in English.
-  The tables are divided into four categories, listing the elements of each
-  respective category.
- </para>
- <para>
-  With GeekoDoc 2, it is also possible to use the Internationalization Tag Set
-  (ITS) to explicitly indicate whether a tag should be translated or not.
-  For more information on ITS tags, see <xref linkend="sec-taglist-ITS"/>.
- </para>
- <para>
-  For more information on GeekoDoc, see
-  <link xlink:href="https://opensuse.github.io/geekodoc/"/>
- </para>
-<para>
-  For more information on all tags available in DocBook, see 
-  <link xlink:href="https://tdg.docbook.org/tdg/5.2/"/>
-</para>
-
- <section xml:id="sec-taglis-docbook">
- <title>Using DocBook tags</title>
- 
- <section>
-  <title>Meta elements</title>
+  <title>DocBook tags</title>
   <para>
-   All the elements at the section level and above, and many other elements,
-   include a wrapper for meta information about the content.
-   The meta information wrapper is designed to contain bibliographic
-   information about the content (author, title, publisher, etc.) as well
-   as other meta information such as revision histories, keyword sets and
-   index terms.
+    The &suse; and openSUSE user documentation is written with DocBook and uses
+    a Relax NG schema that defines a restricted set of DocBook tags.
   </para>
- <informaltable>
-  <tgroup cols="3">
-   <colspec colnum="1" colname="c1" colwidth="1.25*" />
-   <colspec colnum="2" colname="c2" colwidth="3.0*" />
-   <colspec colnum="3" colname="c3" colwidth="1*" />
-   <thead>
-    <row>
-     <entry>Element name</entry>
-     <entry>Description</entry>
-     <entry>Translation</entry>
-    </row>
-   </thead>
-  <tbody>
-   <row>
-    <entry>
-     <screen>
+  <para>
+    The following tables list and describe all DocBook tags used for writing
+    most of the &suse; user documentation. They also show which tags are
+    translated and which tags will be blocked for translation, which means that
+    those tags stay in English. The tables are divided into four categories,
+    listing the elements of each respective category.
+  </para>
+  <para>
+    With GeekoDoc 2, it is also possible to use the Internationalization Tag
+    Set (ITS) to explicitly indicate whether a tag should be translated or not.
+    For more information on ITS tags, see <xref linkend="sec-taglist-ITS"/>.
+  </para>
+  <para>
+    For more information on GeekoDoc, see
+    <link xlink:href="https://opensuse.github.io/geekodoc/"/>
+  </para>
+  <para>
+    For more information on all tags available in DocBook, see
+    <link xlink:href="https://tdg.docbook.org/tdg/5.2/"/>
+  </para>
+  <section xml:id="sec-taglis-docbook">
+    <title>Using DocBook tags</title>
+    <section>
+      <title>Meta elements</title>
+      <para>
+        All the elements at the section level and above, and many other
+        elements, include a wrapper for meta information about the content. The
+        meta information wrapper is designed to contain bibliographic
+        information about the content (author, title, publisher, etc.) as well
+        as other meta information such as revision histories, keyword sets and
+        index terms.
+      </para>
+      <informaltable>
+        <tgroup cols="3">
+          <colspec colnum="1" colname="c1" colwidth="1.25*" />
+          <colspec colnum="2" colname="c2" colwidth="3.0*" />
+          <colspec colnum="3" colname="c3" colwidth="1*" />
+          <thead>
+            <row>
+              <entry>Element name</entry>
+              <entry>Description</entry>
+              <entry>Translation</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+<screen>
 abstract
      </screen>
-    </entry>
-    <entry>
+              </entry>
+              <entry>
      Use an abstract to summarize the information provided in a book, article,
      or set in five or fewer sentences.
     </entry>
-    <entry>
+              <entry>
      Yes
     </entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+            </row>
+            <row>
+              <entry>
+<screen>
 author
  personame
   firstname
    surname
      </screen>
-    </entry>
-    <entry>
+              </entry>
+              <entry>
      Name of an individual author
     </entry>
-    <entry>No</entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 authorgroup
  author
   personame
    firstname
     surname
      </screen>
-    </entry>
-    <entry>
+              </entry>
+              <entry>
      Wrapper for author information when a document has multiple authors
      or collaborators
     </entry>
-    <entry>
+              <entry>
      No
     </entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+            </row>
+            <row>
+              <entry>
+<screen>
 date
      </screen>
-    </entry>
-    <entry>
+              </entry>
+              <entry>
      Date of publication or revision of a document
     </entry>
-    <entry>
+              <entry>
      No
     </entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+            </row>
+            <row>
+              <entry>
+<screen>
 info
  dm:docmanager
  dm:bugtracker
@@ -137,569 +132,616 @@ info
  dm:translation
  dm:editurl
      </screen>
-    </entry>
-    <entry>
-     <tag class="starttag">info</tag>: Wrapper to contain bibliographic
+              </entry>
+              <entry><tag class="starttag">info</tag>: Wrapper to contain bibliographic
      information about the content and other meta info.
      <tag class="starttag">dm:PLACEHOLDER</tag>: SUSE-specific info needed by
      the doc-manager tool and DAPS to process and build &suse; user
      documentation.
      </entry>
-    <entry>
+              <entry>
      No
     </entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+            </row>
+            <row>
+              <entry>
+<screen>
 indexterm
  primary
   secondary
      </screen>
-    </entry>
-    <entry>
+              </entry>
+              <entry>
      To create an index
     </entry>
-    <entry>
-     <para>
-      Yes
-     </para>
-     <para>
-      Legacy element, do not use for new documentation
-     </para>
-    </entry>
-   </row>
-   <row>
-    <entry>
-     <remark>2022-03-28: jufa: check if still in use or needed for SEO
+              <entry>
+                <para>
+                  Yes
+                </para>
+                <para>
+                  Legacy element, do not use for new documentation
+                </para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+                <remark>2022-03-28: jufa: check if still in use or needed for SEO
       purposes</remark>
-     <screen>
+<screen>
 keywordset
  keyword
      </screen>
-    </entry>
-    <entry>
+              </entry>
+              <entry>
      A set of keywords describing the content of a document
     </entry>
-    <entry>
-       <para>No</para>
-       <para>For TM parser settings, set to <emphasis>Yes</emphasis>.</para>
-    </entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+              <entry>
+                <para>
+                  No
+                </para>
+                <para>
+                  For TM parser settings, set to <emphasis>Yes</emphasis>.
+                </para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 legalnotice
      </screen>
-    </entry>
-    <entry></entry>
-    <entry>Yes</entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+              </entry>
+              <entry></entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 productname
      </screen>
-    </entry>
-    <entry>
+              </entry>
+              <entry>
      The formal name of a product
     </entry>
-    <entry>No</entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 productnumber
      </screen>
-    </entry>
-    <entry>
+              </entry>
+              <entry>
      A number assigned to a product
     </entry>
-    <entry>No</entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 remark
      </screen>
-    </entry>
-    <entry>
+              </entry>
+              <entry>
      A remark (or comment) intended for presentation in a draft manuscript
     </entry>
-    <entry>No</entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 subtitle
      </screen>
-    </entry>
-    <entry>
+              </entry>
+              <entry>
      The subtitle of a document. Often used for &suse; Best Practices guides
     </entry>
-    <entry>Yes</entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 title
      </screen>
-    </entry>
-    <entry>
-     <para>
-      The text of the title for a section of a document or for a formal
-     block-level element
-     </para>
-    <para>
-     For document titles, such as book, article and set titles, use
-     title-style capitalization. Apply sentence-style capitalization to all
-     running text and all types of headings and titles that are part of the
-     document content.
-    </para>
-    </entry>
-    <entry>Yes</entry>
-   </row>
-   <row>
-    <entry>
-     <screen>
+              </entry>
+              <entry>
+                <para>
+                  The text of the title for a section of a document or for a
+                  formal block-level element
+                </para>
+                <para>
+                  For document titles, such as book, article and set titles,
+                  use title-style capitalization. Apply sentence-style
+                  capitalization to all running text and all types of headings
+                  and titles that are part of the document content.
+                </para>
+              </entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 titleabbrev
      </screen>
-    </entry>
-    <entry>
+              </entry>
+              <entry>
      The abbreviation of a title. For example, it can be used to show shorter
      titles in the table of contents.
     </entry>
-    <entry>Yes</entry>
-   </row>
-   </tbody>
-   </tgroup>
- </informaltable>
- </section>
- 
- <section>
-  <title>Structure elements</title>
-  <note>
-   <para>
-    Structure elements are needed for sectioning and structuring your document,
-    such as defining chapters, appendix, etc.
-   </para>
-   <para>
-    Most structure elements do not need translations. The child elements like
-   <tag class="starttag">title</tag> are translated.
-   </para>
-  </note>
-  <informaltable>
-   <tgroup cols="3">
-    <colspec colnum="1" colname="c1" colwidth="1.25*" />
-    <colspec colnum="2" colname="c2" colwidth="3.0*" />
-    <colspec colnum="3" colname="c3" colwidth="1*" />
-    <thead>
-     <row>
-      <entry>Element name</entry>
-      <entry>Description</entry>
-      <entry>Translation</entry>
-     </row>
-    </thead>
-    <tbody>
-     <row>
-      <entry>
-       <screen>
+              <entry>Yes</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </section>
+    <section>
+      <title>Structure elements</title>
+      <note>
+        <para>
+          Structure elements are needed for sectioning and structuring your
+          document, such as defining chapters, appendix, etc.
+        </para>
+        <para>
+          Most structure elements do not need translations. The child elements
+          like <tag class="starttag">title</tag> are translated.
+        </para>
+      </note>
+      <informaltable>
+        <tgroup cols="3">
+          <colspec colnum="1" colname="c1" colwidth="1.25*" />
+          <colspec colnum="2" colname="c2" colwidth="3.0*" />
+          <colspec colnum="3" colname="c3" colwidth="1*" />
+          <thead>
+            <row>
+              <entry>Element name</entry>
+              <entry>Description</entry>
+              <entry>Translation</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+<screen>
 article
        </screen>
-      </entry>
-      <entry>An article</entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>An article</entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 appendix
        </screen>
-      </entry>
-      <entry>An appendix in a book or article</entry>
-      <entry>
-       <para>No</para>
-       <para>For TM parser settings, set to <emphasis>Yes</emphasis>.</para>
-      </entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>An appendix in a book or article</entry>
+              <entry>
+                <para>
+                  No
+                </para>
+                <para>
+                  For TM parser settings, set to <emphasis>Yes</emphasis>.
+                </para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 bridgehead
        </screen>
-      </entry>
-      <entry>
-       <para>A free-floating heading.</para>
-      <para>Use sparingly and work with sections instead.</para>
-      </entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>
+                <para>
+                  A free-floating heading.
+                </para>
+                <para>
+                  Use sparingly and work with sections instead.
+                </para>
+              </entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 book
        </screen>
-      </entry>
-      <entry>A book</entry>
-      <entry>
-       <para>No</para>
-       <para>For TM parser settings, set to <emphasis>Yes</emphasis>.</para>
-      </entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>A book</entry>
+              <entry>
+                <para>
+                  No
+                </para>
+                <para>
+                  For TM parser settings, set to <emphasis>Yes</emphasis>.
+                </para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 chapter
        </screen>
-      </entry>
-      <entry>A chapter, as of a book</entry>
-      <entry>
-       <para>No</para>
-       <para>For TM parser settings, set to <emphasis>Yes</emphasis>.</para>
-      </entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>A chapter, as of a book</entry>
+              <entry>
+                <para>
+                  No
+                </para>
+                <para>
+                  For TM parser settings, set to <emphasis>Yes</emphasis>.
+                </para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 formalpara
        </screen>
-      </entry>
-      <entry><para>A paragraph with the title rendered as a run-in head. 
-      Use to create more compact lists, for example:</para>
-      <formalpara>
-     <title><command>who</command></title>
-     <para>
-      Lists currently logged in users.
-     </para>
-    </formalpara>
-    <formalpara>
-     <title><command>w</command></title>
-     <para>
-      Shows who is logged in and what they are doing.
-     </para>
-    </formalpara>
-      </entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>
+                <para>
+                  A paragraph with the title rendered as a run-in head. Use to
+                  create more compact lists, for example:
+                </para>
+                <formalpara>
+                  <title><command>who</command></title>
+                  <para>
+                    Lists currently logged in users.
+                  </para>
+                </formalpara>
+                <formalpara>
+                  <title><command>w</command></title>
+                  <para>
+                    Shows who is logged in and what they are doing.
+                  </para>
+                </formalpara>
+              </entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 section
        </screen>
-      </entry>
-      <entry>A recursive section, unnumbered</entry>
-      <entry>
-       <para>No</para>
-       <para>For TM parser settings, set to <emphasis>Yes</emphasis>.</para>
-      </entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>A recursive section, unnumbered</entry>
+              <entry>
+                <para>
+                  No
+                </para>
+                <para>
+                  For TM parser settings, set to <emphasis>Yes</emphasis>.
+                </para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 sect1
  sect2
   sect3
    ...</screen>
-      </entry>
-      <entry>Numbered sections that must be properly nested</entry>
-      <entry>
-       <para>No</para>
-       <para>For TM parser settings, set to <emphasis>Yes</emphasis>.</para>
-      </entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>Numbered sections that must be properly nested</entry>
+              <entry>
+                <para>
+                  No
+                </para>
+                <para>
+                  For TM parser settings, set to <emphasis>Yes</emphasis>.
+                </para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 set
        </screen>
-      </entry>
-      <entry>A collection of books</entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>A collection of books</entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 para
        </screen>
-      </entry>
-      <entry>A paragraph</entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>A paragraph</entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 part
        </screen>
-      </entry>
-      <entry>A division in a book</entry>
-      <entry>
-       <para>No</para>
-       <para>For TM parser settings, set to <emphasis>Yes</emphasis>.</para>
-      </entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>A division in a book</entry>
+              <entry>
+                <para>
+                  No
+                </para>
+                <para>
+                  For TM parser settings, set to <emphasis>Yes</emphasis>.
+                </para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 preface
        </screen>
-      </entry>
-      <entry>Introductory matter preceding the first chapter of a book</entry>
-      <entry>
-       <para>No</para>
-       <para>For TM parser settings, set to <emphasis>Yes</emphasis>.</para>
-      </entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>Introductory matter preceding the first chapter of a book</entry>
+              <entry>
+                <para>
+                  No
+                </para>
+                <para>
+                  For TM parser settings, set to <emphasis>Yes</emphasis>.
+                </para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 qandaset
  qandaentry
   question
   answer
        </screen>
-      </entry>
-      <entry>Used for FAQs</entry>
-      <entry>Yes</entry>
-     </row>
-    </tbody>
-   </tgroup>
-   </informaltable>
- </section>
- 
- <section>
-  <title>Block elements</title>
-  <para>
-   The block elements occur immediately below the component and sectioning
-   elements. These are the (roughly) paragraph-level elements in DocBook.
-   They can be divided into a number of categories: lists, admonitions,
-   line-specific environments, synopses of several sorts, tables, figures,
-   examples, and a dozen or more miscellaneous elements.
-  </para>
-  <informaltable>
-   <tgroup cols="3">
-    <colspec colnum="1" colname="c1" colwidth="1.25*" />
-    <colspec colnum="2" colname="c2" colwidth="3.0*" />
-    <colspec colnum="3" colname="c3" colwidth="1*" />
-    <thead>
-     <row>
-      <entry>Element name</entry>
-      <entry>Description</entry>
-      <entry>Translation</entry>
-     </row>
-    </thead>
-    <tbody>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>Used for FAQs</entry>
+              <entry>Yes</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </section>
+    <section>
+      <title>Block elements</title>
+      <para>
+        The block elements occur immediately below the component and sectioning
+        elements. These are the (roughly) paragraph-level elements in DocBook.
+        They can be divided into a number of categories: lists, admonitions,
+        line-specific environments, synopses of several sorts, tables, figures,
+        examples, and a dozen or more miscellaneous elements.
+      </para>
+      <informaltable>
+        <tgroup cols="3">
+          <colspec colnum="1" colname="c1" colwidth="1.25*" />
+          <colspec colnum="2" colname="c2" colwidth="3.0*" />
+          <colspec colnum="3" colname="c3" colwidth="1*" />
+          <thead>
+            <row>
+              <entry>Element name</entry>
+              <entry>Description</entry>
+              <entry>Translation</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+<screen>
 calloutlist
  callout
   para
       </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        List of callouts and their descriptions.
        A called out description of a marked area.
       </entry>
-      <entry>
-       <para>No</para>
-       <para>For TM parser settings, set to <emphasis>Yes</emphasis>.</para>
-       <para>
-        Child element <tag class="starttag">para</tag> is translated.
-       </para>
-      </entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>
+                <para>
+                  No
+                </para>
+                <para>
+                  For TM parser settings, set to <emphasis>Yes</emphasis>.
+                </para>
+                <para>
+                  Child element <tag class="starttag">para</tag> is translated.
+                </para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 example
        </screen>
-      </entry>
-      <entry>An example</entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>An example</entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 figure
  title
   mediaobject
    imageobject
     imagedata
        </screen>
-      </entry>
-      <entry>Figure with title</entry>
-      <entry>
-       <para>No</para>
-       <para>For TM parser settings, set to <emphasis>Yes</emphasis>.</para>
-       <para>
-        Child element <tag class="starttag">title</tag> is translated.
-       </para>
-      </entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>Figure with title</entry>
+              <entry>
+                <para>
+                  No
+                </para>
+                <para>
+                  For TM parser settings, set to <emphasis>Yes</emphasis>.
+                </para>
+                <para>
+                  Child element <tag class="starttag">title</tag> is
+                  translated.
+                </para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 glossary
  glossdef
   glossdiv
   glossentry
    glossterm
        </screen>
-      </entry>
-      <entry>A glossary</entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>A glossary</entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 important
  tittle
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        Use this elements to give vital information.
       </entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 informalfigure
        </screen>
-      </entry>
-      <entry>Figure without a title</entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>Figure without a title</entry>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 informaltable
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        Table without a title
       </entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 itemizedlist
  listitem
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        Unordered, bulleted list
       </entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 note
  title
  para
        </screen>
-      </entry>
-      <entry>
-       <para>
-        A message set off from the text.
-       </para>
-       <para>
-        Use this element to highlight software version differences.
-       </para>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
+                <para>
+                  A message set off from the text.
+                </para>
+                <para>
+                  Use this element to highlight software version differences.
+                </para>
+              </entry>
+              <entry>
        Yes
       </entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+            </row>
+            <row>
+              <entry>
+<screen>
 orderedlist
  listitem
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        Numbered list with attributes to control the type of enumeration
       </entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 procedure
  step
   substeps
   stepalternatives
        </screen>
-      </entry>
-      <entry>
-       <para>
-        <tag class="starttag">procedure</tag>: A list of operations to be
-       performed in a well-defined sequence
-       </para>
-       <para>
-        <tag class="starttag">step</tag>: A unit of action in a procedure
-       </para>
-      </entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>
+                <para>
+                  <tag class="starttag">procedure</tag>: A list of operations
+                  to be performed in a well-defined sequence
+                </para>
+                <para>
+                  <tag class="starttag">step</tag>: A unit of action in a
+                  procedure
+                </para>
+              </entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 programlisting
       </screen>
-      </entry>
-      <entry>
-       <para>
-        A literal listing of a program or a part of a program. Use for 
-        program source or source fragment listings. Formatted as a displayed 
-        block. Similar to <tag class="starttag">screen</tag>.
-       </para>
-      </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>              
+              </entry>
+              <entry>
+                <para>
+                  A literal listing of a program or a part of a program. Use
+                  for program source or source fragment listings. Formatted as
+                  a displayed block. Similar to
+                  <tag class="starttag">screen</tag>.
+                </para>
+              </entry>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>              
 qandset
  qandaentry
   question
   answer
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        List of questions and answers, used for FAQs
       </entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 screen
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        Text that a user sees on a computer screen
       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 simplelist
  member
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        Undecorated list of single words or short phrases
       </entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 table
  title
   tgroup
@@ -711,524 +753,537 @@ table
    row
     entry
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        Formal table with title
       </entry>
-      <entry>
-       <para>
-              No
-       </para>
-       <para>For TM parser settings, set to <emphasis>Yes</emphasis>.</para>
-       <para>
-       Except for child elements <tag class="starttag">title</tag> and
-      <tag class="starttag">entry</tag>
-       </para>
-      </entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>
+                <para>
+                  No
+                </para>
+                <para>
+                  For TM parser settings, set to <emphasis>Yes</emphasis>.
+                </para>
+                <para>
+                  Except for child elements <tag class="starttag">title</tag>
+                  and <tag class="starttag">entry</tag>
+                </para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 textobject
        </screen>
-      </entry>
-      <entry>Explanatory text for images to aid visually impaired users and show
+              </entry>
+              <entry>Explanatory text for images to aid visually impaired users and show
        when the image cannot be loaded because of an error</entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 tip
  title
   para
        </screen>
-      </entry>
-      <entry>To introduce guidelines or give tips</entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>To introduce guidelines or give tips</entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 variablelist
  varlistentry
   term
        </screen>
-      </entry>
-      <entry>List of terms and definitions or descriptions</entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>List of terms and definitions or descriptions</entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 warning
  title
   para
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        To warn of security issues, potential loss of data, damage
        to hardware, or physical hazards. Warnings must always precede the
        action to which they apply.
       </entry>
-      <entry>Yes</entry>
-     </row>
-    </tbody>
-   </tgroup>
-  </informaltable>
- </section>
- 
- <section>
-  <title>Inline elements</title>
-  <para>
-   Inline elements are used to mark up running text. In published documents,
-   inline elements often cause a font change or other small change, but they
-   do not cause line or paragraph breaks.
-  </para>
-  <informaltable>
-   <tgroup cols="3">
-    <colspec colnum="1" colname="c1" colwidth="1.25*" />
-    <colspec colnum="2" colname="c2" colwidth="3.0*" />
-    <colspec colnum="3" colname="c3" colwidth="1*" />
-    <thead>
-     <row>
-      <entry>Element name</entry>
-      <entry>Description</entry>
-      <entry>Translation</entry>
-     </row>
-    </thead>
-    <tbody>
-     <row>
-      <entry>
-       <screen>
+              <entry>Yes</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </section>
+    <section>
+      <title>Inline elements</title>
+      <para>
+        Inline elements are used to mark up running text. In published
+        documents, inline elements often cause a font change or other small
+        change, but they do not cause line or paragraph breaks.
+      </para>
+      <informaltable>
+        <tgroup cols="3">
+          <colspec colnum="1" colname="c1" colwidth="1.25*" />
+          <colspec colnum="2" colname="c2" colwidth="3.0*" />
+          <colspec colnum="3" colname="c3" colwidth="1*" />
+          <thead>
+            <row>
+              <entry>Element name</entry>
+              <entry>Description</entry>
+              <entry>Translation</entry>
+            </row>
+          </thead>
+          <tbody>
+            <row>
+              <entry>
+<screen>
 citetitle
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        To reference names of printed books. To refer to any of our guides, use
        <tag class="emptytag">xref</tag> or <tag class="emptytag">link</tag>.
       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 co
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        Part of calloutlist. The location of a callout embedded in text.
       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 code
        </screen>
-      </entry>
-      <entry>An inline code fragment</entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>An inline code fragment</entry>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 command
        </screen>
-      </entry>
-      <entry>A software command</entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>A software command</entry>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 constant
        </screen>
-      </entry>
-      <entry>A programming or system constant</entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>A programming or system constant</entry>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 email
        </screen>
-      </entry>
-      <entry>An e-mail address</entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>An e-mail address</entry>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 emphasis
        </screen>
-      </entry>
-      <entry>Emphasized text</entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>Emphasized text</entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 envar
        </screen>
-      </entry>
-      <entry>A software environment variable</entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>A software environment variable</entry>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 filename
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        Name of a file or path as well as directories, printers or
        flash drives
       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 function
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        Name of a function or subroutine, as in a programming language
       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 guimenu
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
         To mark up all GUI elements like button, label and menu
       </entry>
-      <entry>
-       <para>Yes</para>
-       <para>
-        Depends on whether UI is translated or not. If not, use ITS tag.
-       </para>
-      </entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>
+                <para>
+                  Yes
+                </para>
+                <para>
+                  Depends on whether UI is translated or not. If not, use ITS
+                  tag.
+                </para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 indexterm
  primary
   secondary
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
       Index marker
       </entry>
-      <entry>
-      <para>
-      Yes
-      </para>
-      <para>
-      Legacy element, do not use for new documentation
-     </para>
-    </entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>
+                <para>
+                  Yes
+                </para>
+                <para>
+                  Legacy element, do not use for new documentation
+                </para>
+              </entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 inlinemediaobject
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        An inline media object (video, audio, image...)
       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 keycap
        </screen>
-      </entry>
-      <entry>
-       <para>The text printed on a key on a keyboard</para>
-       <para>
-        For function keys, always use with function, for example: 
-       &lt;keycap function="control">&lt;/keycap>
-       </para>
-       </entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>
+                <para>
+                  The text printed on a key on a keyboard
+                </para>
+                <para>
+                  For function keys, always use with function, for example:
+                  &lt;keycap function="control">&lt;/keycap>
+                </para>
+              </entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 keycombo
  keycap
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        A combination of input actions on a keyboard
       </entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 link
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        A hypertext link. Use the secure protocol prefix
        (<literal>https://</literal>), if possible.
       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 literal
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        To mark up data taken literally from a computer system
       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 menuchoice
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        A selection or series of selections from a menu
       </entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 option
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        An option for a software command
       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 package
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        Name of a software or application package. Replaces
        <tag class="starttag">systemitem class="resource"</tag>.
       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 parameter
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        A value or a symbolic reference to a value
       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 phrase
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        A span of text
       </entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 productname
        </screen>
-      </entry>
-      <entry>
-       <para>
-       The formal name of a product
-       </para>
-       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>
+                <para>
+                  The formal name of a product
+                </para>
+              </entry>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 prompt
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        A character or string indicating the start of an input field in a
        computer display
       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 quote
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        To quote from sources, such as books. In all other cases, do not use
        quotation marks.
       </entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 replaceable
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        Content that may or must be replaced by the user. Capitalize placeholder
        text in all contexts where this is not detrimental to content intelligibility.
        Do not use spaces within placeholders, use underscores instead.
       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 systemitem
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        A system-related item or term
       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 subscript
        </screen>
-      </entry>
-      <entry>
-       <para>A subscript. For example:</para>
-       <para>H<subscript>2</subscript>O</para>
-      </entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>
+                <para>
+                  A subscript. For example:
+                </para>
+                <para>
+                  H<subscript>2</subscript>O
+                </para>
+              </entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 superscript
        </screen>
-      </entry>
-      <entry>
-       <para>A superscript. For example:</para>
-       <para>X<superscript>2</superscript></para>
-      </entry>
-      <entry>Yes</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>
+                <para>
+                  A superscript. For example:
+                </para>
+                <para>
+                  X<superscript>2</superscript>
+                </para>
+              </entry>
+              <entry>Yes</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 tag
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        A component of XML (or SGML) markup
       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 trademark
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        To mark a trademark with <trademark>TM</trademark>
-      </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              </entry>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 uri
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        For links that should not be clickable
       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 varname
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        The name of a variable
       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 xi:include
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        To construct documents from different files
       </entry>
-      <entry>No</entry>
-     </row>
-     <row>
-      <entry>
-       <screen>
+              <entry>No</entry>
+            </row>
+            <row>
+              <entry>
+<screen>
 xref
        </screen>
-      </entry>
-      <entry>
+              </entry>
+              <entry>
        A cross-reference to another part of the document
       </entry>
-      <entry>No</entry>
-     </row>
-    </tbody>
-   </tgroup>
-  </informaltable>
- </section>
-</section>
- 
-<section xml:id="sec-taglist-ITS">
- <title>Using ITS tags</title>
- <para>
-  With GeekoDoc 2, it is possible to use the Internationalization Tag Set (ITS)
-  tags to explicitly indicate that a tag should be translated or not.
- </para>
- <para>
-  For this, you need to have the ITS namespace enabled in the XML file. Make
-  sure the following line is added to the root element:
-  <code>xmlns:its="http://www.w3.org/2005/11/its"</code>.
- </para>
- <para>
-  For example:
-  You have used the tag <tag class="starttag">guimenu</tag> which is usually
-  translated but in this particular case it should not be translated.
-  </para>
-  <para>
-  To mark the tag correctly, use the ITS tag as shown here:
-  </para>
-  <screen>
+              <entry>No</entry>
+            </row>
+          </tbody>
+        </tgroup>
+      </informaltable>
+    </section>
+  </section>
+  <section xml:id="sec-taglist-ITS">
+    <title>Using ITS tags</title>
+    <para>
+      With GeekoDoc 2, it is possible to use the Internationalization Tag Set
+      (ITS) tags to explicitly indicate that a tag should be translated or not.
+    </para>
+    <para>
+      For this, you need to have the ITS namespace enabled in the XML file.
+      Make sure the following line is added to the root element:
+      <code>xmlns:its="http://www.w3.org/2005/11/its"</code>.
+    </para>
+    <para>
+      For example: You have used the tag <tag class="starttag">guimenu</tag>
+      which is usually translated but in this particular case it should not be
+      translated.
+    </para>
+    <para>
+      To mark the tag correctly, use the ITS tag as shown here:
+    </para>
+<screen>
 Click &lt;guimenu its:translate="no">Save&lt;/guimenu>.
   </screen>
-</section>
+  </section>
 </chapter>
