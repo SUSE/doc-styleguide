@@ -477,7 +477,8 @@
     <para>
       Do not use slashes except when they are part of a standard technical
       term, such as <emphasis>TCP/IP</emphasis> or
-      <emphasis>client/server</emphasis>.
+      <emphasis>client/server</emphasis>. Do not add spaces on either side 
+      of a forward slash.
     </para>
   </section>
   <section xml:id="sec-tense">
