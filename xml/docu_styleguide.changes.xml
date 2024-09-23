@@ -12,7 +12,7 @@
     This section lists the changes between versions of this Style Guide.
     </para>-->
   <!-- Add new versions to the beginning of the list. -->
-  <revision xml:id="sec-change-2024-07"><date>2024-07</date>
+  <revision xml:id="sec-change-2024-07"><date>2024-07-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -31,7 +31,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2024-05"><date>2024-05</date>
+  <revision xml:id="sec-change-2024-05"><date>2024-05-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -70,7 +70,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2024-02"><date>2024-02</date>
+  <revision xml:id="sec-change-2024-02"><date>2024-02-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -107,7 +107,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2023-11"><date>2023-11</date>
+  <revision xml:id="sec-change-2023-11"><date>2023-11-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -140,7 +140,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2023-09"><date>2023-09</date>
+  <revision xml:id="sec-change-2023-09"><date>2023-09-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -171,7 +171,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2023-06"><date>2023-06</date>
+  <revision xml:id="sec-change-2023-06"><date>2023-06-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -216,7 +216,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2023-02"><date>2023-02</date>
+  <revision xml:id="sec-change-2023-02"><date>2023-02-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -261,7 +261,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2022-11"><date>2022-11</date>
+  <revision xml:id="sec-change-2022-11"><date>2022-11-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -307,7 +307,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2022-08"><date>2022-08</date>
+  <revision xml:id="sec-change-2022-08"><date>2022-08-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -337,7 +337,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2022-06"><date>2022-06</date>
+  <revision xml:id="sec-change-2022-06"><date>2022-06-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -393,7 +393,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2022-04"><date>2022-04</date>
+  <revision xml:id="sec-change-2022-04"><date>2022-04-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -435,7 +435,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2021-12"><date>2021-12</date>
+  <revision xml:id="sec-change-2021-12"><date>2021-12-01</date>
     <revdescription>
       <para>
         Updated recommendations for <tag class="emptytag">abstracts</tag> and
@@ -446,7 +446,7 @@
       </para>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2021-10"><date>2021-10</date>
+  <revision xml:id="sec-change-2021-10"><date>2021-10-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -474,7 +474,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2021-08"><date>2021-08</date>
+  <revision xml:id="sec-change-2021-08"><date>2021-08-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -497,7 +497,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2021-04"><date>2021-04</date>
+  <revision xml:id="sec-change-2021-04"><date>2021-04-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -526,7 +526,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2021-02"><date>2021-02</date>
+  <revision xml:id="sec-change-2021-02"><date>2021-02-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -563,7 +563,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2020-12"><date>2020-12</date>
+  <revision xml:id="sec-change-2020-12"><date>2020-12-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -581,7 +581,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2020-10"><date>2020-10</date>
+  <revision xml:id="sec-change-2020-10"><date>2020-10-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -637,7 +637,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2020-08"><date>2020-08</date>
+  <revision xml:id="sec-change-2020-08"><date>2020-08-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -683,21 +683,21 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2019-11"><date>2019-11</date>
+  <revision xml:id="sec-change-2019-11"><date>2019-11-01</date>
     <revdescription>
       <para>
         Added guidance regarding appropriate on-page screenshot sizing.
       </para>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2019-08"><date>2019-08</date>
+  <revision xml:id="sec-change-2019-08"><date>2019-08-01</date>
     <revdescription>
       <para>
         Added minimal guidance regarding AsciiDoc documents.
       </para>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2019-07"><date>2019-07</date>
+  <revision xml:id="sec-change-2019-07"><date>2019-07-01</date>
     <revdescription>
       <para>
         Updated guidance regarding use of <literal>.</literal> and
@@ -705,7 +705,7 @@
       </para>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2019-03"><date>2019-03</date>
+  <revision xml:id="sec-change-2019-03"><date>2019-03-01</date>
     <revdescription>
       <para>
         Added guidance regarding easily outdated information in screens and
@@ -713,7 +713,7 @@
       </para>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2018-11"><date>2018-11</date>
+  <revision xml:id="sec-change-2018-11"><date>2018-11-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -729,14 +729,14 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2018-08"><date>2018-08</date>
+  <revision xml:id="sec-change-2018-08"><date>2018-08-01</date>
     <revdescription>
       <para>
         Improved guidance regarding path names.
       </para>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2018-07"><date>2018-07</date>
+  <revision xml:id="sec-change-2018-07"><date>2018-07-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -752,7 +752,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2018-06"><date>2018-06</date>
+  <revision xml:id="sec-change-2018-06"><date>2018-06-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -768,28 +768,28 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2018-04"><date>2018-04</date>
+  <revision xml:id="sec-change-2018-04"><date>2018-04-01</date>
     <revdescription>
       <para>
         Added terminology entry for <emphasis>namespace</emphasis>.
       </para>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2017-11"><date>2017-11</date>
+  <revision xml:id="sec-change-2017-11"><date>2017-11-01</date>
     <revdescription>
       <para>
         Improved guidance regarding XML IDs.
       </para>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2017-10"><date>2017-10</date>
+  <revision xml:id="sec-change-2017-10"><date>2017-10-01</date>
     <revdescription>
       <para>
         Updated terminology entry for <emphasis>IBM Z</emphasis>.
       </para>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2017-04"><date>2017-04</date>
+  <revision xml:id="sec-change-2017-04"><date>2017-04-01</date>
     <revdescription>
       <para>
         Added terminology entries for <emphasis>e-mail</emphasis>,
@@ -797,7 +797,7 @@
       </para>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2017-03"><date>2017-03</date>
+  <revision xml:id="sec-change-2017-03"><date>2017-03-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
@@ -819,14 +819,14 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2016-12"><date>2016-12</date>
+  <revision xml:id="sec-change-2016-12"><date>2016-12-01</date>
     <revdescription>
       <para>
         Corrected SLES for SAP Applications product name.
       </para>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2016-07"><date>2016-07</date>
+  <revision xml:id="sec-change-2016-07"><date>2016-07-01</date>
     <revdescription>
       <para>
         July 2016 Major Update Version 2016-07 was a major update focused on
@@ -943,7 +943,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2014-02-2"><date>2014-02</date>
+  <revision xml:id="sec-change-2014-02-2"><date>2014-04-24</date>
     <revdescription>
       <para>
         Version 2014-02.2 was a minor update focused on adding terminology and
@@ -1069,7 +1069,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2014-02-1"><date>2014-02</date>
+  <revision xml:id="sec-change-2014-02-1"><date>2014-03-13</date>
     <revdescription>
       <para>
         Version 2014-02.1 was a minor update focused on adding terminology and
@@ -1174,7 +1174,7 @@
       </itemizedlist>
     </revdescription>
   </revision>
-  <revision xml:id="sec-change-2014-02"><date>2014-02</date>
+  <revision xml:id="sec-change-2014-02"><date>2014-02-18</date>
     <revdescription>
       <para>
         February 2014 Major Update
