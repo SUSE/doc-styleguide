@@ -335,7 +335,7 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
 &lt;merge>
   &lt;title>Your title, limit to 55 characters, if possible&lt;/title>
   &lt;subtitle>Subtitle if necessary&lt;/subtitle>
-  &lt;revhistory xml:id="rh-USE_ROOTID">
+  &lt;revhistory xml:id="rh-USE-ROOTID">
     &lt;revision>
       &lt;date>2024-11-11&lt;/date>
       &lt;revdescription>
@@ -390,7 +390,7 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
     <para>
       Update revision history regularly, mentioning most important changes to
       your document when you amend or rework it. The data you enter as revision
-      history is used as meta data. The <quote>Revision History</quote> text is
+      history is used as metadata. The <quote>Revision history</quote> text is
       available as a link before the abstract and opens up in its individual
       page. Keep in mind the following rules:
     </para>
@@ -409,7 +409,7 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
       <listitem>
         <para>
           If you have several changes of the same type (addition, change,
-          removal), group them under a dedicated
+          removal), you may group them under a dedicated
           <tag class="emptytag">itemizedlist</tag>.
         </para>
       </listitem>
@@ -426,28 +426,15 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
       <title>Revision history example (source)</title>
 <screen>
 &lt;revhistory xml:id="rh-USE-ROOTID"&gt;  
-  &lt;revision&gt;&lt;date&gt;2024-11-13&lt;/date&gt;
+  &lt;revision&gt;&lt;date&gt;YYYY-MM-DD&lt;/date&gt;
     &lt;revdescription&gt;  
-      &lt;itemizedlist&gt;
-        &lt;listitem&gt;&lt;para&gt;Added sections:&lt;/para&gt;
-          &lt;itemizedlist&gt;
-            &lt;listitem&gt;&lt;para&gt;New section on &lt;quote&gt;foo&lt;/quote&gt; to resolve issue &lt;uri&gt;bsc#12345&lt;/uri&gt;&lt;/para&gt;&lt;/listitem&gt;
-            &lt;listitem&gt;&lt;para&gt;New section on &lt;quote&gt;foo bar&lt;/quote&gt;&lt;/para&gt;&lt;/listitem&gt;
-          &lt;/itemizedlist&gt;
-        &lt;/listitem&gt;
-        &lt;listitem&gt;&lt;para&gt;Removed sections:&lt;/para&gt;
-          &lt;itemizedlist&gt;
-            &lt;listitem&gt;&lt;para&gt;Removed section on &lt;quote&gt;foo1&lt;/quote&gt; to resolve issue &lt;uri&gt;bsc#12346&lt;/uri&gt;&lt;/para&gt;&lt;/listitem&gt;
-            &lt;listitem&gt;&lt;para&gt;Removed section on &lt;quote&gt;foo1 bar&lt;/quote&gt;&lt;/para&gt;&lt;/listitem&gt;
-          &lt;/itemizedlist&gt;
-        &lt;/listitem&gt;
-        &lt;listitem&gt;&lt;para&gt;Changed sections:&lt;/para&gt;
-          &lt;itemizedlist&gt;
-            &lt;listitem&gt;&lt;para&gt;Changed section on &lt;quote&gt;foo2&lt;/quote&gt; to resolve issue &lt;uri&gt;bsc#12347&lt;/uri&gt;&lt;/para&gt;&lt;/listitem&gt;
-            &lt;listitem&gt;&lt;para&gt;Changed section on &lt;quote&gt;foo2 bar&lt;/quote&gt;&lt;/para&gt;&lt;/listitem&gt;
-          &lt;/itemizedlist&gt;
-        &lt;/listitem&gt;
-      &lt;/itemizedlist&gt;
+      &lt;para&gt;Updated CONTENT, extended CONTENT, removed CONTENT&lt;/para&gt;
+    &lt;/revdescription&gt;
+  &lt;/revision&gt;
+  &lt;revision&gt;&lt;date&gt;YYYY-MM-DD&lt;/date&gt;
+    &lt;revdescription&gt;  
+      &lt;para&gt;Updated for the initial release of &lt;phrase role="productname"&gt;SUSE Linux Enterprise Server&lt;/phrase&gt; 
+      &lt;phrase role="productnumber"&gt;15 SP6&lt;/phrase&gt;&lt;/para&gt;
     &lt;/revdescription&gt;
   &lt;/revision&gt;
 &lt;/revhistory&gt;</screen>
@@ -457,62 +444,13 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
       <revhistory xml:id="rh-USE-ROOTID">
         <revision><date>2024-11-13</date>
           <revdescription>
-            <itemizedlist>
-              <listitem>
-                <para>
-                  Added sections:
-                </para>
-                <itemizedlist>
-                  <listitem>
-                    <para>
-                      New section on <quote>foo</quote> to resolve issue
-                      <uri>bsc#12345</uri>
-                    </para>
-                  </listitem>
-                  <listitem>
-                    <para>
-                      New section on <quote>foo bar</quote>
-                    </para>
-                  </listitem>
-                </itemizedlist>
-              </listitem>
-              <listitem>
-                <para>
-                  Removed sections:
-                </para>
-                <itemizedlist>
-                  <listitem>
-                    <para>
-                      Removed section on <quote>foo1</quote> to resolve issue
-                      <uri>bsc#12346</uri>
-                    </para>
-                  </listitem>
-                  <listitem>
-                    <para>
-                      Removed section on <quote>foo1 bar</quote>
-                    </para>
-                  </listitem>
-                </itemizedlist>
-              </listitem>
-              <listitem>
-                <para>
-                  Changed sections:
-                </para>
-                <itemizedlist>
-                  <listitem>
-                    <para>
-                      Changed section on <quote>foo2</quote> to resolve issue
-                      <uri>bsc#12347</uri>
-                    </para>
-                  </listitem>
-                  <listitem>
-                    <para>
-                      Changed section on <quote>foo2 bar</quote>
-                    </para>
-                  </listitem>
-                </itemizedlist>
-              </listitem>
-            </itemizedlist>
+            <para>Updated chapter on <quote>foo bar</quote>, removed section on <quote>foo bar 1</quote></para>
+          </revdescription>
+        </revision>
+        <revision><date>2024-09-21</date>
+          <revdescription>
+            <para>Updated for the initial release of <phrase role="productname">SUSE Linux Enterprise Server</phrase>
+              <phrase role="productnumber">15 SP6</phrase></para>
           </revdescription>
         </revision>
       </revhistory>
