@@ -18,24 +18,6 @@
   <!-- TODO: provide a listing of possible and validatable meta entry values. Maybe in our geekodoc repo? -->
   <!-- add author's e-mail -->
   <meta name="maintainer" content="daria.vladykina@suse.com" its:translate="no"/>
-  <!-- ISO date of last update as YYYY-MM-DD -->
-  <meta name="updated" content="2023-09-22" its:translate="no"/>
-  <!-- this does not work yet. Use the dm tags listed below for now
-    <meta name="bugtracker" its:translate="no">
-      <phrase role="url">https://bugzilla.suse.com/enter_bug.cgi</phrase>
-      <phrase role="component">Non-product-specific documentation</phrase>
-      <phrase role="product">Smart Docs</phrase>
-      <phrase role="assignee">assignee@suse.com</phrase>
-    </meta>
-    -->
-  <!-- not supported, yet. Use dm: tag for now
-    <meta name="translation" its:translate="no">
-    <phrase role="trans">yes</phrase>
-    <phrase role="language">de-de,cs-cz</phrase>
-    </meta>
-    -->
-  <!-- enter the platform identifier or a list of
-    identifiers, separated by ; -->
   <meta name="title" its:translate="yes">SUSE Documentation Style Guide</meta>
   <meta name="description" its:translate="yes">This guide provides answers to writing,
   style and layout questions for creating effective and consistent documentation for

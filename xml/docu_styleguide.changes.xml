@@ -12,6 +12,23 @@
     This section lists the changes between versions of this Style Guide.
     </para>-->
   <!-- Add new versions to the beginning of the list. -->
+  <revision xml:id="sec-change-2024-10"><date>2024-10-01</date>
+    <revdescription>
+      <itemizedlist>
+        <listitem>
+          <para>
+            Updated the example of the Revision History entry (marked up with the 
+            <tag class="emptytag">revhistory</tag> tag) in the metadata 
+            field of XML source documents.</para>
+        </listitem>
+        <listitem>
+          <para>
+            Added the instruction to not use spaces around slashes in our texts.
+          </para>
+        </listitem>
+      </itemizedlist>
+    </revdescription>
+  </revision>
   <revision xml:id="sec-change-2024-07"><date>2024-07-01</date>
     <revdescription>
       <itemizedlist>
