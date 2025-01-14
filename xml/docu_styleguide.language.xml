@@ -186,6 +186,16 @@
       </para>
     </section>
   </section>
+  <section xml:id="sec-contraction">
+    <title>Colons</title>
+    <para>
+      Capitalize the first word after a colon only if it is a proper noun 
+      or the start of a complete sentence. For example: <quote>Ensure the 
+      following settings are configured correctly: the network adapter, 
+      the firewall settings and the security protocols.</quote> But: <quote>There were 
+      three considerations: expense, time and feasibility.</quote>
+    </para>
+  </section>
   <section xml:id="sec-comma">
     <title>Commas</title>
     <para>
