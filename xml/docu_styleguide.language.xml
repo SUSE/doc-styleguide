@@ -190,10 +190,10 @@
     <title>Colons</title>
     <para>
       Capitalize the first word after a colon only if it is a proper noun 
-      or the start of a complete sentence. For example: <quote>Ensure the 
-      following settings are configured correctly: the network adapter, 
-      the firewall settings and the security protocols.</quote> But: <quote>There were 
-      three considerations: expense, time and feasibility.</quote>
+      or the start of a complete sentence. For example: <quote>Error 
+      message: The system could not connect to the server.</quote> 
+      But: <quote>Server roles: Web server, database server and file 
+      server.</quote>
     </para>
   </section>
   <section xml:id="sec-comma">
