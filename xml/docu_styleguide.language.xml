@@ -192,7 +192,7 @@
       Capitalize the first word after a colon only if it is a proper noun 
       or the start of a complete sentence. For example: <quote>Error 
       message: The system could not connect to the server.</quote> 
-      But: <quote>Server roles: Web server, database server and file 
+      But: <quote>Server roles: file server, Web server and database 
       server.</quote>
     </para>
   </section>
