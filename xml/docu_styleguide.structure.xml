@@ -1167,13 +1167,14 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
   <section xml:id="sec-figure">
     <title>Figures</title>
     <para>
-      For figures within lists or procedures, use the
-      <tag class="emptytag">informalfigure</tag> element. In all other cases,
-      use the <tag class="emptytag">figure</tag> element. Always assign an
-      <tag class="attribute">xml:id</tag> attribute to
-      <tag class="emptytag">figure</tag> elements. Reference figures from the
-      text by means of a cross-reference. For more information, see
-      <xref linkend="sec-cross-reference"/>.
+      Use the <tag class="emptytag">figure</tag> element for all figures. 
+      Avoid using the <tag class="emptytag">informalfigure</tag> element, as 
+      it allows skipping alternative text, which is essential for accessibility. 
+      When updating existing content, replace all <tag class="emptytag">informalfigure</tag>
+      elements with <tag class="emptytag">figure</tag>. Always assign an 
+      <tag class="attribute">xml:id</tag> attribute to <tag class="emptytag">figure</tag> 
+      elements. Reference figures from the text by means of a cross-reference. For more 
+      information, see <xref linkend="sec-cross-reference"/>.
     </para>
     <para>
       All referenced image files must have a lowercase alphanumeric file name.
