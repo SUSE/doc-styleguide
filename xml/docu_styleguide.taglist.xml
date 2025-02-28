@@ -762,11 +762,11 @@ table
                   No
                 </para>
                 <para>
-                  For TM parser settings, set to <emphasis>Yes</emphasis>.
+                  Except for child elements <tag class="starttag">title</tag>
+                  and <tag class="starttag">entry</tag>.
                 </para>
                 <para>
-                  Except for child elements <tag class="starttag">title</tag>
-                  and <tag class="starttag">entry</tag>
+                  For TM parser settings, set to <emphasis>Yes</emphasis>.
                 </para>
               </entry>
             </row>
@@ -1030,7 +1030,9 @@ link
        A hypertext link. Use the secure protocol prefix
        (<literal>https://</literal>), if possible.
       </entry>
-              <entry>No</entry>
+              <entry><para>No</para>
+              <para>For TM parser settings, set to <emphasis>Yes</emphasis>.</para>
+              </entry>
             </row>
             <row>
               <entry>
