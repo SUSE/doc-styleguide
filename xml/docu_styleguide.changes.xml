@@ -12,6 +12,38 @@
     This section lists the changes between versions of this Style Guide.
     </para>-->
   <!-- Add new versions to the beginning of the list. -->
+  <revision xml:id="sec-change-2025-03"><date>2025-03-01</date>
+    <revdescription>
+      <itemizedlist>
+        <listitem>
+          <para>
+            Added a new section on accessibility in the Writing for the Web chapter.
+            Key points: alt text, clear language, no empty headers in tables.</para>
+        </listitem>
+        <listitem>
+          <para>
+            Updated the instruction in Structure and markup to not use the 
+            <tag class="emptytag">informalfigure</tag> element as it allows 
+            skipping alt text but use <tag class="emptytag">figure</tag> for all 
+            images.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Added rule on using colons in Language: capitalize the first 
+            word after a colon only if it is a proper noun or the start of a complete 
+            sentence.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Updated descriptions for the <tag class="emptytag">table</tag> and
+            <tag class="emptytag">link</tag> elements.
+          </para>
+        </listitem>
+      </itemizedlist>
+    </revdescription>
+  </revision>
   <revision xml:id="sec-change-2024-10"><date>2024-10-01</date>
     <revdescription>
       <itemizedlist>
