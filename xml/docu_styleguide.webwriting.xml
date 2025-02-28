@@ -146,19 +146,58 @@
           </para>
         </listitem>
       </varlistentry>
+      </variablelist>
+  </section>
+   <section xml:id="sec-accessibility">
+    <title>Ensuring accessibility</title>
+    <para>
+    Accessible technical documentation is essential because it ensures 
+    information is available to all users regardless of disabilities or 
+    impairments. Many users rely on assistive technologies such as screen 
+    readers and alternative input devices to navigate Web pages. Additionally, 
+    accessible documentation supports compliance with legal requirements and 
+    makes more online resources usable for everyone. Here are some guidelines 
+    on how to make content more accessible:
+    </para>
+    <variablelist>
       <varlistentry>
-        <term>Optimize images by adding alt text</term>
+        <term>Provide alternative text for images</term>
         <listitem>
           <para>
-            Be sure to add alternative text whenever you use images. This
-            practice allows search engines to understand the context of your
-            images and index them more accurately. It also improves the
-            accessibility of the Web site.
+            Users who rely on screen readers need alternative (alt) text to 
+            understand the purpose of an image. Describe the image’s essential 
+            content and function. For example, instead of <quote>screenshot of 
+            settings,</quote> say <quote>The Settings menu showing the notifications 
+            option turned on.</quote> Learn more about alt text markup 
+            in <xref linkend="sec-figure"/>.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Use clear and simple language</term>
+        <listitem>
+          <para>
+            Technical documentation should be easy to read and understand. Avoid 
+            unnecessary jargon, use plain language where possible, and keep sentences 
+            concise. This helps non-native speakers and users with cognitive disabilities.
+          </para>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Ensure tables are readable and well-formatted</term>
+        <listitem>
+          <para>
+            Tables should be structured so that assistive technologies can 
+            interpret them correctly. Always use table headers for columns 
+            and rows to provide context. Avoid leaving cells empty&mdash;if no data 
+            applies, use a placeholder such as <quote>N/A</quote> or 
+            <quote>None.</quote> More about tables in <xref linkend="sec-table"/>.
           </para>
         </listitem>
       </varlistentry>
     </variablelist>
   </section>
+
   <section xml:id="sec-writing-global">
     <title>Writing for a global audience</title>
     <para>
