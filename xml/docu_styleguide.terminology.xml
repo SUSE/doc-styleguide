@@ -553,15 +553,13 @@
             </entry>
           </row>
           <row>
-            <entry>Ext3</entry>
-            <entry>EXT3, EXT 3, Ext 3, Ext-3, ext 3, ext-3, ext3</entry>
-            <entry>noun; use this capitalization for all versions of the Ext
-              file system standard; intentionally inconsistent with project
-              standard to emphasize that this is a proper name</entry>
+            <entry>ext3</entry>
+            <entry>EXT3, EXT 3, Ext3, Ext 3, Ext-3, ext 3, ext-3</entry>
+            <entry>noun</entry>
           </row>
           <row>
-            <entry>Ext4</entry>
-            <entry>EXT4, EXT 4, Ext 4, Ext-4, ext 4, ext-4, ext4</entry>
+            <entry>ext4</entry>
+            <entry>EXT4, EXT 4, Ext4, Ext 4, Ext-4, ext 4, ext-4</entry>
             <entry>noun</entry>
           </row>
           <row>
