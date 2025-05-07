@@ -99,14 +99,17 @@
         <term>Create concise and meaningful title tags and meta descriptions</term>
         <listitem>
           <para>
-            Search engines pull the title tag, or meta title, from H1, and the
+            Search engines pull the title tag (meta title) from H1 and the
             meta description from the abstract. The number of characters is
             limited, and the recommended length for meta titles is 55&ndash;65
-            characters. However, they must not be shorter than 29 characters.
-            Be sure to optimize your headings wherever appropriate by
-            integrating keywords, such as product names, into them. The optimal
-            length for meta descriptions is 145&ndash;155 characters.
+            characters (not shorter than 29), and meta descriptions between 
+            145&ndash;155 characters. Optimize your headings and content by
+            naturally integrating keywords, such as product names, wherever relevant.
           </para>
+          <para>Place the primary keyword in the page title, the first H1, 
+            the first paragraph, and the URL slug. Use secondary keywords 
+            in H2&ndash;H3 headings, image alt text and the meta description to support 
+            discoverability and relevance.</para>
           <para>
             Product names are known for their extra length, so effective page
             titles and meta descriptions may require the use of abbreviations.
