@@ -71,6 +71,7 @@
                   <tag class="emptytag">productnumber</tag>, respectively.
                 </para>
               </formalpara>
+              <!-- Add adoc version with :productname: etc attributes-->
             </listitem>
             <listitem>
               <formalpara>
@@ -81,6 +82,7 @@
                   documentation itself.
                 </para>
               </formalpara>
+              <!-- Is this valid fort adoc?-->
             </listitem>
             <listitem>
               <formalpara>
@@ -91,6 +93,7 @@
                   year.
                 </para>
               </formalpara>
+              <!-- Add adoc example-->
               <example>
                 <title>Standard copyright notice</title>
 <screen>&lt;legalnotice&gt;
@@ -245,6 +248,7 @@
                   <emphasis>Troubleshooting</emphasis> section.
                 </para>
               </formalpara>
+              <!-- do we have an alternative for quandaset in adoc?-->
             </listitem>
             <listitem>
               <formalpara>

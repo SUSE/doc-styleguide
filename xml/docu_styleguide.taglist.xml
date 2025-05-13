@@ -10,8 +10,9 @@
  xmlns:xlink="http://www.w3.org/1999/xlink"
  >
   <title>DocBook tags</title>
+  <!-- leave this chapter out for adoc?-->
   <para>
-    The &suse; and openSUSE user documentation is written with DocBook and uses
+    The &suse; and openSUSE user documentation is written with DocBook <!-- not true--> and uses
     a Relax NG schema that defines a restricted set of DocBook tags.
   </para>
   <para>

@@ -243,9 +243,11 @@
           <xref linkend="sec-taglist"/> or use the ITS tag feature to mark all
           content that should not be translated (for more information, see
           <xref linkend="sec-taglist-ITS"/>). Use entities for product names,
+          <!-- entities vs attributes-->
           example names, etc. Always mark code as such so that it is not
           translated.
         </para>
+        <!-- How do we mark this in adoc?-->
       </listitem>
       <listitem>
         <para>

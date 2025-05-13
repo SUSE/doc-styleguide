@@ -25,7 +25,9 @@
     The correct spelling of &suse; product names is listed in the terminology
     table (<xref linkend="app-terminology"/>) <emphasis>and</emphasis> in the
     entities file of the Doc Kit repository at
-    <link xlink:href="https://github.com/openSUSE/doc-kit/blob/main/entities/generic-entities.ent"/>.
+    <link
+    xlink:href="https://github.com/openSUSE/doc-kit/blob/main/entities/generic-entities.ent"/>.
+    <!-- profile with adoc attribute file-->
     If a product name is not listed in either spot, refer to the official
     &suse; <link xlink:href="https://www.suse.com/products/">Products</link>
     page and the Marketing department. Make sure to not use articles in front
@@ -421,7 +423,7 @@
       </listitem>
       <listitem>
         <para>
-          Use <tag class="emptytag">emphasis</tag> to call attention to new
+          Use <tag class="emptytag">emphasis</tag> <!-- profile for adoc-->to call attention to new
           words or phrases, for example, <quote>using so-called
           <emphasis>target units</emphasis>,</quote> to use words in a
           non-standard way, for example, <quote>packages can get in an
@@ -438,7 +440,7 @@
       </listitem>
     </itemizedlist>
     <para>
-      To create quotations, use the <tag class="emptytag">quote</tag> element.
+      To create quotations, use the <tag class="emptytag">quote</tag> <!-- profile for adoc-->element.
       This element is easier to localize than hardcoded quotation marks. During
       processing, localized quotation marks are added automatically. Avoid
       using single quotation marks.
