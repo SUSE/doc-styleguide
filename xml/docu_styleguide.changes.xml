@@ -1307,7 +1307,7 @@
                 <xref linkend="sec-language" />.
               </para>
             </listitem>
-            <listitem>
+            <listitem outputformat="db">
               <para>
                 Created <xref linkend="sec-manage" /> and moved
                 <xref

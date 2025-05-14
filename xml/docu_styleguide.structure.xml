@@ -2786,9 +2786,11 @@ Entire hard disks are listed as devices without numbers, such as
     <para>
       Note that <tag class="emptytag">citetitle</tag> is not translated.
     </para>
-    <para>
+    <para outputformat="db">
       As an author, where possible, provide language-specific references to
-      translators in XML comments (see also <xref linkend="sec-xml-comment"/>).
+      translators in <phrase outputformat="db"
+      >XML comments (see also <xref linkend="sec-xml-comment"/>).</phrase>
+      <phrase outputformat="adoc">comments</phrase>
       As a translator, look for corresponding language-specific resources where
       none have been provided. For URLs, provide only the language-specific
       version of a site. Use the English version as a fallback. For books,

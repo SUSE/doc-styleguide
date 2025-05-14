@@ -70,7 +70,7 @@
       </listitem>
     </itemizedlist>
   </section>
-  <section xml:id="sec-xml-comment">
+  <section xml:id="sec-xml-comment" outputformat="db">
     <title>XML comments</title>
     <para>
       XML comments can be used for temporarily disabling portions of text.
