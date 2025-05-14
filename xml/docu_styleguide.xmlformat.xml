@@ -120,7 +120,7 @@
         <para>
           The title elements <tag class="emptytag">title</tag> and
           <tag class="emptytag">term</tag> are block elements. However, they
-          provoke a style sheet quirk and should be treated differently. This
+          provoke a stylesheet quirk and should be treated differently. This
           avoids superfluous whitespace when used in the context of a
           cross-reference. Format title elements with new lines before the
           opening tag and after the closing tag and make sure they follow the
