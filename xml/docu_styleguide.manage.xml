@@ -6,7 +6,7 @@
 ]>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-manage">
   <title>Managing documents</title>
-  <!-- ADOC this chaoter is heavily focused on DocBook, needs to be fully profiled
+  <!-- ADOC this chapter is heavily focused on DocBook, needs to be fully profiled
   for adoc-->
   <para>
     This section provides an overview over features of XML you can use to

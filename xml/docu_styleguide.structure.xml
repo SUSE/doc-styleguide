@@ -6,7 +6,7 @@
 ]>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-structure">
   <title>Structure and markup</title>
-  <!-- this whole chapter needs adoc alternative-->
+  <!-- ADOC this whole chapter needs adoc alternative-->
   <para>
     This chapter contains instructions on using the correct DocBook markup to
     create consistent and legible documents, and structuring the content in the
