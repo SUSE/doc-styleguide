@@ -24,10 +24,12 @@
   <para>
     The correct spelling of &suse; product names is listed in the terminology
     table (<xref linkend="app-terminology"/>) <emphasis>and</emphasis> in the
-    entities file of the Doc Kit repository at
-    <link
-    xlink:href="https://github.com/openSUSE/doc-kit/blob/main/entities/generic-entities.ent"/>.
-    <!-- profile with adoc attribute file-->
+    <phrase outputformat="db">entities</phrase><phrase
+    outputformat="adoc">attributes</phrase> file of the Doc Kit repository at
+    <link outputformat="db"
+    xlink:href="https://github.com/openSUSE/doc-kit/blob/main/entities/generic-entities.ent"/>
+    <link outputformat="adoc"
+    xlink:href="https://github.com/openSUSE/doc-kit/blob/main/entities/generic-attributes.adoc"/>.
     If a product name is not listed in either spot, refer to the official
     &suse; <link xlink:href="https://www.suse.com/products/">Products</link>
     page and the Marketing department. Make sure to not use articles in front
@@ -423,8 +425,10 @@
       </listitem>
       <listitem>
         <para>
-          Use <tag class="emptytag">emphasis</tag> <!-- profile for adoc-->to call attention to new
-          words or phrases, for example, <quote>using so-called
+          Use <tag outputformat="db" class="emptytag">emphasis</tag><phrase
+          outputformat="adoc">underscores
+          <literal>_emphasized_phrase_</literal></phrase> to call attention to
+          new words or phrases, for example, <quote>using so-called
           <emphasis>target units</emphasis>,</quote> to use words in a
           non-standard way, for example, <quote>packages can get in an
           <emphasis>orphaned</emphasis> state,</quote> and to refer to a word
@@ -439,8 +443,8 @@
         </para>
       </listitem>
     </itemizedlist>
-    <para>
-      To create quotations, use the <tag class="emptytag">quote</tag> <!-- profile for adoc-->element.
+    <para outputformat="db">
+      To create quotations, use the <tag class="emptytag">quote</tag> element.
       This element is easier to localize than hardcoded quotation marks. During
       processing, localized quotation marks are added automatically. Avoid
       using single quotation marks.
