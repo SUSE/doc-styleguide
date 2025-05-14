@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE chapter
 [
-  <!ENTITY % entities SYSTEM "entity-decl.ent">
+  <!ENTITY % entities SYSTEM "generic-entities.ent">
     %entities;
 ]>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-webwriting">
@@ -237,17 +237,15 @@
           <quote>could</quote> and similar unprecise words.
         </para>
       </listitem>
-      <listitem>
+      <listitem outputformat="db">
         <para>
           Mark non-translatable text. Use tags as defined in
           <xref linkend="sec-taglist"/> or use the ITS tag feature to mark all
           content that should not be translated (for more information, see
           <xref linkend="sec-taglist-ITS"/>). Use entities for product names,
-          <!-- entities vs attributes-->
           example names, etc. Always mark code as such so that it is not
           translated.
         </para>
-        <!-- How do we mark this in adoc?-->
       </listitem>
       <listitem>
         <para>
