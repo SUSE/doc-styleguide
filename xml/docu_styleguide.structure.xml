@@ -8,24 +8,24 @@
   <title>Structure and markup</title>
   <!-- ADOC this whole chapter needs adoc alternative-->
   <para>
-    This chapter contains instructions on using the correct DocBook markup to
-    create consistent and legible documents, and structuring the content in the
-    way that it effectively helps readers find answers to their queries.
+    This chapter contains instructions on using the correct markup to create
+    consistent and legible documents, and structuring the content in the way
+    that it effectively helps readers find answers to their queries.
   </para>
-  <para>
+  <para outputformat="db">
     In the Doc Kit repository, you can see examples of how
     <link xlink:href="https://github.com/openSUSE/doc-kit/blob/main/docbook5-book/book-example_en.pdf/">books</link>
     and
     <link xlink:href="https://github.com/openSUSE/doc-kit/blob/main/smart-doc/article-example_en.pdf/">articles</link>
     are rendered in our documentation.
   </para>
-  <para>
+  <para outputformat="db">
     &suse; uses the GeekoDoc Relax NG schema which is compatible with DocBook
     5.2. For more information about the XML elements described here, see the
     <citetitle>DocBook 5.2: The Definitive Guide</citetitle> sections listed in
     <xref linkend="tab-book"/>.
   </para>
-  <table xml:id="tab-book">
+  <table xml:id="tab-book" outputformat="db">
     <title>Important elements</title>
     <tgroup cols="2">
       <thead>
@@ -90,7 +90,7 @@
     <itemizedlist>
       <listitem>
         <formalpara>
-          <title><tag class="emptytag">warning</tag></title>
+          <title><tag class="emptytag" outputformat="db">warning</tag><phrase outputformat="adoc">WARNING</phrase></title>
           <para>
             Use these elements to warn of security issues, potential loss of
             data, damage to hardware, or physical hazards. Warnings must always
@@ -100,7 +100,7 @@
       </listitem>
       <listitem>
         <formalpara>
-          <title><tag class="emptytag">important</tag></title>
+          <title><tag class="emptytag" outputformat="db">important</tag><phrase outputformat="adoc">IMPORTANT</phrase></title>
           <para>
             Use these elements to give vital information.
           </para>
@@ -108,7 +108,7 @@
       </listitem>
       <listitem>
         <formalpara>
-          <title><tag class="emptytag">tip</tag></title>
+          <title><tag class="emptytag" outputformat="db">tip</tag><phrase outputformat="adoc">TIP</phrase></title>
           <para>
             Use these elements to introduce guidelines or give tips.
           </para>
@@ -116,7 +116,7 @@
       </listitem>
       <listitem>
         <formalpara>
-          <title><tag class="emptytag">note</tag></title>
+          <title><tag class="emptytag" outputformat="db">note</tag><phrase outputformat="adoc">NOTE</phrase></title>
           <para>
             Use these elements to highlight software version differences.
           </para>
@@ -129,32 +129,34 @@
     <itemizedlist>
       <listitem>
         <para>
-          Add a <tag class="emptytag">title</tag> to admonitions. In the title,
-          state the subject of the admonition and, in the case of a
-          <tag class="emptytag">warning</tag>, also the source of danger.
+          Add a title to admonitions. In the title, state the subject of the
+          admonition and, in the case of a warning, also the source of danger.
         </para>
       </listitem>
       <listitem>
         <para>
-          <emphasis><tag class="emptytag">warning</tag> or
-          <tag class="emptytag">important</tag>:</emphasis> In the first
-          paragraph, clearly state possible consequences of ignoring the
-          danger.
+          <emphasis outputformat="db"><tag class="emptytag">warning</tag> or
+          <tag class="emptytag">important</tag>:</emphasis><phrase
+          outputformat="adoc"><emphasis>WARNING</emphasis> or
+          <emphasis>IMPORTANT</emphasis>:</phrase> In the first paragraph,
+          clearly state possible consequences of ignoring the danger.
         </para>
       </listitem>
       <listitem>
         <para>
-          <emphasis><tag class="emptytag">warning</tag> or
-          <tag class="emptytag">important</tag>:</emphasis> In the second
-          paragraph, explain how to avoid the danger. If there are multiple
-          ways to avoid a danger, use an unordered list. If fewer than five
-          consecutive steps must be taken to avoid a danger, use an ordered
-          list. If more than five consecutive steps need to be taken, use a
-          cross-reference to another part of the documentation.
+          <emphasis outputformat="db"><tag class="emptytag">warning</tag> or
+          <tag class="emptytag">important</tag>:</emphasis><phrase
+          outputformat="adoc"><emphasis>WARNING</emphasis> or
+          <emphasis>IMPORTANT</emphasis>:</phrase> In the second paragraph,
+          explain how to avoid the danger. If there are multiple ways to avoid a
+          danger, use an unordered list. If fewer than five consecutive steps
+          must be taken to avoid a danger, use an ordered list. If more than
+          five consecutive steps need to be taken, use a cross-reference to
+          another part of the documentation.
         </para>
       </listitem>
     </itemizedlist>
-    <example xml:id="ex-warning-source">
+    <example xml:id="ex-warning-source" outputformat="db">
       <title>An example of a warning (source)</title>
 <screen>&lt;warning&gt;
  &lt;title&gt;Do not interrupt creation of file systems&lt;/title&gt;
@@ -167,6 +169,18 @@
   Always wait until formatting has finished.
  &lt;/para&gt;
 &lt;/warning&gt;</screen>
+    </example>
+    <example xml:id="ex-warning-source" outputformat="adoc">
+      <title>An example of a warning (source)</title>
+<screen>[WARNING]
+.Do not interrupt creation of file systems
+====
+Creating a file system can take multiple hours.
+Interrupting this process will result in a corrupt file system and an
+unusable installation.
+
+Always wait until formatting has finished.
+====</screen>
     </example>
     <warning xml:id="ex-warning-output">
       <title>Do not interrupt creation of file systems</title>
@@ -181,6 +195,7 @@
     </warning>
   </section>
   <section xml:id="sec-application">
+    <!-- ADOC how in adoc?-->
     <title>Application names</title>
     <para>
       When referring to an application, add a <tag class="emptytag">phrase
@@ -196,15 +211,15 @@
     <title>Callouts</title>
     <para>
       Callouts allow annotating examples, such as configuration files or
-      commands with many options. Add <tag class="emptytag">co</tag> elements
-      directly after the part of a screen that you want to annotate. Do not try
-      to align them above the part of a screen to annotate. Do not use more
-      than ten callouts per example.
+      commands with many options. Add callout elements directly after the part
+      of a code block that you want to annotate. Do not try to align them above
+      the part of a screen to annotate. Do not use more than ten callouts per
+      example.
     </para>
     <para>
       See also <xref linkend="sec-example"/>.
     </para>
-    <example xml:id="ex-callout-output">
+    <example xml:id="ex-callout-output" outputformat="db">
       <title>Example of callouts (source)</title>
 <screen>&lt;screen&gt;color white/blue black/light-gray &lt;co xml:id="co-color"/&gt;
 default 0 &lt;co xml:id="co-default"/&gt;&lt;/screen&gt;
@@ -220,6 +235,16 @@ default 0 &lt;co xml:id="co-default"/&gt;&lt;/screen&gt;
   &lt;/para&gt;
  &lt;/callout&gt;
 &lt;/calloutlist&gt;</screen>
+    </example>
+    <example xml:id="ex-callout-output" outputformat="adoc">
+      <title>Example of callouts (source)</title>
+<screen>[source]
+----
+color white/blue black/light-gray &lt;1&gt;
+default 0 &lt;2&gt;
+----
+&lt;1&gt; Colors of the boot loader menu.
+&lt;1&gt; Defines the preselected option.</screen>
     </example>
     <example xml:id="ex-callout-source">
       <title>Example of callouts (output)</title>
@@ -238,7 +263,7 @@ default 0 <co xml:id="co-default"/></screen>
         </callout>
       </calloutlist>
     </example>
-    <table xml:id="tab-callout">
+    <table xml:id="tab-callout" outputformat="db">
       <title>Elements related to <tag class="emptytag">callout</tag></title>
       <tgroup cols="2">
         <thead>
@@ -290,12 +315,12 @@ default 0 <co xml:id="co-default"/></screen>
         </tbody>
       </tgroup>
     </table>
-    <para>
+    <para outputformat="db">
       You can group different callouts to point to the same annotation. This
       helps to avoid repeating the same annotation. To do this, complete the
       following steps:
     </para>
-    <procedure xml:id="group-procedure">
+    <procedure xml:id="group-procedure" outputformat="db">
       <step>
         <para>
           Create the <tag class="emptytag">co</tag> element with the
@@ -310,7 +335,7 @@ default 0 <co xml:id="co-default"/></screen>
         </para>
       </step>
     </procedure>
-    <example xml:id="ex-callout-group-source">
+    <example xml:id="ex-callout-group-source" outputformat="db">
       <title>Example of a callout group (source)</title>
 <screen language="python">d1 = dict() &lt;co xml:id="co-dict"/&gt;
   d2 = {} &lt;xref linkend="co-dict"/&gt;
@@ -325,7 +350,7 @@ default 0 <co xml:id="co-default"/></screen>
     &lt;/callout&gt;
   &lt;/calloutlist&gt;</screen>
     </example>
-    <example xml:id="ex-callout-group-output">
+    <example xml:id="ex-callout-group-output" outputformat="db">
       <title>Example of a callout group (output)</title>
 <screen language="python">d1 = dict() <co xml:id="co-dict"/>
       d2 = {} <xref linkend="co-dict"/>
@@ -348,22 +373,24 @@ default 0 <co xml:id="co-default"/></screen>
   <section xml:id="sec-command-line">
     <title>Command-line input and command-line output</title>
     <para>
-      When dealing with user input and system output shorter than 30
-      characters, format it with an inline element, such as
+      When dealing with user input and system output shorter than 30 characters,
+      <phrase outputformat="db">surround it with an inline element, such as
       <tag class="emptytag">command</tag> or
-      <tag class="emptytag">filename</tag>. In all other cases, close the
-      current paragraph and enclose the user input and/or system output in a
-      <tag class="emptytag">screen</tag> element. See also
+      <tag class="emptytag">filename</tag></phrase><phrase
+      outputformat="adoc">enclose it with single backticks
+      (<literal>`</literal>)</phrase>. In all other cases, close the current
+      paragraph and enclose the user input and/or system output in a
+      <tag class="emptytag" outputformat="db">screen element</tag><phrase
+      outputformat="adoc">code block</phrase>. See also
       <xref linkend="sec-example"/>.
     </para>
     <para>
-      When using stand-alone <tag class="emptytag">command</tag> elements that
-      are outside of a <tag class="emptytag">screen</tag>, do not use
-      <tag class="emptytag">prompt</tag> elements before or within them. For
-      more information about <tag class="emptytag">prompt</tag>, see
+      When using a stand-alone command elements outside of a code bloc, do not
+      use prompt elements before or within them. For more information about
+      prompts, see
       <xref linkend="sec-prompt"/>.
     </para>
-    <table xml:id="tab-command-line">
+    <table xml:id="tab-command-line" outputformat="db">
       <title>Elements related to command-line input and output</title>
       <tgroup cols="2">
         <thead>
@@ -459,7 +486,8 @@ default 0 <co xml:id="co-default"/></screen>
         </tbody>
       </tgroup>
     </table>
-    <section xml:id="sec-command">
+    <!-- ADOC shring all literals into a single section only-->
+    <section xml:id="sec-command" outputformat="db">
       <title>Commands</title>
       <para>
         Commands can be embedded in running text or presented as part of a
@@ -488,7 +516,7 @@ default 0 <co xml:id="co-default"/></screen>
         See also <xref linkend="sec-prompt"/>.
       </para>
     </section>
-    <section xml:id="sec-file-markup">
+    <section xml:id="sec-file-markup" outputformat="db">
       <title>File names</title>
       <para>
         A file name is the name of a file on a local or network disk. Can
@@ -503,7 +531,7 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
         <link xlink:href="https://github.com/SUSE/doc-modular/blob/main/templates/README.md"/>.
       </para>
     </section>
-    <section xml:id="sec-literal">
+    <section xml:id="sec-literal" outputformat="db">
       <title>Literals</title>
       <para>
         Use <tag class="emptytag">literal</tag> to mark up data taken literally
@@ -511,7 +539,7 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
       </para>
 <screen>To create a comment, insert &lt;literal&gt;#&lt;/literal&gt; characters.</screen>
     </section>
-    <section xml:id="sec-placeholder">
+    <section xml:id="sec-placeholder" outputformat="db">
       <title>Placeholders</title>
       <para>
         To mark up text that readers need to replace, use the
@@ -523,6 +551,8 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
 <screen>To list the contents of a directory, execute
  &lt;command&gt;ls &lt;replaceable&gt;DIRECTORY&lt;/replaceable&gt;&lt;/command&gt;.</screen>
     </section>
+    <!-- ADOC update prompts for adoc + how to expand prompt entitites inside
+    code blocks-->
     <section xml:id="sec-prompt">
       <title>Prompts</title>
       <para>
@@ -580,10 +610,17 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
           </para>
         </listitem>
       </itemizedlist>
-<screen>&lt;screen&gt;&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ls /&lt;/command&gt;
+<screen outputformat="db">&lt;screen&gt;&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ls /&lt;/command&gt;
 bin   dev   lib         mnt     proc  sbin     suse  usr
 boot  etc   lib64       mounts  root  selinux  sys   var
 data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
+<screen outputformat="adoc">[source]
+----
+tux &amp;gt; ls /
+bin   dev   lib         mnt     proc  sbin     suse  usr
+boot  etc   lib64       mounts  root  selinux  sys   var
+data  home  lost+found  opt     run   srv      tmp
+----</screen>
       <itemizedlist>
         <listitem>
           <para>
@@ -599,7 +636,7 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
             sheets do not have such functionality.
           </para>
         </listitem>
-        <listitem>
+        <listitem  outputformat="db">
           <para>
             Text in screens must not follow the indentation level of the XML
             around them: All indentation will be reproduced verbatim.
@@ -629,7 +666,7 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
             aligning callouts with the right option.
           </para>
         </listitem>
-        <listitem>
+        <listitem outputformat="db">
           <para>
             You can combine multiple commands within a
             <tag
@@ -676,7 +713,7 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
                 table column and replace it with <literal>[...]</literal>.
               </para>
             </listitem>
-            <listitem>
+            <listitem outputformat="db">
               <para>
                 Use a processing instruction at the beginning of the screen to
                 decrease font size:
@@ -694,9 +731,12 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
         </listitem>
         <listitem>
           <para>
-            To enable automatic syntax highlighting for programming languages
-            or formats, add a <tag class="attribute">language</tag> attribute
-            for the respective language format. Valid language formats:
+            To enable automatic syntax highlighting for programming languages or
+            formats, <phrase outputformat="db">add a <tag
+            class="attribute">language</tag> attribute for the respective
+            language format</phrase><phrase outputformat="adoc">specify the
+            language in the source definition, for example
+            <literal>[source,html]</literal></phrase>. Valid language formats:
             <tag class="attvalue">apache</tag>,
             <tag class="attvalue">bash</tag>, <tag class="attvalue">c++</tag>,
             <tag class="attvalue">css</tag>, <tag class="attvalue">diff</tag>,
@@ -725,6 +765,7 @@ data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
         <xref linkend="sec-prompt"/>, and <xref linkend="sec-callout"/>.
       </para>
     </section>
+    <!-- ADOC add variables to the squeezed literals above-->
     <section xml:id="sec-variable">
       <title>Variable names</title>
       <para>
