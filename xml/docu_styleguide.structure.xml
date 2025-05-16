@@ -779,21 +779,23 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
   <section xml:id="sec-cross-reference">
     <title>Cross-references</title>
     <para>
-      Use the <tag class="emptytag">xref</tag> element (read: <quote>cross
-      ref</quote>) when referring to an appendix, chapter, example, figure,
-      part, preface, section, table or question and answer set. The element
-      referenced needs to have an <tag class="attribute">xml:id</tag>
-      attribute, an identifier. Create identifiers to reference from
-      cross-references using the rules under <xref linkend="sec-id"/>. Note
-      that the <tag class="emptytag">xref</tag> element only works when it
-      links to documentation within the same set, for example, the same book or
-      set of books.
+      Use <phrase outputformat="adoc">double angled brackets
+      <literal>&lt;&lt;ID&gt;&gt;</literal></phrase><phrase
+      outputformat="db">the <tag class="emptytag">xref</tag> element (read:
+      <quote>cross ref</quote>)</phrase> when referring to an appendix, chapter,
+      example, figure, part, preface, section, table or question and answer set.
+      The element referenced needs to have <phrase outputformat="db"> an <tag
+      class="attribute">xml:id</tag> attribute,</phrase> an identifier (ID).
+      Create identifiers to reference from cross-references using the rules
+      under <xref linkend="sec-id"/>. Note that the a cross reference only works
+      when it links to documentation within the same set, for example, the same
+      book or set of books.
     </para>
     <para>
       Other types of references to resources are described in
       <xref linkend="sec-other-external"/> and <xref linkend="sec-link"/>.
     </para>
-    <example xml:id="ex-cross-reference-source">
+    <example xml:id="ex-cross-reference-source" outputformat="db">
       <title>Example of a cross-reference (source)</title>
 <screen>&lt;sect2 xml:id="sec-cross-reference"&gt;
   &lt;title&gt;Cross-references&lt;/title&gt;
@@ -806,13 +808,20 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
   &lt;/para&gt;</emphasis>
  &lt;/sect2&gt;</screen>
     </example>
+    <example xml:id="ex-cross-reference-source" outputformat="adoc">
+      <title>Example of a cross-reference (source)</title>
+<screen>[#sec-cross-reference,reftext=Custom cross reference]
+=== Cross-references
+Use double angled brackets for xrefs ...
+See &lt;&lt;sec-cross-reference&gt;&gt;.</screen>
+    </example>
     <example xml:id="ex-cross-reference-output">
       <title>Example of a cross-reference (output)</title>
       <para>
         See <xref linkend="sec-cross-reference"/>.
       </para>
     </example>
-    <para>
+    <para outputformat="db">
       This example shows the default display of a cross-reference. To change
       it, use the <tag class="attribute">xrefstyle</tag> attribute, either with
       <tag class="attvalue">select:</tag> or
@@ -830,22 +839,18 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
     <itemizedlist>
       <listitem>
         <para>
-          Do not insert cross-references (<tag class="starttag">xref
-          linkend="..."</tag>) into a <tag class="emptytag">title</tag>
-          element. The title must not be clickable, and a cross-reference in a
-          title can create issues when linking to such a title in a different
-          paragraph.
+          Do not insert cross-references into title elements. The title must not
+          be clickable, and a cross-reference in a title can create issues when
+          linking to such a title in a different paragraph.
         </para>
       </listitem>
       <listitem>
         <para>
-          Do not create references to paragraphs
-          (<tag class="emptytag">para</tag>) or other elements that have no
-          title. An exception to this rule is the element
-          <tag class="emptytag">step</tag> to which you may create references.
-          If a reference to an element without a title is vital to the
-          document, use the attribute <tag class="attribute">xreflabel</tag> to
-          assign a title.
+          Do not create references to paragraphs or other elements that have no
+          title. An exception to this rule is the element procedure steps to
+          which you may create references. If a reference to an element without
+          a title is vital to the document, specify custom lable to the cross
+          reference to assign a title.
         </para>
       </listitem>
     </itemizedlist>
@@ -859,12 +864,17 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
     <title>Emphasis</title>
     <para>
       Where possible, indicate stress with language only. If that is not
-      possible, use the <tag class="emptytag">emphasis</tag> element to
-      indicate stress.
+      possible, <phrase outputformat="db">use the <tag
+      class="emptytag">emphasis</tag> element</phrase><phrase
+      outputformat="adoc">surround the phrase with underscores
+      (<literal>_phrase_</literal>)</phrase> to indicate stress.
     </para>
     <para>
-      Where added emphasis is needed, use the
-      <tag class="attribute">role="bold"</tag> attribute.
+      Where added emphasis is needed, <phrase outputformat="db">use the
+      <tag class="attribute">role="bold"</tag> attribute.</phrase><phrase
+      outputformat="adoc">enclose the phrase in a single pair of asterisks
+      (<literal>*phrase*</literal>). To emphasize characters within a word, use
+      a pair of double asterisks (<literal>char**act**ers</literal>).</phrase>
     </para>
 <screen>This will be displayed in &lt;emphasis&gt;italics&lt;/emphasis&gt;. This
 will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
