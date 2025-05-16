@@ -886,8 +886,10 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
       <xref linkend="sec-graphic"/> also apply to examples.
     </para>
     <para>
-      Examples usually contain <tag class="emptytag">screen</tag> elements.
-      Additionally, there can be callouts and explanatory text.
+      Examples usually contain <phrase outputformat="db"><tag
+      class="emptytag">screen</tag> elements</phrase><phrase
+      outputformat="adoc">source code blocks</phrase>. Additionally, there can
+      be callouts and explanatory text.
     </para>
     <para>
       Always give examples a title and an identifier.
@@ -899,7 +901,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
       annotate examples, use callouts. Callouts are described in
       <xref linkend="sec-callout"/>.
     </para>
-    <example xml:id="ex-example">
+    <example xml:id="ex-example" outputformat="db">
       <title>Example of an example</title>
 <screen>&lt;example xml:id="ex-example"&gt;
  &lt;title&gt;Example of an example&lt;/title&gt;
@@ -910,7 +912,22 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
 5174 ?        S      0:04 kdeinit: kicker&lt;/screen&gt;
 &lt;/example&gt;</screen>
     </example>
-    <table xml:id="tab-example">
+    <example xml:id="ex-example" outputformat="adoc">
+      <title>Example of an example</title>
+<screen>[#ex-example]
+.Example of an example
+====
+[source]
+----
+tux > ps -xa
+
+5170 ?        S      0:00 kdeinit: khotkeys
+5172 ?        S      0:02 kdeinit: kdesktop
+5174 ?        S      0:04 kdeinit: kicker
+----
+====</screen>
+    </example>
+    <table xml:id="tab-example" outputformat="db">
       <title>Elements related to <tag class="emptytag">example</tag></title>
       <tgroup cols="2">
         <thead>
