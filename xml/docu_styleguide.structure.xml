@@ -1000,11 +1000,18 @@ tux > ps -xa
       </listitem>
     </itemizedlist>
     <para>
-      In some cases, product managers will request avoiding all or selected
+      In certain cases, product managers request avoiding all or selected
       external links to avoid issues for customers impacted by restrictive
       firewall rules.
     </para>
-    <para>
+    <para outputformat="adoc">
+      Common URL schemes are automatically detected from the text and converted
+      into links. To disable this conversion, use a single backlash
+      (<literal>\</literal>) in front of the link
+      (<literal>\https://example.org</literal>). To use a custom link title, use a URL macro:
+    </para>
+<screen outputformat="adoc">Ask questions in the https://example.com[An exmaple title]</screen>
+    <para outputformat="db">
       Use the <tag class="emptytag">link</tag> element to mark up URLs that can
       be opened with a Web browser, such as
       <link xlink:href="https://www.example.org/"/>. Always add the correct
@@ -1012,13 +1019,13 @@ tux > ps -xa
       links will not work. If possible, use the secure protocol prefix
       (<literal>https://</literal>).
     </para>
-    <para>
+    <para outputformat="db">
       Never use <tag>filename</tag> for a link, as that would both disable the
       link checker and make the link unclickable. Avoid entering a text label
       between <tag class="emptytag">link</tag> start and end tags. Instead, use
       a self-closing tag:
     </para>
-<screen>&lt;link xlink:href="https://www.example.org/"/&gt;</screen>
+<screen outputformat="db">&lt;link xlink:href="https://www.example.org/"/&gt;</screen>
     <para>
       Make URLs as short as possible before adding them to documentation. Many
       long URLs can be shortened by leaving away non-essential pieces, such as
@@ -1049,6 +1056,7 @@ tux > ps -xa
       </listitem>
     </itemizedlist>
     <para>
+      <!-- ADOC i dont understand this one-->
       Do not use <tag class="emptytag">link</tag> to link to &suse;
       documentation outside of the current document set. Instead, use the
       appropriate entity for the book title. Always reference the book itself,
@@ -1067,12 +1075,13 @@ tux > ps -xa
       This is described in <xref linkend="sec-book"/>.
     </para>
     <para>
-      To mark up multiple links, create an
-      <tag class="emptytag">itemizedlist</tag> around them. Do not use a list
-      environment for a single link. If you need to present many links, group
-      them by topic and create a separate list environment for each group.
-      Provide a comprehensive title for each of the groups or an introductory
-      sentence. For more information about creating lists, see
+      To mark up multiple links, <phrase outputformat="db">create an
+      <tag class="emptytag">itemizedlist</tag> around them</phrase><phrase
+      outputformat="adoc">insert them into an unordered list</phrase>. Do not
+      use a list environment for a single link. If you need to present many
+      links, group them by topic and create a separate list environment for each
+      group. Provide a comprehensive title for each of the groups or an
+      introductory sentence. For more information about creating lists, see
       <xref linkend="sec-itemized-list"/>.
     </para>
     <para>
@@ -1235,7 +1244,7 @@ tux > ps -xa
   </section>
   <section xml:id="sec-figure">
     <title>Figures</title>
-    <para>
+    <para outputformat="db">
       Use the <tag class="emptytag">figure</tag> element for all figures. 
       Avoid using the <tag class="emptytag">informalfigure</tag> element, as 
       it allows skipping alternative text, which is essential for accessibility. 
@@ -1245,19 +1254,23 @@ tux > ps -xa
       elements. Reference figures from the text by means of a cross-reference. For more 
       information, see <xref linkend="sec-cross-reference"/>.
     </para>
+    <para outputformat="adoc">
+      Use the image macro to insert an image. Always supply an identifier,
+      title, appropriate width and alternative text to the image.
+    </para>
     <para>
       All referenced image files must have a lowercase alphanumeric file name.
       When specifying figure names, follow the naming conventions at
       <link xlink:href="https://github.com/SUSE/doc-modular/blob/main/templates/README.md"/>.
     </para>
-    <para>
+    <para outputformat="db">
       Provide an appropriate image width using the
       <tag class="attvalue">width</tag> attribute. For both figure types,
       formal and informal, always add a <tag class="emptytag">textobject
       role="description"</tag> as in <xref linkend="ex-figure"/> to provide an
       alternative text for the HTML output.
     </para>
-    <example xml:id="ex-figure">
+    <example xml:id="ex-figure" outputformat="db">
       <title>Example of a figure</title>
 <screen>&lt;figure xml:id="fig-picture"&gt;
  &lt;title&gt;An interesting picture&lt;/title&gt;
@@ -1274,7 +1287,13 @@ tux > ps -xa
  &lt;/mediaobject&gt;
 &lt;/figure&gt;</screen>
     </example>
-    <table xml:id="tab-figure">
+    <example xml:id="ex-figure" outputformat="adoc">
+      <title>Example of an image macro</title>
+<screen>.An interesting picture
+[#fig-picture]
+image::sunset.jpg[Cat chasing Geeko,200]</screen>
+    </example>
+    <table xml:id="tab-figure" outputformat="db">
       <title>Elements related to <tag class="emptytag">figure</tag></title>
       <tgroup cols="2">
         <thead>
@@ -1502,19 +1521,23 @@ tux > ps -xa
       definition with the term itself. Use lowercase for the term unless it is
       a proper noun.
     </para>
-    <para>
+    <para outputformat="adoc">
+      You can include a glossary in an article, book, and book part by setting
+      the <literal>glossary</literal> style on a section.
+    </para>
+    <para outputformat="db">
       Where applicable, group your terms with the
       <tag class="emptytag">glossdiv</tag> tag for higher ordering.
     </para>
-    <para>
+    <para outputformat="db">
       To support automatic alphabetical ordering in localized versions, use
       <tag class="emptytag">glosslist</tag> so that glossary items are sorted
       in alphabetical order by default.
     </para>
-    <para>
+    <para outputformat="db">
       Use cross-references in the following cases:
     </para>
-    <itemizedlist>
+    <itemizedlist outputformat="db">
       <listitem>
         <para>
           To direct the reader to another glossary entry, use the
@@ -1533,7 +1556,7 @@ tux > ps -xa
       The markup for a glossary entry is shown in
       <xref linkend="ex-glossary"/>.
     </para>
-    <example xml:id="ex-glossary">
+    <example xml:id="ex-glossary" outputformat="db">
       <title>A typical example of a glossary</title>
 <screen>&lt;glossary xmlns="http://docbook.org/ns/docbook" version="5.2"&gt;
   &lt;title&gt;Glossary&lt;/title&gt;
@@ -1565,6 +1588,17 @@ tux > ps -xa
   &lt;/glossentry&gt;
 
 &lt;/glossary&gt;</screen>
+    </example>
+    <example xml:id="ex-glossary" outputformat="adoc">
+      <title>A typical example of a glossary</title>
+<screen>[glossary]
+== Glossary
+
+[glossary]
+AsciiDoc:: a lightweight markup language used to write structured documents in
+  plain text.
+DocBook:: an XML-based markup language designed for writing structured technical
+  documentation.</screen>
     </example>
   </section>
   <section xml:id="sec-id">
