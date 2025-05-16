@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE chapter
 [
-  <!ENTITY % entities SYSTEM "entity-decl.ent">
+  <!ENTITY % entities SYSTEM "generic-entities.ent">
     %entities;
 ]>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-manage">
   <title>Managing documents</title>
+  <!-- ADOC this chapter is heavily focused on DocBook, needs to be fully profiled
+  for adoc-->
   <para>
     This section provides an overview over features of XML you can use to
     manage documents.
@@ -68,7 +70,7 @@
       </listitem>
     </itemizedlist>
   </section>
-  <section xml:id="sec-xml-comment">
+  <section xml:id="sec-xml-comment" outputformat="db">
     <title>XML comments</title>
     <para>
       XML comments can be used for temporarily disabling portions of text.
