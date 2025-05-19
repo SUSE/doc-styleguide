@@ -2020,32 +2020,37 @@ xml:id="tab-install-source"</screen>
   <section xml:id="sec-list">
     <title>Lists</title>
     <para>
-      &suse; documentation uses the following types of lists (the respective XML
-      elements are given in parentheses):
+      &suse; documentation uses the following types of lists<phrase
+      outputformat="db"> (the respective XML elements are given in
+      parentheses)</phrase>:
     </para>
     <itemizedlist>
       <listitem>
         <para>
-          Itemized lists (<tag class="emptytag">itemizedlist</tag>). Also known
-          as bullet lists or unordered lists.
+          Itemized lists<phrase outputformat="db"> (<tag
+          class="emptytag">itemizedlist</tag>)</phrase>. Also known as bullet
+          lists or unordered lists.
         </para>
       </listitem>
       <listitem>
         <para>
-          Ordered lists (<tag class="emptytag">orderedlist</tag>). Also known as
-          numbered lists.
+          Ordered lists<phrase outputformat="db"> (<tag
+          class="emptytag">orderedlist</tag>)</phrase>. Also known as numbered
+          lists.
         </para>
       </listitem>
       <listitem>
         <para>
-          Variable lists (<tag class="emptytag">variablelist</tag>). Also known
-          as definition lists or description lists.
+          Variable lists<phrase outputformat="db"> (<tag
+          class="emptytag">variablelist</tag>)</phrase>. Also known as
+          definition lists or description lists.
         </para>
       </listitem>
       <listitem>
         <para>
-          Procedures (<tag class="emptytag">procedure</tag>). Also known as
-          step-by-step instructions or step lists. Described in
+          Procedures<phrase outputformat="db"> (<tag
+          class="emptytag">procedure</tag>)</phrase>. Also known as step-by-step
+          instructions or step lists. Described in
           <xref linkend="sec-procedure"/>.
         </para>
       </listitem>
@@ -2058,7 +2063,7 @@ xml:id="tab-install-source"</screen>
         <para>
           Always introduce a list in the text. If needed for reference or better
           coordination with the related text, add a title and an
-          <tag class="attribute">xml:id</tag> attribute.
+          identifier.
         </para>
       </listitem>
       <listitem>
@@ -2104,11 +2109,12 @@ xml:id="tab-install-source"</screen>
       the information using a combination of lists and running texts.
     </para>
     <para>
-      To be able to reference untitled lists, use the
-      <tag class="attribute">xreflabel</tag> attribute. For more information,
-      see <xref linkend="sec-cross-reference"/>.
+      To be able to reference untitled lists, <phrase outputformat="db">use the
+      <tag class="attribute">xreflabel</tag> attribute</phrase><phrase
+      outputformat="adoc">insert a label in the cross reference</phrase>. For
+      more information, see <xref linkend="sec-cross-reference"/>.
     </para>
-    <table xml:id="tab-list">
+    <table xml:id="tab-list" outputformat="db">
       <title>Elements related to lists</title>
       <tgroup cols="2">
         <thead>
