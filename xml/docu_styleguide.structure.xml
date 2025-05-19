@@ -2213,7 +2213,7 @@ xml:id="tab-install-source"</screen>
         are often used to provide an overview of information or to introduce or
         summarize information.
       </para>
-      <example xml:id="ex-itemized-list-source">
+      <example xml:id="ex-itemized-list-source" outputformat="db">
         <title>Example of an itemized list (source)</title>
 <screen>&lt;para&gt;
  The following operating systems are supported:
@@ -2230,6 +2230,12 @@ xml:id="tab-install-source"</screen>
   &lt;/para&gt;
  &lt;/listitem&gt;
 &lt;/itemizedlist&gt;</screen>
+      </example>
+      <example xml:id="ex-itemized-list-source" outputformat="adoc">
+        <title>Example of an itemized list (source)</title>
+<screen>The following operating systems are supported:
+* Linux, Kernel 2.4 and newer
+* FreeBSD 7 and newer</screen>
       </example>
       <example xml:id="ex-itemized-list-output">
         <title>Example of an itemized list (output)</title>
@@ -2259,7 +2265,7 @@ xml:id="tab-install-source"</screen>
         procedure, as described in <xref linkend="sec-procedure"/>. If order is
         not relevant, use an itemized list or a variable list.
       </para>
-      <example xml:id="ex-ordered-list-source">
+      <example xml:id="ex-ordered-list-source" outputformat="db">
         <title>Example of an ordered list (source)</title>
 <screen>&lt;para&gt;
  Before installing, make sure of the following:
@@ -2277,6 +2283,13 @@ xml:id="tab-install-source"</screen>
   &lt;/para&gt;
  &lt;/listitem&gt;
 &lt;/orderedlist&gt;</screen>
+      </example>
+      <example xml:id="ex-ordered-list-source" outputformat="adoc">
+        <title>Example of an ordered list (source)</title>
+<screen>Before installing, make sure of the following:
+. The network connection of the computer is configured properly.
+. The latest security updates are installed.
+. If you are in doubt, run an online update.</screen>
       </example>
       <example xml:id="ex-ordered-list-output">
         <title>Example of an ordered list (output)</title>
@@ -2303,19 +2316,18 @@ xml:id="tab-install-source"</screen>
       <para>
         Use variable lists when defining terms or describing options. Each item
         of a variable list contains a short term that is then further explained
-        by means of an explanatory paragraph.
+        by an explanatory paragraph.
       </para>
       <para>
         Use sentence-style capitalization for both the term and the list item.
       </para>
       <para>
-        To reference the list, assign it a <tag class="attribute">xml:id</tag>
-        attribute and add a title. Individual list items may be referenced by
-        assigning an <tag class="attribute">xml:id</tag>. The entry is then
-        identified by the value of <tag class="attribute">xml:id</tag> and
+        To reference the list, assign it an identifier and add a title.
+        Individual list items may be referenced by assigning an identifier as
+        well. The entry is then identified by the value of the identifier and
         referenced by the term.
       </para>
-      <example xml:id="ex-variable-list-source">
+      <example xml:id="ex-variable-list-source" outputformat="db">
         <title>Example of a variable list (source)</title>
 <screen>&lt;para&gt;
  This book consists of several parts:
@@ -2338,6 +2350,12 @@ xml:id="tab-install-source"</screen>
   &lt;/listitem&gt;
  &lt;/varlistentry&gt;
 &lt;/variablelist&gt;</screen>
+      </example>
+      <example xml:id="ex-variable-list-source" outputformat="adoc">
+        <title>Example of a variable list (source)</title>
+<screen>This book consists of several parts:
+Installation:: Learn about the installation and initial configuration of a Linux system.
+System:: Get a basic understanding of the system components.</screen>
       </example>
       <example xml:id="ex-variable-list">
         <title>Example of a variable list (output)</title>
