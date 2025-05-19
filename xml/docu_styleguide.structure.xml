@@ -2387,19 +2387,33 @@ System:: Get a basic understanding of the system components.</screen>
   <section xml:id="sec-keyboard">
     <title>Keys and key combinations</title>
     <para>
+      <phrase outputformat="adoc">To enter keys and their combinations in the
+      text, use the keyboard macro: <literal>kbd: [key]</literal></phrase>
       Capitalize all keys as printed on a standard keyboard. Capitalize all
-      letter keys. To refer to a capitalized character, use
+      letter keys. <phrase outputformat="db">To refer to a capitalized character, use
       <keycombo><keycap function="shift"/><keycap>Z</keycap></keycombo>, for
       example. Introduce this convention by means of the <quote>Typographical
-      Conventions</quote> section of the introduction.
+      Conventions</quote> section of the introduction.</phrase>
     </para>
     <para>
-      To mark up key combinations, use <tag class="emptytag">keycombo</tag> as a
-      wrapper for multiple <tag class="emptytag">keycap</tag> elements.
-      Separators between <tag class="emptytag">keycap</tag> elements are then
-      created automatically.
+      To mark up key combinations, <phrase outputformat="db">use <tag
+      class="emptytag">keycombo</tag> as a wrapper for multiple <tag
+      class="emptytag">keycap</tag> elements. Separators between <tag
+      class="emptytag">keycap</tag> elements are then created
+      automatically.</phrase><phrase outputformat="adoc">enter multiple keys
+      concatenated with <literal>+</literal>, for example <literal>kbd:
+      [key+key+key+...]</literal>.</phrase>
     </para>
-    <para>
+    <tip outputformat="adoc">
+      <para>
+        If the last key is a backslash (<literal>\</literal>), it must be
+        followed by a space. Otherwise the processor will not recognize the
+        macro. If one of the keys is a closing square bracket
+        (<literal>]</literal>), it must be preceded by a backslash. Without the
+        backslash escape, the macro will end prematurely.
+      </para>
+    </tip>
+    <para outputformat="db">
       If a key is listed in <xref linkend="tab-keycap"/>, use the
       <tag class="attribute">function</tag> attribute with the appropriate
       value. When using the <tag class="attribute">function</tag> attribute,
@@ -2407,20 +2421,24 @@ System:: Get a basic understanding of the system components.</screen>
       names automatically. This simplifies both your work and the work of
       translators.
     </para>
-    <para>
-      For more information about creating cross-references, see
-      <xref linkend="sec-cross-reference"/>.
-    </para>
-    <example xml:id="ex-key">
+    <example xml:id="ex-key" outputformat="db">
       <title>Example of a key</title>
 <screen>To create a screenshot, press &lt;keycap&gt;Print Screen&lt;/keycap&gt;.</screen>
     </example>
-    <example xml:id="ex-keyboard">
+        <example xml:id="ex-key" outputformat="adoc">
+      <title>Example of a key</title>
+<screen>To create a screenshot, press kbd:[Print Screen].</screen>
+    </example>
+    <example xml:id="ex-keyboard" outputformat="db">
       <title>Example of a keyboard combination</title>
 <screen>To save a file, press
 &lt;keycombo&gt;&lt;keycap function="control"/&gt;&lt;keycap&gt;S&lt;/keycap&gt;&lt;/keycombo&gt;.</screen>
     </example>
-    <table xml:id="tab-keycap">
+    <example xml:id="ex-keyboard" outputformat="adoc">
+      <title>Example of a keyboard combination</title>
+<screen>To save a file, press kbd:[Ctrl+S]</screen>
+    </example>
+    <table xml:id="tab-keycap" outputformat="db">
       <title>Elements related to <tag class="emptytag">keycap</tag></title>
       <tgroup cols="2">
         <thead>
