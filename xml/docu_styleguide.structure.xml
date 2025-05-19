@@ -2020,37 +2020,42 @@ xml:id="tab-install-source"</screen>
   <section xml:id="sec-list">
     <title>Lists</title>
     <para>
-      &suse; documentation uses the following types of lists<phrase
-      outputformat="db"> (the respective XML elements are given in
-      parentheses)</phrase>:
+      &suse; documentation uses the following types of
+      lists<phrase
+      outputformat="db"> (the respective XML elements are
+      given in parentheses)</phrase>:
     </para>
     <itemizedlist>
       <listitem>
         <para>
-          Itemized lists<phrase outputformat="db"> (<tag
-          class="emptytag">itemizedlist</tag>)</phrase>. Also known as bullet
-          lists or unordered lists.
+          Itemized lists<phrase outputformat="db">
+          (<tag
+          class="emptytag">itemizedlist</tag>)</phrase>. Also
+          known as bullet lists or unordered lists.
         </para>
       </listitem>
       <listitem>
         <para>
-          Ordered lists<phrase outputformat="db"> (<tag
-          class="emptytag">orderedlist</tag>)</phrase>. Also known as numbered
-          lists.
+          Ordered lists<phrase outputformat="db">
+          (<tag
+          class="emptytag">orderedlist</tag>)</phrase>. Also
+          known as numbered lists.
         </para>
       </listitem>
       <listitem>
         <para>
-          Variable lists<phrase outputformat="db"> (<tag
-          class="emptytag">variablelist</tag>)</phrase>. Also known as
-          definition lists or description lists.
+          Variable lists<phrase outputformat="db">
+          (<tag
+          class="emptytag">variablelist</tag>)</phrase>. Also
+          known as definition lists or description lists.
         </para>
       </listitem>
       <listitem>
         <para>
-          Procedures<phrase outputformat="db"> (<tag
-          class="emptytag">procedure</tag>)</phrase>. Also known as step-by-step
-          instructions or step lists. Described in
+          Procedures<phrase outputformat="db">
+          (<tag
+          class="emptytag">procedure</tag>)</phrase>. Also known
+          as step-by-step instructions or step lists. Described in
           <xref linkend="sec-procedure"/>.
         </para>
       </listitem>
@@ -2062,8 +2067,7 @@ xml:id="tab-install-source"</screen>
       <listitem>
         <para>
           Always introduce a list in the text. If needed for reference or better
-          coordination with the related text, add a title and an
-          identifier.
+          coordination with the related text, add a title and an identifier.
         </para>
       </listitem>
       <listitem>
@@ -2110,9 +2114,11 @@ xml:id="tab-install-source"</screen>
     </para>
     <para>
       To be able to reference untitled lists, <phrase outputformat="db">use the
-      <tag class="attribute">xreflabel</tag> attribute</phrase><phrase
-      outputformat="adoc">insert a label in the cross reference</phrase>. For
-      more information, see <xref linkend="sec-cross-reference"/>.
+      <tag class="attribute">xreflabel</tag>
+      attribute</phrase><phrase
+      outputformat="adoc">insert a label in the
+      cross reference</phrase>. For more information, see
+      <xref linkend="sec-cross-reference"/>.
     </para>
     <table xml:id="tab-list" outputformat="db">
       <title>Elements related to lists</title>
@@ -2390,15 +2396,19 @@ System:: Get a basic understanding of the system components.</screen>
       <phrase outputformat="adoc">To enter keys and their combinations in the
       text, use the keyboard macro: <literal>kbd: [key]</literal></phrase>
       Capitalize all keys as printed on a standard keyboard. Capitalize all
-      letter keys. <phrase outputformat="db">To refer to a capitalized character, use
+      letter keys. <phrase outputformat="db">To refer to a capitalized
+      character, use
       <keycombo><keycap function="shift"/><keycap>Z</keycap></keycombo>, for
       example. Introduce this convention by means of the <quote>Typographical
       Conventions</quote> section of the introduction.</phrase>
     </para>
     <para>
-      To mark up key combinations, <phrase outputformat="db">use <tag
-      class="emptytag">keycombo</tag> as a wrapper for multiple <tag
-      class="emptytag">keycap</tag> elements. Separators between <tag
+      To mark up key combinations, <phrase outputformat="db">use
+      <tag
+      class="emptytag">keycombo</tag> as a wrapper for multiple
+      <tag
+      class="emptytag">keycap</tag> elements. Separators between
+      <tag
       class="emptytag">keycap</tag> elements are then created
       automatically.</phrase><phrase outputformat="adoc">enter multiple keys
       concatenated with <literal>+</literal>, for example <literal>kbd:
@@ -2425,7 +2435,7 @@ System:: Get a basic understanding of the system components.</screen>
       <title>Example of a key</title>
 <screen>To create a screenshot, press &lt;keycap&gt;Print Screen&lt;/keycap&gt;.</screen>
     </example>
-        <example xml:id="ex-key" outputformat="adoc">
+    <example xml:id="ex-key" outputformat="adoc">
       <title>Example of a key</title>
 <screen>To create a screenshot, press kbd:[Print Screen].</screen>
     </example>
@@ -2593,12 +2603,31 @@ System:: Get a basic understanding of the system components.</screen>
   <section xml:id="sec-outline-level">
     <title>Outline levels and sectioning</title>
     <para>
-      Create sections using the <tag class="emptytag">sect1</tag>,
-      <tag class="emptytag">sect2</tag> and <tag class="emptytag">sect3</tag>
-      elements. Avoid outlines that require <tag class="emptytag">sect4</tag>
-      and <tag class="emptytag">sect5</tag> elements. Instead, create a flatter
-      structure in which more elements are visible at a glance.
+      <phrase outputformat="db">Create sections using the
+      <tag
+      class="emptytag">sect1</tag>, <tag class="emptytag">sect2</tag>
+      and <tag class="emptytag">sect3</tag> elements. Avoid outlines that
+      require <tag class="emptytag">sect4</tag> and
+      <tag class="emptytag">sect5</tag> elements.</phrase>
+      <phrase outputformat="adoc">Create sections by inserting
+      <literal>=</literal> characters in front of their titles. The number of
+      <literal>=</literal> characters determine the depth of the section in the
+      document structure. Do not go deeper than section level 3.</phrase>
+      Instead, create a flatter structure in which more elements are visible at
+      a glance.
     </para>
+    <example xml:id="ex-sections-depth" outputformat="adoc">
+      <title>Example section outline</title>
+<screen>= Document Title (Level 0)
+
+== Level 1 Section Title
+
+=== Level 2 Section Title
+
+==== Level 3 Section Title
+
+== Another Level 1 Section Title</screen>
+    </example>
     <para>
       Provide at least one paragraph of introductory information directly within
       each section.
@@ -2621,7 +2650,7 @@ System:: Get a basic understanding of the system components.</screen>
     <itemizedlist>
       <listitem>
         <para>
-          An <tag class="attribute">xml:id</tag> attribute.
+          An identifier.
         </para>
       </listitem>
       <listitem>
@@ -2649,7 +2678,7 @@ System:: Get a basic understanding of the system components.</screen>
         </para>
       </listitem>
     </itemizedlist>
-    <para>
+    <para outputformat="db">
       To link alternative actions inside the same substep element, use
       <quote>or.</quote> Apply a
       <tag class="attribute">performance=optional</tag> attribute to optional
@@ -2659,7 +2688,7 @@ System:: Get a basic understanding of the system components.</screen>
       Steps may contain a link to an explanatory subsection providing further
       details on the step.
     </para>
-    <example xml:id="ex-procedure-source">
+    <example xml:id="ex-procedure-source" outputformat="db">
       <title>Example of a procedure (source)</title>
 <screen>&lt;procedure xml:id="pro-procedure"&gt;
  &lt;title&gt;Example of a procedure&lt;/title&gt;
@@ -2685,6 +2714,16 @@ System:: Get a basic understanding of the system components.</screen>
  &lt;/step&gt;
 &lt;/procedure&gt;</screen>
     </example>
+    <example xml:id="ex-procedure-source" outputformat="adoc">
+      <title>Example of a procedure (source)</title>
+<screen>[#pro-procedure]
+.Example of a procedure
+
+To add a new user to the system, perform the following steps:
+. In the YaST window, click btn:[User and group management].
+. To open the btn:[Add a new user] dialog, click btn:[Add].
+. Type in the user name and click btn:[Create].</screen>
+    </example>
     <procedure xml:id="pro-procedure-output">
       <title>Example of a procedure (output)</title>
       <para>
@@ -2708,7 +2747,7 @@ System:: Get a basic understanding of the system components.</screen>
         </para>
       </step>
     </procedure>
-    <table xml:id="tab-procedure">
+    <table xml:id="tab-procedure" outputformat="db">
       <title>Elements related to <tag class="emptytag">procedure</tag></title>
       <tgroup cols="2">
         <thead>
