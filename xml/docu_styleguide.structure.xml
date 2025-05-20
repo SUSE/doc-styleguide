@@ -2802,7 +2802,7 @@ To add a new user to the system, perform the following steps:
       </tgroup>
     </table>
   </section>
-  <section xml:id="sec-product">
+  <section xml:id="sec-product" outputformat="db">
     <title>Products</title>
     <para>
       Always use the preferred product name instead of, for example, an acronym.
@@ -2869,7 +2869,7 @@ To add a new user to the system, perform the following steps:
           profiling variable and its value to the DC file.
         </para>
       </listitem>
-      <listitem>
+      <listitem outputformat="db">
         <para>
           DocBook allows you to use multiple profiling attributes to handle more
           complex scenarios. For example, if you have conditions for
@@ -2880,7 +2880,8 @@ To add a new user to the system, perform the following steps:
         </para>
       </listitem>
     </itemizedlist>
-    <example xml:id="ex-profiling-xml">
+    <!-- ADOC how do we profile in adoc?-->
+    <example xml:id="ex-profiling-xml" outputformat="db">
       <title>Single profiling with the attribute <tag class="attribute">os</tag></title>
 <screen>
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
@@ -2898,7 +2899,7 @@ ROOTID=book-administration
 PROFOS="sles"
 ...</screen>
     </example>
-    <example xml:id="ex-multiple-profiling">
+    <example xml:id="ex-multiple-profiling" outputformat="db">
       <title>Multiple profiling with attributes <tag class="attribute">os</tag> and <tag class="attribute">arch</tag></title>
 <screen>
 &lt;?xml version="1.0" encoding="UTF-8"?&gt;
@@ -2923,12 +2924,12 @@ Entire hard disks are listed as devices without numbers, such as
       cross-reference to an explanation outside of the questions-and-answers
       section. See also <xref linkend="sec-cross-reference"/>.
     </para>
-    <para>
+    <para outputformat="db">
       When a questions-and-answers section contains over 10 questions and there
       are clear topical divisions, add <tag class="emptytag">qandadiv</tag>
       elements to further structure the section.
     </para>
-    <example xml:id="ex-question">
+    <example xml:id="ex-question" outputformat="db">
       <title>Example of a questions-and-answers section (source)</title>
 <screen>&lt;qandaset&gt;
  &lt;title&gt;Example of a questions-and-answers section&lt;/title&gt;
@@ -2960,6 +2961,17 @@ Entire hard disks are listed as devices without numbers, such as
  &lt;/qandaentry&gt;
 &lt;/qandaset&gt;</screen>
     </example>
+    <example xml:id="ex-question" outputformat="adoc">
+      <title>Example of a questions-and-answers section (source)</title>
+<screen>[qanda]
+.Example of a questions-and-answers section
+How can I check if the product was correctly installed?::
+Open the log file.
+Look for entries starting with `Failed`.
+
+Why does the error `N` occur during installation?::
+There are less than 4 GB of space available on the selected partition.</screen>
+    </example>
     <qandaset>
       <title>Example of a questions-and-answers section (output)</title>
       <qandaentry>
@@ -2990,7 +3002,7 @@ Entire hard disks are listed as devices without numbers, such as
         </answer>
       </qandaentry>
     </qandaset>
-    <table xml:id="tab-qandaset">
+    <table xml:id="tab-qandaset" outputformat="db">
       <title>Elements related to <tag class="emptytag">qandaset</tag></title>
       <tgroup cols="2">
         <thead>
@@ -3079,11 +3091,15 @@ Entire hard disks are listed as devices without numbers, such as
         structure instead of this mishmash.
       </remark>
     <para>
-      To reference file names, use the <tag class="emptytag">filename</tag>
-      element. To reference e-mail addresses, use the
-      <tag class="emptytag">email</tag> element. In either case, do not include
-      a protocol prefix, that is <literal>file://</literal> or
-      <literal>mailto:</literal>, respectively. See also
+      To reference file names, use <phrase outputformat="adoc">monospaced
+      <literal>`filename`</literal></phrase><phrase outputformat="db">the <tag
+      class="emptytag">filename</tag>
+      element</phrase> without the <literal>file://</literal> prefix. To
+      reference e-mail addresses, use the <phrase
+      outputformat="adoc">clickable<literal> mailto:john@example.com[]</literal>
+      macro or unclickable monospaced `john@example.com`</phrase>
+      without the <literal>mailto:</literal> prefix</phrase>. See also
+      <phrase outputformat="db"><tag class="emptytag">email</tag> element
       <xref linkend="sec-file-markup"/>.
     </para>
     <para>
@@ -3092,31 +3108,39 @@ Entire hard disks are listed as devices without numbers, such as
     <itemizedlist>
       <listitem>
         <para>
-          <quote>the man page of <command>command</command></quote>
+          <quote outputformat="db">the man page of <command>command</command></quote>
+          <quote outputformat="adoc">the man page of `command`</quote>
         </para>
       </listitem>
       <listitem>
         <para>
-          <quote>the info page of <command>command</command></quote>
+          <quote outputformat="db">the info page of <command>command</command></quote>
+          <quote outputformat="adoc">the info page of `command`</quote>
         </para>
       </listitem>
     </itemizedlist>
     <para>
       In a situation where the category of the page is needed, append the
-      category in parentheses. For example, use <quote>(<command>man 9
-      command</command>).</quote>
+      category in parentheses. For example, use <quote
+      outputformat="db">(<command>man 9 command</command>)</quote><quote
+      outputformat="adoc">(`man 9 command`)</quote>.
     </para>
-<screen>To learn more about subcommands, see the man page of
+<screen outputformat="db">To learn more about subcommands, see the man page of
 &lt;command&gt;command&lt;/command&gt;.</screen>
+<screen outputformat="adoc">To learn more about subcommands, see the man page of
+`command`.</screen>
     <para>
       Insert references to external (non-&suse;) physical books in the format
       <quote>Title by Author (ISBN #00000000).</quote> Inclusion of the ISBN is
-      optional. Place the title in a <tag class="emptytag">citetitle</tag>
-      element. For example:
+      optional. Place the title in <phrase outputformat="db">a <tag
+      class="emptytag">citetitle</tag>
+      element</phrase><phrase outputformat="adoc">an italics snippet</phrase>. For example:
     </para>
-<screen>&lt;citetitle&gt;Lorem Ipsum&lt;/citetitle&gt; by Dolores S. Amet
+<screen outputformat="db">&lt;citetitle&gt;Lorem Ipsum&lt;/citetitle&gt; by Dolores S. Amet
 (ISBN 0-246-52044-7) is a useful guide.</screen>
-    <para>
+<screen outputformat="adoc">_Lorem Ipsum&lt;_ by Dolores S. Amet
+(ISBN 0-246-52044-7) is a useful guide.</screen>
+    <para outputformat="db">
       Note that <tag class="emptytag">citetitle</tag> is not translated.
     </para>
     <para>
@@ -3144,8 +3168,7 @@ Entire hard disks are listed as devices without numbers, such as
       even for readers unfamiliar with the topic.
     </para>
     <para>
-      A table always has a title and should have an
-      <tag class="attribute">xml:id</tag> attribute.
+      A table always has a title and should have an identifier.
     </para>
     <para>
       Typical use cases of tables include:
@@ -3179,8 +3202,7 @@ Entire hard disks are listed as devices without numbers, such as
     <itemizedlist>
       <listitem>
         <para>
-          Value and description pairs are better handled by means of a
-          descriptive list.
+          Value and description pairs are better handled by a descriptive list.
         </para>
       </listitem>
       <listitem>
@@ -3213,7 +3235,7 @@ Entire hard disks are listed as devices without numbers, such as
         <term>Narrow down columns</term>
         <listitem>
           <para>
-            Compress the data in your table as much as you possibly can. Table
+            Compress the data in your table as much as you can. Table
             cells with less content are more easily parsed by readers. Consider
             using icons, adding repeating words into column titles, or using
             shorter number formats.
@@ -3246,9 +3268,10 @@ Entire hard disks are listed as devices without numbers, such as
         </listitem>
       </varlistentry>
     </variablelist>
-    <example xml:id="ex-table-source">
+    <example xml:id="ex-table-source" outputformat="db">
       <title>Example of a table (source)</title>
 <screen>&lt;informaltable&gt;
+ &lt;titlee&gt;A table with a title&lt;/title&gt;
  &lt;tgroup cols="2"&gt;
   &lt;thead&gt;
    &lt;row&gt;
@@ -3269,9 +3292,23 @@ Entire hard disks are listed as devices without numbers, such as
  &lt;/tgroup&gt;
 &lt;/informaltable&gt;</screen>
     </example>
+    <example xml:id="ex-table-source" outputformat="adoc">
+      <title>Example of a table (source)</title>
+<screen>.A table with a title
+|===
+|File System |Maximum File Size
+
+|Ext2 (1 kB block size)
+|16 GB
+
+|Ext2 (2 kB block size)
+|entry
+|===</screen>
+    </example>
     <example xml:id="ex-table-output">
       <title>Example of a table (output)</title>
       <informaltable>
+        <title>A table with a title</title>
         <tgroup cols="2">
           <thead>
             <row>
@@ -3292,7 +3329,7 @@ Entire hard disks are listed as devices without numbers, such as
         </tgroup>
       </informaltable>
     </example>
-    <table xml:id="tab-table">
+    <table xml:id="tab-table" outputformat="db">
       <title>Elements related to <tag class="emptytag">table</tag></title>
       <tgroup cols="2">
         <thead>
