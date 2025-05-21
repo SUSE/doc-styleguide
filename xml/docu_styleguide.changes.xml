@@ -7,31 +7,33 @@
 <revhistory xmlns="http://docbook.org/ns/docbook"
  xmlns:xi="http://www.w3.org/2001/XInclude"
  xmlns:xlink="http://www.w3.org/1999/xlink" version="5.2" xml:id="rh-styleguide">
-  <!-- <title>List of changes to the Style Guide</title>-->
-  <!--<para>
+<!-- <title>List of changes to the Style Guide</title>-->
+<!--<para>
     This section lists the changes between versions of this Style Guide.
     </para>-->
-  <!-- Add new versions to the beginning of the list. -->
+<!-- Add new versions to the beginning of the list. -->
   <revision xml:id="sec-change-2025-03"><date>2025-03-01</date>
     <revdescription>
       <itemizedlist>
         <listitem>
           <para>
-            Added a new section on accessibility in the Writing for the Web chapter.
-            Key points: alt text, clear language, no empty headers in tables.</para>
+            Added a new section on accessibility in the Writing for the Web
+            chapter. Key points: alt text, clear language, no empty headers in
+            tables.
+          </para>
         </listitem>
         <listitem>
           <para>
-            Updated the instruction in Structure and markup to not use the 
-            <tag class="emptytag">informalfigure</tag> element as it allows 
-            skipping alt text but use <tag class="emptytag">figure</tag> for all 
+            Updated the instruction in Structure and markup to not use the
+            <tag class="emptytag">informalfigure</tag> element as it allows
+            skipping alt text but use <tag class="emptytag">figure</tag> for all
             images.
           </para>
         </listitem>
         <listitem>
           <para>
-            Added rule on using colons in Language: capitalize the first 
-            word after a colon only if it is a proper noun or the start of a complete 
+            Added rule on using colons in Language: capitalize the first word
+            after a colon only if it is a proper noun or the start of a complete
             sentence.
           </para>
         </listitem>
@@ -49,9 +51,10 @@
       <itemizedlist>
         <listitem>
           <para>
-            Updated the example of the Revision History entry (marked up with the 
-            <tag class="emptytag">revhistory</tag> tag) in the metadata 
-            field of XML source documents.</para>
+            Updated the example of the Revision History entry (marked up with
+            the <tag class="emptytag">revhistory</tag> tag) in the metadata
+            field of XML source documents.
+          </para>
         </listitem>
         <listitem>
           <para>
@@ -86,8 +89,8 @@
         <listitem>
           <para>
             Updated the <quote>Entities</quote> subsection in <quote>Managing
-            documents</quote>: common types of entities and their use cases,
-            the Doc Kit repository that maintains official generic entities,
+            documents</quote>: common types of entities and their use cases, the
+            Doc Kit repository that maintains official generic entities,
             creating custom entities, and entity files.
           </para>
         </listitem>
@@ -100,7 +103,8 @@
         </listitem>
         <listitem>
           <para>
-            Terminology update: flash disk → flash drive, in sync with TermWeb.
+            Terminology update: flash disk → flash drive, in sync with
+            TermWeb.
           </para>
         </listitem>
         <listitem>
@@ -130,8 +134,8 @@
         </listitem>
         <listitem>
           <para>
-            Updated the introduction to <quote>Structure and markup</quote>
-            with links to doc-kit that now hosts examples of rendered books and
+            Updated the introduction to <quote>Structure and markup</quote> with
+            links to doc-kit that now hosts examples of rendered books and
             articles.
           </para>
         </listitem>
@@ -162,8 +166,8 @@
         <listitem>
           <para>
             Created a new <quote>Revision history</quote> that opens as a
-            separate file and is linked from the main doc. Added info about
-            this in the <quote>Smart Docs</quote> chapter: Use the
+            separate file and is linked from the main doc. Added info about this
+            in the <quote>Smart Docs</quote> chapter: Use the
             <tag class="emptytag">revhistory</tag> tag in the
             <tag class="emptytag">info</tag> part of XML file.
           </para>
@@ -179,8 +183,8 @@
         <listitem>
           <para>
             Updated the <quote>Structure and markup</quote> chapter: Use the
-            <tag class="emptytag">href</tag> element to provide
-            cross-references only within the same doc set; the tag
+            <tag class="emptytag">href</tag> element to provide cross-references
+            only within the same doc set; the tag
             <tag class="emptytag">citetitle</tag> is not translated and must
             only reference names of printed books (section <quote>DocBook tags,
             Inline elements</quote>).
@@ -202,17 +206,17 @@
         <listitem>
           <para>
             Updated the Language chapter with info on product names. If a
-            product name is not in the style guide's Terminology table or in
-            the entities Doc Kit file, refer to the official SUSE Products page
-            and the Marketing department. Do not use articles in front of
-            product names.
+            product name is not in the style guide's Terminology table or in the
+            entities Doc Kit file, refer to the official SUSE Products page and
+            the Marketing department. Do not use articles in front of product
+            names.
           </para>
         </listitem>
         <listitem>
           <para>
-            New items in the Terminology table: <quote>since</quote> rejected
-            in the meaning of <quote>because</quote>; <quote>timeout</quote>
-            and <quote>system-wide</quote> added as approved terms.
+            New items in the Terminology table: <quote>since</quote> rejected in
+            the meaning of <quote>because</quote>; <quote>timeout</quote> and
+            <quote>system-wide</quote> added as approved terms.
             <quote>Data</quote> only requires singular, so <quote>data
             is</quote> is approved and <quote>data are</quote> is rejected.
           </para>
@@ -250,9 +254,9 @@
         </listitem>
         <listitem>
           <para>
-            Added information about the element phrase
-            role="style:sentencecase" for the style sheets to expand the
-            relevant entities as uppercase, when needed.
+            Added information about the element phrase role="style:sentencecase"
+            for the style sheets to expand the relevant entities as uppercase,
+            when needed.
           </para>
         </listitem>
         <listitem>
@@ -378,9 +382,9 @@
         </listitem>
         <listitem>
           <para>
-            Added and updated terms and definitions: ‘bare metal’, ‘drop-down
-            list’, ‘list box’, ‘screen’, ‘usage’, ‘utilization’, ‘view’,
-            ‘multi-version’ (adjective)
+            Added and updated terms and definitions: ‘bare metal’,
+            ‘drop-down list’, ‘list box’, ‘screen’, ‘usage’,
+            ‘utilization’, ‘view’, ‘multi-version’ (adjective)
           </para>
         </listitem>
       </itemizedlist>
@@ -510,8 +514,8 @@
           <para>
             Updated the definitions of <emphasis>installation medium</emphasis>
             and <emphasis>installation source</emphasis> to clarify that
-            <emphasis>installation medium</emphasis> should only be used where
-            a physical medium is concerned.
+            <emphasis>installation medium</emphasis> should only be used where a
+            physical medium is concerned.
           </para>
         </listitem>
         <listitem>
@@ -673,8 +677,8 @@
           <para>
             Updated advice on lists. Deduplicated the sections about lists in
             the <citetitle>Structure and Markup</citetitle> section versus the
-            section in the <citetitle>Language</citetitle> section. Aligned
-            list terminology with DocBook terminology.
+            section in the <citetitle>Language</citetitle> section. Aligned list
+            terminology with DocBook terminology.
           </para>
         </listitem>
         <listitem>
@@ -841,8 +845,8 @@
   <revision xml:id="sec-change-2017-04"><date>2017-04-01</date>
     <revdescription>
       <para>
-        Added terminology entries for <emphasis>e-mail</emphasis>,
-        <emphasis>hot key</emphasis>.
+        Added terminology entries for <emphasis>e-mail</emphasis>, <emphasis>hot
+        key</emphasis>.
       </para>
     </revdescription>
   </revision>
@@ -888,8 +892,8 @@
             Migrated style guide from SVN to Git. Migrated style guide from
             DocBook 4.3 to DocBook 5.1. Switched to using profiling instead of
             two <literal>MAIN</literal> files for being able to customize
-            contents based on the DC file. Added <emphasis>Report
-            Bug</emphasis> link.
+            contents based on the DC file. Added <emphasis>Report Bug</emphasis>
+            link.
           </para>
         </listitem>
         <listitem>
@@ -1027,8 +1031,8 @@
             <xref
        linkend="sec-latin" /> and
             <xref linkend="sec-measurement" />. Added
-            <xref linkend="sec-latin" />,<xref linkend="sec-measurement" />,
-            and <xref linkend="sec-acronym" /> to newly created
+            <xref linkend="sec-latin" />,<xref linkend="sec-measurement" />, and
+            <xref linkend="sec-acronym" /> to newly created
             <xref
        linkend="sec-abbreviation" />.
           </para>
@@ -1044,8 +1048,8 @@
             Split the table in <xref linkend="app-terminology" /> into
             <xref
        linkend="sec-terminology" /> and
-            <xref linkend="sec-vocabulary" /> to better reflect the roles of
-            the terms listed there.
+            <xref linkend="sec-vocabulary" /> to better reflect the roles of the
+            terms listed there.
           </para>
         </listitem>
         <listitem>
@@ -1093,19 +1097,18 @@
               <para>
                 Added rejected terms to the entries of <emphasis>boot
                 disk</emphasis> (<quote>boot disc</quote>), <emphasis>check
-                box</emphasis> (<quote>checking option</quote>),
-                <emphasis>flash disk</emphasis>, <emphasis>hard
-                disk</emphasis>, <emphasis>hotplug</emphasis>
-                (<quote>hotadd</quote>, <quote>hotswap</quote>),
-                <emphasis>hotpluggable</emphasis>,
+                box</emphasis> (<quote>checking option</quote>), <emphasis>flash
+                disk</emphasis>, <emphasis>hard disk</emphasis>,
+                <emphasis>hotplug</emphasis> (<quote>hotadd</quote>,
+                <quote>hotswap</quote>), <emphasis>hotpluggable</emphasis>,
                 <emphasis>hotplugging</emphasis>, <emphasis>press</emphasis>,
                 <emphasis>slider</emphasis> (<quote>slidebar</quote>).
               </para>
             </listitem>
             <listitem>
               <para>
-                Removed <quote>installation media</quote> from rejected terms
-                of <emphasis>installation source</emphasis>.
+                Removed <quote>installation media</quote> from rejected terms of
+                <emphasis>installation source</emphasis>.
               </para>
             </listitem>
             <listitem>
@@ -1246,10 +1249,9 @@
             </listitem>
             <listitem>
               <para>
-                Renamed <emphasis>Creating a Consistent Structure: Official
-                SUSE Manuals</emphasis> to <emphasis>Outline of a
-                Manual</emphasis> and promoted to a
-                <tag class="emptytag">sect1</tag>.
+                Renamed <emphasis>Creating a Consistent Structure: Official SUSE
+                Manuals</emphasis> to <emphasis>Outline of a Manual</emphasis>
+                and promoted to a <tag class="emptytag">sect1</tag>.
               </para>
             </listitem>
             <listitem>
@@ -1301,8 +1303,8 @@
               <para>
                 Renamed <emphasis>GUI Elements</emphasis> to
                 <xref
-         linkend="sec-ui-item-language" /> and promoted
-                it to a <tag
+         linkend="sec-ui-item-language" /> and promoted it
+                to a <tag
          class="emptytag">sect2</tag> within
                 <xref linkend="sec-language" />.
               </para>
@@ -1334,8 +1336,8 @@
               <para>
                 Renamed <emphasis>Spelling Terms</emphasis> to
                 <xref
-         linkend="app-terminology" /> and moved it into
-                an appendix.
+         linkend="app-terminology" /> and moved it into an
+                appendix.
               </para>
             </listitem>
             <listitem>
@@ -1371,21 +1373,20 @@
                 <emphasis>(to) advise</emphasis>, <emphasis>after</emphasis>,
                 <emphasis>although</emphasis>, <emphasis>and</emphasis>,
                 <emphasis>appendixes</emphasis>, <emphasis>Audio CD</emphasis>,
-                <emphasis>because of</emphasis>,
-                <emphasis>basically</emphasis>, <emphasis>(to) boot using/via
-                PXE</emphasis>, <emphasis>Btrfs</emphasis>,
-                <emphasis>but</emphasis>, <emphasis>CD</emphasis>,
-                <emphasis>CD-ROM</emphasis>, <emphasis>CUPS</emphasis>,
-                <emphasis>(to) close sth.</emphasis>,
+                <emphasis>because of</emphasis>, <emphasis>basically</emphasis>,
+                <emphasis>(to) boot using/via PXE</emphasis>,
+                <emphasis>Btrfs</emphasis>, <emphasis>but</emphasis>,
+                <emphasis>CD</emphasis>, <emphasis>CD-ROM</emphasis>,
+                <emphasis>CUPS</emphasis>, <emphasis>(to) close sth.</emphasis>,
                 <emphasis>computer</emphasis>*,
                 <emphasis>configuration</emphasis>, <emphasis>(to)
                 configure</emphasis>, <emphasis>could</emphasis>,
-                <emphasis>Common Unix Printing System</emphasis>,
-                <emphasis>(to) deactivate sth.</emphasis>,
-                <emphasis>dialog</emphasis>, <emphasis>directory</emphasis>,
-                <emphasis>DVD</emphasis>, <emphasis>e-book</emphasis>,
-                <emphasis>EPUB</emphasis>, <emphasis>easy, easily</emphasis>,
-                <emphasis>end user</emphasis>, <emphasis>etc.</emphasis>,
+                <emphasis>Common Unix Printing System</emphasis>, <emphasis>(to)
+                deactivate sth.</emphasis>, <emphasis>dialog</emphasis>,
+                <emphasis>directory</emphasis>, <emphasis>DVD</emphasis>,
+                <emphasis>e-book</emphasis>, <emphasis>EPUB</emphasis>,
+                <emphasis>easy, easily</emphasis>, <emphasis>end
+                user</emphasis>, <emphasis>etc.</emphasis>,
                 <emphasis>Ext3</emphasis>, <emphasis>Ext4</emphasis>,
                 <emphasis>flavor</emphasis>, <emphasis>flash disk</emphasis>*,
                 <emphasis>graphical user interface</emphasis>,
@@ -1410,22 +1411,21 @@
                 sth.</emphasis>, <emphasis>(to) register for sth.</emphasis>,
                 <emphasis>SLE</emphasis>, <emphasis>SLED</emphasis>,
                 <emphasis>SLES</emphasis>, <emphasis>SUSE Cloud</emphasis>,
-                <emphasis>SUSE Linux Enterprise</emphasis>, <emphasis>SUSE
-                Linux Enterprise Desktop</emphasis>, <emphasis>SUSE Linux
-                Enterprise Server</emphasis>, <emphasis>SUSE
-                Manager</emphasis>, <emphasis>SUSE Studio</emphasis>,
+                <emphasis>SUSE Linux Enterprise</emphasis>, <emphasis>SUSE Linux
+                Enterprise Desktop</emphasis>, <emphasis>SUSE Linux Enterprise
+                Server</emphasis>, <emphasis>SUSE Manager</emphasis>,
+                <emphasis>SUSE Studio</emphasis>,
                 <emphasis>self-evident</emphasis>,
                 <emphasis>self-evidently</emphasis>,
                 <emphasis>scrollbar</emphasis>*, <emphasis>simple,
                 simply</emphasis>, <emphasis>(to) select sth.</emphasis>,
                 <emphasis>(to) shut sth. down</emphasis>,
                 <emphasis>shutdown</emphasis>, <emphasis>(to) start sth.
-                up</emphasis>, <emphasis>TAR archive</emphasis>*,
-                <emphasis>(to) type sth. (into sth.)</emphasis>,
-                <emphasis>usage</emphasis>, <emphasis>Unix</emphasis>,
-                <emphasis>uppercase</emphasis>, <emphasis>when</emphasis>,
-                <emphasis>want sth.</emphasis>, <emphasis>Wi-fi</emphasis>*,
-                and <emphasis>YaST</emphasis>.
+                up</emphasis>, <emphasis>TAR archive</emphasis>*, <emphasis>(to)
+                type sth. (into sth.)</emphasis>, <emphasis>usage</emphasis>,
+                <emphasis>Unix</emphasis>, <emphasis>uppercase</emphasis>,
+                <emphasis>when</emphasis>, <emphasis>want sth.</emphasis>,
+                <emphasis>Wi-fi</emphasis>*, and <emphasis>YaST</emphasis>.
               </para>
               <para>
                 (An * marks potentially interesting changes.)
@@ -1433,8 +1433,8 @@
             </listitem>
             <listitem>
               <para>
-                Changed accepted spellings of compund words whose second part
-                is <quote>name</quote>. These are now written with a space:
+                Changed accepted spellings of compund words whose second part is
+                <quote>name</quote>. These are now written with a space:
                 <emphasis>file name</emphasis>, <emphasis>host name</emphasis>,
                 <emphasis>path name</emphasis>, <emphasis>user name</emphasis>.
               </para>
@@ -1464,8 +1464,8 @@
         </listitem>
         <listitem>
           <para>
-            In <xref linkend="sec-name" />, added Geeko, Foxkeh, Konqi, and
-            Duke to the list of mascots to choose from.
+            In <xref linkend="sec-name" />, added Geeko, Foxkeh, Konqi, and Duke
+            to the list of mascots to choose from.
           </para>
         </listitem>
         <listitem>
@@ -1493,8 +1493,8 @@
         <listitem>
           <para>
             Rewrote large parts of <xref linkend="sec-outline" />. Removed
-            example of structure. Added copyright notice as an example.
-            Expanded on information needed for title pages and imprints.
+            example of structure. Added copyright notice as an example. Expanded
+            on information needed for title pages and imprints.
           </para>
         </listitem>
         <listitem>
@@ -1538,15 +1538,14 @@
         <listitem>
           <para>
             Simplified rules for creating IDs in <xref linkend="sec-id" />. The
-            aim is to shorten the length of the average ID and to help to
-            create predictable IDs.
+            aim is to shorten the length of the average ID and to help to create
+            predictable IDs.
           </para>
         </listitem>
         <listitem>
           <para>
             Added the <tag class="attvalue">co</tag> prefix to
-            <xref
-       linkend="tab-id-prefix" />.
+            <xref linkend="tab-id-prefix" outputformat="db"/><xref linkend="tab-id-prefix-adoc" outputformat="adoc"/>.
           </para>
         </listitem>
         <listitem>

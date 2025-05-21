@@ -35,14 +35,15 @@
     <dm:labels>via-report-link</dm:labels>
    </dm:bugtracker>
   </dm:docmanager>
-  <xi:include href="docu_styleguide.changes.xml" />
+  <xi:include href="docu_styleguide.changes.xml" outputformat="db"/>
   <abstract>
    <para>
     This guide provides answers to writing, style and layout questions
     commonly arising when editing SUSE documentation. The
-    <phrase role="productname">GeekoDoc</phrase> and <phrase role="productname">DocBook</phrase>
+    <phrase role="productname">GeekoDoc</phrase>, <phrase
+    role="productname">DocBook</phrase> and <phrase role="productname">AsciiDoc</phrase>
     markup reference in this guide will help you choose the right
-    XML element for your purpose. Following this guide will make your
+    formatting options for your purpose. Following this guide will make your
     documentation more understandable and easier to translate.
    </para>
   </abstract>

@@ -262,16 +262,19 @@ liable for possible errors or the consequences thereof.</screen>
                 <para>
                   In this section, collect common mistakes and problems. The
                   section should always be named
-                  <emphasis>Troubleshooting</emphasis>. Use the DocBook element
-                  <tag class="emptytag">qandaset</tag> (a Question and Answer
+                  <emphasis>Troubleshooting</emphasis>. Use the <phrase
+                  outputformat="db">DocBook element
+                  <tag class="emptytag">qandaset</tag></phrase><phrase
+                  outputformat="adoc"><literal>[qanda]</literal> block</phrase> (a
+                  Question and Answer
                   section) to mark up <emphasis>Troubleshooting</emphasis>
-                  problems. In case you want to describe solutions to more than
-                  ten problems, add topical subsections (
+                  problems. <phrase outputformat="db">In case you want to
+                  describe solutions to more than ten problems, add topical
+                  subsections (
                   <tag class="emptytag">qandadiv</tag> elements) below the
-                  <emphasis>Troubleshooting</emphasis> section.
+                  <emphasis>Troubleshooting</emphasis> section.</phrase>
                 </para>
               </formalpara>
-              <!-- ADOC: do we have an alternative for quandaset ?-->
             </listitem>
             <listitem>
               <formalpara>

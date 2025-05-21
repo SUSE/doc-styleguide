@@ -6,7 +6,6 @@
 ]>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-structure">
   <title>Structure and markup</title>
-<!-- ADOC this whole chapter needs adoc alternative-->
   <para>
     This chapter contains instructions on using the correct markup to create
     consistent and legible documents, and structuring the content in the way
@@ -170,7 +169,7 @@
  &lt;/para&gt;
 &lt;/warning&gt;</screen>
     </example>
-    <example xml:id="ex-warning-source" outputformat="adoc">
+    <example xml:id="ex-warning-source-adoc" outputformat="adoc">
       <title>An example of a warning (source)</title>
 <screen>[WARNING]
 .Do not interrupt creation of file systems
@@ -194,8 +193,7 @@ Always wait until formatting has finished.
       </para>
     </warning>
   </section>
-  <section xml:id="sec-application">
-<!-- ADOC how in adoc?-->
+  <section xml:id="sec-application" outputformat="db">
     <title>Application names</title>
     <para>
       When referring to an application, add a <tag class="emptytag">phrase
@@ -236,7 +234,7 @@ default 0 &lt;co xml:id="co-default"/&gt;&lt;/screen&gt;
  &lt;/callout&gt;
 &lt;/calloutlist&gt;</screen>
     </example>
-    <example xml:id="ex-callout-output" outputformat="adoc">
+    <example xml:id="ex-callout-output-adoc" outputformat="adoc">
       <title>Example of callouts (source)</title>
 <screen>[source]
 ----
@@ -485,45 +483,57 @@ default 0 <co xml:id="co-default"/></screen>
         </tbody>
       </tgroup>
     </table>
-<!-- ADOC shring all literals into a single section only-->
-    <section xml:id="sec-command" outputformat="db">
+    <section xml:id="sec-command">
       <title>Commands</title>
       <para>
         Commands can be embedded in running text or presented as part of a
         screen environment. In running text, use
-        <tag class="emptytag">command</tag> when referring to an actual command
-        you would use on a command line:
+        <phrase outputformat="adoc">backticks (<literal>`</literal>)</phrase>
+        <tag class="emptytag" outputformat="db">command</tag> when referring to
+        an actual command you would use on a command line:
       </para>
-<screen>To start LibreOffice from the command line, use
+<screen outputformat="db">To start LibreOffice from the command line, use
 &lt;command&gt;loffice&lt;/command&gt;.</screen>
+<screen outputformat="adoc">To start LibreOffice from the command line, use
+`loffice`.</screen>
       <para>
         Where options or subcommands belong with a command, include them within
-        the element <tag class="emptytag">command</tag> itself:
+        the command itself:
       </para>
-<screen>To start LibreOffice Writer from the command line, use
+<screen outputformat="db">To start LibreOffice Writer from the command line, use
 &lt;command&gt;loffice --writer&lt;/command&gt;.</screen>
+<screen outputformat="db">To start LibreOffice Writer from the command line, use
+`loffice --writer`.</screen>
       <para>
         If options or subcommands stand for themselves in a text, wrap them in
-        the element <tag class="emptytag">option</tag>.
+        <phrase outputformat="db">the element
+        <tag
+        class="emptytag">option</tag></phrase><phrase
+        outputformat="adoc">backticks
+        as well</phrase>.
       </para>
       <para>
-        Use markup for commands even inside <tag class="emptytag">screen</tag>
-        environments. To avoid spelling or capitalization errors, whenever
-        possible, try commands before adding them to the documentation.
+        <phrase outputformat="db">Use markup for commands even inside
+        <tag
+        class="emptytag">screen</tag> environments. </phrase>To
+        avoid spelling or capitalization errors, whenever possible, try commands
+        before adding them to the documentation.
       </para>
       <para>
         See also <xref linkend="sec-prompt"/>.
       </para>
     </section>
-    <section xml:id="sec-file-markup" outputformat="db">
+    <section xml:id="sec-file-markup">
       <title>File names</title>
       <para>
         A file name is the name of a file on a local or network disk. Can
         contain a simple name or include a path or other elements specific to
         the operating system. See also <xref linkend="sec-file-language"/>.
       </para>
-<screen>Find the log file &lt;filename&gt;configuration.xml&lt;/filename&gt;
+<screen outputformat="db">Find the log file &lt;filename&gt;configuration.xml&lt;/filename&gt;
 in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
+<screen outputformat="adoc">Find the log file `configuration.xml`
+in the directory `/etc/sysconfig`.</screen>
       <para>
         To assign standard names to files and images in DocBook and AsciiDoc,
         follow the naming conventions at
@@ -533,33 +543,42 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
     <section xml:id="sec-literal" outputformat="db">
       <title>Literals</title>
       <para>
-        Use <tag class="emptytag">literal</tag> to mark up data taken literally
-        from a computer system.
+        Use
+        <tag class="emptytag" outputformat="db">literal</tag><phrase
+        outputformat="adoc">backticks
+        (<literal>`</literal>)</phrase> to mark up data taken literally from a
+        computer system.
       </para>
-<screen>To create a comment, insert &lt;literal&gt;#&lt;/literal&gt; characters.</screen>
+<screen outputformat="db">To create a comment, insert &lt;literal&gt;#&lt;/literal&gt; characters.</screen>
+<screen outputformat="adoc">To create a comment, insert `#` characters.</screen>
     </section>
     <section xml:id="sec-placeholder" outputformat="db">
       <title>Placeholders</title>
       <para>
-        To mark up text that readers need to replace, use the
-        <tag class="emptytag">replaceable</tag> element. Capitalize placeholder
-        text in all contexts where this is not detrimental to content
-        intelligibility. Do not use spaces within placeholders. Instead, use
-        underscores (<literal>_</literal>).
+        To mark up text that readers need to replace, use
+        <phrase
+        outputformat="db">the
+        <tag class="emptytag">replaceable</tag>
+        element</phrase><phrase
+        outputformat="adoc">monospaced angle
+        brackets</phrase>. Capitalize placeholder text in all contexts where
+        this is not detrimental to content intelligibility. Do not use spaces
+        within placeholders. Instead, use underscores (<literal>_</literal>).
       </para>
-<screen>To list the contents of a directory, execute
+<screen outputformat="db">To list the contents of a directory, execute
  &lt;command&gt;ls &lt;replaceable&gt;DIRECTORY&lt;/replaceable&gt;&lt;/command&gt;.</screen>
+<screen outputformat="adoc">To list the contents of a directory, execute
+ `ls &lt;DIRECTORY&gt;`.</screen>
     </section>
-<!-- ADOC update prompts for adoc + how to expand prompt entitites inside
-    code blocks-->
+<!-- ADOC  how to expand prompt entitites inside code blocks-->
     <section xml:id="sec-prompt">
       <title>Prompts</title>
       <para>
-        When documenting commands entered into Bash with a
-        <tag class="emptytag">screen</tag> element, always prefix them with a
-        prompt marked up this way:
+        When documenting commands entered into Bash with a code block, always
+        prefix them with a prompt marked up this way:
       </para>
-<screen>&lt;prompt&gt;&amp;gt;&amp;nbsp;&lt;/prompt&gt;&lt;command&gt;ls&lt;/command&gt;</screen>
+<screen outputformat="db">&lt;prompt&gt;&amp;gt;&amp;nbsp;&lt;/prompt&gt;&lt;command&gt;ls&lt;/command&gt;</screen>
+<screen outputformat="adoc">&gt; ls</screen>
       <para>
         To avoid making prompts longer than necessary, do not include paths,
         user or host names, unless this is vital to understanding. The first
@@ -568,13 +587,14 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
         <xref linkend="sec-name"/>.
       </para>
       <para>
-        Whenever you provide commands in a <tag class="emptytag">screen</tag>,
-        make it clear if the user needs regular or elevated privileges. Avoid
-        using root prompts in your documentation by using the
-        <command>sudo</command> command where applicable. If you do need a root
-        prompt, always mark it up as follows:
+        Whenever you provide commands in a code block, make it clear if the user
+        needs regular or elevated privileges. Avoid using root prompts in your
+        documentation by using the <command>sudo</command> command where
+        applicable. <phrase
+        outputformat="db">If you do need a root
+        prompt, always mark it up as follows:</phrase>
       </para>
-<screen>&lt;prompt role="root"&gt;#&amp;nbsp;&lt;/prompt&gt;&lt;command&gt;yast&lt;/command&gt;</screen>
+<screen outputformat="db">&lt;prompt role="root"&gt;#&amp;nbsp;&lt;/prompt&gt;&lt;command&gt;yast&lt;/command&gt;</screen>
       <para>
         When documenting prompts other than the one of Bash, use a custom prompt
         that is as generic as possible.
@@ -588,7 +608,7 @@ in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
       </para>
     </section>
     <section xml:id="sec-screen">
-      <title>Screens</title>
+      <title>Screens or code blocks</title>
       <para>
         Screens are used to present:
       </para>
@@ -766,15 +786,19 @@ data  home  lost+found  opt     run   srv      tmp
         <xref linkend="sec-prompt"/>, and <xref linkend="sec-callout"/>.
       </para>
     </section>
-<!-- ADOC add variables to the squeezed literals above-->
     <section xml:id="sec-variable">
       <title>Variable names</title>
       <para>
-        To reference to names of variables, use the
-        <tag class="emptytag">varname</tag> element:
+        To reference to names of variables, use <phrase outputformat="db">the
+        <tag class="emptytag">varname</tag>
+        element</phrase><phrase
+        outputformat="adoc">single backticks
+        (<literal>`</literal>)</phrase>:
       </para>
-<screen>To select another display manager, start the YaST system configuration editor
+<screen outputformat="db">To select another display manager, start the YaST system configuration editor
 and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
+<screen outputformat="adoc">To select another display manager, start the YaST system configuration editor
+and change the value of `DISPLAYMANAGER`.</screen>
     </section>
   </section>
   <section xml:id="sec-cross-reference">
@@ -811,7 +835,7 @@ and change the value of &lt;varname&gt;DISPLAYMANAGER&lt;/varname&gt;.</screen>
   &lt;/para&gt;</emphasis>
  &lt;/sect2&gt;</screen>
     </example>
-    <example xml:id="ex-cross-reference-source" outputformat="adoc">
+    <example xml:id="ex-cross-reference-source-adoc" outputformat="adoc">
       <title>Example of a cross-reference (source)</title>
 <screen>[#sec-cross-reference,reftext=Custom cross reference]
 === Cross-references
@@ -921,7 +945,7 @@ will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
 5174 ?        S      0:04 kdeinit: kicker&lt;/screen&gt;
 &lt;/example&gt;</screen>
     </example>
-    <example xml:id="ex-example" outputformat="adoc">
+    <example xml:id="ex-example-adoc" outputformat="adoc">
       <title>Example of an example</title>
 <screen>[#ex-example]
 .Example of an example
@@ -1066,11 +1090,9 @@ tux > ps -xa
       </listitem>
     </itemizedlist>
     <para>
-<!-- ADOC i dont understand this one-->
-      Do not use <tag class="emptytag">link</tag> to link to &suse;
-      documentation outside of the current document set. Instead, use the
-      appropriate entity for the book title. Always reference the book itself,
-      as chapter names can change.
+      Do not link to &suse; documentation outside of the current document set.
+      Instead, use the appropriate entity for the book title. Always reference
+      the book itself, as chapter names can change.
     </para>
     <para>
       For consistency, do not use the article in front of the name of the
@@ -1298,7 +1320,7 @@ tux > ps -xa
  &lt;/mediaobject&gt;
 &lt;/figure&gt;</screen>
     </example>
-    <example xml:id="ex-figure" outputformat="adoc">
+    <example xml:id="ex-figure-adoc" outputformat="adoc">
       <title>Example of an image macro</title>
 <screen>.An interesting picture
 [#fig-picture]
@@ -1563,7 +1585,8 @@ image::sunset.jpg[Cat chasing Geeko,200]</screen>
       </listitem>
     </itemizedlist>
     <para>
-      The markup for a glossary entry is shown in <xref linkend="ex-glossary"/>.
+      The markup for a glossary entry is shown in
+      <xref linkend="ex-glossary" outputformat="db"/><xref linkend="ex-glossary-adoc" outputformat="adoc"/>.
     </para>
     <example xml:id="ex-glossary" outputformat="db">
       <title>A typical example of a glossary</title>
@@ -1598,7 +1621,7 @@ image::sunset.jpg[Cat chasing Geeko,200]</screen>
 
 &lt;/glossary&gt;</screen>
     </example>
-    <example xml:id="ex-glossary" outputformat="adoc">
+    <example xml:id="ex-glossary-adoc" outputformat="adoc">
       <title>A typical example of a glossary</title>
 <screen>[glossary]
 == Glossary
@@ -1648,7 +1671,8 @@ DocBook:: an XML-based markup language designed for writing structured technical
               <para>
                 Signifies the type of XML element. Prefixes aid writers in
                 creating logically named identifiers for elements. Use
-                identifiers in accordance with <xref linkend="tab-id-prefix"/>.
+                identifiers in accordance with
+                <xref linkend="tab-id-prefix" outputformat="db"/><xref linkend="tab-id-prefix-adoc" outputformat="adoc"/>.
               </para>
             </formalpara>
             <para outputformat="db">
@@ -1807,7 +1831,7 @@ xml:id="tab-install-source"</screen>
           <row>
             <entry><tag class="emptytag">orderedlist</tag>
             </entry>
-            <entry><tag class="attvalue">ol</tag><footnoteref linkend="fn-vl"/>
+            <entry><tag class="attvalue">ol</tag>
             </entry>
           </row>
           <row>
@@ -1883,7 +1907,7 @@ xml:id="tab-install-source"</screen>
         </tbody>
       </tgroup>
     </table>
-    <table xml:id="tab-id-prefix" outputformat="adoc">
+    <table xml:id="tab-id-prefix-adoc" outputformat="adoc">
       <title>Abbreviations for different elements in identifiers</title>
       <tgroup cols="2">
         <thead>
@@ -2237,7 +2261,7 @@ xml:id="tab-install-source"</screen>
  &lt;/listitem&gt;
 &lt;/itemizedlist&gt;</screen>
       </example>
-      <example xml:id="ex-itemized-list-source" outputformat="adoc">
+      <example xml:id="ex-itemized-list-source-adoc" outputformat="adoc">
         <title>Example of an itemized list (source)</title>
 <screen>The following operating systems are supported:
 * Linux, Kernel 2.4 and newer
@@ -2290,7 +2314,7 @@ xml:id="tab-install-source"</screen>
  &lt;/listitem&gt;
 &lt;/orderedlist&gt;</screen>
       </example>
-      <example xml:id="ex-ordered-list-source" outputformat="adoc">
+      <example xml:id="ex-ordered-list-source-adoc" outputformat="adoc">
         <title>Example of an ordered list (source)</title>
 <screen>Before installing, make sure of the following:
 . The network connection of the computer is configured properly.
@@ -2357,7 +2381,7 @@ xml:id="tab-install-source"</screen>
  &lt;/varlistentry&gt;
 &lt;/variablelist&gt;</screen>
       </example>
-      <example xml:id="ex-variable-list-source" outputformat="adoc">
+      <example xml:id="ex-variable-list-source-adoc" outputformat="adoc">
         <title>Example of a variable list (source)</title>
 <screen>This book consists of several parts:
 Installation:: Learn about the installation and initial configuration of a Linux system.
@@ -2411,7 +2435,7 @@ System:: Get a basic understanding of the system components.</screen>
       <tag
       class="emptytag">keycap</tag> elements are then created
       automatically.</phrase><phrase outputformat="adoc">enter multiple keys
-      concatenated with <literal>+</literal>, for example <literal>kbd:
+      concatenated with <literal>+</literal>, such as <literal>kbd:
       [key+key+key+...]</literal>.</phrase>
     </para>
     <tip outputformat="adoc">
@@ -2435,7 +2459,7 @@ System:: Get a basic understanding of the system components.</screen>
       <title>Example of a key</title>
 <screen>To create a screenshot, press &lt;keycap&gt;Print Screen&lt;/keycap&gt;.</screen>
     </example>
-    <example xml:id="ex-key" outputformat="adoc">
+    <example xml:id="ex-key-adoc" outputformat="adoc">
       <title>Example of a key</title>
 <screen>To create a screenshot, press kbd:[Print Screen].</screen>
     </example>
@@ -2444,7 +2468,7 @@ System:: Get a basic understanding of the system components.</screen>
 <screen>To save a file, press
 &lt;keycombo&gt;&lt;keycap function="control"/&gt;&lt;keycap&gt;S&lt;/keycap&gt;&lt;/keycombo&gt;.</screen>
     </example>
-    <example xml:id="ex-keyboard" outputformat="adoc">
+    <example xml:id="ex-keyboard-adoc" outputformat="adoc">
       <title>Example of a keyboard combination</title>
 <screen>To save a file, press kbd:[Ctrl+S]</screen>
     </example>
@@ -2714,7 +2738,7 @@ System:: Get a basic understanding of the system components.</screen>
  &lt;/step&gt;
 &lt;/procedure&gt;</screen>
     </example>
-    <example xml:id="ex-procedure-source" outputformat="adoc">
+    <example xml:id="ex-procedure-source-adoc" outputformat="adoc">
       <title>Example of a procedure (source)</title>
 <screen>[#pro-procedure]
 .Example of a procedure
@@ -2880,7 +2904,7 @@ To add a new user to the system, perform the following steps:
         </para>
       </listitem>
     </itemizedlist>
-    <!-- ADOC how do we profile in adoc?-->
+<!-- ADOC how do we profile in adoc?-->
     <example xml:id="ex-profiling-xml" outputformat="db">
       <title>Single profiling with the attribute <tag class="attribute">os</tag></title>
 <screen>
@@ -2961,7 +2985,7 @@ Entire hard disks are listed as devices without numbers, such as
  &lt;/qandaentry&gt;
 &lt;/qandaset&gt;</screen>
     </example>
-    <example xml:id="ex-question" outputformat="adoc">
+    <example xml:id="ex-question-adoc" outputformat="adoc">
       <title>Example of a questions-and-answers section (source)</title>
 <screen>[qanda]
 .Example of a questions-and-answers section
@@ -3091,15 +3115,16 @@ There are less than 4 GB of space available on the selected partition.</screen>
         structure instead of this mishmash.
       </remark>
     <para>
-      To reference file names, use <phrase outputformat="adoc">monospaced
-      <literal>`filename`</literal></phrase><phrase outputformat="db">the <tag
-      class="emptytag">filename</tag>
-      element</phrase> without the <literal>file://</literal> prefix. To
-      reference e-mail addresses, use the <phrase
-      outputformat="adoc">clickable<literal> mailto:john@example.com[]</literal>
-      macro or unclickable monospaced `john@example.com`</phrase>
-      without the <literal>mailto:</literal> prefix</phrase>. See also
-      <phrase outputformat="db"><tag class="emptytag">email</tag> element
+      To reference file names, use <phrase outputformat="adoc">a monospaced
+      <literal>`filename`</literal></phrase><phrase outputformat="db">the
+      <tag
+      class="emptytag">filename</tag> element</phrase> without the
+      <literal>file://</literal> prefix. To reference e-mail addresses, use the
+      <phrase
+      outputformat="adoc">clickable<literal>
+      mailto:john@example.com[]</literal> macro or unclickable monospaced
+      `john@example.com`</phrase><phrase outputformat="db"><tag class="emptytag">email</tag>
+      element without the <literal>mailto:</literal> prefix</phrase>. See also
       <xref linkend="sec-file-markup"/>.
     </para>
     <para>
@@ -3108,22 +3133,27 @@ There are less than 4 GB of space available on the selected partition.</screen>
     <itemizedlist>
       <listitem>
         <para>
-          <quote outputformat="db">the man page of <command>command</command></quote>
-          <quote outputformat="adoc">the man page of `command`</quote>
+          <quote outputformat="db">the man page of
+          <command>command</command></quote> <quote outputformat="adoc">the man
+          page of `command`</quote>
         </para>
       </listitem>
       <listitem>
         <para>
-          <quote outputformat="db">the info page of <command>command</command></quote>
-          <quote outputformat="adoc">the info page of `command`</quote>
+          <quote outputformat="db">the info page of
+          <command>command</command></quote> <quote outputformat="adoc">the info
+          page of `command`</quote>
         </para>
       </listitem>
     </itemizedlist>
     <para>
       In a situation where the category of the page is needed, append the
-      category in parentheses. For example, use <quote
-      outputformat="db">(<command>man 9 command</command>)</quote><quote
-      outputformat="adoc">(`man 9 command`)</quote>.
+      category in parentheses. For example, use
+      <quote
+      outputformat="db">(<command>man 9
+      command</command>)</quote><quote
+      outputformat="adoc">(`man 9
+      command`)</quote>.
     </para>
 <screen outputformat="db">To learn more about subcommands, see the man page of
 &lt;command&gt;command&lt;/command&gt;.</screen>
@@ -3132,9 +3162,11 @@ There are less than 4 GB of space available on the selected partition.</screen>
     <para>
       Insert references to external (non-&suse;) physical books in the format
       <quote>Title by Author (ISBN #00000000).</quote> Inclusion of the ISBN is
-      optional. Place the title in <phrase outputformat="db">a <tag
+      optional. Place the title in <phrase outputformat="db">a
+      <tag
       class="emptytag">citetitle</tag>
-      element</phrase><phrase outputformat="adoc">an italics snippet</phrase>. For example:
+      element</phrase><phrase outputformat="adoc">an italics snippet</phrase>.
+      For example:
     </para>
 <screen outputformat="db">&lt;citetitle&gt;Lorem Ipsum&lt;/citetitle&gt; by Dolores S. Amet
 (ISBN 0-246-52044-7) is a useful guide.</screen>
@@ -3235,10 +3267,10 @@ There are less than 4 GB of space available on the selected partition.</screen>
         <term>Narrow down columns</term>
         <listitem>
           <para>
-            Compress the data in your table as much as you can. Table
-            cells with less content are more easily parsed by readers. Consider
-            using icons, adding repeating words into column titles, or using
-            shorter number formats.
+            Compress the data in your table as much as you can. Table cells with
+            less content are more easily parsed by readers. Consider using
+            icons, adding repeating words into column titles, or using shorter
+            number formats.
           </para>
         </listitem>
       </varlistentry>
@@ -3271,7 +3303,6 @@ There are less than 4 GB of space available on the selected partition.</screen>
     <example xml:id="ex-table-source" outputformat="db">
       <title>Example of a table (source)</title>
 <screen>&lt;informaltable&gt;
- &lt;titlee&gt;A table with a title&lt;/title&gt;
  &lt;tgroup cols="2"&gt;
   &lt;thead&gt;
    &lt;row&gt;
@@ -3292,7 +3323,7 @@ There are less than 4 GB of space available on the selected partition.</screen>
  &lt;/tgroup&gt;
 &lt;/informaltable&gt;</screen>
     </example>
-    <example xml:id="ex-table-source" outputformat="adoc">
+    <example xml:id="ex-table-source-adoc" outputformat="adoc">
       <title>Example of a table (source)</title>
 <screen>.A table with a title
 |===
@@ -3308,7 +3339,6 @@ There are less than 4 GB of space available on the selected partition.</screen>
     <example xml:id="ex-table-output">
       <title>Example of a table (output)</title>
       <informaltable>
-        <title>A table with a title</title>
         <tgroup cols="2">
           <thead>
             <row>
@@ -3448,7 +3478,27 @@ There are less than 4 GB of space available on the selected partition.</screen>
       </tgroup>
     </table>
   </section>
-  <section xml:id="sec-ui-item-markup">
+  <section xml:id="sec-ui-item-markup-adoc" outputformat="adoc">
+    <title>User interface items</title>
+    <para>
+      To mark up buttons when describing the user interface, use the button
+      macro.
+    </para>
+    <example xml:id="ex-single-ui-item">
+      <title>Example of a single user interface item</title>
+<screen>Press the btn:[OK] button to confirm your choice.</screen>
+    </example>
+    <para>
+      To explain how to select a menu item, use the menu macro.
+    </para>
+    <example xml:id="ex-nested-ui-item">
+      <title>Example of nested user interface items</title>
+<screen>Save the file by selecting menu:File[Save].
+Select menu:View[Zoom > Reset] to reset the zoom level to the default setting.
+</screen>
+    </example>
+  </section>
+  <section xml:id="sec-ui-item-markup" outputformat="db">
     <title>User interface items</title>
     <para>
       To mark up single user interface items, use
@@ -3462,11 +3512,11 @@ There are less than 4 GB of space available on the selected partition.</screen>
       For more information about language aspects, see
       <xref linkend="sec-ui-item-language"/>.
     </para>
-    <example xml:id="ex-single-ui-item">
+    <example xml:id="ex-single-ui-item-adoc">
       <title>Example of a single user interface item</title>
 <screen>To open a file, click &lt;guimenu&gt;Open&lt;/guimenu&gt;.</screen>
     </example>
-    <example xml:id="ex-nested-ui-item">
+    <example xml:id="ex-nested-ui-item-adoc">
       <title>Example of nested user interface items</title>
 <screen>To save a file, use
 &lt;menuchoice&gt;&lt;guimenu&gt;File&lt;/guimenu&gt;&lt;guimenu&gt;Save&lt;/guimenu&gt;&lt;/menuchoice&gt;.</screen>
