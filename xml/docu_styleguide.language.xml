@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE chapter
 [
-  <!ENTITY % entities SYSTEM "entity-decl.ent">
+  <!ENTITY % entities SYSTEM "generic-entities.ent">
     %entities;
 ]>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-language">
   <title>Language</title>
   <para>
-    We write documentation in American English. Where spelling differences
-    exist between American and British English, use the American English
-    variant. For verbs ending in either <emphasis>-ise</emphasis> or
+    We write documentation in American English. Where spelling differences exist
+    between American and British English, use the American English variant. For
+    verbs ending in either <emphasis>-ise</emphasis> or
     <emphasis>-ize</emphasis> (like
     <emphasis>localise</emphasis>/<emphasis>localize</emphasis>), use the
     <emphasis>-ize</emphasis> variant.
@@ -24,12 +24,17 @@
   <para>
     The correct spelling of &suse; product names is listed in the terminology
     table (<xref linkend="app-terminology"/>) <emphasis>and</emphasis> in the
-    entities file of the Doc Kit repository at
-    <link xlink:href="https://github.com/openSUSE/doc-kit/blob/main/entities/generic-entities.ent"/>.
-    If a product name is not listed in either spot, refer to the official
-    &suse; <link xlink:href="https://www.suse.com/products/">Products</link>
-    page and the Marketing department. Make sure to not use articles in front
-    of product names.
+    <phrase outputformat="db">entities</phrase><phrase
+    outputformat="adoc">attributes</phrase>
+    file of the Doc Kit repository at
+    <link outputformat="db"
+    xlink:href="https://github.com/openSUSE/doc-kit/blob/main/entities/generic-entities.ent"/>
+    <link outputformat="adoc"
+    xlink:href="https://github.com/openSUSE/doc-kit/blob/main/entities/generic-attributes.adoc"/>.
+    If a product name is not listed in either spot, refer to the official &suse;
+    <link xlink:href="https://www.suse.com/products/">Products</link> page and
+    the Marketing department. Make sure to not use articles in front of product
+    names.
   </para>
   <para>
     When in doubt about a style rule, see <citetitle>The Chicago Manual of
@@ -38,9 +43,8 @@
   <section xml:id="sec-abbreviation">
     <title>Abbreviations</title>
     <para>
-      Avoid using abbreviations, especially unusual ones. Avoid creating
-      plurals of abbreviations, unless the abbreviation is an acronym or
-      initialism.
+      Avoid using abbreviations, especially unusual ones. Avoid creating plurals
+      of abbreviations, unless the abbreviation is an acronym or initialism.
     </para>
     <section xml:id="sec-acronym">
       <title>Acronyms</title>
@@ -60,8 +64,8 @@
       </para>
       <para>
         Create plural forms of acronyms by adding a lowercase <quote>s</quote>.
-        For example, use <quote>CDs</quote> and <quote>BIOSes.</quote> Never
-        add an apostrophe before the <quote>s</quote> or <quote>es.</quote>
+        For example, use <quote>CDs</quote> and <quote>BIOSes.</quote> Never add
+        an apostrophe before the <quote>s</quote> or <quote>es.</quote>
       </para>
       <para>
         For clarity, avoid using possessive forms of acronyms. For example, do
@@ -123,10 +127,10 @@
         Sentence-style capitalization is the most common capitalization used in
         &suse; documentation. When using sentence-style capitalization, only
         proper nouns and the first letter of the first word of a phrase are
-        capitalized. Apply sentence-style capitalization to all running text
-        and all types of headings and titles that are part of the document
-        content. An example for sentence-style capitalization is <quote>Ceph
-        core components.</quote>
+        capitalized. Apply sentence-style capitalization to all running text and
+        all types of headings and titles that are part of the document content.
+        An example for sentence-style capitalization is <quote>Ceph core
+        components.</quote>
       </para>
     </section>
     <section xml:id="sec-capitalization-title">
@@ -145,9 +149,8 @@
         </listitem>
         <listitem>
           <para>
-            Write articles in lowercase. Articles are:
-            <emphasis>the</emphasis>, <emphasis>a</emphasis>, and
-            <emphasis>an</emphasis>.
+            Write articles in lowercase. Articles are: <emphasis>the</emphasis>,
+            <emphasis>a</emphasis>, and <emphasis>an</emphasis>.
           </para>
         </listitem>
         <listitem>
@@ -189,24 +192,23 @@
   <section xml:id="sec-colons">
     <title>Colons</title>
     <para>
-      Capitalize the first word after a colon only if it is a proper noun 
-      or the start of a complete sentence. For example: <quote>Error 
-      message: The system could not connect to the server.</quote> 
-      But: <quote>Server roles: file server, Web server and database 
-      server.</quote>
+      Capitalize the first word after a colon only if it is a proper noun or the
+      start of a complete sentence. For example: <quote>Error message: The
+      system could not connect to the server.</quote> But: <quote>Server roles:
+      file server, Web server and database server.</quote>
     </para>
   </section>
   <section xml:id="sec-comma">
     <title>Commas</title>
     <para>
-      Use commas to separate elements in a series of three or more elements,
-      but do not put a comma before the conjunction in most simple series. For
+      Use commas to separate elements in a series of three or more elements, but
+      do not put a comma before the conjunction in most simple series. For
       example, <quote>Find basic information about how to register your system,
       modules and extensions.</quote> Use commas around phrases like
       <emphasis>for example</emphasis> and <emphasis>that is</emphasis>.
       Introductory phrases at the beginning of a sentence are normally followed
-      by a comma. For example, <quote>Before using YaST Online Update,
-      configure a network connection.</quote>
+      by a comma. For example, <quote>Before using YaST Online Update, configure
+      a network connection.</quote>
     </para>
   </section>
   <section xml:id="sec-contraction">
@@ -250,8 +252,8 @@
         <para>
           In general, use forward slashes (<literal>/</literal>) to separate
           nested directory or file names. If you are describing actions
-          performed on Windows&thrdmrk; systems and within a Windows-native
-          file system, use backward slashes (<literal>\</literal>) instead.
+          performed on Windows&thrdmrk; systems and within a Windows-native file
+          system, use backward slashes (<literal>\</literal>) instead.
         </para>
       </listitem>
       <listitem>
@@ -309,12 +311,12 @@
       Generally, hyphens are used as joiners for two or more words that form a
       single concept and function together as a compound modifier before the
       noun. If the noun comes first, the hyphen is not added. For example,
-      <quote>the list in the upper-left corner</quote> but <quote>place the
-      list in the corner in the upper left.</quote>
+      <quote>the list in the upper-left corner</quote> but <quote>place the list
+      in the corner in the upper left.</quote>
     </para>
     <para>
-      There are technical guidelines to help you choose whether to use or not
-      to use a hyphen.
+      There are technical guidelines to help you choose whether to use or not to
+      use a hyphen.
     </para>
     <para>
       Add the hyphen when:
@@ -322,8 +324,8 @@
     <itemizedlist>
       <listitem>
         <para>
-          The last letter of the prefix and the first letter of the word are
-          the same (<quote>shell-like</quote>). However, double-e combinations
+          The last letter of the prefix and the first letter of the word are the
+          same (<quote>shell-like</quote>). However, double-e combinations
           usually do not get a hyphen: <quote>preempted,</quote>
           <quote>reelected.</quote>
         </para>
@@ -374,11 +376,11 @@
       numbers.
     </para>
     <para>
-      When the unit of a measurement is abbreviated, always use numerals for
-      the number. In measurements, add a non-breaking space
+      When the unit of a measurement is abbreviated, always use numerals for the
+      number. In measurements, add a non-breaking space
       (<tag class="genentity">nbsp</tag>) between the numeral and its
-      corresponding unit abbreviation. Use the % sign when paired with a
-      number, with no space.
+      corresponding unit abbreviation. Use the % sign when paired with a number,
+      with no space.
     </para>
     <para>
       For more information, see <citetitle>The Chicago Manual of
@@ -411,44 +413,47 @@
       do not use quotation marks:
     </para>
     <itemizedlist>
-      <listitem>
+      <listitem outputformat="db">
         <para>
           For computer input, computer output and user interface elements, use
           different markup. See also <xref linkend="sec-command-line"/>,
-          <xref linkend="sec-ui-item-markup"/>, and
-          <xref linkend="sec-taglis-docbook"/>.
+          <xref linkend="sec-ui-item-markup" outputformat="db"/><xref linkend="sec-ui-item-markup-adoc" outputformat="adoc"/>,
+          and <xref linkend="sec-taglis-docbook"/>.
         </para>
       </listitem>
       <listitem>
         <para>
-          Use <tag class="emptytag">emphasis</tag> to call attention to new
-          words or phrases, for example, <quote>using so-called
+          Use
+          <tag outputformat="db" class="emptytag">emphasis</tag><phrase
+          outputformat="adoc">underscores
+          <literal>_emphasized_phrase_</literal></phrase> to call attention to
+          new words or phrases, for example, <quote>using so-called
           <emphasis>target units</emphasis>,</quote> to use words in a
           non-standard way, for example, <quote>packages can get in an
-          <emphasis>orphaned</emphasis> state,</quote> and to refer to a word
-          or term itself, for example, <quote>The word
+          <emphasis>orphaned</emphasis> state,</quote> and to refer to a word or
+          term itself, for example, <quote>The word
           <emphasis>processor</emphasis> came into use around 1910.</quote>
         </para>
       </listitem>
       <listitem>
         <para>
-          Do not use quotation marks to indicate irony. Avoid irony in
-          technical writing. See also <xref linkend="sec-tone"/>.
+          Do not use quotation marks to indicate irony. Avoid irony in technical
+          writing. See also <xref linkend="sec-tone"/>.
         </para>
       </listitem>
     </itemizedlist>
-    <para>
+    <para outputformat="db">
       To create quotations, use the <tag class="emptytag">quote</tag> element.
       This element is easier to localize than hardcoded quotation marks. During
-      processing, localized quotation marks are added automatically. Avoid
-      using single quotation marks.
+      processing, localized quotation marks are added automatically. Avoid using
+      single quotation marks.
     </para>
     <para>
       The period and the comma always go within the quotation marks, as
       illustrated in <xref linkend="ex-quote"/>. The dash, the semicolon, the
       colon, the question mark and the exclamation mark go within the quotation
-      marks when they apply to the quoted matter only. They go outside when
-      they apply to the whole sentence.
+      marks when they apply to the quoted matter only. They go outside when they
+      apply to the whole sentence.
     </para>
     <example xml:id="ex-quote">
       <title>Quote</title>
@@ -468,13 +473,13 @@
     <title>Sentence structure</title>
     <para>
       Form clear and direct sentences with 25 words or less. Avoid complicated
-      clauses. Make sure that the relationship between subject, verb, and
-      object is clear. Avoid joining sentences with semicolons. Avoid ending
-      sentences with prepositions.
+      clauses. Make sure that the relationship between subject, verb, and object
+      is clear. Avoid joining sentences with semicolons. Avoid ending sentences
+      with prepositions.
     </para>
     <para>
-      Avoid using parentheses. Where they are necessary, move them to the end
-      of the sentence. Never nest parentheses.
+      Avoid using parentheses. Where they are necessary, move them to the end of
+      the sentence. Never nest parentheses.
     </para>
     <para>
       Always let the reader know the objective of an action before describing
@@ -485,10 +490,9 @@
   <section xml:id="sec-slash">
     <title>Slashes</title>
     <para>
-      Do not use slashes except when they are part of a standard technical
-      term, such as <emphasis>TCP/IP</emphasis> or
-      <emphasis>client/server</emphasis>. Do not add spaces on either side 
-      of a forward slash.
+      Do not use slashes except when they are part of a standard technical term,
+      such as <emphasis>TCP/IP</emphasis> or <emphasis>client/server</emphasis>.
+      Do not add spaces on either side of a forward slash.
     </para>
   </section>
   <section xml:id="sec-tense">
@@ -509,21 +513,21 @@
     </para>
     <para>
       Use the second person (<quote>you</quote>) to refer to the reader.
-      Normally, the reader is the user or administrator who performs the
-      actions described. For example, <quote>To install all officially released
-      patches that apply to your system, run <command>zypper
-      patch</command>.</quote> Do not overuse <quote>you</quote> and
-      <quote>your.</quote> It is often implied who you are addressing in the
-      instructions. For example, instead of <quote>Install
-      <emphasis>package</emphasis> on your system,</quote> just say
-      <quote>Install <emphasis>package</emphasis> on the system.</quote>
+      Normally, the reader is the user or administrator who performs the actions
+      described. For example, <quote>To install all officially released patches
+      that apply to your system, run <command>zypper patch</command>.</quote> Do
+      not overuse <quote>you</quote> and <quote>your.</quote> It is often
+      implied who you are addressing in the instructions. For example, instead
+      of <quote>Install <emphasis>package</emphasis> on your system,</quote>
+      just say <quote>Install <emphasis>package</emphasis> on the
+      system.</quote>
     </para>
     <para>
-      Where possible, use active voice. If there is no emphasis on the object
-      of the verb or if the performer of the action is unknown, use passive
-      voice. <quote>A Samba server must be configured in the network</quote> is
-      an example of the proper use of passive voice. The emphasis is on the
-      server, not on the person configuring it.
+      Where possible, use active voice. If there is no emphasis on the object of
+      the verb or if the performer of the action is unknown, use passive voice.
+      <quote>A Samba server must be configured in the network</quote> is an
+      example of the proper use of passive voice. The emphasis is on the server,
+      not on the person configuring it.
     </para>
     <para>
       When giving a recommendation, start with <quote>We recommend.</quote> Do
@@ -553,14 +557,14 @@
       </listitem>
       <listitem>
         <para>
-          Use an * (asterisk) for all service marks or trademarks of
-          third-party companies. This acknowledges the service mark or
-          trademark of the other company. It also protects &suse; if the
-          protection of the brand changes in any way.
+          Use an * (asterisk) for all service marks or trademarks of third-party
+          companies. This acknowledges the service mark or trademark of the
+          other company. It also protects &suse; if the protection of the brand
+          changes in any way.
         </para>
       </listitem>
     </itemizedlist>
-    <para>
+    <para outputformat="db">
       For more information about markup aspects, see
       <xref linkend="sec-product"/>.
     </para>
@@ -573,8 +577,8 @@
       Whenever possible, refer to user interface items without identifying them
       as any special type of element. For example, use <quote>click
       <guimenu>OK</guimenu></quote> rather than <quote>click the
-      <guimenu>OK</guimenu> button.</quote> However, complex dialogs may
-      require more specific wording.
+      <guimenu>OK</guimenu> button.</quote> However, complex dialogs may require
+      more specific wording.
     </para>
     <para>
       When referring to UI labels, capitalize them exactly as in the UI itself.
@@ -587,7 +591,7 @@
     </para>
     <para>
       For more information about markup for UI labels, see
-      <xref linkend="sec-ui-item-markup"/>.
+      <xref linkend="sec-ui-item-markup" outputformat="db"/><xref linkend="sec-ui-item-markup-adoc" outputformat="adoc"/>.
     </para>
   </section>
 </chapter>
