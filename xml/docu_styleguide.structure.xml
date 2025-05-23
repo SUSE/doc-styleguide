@@ -2418,7 +2418,7 @@ System:: Get a basic understanding of the system components.</screen>
                 Get a basic understanding of the system components.
               </para>
             </listitem>
-            </varlistentry>
+          </varlistentry>
         </variablelist>
       </example>
     </section>
@@ -2444,7 +2444,8 @@ System:: Get a basic understanding of the system components.</screen>
       <tag
       class="emptytag">keycap</tag> elements are then created
       automatically.</phrase><phrase outputformat="adoc">enter multiple keys
-      concatenated with <literal>+</literal>, such as <literal>kbd:[key+key+key+...]</literal>.</phrase>
+      concatenated with <literal>+</literal>, such as
+      <literal>kbd:[key+key+key+...]</literal>.</phrase>
     </para>
     <tip outputformat="adoc">
       <para>
@@ -2851,12 +2852,11 @@ To add a new user to the system, perform the following steps:
       across different products or product lines. This is especially beneficial
       when similar products share a considerable amount of features, with only a
       few differences. Instead of maintaining separate documentation for each
-      product, you can share most of the XML source code and only vary text
-      snippets where necessary. In DocBook XML files, you can mark some elements
-      as conditional by using profiling attributes. Specify which conditions
-      apply to the output when processing the files to generate output. The
-      style sheets will then include or exclude the marked text, according to
-      the conditions.
+      product, you can share most of the source code and only vary text snippets
+      where necessary. When profiling, you can mark specific elements as
+      conditional and specify which conditions apply to the output when
+      processing the files to generate output. The style sheets will then
+      include or exclude the marked text, according to the conditions.
     </para>
     <para>
       Profiling allows you to keep both common and product-specific content in
@@ -2873,8 +2873,8 @@ To add a new user to the system, perform the following steps:
           Identify different variants that you want to apply to the general
           piece of text and assign clear and short identifiers to them, sticking
           to lowercase. These identifiers act as <quote>aliases</quote> for
-          longer products or deliverables. If you want to apply more than one
-          identifier to an element, separate them with a semicolon.
+          longer products or deliverables. To apply more than one identifier to
+          an element, separate them with a semicolon.
         </para>
       </listitem>
       <listitem>
@@ -2892,7 +2892,7 @@ To add a new user to the system, perform the following steps:
           Mark the variants in your text with the relevant identifiers. Any
           content that is valid for all conditions does not need any profiling
           attributes. The respective content will always be included in the
-          output formats generated from the XML sources.
+          output formats generated from the sources.
         </para>
       </listitem>
       <listitem>
