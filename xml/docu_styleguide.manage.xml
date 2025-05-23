@@ -15,7 +15,7 @@
   <section xml:id="sec-remark" outputformat="db">
     <title>Remarks</title>
     <para>
-      Use remarks for editorial comments. Remarks can be placed within, before,
+      Use remarks for editorial comments. Remarks can be placed within, before
       or after a para but must always be within a section element. When creating
       output, remarks can be made visible in the output and thus help within the
       editorial process. When creating the final output, deactivate remarks.

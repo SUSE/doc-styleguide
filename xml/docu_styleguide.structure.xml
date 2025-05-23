@@ -1445,6 +1445,13 @@ image::sunset.jpg[Cat chasing Geeko,200]</screen>
         </listitem>
         <listitem>
           <para>
+            Avoid creating screenshots of code blocks or a terminal screen
+            output. Instead, paste such content in a verbatim block. Find more
+            details in <xref linkend="sec-screen"/>.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
             Always create screenshots illustrating the situation right before an
             action has been taken.
           </para>
@@ -1639,10 +1646,10 @@ DocBook:: an XML-based markup language designed for writing structured technical
     <itemizedlist>
       <listitem>
         <para>
-          Always use an
+          Always use
           <phrase outputformat="db"><tag
           class="attribute">xml:id</tag>
-          attribute</phrase>
+          attributes</phrase>
           <phrase
           outputformat="adoc"><literal>[#example-identifier]</literal>
           identifiers</phrase> in parts, chapters, appendixes, sections,
@@ -2385,6 +2392,7 @@ xml:id="tab-install-source"</screen>
       <example xml:id="ex-variable-list-source-adoc" outputformat="adoc">
         <title>Example of a variable list (source)</title>
 <screen>This book consists of several parts:
+  
 Installation:: Learn about the installation and initial configuration of a Linux system.
 System:: Get a basic understanding of the system components.</screen>
       </example>
@@ -2410,7 +2418,7 @@ System:: Get a basic understanding of the system components.</screen>
                 Get a basic understanding of the system components.
               </para>
             </listitem>
-          </varlistentry>
+      text, use the keyboard macro: <literal>kbd:[key]</literal></phrase>
         </variablelist>
       </example>
     </section>
@@ -2419,12 +2427,12 @@ System:: Get a basic understanding of the system components.</screen>
     <title>Keys and key combinations</title>
     <para>
       <phrase outputformat="adoc">To enter keys and their combinations in the
-      text, use the keyboard macro: <literal>kbd: [key]</literal></phrase>
+      text, use the keyboard macro: <literal>kbd:[key]</literal></phrase>
       Capitalize all keys as printed on a standard keyboard. Capitalize all
       letter keys. <phrase outputformat="db">To refer to a capitalized
       character, use
       <keycombo><keycap function="shift"/><keycap>Z</keycap></keycombo>, for
-      example. Introduce this convention by means of the <quote>Typographical
+      example. Introduce this convention in the <quote>Typographical
       Conventions</quote> section of the introduction.</phrase>
     </para>
     <para>
@@ -2436,8 +2444,7 @@ System:: Get a basic understanding of the system components.</screen>
       <tag
       class="emptytag">keycap</tag> elements are then created
       automatically.</phrase><phrase outputformat="adoc">enter multiple keys
-      concatenated with <literal>+</literal>, such as <literal>kbd:
-      [key+key+key+...]</literal>.</phrase>
+      concatenated with <literal>+</literal>, such as <literal>kbd:[key+key+key+...]</literal>.</phrase>
     </para>
     <tip outputformat="adoc">
       <para>
@@ -2636,7 +2643,7 @@ System:: Get a basic understanding of the system components.</screen>
       <tag class="emptytag">sect5</tag> elements.</phrase>
       <phrase outputformat="adoc">Create sections by inserting
       <literal>=</literal> characters in front of their titles. The number of
-      <literal>=</literal> characters determine the depth of the section in the
+      <literal>=</literal> characters determines the depth of the section in the
       document structure. Do not go deeper than section level 3.</phrase>
       Instead, create a flatter structure in which more elements are visible at
       a glance.
@@ -3197,8 +3204,8 @@ There are less than 4 GB of space available on the selected partition.</screen>
     <title>Tables</title>
     <para>
       Use tables to present many similar facts. Tables are easy to scan and
-      compare. Always keep tables simple enough to not require long explanations
-      even for readers unfamiliar with the topic.
+      compare. Always keep tables simple enough to not require long
+      explanations, even for readers unfamiliar with the topic.
     </para>
     <para>
       A table always has a title and should have an identifier.
