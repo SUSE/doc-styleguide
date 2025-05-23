@@ -378,13 +378,13 @@ default 0 <co xml:id="co-default"/></screen>
       outputformat="adoc">enclose
       it with single backticks (<literal>`</literal>)</phrase>. In all other
       cases, close the current paragraph and enclose the user input and/or
-      system output in a <tag class="emptytag" outputformat="db">screen
-      element</tag><phrase
-      outputformat="adoc">code block</phrase>. See
-      also <xref linkend="sec-example"/>.
+      system output in a <tag class="emptytag" outputformat="db">screen</tag>
+      element<phrase
+      outputformat="adoc">code block</phrase>. See also
+      <xref linkend="sec-example"/>.
     </para>
     <para>
-      When using a stand-alone command elements outside of a code bloc, do not
+      When using a stand-alone command elements outside of a code block, do not
       use prompt elements before or within them. For more information about
       prompts, see <xref linkend="sec-prompt"/>.
     </para>
@@ -502,7 +502,7 @@ default 0 <co xml:id="co-default"/></screen>
       </para>
 <screen outputformat="db">To start LibreOffice Writer from the command line, use
 &lt;command&gt;loffice --writer&lt;/command&gt;.</screen>
-<screen outputformat="db">To start LibreOffice Writer from the command line, use
+<screen outputformat="adoc">To start LibreOffice Writer from the command line, use
 `loffice --writer`.</screen>
       <para>
         If options or subcommands stand for themselves in a text, wrap them in
@@ -608,9 +608,11 @@ in the directory `/etc/sysconfig`.</screen>
       </para>
     </section>
     <section xml:id="sec-screen">
-      <title>Screens or code blocks</title>
+      <title>Verbatim blocks</title>
       <para>
-        Screens are used to present:
+        Verbatim blocks
+        <phrase>(<quote outputformat="db">screens</quote><quote outputformat="adoc">code
+        blocks</quote>)</phrase> are used to present:
       </para>
       <itemizedlist>
         <listitem>
@@ -627,8 +629,6 @@ in the directory `/etc/sysconfig`.</screen>
           <para>
             code or configuration examples
           </para>
-        </listitem>
-      </itemizedlist>
 <screen outputformat="db">&lt;screen&gt;&lt;prompt&gt;tux &amp;gt; &lt;/prompt&gt;&lt;command&gt;ls /&lt;/command&gt;
 bin   dev   lib         mnt     proc  sbin     suse  usr
 boot  etc   lib64       mounts  root  selinux  sys   var
@@ -640,7 +640,7 @@ bin   dev   lib         mnt     proc  sbin     suse  usr
 boot  etc   lib64       mounts  root  selinux  sys   var
 data  home  lost+found  opt     run   srv      tmp
 ----</screen>
-      <itemizedlist>
+        </listitem>
         <listitem>
           <para>
             Use screens only where necessary for understanding the
@@ -811,12 +811,11 @@ and change the value of `DISPLAYMANAGER`.</screen>
       ref</quote>)</phrase> when referring to an appendix, chapter, example,
       figure, part, preface, section, table or question and answer set. The
       element referenced needs to have <phrase outputformat="db"> an
-      <tag
-      class="attribute">xml:id</tag> attribute,</phrase> an
-      identifier (ID). Create identifiers to reference from cross-references
-      using the rules under <xref linkend="sec-id"/>. Note that the a cross
-      reference only works when it links to documentation within the same set,
-      for example, the same book or set of books.
+      <tag class="attribute">xml:id</tag> attribute,</phrase> an identifier
+      (ID). Create identifiers to reference from cross-references using the
+      rules under <xref linkend="sec-id"/>. Note that a cross-reference only
+      works when it links to documentation within the same set, for example, the
+      same book or set of books.
     </para>
     <para>
       Other types of references to resources are described in
@@ -876,8 +875,8 @@ See &lt;&lt;sec-cross-reference&gt;&gt;.</screen>
           Do not create references to paragraphs or other elements that have no
           title. An exception to this rule is the element procedure steps to
           which you may create references. If a reference to an element without
-          a title is vital to the document, specify custom lable to the cross
-          reference to assign a title.
+          a title is essential to the document, specify a custom label for the
+          cross-reference to assign a title.
         </para>
       </listitem>
     </itemizedlist>
@@ -907,8 +906,10 @@ See &lt;&lt;sec-cross-reference&gt;&gt;.</screen>
       characters within a word, use a pair of double asterisks
       (<literal>char**act**ers</literal>).</phrase>
     </para>
-<screen>This will be displayed in &lt;emphasis&gt;italics&lt;/emphasis&gt;. This
-will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
+<screen outputformat="db">This will be displayed in &lt;emphasis&gt;italics&lt;/emphasis&gt;.
+This will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
+<screen outputformat="adoc"> This will be displayed in _italics_.
+This will be displayed in *bold*.</screen>
   </section>
   <section xml:id="sec-example">
     <title>Examples</title>

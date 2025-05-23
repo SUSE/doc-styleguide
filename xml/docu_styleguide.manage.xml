@@ -217,8 +217,12 @@ It can include multiple lines
               titles), it is acceptable to use an entity for a product name
               acronym. Find the approved entities for product name acronyms in
               the entity declaration files, such as
-              <filename outputformat="db">product-entities.ent</filename><filename outputformat="db">product-attributes.adoc</filename>
-              or <filename outputformat="db">entity-decl.ent</filename> or
+              <phrase
+              outputformat="db"><filename>product-entities.ent</filename>
+              or
+              <filename>entity-decl.ent</filename></phrase><filename
+              outputformat="db">product-attributes.adoc</filename>
+              or
               <filename
         outputformat="db">generic-entities.ent</filename><filename
         outputformat="adoc">generic-attributes.adoc</filename>.
@@ -292,9 +296,10 @@ It can include multiple lines
             will be rolled out to all Doc Kit-based repositories with the next
             Doc Kit run. If you need a custom entity that only applies to a
             specific repository, define it in
-            <filename outputformat="db">product-entities.ent</filename><filename outputformat="db">product-attributes.adoc</filename>
-            or <filename outputformat="db">entity-decl.ent</filename> or in
-            <filename>entities-decl.ent</filename> in this specific repository.
+            <phrase outputformat="db"><filename>product-entities.ent</filename>
+            or <filename>entity-decl.ent</filename></phrase>
+            <filename outputformat="adoc">product-attributes.adoc</filename> in
+            this specific repository.
           </para>
           <para>
             Do not include custom entity definitions directly in the file
