@@ -574,7 +574,7 @@ in the directory `/etc/sysconfig`.</screen>
         always prefix them with a prompt marked up this way:
       </para>
 <screen outputformat="db">&lt;prompt&gt;&amp;gt;&amp;nbsp;&lt;/prompt&gt;&lt;command&gt;ls&lt;/command&gt;</screen>
-<screen outputformat="adoc">$ ls</screen>
+<screen outputformat="adoc">&gt; ls</screen>
       <para>
         To avoid making prompts longer than necessary, do not include paths,
         user or host names, unless this is vital to understanding. The first
@@ -594,13 +594,26 @@ in the directory `/etc/sysconfig`.</screen>
         When documenting prompts other than the one of Bash, use a custom prompt
         that is as generic as possible.
       </para>
-      <para outputformat="db">
-        For consistency, it is helpful to create entities for the prompts used
-        in your documentation. Doc Kit repository contains entities for
+      <para>
+        For consistency, it is helpful to create entities (attributes) for the
+        prompts used in your documentation. Doc Kit repository contains entities
+        for
         <emphasis>user</emphasis>, <emphasis>root</emphasis> and
         <emphasis>sudo</emphasis> prompts. For more information, see
         <xref linkend="sec-entity"/>.
       </para>
+      <tip outputformat="adoc">
+        <para>
+          Verbatim blocks normally do not expand attributes with their values.
+          To use attributes for prompts in a verbatim block, add
+          <literal>subs="+attributes"</literal> in its header:
+        </para>
+<screen>[source,subs="+attributes"]
+----
+{prompt_root}zypper upgrade
+----
+</screen>
+      </tip>
     </section>
     <section xml:id="sec-screen">
       <title>Verbatim blocks</title>

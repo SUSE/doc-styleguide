@@ -91,8 +91,8 @@ It can include multiple lines
   <section xml:id="sec-entity">
     <title>Entities</title>
     <para>
-      Entities are used to expand text. There are several situations in which
-      they can be used:
+      Entities (or attributes) are used to expand text. There are several
+      situations in which they can be used:
     </para>
     <itemizedlist>
       <listitem>
