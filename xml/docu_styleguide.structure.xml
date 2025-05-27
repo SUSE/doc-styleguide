@@ -210,9 +210,9 @@ Always wait until formatting has finished.
     <para>
       Callouts allow annotating examples, such as configuration files or
       commands with many options. Add callout elements directly after the part
-      of a code block that you want to annotate. Do not try to align them above
-      the part of a screen to annotate. Do not use more than ten callouts per
-      example.
+      of a verbatim block that you want to annotate. Do not try to align them
+      above the part of a screen to annotate. Do not use more than ten callouts
+      per example.
     </para>
     <para>
       See also <xref linkend="sec-example"/>.
@@ -378,14 +378,11 @@ default 0 <co xml:id="co-default"/></screen>
       outputformat="adoc">enclose
       it with single backticks (<literal>`</literal>)</phrase>. In all other
       cases, close the current paragraph and enclose the user input and/or
-      system output in a <tag class="emptytag" outputformat="db">screen</tag>
-      element<phrase
-      outputformat="adoc">code block</phrase>. See also
-      <xref linkend="sec-example"/>.
+      system output in a verbatim block. See also <xref linkend="sec-example"/>.
     </para>
     <para>
-      When using a stand-alone command elements outside of a code block, do not
-      use prompt elements before or within them. For more information about
+      When using a stand-alone command elements outside of a verbatim block, do
+      not use prompt elements before or within them. For more information about
       prompts, see <xref linkend="sec-prompt"/>.
     </para>
     <table xml:id="tab-command-line" outputformat="db">
@@ -570,15 +567,14 @@ in the directory `/etc/sysconfig`.</screen>
 <screen outputformat="adoc">To list the contents of a directory, execute
  `ls &lt;DIRECTORY&gt;`.</screen>
     </section>
-<!-- ADOC  how to expand prompt entitites inside code blocks-->
     <section xml:id="sec-prompt">
       <title>Prompts</title>
       <para>
-        When documenting commands entered into Bash with a code block, always
-        prefix them with a prompt marked up this way:
+        When documenting commands entered into Bash with a verbatim block,
+        always prefix them with a prompt marked up this way:
       </para>
 <screen outputformat="db">&lt;prompt&gt;&amp;gt;&amp;nbsp;&lt;/prompt&gt;&lt;command&gt;ls&lt;/command&gt;</screen>
-<screen outputformat="adoc">&gt; ls</screen>
+<screen outputformat="adoc">$ ls</screen>
       <para>
         To avoid making prompts longer than necessary, do not include paths,
         user or host names, unless this is vital to understanding. The first
@@ -587,19 +583,18 @@ in the directory `/etc/sysconfig`.</screen>
         <xref linkend="sec-name"/>.
       </para>
       <para>
-        Whenever you provide commands in a code block, make it clear if the user
-        needs regular or elevated privileges. Avoid using root prompts in your
-        documentation by using the <command>sudo</command> command where
-        applicable. <phrase
-        outputformat="db">If you do need a root
-        prompt, always mark it up as follows:</phrase>
+        Whenever you provide commands in a verbatim block, make it clear if the
+        user needs regular or elevated privileges. Avoid using root prompts in
+        your documentation by using the <command>sudo</command> command where
+        applicable. If you do need a root prompt, always mark it up as follows:
       </para>
 <screen outputformat="db">&lt;prompt role="root"&gt;#&amp;nbsp;&lt;/prompt&gt;&lt;command&gt;yast&lt;/command&gt;</screen>
+<screen outputformat="adoc"># yast</screen>
       <para>
         When documenting prompts other than the one of Bash, use a custom prompt
         that is as generic as possible.
       </para>
-      <para>
+      <para outputformat="db">
         For consistency, it is helpful to create entities for the prompts used
         in your documentation. Doc Kit repository contains entities for
         <emphasis>user</emphasis>, <emphasis>root</emphasis> and
@@ -1445,7 +1440,7 @@ image::sunset.jpg[Cat chasing Geeko,200]</screen>
         </listitem>
         <listitem>
           <para>
-            Avoid creating screenshots of code blocks or a terminal screen
+            Avoid creating screenshots of verbatim blocks or a terminal screen
             output. Instead, paste such content in a verbatim block. Find more
             details in <xref linkend="sec-screen"/>.
           </para>
@@ -1561,6 +1556,17 @@ image::sunset.jpg[Cat chasing Geeko,200]</screen>
       definition with the term itself. Use lowercase for the term unless it is a
       proper noun.
     </para>
+    <tip>
+      <para>
+        To keep definitions consistent, check &suse;'s official terminology
+        database called <emphasis>TermWeb</emphasis>
+        (<link
+        xlink:href="https://suse.termweb.eu/search/terms"/>). It
+        contains company-specific terminology in English and all our supported
+        languages. When defining a term, consult TermWeb first to ensure you are
+        using the approved wording and preferred spelling.
+      </para>
+    </tip>
     <para outputformat="adoc">
       You can include a glossary in an article, book and book part by setting
       the <literal>glossary</literal> style on a section.
@@ -2860,8 +2866,8 @@ To add a new user to the system, perform the following steps:
     </para>
     <para>
       Profiling allows you to keep both common and product-specific content in
-      one XML file and select at production time which information to include in
-      the output.
+      one file and select at production time which information to include in the
+      output.
     </para>
     <para>
       If you need to use profiling in your writing, adhere to the following
@@ -2873,8 +2879,9 @@ To add a new user to the system, perform the following steps:
           Identify different variants that you want to apply to the general
           piece of text and assign clear and short identifiers to them, sticking
           to lowercase. These identifiers act as <quote>aliases</quote> for
-          longer products or deliverables. To apply more than one identifier to
-          an element, separate them with a semicolon.
+          longer products or deliverables. <phrase outputformat="db">To apply
+          more than one identifier to an element, separate them with a
+          semicolon.</phrase>
         </para>
       </listitem>
       <listitem>
@@ -2882,9 +2889,16 @@ To add a new user to the system, perform the following steps:
           Select one or more profiling attributes and add them to the text
           snippets that are conditional. The tagged snippets will only be
           included in the output if all required conditions are fulfilled. In
-          most cases, the attribute to use is <literal>os</literal>. For
-          different processor architectures, use <literal>arch</literal>. The
-          general-purpose attribute is <literal>condition</literal>.
+          most cases, the attribute to use is
+          <literal
+          outputformat="db">os</literal><literal
+          outputformat="adoc">:prof-os:</literal>.
+          For different processor architectures, use
+          <literal outputformat="db">arch</literal><literal
+          outputformat="adoc">:prof-arch:</literal>.
+          The general-purpose attribute is
+          <literal outputformat="db">condition</literal><literal
+          outputformat="adoc">:prof-condition:</literal>.
         </para>
       </listitem>
       <listitem>
@@ -2897,17 +2911,18 @@ To add a new user to the system, perform the following steps:
       </listitem>
       <listitem>
         <para>
-          Create a different DC file for each variant. Add the respective
-          profiling variable and its value to the DC file.
+          <phrase outputformat="adoc">If you are using DC files,
+          create</phrase><phrase outputformat="db">Create</phrase> a different
+          DC file for each variant. Add the respective profiling variable and
+          its value to the DC file.
         </para>
       </listitem>
       <listitem outputformat="db">
         <para>
-          DocBook allows you to use multiple profiling attributes to handle more
-          complex scenarios. For example, if you have conditions for
-          architecture (<literal>arch</literal>) and operating system
-          (<literal>os</literal>), you can create different versions of a
-          document for different combinations of these conditions, as shown in
+          You can use multiple profiling attributes to handle more complex
+          scenarios. For example, if you have conditions for architecture and
+          operating system, you can create different versions of a document for
+          different combinations of these conditions, as shown in
           <xref linkend="ex-multiple-profiling"/>.
         </para>
       </listitem>
@@ -2921,6 +2936,16 @@ To add a new user to the system, perform the following steps:
 &lt;phrase os="sles;sled"&gt;Note that the official update repository is only
 available after registering your SUSE Linux Enterprise Server installation.&lt;/phrase&gt;</screen>
     </example>
+    <example xml:id="ex-profiling-adoc" outputformat="adoc">
+      <title>Single profiling with the attribute <tag class="attribute">:prof-os:</tag></title>
+<screen>
+[...]
+ifeval::["{prof-os}" == "sles"]
+Note that the official update repository is only available after registering
+your SLES installation.
+endif::[]
+</screen>
+    </example>
     <example xml:id="ex-profiling-dc">
       <title>DC file with profiling for SLES</title>
 <screen>
@@ -2928,6 +2953,14 @@ MAIN="MAIN.SLEDS.xml"
 ROOTID=book-administration
     
 ## Profiling
+PROFOS="sles"
+...</screen>
+    </example>
+    <example xml:id="ex-profiling-dc-adoc">
+      <title>DC file with profiling for SLES</title>
+<screen>
+MAIN=book.adoc
+# Profiling
 PROFOS="sles"
 ...</screen>
     </example>
