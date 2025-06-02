@@ -12,6 +12,28 @@
     This section lists the changes between versions of this Style Guide.
     </para>-->
   <!-- Add new versions to the beginning of the list. -->
+  <revision xml:id="sec-change-2025-05"><date>2025-06-02</date>
+    <revdescription>
+      <itemizedlist>
+        <listitem>
+          <para>
+            Released a new version of the style guide focused on AsciiDoc. 
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Added instructions on keyword placement to the <quote>Writing SEO-friendly content</quote> 
+            section in the <quote>Writing for the Web</quote> chapter.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Added <quote>open source</quote> to terminology as both noun and adjective.
+          </para>
+        </listitem>
+      </itemizedlist>
+    </revdescription>
+  </revision>
   <revision xml:id="sec-change-2025-03"><date>2025-03-01</date>
     <revdescription>
       <itemizedlist>
