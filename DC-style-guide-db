@@ -1,9 +1,9 @@
 # Documentation Style Guide without change log appendix
 
 MAIN="MAIN.styleguide.xml"
-ROOTID=art-styleguide
 DOCBOOK5_RNG_URI="http://www.docbook.org/xml/5.2/rng/docbookxi.rnc"
 
 STYLEROOT="/usr/share/xml/docbook/stylesheet/suse2022-ns"
 PROFCONDITION="guide"
-OUTPUTNAME="style-guide"
+PROFOUTPUTFORMAT="db"
+#OUTPUTNAME="style-guide"

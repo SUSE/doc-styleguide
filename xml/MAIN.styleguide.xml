@@ -4,7 +4,7 @@
   title="Profiling step"?>
 <!DOCTYPE book
 [
-  <!ENTITY % entities SYSTEM "entity-decl.ent">
+  <!ENTITY % entities SYSTEM "generic-entities.ent">
     %entities;
 ]>
 <book version="5.2" xml:lang="en" xml:id="art-styleguide"
@@ -13,7 +13,7 @@
   xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:its="http://www.w3.org/2005/11/its"
   xmlns:dm="urn:x-suse:ns:docmanager">
- <title>SUSE Documentation Style Guide</title>
+ <title>&productname;</title>
  <info>  
   <!-- TODO: provide a listing of possible and validatable meta entry values. Maybe in our geekodoc repo? -->
   <!-- add author's e-mail -->
@@ -24,7 +24,7 @@
   SUSE products.
   </meta>
   <meta name="social-descr" its:translate="yes">Writing, style and layout for SUSE docs</meta>
-  <productnumber>&styleguideversion;</productnumber>
+  <productnumber>&productnumber;</productnumber>
   <date>
    <?dbtimestamp?>
   </date>
@@ -35,18 +35,20 @@
     <dm:labels>via-report-link</dm:labels>
    </dm:bugtracker>
   </dm:docmanager>
-  <xi:include href="docu_styleguide.changes.xml" />
+  <xi:include href="docu_styleguide.changes.xml" outputformat="db"/>
   <abstract>
    <para>
     This guide provides answers to writing, style and layout questions
     commonly arising when editing SUSE documentation. The
-    <phrase role="productname">GeekoDoc</phrase> and <phrase role="productname">DocBook</phrase>
+    <phrase role="productname">GeekoDoc</phrase>, <phrase
+    role="productname">DocBook</phrase> and <phrase role="productname">AsciiDoc</phrase>
     markup reference in this guide will help you choose the right
-    XML element for your purpose. Following this guide will make your
+    formatting options for your purpose. Following this guide will make your
     documentation more understandable and easier to translate.
    </para>
   </abstract>
  </info>
+ <xi:include href="docu_styleguide.asciidoc.xml" outputformat="adoc"/>
  <xi:include href="docu_styleguide.techwriting.xml"/>
  <xi:include href="docu_styleguide.content.xml"/>
  <xi:include href="docu_styleguide.name.xml"/>
@@ -54,10 +56,9 @@
  <xi:include href="docu_styleguide.webwriting.xml"/>
  <xi:include href="docu_styleguide.language.xml"/>
  <xi:include href="docu_styleguide.structure.xml"/>
- <xi:include href="docu_styleguide.taglist.xml"/>
+ <xi:include href="docu_styleguide.taglist.xml" outputformat="db"/>
  <xi:include href="docu_styleguide.manage.xml"/>
- <xi:include href="docu_styleguide.xmlformat.xml"/>
- <xi:include href="docu_styleguide.asciidoc.xml"/>
+ <xi:include href="docu_styleguide.xmlformat.xml" outputformat="db"/>
  <xi:include href="docu_styleguide.smartdocs.xml"/>
  <xi:include href="docu_styleguide.terminology.xml"/>
  <xi:include href="docu_styleguide.contributors.xml"/>

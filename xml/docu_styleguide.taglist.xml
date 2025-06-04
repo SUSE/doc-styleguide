@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE chapter
 [
-  <!ENTITY % entities SYSTEM "entity-decl.ent">
+  <!ENTITY % entities SYSTEM "generic-entities.ent">
     %entities;
 ]>
 <chapter version="5.0" xml:id="sec-taglist"
@@ -10,8 +10,9 @@
  xmlns:xlink="http://www.w3.org/1999/xlink"
  >
   <title>DocBook tags</title>
+  <!-- leave this chapter out for adoc?-->
   <para>
-    The &suse; and openSUSE user documentation is written with DocBook and uses
+    The &suse; and openSUSE user documentation is written with DocBook <!-- not true--> and uses
     a Relax NG schema that defines a restricted set of DocBook tags.
   </para>
   <para>
