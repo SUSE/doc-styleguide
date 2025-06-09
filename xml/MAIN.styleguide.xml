@@ -21,9 +21,9 @@
   <meta name="title" its:translate="yes">SUSE Documentation Style Guide</meta>
   <meta name="description" its:translate="yes">This guide provides answers to writing,
   style and layout questions for creating effective and consistent documentation for
-  SUSE products.
+  SUSE products in DocBook and AsciiDoc formats
   </meta>
-  <meta name="social-descr" its:translate="yes">Writing, style and layout for SUSE docs</meta>
+  <meta name="social-descr" its:translate="yes">Writing, style and layout for SUSE documentation</meta>
   <productnumber>&productnumber;</productnumber>
   <date>
    <?dbtimestamp?>
