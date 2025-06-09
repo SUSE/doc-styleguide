@@ -1053,7 +1053,7 @@ tux > ps -xa
       (<literal>\https://example.org</literal>). To use a custom link title, use
       a URL macro:
     </para>
-<screen outputformat="adoc">Ask questions in the https://example.com[An exmaple title]</screen>
+<screen outputformat="adoc">Ask questions in the https://example.com[An example title]</screen>
     <para outputformat="db">
       Use the <tag class="emptytag">link</tag> element to mark up URLs that can
       be opened with a Web browser, such as
@@ -2990,27 +2990,27 @@ Entire hard disks are listed as devices without numbers, such as
   <section xml:id="sec-question">
     <title>Questions and answers</title>
     <para>
-      Use questions-and-answers sections to present information about
+      Use question and answer sections to present information about
       troubleshooting or commonly asked questions about a product. Never use
-      questions-and-answers sections to explain trivia, such as how a product
+      question and answer sections to explain trivia, such as how a product
       got its name. Keep your audience in mind. See also
       <xref linkend="sec-techwriting"/>.
     </para>
     <para>
       Questions must always end in a <literal>?</literal>. Where explanations
       longer than three paragraphs are necessary for an answer, add a
-      cross-reference to an explanation outside of the questions-and-answers
+      cross-reference to an explanation outside of the question and answer
       section. See also <xref linkend="sec-cross-reference"/>.
     </para>
     <para outputformat="db">
-      When a questions-and-answers section contains over 10 questions and there
+      When a question and answer section contains over 10 questions and there
       are clear topical divisions, add <tag class="emptytag">qandadiv</tag>
       elements to further structure the section.
     </para>
     <example xml:id="ex-question" outputformat="db">
-      <title>Example of a questions-and-answers section (source)</title>
+      <title>Example of a question and answer section (source)</title>
 <screen>&lt;qandaset&gt;
- &lt;title&gt;Example of a questions-and-answers section&lt;/title&gt;
+ &lt;title&gt;Example of a question and answer section&lt;/title&gt;
  &lt;qandaentry&gt;
   &lt;question&gt;
    &lt;para&gt;
@@ -3040,9 +3040,9 @@ Entire hard disks are listed as devices without numbers, such as
 &lt;/qandaset&gt;</screen>
     </example>
     <example xml:id="ex-question-adoc" outputformat="adoc">
-      <title>Example of a questions-and-answers section (source)</title>
+      <title>Example of a question and answer section (source)</title>
 <screen>[qanda]
-.Example of a questions-and-answers section
+.Example of a question and answer section
 How can I check if the product was correctly installed?::
 Open the log file.
 Look for entries starting with `Failed`.
@@ -3051,7 +3051,7 @@ Why does the error `N` occur during installation?::
 There are less than 4 GB of space available on the selected partition.</screen>
     </example>
     <qandaset>
-      <title>Example of a questions-and-answers section (output)</title>
+      <title>Example of a question and answer section (output)</title>
       <qandaentry>
         <question>
           <para>
