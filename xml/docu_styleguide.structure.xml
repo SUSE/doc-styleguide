@@ -2900,25 +2900,25 @@ To add a new user to the system, perform the following steps:
       <listitem>
         <para>
           Select one or more profiling attributes and add them to the text
-          snippets that are conditional. The tagged snippets will only be
-          included in the output if all required conditions are fulfilled. In
-          most cases, the attribute to use is
+          snippets that are conditional. The tagged snippets are only included
+          in the output if all required conditions are fulfilled. In most cases,
+          the attribute to use is
           <literal
           outputformat="db">os</literal><literal
-          outputformat="adoc">:prof-os:</literal>.
+          outputformat="adoc">:os:</literal>.
           For different processor architectures, use
           <literal outputformat="db">arch</literal><literal
-          outputformat="adoc">:prof-arch:</literal>.
+          outputformat="adoc">:arch:</literal>.
           The general-purpose attribute is
           <literal outputformat="db">condition</literal><literal
-          outputformat="adoc">:prof-condition:</literal>.
+          outputformat="adoc">:condition:</literal>.
         </para>
       </listitem>
       <listitem>
         <para>
           Mark the variants in your text with the relevant identifiers. Any
           content that is valid for all conditions does not need any profiling
-          attributes. The respective content will always be included in the
+          attributes. The respective content is always included in the
           output formats generated from the sources.
         </para>
       </listitem>
@@ -2953,13 +2953,13 @@ available after registering your SUSE Linux Enterprise Server installation.&lt;/
       <title>Single profiling with the attribute <tag class="attribute">:prof-os:</tag></title>
 <screen>
 [...]
-ifeval::["{prof-os}" == "sles"]
+ifeval::["{os}" == "sles"]
 Note that the official update repository is only available after registering
 your SLES installation.
 endif::[]
 </screen>
     </example>
-    <example xml:id="ex-profiling-dc">
+    <example xml:id="ex-profiling-dc" outputformat="db">
       <title>DC file with profiling for SLES</title>
 <screen>
 MAIN="MAIN.SLEDS.xml"
@@ -2969,12 +2969,16 @@ ROOTID=book-administration
 PROFOS="sles"
 ...</screen>
     </example>
-    <example xml:id="ex-profiling-dc-adoc">
+    <example xml:id="ex-profiling-dc-adoc" outputformat="adoc">
       <title>DC file with profiling for SLES</title>
 <screen>
 MAIN=book.adoc
+
+# Turn on postprocessing                                                       
+ADOC_POST="yes"
+
 # Profiling
-PROFOS="sles"
+ADOC_ATTRIBUTES="--attribute os=sles"
 ...</screen>
     </example>
     <example xml:id="ex-multiple-profiling" outputformat="db">
