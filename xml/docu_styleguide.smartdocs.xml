@@ -4,11 +4,21 @@
   <!ENTITY % entities SYSTEM "generic-entities.ent">
     %entities;
 ]>
-<chapter xmlns="http://docbook.org/ns/docbook" 
-       xmlns:xi="http://www.w3.org/2001/XInclude" 
-       xmlns:xlink="http://www.w3.org/1999/xlink" 
+<chapter xmlns="http://docbook.org/ns/docbook"
+       xmlns:xi="http://www.w3.org/2001/XInclude"
+       xmlns:xlink="http://www.w3.org/1999/xlink"
        xmlns:its="http://www.w3.org/2005/11/its" version="5.0" xml:id="sec-smartdocs">
   <title>Working with &sd;</title>
+  <info>
+   <revhistory xml:id="rh-smartdocs">
+    <revision>
+     <date>2025-06-04</date>
+     <revdescription>
+      <para/>
+     </revdescription>
+    </revision>
+   </revhistory>
+  </info>
   <para>
     &sd; represent a modular approach to documentation whose goal is producing
     sets of adaptable, solution-based, easy-to-find and reusable documents.
@@ -425,15 +435,15 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
     <example xml:id="ex-revhistory-source">
       <title>Revision history example (source)</title>
 <screen>
-&lt;revhistory xml:id="rh-USE-ROOTID"&gt;  
+&lt;revhistory xml:id="rh-USE-ROOTID"&gt;
   &lt;revision&gt;&lt;date&gt;YYYY-MM-DD&lt;/date&gt;
-    &lt;revdescription&gt;  
+    &lt;revdescription&gt;
       &lt;para&gt;Updated CONTENT, extended CONTENT, removed CONTENT&lt;/para&gt;
     &lt;/revdescription&gt;
   &lt;/revision&gt;
   &lt;revision&gt;&lt;date&gt;YYYY-MM-DD&lt;/date&gt;
-    &lt;revdescription&gt;  
-      &lt;para&gt;Updated for the initial release of &lt;phrase role="productname"&gt;SUSE Linux Enterprise Server&lt;/phrase&gt; 
+    &lt;revdescription&gt;
+      &lt;para&gt;Updated for the initial release of &lt;phrase role="productname"&gt;SUSE Linux Enterprise Server&lt;/phrase&gt;
       &lt;phrase role="productnumber"&gt;15 SP6&lt;/phrase&gt;&lt;/para&gt;
     &lt;/revdescription&gt;
   &lt;/revision&gt;

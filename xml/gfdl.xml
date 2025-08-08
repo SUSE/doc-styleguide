@@ -6,7 +6,16 @@
 ]>
 <appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:base="gfdl.xml" xml:id="app-gdfl" role="legal">
   <title>GNU Free Documentation License</title>
-  <info/>
+  <info>
+   <revhistory xml:id="rh-gfdl">
+    <revision>
+     <date>2025-06-04</date>
+     <revdescription>
+      <para/>
+     </revdescription>
+    </revision>
+   </revhistory>
+  </info>
   <para>
     Version 1.2, November 2002
   </para>

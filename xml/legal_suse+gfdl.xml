@@ -5,6 +5,16 @@
     %entities;
 ]>
 <legalnotice xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0">
+  <info>
+   <revhistory xml:id="rh-legal">
+    <revision>
+     <date>2025-06-04</date>
+     <revdescription>
+      <para/>
+     </revdescription>
+    </revision>
+   </revhistory>
+  </info>
   <para>
     Copyright &copy; 2007&ndash;
 <?dbtimestamp format="Y"?>

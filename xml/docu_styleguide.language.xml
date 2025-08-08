@@ -6,6 +6,16 @@
 ]>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-language">
   <title>Language</title>
+  <info>
+   <revhistory xml:id="rh-language">
+    <revision>
+     <date>2025-06-04</date>
+     <revdescription>
+      <para/>
+     </revdescription>
+    </revision>
+   </revhistory>
+  </info>
   <para>
     We write documentation in American English. Where spelling differences exist
     between American and British English, use the American English variant. For

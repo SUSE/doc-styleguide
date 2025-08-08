@@ -6,7 +6,16 @@
 ]>
 <appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="app-terminology">
   <title>Terminology and general vocabulary</title>
-  <info/>
+  <info>
+   <revhistory xml:id="rh-app-terminology">
+    <revision>
+     <date>2025-06-04</date>
+     <revdescription>
+      <para/>
+     </revdescription>
+    </revision>
+   </revhistory>
+  </info>
   <para>
     The following two tables define technical terms and general vocabulary for
     use in SUSE documentation. See also <xref linkend="sec-language"/>.
@@ -160,7 +169,7 @@
           <row>
             <entry>bare metal</entry>
             <entry>bare-metal, baremetal</entry>
-            <entry>noun; a computer without an operating system; <emphasis>also</emphasis> a physical computer (in 
+            <entry>noun; a computer without an operating system; <emphasis>also</emphasis> a physical computer (in
        contrast to a virtualized system)</entry>
           </row>
           <row>
@@ -388,8 +397,8 @@
           <row>
             <entry>console</entry>
             <entry/>
-            <entry>noun; a physical terminal, used to describe TTYs and PTYs 
-               and when talking about consoles (e.g. KVM's console); 
+            <entry>noun; a physical terminal, used to describe TTYs and PTYs
+               and when talking about consoles (e.g. KVM's console);
                see also <emphasis>terminal, shell</emphasis>
             </entry>
           </row>
@@ -461,8 +470,8 @@
             <entry>dialog box, dialog window, dialogue [British], mask [Germanism],
         screen
       </entry>
-            <entry>noun; a secondary window that gives users progress feedback, 
-             prompts users to perform a command, enter information or select 
+            <entry>noun; a secondary window that gives users progress feedback,
+             prompts users to perform a command, enter information or select
              an option
       </entry>
           </row>
@@ -592,7 +601,7 @@
           <row>
             <entry>form</entry>
             <entry/>
-            <entry>noun; a structured window, box or screen that contains numerous 
+            <entry>noun; a structured window, box or screen that contains numerous
              fields or spaces to enter data</entry>
           </row>
           <row>
@@ -1270,8 +1279,8 @@
           <row>
             <entry>program</entry>
             <entry/>
-            <entry>noun; a set of coded instructions that enables a machine, 
-             especially a computer, to perform a desired sequence of 
+            <entry>noun; a set of coded instructions that enables a machine,
+             especially a computer, to perform a desired sequence of
              operations</entry>
           </row>
           <row>
@@ -1472,7 +1481,7 @@
           <row>
             <entry>screen</entry>
             <entry/>
-            <entry>noun; the surface on which the image appears in an 
+            <entry>noun; the surface on which the image appears in an
        electronic display (as in a computer terminal); also
        the information displayed on a computer screen at one time
       </entry>
@@ -1490,8 +1499,8 @@
           <row>
             <entry>script</entry>
             <entry/>
-            <entry>noun; a prewritten list of commands, and perhaps other control 
-             information, to be executed (interpreted) by a shell or other 
+            <entry>noun; a prewritten list of commands, and perhaps other control
+             information, to be executed (interpreted) by a shell or other
              command interpreter</entry>
           </row>
           <row>
@@ -1531,9 +1540,9 @@
           <row>
             <entry>shell</entry>
             <entry/>
-            <entry>noun; a command-line interpreter used to describe 
-               programs that expose the input/output to the user 
-               (bash, sh, zsh) and to refer to the command prompt; 
+            <entry>noun; a command-line interpreter used to describe
+               programs that expose the input/output to the user
+               (bash, sh, zsh) and to refer to the command prompt;
                see also <emphasis>console, terminal</emphasis>
             </entry>
           </row>
@@ -1783,7 +1792,7 @@
             <entry>terminal</entry>
             <entry/>
             <entry>noun; text input/output environment where users interact
-               with Linux and Linux applications; the default term to 
+               with Linux and Linux applications; the default term to
                describe a text-only user interface
               </entry>
           </row>
@@ -1820,7 +1829,7 @@
           <row>
             <entry>tool</entry>
             <entry/>
-            <entry>noun; a utility or feature used to develop software or 
+            <entry>noun; a utility or feature used to develop software or
              hardware, or to perform particular tasks</entry>
           </row>
           <row>
@@ -1938,9 +1947,9 @@
           <row>
             <entry>utilization</entry>
             <entry>utilisation [British]</entry>
-            <entry>noun; an act or instance of making practical or 
-                profitable use of something, especially in 
-                <emphasis>CPU utilization</emphasis>, 
+            <entry>noun; an act or instance of making practical or
+                profitable use of something, especially in
+                <emphasis>CPU utilization</emphasis>,
                 <emphasis>memory utilization</emphasis>
             </entry>
           </row>
