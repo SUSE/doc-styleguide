@@ -6,6 +6,16 @@
 ]>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-outline">
   <title>Outline of a manual</title>
+  <info>
+   <revhistory xml:id="rh-outline">
+    <revision>
+     <date>2025-06-04</date>
+     <revdescription>
+      <para/>
+     </revdescription>
+    </revision>
+   </revhistory>
+  </info>
   <para>
     Maintain a consistent structure within your documents. The structure can
     vary between different books, articles or projects, but the most common

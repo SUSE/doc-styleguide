@@ -6,6 +6,16 @@
 ]>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-structure">
   <title>Structure and markup</title>
+  <info>
+   <revhistory xml:id="rh-structure">
+    <revision>
+     <date>2025-06-04</date>
+     <revdescription>
+      <para/>
+     </revdescription>
+    </revision>
+   </revhistory>
+  </info>
   <para>
     This chapter contains instructions on using the correct markup to create
     consistent and legible documents, and structuring the content in the way
@@ -2411,7 +2421,7 @@ xml:id="tab-install-source"</screen>
       <example xml:id="ex-variable-list-source-adoc" outputformat="adoc">
         <title>Example of a variable list (source)</title>
 <screen>This book consists of several parts:
-  
+
 Installation:: Learn about the installation and initial configuration of a Linux system.
 System:: Get a basic understanding of the system components.</screen>
       </example>
@@ -2964,7 +2974,7 @@ endif::[]
 <screen>
 MAIN="MAIN.SLEDS.xml"
 ROOTID=book-administration
-    
+
 ## Profiling
 PROFOS="sles"
 ...</screen>
@@ -2974,7 +2984,7 @@ PROFOS="sles"
 <screen>
 MAIN=book.adoc
 
-# Turn on postprocessing                                                       
+# Turn on postprocessing
 ADOC_POST="yes"
 
 # Profiling

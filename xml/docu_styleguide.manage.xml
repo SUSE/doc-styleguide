@@ -6,6 +6,16 @@
 ]>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-manage">
   <title>Managing documents</title>
+  <info>
+   <revhistory xml:id="rh-manage">
+    <revision>
+     <date>2025-06-04</date>
+     <revdescription>
+      <para/>
+     </revdescription>
+    </revision>
+   </revhistory>
+  </info>
 <!-- ADOC this chapter is heavily focused on DocBook, needs to be fully profiled
   for adoc-->
   <para>

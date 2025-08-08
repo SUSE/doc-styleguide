@@ -6,6 +6,16 @@
 ]>
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-webwriting">
   <title>Writing for the Web</title>
+  <info>
+   <revhistory xml:id="rh-webwriting">
+    <revision>
+     <date>2025-06-04</date>
+     <revdescription>
+      <para/>
+     </revdescription>
+    </revision>
+   </revhistory>
+  </info>
   <para>
     Create engaging and informative content that helps your audience and is
     optimized for the Web.
@@ -87,11 +97,11 @@
           </para>
 <screen>&lt;H1&gt; Dealing with Boot and Installation Problems
 &lt;H2&gt; Problems Booting
-	&lt;H3&gt; Solution 1
-	&lt;H3&gt; Solution 2
+        &lt;H3&gt; Solution 1
+        &lt;H3&gt; Solution 2
 &lt;H2&gt; Problems Installing
-	&lt;H3&gt; Solution 1
-	&lt;H3&gt; Solution 2
+        &lt;H3&gt; Solution 1
+        &lt;H3&gt; Solution 2
   </screen>
         </listitem>
       </varlistentry>
@@ -102,13 +112,13 @@
             Search engines pull the title tag (meta title) from H1 and the
             meta description from the abstract. The number of characters is
             limited, and the recommended length for meta titles is 55&ndash;65
-            characters (not shorter than 29), and meta descriptions between 
+            characters (not shorter than 29), and meta descriptions between
             145&ndash;155 characters. Optimize your headings and content by
             naturally integrating keywords, such as product names, wherever relevant.
           </para>
-          <para>Place the primary keyword in the page title, the first H1, 
-            the first paragraph, and the URL slug. Use secondary keywords 
-            in H2&ndash;H3 headings, image alt text and the meta description to support 
+          <para>Place the primary keyword in the page title, the first H1,
+            the first paragraph, and the URL slug. Use secondary keywords
+            in H2&ndash;H3 headings, image alt text and the meta description to support
             discoverability and relevance.</para>
           <para>
             Product names are known for their extra length, so effective page
@@ -154,12 +164,12 @@
    <section xml:id="sec-accessibility">
     <title>Ensuring accessibility</title>
     <para>
-    Accessible technical documentation is essential because it ensures 
-    information is available to all users regardless of disabilities or 
-    impairments. Many users rely on assistive technologies such as screen 
-    readers and alternative input devices to navigate Web pages. Additionally, 
-    accessible documentation supports compliance with legal requirements and 
-    makes more online resources usable for everyone. Here are some guidelines 
+    Accessible technical documentation is essential because it ensures
+    information is available to all users regardless of disabilities or
+    impairments. Many users rely on assistive technologies such as screen
+    readers and alternative input devices to navigate Web pages. Additionally,
+    accessible documentation supports compliance with legal requirements and
+    makes more online resources usable for everyone. Here are some guidelines
     on how to make content more accessible:
     </para>
     <variablelist>
@@ -167,11 +177,11 @@
         <term>Provide alternative text for images</term>
         <listitem>
           <para>
-            Users who rely on screen readers need alternative (alt) text to 
-            understand the purpose of an image. Describe the image’s essential 
-            content and function. For example, instead of <quote>screenshot of 
-            settings,</quote> say <quote>The Settings menu showing the notifications 
-            option turned on.</quote> Learn more about alt text markup 
+            Users who rely on screen readers need alternative (alt) text to
+            understand the purpose of an image. Describe the image’s essential
+            content and function. For example, instead of <quote>screenshot of
+            settings,</quote> say <quote>The Settings menu showing the notifications
+            option turned on.</quote> Learn more about alt text markup
             in <xref linkend="sec-figure"/>.
           </para>
         </listitem>
@@ -180,8 +190,8 @@
         <term>Use clear and simple language</term>
         <listitem>
           <para>
-            Technical documentation should be easy to read and understand. Avoid 
-            unnecessary jargon, use plain language where possible, and keep sentences 
+            Technical documentation should be easy to read and understand. Avoid
+            unnecessary jargon, use plain language where possible, and keep sentences
             concise. This helps non-native speakers and users with cognitive disabilities.
           </para>
         </listitem>
@@ -190,10 +200,10 @@
         <term>Ensure tables are readable and well-formatted</term>
         <listitem>
           <para>
-            Tables should be structured so that assistive technologies can 
-            interpret them correctly. Always use table headers for columns 
-            and rows to provide context. Avoid leaving cells empty&mdash;if no data 
-            applies, use a placeholder such as <quote>N/A</quote> or 
+            Tables should be structured so that assistive technologies can
+            interpret them correctly. Always use table headers for columns
+            and rows to provide context. Avoid leaving cells empty&mdash;if no data
+            applies, use a placeholder such as <quote>N/A</quote> or
             <quote>None.</quote> More about tables in <xref linkend="sec-table"/>.
           </para>
         </listitem>

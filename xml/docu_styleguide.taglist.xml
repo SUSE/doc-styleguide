@@ -5,11 +5,21 @@
     %entities;
 ]>
 <chapter version="5.0" xml:id="sec-taglist"
- xmlns="http://docbook.org/ns/docbook" 
- xmlns:xi="http://www.w3.org/2001/XInclude" 
+ xmlns="http://docbook.org/ns/docbook"
+ xmlns:xi="http://www.w3.org/2001/XInclude"
  xmlns:xlink="http://www.w3.org/1999/xlink"
  >
   <title>DocBook tags</title>
+  <info>
+   <revhistory xml:id="rh-taglist">
+    <revision>
+     <date>2025-06-04</date>
+     <revdescription>
+      <para/>
+     </revdescription>
+    </revision>
+   </revhistory>
+  </info>
   <!-- leave this chapter out for adoc?-->
   <para>
     The &suse; and openSUSE user documentation is written with DocBook <!-- not true--> and uses
@@ -705,7 +715,7 @@ programlisting
             </row>
             <row>
               <entry>
-<screen>              
+<screen>
 qandset
  qandaentry
   question
