@@ -66,6 +66,7 @@
 <!ENTITY sappco                 "&suse; Application Collection">
 <!ENTITY ranchelemental         "&rancherprime;: OS Manager">
 <!ENTITY ailibrary              "AI Library">
+<!ENTITY saideployer            "&suse; AI Deployer">
 <!ENTITY suseaisuite            "&suse; AI Suite">
 <!ENTITY suseai                 "&suse; AI">
 <!ENTITY rke2                   "&rancherprime;: RKE2">
@@ -216,6 +217,8 @@ use &deng;! -->
 <!ENTITY centos                 "CentOS">
 <!ENTITY stackstate             "StackState">
 <!ENTITY ollama                 "Ollama">
+<!ENTITY huggingface            "Hugging Face">
+<!ENTITY openai                 "OpenAI">
 <!ENTITY owui                   "Open WebUI">
 <!ENTITY milvus                 "Milvus">
 <!ENTITY chromadb               "ChromaDB">
@@ -380,7 +383,7 @@ use &deng;! -->
 <!ENTITY ha                     "High Availability">
 <!ENTITY haproxy                "HAProxy">
 <!ENTITY hasetup                "HA setup">
-<!ENTITY haweb                  "HA Web Console">
+<!ENTITY haweb                  "HA Web Konsole">
 <!ENTITY hawk                   "Hawk">
 <!ENTITY hawk2                  "Hawk2">
 <!ENTITY hb                     "Heartbeat">
