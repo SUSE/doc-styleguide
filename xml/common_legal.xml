@@ -21,6 +21,14 @@
    <dm:bugtracker></dm:bugtracker>
    <dm:translation>no</dm:translation>
   </dm:docmanager>
+  <revhistory>
+   <revision>
+    <date>2022-01-28</date>
+    <revdescription>
+     <para/>
+    </revdescription>
+   </revision>
+  </revhistory>
  </info>
  <para>
   This appendix contains the GNU Free Documentation License version 1.2.
