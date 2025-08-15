@@ -101,9 +101,9 @@
      description. The revision date is updated in place every time 
      the content undergoes a significant change.</para>
 
-     <para>Product documentation for SLE 16 releases feature a full revision 
-     history with several dates and descriptions. 
-     Follow the instructions in <xref linkend="sec-revhistory" /></para>
+     <para>Starting with SLE 16 releases, product documentation includes
+     a complete revision history with several dates and descriptions. 
+     Follow the instructions in <xref linkend="sec-revhistory" />.</para>
 
     <para>To determine whether a change you made warrants a revision date, use this table:</para>
     <informaltable>
