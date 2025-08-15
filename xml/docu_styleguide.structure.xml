@@ -3260,6 +3260,75 @@ There are less than 4 GB of space available on the selected partition.</screen>
       <xref linkend="sec-cross-reference"/> and <xref linkend="sec-link"/>.
     </para>
   </section>
+  <section xml:id="sec-revinfo">
+    <title>Revision information</title>
+    <para>Every HTML file generated from our XML sources must include at least
+     one revision date. Revision dates signal content freshness to human 
+     readers, search engines and LLMs.</para>
+
+     <para>Every chapter, part or book that is included in our builds contains a 
+     revision history. For product documentation up to SLE 15 SP7, this revision 
+     history typically consists of a single revision entry with an empty
+     description. The revision date is updated in place every time 
+     the content undergoes a significant change.</para>
+
+     <para>Starting with SLE 16 releases, product documentation includes
+     a complete revision history with several dates and descriptions. 
+     Follow the instructions in <xref linkend="sec-revhistory" />.</para>
+
+    <para>To determine whether a change you made warrants a revision date, use this table:</para>
+    <informaltable>
+      <tgroup cols="2">
+        <colspec colnum="1" colname="c1" colwidth="4.25*" />
+        <colspec colnum="3" colname="c3" colwidth="1*" />
+        <thead>
+          <row>
+            <entry>Change</entry>
+            <entry>Change revision date?</entry>
+          </row>
+        </thead>
+        <tbody>
+          <row>
+            <entry>Added a new feature or deleted an obsolete one</entry>
+            <entry>Yes</entry>
+          </row>
+          <row>
+            <entry>Fixed a broken link</entry>
+            <entry>Yes</entry>
+          </row>
+          <row>
+            <entry>Metadata fix (new description, change in product name and/or version, ...)</entry>
+            <entry>Yes</entry>
+          </row>
+          <row>
+            <entry>Typo and grammar fixes, editorial reviews</entry>
+            <entry>No</entry>
+          </row>
+          <row>
+            <entry>Formatting changes</entry>
+            <entry>No</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </informaltable>
+    <example xml:id="ex-revinfo-source">
+      <title>Revision information example (source)</title>
+<screen>
+&lt;revhistory xml:id="rh-use-rootid"&gt;
+  &lt;revision&gt;&lt;date&gt;YYYY-MM-DD&lt;/date&gt;
+    &lt;revdescription /&gt;
+  &lt;/revision&gt;
+&lt;/revhistory&gt;</screen>
+    </example>
+    <example xml:id="ex-revinfo-output">
+      <title>Revision history example (output)</title>
+      <revhistory xml:id="rh-use-rootid">
+        <revision><date>2025-12-14</date>
+          <revdescription />
+        </revision>
+      </revhistory>
+    </example>
+  </section>
   <section xml:id="sec-table">
     <title>Tables</title>
     <para>
