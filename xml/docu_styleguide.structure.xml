@@ -95,10 +95,10 @@
      one revision date. Revision dates signal content freshness to human 
      readers, search engines and LLMs.</para>
 
-     <para>Every chapter, part or book that is included in our builds carries a 
+     <para>Every chapter, part or book that is included in our builds contains a 
      revision history. For product documentation up to SLE 15 SP7, this revision 
-     history just contains one single revision entry and an empty
-     revision description. The revision date gets updated in place every time 
+     history typically consists of a single revision entry with an empty
+     description. The revision date is updated in place every time 
      the content undergoes a significant change.</para>
 
      <para>Product documentation for SLE 16 releases feature a full revision 
