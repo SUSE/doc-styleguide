@@ -106,27 +106,62 @@
         </listitem>
       </varlistentry>
       <varlistentry>
-        <term>Create concise and meaningful title tags and meta descriptions</term>
+        <term>Create concise and meaningful meta titles</term>
         <listitem>
           <para>
-            Search engines pull the title tag (meta title) from H1 and the
-            meta description from the abstract. The number of characters is
-            limited, and the recommended length for meta titles is 55&ndash;65
-            characters (not shorter than 29), and meta descriptions between
-            145&ndash;155 characters. Optimize your headings and content by
-            naturally integrating keywords, such as product names, wherever relevant.
-          </para>
-          <para>Place the primary keyword in the page title, the first H1,
-            the first paragraph, and the URL slug. Use secondary keywords
+            For search engines to recognize meta titles, they must be deliberately 
+            created in the designated section of each document. Sometimes, search engines
+            may extract the meta titles from the H1 or H2 heading. Follow these guidelines when 
+            creating titles:
+            </para>
+            <itemizedlist>
+              <listitem>
+                <para>Keep the title between 55&ndash;65 characters and never shorter than 29.</para>
+              </listitem>
+              <listitem>
+                <para>Integrate keywords naturally, including product names where relevant.</para>
+              </listitem>
+              <listitem>
+                <para>Place the primary keyword in the page title, first H1,
+            first paragraph, and URL slug. Use secondary keywords
             in H2&ndash;H3 headings, image alt text and the meta description to support
-            discoverability and relevance.</para>
+            discoverability and relevance.
+                </para>
+              </listitem>
+              <listitem>
+                <para>For lengthy product names, abbreviations may be necessary. Define 
+                  each abbreviation at first use by placing the full term in parentheses after it.
+                </para>
+              </listitem>
+            </itemizedlist>
+        </listitem>
+      </varlistentry>
+      <varlistentry>
+        <term>Create concise and effective meta descriptions</term>
+        <listitem>
           <para>
-            Product names are known for their extra length, so effective page
-            titles and meta descriptions may require the use of abbreviations.
-            From the search engine perspective, it can be helpful to mention
-            the abbreviation within the content by adding the abbreviation in
-            parenthesis after the first use of the term.
-          </para>
+            Meta descriptions, like titles, should be specifically 
+            authored in the appropriate section of each document. Search engines may also extract them
+            from the abstract. Follow these rules:</para>
+            <itemizedlist>
+              <listitem><para>Keep the description between 120&ndash;160 characters.</para>
+              </listitem>
+              <listitem><para>Ensure it is a single, complete sentence that accurately summarizes the content.</para>
+              </listitem>
+              <listitem><para>Use the following rules that we provide here as a ready-made AI prompt template:</para>
+                  <para><emphasis>You are an expert technical writer specializing in Search Engine Optimization (SEO).
+        Write a single, compelling meta description for the following documentation page content.
+        Follow these rules strictly:</emphasis></para>
+        <orderedlist>
+        <listitem><para><emphasis>The description MUST be a single, complete sentence.</emphasis></para></listitem>
+        <listitem><para><emphasis>The description's length MUST be between 120 and 160 characters.</emphasis></para></listitem>
+        <listitem><para><emphasis>It MUST be an accurate and concise summary of the provided text.</emphasis></para></listitem>
+        <listitem><para><emphasis>Write in a neutral, professional, and helpful tone.</emphasis></para></listitem>
+        <listitem><para><emphasis>Your output MUST ONLY be the description text itself. Do NOT include quotation marks, 
+          labels like <quote>Description:</quote>, or any other explanatory text.</emphasis></para></listitem>
+        </orderedlist>
+                </listitem>                
+            </itemizedlist>
         </listitem>
       </varlistentry>
       <varlistentry>
