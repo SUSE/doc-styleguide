@@ -91,9 +91,9 @@
   </table>
   <section xml:id="sec-revinfo">
     <title>Revision information</title>
-    <para>Every HTML file generated from our XML sources needs to carry at least
-     a revision date. Revision dates signal content freshness to both human 
-     readers and search engines (and LLMs).</para>
+    <para>Every HTML file generated from our XML sources must include at least
+     one revision date. Revision dates signal content freshness to human 
+     readers, search engines and LLMs.</para>
 
      <para>Every chapter, part or book that is included in our builds carries a 
      revision history. For product documentation up to SLE 15 SP7, this revision 
