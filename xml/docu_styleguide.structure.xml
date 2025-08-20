@@ -3293,6 +3293,10 @@ There are less than 4 GB of space available on the selected partition.</screen>
             <entry>Yes</entry>
           </row>
           <row>
+            <entry>Image change (non-cosmetic)</entry>
+            <entry>Yes</entry>
+          </row>
+          <row>
             <entry>Fixed a broken link</entry>
             <entry>Yes</entry>
           </row>

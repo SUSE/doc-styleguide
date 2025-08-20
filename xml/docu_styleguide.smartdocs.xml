@@ -450,6 +450,10 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
             <entry>Yes</entry>
           </row>
           <row>
+            <entry>Image change (non-cosmetic)</entry>
+            <entry>Yes</entry>
+          </row>
+          <row>
             <entry>Fixed a broken link</entry>
             <entry>Yes</entry>
           </row>
