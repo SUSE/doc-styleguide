@@ -3319,7 +3319,7 @@ There are less than 4 GB of space available on the selected partition.</screen>
         </tbody>
       </tgroup>
     </informaltable>
-    <example xml:id="ex-revinfo-source">
+    <example xml:id="ex-revinfo-source" outputformat="db">
       <title>Revision information example (source)</title>
 <screen>
 &lt;revhistory xml:id="rh-use-rootid"&gt;
@@ -3327,14 +3327,6 @@ There are less than 4 GB of space available on the selected partition.</screen>
     &lt;revdescription /&gt;
   &lt;/revision&gt;
 &lt;/revhistory&gt;</screen>
-    </example>
-    <example xml:id="ex-revinfo-output">
-      <title>Revision history example (output)</title>
-      <revhistory xml:id="rh-use-rootid">
-        <revision><date>2025-12-14</date>
-          <revdescription />
-        </revision>
-      </revhistory>
     </example>
   </section>
   <section xml:id="sec-table">
