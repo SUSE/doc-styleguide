@@ -12,6 +12,29 @@
     This section lists the changes between versions of this Style Guide.
     </para>-->
   <!-- Add new versions to the beginning of the list. -->
+  <revision xml:id="sec-change-2025-09"><date>2025-09-01</date>
+    <revdescription>
+      <itemizedlist>
+        <listitem>
+          <para>
+            Updated SEO guidelines for meta titles and descriptions.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Added AI prompt template for writing consistent, keyword-rich descriptions.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Added new rules for revision information in HTML files: every HTML file 
+            must include at least one revision date; from SLE 16, full revision 
+            history required.
+        </para>
+        </listitem>
+      </itemizedlist>
+    </revdescription>
+  </revision>
   <revision xml:id="sec-change-2025-05"><date>2025-06-02</date>
     <revdescription>
       <itemizedlist>
