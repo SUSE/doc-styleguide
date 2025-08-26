@@ -3269,7 +3269,7 @@ There are less than 4 GB of space available on the selected partition.</screen>
      <para>Every chapter, part or book that is included in our builds contains a
      revision history. <phrase outputformat="db">For product documentation up to
      SLE 15 SP7, this revision history typically consists of a single revision
-     entry with an empty description.</phrase><phrase outputformat="db">For
+     entry with an empty description.</phrase><phrase outputformat="adoc">For
      documentation written in AsciiDoc, the revision date is the value of the
      <literal>:revdate:</literal> attribute, such as  <literal>:revdate:
      2025-07-31</literal>.</phrase> The revision date is updated in place every
