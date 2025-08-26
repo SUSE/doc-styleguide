@@ -59,7 +59,7 @@
  <xi:include href="docu_styleguide.taglist.xml" outputformat="db"/>
  <xi:include href="docu_styleguide.manage.xml"/>
  <xi:include href="docu_styleguide.xmlformat.xml" outputformat="db"/>
- <xi:include href="docu_styleguide.smartdocs.xml"/>
+ <xi:include href="docu_styleguide.smartdocs.xml" outputformat="db"/>
  <xi:include href="docu_styleguide.terminology.xml"/>
  <xi:include href="docu_styleguide.contributors.xml"/>
  <xi:include href="gfdl.xml"/>

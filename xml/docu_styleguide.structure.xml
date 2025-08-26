@@ -3262,19 +3262,23 @@ There are less than 4 GB of space available on the selected partition.</screen>
   </section>
   <section xml:id="sec-revinfo">
     <title>Revision information</title>
-    <para>Every HTML file generated from our XML sources must include at least
-     one revision date. Revision dates signal content freshness to human 
-     readers, search engines and LLMs.</para>
+    <para>Every HTML file generated from our documentation sources must include
+    at least one revision date. Revision dates signal content freshness to human
+    readers, search engines and LLMs.</para>
 
-     <para>Every chapter, part or book that is included in our builds contains a 
-     revision history. For product documentation up to SLE 15 SP7, this revision 
-     history typically consists of a single revision entry with an empty
-     description. The revision date is updated in place every time 
-     the content undergoes a significant change.</para>
+     <para>Every chapter, part or book that is included in our builds contains a
+     revision history. <phrase outputformat="db">For product documentation up to
+     SLE 15 SP7, this revision history typically consists of a single revision
+     entry with an empty description.</phrase><phrase outputformat="adoc">For
+     documentation written in AsciiDoc, the revision date is the value of the
+     <literal>:revdate:</literal> attribute, such as  <literal>:revdate:
+     2025-07-31</literal>.</phrase> The revision date is updated in place every
+     time the content undergoes a significant change.</para>
 
-     <para>Starting with SLE 16 releases, product documentation includes
-     a complete revision history with several dates and descriptions. 
-     Follow the instructions in <xref linkend="sec-revhistory" />.</para>
+     <para outputformat="db">Starting with SLE 16 releases, product
+     documentation includes a complete revision history with several dates and
+     descriptions. Follow the instructions in <xref linkend="sec-revhistory"
+     />.</para>
 
     <para>To determine whether a change you made warrants a revision date, use this table:</para>
     <informaltable>
@@ -3315,7 +3319,7 @@ There are less than 4 GB of space available on the selected partition.</screen>
         </tbody>
       </tgroup>
     </informaltable>
-    <example xml:id="ex-revinfo-source">
+    <example xml:id="ex-revinfo-source" outputformat="db">
       <title>Revision information example (source)</title>
 <screen>
 &lt;revhistory xml:id="rh-use-rootid"&gt;
@@ -3323,14 +3327,6 @@ There are less than 4 GB of space available on the selected partition.</screen>
     &lt;revdescription /&gt;
   &lt;/revision&gt;
 &lt;/revhistory&gt;</screen>
-    </example>
-    <example xml:id="ex-revinfo-output">
-      <title>Revision history example (output)</title>
-      <revhistory xml:id="rh-use-rootid">
-        <revision><date>2025-12-14</date>
-          <revdescription />
-        </revision>
-      </revhistory>
     </example>
   </section>
   <section xml:id="sec-table">
