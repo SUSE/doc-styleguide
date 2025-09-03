@@ -1682,9 +1682,8 @@ DocBook:: an XML-based markup language designed for writing structured technical
           <phrase
           outputformat="adoc"><literal>[#example-identifier]</literal>
           identifiers</phrase> in parts, chapters, appendixes, sections,
-          figures, glossaries and examples. Identifiers can be used in other
-          elements as well, for example, block elements, such as tables and
-          procedures.
+          figures, glossaries, tables and examples. Identifiers can be used 
+          in block elements as well, for example, procedures.
         </para>
       </listitem>
       <listitem>
@@ -3439,7 +3438,8 @@ There are less than 4 GB of space available on the selected partition.</screen>
     </variablelist>
     <example xml:id="ex-table-source" outputformat="db">
       <title>Example of a table (source)</title>
-<screen>&lt;informaltable&gt;
+<screen>&lt;table&gt;
+  &lt;title&gt;File System Maximums&lt;/title&gt;
  &lt;tgroup cols="2"&gt;
   &lt;thead&gt;
    &lt;row&gt;
@@ -3462,7 +3462,8 @@ There are less than 4 GB of space available on the selected partition.</screen>
     </example>
     <example xml:id="ex-table-source-adoc" outputformat="adoc">
       <title>Example of a table (source)</title>
-<screen>.A table with a title
+<screen>[[fs-file-size-table]]
+.File System Maximums
 |===
 |File System |Maximum File Size
 
@@ -3475,7 +3476,8 @@ There are less than 4 GB of space available on the selected partition.</screen>
     </example>
     <example xml:id="ex-table-output">
       <title>Example of a table (output)</title>
-      <informaltable>
+      <table>
+        <title>File System Maximums</title>
         <tgroup cols="2">
           <thead>
             <row>
@@ -3494,7 +3496,7 @@ There are less than 4 GB of space available on the selected partition.</screen>
             </row>
           </tbody>
         </tgroup>
-      </informaltable>
+      </table>
     </example>
     <table xml:id="tab-table" outputformat="db">
       <title>Elements related to <tag class="emptytag">table</tag></title>
