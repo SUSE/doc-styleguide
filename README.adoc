@@ -1,17 +1,19 @@
 = SUSE Documentation Style Guide
 
-This style guide provides answers to writing, style, and layout questions commonly
-arising when editing SUSE documentation. The markup reference at the end of
-the guide will help you choose the right XML element for your
-purpose. Following this guide will make your documentation more understandable
-and easier to translate.
+This style guide provides answers to common writing, style and layout questions
+for SUSE documentation. The guide now offers two fully maintained 
+versions: one for DocBook XML and one for AsciiDoc. While both guides address the 
+same core questions about voice, terminology, structure and layout, each applies 
+specific rules to its format.
 
-The Style Guide is published at
-https://doc.suse.com/style/current/[doc.suse.com/style].
+Select your format and follow the conventions to make your content 
+clearer for readers, easier for translators, and smoother for contributors.
 
+The two versions of the Style Guide are published at 
+https://documentation.suse.com/style/current/[doc.suse.com/style].
 
 Contributing
 -------------
 
-To contribute, send pull requests. Use the `main` branch as the basis for
-feature branches.
+We welcome contributions via pull requests. Use the `main` branch as the basis for
+your feature branches.
