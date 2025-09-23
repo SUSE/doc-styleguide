@@ -116,7 +116,7 @@
             </para>
             <itemizedlist>
               <listitem>
-                <para>Keep the title between 55&ndash;65 characters and never shorter than 29.</para>
+                <para>Keep the title under 55 characters, if possible, and never shorter than 29.</para>
               </listitem>
               <listitem>
                 <para>Integrate keywords naturally, including product names where relevant.</para>
@@ -144,7 +144,7 @@
             authored in the appropriate section of each document. Search engines may also extract them
             from the abstract. Follow these rules:</para>
             <itemizedlist>
-              <listitem><para>Keep the description between 120&ndash;160 characters.</para>
+              <listitem><para>Keep the description between 120&ndash;155 characters.</para>
               </listitem>
               <listitem><para>Ensure it is a single, complete sentence that accurately summarizes the content.</para>
               </listitem>
@@ -154,7 +154,7 @@
         Follow these rules strictly:</emphasis></para>
         <orderedlist>
         <listitem><para><emphasis>The description MUST be a single, complete sentence.</emphasis></para></listitem>
-        <listitem><para><emphasis>The description's length MUST be between 120 and 160 characters.</emphasis></para></listitem>
+        <listitem><para><emphasis>The description's length MUST be between 120 and 155 characters.</emphasis></para></listitem>
         <listitem><para><emphasis>It MUST be an accurate and concise summary of the provided text.</emphasis></para></listitem>
         <listitem><para><emphasis>Write in a neutral, professional, and helpful tone.</emphasis></para></listitem>
         <listitem><para><emphasis>Your output MUST ONLY be the description text itself. Do NOT include quotation marks, 

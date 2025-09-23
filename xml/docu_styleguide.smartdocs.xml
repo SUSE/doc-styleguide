@@ -253,7 +253,7 @@ short title for SEO and social media, max. 55 chars&lt;/meta>
             <entry>
 <screen>
 &lt;meta name="description" its:translate="yes">
-short description, max. 150 chars&lt;/meta>
+short description, max. 155 chars&lt;/meta>
      </screen>
             </entry>
             <entry>
@@ -264,7 +264,7 @@ short description, max. 150 chars&lt;/meta>
                 Yes
               </para>
               <para>
-                Stick to the length limitations, max. 150 chars
+                Stick to the length limitations, max. 155 chars
               </para>
             </entry>
           </row>
