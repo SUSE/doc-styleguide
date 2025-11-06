@@ -2168,7 +2168,7 @@ xml:id="tab-install-source"</screen>
           it into smaller, logically grouped sections with clear subheadings. 
           While splitting is often beneficial for scannability and content coherence, 
           always prioritize the logical structure of the content. The primary goal is 
-          logical comprehension for human and AI systems, not strict adherence to a length rule..
+          logical comprehension for human and AI systems, not strict adherence to a length rule.
         </para>
       </listitem>
     </itemizedlist>
