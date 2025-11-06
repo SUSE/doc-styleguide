@@ -2164,8 +2164,11 @@ xml:id="tab-install-source"</screen>
       <listitem>
         <para>
           Lists are visually distinct and help break up text flow, improving 
-          readability and SEO. If a list has more than eight items, split it 
-          into smaller, thematically grouped units to keep the content easy to scan.
+          readability and SEO. If a list contains over 10 pieces, consider splitting 
+          it into smaller, logically grouped sections with clear subheadings. 
+          While splitting is often beneficial for scannability and content coherence, 
+          always prioritize the logical structure of the content. The primary goal is 
+          logical comprehension for human and AI systems, not strict adherence to a length rule..
         </para>
       </listitem>
     </itemizedlist>
