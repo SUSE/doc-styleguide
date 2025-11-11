@@ -2163,8 +2163,12 @@ xml:id="tab-install-source"</screen>
       </listitem>
       <listitem>
         <para>
-          Lists are visually distinct and can break up text flow. Do not overuse
-          them.
+          Lists are visually distinct and help break up text flow, improving 
+          readability and SEO. If a list contains over 10 pieces, consider splitting 
+          it into smaller, logically grouped sections with clear subheadings. 
+          While splitting is often beneficial for scannability and content coherence, 
+          always prioritize the logical structure of the content. The primary goal is 
+          logical comprehension for human and AI systems, not strict adherence to a length rule.
         </para>
       </listitem>
     </itemizedlist>
