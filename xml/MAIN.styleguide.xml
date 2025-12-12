@@ -13,54 +13,52 @@
   xmlns:xlink="http://www.w3.org/1999/xlink"
   xmlns:its="http://www.w3.org/2005/11/its"
   xmlns:dm="urn:x-suse:ns:docmanager">
- <title>&productname;</title>
- <info>  
-  <!-- TODO: provide a listing of possible and validatable meta entry values. Maybe in our geekodoc repo? -->
-  <!-- add author's e-mail -->
-  <meta name="maintainer" content="daria.vladykina@suse.com" its:translate="no"/>
-  <meta name="title" its:translate="yes">SUSE Documentation Style Guide</meta>
-  <meta name="description" its:translate="yes">This guide provides answers to writing,
+  <title>&productname;</title>
+  <info>
+    <!-- TODO: provide a listing of possible and validatable meta entry values. Maybe in our geekodoc repo? -->
+    <!-- add author's e-mail -->
+    <meta name="maintainer" content="daria.vladykina@suse.com" its:translate="no"/>
+    <meta name="title" its:translate="yes">SUSE Documentation Style Guide</meta>
+    <meta name="description" its:translate="yes">This guide provides answers to writing,
   style and layout questions for creating effective and consistent documentation for
   SUSE products in DocBook and AsciiDoc formats
   </meta>
-  <meta name="social-descr" its:translate="yes">Writing, style and layout for SUSE documentation</meta>
-  <productnumber>&productnumber;</productnumber>
-  <date>
-   <?dbtimestamp?>
-  </date>
-  <xi:include href="legal_suse+gfdl.xml"/>
-  <dm:docmanager>
-   <dm:bugtracker>
-    <dm:url>https://github.com/SUSE/doc-styleguide/issues/new</dm:url>
-    <dm:labels>via-report-link</dm:labels>
-   </dm:bugtracker>
-  </dm:docmanager>
-  <xi:include href="docu_styleguide.changes.xml" outputformat="db"/>
-  <abstract>
-   <para>
-    This guide provides answers to writing, style and layout questions
-    commonly arising when editing SUSE documentation. The
-    <phrase role="productname">GeekoDoc</phrase>, <phrase
-    role="productname">DocBook</phrase> and <phrase role="productname">AsciiDoc</phrase>
-    markup reference in this guide will help you choose the right
-    formatting options for your purpose. Following this guide will make your
-    documentation more understandable and easier to translate.
-   </para>
-  </abstract>
- </info>
- <xi:include href="docu_styleguide.asciidoc.xml" outputformat="adoc"/>
- <xi:include href="docu_styleguide.techwriting.xml"/>
- <xi:include href="docu_styleguide.content.xml"/>
- <xi:include href="docu_styleguide.name.xml"/>
- <xi:include href="docu_styleguide.outline.xml"/>
- <xi:include href="docu_styleguide.webwriting.xml"/>
- <xi:include href="docu_styleguide.language.xml"/>
- <xi:include href="docu_styleguide.structure.xml"/>
- <xi:include href="docu_styleguide.taglist.xml" outputformat="db"/>
- <xi:include href="docu_styleguide.manage.xml"/>
- <xi:include href="docu_styleguide.xmlformat.xml" outputformat="db"/>
- <xi:include href="docu_styleguide.smartdocs.xml" outputformat="db"/>
- <xi:include href="docu_styleguide.terminology.xml"/>
- <xi:include href="docu_styleguide.contributors.xml"/>
- <xi:include href="gfdl.xml"/>
+    <meta name="social-descr" its:translate="yes">Writing, style and layout for SUSE documentation</meta>
+    <productnumber>&productnumber;</productnumber><date>
+<?dbtimestamp?></date>
+    <xi:include href="legal_suse+gfdl.xml"/>
+    <dm:docmanager>
+      <dm:bugtracker>
+        <dm:url>https://github.com/SUSE/doc-styleguide/issues/new</dm:url>
+        <dm:labels>via-report-link</dm:labels>
+      </dm:bugtracker>
+    </dm:docmanager>
+    <xi:include href="docu_styleguide.changes.xml" outputformat="db"/>
+    <abstract>
+      <para>
+        This guide provides answers to writing, style and layout questions commonly arising when
+        editing SUSE documentation. The <phrase role="productname">GeekoDoc</phrase>,
+        <phrase
+    role="productname">DocBook</phrase> and
+        <phrase role="productname">AsciiDoc</phrase> markup reference in this guide will help you
+        choose the right formatting options for your purpose. Following this guide will make your
+        documentation more understandable and easier to translate.
+      </para>
+    </abstract>
+  </info>
+  <xi:include href="docu_styleguide.asciidoc.xml" outputformat="adoc"/>
+  <xi:include href="docu_styleguide.techwriting.xml"/>
+  <xi:include href="docu_styleguide.content.xml"/>
+  <xi:include href="docu_styleguide.name.xml"/>
+  <xi:include href="docu_styleguide.outline.xml"/>
+  <xi:include href="docu_styleguide.webwriting.xml"/>
+  <xi:include href="docu_styleguide.language.xml"/>
+  <xi:include href="docu_styleguide.structure.xml"/>
+  <xi:include href="docu_styleguide.taglist.xml" outputformat="db"/>
+  <xi:include href="docu_styleguide.manage.xml"/>
+  <xi:include href="docu_styleguide.xmlformat.xml" outputformat="db"/>
+  <xi:include href="docu_styleguide.smartdocs.xml" outputformat="db"/>
+  <xi:include href="docu_styleguide.terminology.xml"/>
+  <xi:include href="docu_styleguide.contributors.xml"/>
+  <xi:include href="gfdl.xml"/>
 </book>

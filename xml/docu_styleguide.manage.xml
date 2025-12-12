@@ -7,48 +7,44 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-manage">
   <title>Managing documents</title>
   <info>
-   <revhistory xml:id="rh-manage">
-    <revision>
-     <date>2025-06-04</date>
-     <revdescription>
-      <para/>
-     </revdescription>
-    </revision>
-   </revhistory>
+    <revhistory xml:id="rh-manage">
+      <revision><date>2025-06-04</date>
+        <revdescription>
+          <para/>
+        </revdescription>
+      </revision>
+    </revhistory>
   </info>
-<!-- ADOC this chapter is heavily focused on DocBook, needs to be fully profiled
-  for adoc-->
+  <!-- ADOC this chapter is heavily focused on DocBook, needs to be fully profiled
+    for adoc-->
   <para>
-    This section provides an overview over specific features to manage
-    documents.
+    This section provides an overview over specific features to manage documents.
   </para>
   <section xml:id="sec-remark" outputformat="db">
     <title>Remarks</title>
     <para>
-      Use remarks for editorial comments. Remarks can be placed within, before
-      or after a para but must always be within a section element. When creating
-      output, remarks can be made visible in the output and thus help within the
-      editorial process. When creating the final output, deactivate remarks.
+      Use remarks for editorial comments. Remarks can be placed within, before or after a para but
+      must always be within a section element. When creating output, remarks can be made visible in
+      the output and thus help within the editorial process. When creating the final output,
+      deactivate remarks.
     </para>
     <para>
       Start remarks with your user name and the current date, then add a colon
-      (<literal>:</literal>) and finally your actual remark. To comment on
-      someone else's remark, add a new remark directly below it. Delete remarks
-      when the corresponding issue is resolved.
+      (<literal>:</literal>) and finally your actual remark. To comment on someone else's remark,
+      add a new remark directly below it. Delete remarks when the corresponding issue is resolved.
     </para>
 <screen>&lt;remark&gt;tux (2013-10-13): could not find the option for foo&lt;/remark&gt;
 &lt;remark&gt;geeko (2013-11-02): see /usr/share/doc/foo.html&lt;/remark&gt;</screen>
     <para>
-      You can add a <tag class="attribute">role</tag> attribute with one of the
-      following values to show the type of the remark:
+      You can add a <tag class="attribute">role</tag> attribute with one of the following values to
+      show the type of the remark:
     </para>
     <itemizedlist>
       <listitem>
         <formalpara>
           <title><tag class="attvalue">structure</tag></title>
           <para>
-            Use this type of remark to suggest changes to the text or XML
-            structure.
+            Use this type of remark to suggest changes to the text or XML structure.
           </para>
         </formalpara>
       </listitem>
@@ -64,8 +60,8 @@
         <formalpara>
           <title><tag class="attvalue">needinfo</tag></title>
           <para>
-            Use this type of remark to mark sections where you need input from
-            others, such as developers.
+            Use this type of remark to mark sections where you need input from others, such as
+            developers.
           </para>
         </formalpara>
       </listitem>
@@ -82,10 +78,9 @@
   <section xml:id="sec-xml-comment" outputformat="db">
     <title>Comments</title>
     <para>
-      Comments can be used for temporarily disabling portions of text. Another
-      use of comments is to create more permanent internal comments or to mark
-      up changes made for layout reasons. Comments are never visible in a
-      publication.
+      Comments can be used for temporarily disabling portions of text. Another use of comments is
+      to create more permanent internal comments or to mark up changes made for layout reasons.
+      Comments are never visible in a publication.
     </para>
 <screen outputformat="db">&lt;!-- This is an XML comment. --&gt;</screen>
 <screen outputformat="adoc">// This is a single-line comment. </screen>
@@ -94,27 +89,24 @@ This is a block comment.
 It can include multiple lines
 ////</screen>
     <para outputformat="db">
-      For information about formatting XML comments, see
-      <xref linkend="sec-format-xml"/>.
+      For information about formatting XML comments, see <xref linkend="sec-format-xml"/>.
     </para>
   </section>
   <section xml:id="sec-entity">
     <title>Entities</title>
     <para>
-      Entities (or attributes) are used to expand text. There are several
-      situations in which they can be used:
+      Entities (or attributes) are used to expand text. There are several situations in which they
+      can be used:
     </para>
     <itemizedlist>
       <listitem>
         <para>
-          To represent special characters that cannot easily be displayed,
-          entered or memorized.
+          To represent special characters that cannot easily be displayed, entered or memorized.
         </para>
       </listitem>
       <listitem>
         <para>
-          To integrate external files using entities representing references to
-          their file names.
+          To integrate external files using entities representing references to their file names.
         </para>
       </listitem>
       <listitem>
@@ -124,44 +116,42 @@ It can include multiple lines
       </listitem>
     </itemizedlist>
     <para>
-      When an entity is defined, it can be used in many places. Entities
-      increase consistency, as they only need to be defined once and will
-      automatically be expanded everywhere within the document.
+      When an entity is defined, it can be used in many places. Entities increase consistency, as
+      they only need to be defined once and will automatically be expanded everywhere within the
+      document.
     </para>
     <section xml:id="sec-type-entity">
       <title>Common types of entities</title>
       <para>
         Official generic entities are maintained in the
-        <link xlink:href="https://github.com/openSUSE/doc-kit">Doc Kit
-        repository</link>. They include &suse; product names and other terms
-        that are valid for every repository. In repositories configured with Doc
-        Kit, the file
+        <link xlink:href="https://github.com/openSUSE/doc-kit">Doc Kit repository</link>. They
+        include &suse; product names and other terms that are valid for every repository. In
+        repositories configured with Doc Kit, the file
         <filename
         outputformat="db">generic-entities.ent</filename><filename
         outputformat="adoc">generic-attributes.adoc</filename>
-        therefore must not be changed (any changes will be overwritten by the
-        next Doc Kit run). If there is a need to declare a specific entity that
-        applies to the current repository only, this can be done in the
+        therefore must not be changed (any changes will be overwritten by the next Doc Kit run). If
+        there is a need to declare a specific entity that applies to the current repository only,
+        this can be done in the
         <filename outputformat="db">product-entities.ent</filename><filename outputformat="db">product-attributes.adoc</filename>
-        or <filename outputformat="db">entity-decl.ent</filename> file in the
-        respective repository.
+        or <filename outputformat="db">entity-decl.ent</filename> file in the respective
+        repository.
       </para>
       <para>
         A
         <filename
         outputformat="db">generic-entities.ent</filename><filename
         outputformat="adoc">generic-attributes.adoc</filename><phrase outputformat="db">
-        or <filename>entity-decl.ent</filename></phrase> file contains several
-        categories of entities:
+        or <filename>entity-decl.ent</filename></phrase> file contains several categories of
+        entities:
       </para>
       <variablelist>
         <varlistentry>
           <term>Products</term>
           <listitem>
             <para>
-              All &suse; product names and other products and applications. This
-              helps when sudden name changes are necessary and avoids
-              misspellings.
+              All &suse; product names and other products and applications. This helps when sudden
+              name changes are necessary and avoids misspellings.
             </para>
           </listitem>
         </varlistentry>
@@ -169,8 +159,8 @@ It can include multiple lines
           <term>Platforms</term>
           <listitem>
             <para>
-              Use entities for all hardware architectures referenced. This helps
-              when sudden name changes are necessary.
+              Use entities for all hardware architectures referenced. This helps when sudden name
+              changes are necessary.
             </para>
           </listitem>
         </varlistentry>
@@ -178,8 +168,8 @@ It can include multiple lines
           <term>Books</term>
           <listitem>
             <para>
-              Title entities for all &suse; books. This helps when sudden name
-              changes are necessary.
+              Title entities for all &suse; books. This helps when sudden name changes are
+              necessary.
             </para>
           </listitem>
         </varlistentry>
@@ -193,8 +183,8 @@ It can include multiple lines
         </varlistentry>
       </variablelist>
       <para>
-        There are several guidelines to consider when working with product
-        entities for &suse; documentation:
+        There are several guidelines to consider when working with product entities for &suse;
+        documentation:
       </para>
       <variablelist>
         <varlistentry>
@@ -205,15 +195,14 @@ It can include multiple lines
               <tag class="genentity"
               outputformat="db">productname</tag><literal
               outputformat="adoc">{productname}</literal>
-              to identify the product for which the documentation is built. Set
-              the value of this entity once per release and have it expand to
-              the name of the current product:
+              to identify the product for which the documentation is built. Set the value of this
+              entity once per release and have it expand to the name of the current product:
             </para>
 <screen outputformat="db">&amp;productname; includes 389-ds.</screen>
 <screen outputformat="adoc">{productname} includes 389-ds.</screen>
             <para>
-              If you need to reference a specific subproduct or a different
-              product, use a more specific entity:
+              If you need to reference a specific subproduct or a different product, use a more
+              specific entity:
             </para>
 <screen outputformat="db">Tuning &amp;sle; for SAP</screen>
 <screen outputformat="adoc">Tuning {sle} for SAP</screen>
@@ -223,13 +212,11 @@ It can include multiple lines
           <term>Acronyms</term>
           <listitem>
             <para>
-              In specific cases (for example, limited space in table cells or in
-              titles), it is acceptable to use an entity for a product name
-              acronym. Find the approved entities for product name acronyms in
-              the entity declaration files, such as
+              In specific cases (for example, limited space in table cells or in titles), it is
+              acceptable to use an entity for a product name acronym. Find the approved entities
+              for product name acronyms in the entity declaration files, such as
               <phrase
-              outputformat="db"><filename>product-entities.ent</filename>
-              or
+              outputformat="db"><filename>product-entities.ent</filename> or
               <filename>entity-decl.ent</filename></phrase><filename
               outputformat="db">product-attributes.adoc</filename>
               or
@@ -238,8 +225,8 @@ It can include multiple lines
         outputformat="adoc">generic-attributes.adoc</filename>.
               For a product name acronym, you can use the generic entity
               <tag class="genentity" outputformat="db">productnameshort</tag><literal outputformat="adoc">{productnameshort}</literal>.
-              If you need acronym entities for specific products, they usually
-              have an appended <literal>a</literal> at the end, for example,
+              If you need acronym entities for specific products, they usually have an appended
+              <literal>a</literal> at the end, for example,
               <tag class="genentity" outputformat="db">slsa</tag><literal outputformat="adoc">slsa</literal>
               for the acronym <quote>SLES.</quote>
             </para>
@@ -249,30 +236,27 @@ It can include multiple lines
           <term>Trademarks</term>
           <listitem>
             <para>
-              Follow the rules under
-              <xref linkend="sec-trademark"/><phrase outputformat="db"> and
+              Follow the rules under <xref linkend="sec-trademark"/><phrase outputformat="db"> and
               <xref linkend="sec-product"/></phrase>.
             </para>
           </listitem>
         </varlistentry>
       </variablelist>
       <para outputformat="db">
-        If an entity is placed at the beginning of a phrase or title, its
-        resolved form is usually lowercase (unless specified in uppercase, for
-        example, for product names). To have it capitalized, use the
-        <tag class="emptytag">phrase role="style:sentencecase"</tag> element.
+        If an entity is placed at the beginning of a phrase or title, its resolved form is usually
+        lowercase (unless specified in uppercase, for example, for product names). To have it
+        capitalized, use the <tag class="emptytag">phrase role="style:sentencecase"</tag> element.
         For example:
       </para>
 <screen outputformat="db">&lt;phrase role="style:sentencecase"&gt;<tag class="genentity">ulp</tag>&lt;/phrase&gt;</screen>
       <para outputformat="db">
-        The entity <tag class="genentity">ulp</tag> expands into <quote>User
-        space live patching</quote>.
+        The entity <tag class="genentity">ulp</tag> expands into <quote>User space live
+        patching</quote>.
       </para>
       <para outputformat="db">
-        Never add this tag to the content within
-        <tag class="emptytag">command</tag> and
-        <tag class="emptytag">systemitem</tag> elements. Capitalizing anything
-        inside these elements makes the content ambiguous.
+        Never add this tag to the content within <tag class="emptytag">command</tag> and
+        <tag class="emptytag">systemitem</tag> elements. Capitalizing anything inside these
+        elements makes the content ambiguous.
       </para>
     </section>
     <section xml:id="sec-use-entity">
@@ -280,55 +264,52 @@ It can include multiple lines
       <para>
         &suse; uses a set of custom entities. Find these entities in the
         <filename outputformat="db">*.ent</filename><filename outputformat="adoc">*-attributes.adoc</filename>
-        files in each documentation repository. One entity file can include
-        other entity files.
+        files in each documentation repository. One entity file can include other entity files.
       </para>
       <itemizedlist>
         <listitem>
           <para>
-            Entity files are only used for original, English-language documents.
-            Translated documents contain only the resolved form of entities,
-            that is, plain-text directly in the document.
+            Entity files are only used for original, English-language documents. Translated
+            documents contain only the resolved form of entities, that is, plain-text directly in
+            the document.
           </para>
         </listitem>
         <listitem>
           <para>
-            If you need a new entity to be used generically across all
-            repositories, open a pull request against
+            If you need a new entity to be used generically across all repositories, open a pull
+            request against
             <filename
         outputformat="db">generic-entities.ent</filename><filename
         outputformat="adoc">generic-attributes.adoc</filename>
-            in the Doc Kit repository. After the change is approved by the Doc
-            Kit maintainers, the entity update for
+            in the Doc Kit repository. After the change is approved by the Doc Kit maintainers, the
+            entity update for
             <filename
         outputformat="db">generic-entities.ent</filename><filename
         outputformat="adoc">generic-attributes.adoc</filename>
-            will be rolled out to all Doc Kit-based repositories with the next
-            Doc Kit run. If you need a custom entity that only applies to a
-            specific repository, define it in
-            <phrase outputformat="db"><filename>product-entities.ent</filename>
-            or <filename>entity-decl.ent</filename></phrase>
-            <filename outputformat="adoc">product-attributes.adoc</filename> in
-            this specific repository.
+            will be rolled out to all Doc Kit-based repositories with the next Doc Kit run. If you
+            need a custom entity that only applies to a specific repository, define it in
+            <phrase outputformat="db"><filename>product-entities.ent</filename> or
+            <filename>entity-decl.ent</filename></phrase>
+            <filename outputformat="adoc">product-attributes.adoc</filename> in this specific
+            repository.
           </para>
           <para>
-            Do not include custom entity definitions directly in the file
-            header, unless the custom definitions are needed to override
-            externally embedded entities.
+            Do not include custom entity definitions directly in the file header, unless the custom
+            definitions are needed to override externally embedded entities.
           </para>
         </listitem>
         <listitem>
           <para>
-            Use the UTF-8 encoding when editing and saving the entity
-            declaration file or any of the &suse;
+            Use the UTF-8 encoding when editing and saving the entity declaration file or any of
+            the &suse;
             <phrase outputformat="db">XML</phrase><phrase outputformat="adoc">AsciiDoc</phrase>
             files.
           </para>
         </listitem>
       </itemizedlist>
       <para outputformat="db">
-        Each header of a &suse; XML file includes the entity declaration file
-        (by means of an entity):
+        Each header of a &suse; XML file includes the entity declaration file (by means of an
+        entity):
       </para>
       <para outputformat="adoc">
         Entity files are usually included from the book or article main file:
@@ -363,18 +344,17 @@ It can include multiple lines
           </callout>
           <callout arearefs="co-entity">
             <para>
-              Using another entity within the entity value. This entity
-              reference is only valid if the other entity is defined somewhere
-              within the scope of the XML document that is built. However, it
-              does not matter whether the entity is defined before or after the
+              Using another entity within the entity value. This entity reference is only valid if
+              the other entity is defined somewhere within the scope of the XML document that is
+              built. However, it does not matter whether the entity is defined before or after the
               current entity definition.
             </para>
           </callout>
           <callout arearefs="co-tag">
             <para>
-              Using a DocBook/GeekoDoc element within the entity value. The
-              attribute <tag class="attribute">xmlns</tag> must be included to
-              define the correct XML namespace.
+              Using a DocBook/GeekoDoc element within the entity value. The attribute
+              <tag class="attribute">xmlns</tag> must be included to define the correct XML
+              namespace.
             </para>
           </callout>
         </calloutlist>
@@ -391,10 +371,9 @@ It can include multiple lines
           </callout>
           <callout arearefs="co-entity-adoc">
             <para>
-              Using another entity within the entity value. This entity
-              reference is only valid if the other entity is defined somewhere
-              within the scope of the XML document that is built. However, it
-              does not matter whether the entity is defined before or after the
+              Using another entity within the entity value. This entity reference is only valid if
+              the other entity is defined somewhere within the scope of the XML document that is
+              built. However, it does not matter whether the entity is defined before or after the
               current entity definition.
             </para>
           </callout>
@@ -405,36 +384,32 @@ It can include multiple lines
   <section xml:id="sec-xinclude">
     <title>Include elements</title>
     <para>
-      Include elements are used to create modular source files that are easier
-      to work with and can be reused. When editing a book, create a new source
-      file for every chapter. Later, create a new file that can serve as the
-      central point. In this file, include elements to reference all chapters in
-      the correct order:
+      Include elements are used to create modular source files that are easier to work with and can
+      be reused. When editing a book, create a new source file for every chapter. Later, create a
+      new file that can serve as the central point. In this file, include elements to reference all
+      chapters in the correct order:
     </para>
 <screen outputformat="db">&lt;xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="gfdl.xml"/&gt;</screen>
 <screen outputformat="adoc">[appendix]
 include::common_license_gfdl1.2.adoc[]</screen>
     <para>
-      Include elements allow adding common sections to multiple books or
-      articles without having to maintain the text in multiple places. Common
-      sections include licenses and information on typographical conventions.
-      Includes also simplify co-editing documentation with others in a version
-      control system as they reduce the chance of merge conflicts.
+      Include elements allow adding common sections to multiple books or articles without having to
+      maintain the text in multiple places. Common sections include licenses and information on
+      typographical conventions. Includes also simplify co-editing documentation with others in a
+      version control system as they reduce the chance of merge conflicts.
     </para>
     <para outputformat="db">
-      By default, files referenced via XIncludes must be well-formed XML files
-      that are also valid GeekoDoc fragments. This means that they must have a
-      single top-level element and must not contain elements that are not
-      allowed in GeekoDoc. Files that are supposed to be referenced multiple
-      times from within the same set, book or article must not contain any
+      By default, files referenced via XIncludes must be well-formed XML files that are also valid
+      GeekoDoc fragments. This means that they must have a single top-level element and must not
+      contain elements that are not allowed in GeekoDoc. Files that are supposed to be referenced
+      multiple times from within the same set, book or article must not contain any
       <tag class="attribute">xml:id</tag> attributes.
     </para>
     <para outputformat="db">
-      XIncludes also allow embedding plaintext files, for example, as the
-      content in <tag class="emptytag">screen</tag> elements. To embed a
-      plaintext file, add the attribute
-      <tag class="attribute">parse="text"</tag> to the
-      <tag class="emptytag">xi:include</tag> element.
+      XIncludes also allow embedding plaintext files, for example, as the content in
+      <tag class="emptytag">screen</tag> elements. To embed a plaintext file, add the attribute
+      <tag class="attribute">parse="text"</tag> to the <tag class="emptytag">xi:include</tag>
+      element.
     </para>
   </section>
 </chapter>

@@ -7,68 +7,63 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-name">
   <title>Names of example items</title>
   <info>
-   <revhistory xml:id="rh-name">
-    <revision>
-     <date>2025-06-04</date>
-     <revdescription>
-      <para/>
-     </revdescription>
-    </revision>
-   </revhistory>
+    <revhistory xml:id="rh-name">
+      <revision><date>2025-06-04</date>
+        <revdescription>
+          <para/>
+        </revdescription>
+      </revision>
+    </revhistory>
   </info>
   <para>
-    This section summarizes conventions for creating generic names for objects
-    in documentation. Most of the following names are covered through entities.
-    To check their spelling, refer to the Doc Kit repository at
-    <link xlink:href="https://github.com/openSUSE/doc-kit/tree/main/entities"/>.
-    See also <xref linkend="sec-entity"/>.
+    This section summarizes conventions for creating generic names for objects in documentation.
+    Most of the following names are covered through entities. To check their spelling, refer to the
+    Doc Kit repository at
+    <link xlink:href="https://github.com/openSUSE/doc-kit/tree/main/entities"/>. See also
+    <xref linkend="sec-entity"/>.
   </para>
   <section xml:id="sec-domain">
     <title>Domains</title>
     <para>
       Use <link xlink:href="http://www.example.com"/> and
-      <link xlink:href="http://www.example.org"/> as example domains. Both
-      domains were registered for use in documentation.
+      <link xlink:href="http://www.example.org"/> as example domains. Both domains were registered
+      for use in documentation.
     </para>
   </section>
   <section xml:id="sec-host">
     <title>Host names</title>
     <para>
       Use objects of the solar system: For the most important system, use
-      <systemitem>sun</systemitem>. For other systems, use the names of planets
-      such as <systemitem>earth</systemitem> or <systemitem>mars</systemitem>.
+      <systemitem>sun</systemitem>. For other systems, use the names of planets such as
+      <systemitem>earth</systemitem> or <systemitem>mars</systemitem>.
     </para>
   </section>
   <section xml:id="sec-ipv4">
     <title>IPv4 addresses</title>
     <para>
-      Use addresses from the class C subnet <literal>192.168.255.0</literal>
-      for examples. That is, replace the final <literal>0</literal> with any
-      integer between <literal>0</literal> and <literal>255</literal>. To
-      create examples using a larger setup, use addresses from the private
-      network ranges. For more information, see
+      Use addresses from the class C subnet <literal>192.168.255.0</literal> for examples. That is,
+      replace the final <literal>0</literal> with any integer between <literal>0</literal> and
+      <literal>255</literal>. To create examples using a larger setup, use addresses from the
+      private network ranges. For more information, see
       <link xlink:href="http://en.wikipedia.org/wiki/Private_network"/>.
     </para>
   </section>
   <section xml:id="sec-ipv6">
     <title>IPv6 addresses</title>
     <para>
-      Use addresses from the subnet <literal>2001:0db8::/32</literal> for
-      examples. That is, after the <literal>2001:0db8:</literal> prefix, add
-      six four-digit numbers, each separated by a colon on both sides. Each of
-      the hexadecimal digits may have a value between <literal>0</literal> and
-      <literal>f</literal>. A valid example URL is
-      <literal>2001:0db8:0123:4567:89ab:cdef:1234:5678</literal>. For more
-      information, see
+      Use addresses from the subnet <literal>2001:0db8::/32</literal> for examples. That is, after
+      the <literal>2001:0db8:</literal> prefix, add six four-digit numbers, each separated by a
+      colon on both sides. Each of the hexadecimal digits may have a value between
+      <literal>0</literal> and <literal>f</literal>. A valid example URL is
+      <literal>2001:0db8:0123:4567:89ab:cdef:1234:5678</literal>. For more information, see
       <link xlink:href="http://en.wikipedia.org/wiki/IPv6_subnetting_reference"/>.
     </para>
   </section>
   <section xml:id="sec-user">
     <title>Users</title>
     <para>
-      For example users, use free-software mascots, such as Tux (Linux Kernel),
-      Wilber (The GIMP), Geeko (&suse;), Foxkeh (Firefox), Konqi (KDE), or Duke
-      (Java).
+      For example users, use free-software mascots, such as Tux (Linux Kernel), Wilber (The GIMP),
+      Geeko (&suse;), Foxkeh (Firefox), Konqi (KDE), or Duke (Java).
     </para>
   </section>
 </chapter>
