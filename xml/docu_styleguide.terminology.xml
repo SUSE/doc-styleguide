@@ -7,35 +7,32 @@
 <appendix xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="app-terminology">
   <title>Terminology and general vocabulary</title>
   <info>
-   <revhistory xml:id="rh-app-terminology">
-    <revision>
-     <date>2025-06-04</date>
-     <revdescription>
-      <para/>
-     </revdescription>
-    </revision>
-   </revhistory>
+    <revhistory xml:id="rh-app-terminology">
+      <revision><date>2025-06-04</date>
+        <revdescription>
+          <para/>
+        </revdescription>
+      </revision>
+    </revhistory>
   </info>
   <para>
-    The following two tables define technical terms and general vocabulary for
-    use in SUSE documentation. See also <xref linkend="sec-language"/>.
+    The following two tables define technical terms and general vocabulary for use in SUSE
+    documentation. See also <xref linkend="sec-language"/>.
   </para>
   <para>
-    If unable to find a term below, check &suse;'s official terminology
-    database, <link xlink:href="https://suse.termweb.eu/">TermWeb</link>. It
-    contains company-specific terminology in English and all our supported
-    languages. TermWeb can be accessed only by &suse; employees and external
-    partners with a SUSE account (get one at
+    If unable to find a term below, check &suse;'s official terminology database,
+    <link xlink:href="https://suse.termweb.eu/">TermWeb</link>. It contains company-specific
+    terminology in English and all our supported languages. TermWeb can be accessed only by &suse;
+    employees and external partners with a SUSE account (get one at
     <link xlink:href="https://www.suse.com/account/create"/>).
   </para>
   <sect1 xml:id="sec-terminology">
     <title>Terminology</title>
 
     <para>
-      The following table defines the correct spellings and denominations for
-      technical terms in SUSE documentation. Always use the entry listed under
-      <quote>Accepted</quote> in the table below. All terms are reproduced in
-      sentence-style capitalization.
+      The following table defines the correct spellings and denominations for technical terms in
+      SUSE documentation. Always use the entry listed under <quote>Accepted</quote> in the table
+      below. All terms are reproduced in sentence-style capitalization.
     </para>
 
     <informaltable>
@@ -2126,23 +2123,21 @@
     <title>General vocabulary</title>
 
     <para>
-      The following table defines the correct spellings and denominations for
-      general vocabulary in SUSE documentation. Always use the entry listed
-      under <quote>Accepted</quote> in the table below. All entries are
-      reproduced in sentence-style capitalization.
+      The following table defines the correct spellings and denominations for general vocabulary in
+      SUSE documentation. Always use the entry listed under <quote>Accepted</quote> in the table
+      below. All entries are reproduced in sentence-style capitalization.
     </para>
 
     <note>
       <title>Review the word list of the Inclusive Naming Initiative</title>
       <para>
-        In addition to the words documented here, make sure to also review the
-        Word lists of the Inclusive Naming Initiative's
+        In addition to the words documented here, make sure to also review the Word lists of the
+        Inclusive Naming Initiative's
         <link xlink:href="https://inclusivenaming.org/language/evaluation-framework/">Evaluation
         Framework</link>.
       </para>
       <para>
-        For more information about word choices, see
-        <xref linkend="sec-bias"/>.
+        For more information about word choices, see <xref linkend="sec-bias"/>.
       </para>
     </note>
 

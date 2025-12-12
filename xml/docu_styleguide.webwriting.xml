@@ -7,33 +7,30 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-webwriting">
   <title>Writing for the Web</title>
   <info>
-   <revhistory xml:id="rh-webwriting">
-    <revision>
-     <date>2025-06-04</date>
-     <revdescription>
-      <para/>
-     </revdescription>
-    </revision>
-   </revhistory>
+    <revhistory xml:id="rh-webwriting">
+      <revision><date>2025-06-04</date>
+        <revdescription>
+          <para/>
+        </revdescription>
+      </revision>
+    </revhistory>
   </info>
   <para>
-    Create engaging and informative content that helps your audience and is
-    optimized for the Web.
+    Create engaging and informative content that helps your audience and is optimized for the Web.
   </para>
   <section xml:id="sec-topical">
     <title>Topical structure</title>
     <para>
-      The most important thing to do with your Web copy is to help users get
-      answers to their questions as soon as possible. To achieve this, we
-      recommend the modular approach of topic-based authoring where
-      documentation is created and maintained in chunks, subsequently referred
-      to as topics.
+      The most important thing to do with your Web copy is to help users get answers to their
+      questions as soon as possible. To achieve this, we recommend the modular approach of
+      topic-based authoring where documentation is created and maintained in chunks, subsequently
+      referred to as topics.
     </para>
     <para>
-      Topics have the sole purpose of supporting users in their tasks. Each
-      topic focuses on one specific subject and has one distinct purpose. We
-      write topics in a way that they can stand alone as well as in context
-      with other topics. They should also be reusable in different contexts.
+      Topics have the sole purpose of supporting users in their tasks. Each topic focuses on one
+      specific subject and has one distinct purpose. We write topics in a way that they can stand
+      alone as well as in context with other topics. They should also be reusable in different
+      contexts.
     </para>
     <para>
       Recommendations:
@@ -41,23 +38,22 @@
     <itemizedlist>
       <listitem>
         <para>
-          Put your most important information first. Users typically decide if
-          they are going to stay on your page within 3&ndash;5 seconds. Make
-          sure your copy helps users understand the big picture right away.
+          Put your most important information first. Users typically decide if they are going to
+          stay on your page within 3&ndash;5 seconds. Make sure your copy helps users understand
+          the big picture right away.
         </para>
       </listitem>
       <listitem>
         <para>
-          Write for scanners. Help readers find the answer to their question.
-          Create headlines that are clear and to the point. Break long
-          headlines into a heading and sub-head. Ask yourself: Is it easy to
-          see the benefit of the page with a quick glance?
+          Write for scanners. Help readers find the answer to their question. Create headlines that
+          are clear and to the point. Break long headlines into a heading and sub-head. Ask
+          yourself: Is it easy to see the benefit of the page with a quick glance?
         </para>
       </listitem>
       <listitem>
         <para>
-          Organize content logically. Layer and break up your content into
-          sections to help users find answers at a glance.
+          Organize content logically. Layer and break up your content into sections to help users
+          find answers at a glance.
         </para>
       </listitem>
     </itemizedlist>
@@ -65,10 +61,9 @@
   <section xml:id="sec-seo">
     <title>Writing SEO-friendly content</title>
     <para>
-      SEO, or Search Engine Optimization, is the strategy to attract organic
-      (unpaid) traffic that originates from online search and refers to
-      visitors landing on the Web site. When it comes to SEO, content is key.
-      Here are some insights to help you create and design the content that
+      SEO, or Search Engine Optimization, is the strategy to attract organic (unpaid) traffic that
+      originates from online search and refers to visitors landing on the Web site. When it comes
+      to SEO, content is key. Here are some insights to help you create and design the content that
       will rank high in search engines.
     </para>
     <variablelist>
@@ -76,14 +71,13 @@
         <term>Brainstorm and research keywords</term>
         <listitem>
           <para>
-            To learn what type of content search engines deem best for a
-            specific keyword, search the phrases you want to rank for. Bear in
-            mind the approved &suse; documentation terminology.
+            To learn what type of content search engines deem best for a specific keyword, search
+            the phrases you want to rank for. Bear in mind the approved &suse; documentation
+            terminology.
           </para>
           <para>
-            At the same time, do not stuff your content with keywords. The
-            keyword ratio for an article should be 2&ndash;4%, that is,
-            8&ndash;10 keywords per 500 words.
+            At the same time, do not stuff your content with keywords. The keyword ratio for an
+            article should be 2&ndash;4%, that is, 8&ndash;10 keywords per 500 words.
           </para>
         </listitem>
       </varlistentry>
@@ -91,9 +85,9 @@
         <term>Structure your content in a way that is easy for users to scan</term>
         <listitem>
           <para>
-            Structuring your headings in a hierarchy can make a larger content
-            piece easily scannable while helping search engines understand the
-            context of your content. For example:
+            Structuring your headings in a hierarchy can make a larger content piece easily
+            scannable while helping search engines understand the context of your content. For
+            example:
           </para>
 <screen>&lt;H1&gt; Dealing with Boot and Installation Problems
 &lt;H2&gt; Problems Booting
@@ -109,115 +103,150 @@
         <term>Create concise and meaningful meta titles</term>
         <listitem>
           <para>
-            For search engines to recognize meta titles, they must be deliberately 
-            created in the designated section of each document. Sometimes, search engines
-            may extract the meta titles from the H1 or H2 heading. Follow these guidelines when 
-            creating titles:
-            </para>
-            <itemizedlist>
-              <listitem>
-                <para>Keep the title under 55 characters, if possible, and never shorter than 29.</para>
-              </listitem>
-              <listitem>
-                <para>Integrate keywords naturally, including product names where relevant.</para>
-              </listitem>
-              <listitem>
-                <para>Place the primary keyword in the page title, first H1,
-            first paragraph, and URL slug. Use secondary keywords
-            in H2&ndash;H3 headings, image alt text and the meta description to support
-            discoverability and relevance.
-                </para>
-              </listitem>
-              <listitem>
-                <para>For lengthy product names, abbreviations may be necessary. Define 
-                  each abbreviation at first use by placing the full term in parentheses after it.
-                </para>
-              </listitem>
-            </itemizedlist>
+            For search engines to recognize meta titles, they must be deliberately created in the
+            designated section of each document. Sometimes, search engines may extract the meta
+            titles from the H1 or H2 heading. Follow these guidelines when creating titles:
+          </para>
+          <itemizedlist>
+            <listitem>
+              <para>
+                Keep the title under 55 characters, if possible, and never shorter than 29.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Integrate keywords naturally, including product names where relevant.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Place the primary keyword in the page title, first H1, first paragraph, and URL
+                slug. Use secondary keywords in H2&ndash;H3 headings, image alt text and the meta
+                description to support discoverability and relevance.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                For lengthy product names, abbreviations may be necessary. Define each abbreviation
+                at first use by placing the full term in parentheses after it.
+              </para>
+            </listitem>
+          </itemizedlist>
         </listitem>
       </varlistentry>
       <varlistentry>
         <term>Create concise and effective meta descriptions</term>
         <listitem>
           <para>
-            Meta descriptions, like titles, should be specifically 
-            authored in the appropriate section of each document. Search engines may also extract them
-            from the abstract. Follow these rules:</para>
-            <itemizedlist>
-              <listitem><para>Keep the description between 120&ndash;155 characters.</para>
-              </listitem>
-              <listitem><para>Ensure it is a single, complete sentence that accurately summarizes the content.</para>
-              </listitem>
-              <listitem><para>Use the following rules that we provide here as a ready-made AI prompt template:</para>
-                  <para><emphasis>You are an expert technical writer specializing in Search Engine Optimization (SEO).
-        Write a single, compelling meta description for the following documentation page content.
-        Follow these rules strictly:</emphasis></para>
-        <orderedlist>
-        <listitem><para><emphasis>The description MUST be a single, complete sentence.</emphasis></para></listitem>
-        <listitem><para><emphasis>The description's length MUST be between 120 and 155 characters.</emphasis></para></listitem>
-        <listitem><para><emphasis>It MUST be an accurate and concise summary of the provided text.</emphasis></para></listitem>
-        <listitem><para><emphasis>Write in a neutral, professional, and helpful tone.</emphasis></para></listitem>
-        <listitem><para><emphasis>Your output MUST ONLY be the description text itself. Do NOT include quotation marks, 
-          labels like <quote>Description:</quote>, or any other explanatory text.</emphasis></para></listitem>
-        </orderedlist>
-                </listitem>                
-            </itemizedlist>
+            Meta descriptions, like titles, should be specifically authored in the appropriate
+            section of each document. Search engines may also extract them from the abstract.
+            Follow these rules:
+          </para>
+          <itemizedlist>
+            <listitem>
+              <para>
+                Keep the description between 120&ndash;155 characters.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Ensure it is a single, complete sentence that accurately summarizes the content.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Use the following rules that we provide here as a ready-made AI prompt template:
+              </para>
+              <para>
+                <emphasis>You are an expert technical writer specializing in Search Engine
+                Optimization (SEO). Write a single, compelling meta description for the following
+                documentation page content. Follow these rules strictly:</emphasis>
+              </para>
+              <orderedlist>
+                <listitem>
+                  <para>
+                    <emphasis>The description MUST be a single, complete sentence.</emphasis>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <emphasis>The description's length MUST be between 120 and 155
+                    characters.</emphasis>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <emphasis>It MUST be an accurate and concise summary of the provided
+                    text.</emphasis>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <emphasis>Write in a neutral, professional, and helpful tone.</emphasis>
+                  </para>
+                </listitem>
+                <listitem>
+                  <para>
+                    <emphasis>Your output MUST ONLY be the description text itself. Do NOT include
+                    quotation marks, labels like <quote>Description:</quote>, or any other
+                    explanatory text.</emphasis>
+                  </para>
+                </listitem>
+              </orderedlist>
+            </listitem>
+          </itemizedlist>
         </listitem>
       </varlistentry>
       <varlistentry>
         <term>Link from (and to) your content</term>
         <listitem>
           <para>
-            Links are critical to establishing the authority and relevance of
-            your content. The two most important types of links are:
+            Links are critical to establishing the authority and relevance of your content. The two
+            most important types of links are:
           </para>
           <orderedlist>
             <listitem>
               <para>
-                Internal links lead to and from other pages within the same
-                domain and help establish the relationship between two pieces
-                of content. Internal linking helps search engines discover new
-                pages on the Web site and index them.
+                Internal links lead to and from other pages within the same domain and help
+                establish the relationship between two pieces of content. Internal linking helps
+                search engines discover new pages on the Web site and index them.
               </para>
             </listitem>
             <listitem>
               <para>
-                Inbound links lead to your content piece from a different
-                domain (for example, SAP.com to SUSE.com).
+                Inbound links lead to your content piece from a different domain (for example,
+                SAP.com to SUSE.com).
               </para>
             </listitem>
           </orderedlist>
           <para>
-            External links to high-quality, creditable Web sites help increase
-            the validity of your own Web site. The better the links, the higher
-            the page ranks in search results.
+            External links to high-quality, creditable Web sites help increase the validity of your
+            own Web site. The better the links, the higher the page ranks in search results.
           </para>
         </listitem>
       </varlistentry>
-      </variablelist>
+    </variablelist>
   </section>
-   <section xml:id="sec-accessibility">
+  <section xml:id="sec-accessibility">
     <title>Ensuring accessibility</title>
     <para>
-    Accessible technical documentation is essential because it ensures
-    information is available to all users regardless of disabilities or
-    impairments. Many users rely on assistive technologies such as screen
-    readers and alternative input devices to navigate Web pages. Additionally,
-    accessible documentation supports compliance with legal requirements and
-    makes more online resources usable for everyone. Here are some guidelines
-    on how to make content more accessible:
+      Accessible technical documentation is essential because it ensures information is available
+      to all users regardless of disabilities or impairments. Many users rely on assistive
+      technologies such as screen readers and alternative input devices to navigate Web pages.
+      Additionally, accessible documentation supports compliance with legal requirements and makes
+      more online resources usable for everyone. Here are some guidelines on how to make content
+      more accessible:
     </para>
     <variablelist>
       <varlistentry>
         <term>Provide alternative text for images</term>
         <listitem>
           <para>
-            Users who rely on screen readers need alternative (alt) text to
-            understand the purpose of an image. Describe the image’s essential
-            content and function. For example, instead of <quote>screenshot of
-            settings,</quote> say <quote>The Settings menu showing the notifications
-            option turned on.</quote> Learn more about alt text markup
-            in <xref linkend="sec-figure"/>.
+            Users who rely on screen readers need alternative (alt) text to understand the purpose
+            of an image. Describe the image’s essential content and function. For example, instead
+            of <quote>screenshot of settings,</quote> say <quote>The Settings menu showing the
+            notifications option turned on.</quote> Learn more about alt text markup in
+            <xref linkend="sec-figure"/>.
           </para>
         </listitem>
       </varlistentry>
@@ -225,9 +254,9 @@
         <term>Use clear and simple language</term>
         <listitem>
           <para>
-            Technical documentation should be easy to read and understand. Avoid
-            unnecessary jargon, use plain language where possible, and keep sentences
-            concise. This helps non-native speakers and users with cognitive disabilities.
+            Technical documentation should be easy to read and understand. Avoid unnecessary
+            jargon, use plain language where possible, and keep sentences concise. This helps
+            non-native speakers and users with cognitive disabilities.
           </para>
         </listitem>
       </varlistentry>
@@ -235,23 +264,22 @@
         <term>Ensure tables are readable and well-formatted</term>
         <listitem>
           <para>
-            Tables should be structured so that assistive technologies can
-            interpret them correctly. Always use table headers for columns
-            and rows to provide context. Avoid leaving cells empty&mdash;if no data
-            applies, use a placeholder such as <quote>N/A</quote> or
-            <quote>None.</quote> More about tables in <xref linkend="sec-table"/>.
+            Tables should be structured so that assistive technologies can interpret them
+            correctly. Always use table headers for columns and rows to provide context. Avoid
+            leaving cells empty&mdash;if no data applies, use a placeholder such as
+            <quote>N/A</quote> or <quote>None.</quote> More about tables in
+            <xref linkend="sec-table"/>.
           </para>
         </listitem>
       </varlistentry>
     </variablelist>
   </section>
-
   <section xml:id="sec-writing-global">
     <title>Writing for a global audience</title>
     <para>
-      Remember that every document is a potential candidate for localization
-      (translation). Make sure the document’s original English content is
-      correct and clear. Simplicity, clarity and direct prose are essential.
+      Remember that every document is a potential candidate for localization (translation). Make
+      sure the document’s original English content is correct and clear. Simplicity, clarity and
+      direct prose are essential.
     </para>
     <para>
       Recommendations:
@@ -259,21 +287,21 @@
     <itemizedlist>
       <listitem>
         <para>
-          Keep sentences short. Shorter sentences help translators and target
-          audience to better understand the content.
+          Keep sentences short. Shorter sentences help translators and target audience to better
+          understand the content.
         </para>
       </listitem>
       <listitem>
         <para>
-          Be consistent. Stick to the terminology and use the same sentence
-          structure for similar content. Use the same sentences for repetitive
-          texts. This helps to improve the translation memory leverage.
+          Be consistent. Stick to the terminology and use the same sentence structure for similar
+          content. Use the same sentences for repetitive texts. This helps to improve the
+          translation memory leverage.
         </para>
       </listitem>
       <listitem>
         <para>
-          Use proofreading and review options. Have your content reviewed to
-          detect misunderstandings in advance.
+          Use proofreading and review options. Have your content reviewed to detect
+          misunderstandings in advance.
         </para>
       </listitem>
       <listitem>
@@ -284,24 +312,22 @@
       </listitem>
       <listitem outputformat="db">
         <para>
-          Mark non-translatable text. Use tags as defined in
-          <xref linkend="sec-taglist"/> or use the ITS tag feature to mark all
-          content that should not be translated (for more information, see
-          <xref linkend="sec-taglist-ITS"/>). Use entities for product names,
-          example names, etc. Always mark code as such so that it is not
-          translated.
+          Mark non-translatable text. Use tags as defined in <xref linkend="sec-taglist"/> or use
+          the ITS tag feature to mark all content that should not be translated (for more
+          information, see <xref linkend="sec-taglist-ITS"/>). Use entities for product names,
+          example names, etc. Always mark code as such so that it is not translated.
         </para>
       </listitem>
       <listitem>
         <para>
-          Write for the world (if possible). Do not use country-specific words
-          and examples. Use common international examples instead.
+          Write for the world (if possible). Do not use country-specific words and examples. Use
+          common international examples instead.
         </para>
       </listitem>
       <listitem>
         <para>
-          Use only as many graphics as needed. As each graphic or screenshot
-          needs to be localized as well, keep it to the minimum.
+          Use only as many graphics as needed. As each graphic or screenshot needs to be localized
+          as well, keep it to the minimum.
         </para>
       </listitem>
       <listitem>
@@ -311,8 +337,8 @@
       </listitem>
       <listitem>
         <para>
-          Do not break your sentence with lists. For example, do not structure
-          the phrase like this:
+          Do not break your sentence with lists. For example, do not structure the phrase like
+          this:
         </para>
 <screen>You can use the following commands:
    -a

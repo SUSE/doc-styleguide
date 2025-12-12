@@ -11,35 +11,33 @@
  >
   <title>DocBook tags</title>
   <info>
-   <revhistory xml:id="rh-taglist">
-    <revision>
-     <date>2025-06-04</date>
-     <revdescription>
-      <para/>
-     </revdescription>
-    </revision>
-   </revhistory>
+    <revhistory xml:id="rh-taglist">
+      <revision><date>2025-06-04</date>
+        <revdescription>
+          <para/>
+        </revdescription>
+      </revision>
+    </revhistory>
   </info>
   <!-- leave this chapter out for adoc?-->
   <para>
-    The &suse; and openSUSE user documentation is written with DocBook <!-- not true--> and uses
-    a Relax NG schema that defines a restricted set of DocBook tags.
+    The &suse; and openSUSE user documentation is written with DocBook
+    <!-- not true-->
+    and uses a Relax NG schema that defines a restricted set of DocBook tags.
   </para>
   <para>
-    The following tables list and describe all DocBook tags used for writing
-    most of the &suse; user documentation. They also show which tags are
-    translated and which tags will be blocked for translation, which means that
-    those tags stay in English. The tables are divided into four categories,
-    listing the elements of each respective category.
+    The following tables list and describe all DocBook tags used for writing most of the &suse;
+    user documentation. They also show which tags are translated and which tags will be blocked for
+    translation, which means that those tags stay in English. The tables are divided into four
+    categories, listing the elements of each respective category.
   </para>
   <para>
-    With GeekoDoc 2, it is also possible to use the Internationalization Tag
-    Set (ITS) to explicitly indicate whether a tag should be translated or not.
-    For more information on ITS tags, see <xref linkend="sec-taglist-ITS"/>.
+    With GeekoDoc 2, it is also possible to use the Internationalization Tag Set (ITS) to
+    explicitly indicate whether a tag should be translated or not. For more information on ITS
+    tags, see <xref linkend="sec-taglist-ITS"/>.
   </para>
   <para>
-    For more information on GeekoDoc, see
-    <link xlink:href="https://opensuse.github.io/geekodoc/"/>
+    For more information on GeekoDoc, see <link xlink:href="https://opensuse.github.io/geekodoc/"/>
   </para>
   <para>
     For more information on all tags available in DocBook, see
@@ -50,12 +48,10 @@
     <section>
       <title>Meta elements</title>
       <para>
-        All the elements at the section level and above, and many other
-        elements, include a wrapper for meta information about the content. The
-        meta information wrapper is designed to contain bibliographic
-        information about the content (author, title, publisher, etc.) as well
-        as other meta information such as revision histories, keyword sets and
-        index terms.
+        All the elements at the section level and above, and many other elements, include a wrapper
+        for meta information about the content. The meta information wrapper is designed to contain
+        bibliographic information about the content (author, title, publisher, etc.) as well as
+        other meta information such as revision histories, keyword sets and index terms.
       </para>
       <informaltable>
         <tgroup cols="3">
@@ -256,14 +252,13 @@ title
               </entry>
               <entry>
                 <para>
-                  The text of the title for a section of a document or for a
-                  formal block-level element
+                  The text of the title for a section of a document or for a formal block-level
+                  element
                 </para>
                 <para>
-                  For document titles, such as book, article and set titles,
-                  use title-style capitalization. Apply sentence-style
-                  capitalization to all running text and all types of headings
-                  and titles that are part of the document content.
+                  For document titles, such as book, article and set titles, use title-style
+                  capitalization. Apply sentence-style capitalization to all running text and all
+                  types of headings and titles that are part of the document content.
                 </para>
               </entry>
               <entry>Yes</entry>
@@ -288,12 +283,12 @@ titleabbrev
       <title>Structure elements</title>
       <note>
         <para>
-          Structure elements are needed for sectioning and structuring your
-          document, such as defining chapters, appendix, etc.
+          Structure elements are needed for sectioning and structuring your document, such as
+          defining chapters, appendix, etc.
         </para>
         <para>
-          Most structure elements do not need translations. The child elements
-          like <tag class="starttag">title</tag> are translated.
+          Most structure elements do not need translations. The child elements like
+          <tag class="starttag">title</tag> are translated.
         </para>
       </note>
       <informaltable>
@@ -390,8 +385,8 @@ formalpara
               </entry>
               <entry>
                 <para>
-                  A paragraph with the title rendered as a run-in head. Use to
-                  create more compact lists, for example:
+                  A paragraph with the title rendered as a run-in head. Use to create more compact
+                  lists, for example:
                 </para>
                 <formalpara>
                   <title><command>who</command></title>
@@ -511,11 +506,10 @@ qandaset
     <section>
       <title>Block elements</title>
       <para>
-        The block elements occur immediately below the component and sectioning
-        elements. These are the (roughly) paragraph-level elements in DocBook.
-        They can be divided into a number of categories: lists, admonitions,
-        line-specific environments, synopses of several sorts, tables, figures,
-        examples, and a dozen or more miscellaneous elements.
+        The block elements occur immediately below the component and sectioning elements. These are
+        the (roughly) paragraph-level elements in DocBook. They can be divided into a number of
+        categories: lists, admonitions, line-specific environments, synopses of several sorts,
+        tables, figures, examples, and a dozen or more miscellaneous elements.
       </para>
       <informaltable>
         <tgroup cols="3">
@@ -582,8 +576,7 @@ figure
                   For TM parser settings, set to <emphasis>Yes</emphasis>.
                 </para>
                 <para>
-                  Child element <tag class="starttag">title</tag> is
-                  translated.
+                  Child element <tag class="starttag">title</tag> is translated.
                 </para>
               </entry>
             </row>
@@ -687,12 +680,11 @@ procedure
               </entry>
               <entry>
                 <para>
-                  <tag class="starttag">procedure</tag>: A list of operations
-                  to be performed in a well-defined sequence
+                  <tag class="starttag">procedure</tag>: A list of operations to be performed in a
+                  well-defined sequence
                 </para>
                 <para>
-                  <tag class="starttag">step</tag>: A unit of action in a
-                  procedure
+                  <tag class="starttag">step</tag>: A unit of action in a procedure
                 </para>
               </entry>
               <entry>Yes</entry>
@@ -705,9 +697,8 @@ programlisting
               </entry>
               <entry>
                 <para>
-                  A literal listing of a program or a part of a program. Use
-                  for program source or source fragment listings. Formatted as
-                  a displayed block. Similar to
+                  A literal listing of a program or a part of a program. Use for program source or
+                  source fragment listings. Formatted as a displayed block. Similar to
                   <tag class="starttag">screen</tag>.
                 </para>
               </entry>
@@ -773,8 +764,8 @@ table
                   No
                 </para>
                 <para>
-                  Except for child elements <tag class="starttag">title</tag>
-                  and <tag class="starttag">entry</tag>.
+                  Except for child elements <tag class="starttag">title</tag> and
+                  <tag class="starttag">entry</tag>.
                 </para>
                 <para>
                   For TM parser settings, set to <emphasis>Yes</emphasis>.
@@ -835,9 +826,9 @@ warning
     <section>
       <title>Inline elements</title>
       <para>
-        Inline elements are used to mark up running text. In published
-        documents, inline elements often cause a font change or other small
-        change, but they do not cause line or paragraph breaks.
+        Inline elements are used to mark up running text. In published documents, inline elements
+        often cause a font change or other small change, but they do not cause line or paragraph
+        breaks.
       </para>
       <informaltable>
         <tgroup cols="3">
@@ -966,8 +957,7 @@ guimenu
                   Yes
                 </para>
                 <para>
-                  Depends on whether UI is translated or not. If not, use ITS
-                  tag.
+                  Depends on whether UI is translated or not. If not, use ITS tag.
                 </para>
               </entry>
             </row>
@@ -1013,8 +1003,8 @@ keycap
                   The text printed on a key on a keyboard
                 </para>
                 <para>
-                  For function keys, always use with function, for example:
-                  &lt;keycap function="control">&lt;/keycap>
+                  For function keys, always use with function, for example: &lt;keycap
+                  function="control">&lt;/keycap>
                 </para>
               </entry>
               <entry>Yes</entry>
@@ -1041,8 +1031,13 @@ link
        A hypertext link. Use the secure protocol prefix
        (<literal>https://</literal>), if possible.
       </entry>
-              <entry><para>No</para>
-              <para>For TM parser settings, set to <emphasis>Yes</emphasis>.</para>
+              <entry>
+                <para>
+                  No
+                </para>
+                <para>
+                  For TM parser settings, set to <emphasis>Yes</emphasis>.
+                </para>
               </entry>
             </row>
             <row>
@@ -1279,18 +1274,16 @@ xref
   <section xml:id="sec-taglist-ITS">
     <title>Using ITS tags</title>
     <para>
-      With GeekoDoc 2, it is possible to use the Internationalization Tag Set
-      (ITS) tags to explicitly indicate that a tag should be translated or not.
+      With GeekoDoc 2, it is possible to use the Internationalization Tag Set (ITS) tags to
+      explicitly indicate that a tag should be translated or not.
     </para>
     <para>
-      For this, you need to have the ITS namespace enabled in the XML file.
-      Make sure the following line is added to the root element:
-      <code>xmlns:its="http://www.w3.org/2005/11/its"</code>.
+      For this, you need to have the ITS namespace enabled in the XML file. Make sure the following
+      line is added to the root element: <code>xmlns:its="http://www.w3.org/2005/11/its"</code>.
     </para>
     <para>
-      For example: You have used the tag <tag class="starttag">guimenu</tag>
-      which is usually translated but in this particular case it should not be
-      translated.
+      For example: You have used the tag <tag class="starttag">guimenu</tag> which is usually
+      translated but in this particular case it should not be translated.
     </para>
     <para>
       To mark the tag correctly, use the ITS tag as shown here:

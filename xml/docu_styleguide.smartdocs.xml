@@ -10,27 +10,26 @@
        xmlns:its="http://www.w3.org/2005/11/its" version="5.0" xml:id="sec-smartdocs">
   <title>Working with &sd;</title>
   <info>
-   <revhistory xml:id="rh-smartdocs">
-    <revision>
-     <date>2025-08-14</date>
-     <revdescription>
-      <para/>
-     </revdescription>
-    </revision>
-   </revhistory>
+    <revhistory xml:id="rh-smartdocs">
+      <revision><date>2025-08-14</date>
+        <revdescription>
+          <para/>
+        </revdescription>
+      </revision>
+    </revhistory>
   </info>
   <para>
-    &sd; represent a modular approach to documentation whose goal is producing
-    sets of adaptable, solution-based, easy-to-find and reusable documents.
+    &sd; represent a modular approach to documentation whose goal is producing sets of adaptable,
+    solution-based, easy-to-find and reusable documents.
   </para>
   <para>
-    Rather than covering a complete technology or a set of problems, each &sd;
-    article serves one distinct purpose. Each article stands for itself,
-    including requirements, context, instructions, troubleshooting and FAQs.
+    Rather than covering a complete technology or a set of problems, each &sd; article serves one
+    distinct purpose. Each article stands for itself, including requirements, context,
+    instructions, troubleshooting and FAQs.
   </para>
   <para>
-    &sd; consist of topics&mdash;smaller information units that can be reused
-    in different contexts. Four different topic types are provided:
+    &sd; consist of topics&mdash;smaller information units that can be reused in different
+    contexts. Four different topic types are provided:
   </para>
   <itemizedlist>
     <listitem>
@@ -45,28 +44,25 @@
     </listitem>
     <listitem>
       <para>
-        Reference topics inform the user about basic facts (settings, options,
-        parameters, etc.).
+        Reference topics inform the user about basic facts (settings, options, parameters, etc.).
       </para>
     </listitem>
     <listitem>
       <para>
-        Glue topics help navigate complex topics and provide links to related
-        information (combine texts or structures that do not fit into any other
-        category). Typical glue topics include <quote>For more
-        information</quote> and <quote>What's next</quote> sections. Use glue
+        Glue topics help navigate complex topics and provide links to related information (combine
+        texts or structures that do not fit into any other category). Typical glue topics include
+        <quote>For more information</quote> and <quote>What's next</quote> sections. Use glue
         topics to provide an additional layer of navigation for your article.
       </para>
     </listitem>
   </itemizedlist>
   <para>
-    Articles are built by bundling these topics into assembly
-    files&mdash;organizational units to structure the topics to create a
-    coherent and meaningful document.
+    Articles are built by bundling these topics into assembly files&mdash;organizational units to
+    structure the topics to create a coherent and meaningful document.
   </para>
   <para>
-    To create a &sd; project, use the templates for the assembly and its
-    topical components that are provided in the
+    To create a &sd; project, use the templates for the assembly and its topical components that
+    are provided in the
     <link
     xlink:href="https://github.com/SUSE/doc-modular/tree/main/templates">doc-modular
     repository</link>.
@@ -74,9 +70,9 @@
   <section xml:id="sec-taglist-smartdocs">
     <title>Using ITS tags with assemblies</title>
     <para>
-      Assembly files use ITS tags and attributes which flag whether the content
-      of the tag should be translated or not. In the following example, the ITS
-      attribute indicates that the content of the tag should not be translated:
+      Assembly files use ITS tags and attributes which flag whether the content of the tag should
+      be translated or not. In the following example, the ITS attribute indicates that the content
+      of the tag should not be translated:
     </para>
 <screen>&lt;meta name="maintainer" content="Smart Doc author" its:translate="no"/></screen>
     <para>
@@ -244,8 +240,7 @@ short title for SEO and social media, max. 55 chars&lt;/meta>
                 Yes
               </para>
               <para>
-                Stick to the length limitations, min. 29 chars and max. 55
-                chars
+                Stick to the length limitations, min. 29 chars and max. 55 chars
               </para>
             </entry>
           </row>
@@ -371,9 +366,8 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
             <entry></entry>
             <entry>
               <para>
-                <tag class="starttag">title</tag>and
-                <tag class="starttag">subtitle</tag>Yes, with length
-                limitations (see above)
+                <tag class="starttag">title</tag>and <tag class="starttag">subtitle</tag>Yes, with
+                length limitations (see above)
               </para>
               <para>
                 <tag class="starttag">revhistory</tag>No
@@ -393,23 +387,21 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
   <section xml:id="sec-revhistory">
     <title>Revision history</title>
     <para>
-      A <emphasis>revision history</emphasis> lists all the high-level changes
-      about the document itself. It gives the reader an overview of important
-      changes made over time.
+      A <emphasis>revision history</emphasis> lists all the high-level changes about the document
+      itself. It gives the reader an overview of important changes made over time.
     </para>
     <para>
-      Update revision history regularly, mentioning most important changes to
-      your document when you amend or rework it. The data you enter as revision
-      history is used as metadata and as a signal of content freshness for 
-      search engines and LLMs. The <quote>Revision History</quote> text is
-      available as a link before the abstract and opens up in its individual
-      page. Keep in mind the following rules:
+      Update revision history regularly, mentioning most important changes to your document when
+      you amend or rework it. The data you enter as revision history is used as metadata and as a
+      signal of content freshness for search engines and LLMs. The <quote>Revision History</quote>
+      text is available as a link before the abstract and opens up in its individual page. Keep in
+      mind the following rules:
     </para>
     <itemizedlist>
       <listitem>
         <para>
-          List revision entries in descending order by date. The latest entry
-          must always come first.
+          List revision entries in descending order by date. The latest entry must always come
+          first.
         </para>
       </listitem>
       <listitem>
@@ -419,21 +411,22 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
       </listitem>
       <listitem>
         <para>
-          If you have several changes of the same type (addition, change,
-          removal), you may group them under a dedicated
-          <tag class="emptytag">itemizedlist</tag>.
+          If you have several changes of the same type (addition, change, removal), you may group
+          them under a dedicated <tag class="emptytag">itemizedlist</tag>.
         </para>
       </listitem>
       <listitem>
         <para>
-          Do not add links or references with <tag>xref</tag> of any kind. If
-          you want to mention a specific issue, use the abbreviations from
+          Do not add links or references with <tag>xref</tag> of any kind. If you want to mention a
+          specific issue, use the abbreviations from
           <link xlink:href="https://en.opensuse.org/openSUSE:Packaging_Patches_guidelines#Current_set_of_abbreviations"/>
           and wrap it inside the tag <tag>uri</tag>.
         </para>
       </listitem>
     </itemizedlist>
-    <para>To determine whether a change you made warrants a revision history entry, use this table:</para>
+    <para>
+      To determine whether a change you made warrants a revision history entry, use this table:
+    </para>
     <informaltable>
       <tgroup cols="2">
         <colspec colnum="1" colname="c1" colwidth="4.25*" />
@@ -494,13 +487,18 @@ ultrashort description for social media, max. 55 chars&lt;/meta>
       <revhistory xml:id="rh-USE-ROOTID">
         <revision><date>2025-12-14</date>
           <revdescription>
-            <para>Updated chapter on <quote>foo bar</quote>, removed section on <quote>foo bar 1</quote></para>
+            <para>
+              Updated chapter on <quote>foo bar</quote>, removed section on <quote>foo bar
+              1</quote>
+            </para>
           </revdescription>
         </revision>
         <revision><date>2025-11-01</date>
           <revdescription>
-            <para>Updated for the initial release of <phrase role="productname">SUSE Linux Enterprise Server</phrase>
-              <phrase role="productnumber">16</phrase></para>
+            <para>
+              Updated for the initial release of <phrase role="productname">SUSE Linux Enterprise
+              Server</phrase> <phrase role="productnumber">16</phrase>
+            </para>
           </revdescription>
         </revision>
       </revhistory>

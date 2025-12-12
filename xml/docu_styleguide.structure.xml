@@ -7,19 +7,18 @@
 <chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-structure">
   <title>Structure and markup</title>
   <info>
-   <revhistory xml:id="rh-structure">
-    <revision>
-     <date>2025-06-04</date>
-     <revdescription>
-      <para/>
-     </revdescription>
-    </revision>
-   </revhistory>
+    <revhistory xml:id="rh-structure">
+      <revision><date>2025-06-04</date>
+        <revdescription>
+          <para/>
+        </revdescription>
+      </revision>
+    </revhistory>
   </info>
   <para>
-    This chapter contains instructions on using the correct markup to create
-    consistent and legible documents, and structuring the content in the way
-    that it effectively helps readers find answers to their queries.
+    This chapter contains instructions on using the correct markup to create consistent and legible
+    documents, and structuring the content in the way that it effectively helps readers find
+    answers to their queries.
   </para>
   <para outputformat="db">
     In the Doc Kit repository, you can see examples of how
@@ -29,10 +28,9 @@
     are rendered in our documentation.
   </para>
   <para outputformat="db">
-    &suse; uses the GeekoDoc Relax NG schema which is compatible with DocBook
-    5.2. For more information about the XML elements described here, see the
-    <citetitle>DocBook 5.2: The Definitive Guide</citetitle> sections listed in
-    <xref linkend="tab-book"/>.
+    &suse; uses the GeekoDoc Relax NG schema which is compatible with DocBook 5.2. For more
+    information about the XML elements described here, see the <citetitle>DocBook 5.2: The
+    Definitive Guide</citetitle> sections listed in <xref linkend="tab-book"/>.
   </para>
   <table xml:id="tab-book" outputformat="db">
     <title>Important elements</title>
@@ -92,18 +90,17 @@
   <section xml:id="sec-admonition">
     <title>Admonitory and advisory paragraphs</title>
     <para>
-      To make readers aware of potential problems and recent changes, or to give
-      them tips, use an admonition element. Avoid using more than one admonition
-      per page of PDF output.
+      To make readers aware of potential problems and recent changes, or to give them tips, use an
+      admonition element. Avoid using more than one admonition per page of PDF output.
     </para>
     <itemizedlist>
       <listitem>
         <formalpara>
           <title><tag class="emptytag" outputformat="db">warning</tag><phrase outputformat="adoc">WARNING</phrase></title>
           <para>
-            Use these elements to warn of security issues, potential loss of
-            data, damage to hardware, or physical hazards. Warnings must always
-            precede the action to which they apply.
+            Use these elements to warn of security issues, potential loss of data, damage to
+            hardware, or physical hazards. Warnings must always precede the action to which they
+            apply.
           </para>
         </formalpara>
       </listitem>
@@ -138,8 +135,8 @@
     <itemizedlist>
       <listitem>
         <para>
-          Add a title to admonitions. In the title, state the subject of the
-          admonition and, in the case of a warning, also the source of danger.
+          Add a title to admonitions. In the title, state the subject of the admonition and, in the
+          case of a warning, also the source of danger.
         </para>
       </listitem>
       <listitem>
@@ -147,8 +144,8 @@
           <emphasis outputformat="db"><tag class="emptytag">warning</tag> or
           <tag class="emptytag">important</tag>:</emphasis><phrase
           outputformat="adoc"><emphasis>WARNING</emphasis>
-          or <emphasis>IMPORTANT</emphasis>:</phrase> In the first paragraph,
-          clearly state possible consequences of ignoring the danger.
+          or <emphasis>IMPORTANT</emphasis>:</phrase> In the first paragraph, clearly state
+          possible consequences of ignoring the danger.
         </para>
       </listitem>
       <listitem>
@@ -156,12 +153,11 @@
           <emphasis outputformat="db"><tag class="emptytag">warning</tag> or
           <tag class="emptytag">important</tag>:</emphasis><phrase
           outputformat="adoc"><emphasis>WARNING</emphasis>
-          or <emphasis>IMPORTANT</emphasis>:</phrase> In the second paragraph,
-          explain how to avoid the danger. If there are multiple ways to avoid a
-          danger, use an unordered list. If fewer than five consecutive steps
-          must be taken to avoid a danger, use an ordered list. If more than
-          five consecutive steps need to be taken, use a cross-reference to
-          another part of the documentation.
+          or <emphasis>IMPORTANT</emphasis>:</phrase> In the second paragraph, explain how to avoid
+          the danger. If there are multiple ways to avoid a danger, use an unordered list. If fewer
+          than five consecutive steps must be taken to avoid a danger, use an ordered list. If more
+          than five consecutive steps need to be taken, use a cross-reference to another part of
+          the documentation.
         </para>
       </listitem>
     </itemizedlist>
@@ -194,9 +190,8 @@ Always wait until formatting has finished.
     <warning xml:id="ex-warning-output">
       <title>Do not interrupt creation of file systems</title>
       <para>
-        Creating a file system can take multiple hours. Interrupting this
-        process will result in a corrupt file system and an unusable
-        installation.
+        Creating a file system can take multiple hours. Interrupting this process will result in a
+        corrupt file system and an unusable installation.
       </para>
       <para>
         Always wait until formatting has finished.
@@ -206,23 +201,22 @@ Always wait until formatting has finished.
   <section xml:id="sec-application" outputformat="db">
     <title>Application names</title>
     <para>
-      When referring to an application, add a <tag class="emptytag">phrase
-      role="productname"</tag> element around it:
+      When referring to an application, add a <tag class="emptytag">phrase role="productname"</tag>
+      element around it:
     </para>
 <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
     <para>
-      This will not result in a visual change but disables hyphenation in
-      browsers. This markup sidesteps hyphenation issues of CamelCased names.
+      This will not result in a visual change but disables hyphenation in browsers. This markup
+      sidesteps hyphenation issues of CamelCased names.
     </para>
   </section>
   <section xml:id="sec-callout">
     <title>Callouts</title>
     <para>
-      Callouts allow annotating examples, such as configuration files or
-      commands with many options. Add callout elements directly after the part
-      of a verbatim block that you want to annotate. Do not try to align them
-      above the part of a screen to annotate. Do not use more than ten callouts
-      per example.
+      Callouts allow annotating examples, such as configuration files or commands with many
+      options. Add callout elements directly after the part of a verbatim block that you want to
+      annotate. Do not try to align them above the part of a screen to annotate. Do not use more
+      than ten callouts per example.
     </para>
     <para>
       See also <xref linkend="sec-example"/>.
@@ -286,8 +280,7 @@ default 0 <co xml:id="co-default"/></screen>
               <formalpara>
                 <title><tag class="emptytag">co</tag></title>
                 <para>
-                  Inline element to mark an area within a
-                  <tag class="emptytag">screen</tag>.
+                  Inline element to mark an area within a <tag class="emptytag">screen</tag>.
                 </para>
               </formalpara>
             </entry>
@@ -299,8 +292,7 @@ default 0 <co xml:id="co-default"/></screen>
               <formalpara>
                 <title><tag class="emptytag">calloutlist</tag></title>
                 <para>
-                  Block element containing a list of descriptions for each of
-                  the marked areas.
+                  Block element containing a list of descriptions for each of the marked areas.
                 </para>
               </formalpara>
             </entry>
@@ -312,8 +304,8 @@ default 0 <co xml:id="co-default"/></screen>
               <formalpara>
                 <title><tag class="emptytag">callout</tag></title>
                 <para>
-                  Block element containing a description of a single area marked
-                  with <tag class="emptytag">co</tag>.
+                  Block element containing a description of a single area marked with
+                  <tag class="emptytag">co</tag>.
                 </para>
               </formalpara>
             </entry>
@@ -324,22 +316,20 @@ default 0 <co xml:id="co-default"/></screen>
       </tgroup>
     </table>
     <para outputformat="db">
-      You can group different callouts to point to the same annotation. This
-      helps to avoid repeating the same annotation. To do this, complete the
-      following steps:
+      You can group different callouts to point to the same annotation. This helps to avoid
+      repeating the same annotation. To do this, complete the following steps:
     </para>
     <procedure xml:id="group-procedure" outputformat="db">
       <step>
         <para>
           Create the <tag class="emptytag">co</tag> element with the
-          <tag class="emptytag">xml:id</tag> attribute to comment on the first
-          line.
+          <tag class="emptytag">xml:id</tag> attribute to comment on the first line.
         </para>
       </step>
       <step>
         <para>
-          On another line, use the <tag class="emptytag">xref</tag> element to
-          point to the ID from the previous step.
+          On another line, use the <tag class="emptytag">xref</tag> element to point to the ID from
+          the previous step.
         </para>
       </step>
     </procedure>
@@ -385,15 +375,15 @@ default 0 <co xml:id="co-default"/></screen>
       <phrase outputformat="db">surround it with an inline element, such as
       <tag class="emptytag">command</tag> or
       <tag class="emptytag">filename</tag></phrase><phrase
-      outputformat="adoc">enclose
-      it with single backticks (<literal>`</literal>)</phrase>. In all other
-      cases, close the current paragraph and enclose the user input and/or
-      system output in a verbatim block. See also <xref linkend="sec-example"/>.
+      outputformat="adoc">enclose it
+      with single backticks (<literal>`</literal>)</phrase>. In all other cases, close the current
+      paragraph and enclose the user input and/or system output in a verbatim block. See also
+      <xref linkend="sec-example"/>.
     </para>
     <para>
-      When using a stand-alone command elements outside of a verbatim block, do
-      not use prompt elements before or within them. For more information about
-      prompts, see <xref linkend="sec-prompt"/>.
+      When using a stand-alone command elements outside of a verbatim block, do not use prompt
+      elements before or within them. For more information about prompts, see
+      <xref linkend="sec-prompt"/>.
     </para>
     <table xml:id="tab-command-line" outputformat="db">
       <title>Elements related to command-line input and output</title>
@@ -410,10 +400,9 @@ default 0 <co xml:id="co-default"/></screen>
               <formalpara>
                 <title><tag class="emptytag">screen</tag></title>
                 <para>
-                  Block element in which all characters are reproduced exactly
-                  as they are in the source of the document. See also
-                  <xref linkend="sec-example"/>. Can contain any of the inline
-                  elements listed in this table.
+                  Block element in which all characters are reproduced exactly as they are in the
+                  source of the document. See also <xref linkend="sec-example"/>. Can contain any
+                  of the inline elements listed in this table.
                 </para>
               </formalpara>
             </entry>
@@ -425,9 +414,9 @@ default 0 <co xml:id="co-default"/></screen>
               <formalpara>
                 <title><tag class="emptytag">command</tag></title>
                 <para>
-                  Inline element that contains the name of an executable program
-                  or the command that a user types to execute a program. Can
-                  contain <tag class="emptytag">replaceable</tag> elements.
+                  Inline element that contains the name of an executable program or the command
+                  that a user types to execute a program. Can contain
+                  <tag class="emptytag">replaceable</tag> elements.
                 </para>
               </formalpara>
             </entry>
@@ -439,8 +428,7 @@ default 0 <co xml:id="co-default"/></screen>
               <formalpara>
                 <title><tag class="emptytag">option</tag></title>
                 <para>
-                  Inline element that contains an argument to a command or
-                  instruction. Can contain
+                  Inline element that contains an argument to a command or instruction. Can contain
                   <tag class="emptytag">replaceable</tag> elements.
                 </para>
               </formalpara>
@@ -453,8 +441,7 @@ default 0 <co xml:id="co-default"/></screen>
               <formalpara>
                 <title><tag class="emptytag">replaceable</tag></title>
                 <para>
-                  Inline element that contains content that can or must be
-                  replaced by the user.
+                  Inline element that contains content that can or must be replaced by the user.
                 </para>
               </formalpara>
             </entry>
@@ -466,8 +453,8 @@ default 0 <co xml:id="co-default"/></screen>
               <formalpara>
                 <title><tag class="emptytag">filename</tag></title>
                 <para>
-                  Inline element that contains the name of a directory or file.
-                  Can contain <tag class="emptytag">replaceable</tag> elements.
+                  Inline element that contains the name of a directory or file. Can contain
+                  <tag class="emptytag">replaceable</tag> elements.
                 </para>
               </formalpara>
             </entry>
@@ -479,8 +466,8 @@ default 0 <co xml:id="co-default"/></screen>
               <formalpara>
                 <title><tag class="emptytag">varname</tag></title>
                 <para>
-                  Inline element that contains the name of a variable. Can
-                  contain <tag class="emptytag">replaceable</tag> elements.
+                  Inline element that contains the name of a variable. Can contain
+                  <tag class="emptytag">replaceable</tag> elements.
                 </para>
               </formalpara>
             </entry>
@@ -493,19 +480,17 @@ default 0 <co xml:id="co-default"/></screen>
     <section xml:id="sec-command">
       <title>Commands</title>
       <para>
-        Commands can be embedded in running text or presented as part of a
-        screen environment. In running text, use
-        <phrase outputformat="adoc">backticks (<literal>`</literal>)</phrase>
-        <tag class="emptytag" outputformat="db">command</tag> when referring to
-        an actual command you would use on a command line:
+        Commands can be embedded in running text or presented as part of a screen environment. In
+        running text, use <phrase outputformat="adoc">backticks (<literal>`</literal>)</phrase>
+        <tag class="emptytag" outputformat="db">command</tag> when referring to an actual command
+        you would use on a command line:
       </para>
 <screen outputformat="db">To start LibreOffice from the command line, use
 &lt;command&gt;loffice&lt;/command&gt;.</screen>
 <screen outputformat="adoc">To start LibreOffice from the command line, use
 `loffice`.</screen>
       <para>
-        Where options or subcommands belong with a command, include them within
-        the command itself:
+        Where options or subcommands belong with a command, include them within the command itself:
       </para>
 <screen outputformat="db">To start LibreOffice Writer from the command line, use
 &lt;command&gt;loffice --writer&lt;/command&gt;.</screen>
@@ -522,38 +507,42 @@ default 0 <co xml:id="co-default"/></screen>
       <para>
         <phrase outputformat="db">Use markup for commands even inside
         <tag
-        class="emptytag">screen</tag> environments. </phrase>To
-        avoid spelling or capitalization errors, whenever possible, try commands
-        before adding them to the documentation.
+        class="emptytag">screen</tag> environments. </phrase>To avoid spelling or
+        capitalization errors, whenever possible, try commands before adding them to the
+        documentation.
       </para>
-      <para>When documenting command-line tools, prefer long-form options 
-        or subcommands over short forms. They improve clarity, reduce 
-        ambiguity and make examples easier to follow. Apply this consistently 
-        in all examples, and only show short options when teaching aliases 
-        or shortcuts.</para> 
-        <para>For example, use:</para>
+      <para>
+        When documenting command-line tools, prefer long-form options or subcommands over short
+        forms. They improve clarity, reduce ambiguity and make examples easier to follow. Apply
+        this consistently in all examples, and only show short options when teaching aliases or
+        shortcuts.
+      </para>
+      <para>
+        For example, use:
+      </para>
 <screen outputformat="db">zypper --non-interactive install package-name</screen>
-            
-      <para>instead of:</para>
-      
+      <para>
+        instead of:
+      </para>
 <screen outputformat="db">zypper -n install package-name</screen>
-    <para>See also <xref linkend="sec-prompt"/>.
+      <para>
+        See also <xref linkend="sec-prompt"/>.
       </para>
     </section>
     <section xml:id="sec-file-markup">
       <title>File names</title>
       <para>
-        A file name is the name of a file on a local or network disk. Can
-        contain a simple name or include a path or other elements specific to
-        the operating system. See also <xref linkend="sec-file-language"/>.
+        A file name is the name of a file on a local or network disk. Can contain a simple name or
+        include a path or other elements specific to the operating system. See also
+        <xref linkend="sec-file-language"/>.
       </para>
 <screen outputformat="db">Find the log file &lt;filename&gt;configuration.xml&lt;/filename&gt;
 in the directory &lt;filename&gt;/etc/sysconfig&lt;/filename&gt;.</screen>
 <screen outputformat="adoc">Find the log file `configuration.xml`
 in the directory `/etc/sysconfig`.</screen>
       <para>
-        To assign standard names to files and images in DocBook and AsciiDoc,
-        follow the naming conventions at
+        To assign standard names to files and images in DocBook and AsciiDoc, follow the naming
+        conventions at
         <link xlink:href="https://github.com/SUSE/doc-modular/blob/main/templates/README.md"/>.
       </para>
     </section>
@@ -563,8 +552,7 @@ in the directory `/etc/sysconfig`.</screen>
         Use
         <tag class="emptytag" outputformat="db">literal</tag><phrase
         outputformat="adoc">backticks
-        (<literal>`</literal>)</phrase> to mark up data taken literally from a
-        computer system.
+        (<literal>`</literal>)</phrase> to mark up data taken literally from a computer system.
       </para>
 <screen outputformat="db">To create a comment, insert &lt;literal&gt;#&lt;/literal&gt; characters.</screen>
 <screen outputformat="adoc">To create a comment, insert `#` characters.</screen>
@@ -572,15 +560,14 @@ in the directory `/etc/sysconfig`.</screen>
     <section xml:id="sec-placeholder" outputformat="db">
       <title>Placeholders</title>
       <para>
-        To mark up text that readers need to replace, use
-        <phrase
+        To mark up text that readers need to replace, use <phrase
         outputformat="db">the
         <tag class="emptytag">replaceable</tag>
         element</phrase><phrase
-        outputformat="adoc">monospaced angle
-        brackets</phrase>. Capitalize placeholder text in all contexts where
-        this is not detrimental to content intelligibility. Do not use spaces
-        within placeholders. Instead, use underscores (<literal>_</literal>).
+        outputformat="adoc">monospaced angle brackets</phrase>.
+        Capitalize placeholder text in all contexts where this is not detrimental to content
+        intelligibility. Do not use spaces within placeholders. Instead, use underscores
+        (<literal>_</literal>).
       </para>
 <screen outputformat="db">To list the contents of a directory, execute
  &lt;command&gt;ls &lt;replaceable&gt;DIRECTORY&lt;/replaceable&gt;&lt;/command&gt;.</screen>
@@ -590,43 +577,39 @@ in the directory `/etc/sysconfig`.</screen>
     <section xml:id="sec-prompt">
       <title>Prompts</title>
       <para>
-        When documenting commands entered into Bash with a verbatim block,
-        always prefix them with a prompt marked up this way:
+        When documenting commands entered into Bash with a verbatim block, always prefix them with
+        a prompt marked up this way:
       </para>
 <screen outputformat="db">&lt;prompt&gt;&amp;gt;&amp;nbsp;&lt;/prompt&gt;&lt;command&gt;ls&lt;/command&gt;</screen>
 <screen outputformat="adoc">&gt; ls</screen>
       <para>
-        To avoid making prompts longer than necessary, do not include paths,
-        user or host names, unless this is vital to understanding. The first
-        restricted user must always be named <emphasis>tux</emphasis>. For more
-        information about names of restricted users, see
+        To avoid making prompts longer than necessary, do not include paths, user or host names,
+        unless this is vital to understanding. The first restricted user must always be named
+        <emphasis>tux</emphasis>. For more information about names of restricted users, see
         <xref linkend="sec-name"/>.
       </para>
       <para>
-        Whenever you provide commands in a verbatim block, make it clear if the
-        user needs regular or elevated privileges. Avoid using root prompts in
-        your documentation by using the <command>sudo</command> command where
-        applicable. If you do need a root prompt, always mark it up as follows:
+        Whenever you provide commands in a verbatim block, make it clear if the user needs regular
+        or elevated privileges. Avoid using root prompts in your documentation by using the
+        <command>sudo</command> command where applicable. If you do need a root prompt, always mark
+        it up as follows:
       </para>
 <screen outputformat="db">&lt;prompt role="root"&gt;#&amp;nbsp;&lt;/prompt&gt;&lt;command&gt;yast&lt;/command&gt;</screen>
 <screen outputformat="adoc"># yast</screen>
       <para>
-        When documenting prompts other than the one of Bash, use a custom prompt
-        that is as generic as possible.
+        When documenting prompts other than the one of Bash, use a custom prompt that is as generic
+        as possible.
       </para>
       <para>
-        For consistency, it is helpful to create entities (attributes) for the
-        prompts used in your documentation. Doc Kit repository contains entities
-        for
-        <emphasis>user</emphasis>, <emphasis>root</emphasis> and
-        <emphasis>sudo</emphasis> prompts. For more information, see
+        For consistency, it is helpful to create entities (attributes) for the prompts used in your
+        documentation. Doc Kit repository contains entities for <emphasis>user</emphasis>,
+        <emphasis>root</emphasis> and <emphasis>sudo</emphasis> prompts. For more information, see
         <xref linkend="sec-entity"/>.
       </para>
       <tip outputformat="adoc">
         <para>
-          Verbatim blocks normally do not expand attributes with their values.
-          To use attributes for prompts in a verbatim block, add
-          <literal>subs="+attributes"</literal> in its header:
+          Verbatim blocks normally do not expand attributes with their values. To use attributes
+          for prompts in a verbatim block, add <literal>subs="+attributes"</literal> in its header:
         </para>
 <screen>[source,subs="+attributes"]
 ----
@@ -671,53 +654,50 @@ data  home  lost+found  opt     run   srv      tmp
         </listitem>
         <listitem>
           <para>
-            Use screens only where necessary for understanding the
-            documentation. Present longer screens as examples. For more
-            information, see <xref linkend="sec-example"/>.
+            Use screens only where necessary for understanding the documentation. Present longer
+            screens as examples. For more information, see <xref linkend="sec-example"/>.
           </para>
         </listitem>
         <listitem>
           <para>
-            Do not add empty lines at the beginning or end of screens. They can
-            be cut away by the &suse; style sheets. However, most other style
-            sheets do not have such functionality.
+            Do not add empty lines at the beginning or end of screens. They can be cut away by the
+            &suse; style sheets. However, most other style sheets do not have such functionality.
           </para>
         </listitem>
         <listitem  outputformat="db">
           <para>
-            Text in screens must not follow the indentation level of the XML
-            around them: All indentation will be reproduced verbatim.
+            Text in screens must not follow the indentation level of the XML around them: All
+            indentation will be reproduced verbatim.
           </para>
         </listitem>
         <listitem>
           <para>
-            Lines in a screen must be at most 80 characters long. If you are
-            working in a structure with less available space, such as within a
-            list or within a table, work with appropriate shorter line lengths.
+            Lines in a screen must be at most 80 characters long. If you are working in a structure
+            with less available space, such as within a list or within a table, work with
+            appropriate shorter line lengths.
           </para>
         </listitem>
         <listitem>
           <para>
-            Avoid command output that contains dates, version numbers, or other
-            version-specific information that frequently changes.
+            Avoid command output that contains dates, version numbers, or other version-specific
+            information that frequently changes.
           </para>
         </listitem>
         <listitem>
           <para>
-            To make long shell commands less unwieldy, split them into multiple
-            lines at appropriate positions, such as after the end of an option.
-            At the end of each line but the last, append a <literal>
-            \</literal>. The character <literal>\</literal> informs the shell
-            that the command invocation will continue after the end of the line.
-            Splitting commands into lines can also be helpful for aligning
-            callouts with the right option.
+            To make long shell commands less unwieldy, split them into multiple lines at
+            appropriate positions, such as after the end of an option. At the end of each line but
+            the last, append a <literal> \</literal>. The character <literal>\</literal> informs
+            the shell that the command invocation will continue after the end of the line.
+            Splitting commands into lines can also be helpful for aligning callouts with the right
+            option.
           </para>
         </listitem>
         <listitem outputformat="db">
           <para>
-            You can combine multiple commands within a
-            <tag
-      class="emptytag">screen</tag> element, if:
+            You can combine multiple commands within a <tag
+      class="emptytag">screen</tag>
+            element, if:
           </para>
           <itemizedlist>
             <listitem>
@@ -736,76 +716,65 @@ data  home  lost+found  opt     run   srv      tmp
           <para>
             In all other cases, do not combine multiple commands within one
             <tag class="emptytag">screen</tag> element. Instead, use multiple
-            <tag class="emptytag">screen</tag> elements. For example, as part of
-            a multi-step procedure.
+            <tag class="emptytag">screen</tag> elements. For example, as part of a multi-step
+            procedure.
           </para>
           <para>
-            If you show multiple commands within a single
-            <tag class="emptytag">screen</tag>, use prompts before each command
-            and <tag class="emptytag">command</tag> elements around commands.
-            This effectively separates commands from each other and their
-            output.
+            If you show multiple commands within a single <tag class="emptytag">screen</tag>, use
+            prompts before each command and <tag class="emptytag">command</tag> elements around
+            commands. This effectively separates commands from each other and their output.
           </para>
         </listitem>
         <listitem>
           <para>
-            To work with long output, especially tabular output, use either of
-            the following strategies:
+            To work with long output, especially tabular output, use either of the following
+            strategies:
           </para>
           <itemizedlist>
             <listitem>
               <para>
-                Remove or replace items that are irrelevant to your goal. For
-                example, replace long file names with shorter ones or remove a
-                table column and replace it with <literal>[...]</literal>.
+                Remove or replace items that are irrelevant to your goal. For example, replace long
+                file names with shorter ones or remove a table column and replace it with
+                <literal>[...]</literal>.
               </para>
             </listitem>
             <listitem outputformat="db">
               <para>
-                Use a processing instruction at the beginning of the screen to
-                decrease font size:
+                Use a processing instruction at the beginning of the screen to decrease font size:
               </para>
 <screen>&lt;?dbsuse-fo font-size="<replaceable>SIZE</replaceable>em"?&gt;</screen>
               <para>
-                Replace <replaceable>SIZE</replaceable> with a suitable value,
-                such <literal>0.7</literal>. Choose a value between
-                <literal>0.55</literal> and <literal>1</literal>. Values outside
-                that range will lead to either unreadably small or unsuitably
-                large text.
+                Replace <replaceable>SIZE</replaceable> with a suitable value, such
+                <literal>0.7</literal>. Choose a value between <literal>0.55</literal> and
+                <literal>1</literal>. Values outside that range will lead to either unreadably
+                small or unsuitably large text.
               </para>
             </listitem>
           </itemizedlist>
         </listitem>
         <listitem>
           <para>
-            To enable automatic syntax highlighting for programming languages or
-            formats, <phrase outputformat="db">add a
-            <tag
-            class="attribute">language</tag> attribute for the
-            respective language
-            format</phrase><phrase outputformat="adoc">specify the language in
-            the source definition, for example
-            <literal>[source,html]</literal></phrase>. Valid language formats:
-            <tag class="attvalue">apache</tag>,
-            <tag class="attvalue">bash</tag>, <tag class="attvalue">c++</tag>,
-            <tag class="attvalue">css</tag>, <tag class="attvalue">diff</tag>,
-            <tag class="attvalue">html</tag>, <tag class="attvalue">xml</tag>,
-            <tag class="attvalue">http</tag>, <tag class="attvalue">ini</tag>,
-            <tag class="attvalue">json</tag>, <tag class="attvalue">java</tag>,
-            <tag class="attvalue">javascript</tag>,
-            <tag class="attvalue">makefile</tag>,
-            <tag class="attvalue">nginx</tag>, <tag class="attvalue">php</tag>,
-            <tag class="attvalue">perl</tag>,
-            <tag class="attvalue">python</tag>,
-            <tag class="attvalue">ruby</tag>, <tag class="attvalue">sql</tag>,
-            <tag class="attvalue">crmsh</tag>,
-            <tag class="attvalue">dockerfile</tag>,
-            <tag class="attvalue">lisp</tag>, and
+            To enable automatic syntax highlighting for programming languages or formats,
+            <phrase outputformat="db">add a <tag
+            class="attribute">language</tag>
+            attribute for the respective language
+            format</phrase><phrase outputformat="adoc">specify the language in the source
+            definition, for example <literal>[source,html]</literal></phrase>. Valid language
+            formats: <tag class="attvalue">apache</tag>, <tag class="attvalue">bash</tag>,
+            <tag class="attvalue">c++</tag>, <tag class="attvalue">css</tag>,
+            <tag class="attvalue">diff</tag>, <tag class="attvalue">html</tag>,
+            <tag class="attvalue">xml</tag>, <tag class="attvalue">http</tag>,
+            <tag class="attvalue">ini</tag>, <tag class="attvalue">json</tag>,
+            <tag class="attvalue">java</tag>, <tag class="attvalue">javascript</tag>,
+            <tag class="attvalue">makefile</tag>, <tag class="attvalue">nginx</tag>,
+            <tag class="attvalue">php</tag>, <tag class="attvalue">perl</tag>,
+            <tag class="attvalue">python</tag>, <tag class="attvalue">ruby</tag>,
+            <tag class="attvalue">sql</tag>, <tag class="attvalue">crmsh</tag>,
+            <tag class="attvalue">dockerfile</tag>, <tag class="attvalue">lisp</tag>, and
             <tag class="attvalue">yaml</tag>.
           </para>
           <para>
-            Note that syntax highlighting may not be supported in all target
-            formats.
+            Note that syntax highlighting may not be supported in all target formats.
           </para>
         </listitem>
       </itemizedlist>
@@ -835,19 +804,17 @@ and change the value of `DISPLAYMANAGER`.</screen>
       Use <phrase outputformat="adoc">double angled brackets
       <literal>&lt;&lt;ID&gt;&gt;</literal></phrase><phrase
       outputformat="db">the
-      <tag class="emptytag">xref</tag> element (read: <quote>cross
-      ref</quote>)</phrase> when referring to an appendix, chapter, example,
-      figure, part, preface, section, table or question and answer set. The
-      element referenced needs to have <phrase outputformat="db"> an
-      <tag class="attribute">xml:id</tag> attribute,</phrase> an identifier
-      (ID). Create identifiers to reference from cross-references using the
-      rules under <xref linkend="sec-id"/>. Note that a cross-reference only
-      works when it links to documentation within the same set, for example, the
-      same book or set of books.
+      <tag class="emptytag">xref</tag> element (read: <quote>cross ref</quote>)</phrase> when
+      referring to an appendix, chapter, example, figure, part, preface, section, table or question
+      and answer set. The element referenced needs to have <phrase outputformat="db"> an
+      <tag class="attribute">xml:id</tag> attribute,</phrase> an identifier (ID). Create
+      identifiers to reference from cross-references using the rules under
+      <xref linkend="sec-id"/>. Note that a cross-reference only works when it links to
+      documentation within the same set, for example, the same book or set of books.
     </para>
     <para>
-      Other types of references to resources are described in
-      <xref linkend="sec-other-external"/> and <xref linkend="sec-link"/>.
+      Other types of references to resources are described in <xref linkend="sec-other-external"/>
+      and <xref linkend="sec-link"/>.
     </para>
     <example xml:id="ex-cross-reference-source" outputformat="db">
       <title>Example of a cross-reference (source)</title>
@@ -876,63 +843,59 @@ See &lt;&lt;sec-cross-reference&gt;&gt;.</screen>
       </para>
     </example>
     <para outputformat="db">
-      This example shows the default display of a cross-reference. To change it,
-      use the <tag class="attribute">xrefstyle</tag> attribute, either with
-      <tag class="attvalue">select:</tag> or
-      <tag class="attvalue">template:</tag>. Do not use custom
-      <quote>named</quote> <tag class="attribute">xrefstyle</tag> attributes
-      that require support from the style sheets. For more info, refer to
+      This example shows the default display of a cross-reference. To change it, use the
+      <tag class="attribute">xrefstyle</tag> attribute, either with
+      <tag class="attvalue">select:</tag> or <tag class="attvalue">template:</tag>. Do not use
+      custom <quote>named</quote> <tag class="attribute">xrefstyle</tag> attributes that require
+      support from the style sheets. For more info, refer to
       <link
-       xlink:href="http://www.sagehill.net/docbookxsl/CustomXrefs.html">DocBook
-      XSL: The Complete Guide: Customizing cross-references</link>.
+       xlink:href="http://www.sagehill.net/docbookxsl/CustomXrefs.html">DocBook XSL:
+      The Complete Guide: Customizing cross-references</link>.
     </para>
     <para>
-      Keep in mind the following cases where listing cross-references is
-      discouraged and must be avoided:
+      Keep in mind the following cases where listing cross-references is discouraged and must be
+      avoided:
     </para>
     <itemizedlist>
       <listitem>
         <para>
-          Do not insert cross-references into title elements. The title must not
-          be clickable, and a cross-reference in a title can create issues when
-          linking to such a title in a different paragraph.
+          Do not insert cross-references into title elements. The title must not be clickable, and
+          a cross-reference in a title can create issues when linking to such a title in a
+          different paragraph.
         </para>
       </listitem>
       <listitem>
         <para>
-          Do not create references to paragraphs or other elements that have no
-          title. An exception to this rule is the element procedure steps to
-          which you may create references. If a reference to an element without
-          a title is essential to the document, specify a custom label for the
-          cross-reference to assign a title.
+          Do not create references to paragraphs or other elements that have no title. An exception
+          to this rule is the element procedure steps to which you may create references. If a
+          reference to an element without a title is essential to the document, specify a custom
+          label for the cross-reference to assign a title.
         </para>
       </listitem>
     </itemizedlist>
     <para>
-      Do not prefix or suffix cross-references with text labels such as
-      <quote>appendix,</quote> <quote>chapter,</quote> <quote>table,</quote> or
-      <quote>figure.</quote> Such labels are generated automatically.
+      Do not prefix or suffix cross-references with text labels such as <quote>appendix,</quote>
+      <quote>chapter,</quote> <quote>table,</quote> or <quote>figure.</quote> Such labels are
+      generated automatically.
     </para>
   </section>
   <section xml:id="sec-emphasis">
     <title>Emphasis</title>
     <para>
-      Where possible, indicate stress with language only. If that is not
-      possible, <phrase outputformat="db">use the
-      <tag
+      Where possible, indicate stress with language only. If that is not possible,
+      <phrase outputformat="db">use the <tag
       class="emptytag">emphasis</tag>
       element</phrase><phrase
-      outputformat="adoc">surround the phrase with
-      underscores (<literal>_phrase_</literal>)</phrase> to indicate stress.
+      outputformat="adoc">surround the phrase with underscores
+      (<literal>_phrase_</literal>)</phrase> to indicate stress.
     </para>
     <para>
       Where added emphasis is needed, <phrase outputformat="db">use the
       <tag class="attribute">role="bold"</tag>
       attribute.</phrase><phrase
-      outputformat="adoc">enclose the phrase in
-      a single pair of asterisks (<literal>*phrase*</literal>). To emphasize
-      characters within a word, use a pair of double asterisks
-      (<literal>char**act**ers</literal>).</phrase>
+      outputformat="adoc">enclose the phrase in a single pair of
+      asterisks (<literal>*phrase*</literal>). To emphasize characters within a word, use a pair of
+      double asterisks (<literal>char**act**ers</literal>).</phrase>
     </para>
 <screen outputformat="db">This will be displayed in &lt;emphasis&gt;italics&lt;/emphasis&gt;.
 This will be displayed in &lt;emphasis role="bold"&gt;bold&lt;/emphasis&gt;</screen>
@@ -946,22 +909,20 @@ This will be displayed in *bold*.</screen>
       <xref linkend="sec-graphic"/> also apply to examples.
     </para>
     <para>
-      Examples usually contain
-      <phrase outputformat="db"><tag
+      Examples usually contain <phrase outputformat="db"><tag
       class="emptytag">screen</tag>
       elements</phrase><phrase
-      outputformat="adoc">source code
-      blocks</phrase>. Additionally, there can be callouts and explanatory text.
+      outputformat="adoc">source code blocks</phrase>. Additionally,
+      there can be callouts and explanatory text.
     </para>
     <para>
       Always give examples a title and an identifier.
     </para>
     <para>
-      For more information about screen environments, see
-      <xref linkend="sec-screen"/>. For more information about displaying
-      computer input and output, see <xref linkend="sec-command-line"/>. To
-      annotate examples, use callouts. Callouts are described in
-      <xref linkend="sec-callout"/>.
+      For more information about screen environments, see <xref linkend="sec-screen"/>. For more
+      information about displaying computer input and output, see
+      <xref linkend="sec-command-line"/>. To annotate examples, use callouts. Callouts are
+      described in <xref linkend="sec-callout"/>.
     </para>
     <example xml:id="ex-example" outputformat="db">
       <title>Example of an example</title>
@@ -1004,10 +965,8 @@ tux > ps -xa
               <formalpara>
                 <title><tag class="emptytag">example</tag></title>
                 <para>
-                  Formal block element containing a
-                  <tag class="emptytag">title</tag> and a
-                  <tag class="emptytag">screen</tag> or other elements such as
-                  lists or paragraphs.
+                  Formal block element containing a <tag class="emptytag">title</tag> and a
+                  <tag class="emptytag">screen</tag> or other elements such as lists or paragraphs.
                 </para>
               </formalpara>
             </entry>
@@ -1019,8 +978,8 @@ tux > ps -xa
               <formalpara>
                 <title><tag class="emptytag">screen</tag></title>
                 <para>
-                  Verbatim block element for displaying text that readers might
-                  see on a computer terminal or in a text file.
+                  Verbatim block element for displaying text that readers might see on a computer
+                  terminal or in a text file.
                 </para>
               </formalpara>
             </entry>
@@ -1034,70 +993,61 @@ tux > ps -xa
   <section xml:id="sec-link">
     <title>External links</title>
     <para>
-      Information that is relevant within &suse; documentation is often
-      available from other Web sites already. In such cases, choose between
-      linking to these sites or including their content in edited form. Adhere
-      to the following guidelines when selecting sites to link to:
+      Information that is relevant within &suse; documentation is often available from other Web
+      sites already. In such cases, choose between linking to these sites or including their
+      content in edited form. Adhere to the following guidelines when selecting sites to link to:
     </para>
     <itemizedlist>
       <listitem>
         <para>
-          Link to credible sources, such as suse.com, upstream projects or
-          developer sites. Avoid linking to direct competitors of &suse;. Do not
-          link to obvious clickbait sites.
+          Link to credible sources, such as suse.com, upstream projects or developer sites. Avoid
+          linking to direct competitors of &suse;. Do not link to obvious clickbait sites.
         </para>
       </listitem>
       <listitem>
         <para>
-          Prefer larger, well-kept sites over blogs that may vanish overnight.
-          If you need to link to smaller blogs, save an archive version of the
-          site at <link xlink:href="https://web.archive.org/"/>.
+          Prefer larger, well-kept sites over blogs that may vanish overnight. If you need to link
+          to smaller blogs, save an archive version of the site at
+          <link xlink:href="https://web.archive.org/"/>.
         </para>
       </listitem>
       <listitem>
         <para>
-          Avoid linking to sites that feature controversial or political
-          content.
+          Avoid linking to sites that feature controversial or political content.
         </para>
       </listitem>
     </itemizedlist>
     <para>
-      In certain cases, product managers request avoiding all or selected
-      external links to avoid issues for customers impacted by restrictive
-      firewall rules.
+      In certain cases, product managers request avoiding all or selected external links to avoid
+      issues for customers impacted by restrictive firewall rules.
     </para>
     <para outputformat="adoc">
-      Common URL schemes are automatically detected from the text and converted
-      into links. To disable this conversion, use a single backlash
-      (<literal>\</literal>) in front of the link
-      (<literal>\https://example.org</literal>). To use a custom link title, use
-      a URL macro:
+      Common URL schemes are automatically detected from the text and converted into links. To
+      disable this conversion, use a single backlash (<literal>\</literal>) in front of the link
+      (<literal>\https://example.org</literal>). To use a custom link title, use a URL macro:
     </para>
 <screen outputformat="adoc">Ask questions in the https://example.com[An example title]</screen>
     <para outputformat="db">
-      Use the <tag class="emptytag">link</tag> element to mark up URLs that can
-      be opened with a Web browser, such as
-      <link xlink:href="https://www.example.org/"/>. Always add the correct
-      protocol prefix (for example, <literal>https://</literal>), otherwise
-      links will not work. If possible, use the secure protocol prefix
-      (<literal>https://</literal>).
+      Use the <tag class="emptytag">link</tag> element to mark up URLs that can be opened with a
+      Web browser, such as <link xlink:href="https://www.example.org/"/>. Always add the correct
+      protocol prefix (for example, <literal>https://</literal>), otherwise links will not work. If
+      possible, use the secure protocol prefix (<literal>https://</literal>).
     </para>
     <para outputformat="db">
-      Never use <tag>filename</tag> for a link, as that would both disable the
-      link checker and make the link unclickable. Avoid entering a text label
-      between <tag class="emptytag">link</tag> start and end tags. Instead, use
-      a self-closing tag:
+      Never use <tag>filename</tag> for a link, as that would both disable the link checker and
+      make the link unclickable. Avoid entering a text label between
+      <tag class="emptytag">link</tag> start and end tags. Instead, use a self-closing tag:
     </para>
 <screen outputformat="db">&lt;link xlink:href="https://www.example.org/"/&gt;</screen>
     <para>
-      Make URLs as short as possible before adding them to documentation. Many
-      long URLs can be shortened by leaving away non-essential pieces, such as
-      the <literal>_utm</literal> parameters used for marketing purposes. If a
-      Web site provides a built-in URL shortener, use it.
+      Make URLs as short as possible before adding them to documentation. Many long URLs can be
+      shortened by leaving away non-essential pieces, such as the <literal>_utm</literal>
+      parameters used for marketing purposes. If a Web site provides a built-in URL shortener, use
+      it.
     </para>
     <para>
-      Do not use third-party URL shorteners, such as bit.ly. Third-party URL
-      shorteners have the following disadvantages:
+      Do not use third-party URL shorteners, such as bit.ly. Third-party URL shorteners have the
+      following disadvantages:
     </para>
     <itemizedlist>
       <listitem>
@@ -1107,71 +1057,65 @@ tux > ps -xa
       </listitem>
       <listitem>
         <para>
-          They introduce an extra element of uncertainty, as the shortening
-          service may disappear or become unreliable in the future.
+          They introduce an extra element of uncertainty, as the shortening service may disappear
+          or become unreliable in the future.
         </para>
       </listitem>
       <listitem>
         <para>
-          The providers of these services usually run Web analytics that may
-          introduce privacy issues.
+          The providers of these services usually run Web analytics that may introduce privacy
+          issues.
         </para>
       </listitem>
     </itemizedlist>
     <para>
-      Do not link to &suse; documentation outside of the current document set.
-      Instead, use the appropriate entity for the book title. Always reference
-      the book itself, as chapter names can change.
+      Do not link to &suse; documentation outside of the current document set. Instead, use the
+      appropriate entity for the book title. Always reference the book itself, as chapter names can
+      change.
     </para>
     <para>
-      For consistency, do not use the article in front of the name of the
-      referenced book or chapter. For example, <quote>The general concept of
-      Podman is described in <emphasis>Containers and Podman</emphasis>.</quote>
+      For consistency, do not use the article in front of the name of the referenced book or
+      chapter. For example, <quote>The general concept of Podman is described in
+      <emphasis>Containers and Podman</emphasis>.</quote>
     </para>
     <para>
-      Where possible, collect links in a <quote>More information</quote> section
-      at the end of the chapter. This helps readers focus on your documentation
-      instead of leading them immediately to other resources. This is described
-      in <xref linkend="sec-book"/>.
+      Where possible, collect links in a <quote>More information</quote> section at the end of the
+      chapter. This helps readers focus on your documentation instead of leading them immediately
+      to other resources. This is described in <xref linkend="sec-book"/>.
     </para>
     <para>
       To mark up multiple links, <phrase outputformat="db">create an
       <tag class="emptytag">itemizedlist</tag> around
       them</phrase><phrase
-      outputformat="adoc">insert them into an
-      unordered list</phrase>. Do not use a list environment for a single link.
-      If you need to present many links, group them by topic and create a
-      separate list environment for each group. Provide a comprehensive title
-      for each of the groups or an introductory sentence. For more information
-      about creating lists, see <xref linkend="sec-itemized-list"/>.
+      outputformat="adoc">insert them into an unordered list</phrase>.
+      Do not use a list environment for a single link. If you need to present many links, group
+      them by topic and create a separate list environment for each group. Provide a comprehensive
+      title for each of the groups or an introductory sentence. For more information about creating
+      lists, see <xref linkend="sec-itemized-list"/>.
     </para>
     <para>
-      Where possible, provide translators with localized versions of links in
-      the comments of the source file.
+      Where possible, provide translators with localized versions of links in the comments of the
+      source file.
     </para>
     <para>
-      Other types of references to resources are described in
-      <xref linkend="sec-cross-reference"/> and
-      <xref linkend="sec-other-external"/>.
+      Other types of references to resources are described in <xref linkend="sec-cross-reference"/>
+      and <xref linkend="sec-other-external"/>.
     </para>
   </section>
   <section xml:id="sec-link-to-susecom">
     <title>External links to &suse; documentation</title>
     <para>
-      The &suse; documentation is hosted under
-      <uri>documentation.suse.com</uri>. This is the URL that must be provided
-      in all documents. The abbreviated URLs such as <uri>doc.suse.com</uri> and
-      <uri>docs.suse.com</uri> also work but must be avoided for SEO reasons.
+      The &suse; documentation is hosted under <uri>documentation.suse.com</uri>. This is the URL
+      that must be provided in all documents. The abbreviated URLs such as <uri>doc.suse.com</uri>
+      and <uri>docs.suse.com</uri> also work but must be avoided for SEO reasons.
     </para>
     <para>
-      Make sure to use complete URLs instead of entities for an easy copy and
-      paste.
+      Make sure to use complete URLs instead of entities for an easy copy and paste.
     </para>
     <para>
-      Most links in our documentation that goes to
-      <uri>documentation.suse.com</uri> refer to a specific product and release.
-      However, sometimes it makes sense to <emphasis>not</emphasis> include the
-      SP or even the major release. These are so-called <emphasis>SP-independent
+      Most links in our documentation that goes to <uri>documentation.suse.com</uri> refer to a
+      specific product and release. However, sometimes it makes sense to <emphasis>not</emphasis>
+      include the SP or even the major release. These are so-called <emphasis>SP-independent
       links</emphasis>.
     </para>
     <para>
@@ -1190,14 +1134,13 @@ tux > ps -xa
       </listitem>
       <listitem>
         <para>
-          You want to link to the most recent SP without checking which one it
-          is
+          You want to link to the most recent SP without checking which one it is
         </para>
       </listitem>
       <listitem>
         <para>
-          You want to support SEO where the most prominent SP is more important
-          than previous, older SPs
+          You want to support SEO where the most prominent SP is more important than previous,
+          older SPs
         </para>
       </listitem>
     </itemizedlist>
@@ -1211,35 +1154,34 @@ tux > ps -xa
     <itemizedlist>
       <listitem>
         <para>
-          <replaceable>PRODUCT</replaceable>: the abbreviation of the product,
-          like <quote>sle</quote> for &sle;, <quote>sle-ha</quote> for &sle;
-          Server High Availability Extension, etc.
+          <replaceable>PRODUCT</replaceable>: the abbreviation of the product, like
+          <quote>sle</quote> for &sle;, <quote>sle-ha</quote> for &sle; Server High Availability
+          Extension, etc.
         </para>
       </listitem>
       <listitem>
         <para>
-          <replaceable>MAJOR_RELEASE</replaceable>: an optional major release
-          like 12 or 15. If you omit it, your link will be redirected to use the
-          most recent release.
+          <replaceable>MAJOR_RELEASE</replaceable>: an optional major release like 12 or 15. If you
+          omit it, your link will be redirected to use the most recent release.
         </para>
       </listitem>
       <listitem>
         <para>
-          <replaceable>DEEP_LINK</replaceable>: the link that points to a
-          specific chapter or section within a book
+          <replaceable>DEEP_LINK</replaceable>: the link that points to a specific chapter or
+          section within a book
         </para>
       </listitem>
     </itemizedlist>
     <para>
-      Make sure you use <literal>html</literal> and not
-      <literal>single-html</literal>. This is needed for SEO reasons.
+      Make sure you use <literal>html</literal> and not <literal>single-html</literal>. This is
+      needed for SEO reasons.
     </para>
     <para>
       For example, the link
       <link xlink:href="https://documentation.suse.com/sle-ha/15-SP3/html/SLE-HA-all/article-installation.html#sec-ha-inst-quick-req/"/>
-      points to the <quote>System requirements</quote> for &sle; Server High
-      Availability Extension. To turn this link into an SP-independent link, you
-      need to identify the different components first:
+      points to the <quote>System requirements</quote> for &sle; Server High Availability
+      Extension. To turn this link into an SP-independent link, you need to identify the different
+      components first:
     </para>
     <itemizedlist>
       <listitem>
@@ -1260,8 +1202,8 @@ tux > ps -xa
       </listitem>
     </itemizedlist>
     <para>
-      With the above parts, the redirection rules on our server allow expressing
-      SP-independent links in several ways:
+      With the above parts, the redirection rules on our server allow expressing SP-independent
+      links in several ways:
     </para>
     <itemizedlist>
       <listitem>
@@ -1288,15 +1230,14 @@ tux > ps -xa
       <itemizedlist>
         <listitem>
           <para>
-            If the hash part (everything after #) is not found, the browser will
-            jump to the beginning of the file.
+            If the hash part (everything after #) is not found, the browser will jump to the
+            beginning of the file.
           </para>
         </listitem>
         <listitem>
           <para>
-            If the file cannot be found (in our example,
-            article-installation.html), the server will respond with a 404 error
-            (file not found).
+            If the file cannot be found (in our example, article-installation.html), the server
+            will respond with a 404 error (file not found).
           </para>
         </listitem>
       </itemizedlist>
@@ -1305,32 +1246,28 @@ tux > ps -xa
   <section xml:id="sec-figure">
     <title>Figures</title>
     <para outputformat="db">
-      Use the <tag class="emptytag">figure</tag> element for all figures. Avoid
-      using the <tag class="emptytag">informalfigure</tag> element, as it allows
-      skipping alternative text, which is essential for accessibility. When
-      updating existing content, replace all
-      <tag class="emptytag">informalfigure</tag> elements with
-      <tag class="emptytag">figure</tag>. Always assign an
-      <tag class="attribute">xml:id</tag> attribute to
-      <tag class="emptytag">figure</tag> elements. Reference figures from the
-      text by means of a cross-reference. For more information, see
-      <xref linkend="sec-cross-reference"/>.
+      Use the <tag class="emptytag">figure</tag> element for all figures. Avoid using the
+      <tag class="emptytag">informalfigure</tag> element, as it allows skipping alternative text,
+      which is essential for accessibility. When updating existing content, replace all
+      <tag class="emptytag">informalfigure</tag> elements with <tag class="emptytag">figure</tag>.
+      Always assign an <tag class="attribute">xml:id</tag> attribute to
+      <tag class="emptytag">figure</tag> elements. Reference figures from the text by means of a
+      cross-reference. For more information, see <xref linkend="sec-cross-reference"/>.
     </para>
     <para outputformat="adoc">
-      Use the image macro to insert an image. Always supply an identifier,
-      title, appropriate width and alternative text to the image.
+      Use the image macro to insert an image. Always supply an identifier, title, appropriate width
+      and alternative text to the image.
     </para>
     <para>
-      All referenced image files must have a lowercase alphanumeric file name.
-      When specifying figure names, follow the naming conventions at
+      All referenced image files must have a lowercase alphanumeric file name. When specifying
+      figure names, follow the naming conventions at
       <link xlink:href="https://github.com/SUSE/doc-modular/blob/main/templates/README.md"/>.
     </para>
     <para outputformat="db">
-      Provide an appropriate image width using the
-      <tag class="attvalue">width</tag> attribute. For both figure types, formal
-      and informal, always add a <tag class="emptytag">textobject
-      role="description"</tag> as in <xref linkend="ex-figure"/> to provide an
-      alternative text for the HTML output.
+      Provide an appropriate image width using the <tag class="attvalue">width</tag> attribute. For
+      both figure types, formal and informal, always add a <tag class="emptytag">textobject
+      role="description"</tag> as in <xref linkend="ex-figure"/> to provide an alternative text for
+      the HTML output.
     </para>
     <example xml:id="ex-figure" outputformat="db">
       <title>Example of a figure</title>
@@ -1370,8 +1307,7 @@ image::sunset.jpg[Cat chasing Geeko,200]</screen>
               <formalpara>
                 <title><tag class="emptytag">figure</tag></title>
                 <para>
-                  Formal block element containing a
-                  <tag class="emptytag">title</tag> and a
+                  Formal block element containing a <tag class="emptytag">title</tag> and a
                   <tag class="emptytag">mediaobject</tag>.
                 </para>
               </formalpara>
@@ -1384,8 +1320,7 @@ image::sunset.jpg[Cat chasing Geeko,200]</screen>
               <formalpara>
                 <title><tag class="emptytag">informalfigure</tag></title>
                 <para>
-                  Informal block element containing a
-                  <tag class="emptytag">mediaobject</tag>.
+                  Informal block element containing a <tag class="emptytag">mediaobject</tag>.
                 </para>
               </formalpara>
             </entry>
@@ -1397,9 +1332,8 @@ image::sunset.jpg[Cat chasing Geeko,200]</screen>
               <formalpara>
                 <title><tag class="emptytag">mediaobject</tag></title>
                 <para>
-                  Block element containing one or more
-                  <tag class="emptytag">imageobject</tag> elements. Place
-                  additional textual descriptions inside
+                  Block element containing one or more <tag class="emptytag">imageobject</tag>
+                  elements. Place additional textual descriptions inside
                   <tag class="emptytag">textobject</tag> elements.
                 </para>
               </formalpara>
@@ -1412,8 +1346,8 @@ image::sunset.jpg[Cat chasing Geeko,200]</screen>
               <formalpara>
                 <title><tag class="emptytag">imageobject</tag></title>
                 <para>
-                  Element containing <tag class="emptytag">imagedata</tag> and
-                  meta information about the image.
+                  Element containing <tag class="emptytag">imagedata</tag> and meta information
+                  about the image.
                 </para>
               </formalpara>
             </entry>
@@ -1437,8 +1371,7 @@ image::sunset.jpg[Cat chasing Geeko,200]</screen>
               <formalpara>
                 <title><tag class="emptytag">textobject</tag></title>
                 <para>
-                  Element containing textual description of a media object as a
-                  fallback option.
+                  Element containing textual description of a media object as a fallback option.
                 </para>
               </formalpara>
             </entry>
@@ -1451,108 +1384,101 @@ image::sunset.jpg[Cat chasing Geeko,200]</screen>
     <section xml:id="sec-graphic">
       <title>Graphics</title>
       <para>
-        Keep graphics as simple as possible. Use as little text as possible. To
-        allow for translation, reserve twice as much space for runs of text as
-        the English version of it consumes.
+        Keep graphics as simple as possible. Use as little text as possible. To allow for
+        translation, reserve twice as much space for runs of text as the English version of it
+        consumes.
       </para>
     </section>
     <section xml:id="sec-screenshot">
       <title>Screenshots</title>
       <para>
-        Use screenshots to illustrate complex situations in which the user
-        cannot easily follow the instructions otherwise.
+        Use screenshots to illustrate complex situations in which the user cannot easily follow the
+        instructions otherwise.
       </para>
       <itemizedlist>
         <listitem>
           <para>
-            Be selective. Only illustrate steps in which meaningful user
-            interactions are necessary. Do not create screenshots of progress
-            bars or confirmation windows. Usually, it is unnecessary to create a
-            screenshot of every step of an instruction.
+            Be selective. Only illustrate steps in which meaningful user interactions are
+            necessary. Do not create screenshots of progress bars or confirmation windows. Usually,
+            it is unnecessary to create a screenshot of every step of an instruction.
           </para>
         </listitem>
         <listitem>
           <para>
-            Avoid creating screenshots of verbatim blocks or a terminal screen
-            output. Instead, paste such content in a verbatim block. Find more
-            details in <xref linkend="sec-screen"/>.
+            Avoid creating screenshots of verbatim blocks or a terminal screen output. Instead,
+            paste such content in a verbatim block. Find more details in
+            <xref linkend="sec-screen"/>.
           </para>
         </listitem>
         <listitem>
           <para>
-            Always create screenshots illustrating the situation right before an
-            action has been taken.
+            Always create screenshots illustrating the situation right before an action has been
+            taken.
           </para>
         </listitem>
         <listitem>
           <para>
-            Insert screenshots directly after the textual description of the
-            action.
+            Insert screenshots directly after the textual description of the action.
           </para>
         </listitem>
         <listitem>
           <para>
-            Make sure screenshots focus on what they are supposed to illustrate.
-            When documenting application windows, create a screenshot of the
-            window only. When documenting Web applications, only reproduce the
-            contents of the tab instead of the entire browser window.
+            Make sure screenshots focus on what they are supposed to illustrate. When documenting
+            application windows, create a screenshot of the window only. When documenting Web
+            applications, only reproduce the contents of the tab instead of the entire browser
+            window.
           </para>
         </listitem>
         <listitem>
           <para>
-            Do not scale screenshots using graphics software. Embed screenshots
-            at their original resolution and use DocBook attributes to scale
-            them appropriately.
+            Do not scale screenshots using graphics software. Embed screenshots at their original
+            resolution and use DocBook attributes to scale them appropriately.
           </para>
         </listitem>
         <listitem>
           <para>
-            Avoid creating screenshots of windows higher or wider than
-            800&nbsp;pixels at 96&nbsp;pixels per inch. When creating
-            screenshots of applications scaled for a higher pixel-per-inch
-            count, apply a proportionally larger maximum window size.
+            Avoid creating screenshots of windows higher or wider than 800&nbsp;pixels at
+            96&nbsp;pixels per inch. When creating screenshots of applications scaled for a higher
+            pixel-per-inch count, apply a proportionally larger maximum window size.
           </para>
         </listitem>
         <listitem>
           <para>
             To ensure readability and consistency, scale screenshots with the
-            <literal>width</literal> attribute. Choose the appropriate scaling
-            from the following list:
+            <literal>width</literal> attribute. Choose the appropriate scaling from the following
+            list:
           </para>
           <itemizedlist>
             <listitem>
               <para>
-                Screenshots of the whole desktop should be scaled to
-                90&ndash;99% page width.
+                Screenshots of the whole desktop should be scaled to 90&ndash;99% page width.
               </para>
             </listitem>
             <listitem>
               <para>
-                Screenshots of individual application windows should be scaled
-                to 75&ndash;99% page width.
+                Screenshots of individual application windows should be scaled to 75&ndash;99% page
+                width.
               </para>
             </listitem>
             <listitem>
               <para>
-                Small windows such as message boxes should be scaled to
-                50&ndash;60% page width.
+                Small windows such as message boxes should be scaled to 50&ndash;60% page width.
               </para>
             </listitem>
           </itemizedlist>
         </listitem>
         <listitem>
           <para>
-            Create screenshots that are recognizable to readers. For example,
-            create screenshots of KDE applications on a KDE desktop with the
-            default KDE theme and disable toolbar modifications you have made.
+            Create screenshots that are recognizable to readers. For example, create screenshots of
+            KDE applications on a KDE desktop with the default KDE theme and disable toolbar
+            modifications you have made.
           </para>
         </listitem>
         <listitem>
           <para>
-            Use grayscale font antialiasing (default on &suse; operating
-            systems). Subpixel font antialiasing (default on Windows and macOS
-            operating systems) creates colored letter edges when zoomed or
-            printed.
+            Use grayscale font antialiasing (default on &suse; operating systems). Subpixel font
+            antialiasing (default on Windows and macOS operating systems) creates colored letter
+            edges when zoomed or printed.
           </para>
         </listitem>
         <listitem>
@@ -1562,16 +1488,16 @@ image::sunset.jpg[Cat chasing Geeko,200]</screen>
         </listitem>
         <listitem>
           <para>
-            Avoid editing screenshots. To anonymize portions of a screenshot,
-            pixelize it. To highlight parts of a screenshot, use rectangles or
-            arrows. Never add callouts, text or freely drawn objects. Always
-            select colors that provide a good contrast with their background.
+            Avoid editing screenshots. To anonymize portions of a screenshot, pixelize it. To
+            highlight parts of a screenshot, use rectangles or arrows. Never add callouts, text or
+            freely drawn objects. Always select colors that provide a good contrast with their
+            background.
           </para>
         </listitem>
         <listitem>
           <para>
-            If possible, avoid screenshots with dates, version numbers, or other
-            version-specific information that frequently changes.
+            If possible, avoid screenshots with dates, version numbers, or other version-specific
+            information that frequently changes.
           </para>
         </listitem>
       </itemizedlist>
@@ -1580,38 +1506,36 @@ image::sunset.jpg[Cat chasing Geeko,200]</screen>
   <section xml:id="sec-glossary">
     <title>Glossaries</title>
     <para>
-      An optional glossary contains terms and their definitions. Make sure that
-      the glossary entries are appropriate to the intended audience. Define
-      unfamiliar terms and special jargon.
+      An optional glossary contains terms and their definitions. Make sure that the glossary
+      entries are appropriate to the intended audience. Define unfamiliar terms and special jargon.
     </para>
     <para>
-      Define infinitive forms of verbs and singular nouns. Do not start the
-      definition with the term itself. Use lowercase for the term unless it is a
-      proper noun.
+      Define infinitive forms of verbs and singular nouns. Do not start the definition with the
+      term itself. Use lowercase for the term unless it is a proper noun.
     </para>
     <tip>
       <para>
-        To keep definitions consistent, check &suse;'s official terminology
-        database called <emphasis>TermWeb</emphasis>
+        To keep definitions consistent, check &suse;'s official terminology database called
+        <emphasis>TermWeb</emphasis>
         (<link
-        xlink:href="https://suse.termweb.eu/search/terms"/>). It
-        contains company-specific terminology in English and all our supported
-        languages. When defining a term, consult TermWeb first to ensure you are
-        using the approved wording and preferred spelling.
+        xlink:href="https://suse.termweb.eu/search/terms"/>). It contains
+        company-specific terminology in English and all our supported languages. When defining a
+        term, consult TermWeb first to ensure you are using the approved wording and preferred
+        spelling.
       </para>
     </tip>
     <para outputformat="adoc">
-      You can include a glossary in an article, book and book part by setting
-      the <literal>glossary</literal> style on a section.
+      You can include a glossary in an article, book and book part by setting the
+      <literal>glossary</literal> style on a section.
     </para>
     <para outputformat="db">
-      Where applicable, group your terms with the
-      <tag class="emptytag">glossdiv</tag> tag for higher ordering.
+      Where applicable, group your terms with the <tag class="emptytag">glossdiv</tag> tag for
+      higher ordering.
     </para>
     <para outputformat="db">
       To support automatic alphabetical ordering in localized versions, use
-      <tag class="emptytag">glosslist</tag> so that glossary items are sorted in
-      alphabetical order by default.
+      <tag class="emptytag">glosslist</tag> so that glossary items are sorted in alphabetical order
+      by default.
     </para>
     <para outputformat="db">
       Use cross-references in the following cases:
@@ -1620,14 +1544,14 @@ image::sunset.jpg[Cat chasing Geeko,200]</screen>
       <listitem>
         <para>
           To direct the reader to another glossary entry, use the
-          <tag class="emptytag">glosssee</tag> tag. This is helpful, for
-          example, when linking acronyms with their written out forms.
+          <tag class="emptytag">glosssee</tag> tag. This is helpful, for example, when linking
+          acronyms with their written out forms.
         </para>
       </listitem>
       <listitem>
         <para>
-          To provide the reader with additional information about related
-          glossary entries, use <tag class="emptytag">glossseealso</tag>.
+          To provide the reader with additional information about related glossary entries, use
+          <tag class="emptytag">glossseealso</tag>.
         </para>
       </listitem>
     </itemizedlist>
@@ -1685,56 +1609,52 @@ DocBook:: an XML-based markup language designed for writing structured technical
     <itemizedlist>
       <listitem>
         <para>
-          Always use
-          <phrase outputformat="db"><tag
+          Always use <phrase outputformat="db"><tag
           class="attribute">xml:id</tag>
           attributes</phrase>
           <phrase
           outputformat="adoc"><literal>[#example-identifier]</literal>
-          identifiers</phrase> in parts, chapters, appendixes, sections,
-          figures, glossaries, tables and examples. Identifiers can be used 
-          in block elements as well, for example, procedures.
+          identifiers</phrase> in parts, chapters, appendixes, sections, figures, glossaries,
+          tables and examples. Identifiers can be used in block elements as well, for example,
+          procedures.
         </para>
       </listitem>
       <listitem>
         <para>
-          In identifiers, only use lowercase basic Latin alphabetic and numeric
-          characters and <literal>-</literal> (hyphen). Follow the regular
-          expression pattern <literal>[\-0-9a-zA-Z]+</literal>. Do not use
-          <literal>_</literal> and <literal>.</literal> characters, as they may
-          hurt search engine optimization.
+          In identifiers, only use lowercase basic Latin alphabetic and numeric characters and
+          <literal>-</literal> (hyphen). Follow the regular expression pattern
+          <literal>[\-0-9a-zA-Z]+</literal>. Do not use <literal>_</literal> and
+          <literal>.</literal> characters, as they may hurt search engine optimization.
         </para>
       </listitem>
       <listitem>
         <para>
-          Identifiers can consist of multiple parts. Join these parts with a
-          <literal>-</literal> (hyphen).
+          Identifiers can consist of multiple parts. Join these parts with a <literal>-</literal>
+          (hyphen).
         </para>
         <orderedlist>
           <listitem>
             <formalpara>
               <title>Prefix</title>
               <para>
-                Signifies the type of XML element. Prefixes aid writers in
-                creating logically named identifiers for elements. Use
-                identifiers in accordance with
+                Signifies the type of XML element. Prefixes aid writers in creating logically named
+                identifiers for elements. Use identifiers in accordance with
                 <xref linkend="tab-id-prefix" outputformat="db"/><xref linkend="tab-id-prefix-adoc" outputformat="adoc"/>.
               </para>
             </formalpara>
             <para outputformat="db">
-              Do not add prefixes to identifiers for XML elements that are used
-              to determine the name of HTML pages (such as section and chapter
-              elements). Such exposure of identifiers can hurt SEO.
+              Do not add prefixes to identifiers for XML elements that are used to determine the
+              name of HTML pages (such as section and chapter elements). Such exposure of
+              identifiers can hurt SEO.
             </para>
           </listitem>
           <listitem>
             <formalpara>
               <title>Chapter title label</title>
               <para>
-                Shortened version of the title of the parent chapter or parent
-                chapter-level element (preface, appendix, etc.). Do not add a
-                chapter title label to chapters and chapter-level elements
-                themselves. Do not add chapter title identifiers within
+                Shortened version of the title of the parent chapter or parent chapter-level
+                element (preface, appendix, etc.). Do not add a chapter title label to chapters and
+                chapter-level elements themselves. Do not add chapter title identifiers within
                 articles.
               </para>
             </formalpara>
@@ -1763,29 +1683,27 @@ xml:id="tab-install-source"</screen>
       </listitem>
       <listitem>
         <para>
-          Use short, memorable, English terms or phrases as title labels. Favor
-          longer terms over non-obvious abbreviations. Always use the singular
-          of nouns and the infinitive of verbs. For example, a section about
-          installing with <phrase role="productname">YaST</phrase> could be
-          called <tag class="attvalue">install-yast</tag>.
+          Use short, memorable, English terms or phrases as title labels. Favor longer terms over
+          non-obvious abbreviations. Always use the singular of nouns and the infinitive of verbs.
+          For example, a section about installing with <phrase role="productname">YaST</phrase>
+          could be called <tag class="attvalue">install-yast</tag>.
         </para>
         <para>
-          A figure in that section showing language selection could use the
-          identifier <tag class="attvalue">fig-install-yast-language</tag>.
+          A figure in that section showing language selection could use the identifier
+          <tag class="attvalue">fig-install-yast-language</tag>.
         </para>
       </listitem>
       <listitem>
         <para>
-          Keep in mind that section and chapter identifiers are used in the
-          online documentation URLs. Choosing understandable keywords helps
-          readers to understand what the page is about and also improves the
-          search engine ranking.
+          Keep in mind that section and chapter identifiers are used in the online documentation
+          URLs. Choosing understandable keywords helps readers to understand what the page is about
+          and also improves the search engine ranking.
         </para>
       </listitem>
     </itemizedlist>
     <para>
-      Do not rework identifiers in existing documentation, instead apply these
-      rules to newly created documentation only.
+      Do not rework identifiers in existing documentation, instead apply these rules to newly
+      created documentation only.
     </para>
     <table xml:id="tab-id-prefix" outputformat="db">
       <title>Abbreviations for different elements in an <tag class="attribute">xml:id</tag> attribute</title>
@@ -1851,8 +1769,8 @@ xml:id="tab-install-source"</screen>
             <entry><tag class="attvalue">il</tag>
               <footnote xml:id="fn-vl">
                 <para>
-                  Only add an <tag>xml:id</tag> attribute when the list has a
-                  <tag>title</tag> element
+                  Only add an <tag>xml:id</tag> attribute when the list has a <tag>title</tag>
+                  element
                 </para>
               </footnote>
             </entry>
@@ -2090,43 +2008,41 @@ xml:id="tab-install-source"</screen>
   <section xml:id="sec-list">
     <title>Lists</title>
     <para>
-      &suse; documentation uses the following types of
-      lists<phrase
-      outputformat="db"> (the respective XML elements are
-      given in parentheses)</phrase>:
+      &suse; documentation uses the following types of lists<phrase
+      outputformat="db"> (the
+      respective XML elements are given in parentheses)</phrase>:
     </para>
     <itemizedlist>
       <listitem>
         <para>
           Itemized lists<phrase outputformat="db">
           (<tag
-          class="emptytag">itemizedlist</tag>)</phrase>. Also
-          known as bullet lists or unordered lists.
+          class="emptytag">itemizedlist</tag>)</phrase>. Also known as bullet lists
+          or unordered lists.
         </para>
       </listitem>
       <listitem>
         <para>
           Ordered lists<phrase outputformat="db">
           (<tag
-          class="emptytag">orderedlist</tag>)</phrase>. Also
-          known as numbered lists.
+          class="emptytag">orderedlist</tag>)</phrase>. Also known as numbered
+          lists.
         </para>
       </listitem>
       <listitem>
         <para>
           Variable lists<phrase outputformat="db">
           (<tag
-          class="emptytag">variablelist</tag>)</phrase>. Also
-          known as definition lists or description lists.
+          class="emptytag">variablelist</tag>)</phrase>. Also known as definition
+          lists or description lists.
         </para>
       </listitem>
       <listitem>
         <para>
           Procedures<phrase outputformat="db">
           (<tag
-          class="emptytag">procedure</tag>)</phrase>. Also known
-          as step-by-step instructions or step lists. Described in
-          <xref linkend="sec-procedure"/>.
+          class="emptytag">procedure</tag>)</phrase>. Also known as step-by-step
+          instructions or step lists. Described in <xref linkend="sec-procedure"/>.
         </para>
       </listitem>
     </itemizedlist>
@@ -2136,29 +2052,28 @@ xml:id="tab-install-source"</screen>
     <itemizedlist>
       <listitem>
         <para>
-          Always introduce a list in the text. If needed for reference or better
-          coordination with the related text, add a title and an identifier.
+          Always introduce a list in the text. If needed for reference or better coordination with
+          the related text, add a title and an identifier.
         </para>
       </listitem>
       <listitem>
         <para>
-          A list must contain at least two items. If items are few, short and
-          simple in structure, consider incorporating them in the flowing text
-          instead of creating a list.
+          A list must contain at least two items. If items are few, short and simple in structure,
+          consider incorporating them in the flowing text instead of creating a list.
         </para>
       </listitem>
       <listitem>
         <para>
-          If all list items are nouns only, do not capitalize their first
-          letter. Use sentence-style capitalization for list items that are full
-          sentences and for terms in descriptive lists.
+          If all list items are nouns only, do not capitalize their first letter. Use
+          sentence-style capitalization for list items that are full sentences and for terms in
+          descriptive lists.
         </para>
       </listitem>
       <listitem>
         <para>
-          Use a period after every list item that is a sentence. Do not use a
-          period after the items that are not complete sentences. Use either all
-          full sentences in your bullet lists or all fragments. Avoid a mix.
+          Use a period after every list item that is a sentence. Do not use a period after the
+          items that are not complete sentences. Use either all full sentences in your bullet lists
+          or all fragments. Avoid a mix.
         </para>
         <para>
           Do not use commas and semicolons to end punctuation.
@@ -2166,33 +2081,31 @@ xml:id="tab-install-source"</screen>
       </listitem>
       <listitem>
         <para>
-          Wherever possible, use parallel phrasing and grammatical construction
-          between list items. This provides a pattern that makes it easier to
-          follow the text.
+          Wherever possible, use parallel phrasing and grammatical construction between list items.
+          This provides a pattern that makes it easier to follow the text.
         </para>
       </listitem>
       <listitem>
         <para>
-          Lists are visually distinct and help break up text flow, improving 
-          readability and SEO. If a list contains over 10 pieces, consider splitting 
-          it into smaller, logically grouped sections with clear subheadings. 
-          While splitting is often beneficial for scannability and content coherence, 
-          always prioritize the logical structure of the content. The primary goal is 
-          logical comprehension for human and AI systems, not strict adherence to a length rule.
+          Lists are visually distinct and help break up text flow, improving readability and SEO.
+          If a list contains over 10 pieces, consider splitting it into smaller, logically grouped
+          sections with clear subheadings. While splitting is often beneficial for scannability and
+          content coherence, always prioritize the logical structure of the content. The primary
+          goal is logical comprehension for human and AI systems, not strict adherence to a length
+          rule.
         </para>
       </listitem>
     </itemizedlist>
     <para>
-      Never nest more than three lists within each other. Instead, restructure
-      the information using a combination of lists and running texts.
+      Never nest more than three lists within each other. Instead, restructure the information
+      using a combination of lists and running texts.
     </para>
     <para>
       To be able to reference untitled lists, <phrase outputformat="db">use the
       <tag class="attribute">xreflabel</tag>
       attribute</phrase><phrase
-      outputformat="adoc">insert a label in the
-      cross reference</phrase>. For more information, see
-      <xref linkend="sec-cross-reference"/>.
+      outputformat="adoc">insert a label in the cross
+      reference</phrase>. For more information, see <xref linkend="sec-cross-reference"/>.
     </para>
     <table xml:id="tab-list" outputformat="db">
       <title>Elements related to lists</title>
@@ -2248,9 +2161,8 @@ xml:id="tab-install-source"</screen>
               <formalpara>
                 <title><tag class="emptytag">varlistentry</tag></title>
                 <para>
-                  Element within a <tag class="emptytag">variablelist</tag> that
-                  associates a <tag class="emptytag">term</tag> and a
-                  <tag class="emptytag">listitem</tag>.
+                  Element within a <tag class="emptytag">variablelist</tag> that associates a
+                  <tag class="emptytag">term</tag> and a <tag class="emptytag">listitem</tag>.
                 </para>
               </formalpara>
             </entry>
@@ -2289,9 +2201,8 @@ xml:id="tab-install-source"</screen>
     <section xml:id="sec-itemized-list">
       <title>Itemized lists</title>
       <para>
-        Use itemized lists whenever the order of list items is irrelevant. They
-        are often used to provide an overview of information or to introduce or
-        summarize information.
+        Use itemized lists whenever the order of list items is irrelevant. They are often used to
+        provide an overview of information or to introduce or summarize information.
       </para>
       <example xml:id="ex-itemized-list-source" outputformat="db">
         <title>Example of an itemized list (source)</title>
@@ -2339,11 +2250,10 @@ xml:id="tab-install-source"</screen>
     <section xml:id="sec-ordered-list">
       <title>Ordered lists</title>
       <para>
-        Use ordered lists when items have a strict order, hierarchy or
-        importance. Do not use ordered lists to describe sequential user actions
-        (step-by-step instructions). For sequential user actions, use a
-        procedure, as described in <xref linkend="sec-procedure"/>. If order is
-        not relevant, use an itemized list or a variable list.
+        Use ordered lists when items have a strict order, hierarchy or importance. Do not use
+        ordered lists to describe sequential user actions (step-by-step instructions). For
+        sequential user actions, use a procedure, as described in <xref linkend="sec-procedure"/>.
+        If order is not relevant, use an itemized list or a variable list.
       </para>
       <example xml:id="ex-ordered-list-source" outputformat="db">
         <title>Example of an ordered list (source)</title>
@@ -2384,8 +2294,7 @@ xml:id="tab-install-source"</screen>
           </listitem>
           <listitem>
             <para>
-              The latest security updates are installed. If you are in doubt,
-              run an online update.
+              The latest security updates are installed. If you are in doubt, run an online update.
             </para>
           </listitem>
         </orderedlist>
@@ -2394,18 +2303,16 @@ xml:id="tab-install-source"</screen>
     <section xml:id="sec-variable-list">
       <title>Variable lists</title>
       <para>
-        Use variable lists when defining terms or describing options. Each item
-        of a variable list contains a short term that is then further explained
-        by an explanatory paragraph.
+        Use variable lists when defining terms or describing options. Each item of a variable list
+        contains a short term that is then further explained by an explanatory paragraph.
       </para>
       <para>
         Use sentence-style capitalization for both the term and the list item.
       </para>
       <para>
-        To reference the list, assign it an identifier and add a title.
-        Individual list items may be referenced by assigning an identifier as
-        well. The entry is then identified by the value of the identifier and
-        referenced by the term.
+        To reference the list, assign it an identifier and add a title. Individual list items may
+        be referenced by assigning an identifier as well. The entry is then identified by the value
+        of the identifier and referenced by the term.
       </para>
       <example xml:id="ex-variable-list-source" outputformat="db">
         <title>Example of a variable list (source)</title>
@@ -2448,8 +2355,7 @@ System:: Get a basic understanding of the system components.</screen>
             <term>Installation</term>
             <listitem>
               <para>
-                Learn about the installation and initial configuration of a
-                Linux system.
+                Learn about the installation and initial configuration of a Linux system.
               </para>
             </listitem>
           </varlistentry>
@@ -2468,14 +2374,12 @@ System:: Get a basic understanding of the system components.</screen>
   <section xml:id="sec-keyboard">
     <title>Keys and key combinations</title>
     <para>
-      <phrase outputformat="adoc">To enter keys and their combinations in the
-      text, use the keyboard macro: <literal>kbd:[key]</literal></phrase>
-      Capitalize all keys as printed on a standard keyboard. Capitalize all
-      letter keys. <phrase outputformat="db">To refer to a capitalized
-      character, use
-      <keycombo><keycap function="shift"/><keycap>Z</keycap></keycombo>, for
-      example. Introduce this convention in the <quote>Typographical
-      Conventions</quote> section of the introduction.</phrase>
+      <phrase outputformat="adoc">To enter keys and their combinations in the text, use the
+      keyboard macro: <literal>kbd:[key]</literal></phrase> Capitalize all keys as printed on a
+      standard keyboard. Capitalize all letter keys. <phrase outputformat="db">To refer to a
+      capitalized character, use <keycombo><keycap function="shift"/><keycap>Z</keycap></keycombo>,
+      for example. Introduce this convention in the <quote>Typographical Conventions</quote>
+      section of the introduction.</phrase>
     </para>
     <para>
       To mark up key combinations, <phrase outputformat="db">use
@@ -2485,26 +2389,23 @@ System:: Get a basic understanding of the system components.</screen>
       class="emptytag">keycap</tag> elements. Separators between
       <tag
       class="emptytag">keycap</tag> elements are then created
-      automatically.</phrase><phrase outputformat="adoc">enter multiple keys
-      concatenated with <literal>+</literal>, such as
-      <literal>kbd:[key+key+key+...]</literal>.</phrase>
+      automatically.</phrase><phrase outputformat="adoc">enter multiple keys concatenated with
+      <literal>+</literal>, such as <literal>kbd:[key+key+key+...]</literal>.</phrase>
     </para>
     <tip outputformat="adoc">
       <para>
-        If the last key is a backslash (<literal>\</literal>), it must be
-        followed by a space. Otherwise the processor will not recognize the
-        macro. If one of the keys is a closing square bracket
-        (<literal>]</literal>), it must be preceded by a backslash. Without the
+        If the last key is a backslash (<literal>\</literal>), it must be followed by a space.
+        Otherwise the processor will not recognize the macro. If one of the keys is a closing
+        square bracket (<literal>]</literal>), it must be preceded by a backslash. Without the
         backslash escape, the macro will end prematurely.
       </para>
     </tip>
     <para outputformat="db">
       If a key is listed in <xref linkend="tab-keycap"/>, use the
-      <tag class="attribute">function</tag> attribute with the appropriate
-      value. When using the <tag class="attribute">function</tag> attribute,
-      make the tag self-closing&mdash;DocBook's language files will insert key
-      names automatically. This simplifies both your work and the work of
-      translators.
+      <tag class="attribute">function</tag> attribute with the appropriate value. When using the
+      <tag class="attribute">function</tag> attribute, make the tag self-closing&mdash;DocBook's
+      language files will insert key names automatically. This simplifies both your work and the
+      work of translators.
     </para>
     <example xml:id="ex-key" outputformat="db">
       <title>Example of a key</title>
@@ -2538,9 +2439,8 @@ System:: Get a basic understanding of the system components.</screen>
               <formalpara>
                 <title><tag class="emptytag">keycombo</tag></title>
                 <para>
-                  Inline element containing multiple
-                  <tag class="emptytag">keycap</tag> elements that together make
-                  up a key combination.
+                  Inline element containing multiple <tag class="emptytag">keycap</tag> elements
+                  that together make up a key combination.
                 </para>
               </formalpara>
             </entry>
@@ -2552,10 +2452,9 @@ System:: Get a basic understanding of the system components.</screen>
               <formalpara>
                 <title><tag class="emptytag">keycap</tag></title>
                 <para>
-                  Inline element to mark up a single key. Contains either the
-                  key labels text inside it or is self-closing and has a
-                  <tag class="attribute">function</tag> attribute with one of
-                  the following values:
+                  Inline element to mark up a single key. Contains either the key labels text
+                  inside it or is self-closing and has a <tag class="attribute">function</tag>
+                  attribute with one of the following values:
                 </para>
               </formalpara>
               <itemizedlist>
@@ -2621,9 +2520,8 @@ System:: Get a basic understanding of the system components.</screen>
                 </listitem>
                 <listitem>
                   <para>
-                    <tag class="attvalue">meta</tag> (also known as
-                    <keycap>Win</keycap>, <keycap>Windows</keycap> or
-                    <keycap>Super</keycap>)
+                    <tag class="attvalue">meta</tag> (also known as <keycap>Win</keycap>,
+                    <keycap>Windows</keycap> or <keycap>Super</keycap>)
                   </para>
                 </listitem>
                 <listitem>
@@ -2678,18 +2576,15 @@ System:: Get a basic understanding of the system components.</screen>
   <section xml:id="sec-outline-level">
     <title>Outline levels and sectioning</title>
     <para>
-      <phrase outputformat="db">Create sections using the
-      <tag
-      class="emptytag">sect1</tag>, <tag class="emptytag">sect2</tag>
-      and <tag class="emptytag">sect3</tag> elements. Avoid outlines that
-      require <tag class="emptytag">sect4</tag> and
-      <tag class="emptytag">sect5</tag> elements.</phrase>
-      <phrase outputformat="adoc">Create sections by inserting
-      <literal>=</literal> characters in front of their titles. The number of
-      <literal>=</literal> characters determines the depth of the section in the
-      document structure. Do not go deeper than section level 3.</phrase>
-      Instead, create a flatter structure in which more elements are visible at
-      a glance.
+      <phrase outputformat="db">Create sections using the <tag
+      class="emptytag">sect1</tag>,
+      <tag class="emptytag">sect2</tag> and <tag class="emptytag">sect3</tag> elements. Avoid
+      outlines that require <tag class="emptytag">sect4</tag> and <tag class="emptytag">sect5</tag>
+      elements.</phrase> <phrase outputformat="adoc">Create sections by inserting
+      <literal>=</literal> characters in front of their titles. The number of <literal>=</literal>
+      characters determines the depth of the section in the document structure. Do not go deeper
+      than section level 3.</phrase> Instead, create a flatter structure in which more elements are
+      visible at a glance.
     </para>
     <example xml:id="ex-sections-depth" outputformat="adoc">
       <title>Example section outline</title>
@@ -2704,23 +2599,21 @@ System:: Get a basic understanding of the system components.</screen>
 == Another Level 1 Section Title</screen>
     </example>
     <para>
-      Provide at least one paragraph of introductory information directly within
-      each section.
+      Provide at least one paragraph of introductory information directly within each section.
     </para>
     <para>
-      Do not create lone subsections. A lone subsection is a section that is the
-      only subsection of its parent section.
+      Do not create lone subsections. A lone subsection is a section that is the only subsection of
+      its parent section.
     </para>
     <para>
-      For more information about writing headlines, see
-      <xref linkend="sec-heading"/>.
+      For more information about writing headlines, see <xref linkend="sec-heading"/>.
     </para>
   </section>
   <section xml:id="sec-procedure">
     <title>Procedures</title>
     <para>
-      Use procedures to describe sequential tasks. A procedure consists of the
-      following elements and attributes:
+      Use procedures to describe sequential tasks. A procedure consists of the following elements
+      and attributes:
     </para>
     <itemizedlist>
       <listitem>
@@ -2735,33 +2628,30 @@ System:: Get a basic understanding of the system components.</screen>
       </listitem>
       <listitem>
         <para>
-          An introductory phrase establishing the purpose of the procedure. If
-          the procedure is otherwise the only element in its section, place the
-          introductory phrase before the procedure.
+          An introductory phrase establishing the purpose of the procedure. If the procedure is
+          otherwise the only element in its section, place the introductory phrase before the
+          procedure.
         </para>
       </listitem>
       <listitem>
         <para>
-          If there are preconditions or prerequisites, add them as a second
-          paragraph after the introduction.
+          If there are preconditions or prerequisites, add them as a second paragraph after the
+          introduction.
         </para>
       </listitem>
       <listitem>
         <para>
-          Short, simple steps and, if necessary, substeps describing the actions
-          to be performed. See also <xref linkend="sec-structure-sentence"/>.
+          Short, simple steps and, if necessary, substeps describing the actions to be performed.
+          See also <xref linkend="sec-structure-sentence"/>.
         </para>
       </listitem>
     </itemizedlist>
     <para outputformat="db">
-      To link alternative actions inside the same substep element, use
-      <quote>or.</quote> Apply a
-      <tag class="attribute">performance=optional</tag> attribute to optional
-      steps.
+      To link alternative actions inside the same substep element, use <quote>or.</quote> Apply a
+      <tag class="attribute">performance=optional</tag> attribute to optional steps.
     </para>
     <para>
-      Steps may contain a link to an explanatory subsection providing further
-      details on the step.
+      Steps may contain a link to an explanatory subsection providing further details on the step.
     </para>
     <example xml:id="ex-procedure-source" outputformat="db">
       <title>Example of a procedure (source)</title>
@@ -2806,14 +2696,13 @@ To add a new user to the system, perform the following steps:
       </para>
       <step>
         <para>
-          In the <phrase role="productname">YaST</phrase> window, click
-          <guimenu>User and group management</guimenu>.
+          In the <phrase role="productname">YaST</phrase> window, click <guimenu>User and group
+          management</guimenu>.
         </para>
       </step>
       <step>
         <para>
-          To open the <guimenu>Add a new user</guimenu> dialog, click
-          <guimenu>Add</guimenu>.
+          To open the <guimenu>Add a new user</guimenu> dialog, click <guimenu>Add</guimenu>.
         </para>
       </step>
       <step>
@@ -2837,9 +2726,8 @@ To add a new user to the system, perform the following steps:
               <formalpara>
                 <title><tag class="emptytag">procedure</tag></title>
                 <para>
-                  Block element containing a <tag class="emptytag">title</tag>
-                  (optional) and multiple <tag class="emptytag">step</tag>
-                  elements.
+                  Block element containing a <tag class="emptytag">title</tag> (optional) and
+                  multiple <tag class="emptytag">step</tag> elements.
                 </para>
               </formalpara>
             </entry>
@@ -2865,8 +2753,8 @@ To add a new user to the system, perform the following steps:
               <formalpara>
                 <title><tag class="emptytag">substeps</tag></title>
                 <para>
-                  Element containing multiple, subordinate
-                  <tag class="emptytag">step</tag> elements.
+                  Element containing multiple, subordinate <tag class="emptytag">step</tag>
+                  elements.
                 </para>
               </formalpara>
             </entry>
@@ -2880,52 +2768,45 @@ To add a new user to the system, perform the following steps:
   <section xml:id="sec-product" outputformat="db">
     <title>Products</title>
     <para>
-      Always use the preferred product name instead of, for example, an acronym.
-      When referring to a product, add a <tag class="emptytag">phrase
-      role="productname"</tag> element around it. This will not result in a
-      visual change but disables hyphenation:
+      Always use the preferred product name instead of, for example, an acronym. When referring to
+      a product, add a <tag class="emptytag">phrase role="productname"</tag> element around it.
+      This will not result in a visual change but disables hyphenation:
     </para>
 <screen>&lt;phrase role="productname"&gt;LibreOffice&lt;/phrase&gt; is an office suite.</screen>
   </section>
   <section xml:id="sec-profiling">
     <title>Profiling</title>
     <para>
-      Profiling is convenient for the creation of consistent documentation
-      across different products or product lines. This is especially beneficial
-      when similar products share a considerable amount of features, with only a
-      few differences. Instead of maintaining separate documentation for each
-      product, you can share most of the source code and only vary text snippets
-      where necessary. When profiling, you can mark specific elements as
-      conditional and specify which conditions apply to the output when
-      processing the files to generate output. The style sheets will then
-      include or exclude the marked text, according to the conditions.
+      Profiling is convenient for the creation of consistent documentation across different
+      products or product lines. This is especially beneficial when similar products share a
+      considerable amount of features, with only a few differences. Instead of maintaining separate
+      documentation for each product, you can share most of the source code and only vary text
+      snippets where necessary. When profiling, you can mark specific elements as conditional and
+      specify which conditions apply to the output when processing the files to generate output.
+      The style sheets will then include or exclude the marked text, according to the conditions.
     </para>
     <para>
-      Profiling allows you to keep both common and product-specific content in
-      one file and select at production time which information to include in the
-      output.
+      Profiling allows you to keep both common and product-specific content in one file and select
+      at production time which information to include in the output.
     </para>
     <para>
-      If you need to use profiling in your writing, adhere to the following
-      guidelines:
+      If you need to use profiling in your writing, adhere to the following guidelines:
     </para>
     <itemizedlist>
       <listitem>
         <para>
-          Identify different variants that you want to apply to the general
-          piece of text and assign clear and short identifiers to them, sticking
-          to lowercase. These identifiers act as <quote>aliases</quote> for
-          longer products or deliverables. <phrase outputformat="db">To apply
-          more than one identifier to an element, separate them with a
-          semicolon.</phrase>
+          Identify different variants that you want to apply to the general piece of text and
+          assign clear and short identifiers to them, sticking to lowercase. These identifiers act
+          as <quote>aliases</quote> for longer products or deliverables.
+          <phrase outputformat="db">To apply more than one identifier to an element, separate them
+          with a semicolon.</phrase>
         </para>
       </listitem>
       <listitem>
         <para>
-          Select one or more profiling attributes and add them to the text
-          snippets that are conditional. The tagged snippets are only included
-          in the output if all required conditions are fulfilled. In most cases,
-          the attribute to use is
+          Select one or more profiling attributes and add them to the text snippets that are
+          conditional. The tagged snippets are only included in the output if all required
+          conditions are fulfilled. In most cases, the attribute to use is
           <literal
           outputformat="db">os</literal><literal
           outputformat="adoc">:os:</literal>.
@@ -2939,31 +2820,28 @@ To add a new user to the system, perform the following steps:
       </listitem>
       <listitem>
         <para>
-          Mark the variants in your text with the relevant identifiers. Any
-          content that is valid for all conditions does not need any profiling
-          attributes. The respective content is always included in the
-          output formats generated from the sources.
+          Mark the variants in your text with the relevant identifiers. Any content that is valid
+          for all conditions does not need any profiling attributes. The respective content is
+          always included in the output formats generated from the sources.
         </para>
       </listitem>
       <listitem>
         <para>
           <phrase outputformat="adoc">If you are using DC files,
-          create</phrase><phrase outputformat="db">Create</phrase> a different
-          DC file for each variant. Add the respective profiling variable and
-          its value to the DC file.
+          create</phrase><phrase outputformat="db">Create</phrase> a different DC file for each
+          variant. Add the respective profiling variable and its value to the DC file.
         </para>
       </listitem>
       <listitem outputformat="db">
         <para>
-          You can use multiple profiling attributes to handle more complex
-          scenarios. For example, if you have conditions for architecture and
-          operating system, you can create different versions of a document for
-          different combinations of these conditions, as shown in
+          You can use multiple profiling attributes to handle more complex scenarios. For example,
+          if you have conditions for architecture and operating system, you can create different
+          versions of a document for different combinations of these conditions, as shown in
           <xref linkend="ex-multiple-profiling"/>.
         </para>
       </listitem>
     </itemizedlist>
-<!-- ADOC how do we profile in adoc?-->
+    <!-- ADOC how do we profile in adoc?-->
     <example xml:id="ex-profiling-xml" outputformat="db">
       <title>Single profiling with the attribute <tag class="attribute">os</tag></title>
 <screen>
@@ -3017,22 +2895,20 @@ Entire hard disks are listed as devices without numbers, such as
   <section xml:id="sec-question">
     <title>Questions and answers</title>
     <para>
-      Use question and answer sections to present information about
-      troubleshooting or commonly asked questions about a product. Never use
-      question and answer sections to explain trivia, such as how a product
-      got its name. Keep your audience in mind. See also
+      Use question and answer sections to present information about troubleshooting or commonly
+      asked questions about a product. Never use question and answer sections to explain trivia,
+      such as how a product got its name. Keep your audience in mind. See also
       <xref linkend="sec-techwriting"/>.
     </para>
     <para>
-      Questions must always end in a <literal>?</literal>. Where explanations
-      longer than three paragraphs are necessary for an answer, add a
-      cross-reference to an explanation outside of the question and answer
-      section. See also <xref linkend="sec-cross-reference"/>.
+      Questions must always end in a <literal>?</literal>. Where explanations longer than three
+      paragraphs are necessary for an answer, add a cross-reference to an explanation outside of
+      the question and answer section. See also <xref linkend="sec-cross-reference"/>.
     </para>
     <para outputformat="db">
-      When a question and answer section contains over 10 questions and there
-      are clear topical divisions, add <tag class="emptytag">qandadiv</tag>
-      elements to further structure the section.
+      When a question and answer section contains over 10 questions and there are clear topical
+      divisions, add <tag class="emptytag">qandadiv</tag> elements to further structure the
+      section.
     </para>
     <example xml:id="ex-question" outputformat="db">
       <title>Example of a question and answer section (source)</title>
@@ -3087,22 +2963,19 @@ There are less than 4 GB of space available on the selected partition.</screen>
         </question>
         <answer>
           <para>
-            Open the log file. Look for entries starting with
-            <literal>Failed</literal>.
+            Open the log file. Look for entries starting with <literal>Failed</literal>.
           </para>
         </answer>
       </qandaentry>
       <qandaentry>
         <question>
           <para>
-            Why does the error <literal>Not enough disk space</literal> occur
-            during installation?
+            Why does the error <literal>Not enough disk space</literal> occur during installation?
           </para>
         </question>
         <answer>
           <para>
-            There are less than 4 GB of space available on the selected
-            partition.
+            There are less than 4 GB of space available on the selected partition.
           </para>
         </answer>
       </qandaentry>
@@ -3122,9 +2995,9 @@ There are less than 4 GB of space available on the selected partition.</screen>
               <formalpara>
                 <title><tag class="emptytag">qandaset</tag></title>
                 <para>
-                  Block element containing a <tag class="emptytag">title</tag>
-                  (optional) and multiple <tag class="emptytag">qandaentry</tag>
-                  or <tag class="emptytag">qandadiv</tag> elements.
+                  Block element containing a <tag class="emptytag">title</tag> (optional) and
+                  multiple <tag class="emptytag">qandaentry</tag> or
+                  <tag class="emptytag">qandadiv</tag> elements.
                 </para>
               </formalpara>
             </entry>
@@ -3136,10 +3009,9 @@ There are less than 4 GB of space available on the selected partition.</screen>
               <formalpara>
                 <title><tag class="emptytag">qandadiv</tag></title>
                 <para>
-                  Block element containing a <tag class="emptytag">title</tag>
-                  and multiple <tag class="emptytag">qandaentry</tag> elements.
-                  Used to structure a <tag class="emptytag">qandaset</tag> into
-                  smaller topical subsections.
+                  Block element containing a <tag class="emptytag">title</tag> and multiple
+                  <tag class="emptytag">qandaentry</tag> elements. Used to structure a
+                  <tag class="emptytag">qandaset</tag> into smaller topical subsections.
                 </para>
               </formalpara>
             </entry>
@@ -3151,8 +3023,7 @@ There are less than 4 GB of space available on the selected partition.</screen>
               <formalpara>
                 <title><tag class="emptytag">qandaentry</tag></title>
                 <para>
-                  Block element used to associate a
-                  <tag class="emptytag">question</tag> with an
+                  Block element used to associate a <tag class="emptytag">question</tag> with an
                   <tag class="emptytag">answer</tag>.
                 </para>
               </formalpara>
@@ -3178,8 +3049,8 @@ There are less than 4 GB of space available on the selected partition.</screen>
               <formalpara>
                 <title><tag class="emptytag">answer</tag></title>
                 <para>
-                  Block element containing the answer. Use
-                  <tag class="emptytag">para</tag> elements inside.
+                  Block element containing the answer. Use <tag class="emptytag">para</tag>
+                  elements inside.
                 </para>
               </formalpara>
             </entry>
@@ -3202,8 +3073,8 @@ There are less than 4 GB of space available on the selected partition.</screen>
       class="emptytag">filename</tag> element</phrase> without the
       <literal>file://</literal> prefix. To reference e-mail addresses, use the
       <phrase
-      outputformat="adoc">clickable<literal>
-      mailto:john@example.com[]</literal> macro or unclickable monospaced
+      outputformat="adoc">clickable<literal> mailto:john@example.com[]</literal>
+      macro or unclickable monospaced
       `john@example.com`</phrase><phrase outputformat="db"><tag class="emptytag">email</tag>
       element without the <literal>mailto:</literal> prefix</phrase>. See also
       <xref linkend="sec-file-markup"/>.
@@ -3214,40 +3085,34 @@ There are less than 4 GB of space available on the selected partition.</screen>
     <itemizedlist>
       <listitem>
         <para>
-          <quote outputformat="db">the man page of
-          <command>command</command></quote> <quote outputformat="adoc">the man
-          page of `command`</quote>
+          <quote outputformat="db">the man page of <command>command</command></quote>
+          <quote outputformat="adoc">the man page of `command`</quote>
         </para>
       </listitem>
       <listitem>
         <para>
-          <quote outputformat="db">the info page of
-          <command>command</command></quote> <quote outputformat="adoc">the info
-          page of `command`</quote>
+          <quote outputformat="db">the info page of <command>command</command></quote>
+          <quote outputformat="adoc">the info page of `command`</quote>
         </para>
       </listitem>
     </itemizedlist>
     <para>
-      In a situation where the category of the page is needed, append the
-      category in parentheses. For example, use
-      <quote
+      In a situation where the category of the page is needed, append the category in parentheses.
+      For example, use <quote
       outputformat="db">(<command>man 9
       command</command>)</quote><quote
-      outputformat="adoc">(`man 9
-      command`)</quote>.
+      outputformat="adoc">(`man 9 command`)</quote>.
     </para>
 <screen outputformat="db">To learn more about subcommands, see the man page of
 &lt;command&gt;command&lt;/command&gt;.</screen>
 <screen outputformat="adoc">To learn more about subcommands, see the man page of
 `command`.</screen>
     <para>
-      Insert references to external (non-&suse;) physical books in the format
-      <quote>Title by Author (ISBN #00000000).</quote> Inclusion of the ISBN is
-      optional. Place the title in <phrase outputformat="db">a
-      <tag
+      Insert references to external (non-&suse;) physical books in the format <quote>Title by
+      Author (ISBN #00000000).</quote> Inclusion of the ISBN is optional. Place the title in
+      <phrase outputformat="db">a <tag
       class="emptytag">citetitle</tag>
-      element</phrase><phrase outputformat="adoc">an italics snippet</phrase>.
-      For example:
+      element</phrase><phrase outputformat="adoc">an italics snippet</phrase>. For example:
     </para>
 <screen outputformat="db">&lt;citetitle&gt;Lorem Ipsum&lt;/citetitle&gt; by Dolores S. Amet
 (ISBN 0-246-52044-7) is a useful guide.</screen>
@@ -3257,43 +3122,44 @@ There are less than 4 GB of space available on the selected partition.</screen>
       Note that <tag class="emptytag">citetitle</tag> is not translated.
     </para>
     <para>
-      As an author, where possible, provide language-specific references to
-      translators in <phrase outputformat="db"
+      As an author, where possible, provide language-specific references to translators in
+      <phrase outputformat="db"
       >XML comments (see also
-      <xref linkend="sec-xml-comment"/>).</phrase>
-      <phrase outputformat="adoc">comments.</phrase> As a translator, look for
-      corresponding language-specific resources where none have been provided.
-      For URLs, provide only the language-specific version of a site. Use the
-      English version as a fallback. For books, provide the title of the
-      translated version along with the original title if such a translation
-      exists.
+      <xref linkend="sec-xml-comment"/>).</phrase> <phrase outputformat="adoc">comments.</phrase>
+      As a translator, look for corresponding language-specific resources where none have been
+      provided. For URLs, provide only the language-specific version of a site. Use the English
+      version as a fallback. For books, provide the title of the translated version along with the
+      original title if such a translation exists.
     </para>
     <para>
-      Other types of references to resources are described in
-      <xref linkend="sec-cross-reference"/> and <xref linkend="sec-link"/>.
+      Other types of references to resources are described in <xref linkend="sec-cross-reference"/>
+      and <xref linkend="sec-link"/>.
     </para>
   </section>
   <section xml:id="sec-revinfo">
     <title>Revision information</title>
-    <para>Every HTML file generated from our documentation sources must include
-    at least one revision date. Revision dates signal content freshness to human
-    readers, search engines and LLMs.</para>
-
-     <para>Every chapter, part or book that is included in our builds contains a
-     revision history. <phrase outputformat="db">For product documentation up to
-     SLE 15 SP7, this revision history typically consists of a single revision
-     entry with an empty description.</phrase><phrase outputformat="adoc">For
-     documentation written in AsciiDoc, the revision date is the value of the
-     <literal>:revdate:</literal> attribute, such as  <literal>:revdate:
-     2025-07-31</literal>.</phrase> The revision date is updated in place every
-     time the content undergoes a significant change.</para>
-
-     <para outputformat="db">Starting with SLE 16 releases, product
-     documentation includes a complete revision history with several dates and
-     descriptions. Follow the instructions in <xref linkend="sec-revhistory"
-     />.</para>
-
-    <para>To determine whether a change you made warrants a revision date, use this table:</para>
+    <para>
+      Every HTML file generated from our documentation sources must include at least one revision
+      date. Revision dates signal content freshness to human readers, search engines and LLMs.
+    </para>
+    <para>
+      Every chapter, part or book that is included in our builds contains a revision history.
+      <phrase outputformat="db">For product documentation up to SLE 15 SP7, this revision history
+      typically consists of a single revision entry with an empty
+      description.</phrase><phrase outputformat="adoc">For documentation written in AsciiDoc, the
+      revision date is the value of the <literal>:revdate:</literal> attribute, such as
+      <literal>:revdate: 2025-07-31</literal>.</phrase> The revision date is updated in place every
+      time the content undergoes a significant change.
+    </para>
+    <para outputformat="db">
+      Starting with SLE 16 releases, product documentation includes a complete revision history
+      with several dates and descriptions. Follow the instructions in
+      <xref linkend="sec-revhistory"
+     />.
+    </para>
+    <para>
+      To determine whether a change you made warrants a revision date, use this table:
+    </para>
     <informaltable>
       <tgroup cols="2">
         <colspec colnum="1" colname="c1" colwidth="4.25*" />
@@ -3345,9 +3211,9 @@ There are less than 4 GB of space available on the selected partition.</screen>
   <section xml:id="sec-table">
     <title>Tables</title>
     <para>
-      Use tables to present many similar facts. Tables are easy to scan and
-      compare. Always keep tables simple enough to not require long
-      explanations, even for readers unfamiliar with the topic.
+      Use tables to present many similar facts. Tables are easy to scan and compare. Always keep
+      tables simple enough to not require long explanations, even for readers unfamiliar with the
+      topic.
     </para>
     <para>
       A table always has a title and should have an identifier.
@@ -3360,9 +3226,8 @@ There are less than 4 GB of space available on the selected partition.</screen>
         <term>Lookup tables for specific information</term>
         <listitem>
           <para>
-            Whenever users need to check for data that applies to them, create
-            lookup tables. For example, use a table to sum up system
-            requirements.
+            Whenever users need to check for data that applies to them, create lookup tables. For
+            example, use a table to sum up system requirements.
           </para>
         </listitem>
       </varlistentry>
@@ -3370,16 +3235,16 @@ There are less than 4 GB of space available on the selected partition.</screen>
         <term>Matrix tables</term>
         <listitem>
           <para>
-            Whenever users need to quickly check whether a specific combination
-            of options works or not. For example, use a matrix table to
-            visualize supported combinations or update options.
+            Whenever users need to quickly check whether a specific combination of options works or
+            not. For example, use a matrix table to visualize supported combinations or update
+            options.
           </para>
         </listitem>
       </varlistentry>
     </variablelist>
     <para>
-      As there are use cases for tables, there are cases when
-      <emphasis>not</emphasis> to use tables:
+      As there are use cases for tables, there are cases when <emphasis>not</emphasis> to use
+      tables:
     </para>
     <itemizedlist>
       <listitem>
@@ -3394,8 +3259,7 @@ There are less than 4 GB of space available on the selected partition.</screen>
       </listitem>
       <listitem>
         <para>
-          Complex layout constructs (screens, code) should not be used in
-          tables.
+          Complex layout constructs (screens, code) should not be used in tables.
         </para>
       </listitem>
     </itemizedlist>
@@ -3407,9 +3271,8 @@ There are less than 4 GB of space available on the selected partition.</screen>
         <term>Structure the table to have more rows than columns</term>
         <listitem>
           <para>
-            Readers prefer to skim for information that is aligned vertically.
-            When designing tables, consider swapping rows and columns to provide
-            a consistent user experience.
+            Readers prefer to skim for information that is aligned vertically. When designing
+            tables, consider swapping rows and columns to provide a consistent user experience.
           </para>
         </listitem>
       </varlistentry>
@@ -3417,10 +3280,9 @@ There are less than 4 GB of space available on the selected partition.</screen>
         <term>Narrow down columns</term>
         <listitem>
           <para>
-            Compress the data in your table as much as you can. Table cells with
-            less content are more easily parsed by readers. Consider using
-            icons, adding repeating words into column titles, or using shorter
-            number formats.
+            Compress the data in your table as much as you can. Table cells with less content are
+            more easily parsed by readers. Consider using icons, adding repeating words into column
+            titles, or using shorter number formats.
           </para>
         </listitem>
       </varlistentry>
@@ -3428,25 +3290,23 @@ There are less than 4 GB of space available on the selected partition.</screen>
         <term>Use colors to lead the reader's eyes</term>
         <listitem>
           <para>
-            Use colors to make the information stand out. If you just want to
-            highlight small bits, use bright colors. If you need to color entire
-            cells, use pastels. This option should only be used with matrix type
-            tables.
+            Use colors to make the information stand out. If you just want to highlight small bits,
+            use bright colors. If you need to color entire cells, use pastels. This option should
+            only be used with matrix type tables.
           </para>
-<!-- add list of supported colors as soon as toms' PR is merged -->
+          <!-- add list of supported colors as soon as toms' PR is merged -->
         </listitem>
       </varlistentry>
       <varlistentry>
         <term>Use striped rows</term>
         <listitem>
           <para>
-            Color every second row in light gray to make sure readers do not
-            accidentally slip between lines. This should be the default for long
-            tables. Do not use striped rows in matrix type tables with
-            additional cell background coloring. You may also consider disabling
-            striped rows for short tables to not confuse readers.
+            Color every second row in light gray to make sure readers do not accidentally slip
+            between lines. This should be the default for long tables. Do not use striped rows in
+            matrix type tables with additional cell background coloring. You may also consider
+            disabling striped rows for short tables to not confuse readers.
           </para>
-<!-- find out whether there is an easy way to do this instead of coloring each and every cell -->
+          <!-- find out whether there is an easy way to do this instead of coloring each and every cell -->
         </listitem>
       </varlistentry>
     </variablelist>
@@ -3527,8 +3387,7 @@ There are less than 4 GB of space available on the selected partition.</screen>
               <formalpara>
                 <title><tag class="emptytag">table</tag></title>
                 <para>
-                  Formal block element that contains a
-                  <tag class="emptytag">title</tag> and a
+                  Formal block element that contains a <tag class="emptytag">title</tag> and a
                   <tag class="emptytag">tgroup</tag> element.
                 </para>
               </formalpara>
@@ -3541,8 +3400,8 @@ There are less than 4 GB of space available on the selected partition.</screen>
               <formalpara>
                 <title><tag class="emptytag">informaltable</tag></title>
                 <para>
-                  Informal block element that contains a
-                  <tag class="emptytag">tgroup</tag> element.
+                  Informal block element that contains a <tag class="emptytag">tgroup</tag>
+                  element.
                 </para>
               </formalpara>
             </entry>
@@ -3555,9 +3414,8 @@ There are less than 4 GB of space available on the selected partition.</screen>
                 <title><tag class="emptytag">tgroup</tag></title>
                 <para>
                   Wrapper for the content of a table. Can contain one or more
-                  <tag class="emptytag">colspec</tag> and one
-                  <tag class="emptytag">thead</tag>. Contains a
-                  <tag class="emptytag">tbody</tag>
+                  <tag class="emptytag">colspec</tag> and one <tag class="emptytag">thead</tag>.
+                  Contains a <tag class="emptytag">tbody</tag>
                 </para>
               </formalpara>
             </entry>
@@ -3581,8 +3439,8 @@ There are less than 4 GB of space available on the selected partition.</screen>
               <formalpara>
                 <title><tag class="emptytag">thead</tag></title>
                 <para>
-                  Element to mark up a table head. Contains a
-                  <tag class="emptytag">row</tag> element.
+                  Element to mark up a table head. Contains a <tag class="emptytag">row</tag>
+                  element.
                 </para>
               </formalpara>
             </entry>
@@ -3634,8 +3492,7 @@ There are less than 4 GB of space available on the selected partition.</screen>
   <section xml:id="sec-ui-item-markup-adoc" outputformat="adoc">
     <title>User interface items</title>
     <para>
-      To mark up buttons when describing the user interface, use the button
-      macro.
+      To mark up buttons when describing the user interface, use the button macro.
     </para>
     <example xml:id="ex-single-ui-item">
       <title>Example of a single user interface item</title>
@@ -3654,16 +3511,13 @@ Select menu:View[Zoom > Reset] to reset the zoom level to the default setting.
   <section xml:id="sec-ui-item-markup" outputformat="db">
     <title>User interface items</title>
     <para>
-      To mark up single user interface items, use
-      <tag class="emptytag">guimenu</tag>. To mark up nested menu structures,
-      use <tag class="emptytag">menuchoice</tag> as a wrapper for multiple
+      To mark up single user interface items, use <tag class="emptytag">guimenu</tag>. To mark up
+      nested menu structures, use <tag class="emptytag">menuchoice</tag> as a wrapper for multiple
       <tag class="emptytag">guimenu</tag> elements. Separators between
-      <tag class="emptytag">guimenu</tag> elements are then created
-      automatically.
+      <tag class="emptytag">guimenu</tag> elements are then created automatically.
     </para>
     <para>
-      For more information about language aspects, see
-      <xref linkend="sec-ui-item-language"/>.
+      For more information about language aspects, see <xref linkend="sec-ui-item-language"/>.
     </para>
     <example xml:id="ex-single-ui-item-adoc">
       <title>Example of a single user interface item</title>
@@ -3689,9 +3543,8 @@ Select menu:View[Zoom > Reset] to reset the zoom level to the default setting.
               <formalpara>
                 <title><tag class="emptytag">menuchoice</tag></title>
                 <para>
-                  Inline element containing multiple
-                  <tag class="emptytag">guimenu</tag> elements that together
-                  form a nested menu structure.
+                  Inline element containing multiple <tag class="emptytag">guimenu</tag> elements
+                  that together form a nested menu structure.
                 </para>
               </formalpara>
             </entry>
