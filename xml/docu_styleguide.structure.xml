@@ -526,8 +526,18 @@ default 0 <co xml:id="co-default"/></screen>
         avoid spelling or capitalization errors, whenever possible, try commands
         before adding them to the documentation.
       </para>
-      <para>
-        See also <xref linkend="sec-prompt"/>.
+      <para>When documenting command-line tools, prefer long-form options 
+        or subcommands over short forms. They improve clarity, reduce 
+        ambiguity and make examples easier to follow. Apply this consistently 
+        in all examples, and only show short options when teaching aliases 
+        or shortcuts.</para> 
+        <para>For example, use:</para>
+<screen outputformat="db">zypper --non-interactive install package-name</screen>
+            
+      <para>instead of:</para>
+      
+<screen outputformat="db">zypper -n install package-name</screen>
+    <para>See also <xref linkend="sec-prompt"/>.
       </para>
     </section>
     <section xml:id="sec-file-markup">
