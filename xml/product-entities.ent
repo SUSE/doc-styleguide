@@ -4,7 +4,7 @@
 <!-- PRODUCT NAME AND VERSIONS -->
 <!ENTITY productname            "<phrase xmlns='http://docbook.org/ns/docbook'>&suse; Documentation Style Guide (<phrase outputformat='db'>DocBook</phrase><phrase outputformat='adoc'>AsciiDoc</phrase>)</phrase>">
 <!ENTITY productnameshort       "ACRONYM">
-<!ENTITY productnumber          "2025-09">
+<!ENTITY productnumber          "2025-12">
 
 
 <!-- PROJECT REPOSITORY URL -->

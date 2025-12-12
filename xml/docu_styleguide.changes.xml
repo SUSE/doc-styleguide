@@ -12,6 +12,38 @@
     This section lists the changes between versions of this Style Guide.
     </para>-->
   <!-- Add new versions to the beginning of the list. -->
+  <revision xml:id="sec-change-2025-12"><date>2025-12-12</date>
+    <revdescription>
+      <itemizedlist>
+        <listitem>
+          <para>
+            Updated metadata length guidelines: 55 chars for title and social descriptions,
+            155 chars for meta descriptions.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Clarified the use of long lists.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Allowed the use of contractions in tech writing.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Prioritized long-form command options over short-form ones in examples.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Provided detailed guidance on writing abstracts with fixed structure for Smart Docs.
+          </para>
+        </listitem>
+      </itemizedlist>
+    </revdescription>
+  </revision>
   <revision xml:id="sec-change-2025-09"><date>2025-09-01</date>
     <revdescription>
       <itemizedlist>
