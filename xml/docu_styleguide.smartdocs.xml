@@ -71,6 +71,48 @@
     xlink:href="https://github.com/SUSE/doc-modular/tree/main/templates">doc-modular
     repository</link>.
   </para>
+  <para>An abstract helps readers and search engines quickly understand what 
+    the content delivers. A clear, well-structured abstract improves SEO and lets
+    users decide immediately whether the content is relevant. Use our fixed structure 
+    to keep abstracts consistent:</para>
+  <tip>
+    <para><emphasis role="bold">WHAT? (The Definition)</emphasis></para>
+    <para>This must be an objective definition of the product, feature or solution.</para>
+    <para><emphasis role="bold">Bad</emphasis>: In this article, we will install the Apache server.</para>
+    <para><emphasis role="bold">Good</emphasis>: The Apache HTTP Server is an open source 
+     cross-platform Web server software.</para>
+    <para>Sentence pattern: [Subject] is a [category] that [main function].</para>
+    
+    <para><emphasis role="bold">WHY? (The Benefit)</emphasis></para>
+    <para>Explain the motivation: Why the user should care and how the feature connects to a solution.</para>
+    <para><emphasis role="bold">Bad</emphasis>: You should read this to learn how to configure it.</para>
+    <para><emphasis role="bold">Good</emphasis>: Configuring a reverse proxy improves security 
+     by hiding the identity of your backend servers.</para>
+    <para>Sentence pattern: Use [Subject] to [solve problem/improve metric].</para>
+    <para>Alternative pattern: This configuration ensures [benefit] by [mechanism].</para>
+    
+    <para><emphasis role="bold">EFFORT (The Cost)</emphasis></para>
+    <para>Set expectations regarding time and prerequisite knowledge.</para>
+    <para><emphasis role="bold">Bad</emphasis>: It is easy.</para>
+    <para><emphasis role="bold">Good</emphasis>: It takes 15 minutes of reading time.</para>
+    <para>Sentence pattern: It takes [X] minutes of reading time [and a basic knowledge of …].</para>
+    
+    <para><emphasis role="bold">GOAL (The Deliverable)</emphasis></para>
+    <para>Describe the specific state of the system after the reader finishes.</para>
+    <para><emphasis role="bold">Bad</emphasis>: You will learn about Kubernetes.</para>
+    <para><emphasis role="bold">Good</emphasis>: You will have a single-node Kubernetes cluster 
+    running on your local machine.</para>
+    <para>Sentence pattern: By the end of this [guide], you will have [concrete output].</para>
+    <para>Alternative pattern: The system will be configured to [specific behavior].</para>
+    
+    <para><emphasis role="bold">Abstract example</emphasis></para>
+    <para><emphasis>Setting up SSH Keys</emphasis></para>
+    <para><emphasis role="bold">WHAT?</emphasis> <emphasis>SSH keys are an authentication method 
+     used to gain access to an encrypted connection between systems.</emphasis></para>
+    <para><emphasis role="bold">WHY?</emphasis> <emphasis>Use SSH keys to automate logins without passwords and to increase security against brute-force attacks.</emphasis></para>
+    <para><emphasis role="bold">EFFORT</emphasis> <emphasis>It takes approximately 5 minutes to read this article.</emphasis></para>
+    <para><emphasis role="bold">GOAL</emphasis> <emphasis>You will have a generated public/private key pair and be able to log in to the remote server without a password.</emphasis></para>
+  </tip>
   <section xml:id="sec-taglist-smartdocs">
     <title>Using ITS tags with assemblies</title>
     <para>
