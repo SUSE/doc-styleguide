@@ -2254,8 +2254,8 @@ xml:id="tab-install-source"</screen>
     <section xml:id="sec-ordered-list">
       <title>Ordered lists</title>
       <para>
-        Use ordered lists <phrase outputformat="adoc">to describe sequential
-        user actions (step-by-step instructions)</phrase>, or when items have a
+        Use ordered lists<phrase outputformat="adoc">to describe sequential
+        user actions (step-by-step instructions), or</phrase> when items have a
         strict order, hierarchy or importance. <phrase  outputformat="db">Do not
         use ordered lists to describe sequential user actions (step-by-step
         instructions). For sequential user actions, use a procedure, as
