@@ -520,11 +520,11 @@ default 0 <co xml:id="co-default"/></screen>
       <para>
         For example, use:
       </para>
-<screen outputformat="db">zypper --non-interactive install package-name</screen>
+<screen>zypper --non-interactive install package-name</screen>
       <para>
         instead of:
       </para>
-<screen outputformat="db">zypper -n install package-name</screen>
+<screen>zypper -n install package-name</screen>
       <para>
         See also <xref linkend="sec-prompt"/>.
       </para>
@@ -606,24 +606,11 @@ in the directory `/etc/sysconfig`.</screen>
         <emphasis>root</emphasis> and <emphasis>sudo</emphasis> prompts. For more information, see
         <xref linkend="sec-entity"/>.
       </para>
-      <tip outputformat="adoc">
-        <para>
-          Verbatim blocks normally do not expand attributes with their values. To use attributes
-          for prompts in a verbatim block, add <literal>subs="+attributes"</literal> in its header:
-        </para>
-<screen>[source,subs="+attributes"]
-----
-{prompt_root}zypper upgrade
-----
-</screen>
-      </tip>
     </section>
     <section xml:id="sec-screen">
       <title>Verbatim blocks</title>
       <para>
-        Verbatim blocks
-        <phrase>(<quote outputformat="db">screens</quote><quote outputformat="adoc">code
-        blocks</quote>)</phrase> are used to present:
+        Verbatim blocks are used to present:
       </para>
       <itemizedlist>
         <listitem>
@@ -646,11 +633,29 @@ boot  etc   lib64       mounts  root  selinux  sys   var
 data  home  lost+found  opt     run   srv      tmp&lt;/screen&gt;</screen>
 <screen outputformat="adoc">[source]
 ----
-tux &amp;gt; ls /
+{prompt_user}ls /
 bin   dev   lib         mnt     proc  sbin     suse  usr
 boot  etc   lib64       mounts  root  selinux  sys   var
 data  home  lost+found  opt     run   srv      tmp
 ----</screen>
+          <tip outputformat="adoc">
+            <para>
+              Verbatim blocks normally do not expand attributes with their values. To use attributes
+              such as prompts in a verbatim block, add <literal>subs="+attributes"</literal> in its header.
+              This instruction expands <emphasis role="bold">all</emphasis>
+              attributes within the verbatim block. To prevent specific
+              attributes from being expanded, backslash it as the
+              <literal>\{VERSION}</literal> below:
+            </para>
+<screen>[source,bash,subs="+attributes"]
+----
+{prompt_root}zypper install -y --auto-agree-with-licenses \
+  nv-prefer-signed-open-driver
+{prompt_root}version=$(rpm -qa --queryformat '%\{VERSION}\n' \
+  nv-prefer-signed-open-driver | cut -d "_" -f1 | sort -u | tail -n 1)
+----
+</screen>
+          </tip>
         </listitem>
         <listitem>
           <para>
