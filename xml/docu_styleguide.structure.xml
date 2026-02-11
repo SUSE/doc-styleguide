@@ -2042,12 +2042,11 @@ xml:id="tab-install-source"</screen>
           lists or description lists.
         </para>
       </listitem>
-      <listitem>
+      <listitem outputformat="db">
         <para>
-          Procedures<phrase outputformat="db">
-          (<tag
-          class="emptytag">procedure</tag>)</phrase>. Also known as step-by-step
-          instructions or step lists. Described in <xref linkend="sec-procedure"/>.
+          Procedures (<tag class="emptytag">procedure</tag>). Also known as
+          step-by-step instructions or step lists. Described in <xref
+          linkend="sec-procedure"/>.
         </para>
       </listitem>
     </itemizedlist>
@@ -2255,9 +2254,12 @@ xml:id="tab-install-source"</screen>
     <section xml:id="sec-ordered-list">
       <title>Ordered lists</title>
       <para>
-        Use ordered lists when items have a strict order, hierarchy or importance. Do not use
-        ordered lists to describe sequential user actions (step-by-step instructions). For
-        sequential user actions, use a procedure, as described in <xref linkend="sec-procedure"/>.
+        Use ordered lists <phrase outputformat="adoc">to describe sequential
+        user actions (step-by-step instructions)</phrase>, or when items have a
+        strict order, hierarchy or importance. <phrase  outputformat="db">Do not
+        use ordered lists to describe sequential user actions (step-by-step
+        instructions). For sequential user actions, use a procedure, as
+        described in <xref linkend="sec-procedure"/>.</phrase>
         If order is not relevant, use an itemized list or a variable list.
       </para>
       <example xml:id="ex-ordered-list-source" outputformat="db">
@@ -2304,6 +2306,29 @@ xml:id="tab-install-source"</screen>
           </listitem>
         </orderedlist>
       </example>
+      <tip outputformat="adoc">
+        <para>
+          To render an ordered list as procedure steps, introduce
+          the list with <literal>[.procedure]</literal> on the line before the
+          list's ID and title.
+        </para>
+      </tip>
+      <section xml:id="sec-numbered-lists-nested" outputformat="adoc">
+        <title>Nested numbered lists</title>
+        <para>
+          To create a nested ordered list, increase the number of initial dots:
+        </para>
+        <example xml:id="ex-ordered-list-nested-source-adoc" outputformat="adoc">
+          <title>Example of a nested ordered list (source)</title>
+<screen>[#nested-ordered-list]
+.This is a nested ordered list
+. The network connection of the computer is configured properly.
+.. Try pinging a well known IP address.
+.. Check that DNS records are resolved correctly.
+. The latest security updates are installed.
+. If you are in doubt, run an online update.</screen>
+      </example>
+      </section>
     </section>
     <section xml:id="sec-variable-list">
       <title>Variable lists</title>
@@ -2614,7 +2639,7 @@ System:: Get a basic understanding of the system components.</screen>
       For more information about writing headlines, see <xref linkend="sec-heading"/>.
     </para>
   </section>
-  <section xml:id="sec-procedure">
+  <section xml:id="sec-procedure" outputformat="db">
     <title>Procedures</title>
     <para>
       Use procedures to describe sequential tasks. A procedure consists of the following elements

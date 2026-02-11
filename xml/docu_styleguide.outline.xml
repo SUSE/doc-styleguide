@@ -244,8 +244,9 @@ liable for possible errors or the consequences thereof.</screen>
               </formalpara>
               <para>
                 Start sections with an introductory paragraph outlining the focus of the section.
-                If the section describes a sequential task, add a procedure description, as
-                discussed in <xref linkend="sec-procedure"/>. Steps of a procedure can contain a
+                If the section describes a sequential task, add a procedure
+                description<phrase outputformat="db"> as
+                discussed in <xref linkend="sec-procedure"/></phrase>. Steps of a procedure can contain a
                 cross-reference to subsections where topical background is provided and an action
                 is explained in detail. See also <xref linkend="sec-cross-reference"/>.
               </para>
