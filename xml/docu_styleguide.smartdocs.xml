@@ -89,17 +89,18 @@
       provision fully operating and properly configured instances of &sls; without the 
       need for physical installation media.</emphasis></para>
      <para>If needed, add a clear list of requirements or prerequisites after the 
-      introductory paragraph:</para>
+      introductory paragraph.</para>
+    <para><emphasis role="bold">Example:</emphasis></para>
       <para><emphasis>SSH keys serve as an authentication method that allows access 
         to an encrypted connection between systems. Use SSH keys to automate logins 
         without passwords and to enhance security against brute-force attacks.</emphasis></para>
         <para><emphasis>Prerequisites:</emphasis></para>
-        <itemizedlist>
+      <itemizedlist>
  <listitem>
-  <para>Access to the local terminal</para>
+  <para><emphasis>Access to the local terminal</emphasis></para>
  </listitem>
  <listitem>
-  <para>Permissions to modify the authorized keys on the remote server</para>
+  <para><emphasis>Permissions to modify the authorized keys on the remote server</emphasis></para>
  </listitem>
 </itemizedlist>
   </section>
