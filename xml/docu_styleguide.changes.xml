@@ -12,6 +12,27 @@
     This section lists the changes between versions of this Style Guide.
     </para>-->
   <!-- Add new versions to the beginning of the list. -->
+  <revision xml:id="sec-change-2026-06"><date>2026-06-22</date>
+    <revdescription>
+      <itemizedlist>
+        <listitem>
+          <para>
+            Created a section in the SmartDocs chapter about GEO-friendly abstracts.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Updated the Structure chapter with the guidance on ordered lists for AsciiDoc.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Added examples on how to use AsciiDoc attributes in code blocks while preventing 
+            certain attributes from being replaced</para>
+        </listitem>
+             </itemizedlist>
+    </revdescription>
+  </revision>
   <revision xml:id="sec-change-2025-12"><date>2025-12-12</date>
     <revdescription>
       <itemizedlist>
