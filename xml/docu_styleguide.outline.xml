@@ -161,16 +161,11 @@ liable for possible errors or the consequences thereof.</screen>
         <listitem>
           <para>
             Use an abstract to summarize the information provided in a book, article, chapter or
-            set in 70&ndash;150 characters. Do not use lists, images or examples in an abstract.
+            set in 40-80 words. Do not use lists, images or examples in an abstract.
           </para>
-          <example xml:id="ex-abstract">
-            <title>An abstract</title>
-            <para>
-              Perform an upgrade of a &sle; system to a new major version in environments which do
-              not allow for standard booting of the installation.
-            </para>
-          </example>
-        </listitem>
+          <para><phrase outputformat="db">For more information on abstracts, 
+            see <xref linkend="sec-abstract"/>.</phrase></para>
+      </listitem>
       </varlistentry>
       <varlistentry xml:id="vle-toc">
         <term>Table of contents</term>
@@ -216,11 +211,7 @@ liable for possible errors or the consequences thereof.</screen>
                   In an abstract, summarize the topic instead of summarizing the outline. See also
                   <xref
          linkend="vle-abstract"/>.
-                  <remark>cwickert 2021-12-09: The 70&ndash;155 chars range is taken from
-          <link xlink:href="https://www.contentkingapp.com/academy/meta-description/"/>,
-          we try to play it safe, thus reducing maximum character count by 5 to just 150.
-         </remark>
-                </para>
+              </para>
               </formalpara>
             </listitem>
             <listitem>
