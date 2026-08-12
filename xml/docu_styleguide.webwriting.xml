@@ -468,8 +468,8 @@ Do NOT include quotation marks, labels like <quote>Description:</quote> or any o
         </listitem>
         <listitem>
           <para>
-            <emphasis role="bold">Do not use hard breaks within sentences.</emphasis>
-            Keep your sentences on a single line in your XML source files to avoid breaking translation strings.
+            <emphasis role="bold">Do not break sentences.</emphasis>
+          Do not use hard breaks within sentences to avoid breaking translation strings.
           </para>
         </listitem>
         <listitem>
