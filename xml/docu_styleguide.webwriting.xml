@@ -463,7 +463,7 @@ Do NOT include quotation marks, labels like <quote>Description:</quote> or any o
         <listitem>
           <para>
             <emphasis role="bold">Minimize graphics.</emphasis>
-            Keep images and screenshots to a minimum. Each graphic must be localized and updated whenever the software user interface changes, which increases maintenance efforts.
+            Keep images and screenshots to a minimum. Each graphic must be updated whenever the software user interface changes, which increases maintenance efforts.
           </para>
         </listitem>
         <listitem>
