@@ -92,6 +92,29 @@
       </para>
     </section>
   </section>
+  <section xml:id="sec-article-language">
+    <title>Articles</title>
+    <para>
+      Do not omit articles to make a sentence shorter. Write <quote>Edit the
+      <filename>/etc/hosts</filename> file.</quote> instead of <quote>Edit file
+      <filename>/etc/hosts</filename>.</quote> Omitted articles are hard to translate and can make
+      a noun string ambiguous.
+    </para>
+    <para>
+      Do not use an article before a noun that is followed by an identifier. The identifier makes
+      the noun specific already. Write <quote>See step 3</quote> instead of <quote>See the step
+      3.</quote>
+    </para>
+    <para>
+      In a series of items, the position of the article changes the meaning. In <quote>Restart the
+      new services, timers, and sockets,</quote> all three are new. In <quote>Restart the new
+      services, the timers, and the sockets,</quote> only the services are new. Repeat the article
+      before every item when the modifier applies to the first item only.
+    </para>
+    <para>
+      Do not use an article before a product name.
+    </para>
+  </section>
   <section xml:id="sec-bias">
     <title>Biases and inclusiveness</title>
     <para>
@@ -343,10 +366,99 @@
       up to date.</quote>
     </para>
   </section>
+  <section xml:id="sec-jargon">
+    <title>Jargon and slang</title>
+    <para>
+      Do not use jargon, slang, or regional expressions. Many of our readers do not have English as
+      a first language, and such terms are hard to translate and easy to misunderstand. Use a plain
+      technical term instead:
+    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          Instead of <quote>to brick a device,</quote> write <quote>to make a device
+          unusable.</quote>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Instead of <quote>to nuke</quote> or <quote>to blow away,</quote> write <quote>to
+          delete</quote> or <quote>to remove.</quote>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Instead of <quote>to spin up an instance,</quote> write <quote>to create an
+          instance</quote> or <quote>to start an instance.</quote>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Instead of <quote>out of the box,</quote> write <quote>by default</quote> or
+          <quote>without additional configuration.</quote>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Instead of <quote>under the hood,</quote> write <quote>internally.</quote>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para>
+      Do not use humor, irony, or cultural references, such as references to films, sports, or
+      holidays. They rarely translate and can exclude readers. For more information, see
+      <xref linkend="sec-bias"/>.
+    </para>
+    <para>
+      A technical term is not jargon. Terms such as <literal>container</literal>,
+      <literal>inode</literal>, or <literal>snapshot</literal> are correct in the right context.
+      If a term is new to the intended audience, define it at first use.
+    </para>
+  </section>
   <section xml:id="sec-language-list">
     <title>Lists</title>
     <para>
       For information about creating lists, see <xref linkend="sec-list"/>.
+    </para>
+  </section>
+  <section xml:id="sec-noun-string">
+    <title>Multi-word nouns</title>
+    <para>
+      A multi-word noun is a noun that is modified by other nouns, such as <quote>cluster node
+      configuration file</quote>. Strings of nouns are ambiguous, because the reader cannot see
+      which word modifies which. Use a maximum of three words in a multi-word noun, including the
+      final noun.
+    </para>
+    <para>
+      To shorten a longer noun string, use one of the following methods:
+    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          Insert a preposition to show the relationship between the words. Write <quote>the
+          configuration file of the cluster node</quote> instead of <quote>the cluster node
+          configuration file.</quote>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Define the term at first use, then use a short form. For example, write <quote>the
+          configuration file of the cluster node (the node configuration)</quote> and use
+          <quote>the node configuration</quote> afterwards. Use the same short form throughout the
+          document. For more information, see <xref linkend="sec-terminology-consistency"/>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Hyphenate the words that belong together, if the hyphenated form is established. For
+          example, write <quote>a read-only file system</quote>. For more information, see
+          <xref linkend="sec-hyphens"/>.
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para>
+      This rule does not apply to names that you must not change, such as product names, command
+      names, or user interface labels. Do not shorten or hyphenate them.
     </para>
   </section>
   <section xml:id="sec-number">
@@ -362,6 +474,82 @@
     </para>
     <para>
       For more information, see <citetitle>The Chicago Manual of Style</citetitle> 9.6 and 9.16.
+    </para>
+  </section>
+  <section xml:id="sec-paragraph">
+    <title>Paragraphs</title>
+    <para>
+      Start each paragraph with a topic sentence that states what the paragraph is about. Use the
+      sentences that follow to explain that topic or to add information about it. If you read only
+      the first sentence of every paragraph in a section, you should get a correct outline of the
+      section.
+    </para>
+    <para>
+      Give each paragraph one topic. When you start to describe a second topic, start a new
+      paragraph.
+    </para>
+    <para>
+      Do not write more than six sentences in a paragraph. A longer paragraph usually contains more
+      than one topic. Split it into two paragraphs and give each of them a topic sentence.
+    </para>
+    <para>
+      Short paragraphs with a single topic also help the systems that process our content. Search
+      engines and AI assistants split a page into chunks, and a paragraph that covers one topic
+      stays meaningful when it is retrieved on its own. For more information, see
+      <xref linkend="sec-webwriting"/>.
+    </para>
+  </section>
+  <section xml:id="sec-phrasal-verb">
+    <title>Phrasal verbs</title>
+    <para>
+      A phrasal verb is a verb with a preposition or an adverb, such as <quote>to shut
+      down</quote>. Do not use a phrasal verb if a precise single-word verb exists. Phrasal verbs
+      often have several meanings, which makes them ambiguous and hard to translate:
+    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          Instead of <quote>to bring up,</quote> write <quote>to start.</quote>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Instead of <quote>to carry out,</quote> write <quote>to perform</quote> or <quote>to
+          run.</quote>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Instead of <quote>to figure out,</quote> write <quote>to determine.</quote>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Instead of <quote>to look into,</quote> write <quote>to investigate.</quote>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Instead of <quote>to go through,</quote> write <quote>to review.</quote>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Instead of <quote>to get rid of,</quote> write <quote>to remove</quote> or <quote>to
+          delete.</quote>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Instead of <quote>to take out,</quote> write <quote>to remove.</quote>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para>
+      Some phrasal verbs are the established technical term for an action, and no single-word verb
+      replaces them. Use them as they are listed in <xref linkend="app-terminology"/>, for example
+      <quote>to log in to,</quote> <quote>to set up,</quote> <quote>to shut down,</quote> and
+      <quote>to back up.</quote> Do not replace them with a single-word verb.
     </para>
   </section>
   <section xml:id="sec-possessive">
@@ -380,6 +568,28 @@
     </para>
     <para>
       For more information about using hyphens, see <xref linkend="sec-hyphens"/>.
+    </para>
+  </section>
+  <section xml:id="sec-pronoun">
+    <title>Pronouns</title>
+    <para>
+      Use a pronoun only if the noun that it replaces is unambiguous. If a sentence contains more
+      than one noun that the pronoun can refer to, repeat the noun instead.
+    </para>
+    <para>
+      Do not start a sentence with <quote>this,</quote> <quote>that,</quote> <quote>these,</quote>
+      or <quote>it</quote> to refer to the whole of the previous sentence. Name the thing that you
+      refer to. Write <quote>The service reads the file at start-up. This behavior prevents
+      changes at runtime.</quote> instead of <quote>The service reads the file at start-up. This
+      prevents changes at runtime.</quote>
+    </para>
+    <para>
+      Do not use <quote>it</quote> as an empty subject in a technical statement. Write <quote>The
+      installation takes approximately 10 minutes.</quote> instead of <quote>It takes
+      approximately 10 minutes to install.</quote>
+    </para>
+    <para>
+      For information about gender and pronouns, see <xref linkend="sec-bias"/>.
     </para>
   </section>
   <section xml:id="sec-quotation">
@@ -445,9 +655,83 @@
   <section xml:id="sec-structure-sentence">
     <title>Sentence structure</title>
     <para>
-      Form clear and direct sentences with 25 words or less. Avoid complicated clauses. Make sure
-      that the relationship between subject, verb, and object is clear. Avoid joining sentences
-      with semicolons. Avoid ending sentences with prepositions.
+      Form clear and direct sentences. Avoid complicated clauses. Make sure that the relationship
+      between subject, verb, and object is clear. Avoid joining sentences with semicolons. Avoid
+      ending sentences with prepositions.
+    </para>
+    <para>
+      Keep sentences within the following limits:
+    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          In running text, use a maximum of 25 words in a sentence.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          In a step of a procedure, use a maximum of 20 words in a sentence. Readers who follow a
+          procedure read in short glances while they work, so instructions must be shorter than
+          descriptions.<phrase outputformat="db"> See also
+          <xref linkend="sec-procedure"/>.</phrase>
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para>
+      Write one instruction in a step. Use the imperative form: write <quote>Enter the user
+      name.</quote> instead of <quote>The user name must be entered.</quote> Describe two actions
+      in the same step only if the actions occur at the same time, or if a result follows
+      immediately from the action. For example, a command and the output that the command returns
+      belong in the same step.
+    </para>
+    <para>
+      Do not combine <quote>must</quote> with an imperative. Write <quote>Before you remove the
+      disk, unmount the file system.</quote> instead of <quote>Before you remove the disk, you must
+      unmount the file system.</quote> An exception is a safety-critical instruction, where
+      <quote>must</quote> can show the reader that the instruction is important.
+    </para>
+    <para>
+      To check the length of a sentence, count each of the following as one word:
+    </para>
+    <itemizedlist>
+      <listitem>
+        <para>
+          A number, or a number together with its unit of measurement, such as
+          <literal>4 GB</literal>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          An abbreviation or an acronym.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          A command, an option, a file name, or a path, such as
+          <command>systemctl daemon-reload</command>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          A user interface label, such as <guimenu>User and group management</guimenu>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          A hyphenated compound, such as <emphasis>read-only</emphasis>.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          Text in parentheses. Count the text in the parentheses a second time, as a sentence of
+          its own.
+        </para>
+      </listitem>
+    </itemizedlist>
+    <para>
+      Do not count numbers that identify steps, sections, or figures. A colon that introduces a
+      list ends the sentence: count the text before the colon as one sentence and each list item as
+      a separate sentence. The word limit applies to each of them.
     </para>
     <para>
       Avoid using parentheses. Where they are necessary, move them to the end of the sentence.
@@ -472,6 +756,31 @@
       Use the simple present tense. Apply the simple present tense even to sentences with
       <quote>if</quote> or <quote>when</quote> clauses and to prerequisites of an action. For
       example, <quote>If this happens, go there.</quote> or <quote>Glibc is installed.</quote>
+    </para>
+  </section>
+  <section xml:id="sec-terminology-consistency">
+    <title>Terminology consistency</title>
+    <para>
+      Use one term for one thing, and use that term every time you refer to that thing. Do not
+      use synonyms for variety. If you write <quote>cluster node,</quote> do not switch to
+      <quote>cluster member</quote> or <quote>machine</quote> later in the document. A reader who
+      sees a different term assumes that you describe a different thing.
+    </para>
+    <para>
+      In the same way, do not use one term for two things. If <quote>host</quote> means the
+      physical machine, do not also use it for a host name entry.
+    </para>
+    <para>
+      For approved terms, see <xref linkend="app-terminology"/> and the &suse; official
+      terminology database, <link xlink:href="https://suse.termweb.eu/">TermWeb</link>. If a term
+      is not listed, choose one spelling and apply it consistently in the document.
+    </para>
+    <para>
+      Use the same phrasing for actions that recur. For example, always write <quote>Confirm with
+      <guimenu>OK</guimenu>.</quote> or always write <quote>Click
+      <guimenu>OK</guimenu>.</quote>&mdash;do not alternate between them. Consistent phrasing lets
+      translation memory reuse existing translations, which reduces cost and keeps the translated
+      documentation consistent.
     </para>
   </section>
   <section xml:id="sec-tone">
@@ -554,6 +863,32 @@
     <para>
       For more information about markup for UI labels, see
       <xref linkend="sec-ui-item-markup" outputformat="db"/><xref linkend="sec-ui-item-markup-adoc" outputformat="adoc"/>.
+    </para>
+  </section>
+  <section xml:id="sec-verb">
+    <title>Verbs</title>
+    <para>
+      Do not use a product name, a command name, or a user interface label as a verb. Write
+      <quote>Use <command>rsync</command> to copy the directory.</quote> instead of <quote>Rsync
+      the directory.</quote> Names are nouns, and a reader who does not know the name cannot see
+      which action you describe.
+    </para>
+    <para>
+      Use a verb to describe an action. Do not turn the action into a noun. Write <quote>Before
+      you remove the disk, unmount the file system.</quote> instead of <quote>Before the removal
+      of the disk, perform an unmount of the file system.</quote> A verb makes the sentence
+      shorter and shows who performs the action.
+    </para>
+    <para>
+      Keep the conjunction <quote>that</quote> after verbs such as <quote>make sure,</quote>
+      <quote>note,</quote> and <quote>verify.</quote> Write <quote>Make sure that the service is
+      running.</quote> instead of <quote>Make sure the service is running.</quote> Without
+      <quote>that,</quote> the reader can first read the following noun as the object of the verb.
+    </para>
+    <para>
+      For information about tense, see <xref linkend="sec-tense"/>. For information about active
+      and passive voice, see <xref linkend="sec-tone"/>. For information about phrasal verbs, see
+      <xref linkend="sec-phrasal-verb"/>.
     </para>
   </section>
 </chapter>

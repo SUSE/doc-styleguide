@@ -12,6 +12,79 @@
     This section lists the changes between versions of this Style Guide.
     </para>-->
   <!-- Add new versions to the beginning of the list. -->
+  <revision xml:id="sec-change-2026-08"><date>2026-08-14</date>
+    <revdescription>
+      <itemizedlist>
+        <listitem>
+          <para>
+            Added a section on paragraph structure: topic sentences, one topic per paragraph, and
+            a maximum of six sentences.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Split the sentence length limit into 25 words for running text and 20 words for
+            procedure steps, and added rules for counting words.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Added a rule to write one instruction per step, in the imperative form.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Clarified that notes and tips give information only and must not contain instructions,
+            requirements, or limits.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Added a section on articles: do not omit articles, do not use an article before a noun
+            with an identifier, and repeat the article in a series if needed.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Added a section on jargon and slang.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Added a section on multi-word nouns with a limit of three words.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Added a section on phrasal verbs, listing the ones that remain accepted.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Added a section on pronouns, including sentence-initial <quote>this</quote> and
+            <quote>that.</quote>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Added a section on terminology consistency: one term for one thing, and consistent
+            phrasing for recurring actions.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Added a section on verbs: do not use names as verbs, prefer verbs over
+            nominalizations, and keep the conjunction <quote>that.</quote>
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Added entries for jargon and phrasal verbs to the general vocabulary table.
+          </para>
+        </listitem>
+      </itemizedlist>
+    </revdescription>
+  </revision>
   <revision xml:id="sec-change-2025-12"><date>2025-12-12</date>
     <revdescription>
       <itemizedlist>

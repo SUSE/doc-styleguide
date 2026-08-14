@@ -160,7 +160,35 @@
           the documentation.
         </para>
       </listitem>
+      <listitem>
+        <para>
+          State the consequence in concrete terms. Write <quote>Formatting a mounted file system
+          destroys all data on it.</quote> instead of <quote>Take care when you format file
+          systems.</quote>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          If the content fits more than one type of admonition, use the most severe type.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          <emphasis outputformat="db"><tag class="emptytag">note</tag> or
+          <tag class="emptytag">tip</tag>:</emphasis><phrase
+          outputformat="adoc"><emphasis>NOTE</emphasis>
+          or <emphasis>TIP</emphasis>:</phrase> Give information only. Do not put an instruction, a
+          requirement, or a limit in a note or a tip. If the reader must perform an action, write
+          the action as a step of the procedure. If not performing the action leads to data loss or
+          damage, write a warning instead.
+        </para>
+      </listitem>
     </itemizedlist>
+    <para>
+      To find out whether a procedure uses notes and tips correctly, read the procedure without
+      them. If the reader can still complete the task correctly, the notes and tips are used
+      correctly. If information is missing, move that information into a step.
+    </para>
     <example xml:id="ex-warning-source" outputformat="db">
       <title>An example of a warning (source)</title>
 <screen>&lt;warning&gt;
@@ -2672,7 +2700,8 @@ System:: Get a basic understanding of the system components.</screen>
       <listitem>
         <para>
           Short, simple steps and, if necessary, substeps describing the actions to be performed.
-          See also <xref linkend="sec-structure-sentence"/>.
+          Write one instruction in a step, in the imperative form, and use a maximum of 20 words in
+          a sentence. See also <xref linkend="sec-structure-sentence"/>.
         </para>
       </listitem>
     </itemizedlist>
