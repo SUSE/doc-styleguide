@@ -8,6 +8,35 @@
   <title>Structure and markup</title>
   <info>
     <revhistory xml:id="rh-structure">
+      <revision><date>2026-08-14</date>
+        <revdescription>
+          <itemizedlist>
+            <listitem>
+              <para>
+                Added a section on paragraph structure: topic sentences, one topic per paragraph, and
+                a maximum of six sentences.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Split the sentence length limit into 25 words for running text and 20 words for
+                procedure steps, and added rules for counting words.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Added a rule to write one instruction per step, in the imperative form.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Clarified that notes and tips give information only and must not contain instructions,
+                requirements or limits.
+              </para>
+            </listitem>
+         </itemizedlist>
+        </revdescription>
+      </revision>
       <revision><date>2025-06-04</date>
         <revdescription>
           <para/>
@@ -178,17 +207,12 @@
           <tag class="emptytag">tip</tag>:</emphasis><phrase
           outputformat="adoc"><emphasis>NOTE</emphasis>
           or <emphasis>TIP</emphasis>:</phrase> Give information only. Do not put an instruction, a
-          requirement, or a limit in a note or a tip. If the reader must perform an action, write
+          requirement or a limit in a note or a tip. If the reader must perform an action, write
           the action as a step of the procedure. If not performing the action leads to data loss or
           damage, write a warning instead.
         </para>
       </listitem>
     </itemizedlist>
-    <para>
-      To find out whether a procedure uses notes and tips correctly, read the procedure without
-      them. If the reader can still complete the task correctly, the notes and tips are used
-      correctly. If information is missing, move that information into a step.
-    </para>
     <example xml:id="ex-warning-source" outputformat="db">
       <title>An example of a warning (source)</title>
 <screen>&lt;warning&gt;
@@ -882,7 +906,7 @@ See &lt;&lt;sec-cross-reference&gt;&gt;.</screen>
       custom <quote>named</quote> <tag class="attribute">xrefstyle</tag> attributes that require
       support from the style sheets. For more info, refer to
       <link
-       xlink:href="http://www.sagehill.net/docbookxsl/CustomXrefs.html">DocBook XSL:
+       xlink:href="https://sagehill.net/docbookxsl/CustomXrefs.html">DocBook XSL:
       The Complete Guide: Customizing cross-references</link>.
     </para>
     <para>

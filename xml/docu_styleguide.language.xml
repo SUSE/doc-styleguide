@@ -8,6 +8,51 @@
   <title>Language</title>
   <info>
     <revhistory xml:id="rh-language">
+      <revision><date>2026-08-14</date>
+        <revdescription>
+          <itemizedlist>
+            <listitem>
+            <para>
+              Added a section on articles: do not omit articles, do not use an article before a noun
+              with an identifier, and repeat the article in a series if needed.
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              Added a section on jargon and slang.
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              Added a section on multi-word nouns with a limit of three words.
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              Added a section on phrasal verbs, listing the ones that remain accepted.
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              Added a section on pronouns, including sentence-initial <quote>this</quote> and
+              <quote>that.</quote>
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              Added a section on terminology consistency: one term for one thing, and consistent
+              phrasing for recurring actions.
+            </para>
+          </listitem>
+          <listitem>
+            <para>
+              Added a section on verbs: do not use names as verbs, prefer verbs over
+              nominalizations, and keep the conjunction <quote>that.</quote>
+            </para>
+          </listitem>
+          </itemizedlist>
+        </revdescription>
+      </revision>
       <revision><date>2025-06-04</date>
         <revdescription>
           <para/>
@@ -25,8 +70,7 @@
   <para>
     When in doubt about the spelling or usage of a word, first see
     <xref linkend="app-terminology"/>. If the usage of a word is not regulated there, use the
-    preferred spelling from <link xlink:href="https://www.merriam-webster.com/"/>
-    (<link xlink:href="https://www.m-w.com/"/> for short).
+    preferred spelling from <link xlink:href="https://www.merriam-webster.com/"/>.
   </para>
   <para>
     The correct spelling of &suse; product names is listed in the terminology table
@@ -107,8 +151,8 @@
     </para>
     <para>
       In a series of items, the position of the article changes the meaning. In <quote>Restart the
-      new services, timers, and sockets,</quote> all three are new. In <quote>Restart the new
-      services, the timers, and the sockets,</quote> only the services are new. Repeat the article
+      new services, timers and sockets,</quote> all three are new. In <quote>Restart the new
+      services, the timers and the sockets,</quote> only the services are new. Repeat the article
       before every item when the modifier applies to the first item only.
     </para>
     <para>
@@ -369,27 +413,15 @@
   <section xml:id="sec-jargon">
     <title>Jargon and slang</title>
     <para>
-      Do not use jargon, slang, or regional expressions. Many of our readers do not have English as
+      Do not use jargon, slang or regional expressions. Many of our readers do not have English as
       a first language, and such terms are hard to translate and easy to misunderstand. Use a plain
       technical term instead:
     </para>
     <itemizedlist>
       <listitem>
         <para>
-          Instead of <quote>to brick a device,</quote> write <quote>to make a device
-          unusable.</quote>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
           Instead of <quote>to nuke</quote> or <quote>to blow away,</quote> write <quote>to
           delete</quote> or <quote>to remove.</quote>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Instead of <quote>to spin up an instance,</quote> write <quote>to create an
-          instance</quote> or <quote>to start an instance.</quote>
         </para>
       </listitem>
       <listitem>
@@ -405,13 +437,13 @@
       </listitem>
     </itemizedlist>
     <para>
-      Do not use humor, irony, or cultural references, such as references to films, sports, or
+      Do not use humor, irony or cultural references, such as references to films, sports or
       holidays. They rarely translate and can exclude readers. For more information, see
       <xref linkend="sec-bias"/>.
     </para>
     <para>
       A technical term is not jargon. Terms such as <literal>container</literal>,
-      <literal>inode</literal>, or <literal>snapshot</literal> are correct in the right context.
+      <literal>inode</literal> or <literal>snapshot</literal> are correct in the right context.
       If a term is new to the intended audience, define it at first use.
     </para>
   </section>
@@ -458,7 +490,7 @@
     </itemizedlist>
     <para>
       This rule does not apply to names that you must not change, such as product names, command
-      names, or user interface labels. Do not shorten or hyphenate them.
+      names or user interface labels. Do not shorten or hyphenate them.
     </para>
   </section>
   <section xml:id="sec-number">
@@ -509,11 +541,6 @@
     <itemizedlist>
       <listitem>
         <para>
-          Instead of <quote>to bring up,</quote> write <quote>to start.</quote>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
           Instead of <quote>to carry out,</quote> write <quote>to perform</quote> or <quote>to
           run.</quote>
         </para>
@@ -528,27 +555,11 @@
           Instead of <quote>to look into,</quote> write <quote>to investigate.</quote>
         </para>
       </listitem>
-      <listitem>
-        <para>
-          Instead of <quote>to go through,</quote> write <quote>to review.</quote>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Instead of <quote>to get rid of,</quote> write <quote>to remove</quote> or <quote>to
-          delete.</quote>
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Instead of <quote>to take out,</quote> write <quote>to remove.</quote>
-        </para>
-      </listitem>
-    </itemizedlist>
+     </itemizedlist>
     <para>
       Some phrasal verbs are the established technical term for an action, and no single-word verb
-      replaces them. Use them as they are listed in <xref linkend="app-terminology"/>, for example
-      <quote>to log in to,</quote> <quote>to set up,</quote> <quote>to shut down,</quote> and
+      replaces them. Use them as they are listed in <xref linkend="app-terminology"/>, for example,
+      <quote>to log in to,</quote> <quote>to set up,</quote> <quote>to shut down</quote> and
       <quote>to back up.</quote> Do not replace them with a single-word verb.
     </para>
   </section>
@@ -577,7 +588,7 @@
       than one noun that the pronoun can refer to, repeat the noun instead.
     </para>
     <para>
-      Do not start a sentence with <quote>this,</quote> <quote>that,</quote> <quote>these,</quote>
+      Do not start a sentence with <quote>this,</quote> <quote>that,</quote> <quote>these</quote>
       or <quote>it</quote> to refer to the whole of the previous sentence. Name the thing that you
       refer to. Write <quote>The service reads the file at start-up. This behavior prevents
       changes at runtime.</quote> instead of <quote>The service reads the file at start-up. This
@@ -656,7 +667,7 @@
     <title>Sentence structure</title>
     <para>
       Form clear and direct sentences. Avoid complicated clauses. Make sure that the relationship
-      between subject, verb, and object is clear. Avoid joining sentences with semicolons. Avoid
+      between subject, verb and object is clear. Avoid joining sentences with semicolons. Avoid
       ending sentences with prepositions.
     </para>
     <para>
@@ -679,7 +690,7 @@
     </itemizedlist>
     <para>
       Write one instruction in a step. Use the imperative form: write <quote>Enter the user
-      name.</quote> instead of <quote>The user name must be entered.</quote> Describe two actions
+      name.</quote> instead of <quote>The user name should be entered.</quote> Describe two actions
       in the same step only if the actions occur at the same time, or if a result follows
       immediately from the action. For example, a command and the output that the command returns
       belong in the same step.
@@ -689,49 +700,6 @@
       disk, unmount the file system.</quote> instead of <quote>Before you remove the disk, you must
       unmount the file system.</quote> An exception is a safety-critical instruction, where
       <quote>must</quote> can show the reader that the instruction is important.
-    </para>
-    <para>
-      To check the length of a sentence, count each of the following as one word:
-    </para>
-    <itemizedlist>
-      <listitem>
-        <para>
-          A number, or a number together with its unit of measurement, such as
-          <literal>4 GB</literal>.
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          An abbreviation or an acronym.
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          A command, an option, a file name, or a path, such as
-          <command>systemctl daemon-reload</command>.
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          A user interface label, such as <guimenu>User and group management</guimenu>.
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          A hyphenated compound, such as <emphasis>read-only</emphasis>.
-        </para>
-      </listitem>
-      <listitem>
-        <para>
-          Text in parentheses. Count the text in the parentheses a second time, as a sentence of
-          its own.
-        </para>
-      </listitem>
-    </itemizedlist>
-    <para>
-      Do not count numbers that identify steps, sections, or figures. A colon that introduces a
-      list ends the sentence: count the text before the colon as one sentence and each list item as
-      a separate sentence. The word limit applies to each of them.
     </para>
     <para>
       Avoid using parentheses. Where they are necessary, move them to the end of the sentence.
@@ -779,7 +747,7 @@
       Use the same phrasing for actions that recur. For example, always write <quote>Confirm with
       <guimenu>OK</guimenu>.</quote> or always write <quote>Click
       <guimenu>OK</guimenu>.</quote>&mdash;do not alternate between them. Consistent phrasing lets
-      translation memory reuse existing translations, which reduces cost and keeps the translated
+      translation memory reuse existing translations and keeps the translated
       documentation consistent.
     </para>
   </section>
@@ -856,9 +824,7 @@
       When referring to UI labels, capitalize them exactly as in the UI itself. Software created at
       &suse; (such as YaST or Uyuni) should use sentence-style capitalization. If it does not, you
       can make aware the developers of that software. For more information about sentence-style
-      capitalization, see <xref linkend="sec-capitalization-sentence"/> and the
-      <link xlink:href="https://productbrand.suse.com/writing/conventions-and-rules">&suse; Product
-      Brand guide</link>.
+      capitalization, see <xref linkend="sec-capitalization-sentence"/>.
     </para>
     <para>
       For more information about markup for UI labels, see
@@ -868,7 +834,7 @@
   <section xml:id="sec-verb">
     <title>Verbs</title>
     <para>
-      Do not use a product name, a command name, or a user interface label as a verb. Write
+      Do not use a product name, a command name or a user interface label as a verb. Write
       <quote>Use <command>rsync</command> to copy the directory.</quote> instead of <quote>Rsync
       the directory.</quote> Names are nouns, and a reader who does not know the name cannot see
       which action you describe.

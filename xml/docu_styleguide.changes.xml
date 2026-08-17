@@ -17,6 +17,11 @@
       <itemizedlist>
         <listitem>
           <para>
+            Updated Web writing chapter with guidelines for GEO and AI search and Web writing in general.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
             Added a section on paragraph structure: topic sentences, one topic per paragraph, and
             a maximum of six sentences.
           </para>
@@ -80,6 +85,28 @@
         <listitem>
           <para>
             Added entries for jargon and phrasal verbs to the general vocabulary table.
+          </para>
+        </listitem>
+      </itemizedlist>
+    </revdescription>
+  </revision>
+  <revision xml:id="sec-change-2026-06"><date>2026-06-22</date>
+    <revdescription>
+      <itemizedlist>
+        <listitem>
+          <para>
+            Streamlined abstract guidelines to a simpler 40–80 word structure designed 
+            to optimize content summaries for humans and AI search.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Added new rules and examples for formatting step-by-step actions and nested lists in AsciiDoc.
+          </para>
+        </listitem>
+        <listitem>
+          <para>
+            Added guidance on using backslashes to keep AsciiDoc attributes from being replaced inside code examples.
           </para>
         </listitem>
       </itemizedlist>
