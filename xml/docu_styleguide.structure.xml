@@ -8,6 +8,35 @@
   <title>Structure and markup</title>
   <info>
     <revhistory xml:id="rh-structure">
+      <revision><date>2026-08-14</date>
+        <revdescription>
+          <itemizedlist>
+            <listitem>
+              <para>
+                Added a section on paragraph structure: topic sentences, one topic per paragraph, and
+                a maximum of six sentences.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Split the sentence length limit into 25 words for running text and 20 words for
+                procedure steps, and added rules for counting words.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Added a rule to write one instruction per step, in the imperative form.
+              </para>
+            </listitem>
+            <listitem>
+              <para>
+                Clarified that notes and tips give information only and must not contain instructions,
+                requirements or limits.
+              </para>
+            </listitem>
+         </itemizedlist>
+        </revdescription>
+      </revision>
       <revision><date>2025-06-04</date>
         <revdescription>
           <para/>
@@ -158,6 +187,29 @@
           than five consecutive steps must be taken to avoid a danger, use an ordered list. If more
           than five consecutive steps need to be taken, use a cross-reference to another part of
           the documentation.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          State the consequence in concrete terms. Write <quote>Formatting a mounted file system
+          destroys all data on it.</quote> instead of <quote>Take care when you format file
+          systems.</quote>
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          If the content fits more than one type of admonition, use the most severe type.
+        </para>
+      </listitem>
+      <listitem>
+        <para>
+          <emphasis outputformat="db"><tag class="emptytag">note</tag> or
+          <tag class="emptytag">tip</tag>:</emphasis><phrase
+          outputformat="adoc"><emphasis>NOTE</emphasis>
+          or <emphasis>TIP</emphasis>:</phrase> Give information only. Do not put an instruction, a
+          requirement or a limit in a note or a tip. If the reader must perform an action, write
+          the action as a step of the procedure. If not performing the action leads to data loss or
+          damage, write a warning instead.
         </para>
       </listitem>
     </itemizedlist>
@@ -854,7 +906,7 @@ See &lt;&lt;sec-cross-reference&gt;&gt;.</screen>
       custom <quote>named</quote> <tag class="attribute">xrefstyle</tag> attributes that require
       support from the style sheets. For more info, refer to
       <link
-       xlink:href="http://www.sagehill.net/docbookxsl/CustomXrefs.html">DocBook XSL:
+       xlink:href="https://sagehill.net/docbookxsl/CustomXrefs.html">DocBook XSL:
       The Complete Guide: Customizing cross-references</link>.
     </para>
     <para>
@@ -2672,7 +2724,8 @@ System:: Get a basic understanding of the system components.</screen>
       <listitem>
         <para>
           Short, simple steps and, if necessary, substeps describing the actions to be performed.
-          See also <xref linkend="sec-structure-sentence"/>.
+          Write one instruction in a step, in the imperative form, and use a maximum of 20 words in
+          a sentence. See also <xref linkend="sec-structure-sentence"/>.
         </para>
       </listitem>
     </itemizedlist>

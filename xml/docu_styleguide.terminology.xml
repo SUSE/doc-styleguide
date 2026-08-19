@@ -8,6 +8,11 @@
   <title>Terminology and general vocabulary</title>
   <info>
     <revhistory xml:id="rh-app-terminology">
+      <revision><date>2026-08-14</date>
+        <revdescription>
+          <para>Added entries for jargon and phrasal verbs to the general vocabulary table.</para>
+        </revdescription>
+      </revision>
       <revision><date>2025-06-04</date>
         <revdescription>
           <para/>
@@ -2208,6 +2213,11 @@
             </entry>
           </row>
           <row>
+            <entry>by default, without additional configuration</entry>
+            <entry>out of the box [jargon]</entry>
+            <entry>adverbial phrase</entry>
+          </row>
+          <row>
             <entry>cannot</entry>
             <entry>can't [contraction], can not</entry>
             <entry>verb</entry>
@@ -2229,10 +2239,26 @@
             </entry>
           </row>
           <row>
+            <entry>(to) create sth., (to) start sth.</entry>
+            <entry>(to) spin sth. up [jargon]</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
             <entry>data is</entry>
             <entry>data are</entry>
             <entry>noun with verb; use all other verbs in the singular
               </entry>
+          </row>
+          <row>
+            <entry>(to) delete sth., (to) remove sth.</entry>
+            <entry>(to) nuke sth. [jargon], (to) blow sth. away [jargon],
+              (to) get rid of sth.</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>(to) determine sth.</entry>
+            <entry>(to) figure sth. out</entry>
+            <entry>verb</entry>
           </row>
           <row>
             <entry/>
@@ -2268,6 +2294,16 @@
             </entry>
           </row>
           <row>
+            <entry>internally</entry>
+            <entry>under the hood [jargon]</entry>
+            <entry>adverb</entry>
+          </row>
+          <row>
+            <entry>(to) investigate sth.</entry>
+            <entry>(to) look into sth.</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
             <entry>inward</entry>
             <entry>inwards [BrE]</entry>
             <entry>adverb
@@ -2277,6 +2313,11 @@
             <entry/>
             <entry>just [filler]</entry>
             <entry>adjective, adverb; avoid</entry>
+          </row>
+          <row>
+            <entry>(to) make sth. unusable</entry>
+            <entry>(to) brick sth. [jargon]</entry>
+            <entry>verb</entry>
           </row>
           <row>
             <entry>might</entry>
@@ -2310,9 +2351,24 @@
       </entry>
           </row>
           <row>
+            <entry>(to) perform sth., (to) run sth.</entry>
+            <entry>(to) carry sth. out</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
             <entry/>
             <entry>please</entry>
             <entry>adverb; avoid</entry>
+          </row>
+          <row>
+            <entry>(to) remove sth.</entry>
+            <entry>(to) take sth. out</entry>
+            <entry>verb</entry>
+          </row>
+          <row>
+            <entry>(to) review sth.</entry>
+            <entry>(to) go through sth.</entry>
+            <entry>verb</entry>
           </row>
           <row>
             <entry/>
@@ -2339,6 +2395,11 @@
             <entry>(to) simplify sth.</entry>
             <entry>(to) ease sth., (to) facilitate sth.</entry>
             <entry>verb; avoid</entry>
+          </row>
+          <row>
+            <entry>(to) start sth.</entry>
+            <entry>(to) bring sth. up</entry>
+            <entry>verb</entry>
           </row>
           <row>
             <entry/>
