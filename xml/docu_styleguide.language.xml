@@ -741,7 +741,8 @@
     <para>
       For approved terms, see <xref linkend="app-terminology"/> and the &suse; official
       terminology database, <link xlink:href="https://suse.termweb.eu/">TermWeb</link>. If a term
-      is not listed, choose one spelling and apply it consistently in the document.
+      is not listed, choose one spelling and apply it consistently in the document. You can also
+suggest missing terms using the feedback form in TermWeb.
     </para>
     <para>
       Use the same phrasing for actions that recur. For example, always write <quote>Confirm with
