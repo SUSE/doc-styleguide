@@ -331,10 +331,10 @@ remains the primary gateway for AI visibility.
           meta descriptions during your editing workflow:
         </para>
         <screen>
-You are an expert technical writer specializing in SEO and GEO. 
+You are an expert technical writer specializing in SEO, GEO and AI search. 
 Write a single, compelling meta description for the following documentation page content. 
 Follow these rules strictly: 
-1. The description MUST be a single, complete sentence. 
+1. The description MUST be a single, complete sentence with no full stop at the end and no Oxford comma. 
 2. The description's length MUST be between 120 and 155 characters. 
 3. It MUST be an accurate and concise summary of the provided text. 
 4. Write in a neutral, professional and helpful tone. 
