@@ -106,10 +106,10 @@
       <para><emphasis>SSH keys serve as an authentication method that allows access 
         to an encrypted connection between systems. Use SSH keys to automate logins 
         without passwords and to enhance security against brute-force attacks.</emphasis></para>
-        <para><emphasis>Prerequisites:</emphasis></para>
+        <para><emphasis>Prerequisites</emphasis></para>
       <itemizedlist>
  <listitem>
-  <para><emphasis>Access to the local terminal</emphasis></para>
+  <para><emphasis>An SSH client installed on the local machine</emphasis></para>
  </listitem>
  <listitem>
   <para><emphasis>Permissions to modify the authorized keys on the remote server</emphasis></para>
