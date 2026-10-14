@@ -40,7 +40,7 @@
           </listitem>
           <listitem>
             <para>
-              Added a section on terminology consistency: one term for one thing, and consistent
+              Added a section on terminology consistency: one term for one thing and consistent
               phrasing for recurring actions.
             </para>
           </listitem>
@@ -201,7 +201,7 @@
     <section xml:id="sec-capitalization-title">
       <title>Document titles: title-style capitalization</title>
       <para>
-        For document titles, such as book, article, and set titles, use title-style capitalization.
+        For document titles, such as book, article and set titles, use title-style capitalization.
         This capitalization style is explained in <citetitle>The Chicago Manual of
         Style</citetitle>, 8.167. A simplified version of these rules is below:
       </para>
@@ -214,7 +214,7 @@
         <listitem>
           <para>
             Write articles in lowercase. Articles are: <emphasis>the</emphasis>,
-            <emphasis>a</emphasis>, and <emphasis>an</emphasis>.
+            <emphasis>a</emphasis> and <emphasis>an</emphasis>.
           </para>
         </listitem>
         <listitem>
@@ -222,13 +222,13 @@
             Write prepositions in lowercase unless they are used with a verb (<quote>Logging
             In</quote>) or in a noun (<quote>The On Button</quote>). Prepositions are, for example:
             <emphasis>up</emphasis>, <emphasis>in</emphasis>, <emphasis>of</emphasis>,
-            <emphasis>through</emphasis>, and <emphasis>between</emphasis>.
+            <emphasis>through</emphasis> and <emphasis>between</emphasis>.
           </para>
         </listitem>
         <listitem>
           <para>
             Write certain conjunctions in lowercase: <emphasis>and</emphasis>,
-            <emphasis>but</emphasis>, <emphasis>for</emphasis>, <emphasis>nor</emphasis>, and
+            <emphasis>but</emphasis>, <emphasis>for</emphasis>, <emphasis>nor</emphasis> and
             <emphasis>or</emphasis>.
           </para>
         </listitem>
@@ -293,16 +293,15 @@
   <section xml:id="sec-end-sentence">
     <title>End of sentence punctuation</title>
     <para>
-      End sentences in a period. Avoid using exclamation marks. Restrict question marks to question
-      and answer sections.
+      End sentences in a period. Avoid using exclamation marks.
     </para>
   </section>
   <section xml:id="sec-file-language">
     <title>File and directory names</title>
     <para>
-      Under Linux, objects like directories, printers, or flash drives are all considered files.
+      Under Linux, objects like directories, printers or flash drives are all considered files.
       Therefore, the naming and markup conventions are the same for <quote>drives</quote> (for
-      example, hard disks, CD-ROM drives), directories, or files.
+      example, hard disks, CD-ROM drives), directories or files.
     </para>
     <para>
       The layout for file names and directory names is the same. See the following example:
@@ -312,14 +311,14 @@
         <para>
           In general, use forward slashes (<literal>/</literal>) to separate nested directory or
           file names. If you are describing actions performed on Windows&thrdmrk; systems and
-          within a Windows-native file system, use backward slashes (<literal>\</literal>) instead.
+          within a Windows file system, use backward slashes (<literal>\</literal>) instead.
         </para>
       </listitem>
       <listitem>
         <para>
           In general, when giving absolute paths, always start with a leading slash to indicate the
           root of the file system. If you are describing actions performed on Windows systems and
-          within a Windows-native file system, do not add a leading slash to absolute paths.
+          within a Windows file system, do not add a leading slash to absolute paths.
         </para>
       </listitem>
       <listitem>
@@ -327,7 +326,7 @@
           When referencing a directory name, add a trailing slash. This helps distinguish between
           directory names (for example, <filename>/etc/YaST2/</filename>) and file names (for
           example, <filename>/etc/YaST2/control.xml</filename>). For less experienced Linux users,
-          it might be helpful to specify in the running text if it is a file, device, or directory.
+          it might be helpful to specify in the running text if it is a file, device or directory.
           For example: <quote>In the <filename>/etc/hosts/</filename> directory, do the
           following.</quote>
         </para>
@@ -383,7 +382,7 @@
       <listitem>
         <para>
           The words begin with the prefixes <emphasis>self-</emphasis>, <emphasis>ex-</emphasis>
-          (that is, <quote>former</quote>), and <emphasis>all-</emphasis>:
+          (that is, <quote>former</quote>) and <emphasis>all-</emphasis>:
           <quote>self-assigned,</quote> <quote>ex-service,</quote> <quote>all-data.</quote>
         </para>
       </listitem>
@@ -756,8 +755,8 @@ suggest missing terms using the feedback form in TermWeb.
   <section xml:id="sec-tone">
     <title>Tone and voice</title>
     <para>
-      Maintain a professional tone that is helpful and honest. Do not use humor, and avoid
-      absolutes or exaggerations; instead, focus on positive aspects and factual accuracy.
+      Maintain a professional tone that is helpful and honest. Do not use humor and avoid
+      absolutes or exaggerations. Instead, focus on positive aspects and factual accuracy.
       Contractions are permitted to keep the writing engaging and conversational.
     </para>
     <para>
