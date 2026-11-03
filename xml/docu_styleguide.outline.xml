@@ -161,7 +161,7 @@ liable for possible errors or the consequences thereof.</screen>
         <listitem>
           <para>
             Use an abstract to summarize the information provided in a book, article, chapter or
-            set in 40-80 words. Do not use lists, images or examples in an abstract.
+            set in 40-80 words. Do not use images and examples in an abstract.
           </para>
           <para><phrase outputformat="db">For more information on abstracts, 
             see <xref linkend="sec-abstract"/>.</phrase></para>
@@ -228,7 +228,7 @@ liable for possible errors or the consequences thereof.</screen>
                 <title>Sections</title>
                 <para>
                   Structure the detailed information, so readers can skim the text. Create sections
-                  for every major task, such as installing, configuring, monitoring, and
+                  for every major task, such as installing, configuring, monitoring and
                   administering. If helpful, split sections into subsections. Avoid nesting deeper
                   than three levels of sections.
                 </para>
