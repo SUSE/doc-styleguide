@@ -37,8 +37,8 @@
         <title>Modular documents</title>
         <para>
            This section describes the principles of modularity, the topic types and the structure of an article.
-           For the detailed information about working with modular documentation, including effective abstracts,
-           ITS tags and revision history, see <xref linkend="sec-smartdocs"/>.
+           <phrase outputformat="db"> For the detailed information about working with modular documentation, 
+            including effective abstracts, ITS tags and revision history, see <xref linkend="sec-smartdocs"/>.</phrase>
         </para>
       <sect2 xml:id="outline-modular-principles">
             <title>What is modular documentation?</title>
@@ -145,8 +145,7 @@
                     <listitem>
                         <para>
                             A task topic describes how to reach one goal. State the goal first. Then list
-                            preconditions or prerequisites and describe the actions in a procedure. For more
-                            information, see <xref linkend="sec-procedure"/>.
+                            preconditions or prerequisites and describe the actions in a procedure.
                         </para>
                     </listitem>
                 </varlistentry>
@@ -261,15 +260,14 @@
                 <para>
                     Add an entry for significant changes, such as new or removed features, non-cosmetic image
                     changes, fixed links and metadata fixes. Typo fixes and formatting changes do not need an
-                    entry. List the newest entry first. For more information, see
-                    <xref linkend="sec-revhistory"/>.
+                    entry. List the newest entry first.
                 </para>
             </formalpara>
             <formalpara>
                 <title>Abstract</title>
                 <para>
                     Summarize the topic of the article in 40&ndash;80 words. Start with a direct definition of the
-                    product or feature. For more information, see <xref linkend="sec-abstract"/>.
+                    product or feature. <phrase outputformat="db">For more information, see <xref linkend="sec-abstract"/>.</phrase>
                 </para>
             </formalpara>
             <formalpara>
@@ -457,8 +455,8 @@
                     <term>Abstract</term>
                     <listitem>
                         <para>
-                            Use an abstract to summarize the information provided in a book, chapter or set in
-                            40&ndash;80 words. For more information, see <xref linkend="sec-abstract"/>.
+                         Use an abstract to summarize the information provided in a book, chapter or set in
+                         40&ndash;80 words. <phrase outputformat="db">For more information, see <xref linkend="sec-abstract"/>.</phrase>
                         </para>
                     </listitem>
                 </varlistentry>
@@ -525,10 +523,9 @@
                         </formalpara>
                         <para>
                             Start sections with an introductory paragraph outlining the focus of the section. If
-                            the section describes a sequential task, add a procedure description as discussed in
-                            <xref linkend="sec-procedure"/>. Steps of a procedure can contain a
-                            cross-reference to subsections where topical background is provided and an action is
-                            explained in detail.
+                            the section describes a sequential task, add a procedure description. Steps of a 
+                            procedure can contain a cross-reference to subsections where topical background is 
+                            provided and an action is explained in detail.
                         </para>
                         <formalpara>
                             <title>Troubleshooting</title>
