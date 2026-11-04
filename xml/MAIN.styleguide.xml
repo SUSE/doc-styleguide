@@ -50,7 +50,7 @@
   <xi:include href="docu_styleguide.techwriting.xml"/>
   <xi:include href="docu_styleguide.content.xml"/>
   <xi:include href="docu_styleguide.name.xml"/>
-  <xi:include href="docu_styleguide.modular_outline.xml"/>
+  <xi:include href="docu_styleguide.modular-outline.xml"/>
   <xi:include href="docu_styleguide.smartdocs.xml" outputformat="db"/>
   <xi:include href="docu_styleguide.outline.xml"/>
   <xi:include href="docu_styleguide.webwriting.xml"/>
