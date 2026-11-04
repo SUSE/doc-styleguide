@@ -1,0 +1,582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE chapter
+[
+<!ENTITY % entities SYSTEM "generic-entities.ent">
+%entities;
+]>
+<chapter xmlns="http://docbook.org/ns/docbook" xmlns:xi="http://www.w3.org/2001/XInclude" xmlns:xlink="http://www.w3.org/1999/xlink" version="5.0" xml:id="sec-modular_outline">
+    <title>Outline of a document</title>
+    <info>
+        <abstract>
+            <para>
+                &suse; documentation is modular. Articles bundle topics, which are small information units
+                with one purpose each, into documents. Books are large manuals that &suse; continues to
+                maintain in their existing structure. This chapter describes the structure of articles and
+                books, the four topic types and the rules for the elements of each form.
+            </para>
+        </abstract>
+        <revhistory xml:id="rh-modular-outline">
+            <revision><date>2026-11-04</date>
+                <revdescription>
+                    <para>Restructured the Outline chapter: added modular documents, topic types and the structure of
+            articles, and moved the structure of books to a separate section</para>
+                </revdescription>
+            </revision>
+        </revhistory>
+    </info>
+    <para>
+        A topic is a small information unit with one purpose. A topic works on its own, so several
+        documents can reuse it. &suse; publishes two forms of documents: articles and books.
+    </para>
+    <para>
+        Articles are the standard form. An article is an assembly of topics that serves one distinct
+        purpose. Books are the format of existing manuals. Maintain existing books in the structure
+        that is described in <xref linkend="outline-books"/>.
+    </para>
+    <sect1 xml:id="outline-modular">
+        <title>Modular documents</title>
+        <para>
+           This section describes the principles of modularity, the topic types and the structure of an article.
+           For the detailed information about working with modular documentation, including effective abstracts,
+           ITS tags and revision history, see <xref linkend="sec-smartdocs"/>.
+        </para>
+      <sect2 xml:id="outline-modular-principles">
+            <title>What is modular documentation?</title>
+            <para>
+                The goal of modular documentation is to produce sets of adaptable, solution-based, easy-to-find 
+                and reusable documents. Rather than covering a complete technology or a set of problems, each 
+                article serves one distinct purpose and stands for itself. It includes the requirements, context, 
+                instructions, troubleshooting and frequently asked questions that readers need for that purpose.
+            </para>
+            <para>
+                Apply the following principles when you write topics:
+            </para>
+            <itemizedlist>
+                <listitem>
+                    <para>
+                        Write each topic for one purpose. If a topic serves two purposes, split it into two
+                        topics.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        Write each topic so that it stands alone. Include the context that readers need in the
+                        topic itself.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        Write each topic so that other articles can reuse it. Do not refer to other topics by
+                        position, for example, <emphasis>in the previous section</emphasis>.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        Put the most important information first. Lead each section with a direct answer or
+                        summary.
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        Use the same term for the same thing in all topics. For more information, see
+                        <xref linkend="sec-terminology-consistency"/>.
+                    </para>
+                </listitem>
+            </itemizedlist>
+            <para>
+                Bundle topics into an article with an assembly file. The assembly file contains the
+                metadata of the article and references the topics in the order in which they appear. Find
+                the templates for assemblies and topics in the doc-modular repository at
+                <link xlink:href="https://github.com/SUSE/doc-modular/tree/main/templates"/>.
+            </para>
+        </sect2>
+        <sect2 xml:id="outline-modular-topic-types">
+            <title>Topic types</title>
+            <para>
+                Use one of the four topic types in <xref linkend="tab-outline-topic-types"/> for every
+                topic.
+            </para>
+            <table xml:id="tab-outline-topic-types">
+                <title>Topic types</title>
+                <tgroup cols="4">
+                    <thead>
+                        <row>
+                            <entry>Topic type</entry>
+                            <entry>Purpose</entry>
+                            <entry>Title pattern</entry>
+                            <entry>Typical markup</entry>
+                        </row>
+                    </thead>
+                    <tbody>
+                        <row>
+                            <entry>Task</entry>
+                            <entry>Instructs readers how to perform a task</entry>
+                            <entry>Gerund, such as <emphasis>Installing software</emphasis></entry>
+                            <entry>Prerequisites and <tag class="emptytag">procedure</tag></entry>
+                        </row>
+                        <row>
+                            <entry>Concept</entry>
+                            <entry>Explains underlying concepts</entry>
+                            <entry>Noun phrase, such as <emphasis>Concepts of software</emphasis></entry>
+                            <entry>Paragraphs, lists and figures</entry>
+                        </row>
+                        <row>
+                            <entry>Reference</entry>
+                            <entry>Provides basic facts such as settings, options and parameters</entry>
+                            <entry>Noun phrase, such as <emphasis>Configuration options</emphasis></entry>
+                            <entry>Tables and variable lists</entry>
+                        </row>
+                        <row>
+                            <entry>Glue</entry>
+                            <entry>Helps readers navigate and links to related information</entry>
+                            <entry>Fixed name, such as <emphasis>For more information</emphasis></entry>
+                            <entry>Itemized list of links</entry>
+                        </row>
+                    </tbody>
+                </tgroup>
+            </table>
+            <para>
+                Use the same title pattern for all topics at the same level. For more information, see
+                <xref linkend="sec-heading"/>. The following rules apply to the topic types:
+            </para>
+            <variablelist>
+                <varlistentry>
+                    <term>Task</term>
+                    <listitem>
+                        <para>
+                            A task topic describes how to reach one goal. State the goal first. Then list
+                            preconditions or prerequisites and describe the actions in a procedure. For more
+                            information, see <xref linkend="sec-procedure"/>.
+                        </para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Concept</term>
+                    <listitem>
+                        <para>
+                            A concept topic explains what something is and why it matters to the reader. Do not
+                            describe steps in a concept topic. Use paragraphs and, where they help, lists and
+                            figures.
+                        </para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Reference</term>
+                    <listitem>
+                        <para>
+                            A reference topic provides facts that readers look up. Use tables or variable lists.
+                            For more information, see <xref linkend="sec-table"/> and
+                            <xref linkend="sec-variable-list"/>.
+                        </para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Glue</term>
+                    <listitem>
+                        <para>
+                            A glue topic helps readers navigate and combines texts or structures that fit no
+                            other type. Typical glue topics are <quote>For more information</quote> and 
+                            <quote>What's next</quote>. For more information, see <xref linkend="sec-link"/>.
+                        </para>
+                    </listitem>
+                </varlistentry>
+            </variablelist>
+        </sect2>
+        <sect2 xml:id="outline-modular-article">
+            <title>Structure of an article</title>
+            <para>
+                For articles, use a document structure that includes the following elements, in that order:
+            </para>
+            <orderedlist>
+                <listitem>
+                    <para>
+                        title and (optional) subtitle
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        metadata
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        revision history
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        abstract
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        (optional) prerequisites
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        topics, structured as sections and subsections
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        (optional) troubleshooting
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        (optional) more information
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        (optional) glossary
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        (optional) appendixes
+                    </para>
+                </listitem>
+            </orderedlist>
+            <formalpara>
+                <title>Title and subtitle</title>
+                <para>
+                    Use title-style capitalization for the title. Do not add a product version number to the
+                    title. The subtitle is optional. For more information, see
+                    <xref linkend="sec-capitalization-title"/>.
+                </para>
+            </formalpara>
+            <formalpara>
+                <title>Metadata</title>
+                <para>
+                    Provide a meta title, a meta description and a social description in the designated meta
+                    elements of the assembly. The meta title has 29&ndash;55 characters. The meta description is
+                    one sentence with 120&ndash;155 characters. The social description has a maximum of 55
+                    characters. For more information, see <xref linkend="sec-titles"/> and <xref linkend="sec-meta-descriptions"/>.
+                </para>
+            </formalpara>
+            <formalpara>
+                <title>Revision history</title>
+                <para>
+                    Add an entry for significant changes, such as new or removed features, non-cosmetic image
+                    changes, fixed links and metadata fixes. Typo fixes and formatting changes do not need an
+                    entry. List the newest entry first. For more information, see
+                    <xref linkend="sec-revhistory"/>.
+                </para>
+            </formalpara>
+            <formalpara>
+                <title>Abstract</title>
+                <para>
+                    Summarize the topic of the article in 40&ndash;80 words. Start with a direct definition of the
+                    product or feature. For more information, see <xref linkend="sec-abstract"/>.
+                </para>
+            </formalpara>
+            <formalpara>
+                <title>Prerequisites</title>
+                <para>
+                    Use a short itemized list directly after the abstract to name what readers need before
+                    they start, such as required access or permissions. Omit the element if readers need
+                    nothing.
+                </para>
+            </formalpara>
+            <formalpara>
+                <title>Topics</title>
+                <para>
+                    Create a topic for every major task, concept or set of reference facts. Structure the
+                    topics as sections and subsections. Start every section with an introductory paragraph.
+                    For more information, see <xref linkend="sec-webwriting"/> and <xref linkend="sec-outline-level"/>.
+                </para>
+            </formalpara>
+            <formalpara>
+                <title>Troubleshooting</title>
+                <para>
+                    Collect common mistakes and problems in a section named Troubleshooting. Always use this
+                    name. Mark up the problems with the <tag class="emptytag">qandaset</tag> element. To
+                    describe solutions to more than ten problems, add topical subsections with
+                    <tag class="emptytag">qandadiv</tag> elements below the Troubleshooting section.
+                </para>
+            </formalpara>
+            <formalpara>
+                <title>For more information</title>
+                <para>
+                    Collect Web links to all sources of information that are helpful in a given context in a
+                    glue topic named For more information. Follow the general referencing guidelines in
+                    <xref linkend="sec-cross-reference"/> and <xref linkend="sec-other-external"/>
+                    when you create such sections.
+                </para>
+            </formalpara>
+            <formalpara>
+                <title>Glossary</title>
+                <para>
+                    A glossary contains important terms in alphabetical order and provides a brief
+                    explanation for each. Add a glossary if the article uses terms that are new to the target
+                    audience. For more information, see <xref linkend="sec-glossary"/>.
+                </para>
+            </formalpara>
+            <formalpara>
+                <title>Appendixes</title>
+                <para>
+                    Place appendixes after the glossary. Use them for supplementary material that does not
+                    fit into a topic.
+                </para>
+            </formalpara>
+            <formalpara>
+                <title>Contributors</title>
+                <para>
+                    Writing documentation is a collaborative effort. Credit the contributors on the title
+                    page if five or fewer contributors, all from outside the documentation team, create and
+                    maintain the content. This rule applies to articles and small documents, such as
+                    &suse; Best Practices.
+                </para>
+            </formalpara>
+            <para>
+                The table of contents is generated automatically.
+            </para>
+        </sect2>
+    </sect1>
+    <sect1 xml:id="outline-books">
+        <title>Books</title>
+        <para>
+            A book is a large manual that consists of chapters and, optionally, parts. This section 
+            describes the structure and the elements of a book.
+        </para>
+        <sect2 xml:id="outline-books-structure">
+            <title>Structure of a book</title>
+            <para>
+                For books, use a document structure that includes the following elements, in that order:
+            </para>
+            <orderedlist>
+                <listitem>
+                    <para>
+                        a preface
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        chapters, split into sections
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        (optional) a glossary
+                    </para>
+                </listitem>
+                <listitem>
+                    <para>
+                        (optional) appendixes
+                    </para>
+                </listitem>
+            </orderedlist>
+            <para>
+                For books with many chapters, create parts at the outline level above chapters.
+            </para>
+        </sect2>
+        <sect2 xml:id="outline-books-title-page">
+            <title>Title page and imprint</title>
+            <para>
+                Both the title page and the imprint are created automatically, but depend on information
+                being present in the book. Provide the following information:
+            </para>
+            <formalpara>
+                <title>Title</title>
+                <para>
+                    Work with the product manager to define the book title. Do not use the product name and
+                    version in the book title.
+                </para>
+            </formalpara>
+            <formalpara>
+                <title>Product name and product version</title>
+                <para>
+                    Work with the product manager to find the correct product name and version number. Mark
+                    up this information with <tag class="emptytag">productname</tag> and
+                    <tag class="emptytag">productnumber</tag>, respectively.
+                </para>
+            </formalpara>
+            <formalpara>
+                <title>Documentation version or revision information</title>
+                <para>
+                    Optionally, use the <tag class="emptytag">releaseinfo</tag> element to mark up version or
+                    revision numbers of the documentation itself.
+                </para>
+            </formalpara>
+            <formalpara>
+                <title>Revision history</title>
+                <para>
+                    Every book, part and chapter that is included in a build must contain a revision history.
+                </para>
+            </formalpara>
+            <formalpara>
+                <title>Copyright notice</title>
+                <para>
+                    Use the standard copyright notice reproduced in
+                    <xref linkend="ex-outline-copyright"/>. Change the starting year of the copyright
+                    protection to the current year.
+                </para>
+            </formalpara>
+            <example xml:id="ex-outline-copyright">
+                <title>Standard copyright notice</title>
+                <screen>&lt;legalnotice&gt;
+                    &lt;para&gt;
+                    Copyright &amp;copy; [starting year]&amp;ndash;&lt;?dbtimestamp format="Y"?&gt;
+                    SUSE LLC and contributors. All rights reserved.
+                    &lt;/para&gt;
+                    &lt;para&gt;
+                    Permission is granted to copy, distribute and/or modify this document
+                    under the terms of the GNU Free Documentation License, Version 1.2 or
+                    (at your option) version 1.3; with the Invariant Section being this
+                    copyright notice and license. A copy of the license version 1.2 is
+                    included in the section entitled &lt;quote&gt;GNU Free Documentation
+                    License&lt;/quote&gt;.
+                    &lt;/para&gt;
+                    &lt;para&gt;
+                    For &amp;suse; trademarks, see
+                    &lt;link xlink:href="https://www.suse.com/company/legal/"/&gt;.
+                    All other third-party trademarks are the property of their respective
+                    owners. Trademark symbols (&amp;reg;, &amp;trade; etc.) denote trademarks
+                    of &amp;suse; and its affiliates. Asterisks (*) denote third-party
+                    trademarks.
+                    &lt;/para&gt;
+                    &lt;para&gt;
+                    All information found in this book has been compiled with utmost
+                    attention to detail. However, this does not guarantee complete
+                    accuracy. Neither SUSE LLC, its affiliates, the authors nor the
+                    translators shall be held liable for possible errors or the
+                    consequences thereof.
+                    &lt;/para&gt;
+                    &lt;/legalnotice&gt;</screen>
+            </example>
+        </sect2>
+        <sect2 xml:id="outline-books-elements">
+            <title>Elements of a book</title>
+            <para>
+                Besides the title page and the imprint, a book contains the following elements:
+            </para>
+            <variablelist>
+                <varlistentry xml:id="vle-outline-abstract">
+                    <term>Abstract</term>
+                    <listitem>
+                        <para>
+                            Use an abstract to summarize the information provided in a book, chapter or set in
+                            40&ndash;80 words. For more information, see <xref linkend="sec-abstract"/>.
+                        </para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Table of contents</term>
+                    <listitem>
+                        <para>
+                            The table of contents is generated automatically.
+                        </para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Preface</term>
+                    <listitem>
+                        <para>
+                            Include a brief overview of the content of a manual, related manuals and
+                            typographical conventions. The preface can also contain information about its target
+                            audience.
+                        </para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Parts</term>
+                    <listitem>
+                        <para>
+                            If you are writing a book with many chapters, create parts at the outline level above
+                            chapters. Make sure that each part contains at least three chapters. Keep part titles
+                            clear and concise.
+                        </para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Chapters</term>
+                    <listitem>
+                        <para>
+                            Do not use product version numbers in chapter titles. They affect the output of data
+                            analytics.
+                        </para>
+                        <para>
+                            Chapters typically consist of the following elements. Appendixes are an exception.
+                        </para>
+                        <formalpara>
+                            <title>Abstract</title>
+                            <para>
+                                In an abstract, summarize the topic instead of summarizing the outline. For more
+                                information, see <xref linkend="vle-outline-abstract"/>.
+                            </para>
+                        </formalpara>
+                        <formalpara>
+                            <title>Introduction</title>
+                            <para>
+                                Provide introductory information directly after the abstract. Do not place it in
+                                a separate section.
+                            </para>
+                        </formalpara>
+                        <formalpara>
+                            <title>Sections</title>
+                            <para>
+                                Structure the detailed information, so readers can skim the text. Create sections
+                                for every major task, such as installing, configuring, monitoring and
+                                administering. If helpful, split sections into subsections. Avoid nesting deeper
+                                than three levels of sections.
+                            </para>
+                        </formalpara>
+                        <para>
+                            Start sections with an introductory paragraph outlining the focus of the section. If
+                            the section describes a sequential task, add a procedure description as discussed in
+                            <xref linkend="sec-procedure"/>. Steps of a procedure can contain a
+                            cross-reference to subsections where topical background is provided and an action is
+                            explained in detail.
+                        </para>
+                        <formalpara>
+                            <title>Troubleshooting</title>
+                            <para>
+                                Collect common mistakes and problems in a section named Troubleshooting. Always use
+                                this name. Use the <tag class="emptytag">qandaset</tag> element to mark up the
+                                problems. To describe solutions to more than ten problems, add topical subsections
+                                with <tag class="emptytag">qandadiv</tag> elements below the Troubleshooting
+                                section.
+                            </para>
+                        </formalpara>
+                        <formalpara>
+                            <title>For more information</title>
+                            <para>
+                                In a section named <quote>For more information</quote>, collect Web links to all sources of
+                                information that are helpful in a given context. Follow the general referencing
+                                guidelines in <xref linkend="sec-cross-reference"/> when you create such
+                                sections.
+                            </para>
+                        </formalpara>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Glossary</term>
+                    <listitem>
+                        <para>
+                            The optional glossary contains important terms in alphabetical order and provides a
+                            brief explanation for each. For more information on creating lists of terms, see
+                            <xref linkend="sec-glossary"/>.
+                        </para>
+                    </listitem>
+                </varlistentry>
+                <varlistentry>
+                    <term>Contributors</term>
+                    <listitem>
+                        <para>
+                            Writing documentation is a collaborative effort. To give credit to all contributors,
+                            add an appendix to the book that points to the Contributors page of the respective
+                            GitHub repository. For an example, see <xref linkend="sec-contributor"/>.
+                        </para>
+                        <para>
+                            The preceding rules are a minimum. In addition, make sure that the contributors
+                            appendix is compliant with the document license.
+                        </para>
+                    </listitem>
+                </varlistentry>
+            </variablelist>
+           </sect2>
+    </sect1> 
+
+    </chapter>

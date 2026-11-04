@@ -8,9 +8,14 @@
        xmlns:xi="http://www.w3.org/2001/XInclude"
        xmlns:xlink="http://www.w3.org/1999/xlink"
        xmlns:its="http://www.w3.org/2005/11/its" version="5.0" xml:id="sec-smartdocs">
-  <title>Working with &sd;</title>
+  <title>Creating modular documentation</title>
   <info>
     <revhistory xml:id="rh-smartdocs">
+      <revision><date>2026-11-04</date>
+        <revdescription>
+          <para>Updated the modular concept and title</para>
+        </revdescription>
+      </revision>
       <revision><date>2026-06-18</date>
         <revdescription>
           <para>Updated the Abstract format and structure</para>
