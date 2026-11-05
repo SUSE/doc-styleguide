@@ -10,9 +10,10 @@
         <abstract>
             <para>
                 &suse; documentation is modular. Articles bundle topics, which are small information units
-                with one purpose each, into documents. Books are large manuals that &suse; continues to
-                maintain in their existing structure. This chapter describes the structure of articles and
-                books, the four topic types and the rules for the elements of each form.
+                with one purpose each, into documents. Books are comprehensive guides to a subject area of
+        a product, such as system administration. This chapter describes the topic types, the
+        structure of articles and books and the rules for abstracts, metadata and revision
+        histories.
             </para>
         </abstract>
         <revhistory xml:id="rh-modular-outline">
@@ -30,11 +31,12 @@
     </para>
     <para>
         Articles are the standard form. An article is an assembly of topics that serves one distinct
-        purpose. Books are the format of existing manuals. Maintain existing books in the structure
-        that is described in <xref linkend="outline-books"/>.
+        purpose. Books are comprehensive guides that consist of chapters and, in larger books, parts.
+        Maintain existing books in the structure
+        that is described in <xref linkend="outline-books"/>. Write new content as articles.
     </para>
     <sect1 xml:id="outline-modular">
-        <title>Modular documents</title>
+        <title>Modular documentation</title>
         <para>
            This section describes the principles of modularity, the topic types and the structure of an article.
            <phrase outputformat="db"> For the detailed information about working with modular documentation, 
@@ -84,11 +86,11 @@
                 </listitem>
             </itemizedlist>
             <para>
-                Bundle topics into an article with an assembly file. The assembly file contains the
-                metadata of the article and references the topics in the order in which they appear. Find
-                the templates for assemblies and topics in the doc-modular repository at
-                <link xlink:href="https://github.com/SUSE/doc-modular/tree/main/templates"/>.
-            </para>
+                Bundle topics into an article with an assembly file. An assembly file is an
+        organizational unit that structures the topics into a coherent and meaningful document. It
+        contains the metadata of the article and references the topics in the order in which they
+        appear. Find the templates for assemblies and topics in the 
+        <link xlink:href="https://github.com/SUSE/doc-modular/tree/main/templates">doc-modular repository</link>.</para>
         </sect2>
         <sect2 xml:id="outline-modular-topic-types">
             <title>Topic types</title>
@@ -163,8 +165,8 @@
                     <term>Reference</term>
                     <listitem>
                         <para>
-                            A reference topic provides facts that readers look up. Use tables or variable lists.
-                            For more information, see <xref linkend="sec-table"/> and
+                            A reference topic provides facts that readers look up, such as settings, options and 
+                            parameters. Use tables or variable lists. For more information, see <xref linkend="sec-table"/> and
                             <xref linkend="sec-variable-list"/>.
                         </para>
                     </listitem>
@@ -175,7 +177,7 @@
                         <para>
                             A glue topic helps readers navigate and combines texts or structures that fit no
                             other type. Typical glue topics are <quote>For more information</quote> and 
-                            <quote>What's next</quote>. For more information, see <xref linkend="sec-link"/>.
+                            <quote>What's next</quote>. See more details in <xref linkend="sec-link"/>.
                         </para>
                     </listitem>
                 </varlistentry>
@@ -241,8 +243,7 @@
             <formalpara>
                 <title>Title and subtitle</title>
                 <para>
-                    Use title-style capitalization for the title. Do not add a product version number to the
-                    title. The subtitle is optional. For more information, see
+                    Use title-style capitalization for the title. Do not add a product version number to the title. The subtitle is optional. For more information, see
                     <xref linkend="sec-capitalization-title"/>.
                 </para>
             </formalpara>
@@ -250,24 +251,22 @@
                 <title>Metadata</title>
                 <para>
                     Provide a meta title, a meta description and a social description in the designated meta
-                    elements of the assembly. The meta title has 29&ndash;55 characters. The meta description is
-                    one sentence with 120&ndash;155 characters. The social description has a maximum of 55
-                    characters. For more information, see <xref linkend="sec-titles"/> and <xref linkend="sec-meta-descriptions"/>.
+                    elements of the assembly. For more information, see <xref linkend="sec-titles"/> and <xref linkend="sec-meta-descriptions"/>.
                 </para>
             </formalpara>
             <formalpara>
                 <title>Revision history</title>
                 <para>
-                    Add an entry for significant changes, such as new or removed features, non-cosmetic image
-                    changes, fixed links and metadata fixes. Typo fixes and formatting changes do not need an
-                    entry. List the newest entry first.
+                    Add a revision history and update it for significant changes. List the newest entry
+                    first. <phrase outputformat="db">For more information, see <xref linkend="sec-revhistory"/>.</phrase>
+                    <phrase outputformat="adoc">For more information, see <xref linkend="sec-revinfo"/>.</phrase>
                 </para>
             </formalpara>
             <formalpara>
                 <title>Abstract</title>
                 <para>
-                    Summarize the topic of the article in 40&ndash;80 words. Start with a direct definition of the
-                    product or feature. <phrase outputformat="db">For more information, see <xref linkend="sec-abstract"/>.</phrase>
+                    Summarize the topic of the article in 40&ndash;80 words. <phrase outputformat="db">For more information, see <xref linkend="sec-abstract"/>.</phrase>
+                    <phrase outputformat="adoc">For more information, see <xref linkend="sec-geo-ai-friendly-content"/>.</phrase>
                 </para>
             </formalpara>
             <formalpara>
@@ -289,17 +288,17 @@
             <formalpara>
                 <title>Troubleshooting</title>
                 <para>
-                    Collect common mistakes and problems in a section named Troubleshooting. Always use this
+                    Collect common mistakes and problems in a section named <quote>Troubleshooting</quote>. Always use this
                     name. Mark up the problems with the <tag class="emptytag">qandaset</tag> element. To
                     describe solutions to more than ten problems, add topical subsections with
-                    <tag class="emptytag">qandadiv</tag> elements below the Troubleshooting section.
+                    <tag class="emptytag">qandadiv</tag> elements below the <quote>Troubleshooting</quote> section.
                 </para>
             </formalpara>
             <formalpara>
                 <title>For more information</title>
                 <para>
                     Collect Web links to all sources of information that are helpful in a given context in a
-                    glue topic named For more information. Follow the general referencing guidelines in
+                    glue topic named <quote>For more information</quote>. Follow the general referencing guidelines in
                     <xref linkend="sec-cross-reference"/> and <xref linkend="sec-other-external"/>
                     when you create such sections.
                 </para>
@@ -336,8 +335,9 @@
     <sect1 xml:id="outline-books">
         <title>Books</title>
         <para>
-            A book is a large manual that consists of chapters and, optionally, parts. This section 
-            describes the structure and the elements of a book.
+            A book is a comprehensive guide to a subject area of a product, such as system
+            administration. It consists of chapters and, in larger books, parts that group related
+      chapters. This section describes the structure and the elements of a book.
         </para>
         <sect2 xml:id="outline-books-structure">
             <title>Structure of a book</title>
@@ -402,6 +402,7 @@
                 <title>Revision history</title>
                 <para>
                     Every book, part and chapter that is included in a build must contain a revision history.
+                    For more information, see <xref linkend="sec-revinfo"/>.
                 </para>
             </formalpara>
             <formalpara>
@@ -530,10 +531,10 @@
                         <formalpara>
                             <title>Troubleshooting</title>
                             <para>
-                                Collect common mistakes and problems in a section named Troubleshooting. Always use
+                                Collect common mistakes and problems in a section named <quote>Troubleshooting</quote>. Always use
                                 this name. Use the <tag class="emptytag">qandaset</tag> element to mark up the
                                 problems. To describe solutions to more than ten problems, add topical subsections
-                                with <tag class="emptytag">qandadiv</tag> elements below the Troubleshooting
+                                with <tag class="emptytag">qandadiv</tag> elements below the <quote>Troubleshooting</quote>
                                 section.
                             </para>
                         </formalpara>
