@@ -258,8 +258,7 @@
                 <title>Revision history</title>
                 <para>
                     Add a revision history and update it for significant changes. List the newest entry
-                    first. <phrase outputformat="db">For more information, see <xref linkend="sec-revhistory"/>.</phrase>
-                    <phrase outputformat="adoc">For more information, see <xref linkend="sec-revinfo"/>.</phrase>
+                    first. For more information, see <xref linkend="sec-revhistory" outputformat="db/><xref linkend="sec-revinfo" outputformat="adoc/>.
                 </para>
             </formalpara>
             <formalpara>
